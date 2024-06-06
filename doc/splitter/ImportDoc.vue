@@ -1,0 +1,19 @@
+<template>
+    <DocSectionText v-bind="$attrs" />
+    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            code: {
+                basic: `
+import Splitter from '@coscom/coscom-ui/splitter';
+import SplitterPanel from '@coscom/coscom-ui/splitterpanel';
+`
+            }
+        };
+    }
+};
+</script>
