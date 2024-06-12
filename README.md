@@ -75,10 +75,14 @@ app.use(Coscom, { unstyled: true });
 Each component can be imported individually so that you only bundle what you use. Import path is available in the documentation of the corresponding component.
 
 ```javascript
-import Button from 'coscom-ui/button';
+import Button from '@coscom-ui/button';
+import Editor from '@coscom/coscom-ui/editor';
+import Toast from '@coscom/coscom-ui/toast';
 
 const app = createApp(App);
 app.component('Button', Button);
+app.component('Editor', Editor);
+app.component('Toast', Toast);
 ```
 
 ## Prop Cases

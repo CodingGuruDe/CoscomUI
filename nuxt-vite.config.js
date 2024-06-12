@@ -22,7 +22,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/card/style': path.resolve(__dirname, './components/lib/card/style/CardStyle.js'),
     '@coscom/coscom-ui/carousel/style': path.resolve(__dirname, './components/lib/carousel/style/CarouselStyle.js'),
     '@coscom/coscom-ui/cascadeselect/style': path.resolve(__dirname, './components/lib/cascadeselect/style/CascadeSelectStyle.js'),
-    '@coscom/coscom-ui/chart/style': path.resolve(__dirname, './components/lib/chart/style/ChartStyle.js'),
     '@coscom/coscom-ui/checkbox/style': path.resolve(__dirname, './components/lib/checkbox/style/CheckboxStyle.js'),
     '@coscom/coscom-ui/chip/style': path.resolve(__dirname, './components/lib/chip/style/ChipStyle.js'),
     '@coscom/coscom-ui/chips/style': path.resolve(__dirname, './components/lib/chips/style/ChipsStyle.js'),

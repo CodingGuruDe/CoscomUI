@@ -13,7 +13,7 @@
                 <button type="button" @click="tab = 1">API</button>
             </li>
             <li v-if="themingDocs" :class="{ 'doc-tabmenu-active': tab === 2 }">
-                <button type="button" @click="tab = 2">THEMING</button>
+                <button type="button" @click="tab = 2">STYLING</button>
             </li>
             <li v-if="ptTabComponent" :class="{ 'doc-tabmenu-active': tab === 3 }">
                 <button type="button" @click="tab = 3">PASS THROUGH</button>

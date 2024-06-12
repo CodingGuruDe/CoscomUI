@@ -4,7 +4,7 @@
     "homepage": "https://coscom.de/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/coscom/coscom-ui.git"
+        "url": "https://github.com/CodingGuruDe/CoscomUI"
     },
     "license": "MIT",
     "scripts": {
@@ -50,7 +50,6 @@
         "@vitejs/plugin-vue": "4.1.0",
         "@vitest/coverage-istanbul": "^0.29.8",
         "@vue/test-utils": "^2.0.0",
-        "chart.js": "^3.9.1",
         "eslint": "^8.30.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-nuxt": "^4.0.0",

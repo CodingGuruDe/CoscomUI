@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>CoscomUI is available for download on <a href="https://www.npmjs.com/package/primevue">npm Registry</a>.</p>
+        <p>CoscomUI is available for download on <a href="https://www.npmjs.com/package/coscom/coscom-ui/">npm Registry</a>.</p>
     </DocSectionText>
     <DocSectionCode :code="code" hideToggleCode hideStackBlitz />
 </template>
@@ -12,13 +12,13 @@ export default {
             code: {
                 basic: `
 # Using npm
-npm install primevue
+npm install @coscom/coscom-ui
 
 # Using yarn
-yarn add primevue
+yarn add @coscom/coscom-ui
 
 # Using pnpm
-pnpm add primevue
+pnpm add @coscom/coscom-ui
 `
             }
         };

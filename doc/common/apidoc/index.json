@@ -1,6 +1,6 @@
 {
     "accordion": {
-        "description": "Accordion groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/accordion/)",
+        "description": "Accordion groups a collection of contents in tabs.\n\n[Live Demo](https://coscomui.coscom.de/accordion/)",
         "components": {
             "default": {
                 "description": "Accordion groups a collection of contents in tabs.",
@@ -3402,7 +3402,7 @@
         }
     },
     "autocomplete": {
-        "description": "AutoComplete is an input component that provides real-time suggestions while being typed.\n\n[Live Demo](https://www.primevue.org/autocomplete/)",
+        "description": "AutoComplete is an input component that provides real-time suggestions while being typed.\n\n[Live Demo](https://coscomui.coscom.de/)",
         "components": {
             "default": {
                 "description": "AutoComplete is an input component that provides real-time suggestions while being typed.",
@@ -4206,7 +4206,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} results are available'",
-                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "selectionMessage",
@@ -4214,7 +4214,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} items selected'",
-                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySelectionMessage",
@@ -4222,7 +4222,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No selected item",
-                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySearchMessage",
@@ -4230,7 +4230,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "tabindex",
@@ -6877,7 +6877,7 @@
         }
     },
     "button": {
-        "description": "Button is an extension to standard button element with icons and theming.\n\n[Live Demo](https://www.primevue.org/button/)",
+        "description": "Button is an extension to standard button element with icons and theming.\n\n[Live Demo](https://coscomui.coscom.de/)",
         "components": {
             "default": {
                 "description": "Button is an extension to standard button element with icons and theming.",
@@ -8426,7 +8426,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Format of the date. Defaults to CoscomUI Locale configuration."
+                            "description": "Format of the date. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "inline",
@@ -10940,7 +10940,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} results are available'",
-                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "selectionMessage",
@@ -10948,7 +10948,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} items selected'",
-                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySelectionMessage",
@@ -10956,7 +10956,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No selected item",
-                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySearchMessage",
@@ -10964,7 +10964,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyMessage",
@@ -10972,7 +10972,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No available options",
-                            "description": "Text to be displayed when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed when there are no options available. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "tabindex",
@@ -14222,7 +14222,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Type of data. It's value is related to CoscomUI.filterMatchModeOptions config."
+                            "description": "Type of data. It's value is related to PrimeVue.filterMatchModeOptions config."
                         },
                         {
                             "name": "sortable",
@@ -14686,7 +14686,7 @@
                                 {
                                     "name": "scope",
                                     "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row node data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">editorInitCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Editor init callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">rowTogglerCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Row toggler callback unction</span>\n}",
+                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">data</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">node</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Row node data.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">column</span>: <span class=\"doc-option-parameter-type\">ColumnNode</span>, <span class=\"doc-option-parameter-type\">// Column node.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">field</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Column field.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Row index.</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">frozenRow</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Whether the row is frozen.</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">editorInitCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Editor init callback function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">rowTogglerCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Row toggler callback function</span>\n}",
                                     "description": "body slot's params."
                                 }
                             ],
@@ -15242,7 +15242,7 @@
             }
         }
     },
-    "config/CoscomUI": {
+    "config/Coscom": {
         "functions": {
             "description": "Defines the custom functions used by the module.",
             "values": {
@@ -15259,7 +15259,7 @@
             "methodDescription": "Defines methods that can be accessed by the component's reference.",
             "typeDescription": "Defines the custom types used by the module.",
             "values": {
-                "CoscomUIConfiguration": {
+                "CoscomConfiguration": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -15280,7 +15280,7 @@
                             "name": "locale",
                             "optional": true,
                             "readonly": false,
-                            "type": "CoscomUILocaleOptions",
+                            "type": "CoscomLocaleOptions",
                             "default": ""
                         },
                         {
@@ -15294,14 +15294,14 @@
                             "name": "zIndex",
                             "optional": true,
                             "readonly": false,
-                            "type": "CoscomUIZIndexOptions",
+                            "type": "CoscomZIndexOptions",
                             "default": ""
                         },
                         {
                             "name": "pt",
                             "optional": true,
                             "readonly": false,
-                            "type": "PassThrough<CoscomUIPTOptions>",
+                            "type": "PassThrough<CoscomPTOptions>",
                             "default": ""
                         },
                         {
@@ -15322,13 +15322,13 @@
                             "name": "csp",
                             "optional": true,
                             "readonly": false,
-                            "type": "CoscomUICSPOptions",
+                            "type": "CoscomCSPOptions",
                             "default": ""
                         }
                     ],
                     "methods": []
                 },
-                "CoscomUIZIndexOptions": {
+                "CoscomZIndexOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -15362,7 +15362,7 @@
                     ],
                     "methods": []
                 },
-                "CoscomUICSPOptions": {
+                "CoscomCSPOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -15375,7 +15375,7 @@
                     ],
                     "methods": []
                 },
-                "CoscomUIPTOptions": {
+                "CoscomPTOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -16025,7 +16025,7 @@
                     ],
                     "methods": []
                 },
-                "CoscomUILocaleAriaOptions": {
+                "CoscomLocaleAriaOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -16374,7 +16374,7 @@
                     ],
                     "methods": []
                 },
-                "CoscomUILocaleOptions": {
+                "CoscomLocaleOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -16843,7 +16843,7 @@
                             "name": "aria",
                             "optional": true,
                             "readonly": false,
-                            "type": "CoscomUILocaleAriaOptions",
+                            "type": "CoscomLocaleAriaOptions",
                             "default": ""
                         }
                     ],
@@ -16854,7 +16854,7 @@
         "types": {
             "description": "Defines the custom types used by the module.",
             "values": {
-                "CoscomUIChangeTheme": {
+                "CoscomChangeTheme": {
                     "values": "{}"
                 }
             }
@@ -16962,7 +16962,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Label of the accept button. Defaults to CoscomUI Locale configuration."
+                            "description": "Label of the accept button. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "rejectLabel",
@@ -16970,7 +16970,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Label of the reject button. Defaults to CoscomUI Locale configuration."
+                            "description": "Label of the reject button. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "acceptIcon",
@@ -25070,7 +25070,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} results are available'",
-                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "selectionMessage",
@@ -25078,7 +25078,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} items selected'",
-                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySelectionMessage",
@@ -25086,7 +25086,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No selected item",
-                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyFilterMessage",
@@ -25094,7 +25094,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyMessage",
@@ -25102,7 +25102,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "tabindex",
@@ -27378,7 +27378,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Label of the choose button. Defaults to CoscomUI Locale configuration."
+                            "description": "Label of the choose button. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "uploadLabel",
@@ -27386,7 +27386,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Label of the upload button. Defaults to CoscomUI Locale configuration."
+                            "description": "Label of the upload button. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "cancelLabel",
@@ -27394,7 +27394,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "Cancel",
-                            "description": "Label of the cancel button. Defaults to CoscomUI Locale configuration."
+                            "description": "Label of the cancel button. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "customUpload",
@@ -27402,7 +27402,7 @@
                             "readonly": false,
                             "type": "boolean",
                             "default": "",
-                            "description": "Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to CoscomUI Locale configuration."
+                            "description": "Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "showUploadButton",
@@ -34501,7 +34501,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} results are available'",
-                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "selectionMessage",
@@ -34509,7 +34509,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} items selected'",
-                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySelectionMessage",
@@ -34517,7 +34517,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No selected item",
-                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyFilterMessage",
@@ -34525,7 +34525,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyMessage",
@@ -34533,7 +34533,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "tabindex",
@@ -36789,7 +36789,7 @@
         }
     },
     "menuitem": {
-        "description": "CoscomUI menu components share a common api to specify the menuitems and submenus.",
+        "description": "PrimeVue menu components share a common api to specify the menuitems and submenus.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -38698,7 +38698,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} results are available'",
-                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "selectionMessage",
@@ -38706,7 +38706,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "'{0} items selected'",
-                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptySelectionMessage",
@@ -38714,7 +38714,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No selected item",
-                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyFilterMessage",
@@ -38722,7 +38722,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "emptyMessage",
@@ -38730,7 +38730,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found'",
-                            "description": "Text to display when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "tabindex",
@@ -43090,7 +43090,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Text to prompt password entry. Defaults to CoscomUI Locale configuration."
+                            "description": "Text to prompt password entry. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "mediumRegex",
@@ -43114,7 +43114,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Text for a weak password. Defaults to CoscomUI Locale configuration."
+                            "description": "Text for a weak password. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "mediumLabel",
@@ -43122,7 +43122,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Text for a medium password. Defaults to CoscomUI Locale configuration."
+                            "description": "Text for a medium password. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "strongLabel",
@@ -43130,7 +43130,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "",
-                            "description": "Text for a strong password. Defaults to CoscomUI Locale configuration."
+                            "description": "Text for a strong password. Defaults to PrimeVue Locale configuration."
                         },
                         {
                             "name": "feedback",
@@ -44717,7 +44717,7 @@
         "description": "ProgressBar is a process status indicator.\n\n[Live Demo](https://www.primevue.org/progressbar)",
         "components": {
             "default": {
-                "description": "\n\n[Live Demo](https://www.primevue.org/progressbar/)\n--- ---\n![CoscomUI](https://primefaces.org/cdn/primevue/images/logo-100.png)",
+                "description": "\n\n[Live Demo](https://www.primevue.org/progressbar/)\n--- ---\n![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -57906,7 +57906,7 @@
         }
     },
     "treenode": {
-        "description": "CoscomUI tree components share a common api to specify the node.",
+        "description": "PrimeVue tree components share a common api to specify the node.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -58397,7 +58397,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when there are no options available. Defaults to value from PrimeVue locale configuration."
                         },
                         {
                             "name": "display",

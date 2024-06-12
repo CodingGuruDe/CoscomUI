@@ -1,7 +1,7 @@
 <template>
     <section class="landing-features py-8">
         <div class="section-header">Features</div>
-        <p class="section-detail">PrimeVue is the most complete solution for your UI requirements.</p>
+        <p class="section-detail">Coscom UI is the most complete solution for your UI requirements.</p>
         <div class="mt-7 px-5 lg:px-8">
             <div class="features-container">
                 <div class="grid">

@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Here is the full list of PrimeIcons. More icons will be added periodically and you may also <a href="https://github.com/primefaces/primeicons/issues">request new icons</a> at the issue tracker.</p>
+        <p>Here is the full list of CoscomIcons. More icons will be added periodically and you may also <a href="https://github.com/CodingGuruDe/coscom/coscom-icons/issues">request new icons</a> at the issue tracker.</p>
     </DocSectionText>
 
     <InputText v-model="filter" class="w-full p-3 mt-3 mb-4" placeholder="Search an icon" />
@@ -8,8 +8,8 @@
     <div class="card">
         <div class="grid text-center">
             <div v-for="icon of filteredIcons" :key="icon.properties.name" class="col-12 md:col-2 mb-5">
-                <i :class="'text-2xl mb-3 text-color-secondary pi pi-' + icon.properties.name"></i>
-                <div>pi-{{ icon.properties.name }}</div>
+                <i :class="'text-2xl mb-3 text-color-secondary cs el-' + icon.properties.name"></i>
+                <div>cs-{{ icon.properties.name }}</div>
             </div>
         </div>
     </div>

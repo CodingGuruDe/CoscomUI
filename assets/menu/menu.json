@@ -374,15 +374,6 @@
                     ]
                 },
                 {
-                    "name": "Chart",
-                    "children": [
-                        {
-                            "name": "Chart.js",
-                            "to": "/chart"
-                        }
-                    ]
-                },
-                {
                     "name": "Messages",
                     "children": [
                         {

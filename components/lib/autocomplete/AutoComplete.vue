@@ -90,7 +90,7 @@
             </li>
         </ul>
         <slot v-if="searching || loading" :class="cx('loadingIcon')" name="loadingicon">
-            <i v-if="loadingIcon" :class="['el-spin', cx('loadingIcon'), loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
+            <i v-if="loadingIcon" :class="['pi-spin', cx('loadingIcon'), loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
             <SpinnerIcon v-else :class="[cx('loadingIcon'), loadingIcon]" spin aria-hidden="true" v-bind="ptm('loadingIcon')" />
         </slot>
         <Button v-if="dropdown" ref="dropdownButton" type="button" tabindex="-1" :class="[cx('dropdownButton'), dropdownClass]" :disabled="disabled" aria-hidden="true" @click="onDropdownClick" :unstyled="unstyled" :pt="ptm('dropdownButton')">
@@ -667,7 +667,7 @@ export default {
             }
         },
         onOverlayEnter(el) {
-            ZIndexUtils.set('overlay', el, this.$coscom.config.zIndex.overlay);
+            ZIndexUtils.set('overlay', el, this.$coscomui.config.zIndex.overlay);
 
             DomHandler.addStyles(el, { position: 'absolute', top: '0', left: '0' });
             this.alignOverlay();
@@ -910,22 +910,22 @@ export default {
             return ObjectUtils.isNotEmpty(this.visibleOptions) && this.overlayVisible ? this.searchMessageText.replaceAll('{0}', this.visibleOptions.length) : this.emptySearchMessageText;
         },
         searchMessageText() {
-            return this.searchMessage || this.$coscom.config.locale.searchMessage || '';
+            return this.searchMessage || this.$coscomui.config.locale.searchMessage || '';
         },
         emptySearchMessageText() {
-            return this.emptySearchMessage || this.$coscom.config.locale.emptySearchMessage || '';
+            return this.emptySearchMessage || this.$coscomui.config.locale.emptySearchMessage || '';
         },
         selectionMessageText() {
-            return this.selectionMessage || this.$coscom.config.locale.selectionMessage || '';
+            return this.selectionMessage || this.$coscomui.config.locale.selectionMessage || '';
         },
         emptySelectionMessageText() {
-            return this.emptySelectionMessage || this.$coscom.config.locale.emptySelectionMessage || '';
+            return this.emptySelectionMessage || this.$coscomui.config.locale.emptySelectionMessage || '';
         },
         selectedMessageText() {
             return this.hasSelectedOption ? this.selectionMessageText.replaceAll('{0}', this.multiple ? this.modelValue.length : '1') : this.emptySelectionMessageText;
         },
         listAriaLabel() {
-            return this.$coscom.config.locale.aria ? this.$coscom.config.locale.aria.listLabel : undefined;
+            return this.$coscomui.config.locale.aria ? this.$coscomui.config.locale.aria.listLabel : undefined;
         },
         focusedOptionId() {
             return this.focusedOptionIndex !== -1 ? `${this.id}_${this.focusedOptionIndex}` : null;

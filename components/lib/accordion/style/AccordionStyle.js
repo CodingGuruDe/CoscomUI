@@ -1,26 +1,26 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-accordion p-component',
+    root: 'v-accordion v-component',
     tab: {
         root: ({ instance, index }) => [
-            'p-accordion-tab',
+            'v-accordion-tab',
             {
-                'p-accordion-tab-active': instance.isTabActive(index)
+                'v-accordion-tab-active': instance.isTabActive(index)
             }
         ],
         header: ({ instance, tab, index }) => [
-            'p-accordion-header',
+            'v-accordion-header',
             {
-                'p-highlight': instance.isTabActive(index),
-                'p-disabled': instance.getTabProp(tab, 'disabled')
+                'v-highlight': instance.isTabActive(index),
+                'v-disabled': instance.getTabProp(tab, 'disabled')
             }
         ],
-        headerAction: 'p-accordion-header-link p-accordion-header-action',
-        headerIcon: 'p-accordion-toggle-icon',
-        headerTitle: 'p-accordion-header-text',
-        toggleableContent: 'p-toggleable-content',
-        content: 'p-accordion-content'
+        headerAction: 'v-accordion-header-link v-accordion-header-action',
+        headerIcon: 'v-accordion-toggle-icon',
+        headerTitle: 'v-accordion-header-text',
+        toggleableContent: 'v-toggleable-content',
+        content: 'v-accordion-content'
     }
 };
 

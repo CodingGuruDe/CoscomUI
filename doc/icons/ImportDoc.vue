@@ -10,7 +10,7 @@ export default {
     data() {
         return {
             code: {
-                basic: "\nimport 'primeicons/primeicons.css'\n"
+                basic: "\nimport '@coscom/coscom-icons/style.css'\n"
             }
         };
     }

@@ -2,7 +2,7 @@
  *
  * Button is an extension to standard button element with icons and theming.
  *
- * [Live Demo](https://www.primevue.org/button/)
+ * [Live Demo](https://coscomui.coscom.de/)
  *
  * @module button
  *
@@ -235,9 +235,7 @@ export interface ButtonEmits {}
  *
  * _Button is an extension to standard button element with icons and theming._
  *
- * [Live Demo](https://www.primevue.org/button/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
+ * [Live Demo](https://coscomui.coscom.de/)
  *
  * @group Component
  */

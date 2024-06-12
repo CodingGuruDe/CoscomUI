@@ -43,12 +43,10 @@ const file = ['FileUpload'];
 
 const menu = ['Breadcrumb', 'ContextMenu', 'Dock', 'Menu', 'Menubar', 'MegaMenu', 'PanelMenu', 'Steps', 'TabMenu', 'TieredMenu'];
 
-const chart = ['Chart'];
-
 const messages = ['Message', 'InlineMessage', { name: 'Toast', use: { as: 'ToastService' } }];
 
 const media = ['Carousel', 'Galleria', 'Image'];
 
 const misc = ['Avatar', 'AvatarGroup', 'Badge', 'BlockUI', 'Chip', 'Inplace', 'MeterGroup', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner', 'Tag', 'Terminal'];
 
-export const components = [...form, ...button, ...data, ...panel, ...overlay, ...file, ...menu, ...chart, ...messages, ...media, ...misc].map((c) => (typeof c === 'string' ? { name: c } : c));
+export const components = [...form, ...button, ...data, ...panel, ...overlay, ...file, ...menu, ...messages, ...media, ...misc].map((c) => (typeof c === 'string' ? { name: c } : c));

@@ -2,7 +2,7 @@
  *
  * AutoComplete is an input component that provides real-time suggestions while being typed.
  *
- * [Live Demo](https://www.coscomui.coscom.de/autocomplete/)
+ * [Live Demo](https://coscomui.coscom.de/)
  *
  * @module autocomplete
  *
@@ -467,22 +467,22 @@ export interface AutoCompleteProps {
      */
     searchLocale?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from Coscom-UI locale configuration.
+     * Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration.
      * @defaultValue '{0} results are available'
      */
     searchMessage?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when options are selected. Defaults to value from Coscom-UI locale configuration.
+     * Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration.
      * @defaultValue '{0} items selected'
      */
     selectionMessage?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from Coscom-UI locale configuration.
+     * Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration.
      * @defaultValue No selected item
      */
     emptySelectionMessage?: string | undefined;
     /**
-     * Text to display when filtering does not return any results. Defaults to value from Coscom-UI locale configuration.
+     * Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration.
      * @defaultValue No results found
      */
     emptySearchMessage?: string | undefined;
@@ -756,11 +756,11 @@ export interface AutoCompleteEmits {
 }
 
 /**
- * **Coscom-UI - AutoComplete**
+ * **PrimeVue - AutoComplete**
  *
  * _AutoComplete is an input component that provides real-time suggestions while being typed._
  *
- * [Live Demo](https://www.coscomui.coscom.de/autocomplete/)
+ * [Live Demo](https://coscomui.coscom.de)
  *
  * @group Component
  *

@@ -1,4 +1,4 @@
-import { PrimeVuePTOptions } from '../../config';
+import { CoscomPTOptions } from '../../config';
 
-declare const Tailwind: PrimeVuePTOptions;
+declare const Tailwind: CoscomPTOptions;
 export default Tailwind;

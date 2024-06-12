@@ -9,7 +9,7 @@ describe('AutoComplete.vue', () => {
     beforeEach(async () => {
         wrapper = mount(AutoComplete, {
             global: {
-                plugins: [CoscomUI],
+                plugins: [PrimeVue],
                 stubs: {
                     teleport: true
                 }
@@ -21,9 +21,9 @@ describe('AutoComplete.vue', () => {
             data() {
                 return {
                     countries: [
-                        { name: 'Croatia', code: 'HR' },
-                        { name: 'Germany', code: 'DE' },
-                        { name: 'France', code: 'FR' },
+                        { name: 'Afghanistan', code: 'AF' },
+                        { name: 'Bahrain', code: 'BH' },
+                        { name: 'Chile', code: 'CL' },
                         { name: 'Denmark', code: 'DK' }
                     ]
                 };

@@ -116,16 +116,16 @@
                     </svg>
                 </span>
                 <div class="flex align-items-center gap-2">
-                    <a href="https://twitter.com/primevue" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
+                    <a href="https://twitter.com/coscomui" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                         <i class="cs el-twitter"></i>
                     </a>
-                    <a href="https://github.com/primefaces/primevue" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
+                    <a href="https://github.com/CodingGuruDe/CoscomUI" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                         <i class="cs el-github"></i>
                     </a>
-                    <a href="https://discord.gg/gzKFYnpmCY" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
+                    <a href="https://discord.gg/gzKFYnpmCYX" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                         <i class="cs el-discord"></i>
                     </a>
-                    <a href="https://github.com/orgs/primefaces/discussions" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
+                    <a href="https://github.com/orgs/codinggurude/discussions" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                         <i class="cs el-comments"></i>
                     </a>
                 </div>

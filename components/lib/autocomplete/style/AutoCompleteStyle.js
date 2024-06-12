@@ -23,13 +23,13 @@ const classes = {
         'p-autocomplete-input p-inputtext p-component',
         {
             'p-autocomplete-dd-input': props.dropdown,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscomui.config.inputStyle === 'filled'
         }
     ],
     container: ({ props, instance }) => [
         'p-autocomplete-multiple-container p-component p-inputtext',
         {
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscomui.config.inputStyle === 'filled'
         }
     ],
     token: ({ instance, i }) => ['p-autocomplete-token', { 'p-focus': instance.focusedMultipleOptionIndex === i }],
@@ -41,7 +41,7 @@ const classes = {
     panel: ({ props, instance }) => [
         'p-autocomplete-panel p-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'p-ripple-disabled': instance.$coscomui.config.ripple === false
         }
     ],
     list: 'p-autocomplete-items',

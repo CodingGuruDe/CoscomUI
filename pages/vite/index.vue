@@ -1,13 +1,13 @@
 <template>
     <Head>
-        <Title>Install PrimeVue with Vite</Title>
-        <Meta name="description" content="Setting up PrimeVue in a Vite project" />
+        <Title>Install Coscom UI with Vite</Title>
+        <Meta name="description" content="Setting up CoscomUI in a Vite project" />
     </Head>
     <div class="doc">
         <div class="doc-main">
             <div class="doc-intro">
-                <h1>Install PrimeVue with Vite</h1>
-                <p>Setting up PrimeVue in a Vite project.</p>
+                <h1>Install library with Vite</h1>
+                <p>Setting up Coscom UI in a Vite project.</p>
             </div>
             <DocSections :docs="docs" />
         </div>

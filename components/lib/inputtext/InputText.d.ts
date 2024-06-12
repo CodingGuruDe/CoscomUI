@@ -140,8 +140,6 @@ export interface InputTextEmits {
  * _InputText renders a text field to enter data._
  *
  * [Live Demo](https://www.primevue.org/inputtext/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -87,7 +87,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/card/style': 'coscom.card.style',
     'coscom/carousel/style': 'coscom.carousel.style',
     'coscom/cascadeselect/style': 'coscom.cascadeselect.style',
-    'coscom/chart/style': 'coscom.chart.style',
     'coscom/checkbox/style': 'coscom.checkbox.style',
     'coscom/chip/style': 'coscom.chip.style',
     'coscom/chips/style': 'coscom.chips.style',
@@ -227,7 +226,7 @@ const GLOBAL_COMPONENT_DEPENDENCIES = {
 };
 
 // externals
-const EXTERNAL = ['vue', 'chart.js/auto', 'quill'];
+const EXTERNAL = ['vue', 'quill'];
 
 const EXTERNAL_COMPONENT = [...EXTERNAL, ...Object.keys(CORE_DEPENDENCIES)];
 

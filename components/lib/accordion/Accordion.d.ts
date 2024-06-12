@@ -2,7 +2,7 @@
  *
  * Accordion groups a collection of contents in tabs.
  *
- * [Live Demo](https://www.primevue.org/accordion/)
+ * [Live Demo](https://coscomui.coscom.de/accordion/)
  *
  * @module accordion
  *
@@ -219,13 +219,11 @@ export interface AccordionEmits {
 }
 
 /**
- * **PrimeVue - Accordion**
+ * **CoscomUI - Accordion**
  *
  * _Accordion groups a collection of contents in tabs._
  *
- * [Live Demo](https://www.primevue.org/accordion/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
+ * [Live Demo](https://coscomui.coscom.de/accordion/)
  *
  * @group Component
  *

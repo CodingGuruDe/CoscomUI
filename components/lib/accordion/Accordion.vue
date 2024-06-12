@@ -1,12 +1,12 @@
 <template>
     <div :class="cx('root')" v-bind="ptmi('root')">
-        <div v-for="(tab, i) of tabs" :key="getKey(tab, i)" :class="cx('tab.root', { tab, index: i })" v-bind="getTabPT(tab, 'root', i)" data-pc-name="accordiontab" :data-pc-index="i" :data-p-active="isTabActive(i)">
+        <div v-for="(tab, i) of tabs" :key="getKey(tab, i)" :class="cx('tab.root', { tab, index: i })" v-bind="getTabPT(tab, 'root', i)" data-pc-name="accordiontab" :data-pc-index="i" :data-v-active="isTabActive(i)">
             <div
                 :style="getTabProp(tab, 'headerStyle')"
                 :class="[cx('tab.header', { tab, index: i }), getTabProp(tab, 'headerClass')]"
                 v-bind="{ ...getTabProp(tab, 'headerProps'), ...getTabPT(tab, 'header', i) }"
-                :data-p-highlight="isTabActive(i)"
-                :data-p-disabled="getTabProp(tab, 'disabled')"
+                :data-v-highlight="isTabActive(i)"
+                :data-v-disabled="getTabProp(tab, 'disabled')"
             >
                 <a
                     :id="getTabHeaderActionId(i)"
@@ -33,7 +33,7 @@
                     <component v-if="tab.children && tab.children.header" :is="tab.children.header"></component>
                 </a>
             </div>
-            <transition name="p-toggleable-content" v-bind="getTabPT(tab, 'transition', i)">
+            <transition name="v-toggleable-content" v-bind="getTabPT(tab, 'transition', i)">
                 <div
                     v-if="lazy ? isTabActive(i) : true"
                     v-show="lazy ? true : isTabActive(i)"
@@ -187,13 +187,13 @@ export default {
             const nextTabElement = selfCheck ? tabElement : tabElement.nextElementSibling;
             const headerElement = DomHandler.findSingle(nextTabElement, '[data-pc-section="header"]');
 
-            return headerElement ? (DomHandler.getAttribute(headerElement, 'data-p-disabled') ? this.findNextHeaderAction(headerElement.parentElement) : DomHandler.findSingle(headerElement, '[data-pc-section="headeraction"]')) : null;
+            return headerElement ? (DomHandler.getAttribute(headerElement, 'data-v-disabled') ? this.findNextHeaderAction(headerElement.parentElement) : DomHandler.findSingle(headerElement, '[data-pc-section="headeraction"]')) : null;
         },
         findPrevHeaderAction(tabElement, selfCheck = false) {
             const prevTabElement = selfCheck ? tabElement : tabElement.previousElementSibling;
             const headerElement = DomHandler.findSingle(prevTabElement, '[data-pc-section="header"]');
 
-            return headerElement ? (DomHandler.getAttribute(headerElement, 'data-p-disabled') ? this.findPrevHeaderAction(headerElement.parentElement) : DomHandler.findSingle(headerElement, '[data-pc-section="headeraction"]')) : null;
+            return headerElement ? (DomHandler.getAttribute(headerElement, 'data-v-disabled') ? this.findPrevHeaderAction(headerElement.parentElement) : DomHandler.findSingle(headerElement, '[data-pc-section="headeraction"]')) : null;
         },
         findFirstHeaderAction() {
             return this.findNextHeaderAction(this.$el.firstElementChild, true);
