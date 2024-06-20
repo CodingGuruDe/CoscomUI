@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import { nextTick } from 'vue';
 import AutoComplete from './AutoComplete.vue';
 
@@ -9,7 +9,7 @@ describe('AutoComplete.vue', () => {
     beforeEach(async () => {
         wrapper = mount(AutoComplete, {
             global: {
-                plugins: [Coscom],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -48,7 +48,7 @@ describe('AutoComplete.vue', () => {
         await wrapper.vm.$nextTick();
 
         await wrapper.setProps({
-            suggestions: [{ name: 'Croatia', code: 'HR' }]
+            suggestions: [{ name: 'Germany', code: 'DE' }]
         });
 
         expect(wrapper.find('.p-autocomplete-items').exists()).toBe(true);

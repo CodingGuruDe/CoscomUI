@@ -49,8 +49,8 @@ describe('Accordion.vue', () => {
 
         const allTabs = wrapper.findAll('.v-accordion-tab');
 
-        expect(allTabs[0].classes()).not.toContain('p-accordion-tab-active');
-        expect(allTabs[1].classes()).toContain('p-accordion-tab-active');
+        expect(allTabs[0].classes()).not.toContain('v-accordion-tab-active');
+        expect(allTabs[1].classes()).toContain('v-accordion-tab-active');
     });
 
     it('should work tab click', async () => {

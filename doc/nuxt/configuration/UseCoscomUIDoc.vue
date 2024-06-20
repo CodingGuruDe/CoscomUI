@@ -11,7 +11,7 @@ export default {
         return {
             code: {
                 basic: `
-primevue: {
+coscomui: {
     useCoscomUI: true
 }
 `

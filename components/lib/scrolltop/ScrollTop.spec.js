@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import ScrollTop from './ScrollTop.vue';
 
 describe('ScrollTop.vue', () => {

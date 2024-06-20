@@ -1,4 +1,4 @@
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import { mount } from '@vue/test-utils';
 import Dialog from './Dialog.vue';
 

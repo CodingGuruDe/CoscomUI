@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils';
 import { FilterMatchMode } from '@coscom/coscom-ui/api';
 import Button from '@coscom/coscom-ui/button';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import InputText from '@coscom/coscom-ui/inputtext';
 import Column from '../column/Column.vue';
 import ColumnGroup from '../columngroup/ColumnGroup.vue';

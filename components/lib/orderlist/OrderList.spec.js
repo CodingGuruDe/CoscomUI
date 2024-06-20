@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import OrderList from './OrderList.vue';
 
 describe('OrderList.vue', () => {

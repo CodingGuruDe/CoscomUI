@@ -1,5 +1,5 @@
 import { config } from '@vue/test-utils';
-import { defaultOptions } from '@coscom/coscom-ui/config';
+import { defaultOptions } from 'coscom/config';
 
 config.global.mocks['$coscom'] = {
     config: defaultOptions

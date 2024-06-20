@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import MultiSelect from './MultiSelect.vue';
 
 describe('MultiSelect.vue', () => {
@@ -50,7 +50,7 @@ describe('MultiSelect.vue', () => {
         await wrapper.vm.onContainerClick();
 
         expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['data-p-highlight']).toBe('true');
-        expect(wrapper.find('.p-multiselect-label').text()).toBe('New York');
+        expect(wrapper.find('.p-multiselect-label').text()).toBe('Ebersberg');
     });
 
     it('should select multiple item', async () => {
@@ -116,7 +116,7 @@ describe('MultiSelect.vue', () => {
 
             const icon = wrapper.find('.p-multiselect-filter-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom close icon', async () => {

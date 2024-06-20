@@ -16,13 +16,13 @@ describe('ToggleButton', () => {
 
     it('is ToggleButton exist', () => {
         expect(wrapper.find('.p-togglebutton.p-component').exists()).toBe(true);
-        expect(wrapper.find('span.pi-times.p-button-icon').exists()).toBe(true);
+        expect(wrapper.find('span.el-times.p-button-icon').exists()).toBe(true);
     });
 
     it('should have onIcon', async () => {
         await wrapper.setProps({ modelValue: true });
 
-        expect(wrapper.find('span.pi-check').exists()).toBe(true);
+        expect(wrapper.find('span.el-check').exists()).toBe(true);
     });
 
     it('should change works', async () => {

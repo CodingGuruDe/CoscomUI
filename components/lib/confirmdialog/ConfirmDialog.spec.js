@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import ConfirmDialog from './ConfirmDialog.vue';
 
 describe('ConfirmDialog', () => {
@@ -49,7 +49,7 @@ describe('ConfirmDialog', () => {
                     confirmation: {
                         message: 'Are you sure you want to proceed?',
                         header: 'Confirmation',
-                        icon: 'pi pi-exclamation-triangle',
+                        icon: 'cs el-exclamation-triangle',
                         accept: () => {},
                         reject: () => {}
                     },

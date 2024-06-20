@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import { h } from 'vue';
 import Dropdown from './Dropdown.vue';
 
@@ -61,7 +61,7 @@ describe('option checks', () => {
         expect(wrapper.find('.p-dropdown-label.p-placeholder').text()).toBe('Select a City');
         expect(wrapper.find('.p-dropdown-items-wrapper > .p-dropdown-items').exists()).toBe(true);
         expect(wrapper.find('.p-dropdown-item').exists()).toBe(true);
-        expect(wrapper.findAll('.p-dropdown-item').length).toBe(5);
+        expect(wrapper.findAll('.p-dropdown-item').length).toBe(6);
         expect(wrapper.findAll('.p-dropdown-item')[0].text()).toBe('Zagreb');
     });
 });
@@ -367,6 +367,6 @@ describe('filter checks', () => {
 
         await wrapper.setData({ filterValue: 'c' });
 
-        expect(wrapper.findAll('.p-dropdown-item').length).toBe(2);
+        expect(wrapper.findAll('.p-dropdown-item').length).toBe(3);
     });
 });

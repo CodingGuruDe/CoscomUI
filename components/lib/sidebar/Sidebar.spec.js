@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import { describe, expect, it } from 'vitest';
 import DomHandler from '../utils/DomHandler';
 import Sidebar from './Sidebar.vue';

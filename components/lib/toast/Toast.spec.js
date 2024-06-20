@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CoscomUI from '@coscom/coscom-ui/config';
+import CoscomUI from 'coscom/config';
 import Toast from './Toast.vue';
 
 describe('Toast.vue', () => {
@@ -96,7 +96,7 @@ describe('Toast.vue', () => {
 
             const icon = wrapper.find('.p-toast-message-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom warn severity icon', async () => {

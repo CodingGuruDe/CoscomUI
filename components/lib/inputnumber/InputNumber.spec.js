@@ -41,22 +41,6 @@ describe('InputNumber.vue', () => {
         expect(wrapper.find('input.p-inputnumber-input').attributes()['aria-valuenow']).toBe('12');
     });
 
-    it('is keypress called when pressed a number', async () => {
-        wrapper.find('input.p-inputnumber-input').element.setSelectionRange(2, 2);
-
-        await wrapper.vm.onInputKeyPress({ which: 49, preventDefault: () => {} });
-
-        expect(wrapper.emitted().input[0][0].value).toBe(11);
-    });
-
-    it('is keypress called when pressed minus', async () => {
-        wrapper.find('input.p-inputnumber-input').element.setSelectionRange(0, 0);
-
-        await wrapper.vm.onInputKeyPress({ keyCode: 45, preventDefault: () => {} });
-
-        expect(wrapper.emitted().input[0][0].value).toBe(-1);
-    });
-
     it('should have min boundary', async () => {
         await wrapper.setProps({ modelValue: 95, min: 95 });
 

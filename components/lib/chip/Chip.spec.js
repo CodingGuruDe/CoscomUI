@@ -8,7 +8,7 @@ describe('Chip.vue', () => {
         wrapper = mount(Chip, {
             props: {
                 label: 'CoscomUI',
-                icon: 'cs el-discorde',
+                icon: 'cs el-discord',
                 removable: true
             }
         });
