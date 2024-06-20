@@ -1,8 +1,7 @@
 <template>
     <div class="layout-wrapper" :class="containerClass" :data-p-theme="$appState.theme">
         <AppNews />
-        <AppTopBar @menubutton-click="onMenuButtonClick" @configbutton-click="onConfigButtonClick" @darkswitch-click="onDarkModeToggle" />
-        <AppConfigurator :configActive="appConfigActive" @updateConfigActive="onUpdateConfigActive" @darkswitch-click="onDarkModeToggle" />
+        <AppTopBar @menubutton-click="onMenuButtonClick" @darkswitch-click="onDarkModeToggle" />
         <div :class="['layout-mask', { 'layout-mask-active': sidebarActive }]" @click="onMaskClick"></div>
         <div class="layout-content">
             <app-menu :active="sidebarActive" />
@@ -21,7 +20,6 @@
 <script>
 import DomHandler from '@/components/lib/utils/DomHandler';
 import EventBus from '@/layouts/AppEventBus';
-import AppConfigurator from './AppConfigurator';
 import AppFooter from './AppFooter.vue';
 import AppMenu from './AppMenu.vue';
 import AppNews from './AppNews.vue';
@@ -92,9 +90,6 @@ export default {
 
             return false;
         },
-        onConfigButtonClick() {
-            this.appConfigActive = true;
-        },
         onUpdateConfigActive() {
             this.appConfigActive = false;
         },
@@ -128,7 +123,6 @@ export default {
         AppTopBar,
         AppMenu,
         AppFooter,
-        AppConfigurator,
         AppNews
     }
 };

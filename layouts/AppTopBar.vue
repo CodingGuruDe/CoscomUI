@@ -91,11 +91,6 @@
                         <i :class="['cs text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
                     </button>
                 </li>
-                <li v-if="showConfigurator">
-                    <button type="button" class="p-button flex-shrink-0 flex border-1 w-2rem h-2rem p-0 align-items-center justify-content-center transition-all transition-duration-300 min-w-0" @click="onConfigButtonClick">
-                        <i class="cs el-palette"></i>
-                    </button>
-                </li>
                 <li class="relative">
                     <button
                         v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true }"
@@ -142,10 +137,6 @@ export default {
     emits: ['menubutton-click', 'configbutton-click', 'darkswitch-click'],
     outsideClickListener: null,
     props: {
-        showConfigurator: {
-            type: Boolean,
-            default: true
-        },
         showMenuButton: {
             type: Boolean,
             default: true
@@ -206,9 +197,6 @@ export default {
         }
     },
     methods: {
-        onConfigButtonClick(event) {
-            this.$emit('configbutton-click', event);
-        },
         onMenuButtonClick(event) {
             this.$emit('menubutton-click', event);
         },
