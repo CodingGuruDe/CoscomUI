@@ -2,7 +2,6 @@
  *
  * Carousel is a content slider featuring various customization options.
  *
- * [Live Demo](https://www.primevue.org/carousel/)
  *
  * @module carousel
  *
@@ -364,13 +363,10 @@ export interface CarouselEmits {
 }
 
 /**
- * **PrimeVue - Carousel**
+ * **CoscomUI - Carousel**
  *
  * _Carousel is a content slider featuring various customization options._
  *
- * [Live Demo](https://www.primevue.org/carousel/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

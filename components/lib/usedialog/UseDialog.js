@@ -1,13 +1,13 @@
 import { inject } from 'vue';
 
-export const PrimeVueDialogSymbol = Symbol();
+export const CoscomDialogSymbol = Symbol();
 
 export function useDialog() {
-    const PrimeVueDialog = inject(PrimeVueDialogSymbol);
+    const CoscomDialog = inject(CoscomDialogSymbol);
 
-    if (!PrimeVueDialog) {
-        throw new Error('No PrimeVue Dialog provided!');
+    if (!CoscomDialog) {
+        throw new Error('No Dialog provided!');
     }
 
-    return PrimeVueDialog;
+    return CoscomDialog;
 }

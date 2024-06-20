@@ -2,7 +2,6 @@
  *
  * DataTable displays data in tabular format.
  *
- * [Live Demo](https://www.primevue.org/datatable/)
  *
  * @module datatable
  *
@@ -1501,13 +1500,10 @@ export interface DataTableEmits {
 }
 
 /**
- * **PrimeVue - DataTable**
+ * **CoscomUI - DataTable**
  *
  *  * _DataTable displays data in tabular format._
  *
- * [Live Demo](https://www.primevue.org/datatable/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

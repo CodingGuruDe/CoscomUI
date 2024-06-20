@@ -2,7 +2,6 @@
  *
  * TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.
  *
- * [Live Demo](https://www.primevue.org/tristatecheckbox/)
  *
  * @module tristatecheckbox
  *
@@ -251,13 +250,10 @@ export interface TriStateCheckboxEmits {
 }
 
 /**
- * **PrimeVue - TriStateCheckbox**
+ * **CoscomUI - TriStateCheckbox**
  *
  * _TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value._
  *
- * [Live Demo](https://www.primevue.org/tristatecheckbox/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

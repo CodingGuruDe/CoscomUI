@@ -8,8 +8,8 @@ describe('ToggleButton', () => {
         wrapper = mount(ToggleButton, {
             props: {
                 modelValue: false,
-                onIcon: 'pi pi-check',
-                offIcon: 'pi pi-times'
+                onIcon: 'cs el-check',
+                offIcon: 'cs el-times'
             }
         });
     });

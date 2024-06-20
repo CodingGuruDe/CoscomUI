@@ -2,7 +2,6 @@
  *
  * OrderList is used to managed the order of a collection.
  *
- * [Live Demo](https://primevue.org/orderlist)
  *
  * @module orderlist
  *
@@ -377,13 +376,10 @@ export interface OrderListEmits {
 }
 
 /**
- * **PrimeVue - OrderList**
+ * **CoscomUI - OrderList**
  *
  * _OrderList is used to sort a collection._
  *
- * [Live Demo](https://www.primevue.org/orderlist/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

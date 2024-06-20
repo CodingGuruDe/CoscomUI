@@ -1,14 +1,14 @@
 <template>
     <div>
         <Head>
-            <Title>Install PrimeVue with Nuxt</Title>
-            <Meta name="description" content="Setting up PrimeVue in a Nuxt project" />
+            <Title>Install CoscomUI with Nuxt</Title>
+            <Meta name="description" content="Setting up CoscomUI in a Nuxt project" />
         </Head>
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
-                    <h1>Install PrimeVue with Nuxt</h1>
-                    <p>Setting up PrimeVue in a Nuxt project.</p>
+                    <h1>Install CoscomUI with Nuxt</h1>
+                    <p>Setting up CoscomUI in a Nuxt project.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>
@@ -31,7 +31,7 @@ import ComposablesDoc from '@/doc/nuxt/configuration/ComposablesDoc.vue';
 import DirectivesDoc from '@/doc/nuxt/configuration/DirectivesDoc.vue';
 import ImportPTDoc from '@/doc/nuxt/configuration/ImportPTDoc.vue';
 import OptionsDoc from '@/doc/nuxt/configuration/OptionsDoc.vue';
-import UsePrimeVueDoc from '@/doc/nuxt/configuration/UsePrimeVueDoc.vue';
+import UseCoscomUIDoc from '@/doc/nuxt/configuration/UseCoscomUIDoc.vue';
 
 export default {
     data() {
@@ -50,7 +50,7 @@ export default {
                 {
                     id: 'theming',
                     label: 'Theming',
-                    description: 'PrimeVue has two theming modes; styled or unstyled.',
+                    description: 'CoscomUI has two theming modes; styled or unstyled.',
                     children: [
                         {
                             id: 'styled',
@@ -75,8 +75,8 @@ export default {
                     children: [
                         {
                             id: 'useprimevue',
-                            label: 'usePrimeVue',
-                            component: UsePrimeVueDoc
+                            label: 'useCoscomUI',
+                            component: UseCoscomUIDoc
                         },
                         {
                             id: 'options',

@@ -1,6 +1,6 @@
 /**
  *
- * [Live Demo](https://www.primevue.org/confirmdialog/)
+ *
  *
  * @module confirmationoptions
  *
@@ -58,11 +58,11 @@ export interface ConfirmationOptions {
      */
     onHide?: () => void;
     /**
-     * Label of the accept button. Defaults to PrimeVue Locale configuration.
+     * Label of the accept button. Defaults to CoscomUI Locale configuration.
      */
     acceptLabel?: string | undefined;
     /**
-     * Label of the reject button. Defaults to PrimeVue Locale configuration.
+     * Label of the reject button. Defaults to CoscomUI Locale configuration.
      */
     rejectLabel?: string | undefined;
     /**

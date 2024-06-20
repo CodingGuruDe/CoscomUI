@@ -2,7 +2,6 @@
  *
  * Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps.
  *
- * [Live Demo](https://www.primevue.org/steps/)
  *
  * @module steps
  *
@@ -213,13 +212,10 @@ export interface StepsSlots {
 export interface StepsEmits {}
 
 /**
- * **PrimeVue - Steps**
+ * **CoscomUI - Steps**
  *
  * _Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps._
  *
- * [Live Demo](https://www.primevue.org/steps/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

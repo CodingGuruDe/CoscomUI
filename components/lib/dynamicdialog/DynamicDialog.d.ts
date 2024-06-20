@@ -2,7 +2,6 @@
  *
  * DynamicDialogs can be created dynamically with any component as the content using a DialogService.
  *
- * [Live Demo](https://primevue.org/dynamicdialog)
  *
  * @module dynamicdialog
  *
@@ -31,13 +30,10 @@ export interface DynamicDialogEmits {}
 export interface DynamicDialogSlots {}
 
 /**
- * **PrimeVue - DynamicDialog**
+ * **CoscomUI - DynamicDialog**
  *
  * _DynamicDialogs can be created dynamically with any component as the content using a DialogService._
  *
- * [Live Demo](https://www.primevue.org/dynamicdialog/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -1,8 +1,7 @@
 /**
  *
- * InputText renders a text field to enter data.
+ * InputText component is used for collecting user provided information.
  *
- * [Live Demo](https://www.primevue.org/inputtext/)
  *
  * @module inputtext
  *
@@ -135,11 +134,10 @@ export interface InputTextEmits {
 }
 
 /**
- * **PrimeVue - InputText**
+ * **CoscomUI - InputText**
  *
- * _InputText renders a text field to enter data._
+ * _InputText component is used for collecting user provided information.._
  *
- * [Live Demo](https://www.primevue.org/inputtext/)
  *
  * @group Component
  */

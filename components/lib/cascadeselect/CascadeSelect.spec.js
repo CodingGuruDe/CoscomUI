@@ -1,6 +1,6 @@
 import { nextTick } from 'vue';
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import CascadeSelect from './CascadeSelect.vue';
 
 describe('CascadeSelect.vue', () => {
@@ -9,7 +9,7 @@ describe('CascadeSelect.vue', () => {
     beforeEach(() => {
         wrapper = mount(CascadeSelect, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -18,15 +18,35 @@ describe('CascadeSelect.vue', () => {
                 modelValue: null,
                 options: [
                     {
-                        name: 'Australia',
-                        code: 'AU',
+                        name: 'Croatia',
+                        code: 'HR',
                         states: [
                             {
-                                name: 'New South Wales',
+                                name: 'Dalmatia',
                                 cities: [
-                                    { cname: 'Sydney', code: 'A-SY' },
-                                    { cname: 'Newcastle', code: 'A-NE' },
-                                    { cname: 'Wollongong', code: 'A-WO' }
+                                    { cname: 'Split', code: 'ST' },
+                                    { cname: 'Zadar', code: 'ZD' }
+                                ]
+                            },
+                            {
+                                name: 'Istrien',
+                                cities: [
+                                    { cname: 'Pula', code: 'PU' },
+                                    { cname: 'Rovinj', code: 'RO' }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        name: 'Germany',
+                        code: 'DE',
+                        states: [
+                            {
+                                name: 'Bayern',
+                                cities: [
+                                    { cname: 'Munich', code: 'M' },
+                                    { cname: 'Ebersberg', code: 'EBE' },
+                                    { cname: 'Wasserburg am Inn', code: 'WS' }
                                 ]
                             },
                             {
@@ -34,26 +54,6 @@ describe('CascadeSelect.vue', () => {
                                 cities: [
                                     { cname: 'Brisbane', code: 'A-BR' },
                                     { cname: 'Townsville', code: 'A-TO' }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        name: 'Canada',
-                        code: 'CA',
-                        states: [
-                            {
-                                name: 'Quebec',
-                                cities: [
-                                    { cname: 'Montreal', code: 'C-MO' },
-                                    { cname: 'Quebec City', code: 'C-QU' }
-                                ]
-                            },
-                            {
-                                name: 'Ontario',
-                                cities: [
-                                    { cname: 'Ottawa', code: 'C-OT' },
-                                    { cname: 'Toronto', code: 'C-TO' }
                                 ]
                             }
                         ]
@@ -108,7 +108,7 @@ describe('CascadeSelect.vue', () => {
 
         expect(wrapper.find('.p-cascadeselect-panel.p-cascadeselect-items').exists()).toBe(true);
         expect(wrapper.findAll('.p-cascadeselect-item').length).toBe(3);
-        expect(wrapper.findAll('.p-cascadeselect-item-text')[0].text()).toBe('Australia');
+        expect(wrapper.findAll('.p-cascadeselect-item-text')[0].text()).toBe('Croatia');
 
         const firstGroup = wrapper.findAll('.p-cascadeselect-item-content')[0];
 
@@ -119,21 +119,21 @@ describe('CascadeSelect.vue', () => {
         const sublist = wrapper.find('.p-cascadeselect-panel.p-cascadeselect-sublist');
 
         expect(sublist.findAll('.p-cascadeselect-item.p-cascadeselect-item-group').length).toBe(2);
-        expect(sublist.findAll('.p-cascadeselect-item-text')[0].text()).toBe('New South Wales');
+        expect(sublist.findAll('.p-cascadeselect-item-text')[0].text()).toBe('Dalmatia');
     });
 
     it('should accept custom icons', async () => {
         wrapper.setProps({
-            dropdownIcon: 'pi pi-discord',
-            optionGroupIcon: 'pi pi-bell'
+            dropdownIcon: 'cs el-discord',
+            optionGroupIcon: 'cs el-bell'
         });
 
         await nextTick();
 
-        expect(wrapper.find('.p-cascadeselect-trigger-icon').classes()).toContain('pi-discord');
+        expect(wrapper.find('.p-cascadeselect-trigger-icon').classes()).toContain('el-discord');
 
         await wrapper.trigger('click');
 
-        expect(wrapper.find('.p-cascadeselect-group-icon').classes()).toContain('pi-bell');
+        expect(wrapper.find('.p-cascadeselect-group-icon').classes()).toContain('el-bell');
     });
 });

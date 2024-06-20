@@ -2,7 +2,6 @@
  *
  * Sidebar is a panel component displayed as an overlay at the edges of the screen.
  *
- * [Live Demo](https://primevue.org/sidebar)
  *
  * @module sidebar
  *
@@ -243,13 +242,10 @@ export interface SidebarEmits {
 }
 
 /**
- * **PrimeVue - Sidebar**
+ * **CoscomUI - Sidebar**
  *
  * _Sidebar is a panel component displayed as an overlay._
  *
- * [Live Demo](https://www.primevue.org/sidebar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -2,7 +2,6 @@
  *
  * ConfirmPopup displays a confirmation overlay displayed relatively to its target.
  *
- * [Live Demo](https://www.primevue.org/confirmpopup)
  *
  * @module confirmpopup
  *
@@ -223,13 +222,10 @@ export interface ConfirmPopupSlots {
 export interface ConfirmPopupEmits {}
 
 /**
- * **PrimeVue - ConfirmPopup**
+ * **CoscomUI - ConfirmPopup**
  *
  * _ConfirmPopup displays a confirmation overlay displayed relatively to its target._
  *
- * [Live Demo](https://www.primevue.org/confirmpopup/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

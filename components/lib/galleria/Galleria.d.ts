@@ -2,7 +2,6 @@
  *
  * Galleria is an advanced content gallery component.
  *
- * [Live Demo](https://www.primevue.org/galleria/)
  *
  * @module galleria
  *
@@ -513,13 +512,10 @@ export interface GalleriaEmits {
 }
 
 /**
- * **PrimeVue - Galleria**
+ * **CoscomUI - Galleria**
  *
  * _Galleria is an advanced content gallery component._
  *
- * [Live Demo](https://www.primevue.org/galleria/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

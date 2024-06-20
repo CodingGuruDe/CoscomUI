@@ -2,7 +2,6 @@
  *
  * TabMenu is a navigation component that displays items as tab headers. Example below uses nested routes with TabMenu.
  *
- * [Live Demo](https://www.primevue.org/tabmenu/)
  *
  * @module tabmenu
  *
@@ -256,13 +255,10 @@ export interface TabMenuEmits {
 }
 
 /**
- * **PrimeVue - TabMenu**
+ * **CoscomUI - TabMenu**
  *
  * _TabMenu is a navigation component that displays items as tab headers. Example below uses nested routes with TabMenu._
  *
- * [Live Demo](https://www.primevue.org/tabmenu/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

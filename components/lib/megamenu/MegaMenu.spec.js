@@ -15,7 +15,7 @@ describe('MegaMenu.vue', () => {
                 model: [
                     {
                         label: 'Videos',
-                        icon: 'pi pi-fw pi-video',
+                        icon: 'cs el-fw pi-video',
                         items: [
                             [
                                 {
@@ -31,7 +31,7 @@ describe('MegaMenu.vue', () => {
                     },
                     {
                         label: 'Users',
-                        icon: 'pi pi-fw pi-users',
+                        icon: 'cs el-fw pi-users',
                         items: [
                             [
                                 {

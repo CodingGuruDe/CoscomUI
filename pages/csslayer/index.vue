@@ -1,15 +1,15 @@
 <template>
     <div>
         <Head>
-            <Title>CSS Layer - PrimeVue</Title>
-            <Meta name="description" content="Best practices for the PrimeVue cascade layer in styled mode." />
+            <Title>CSS Layer - CoscomUI</Title>
+            <Meta name="description" content="Best practices for the CoscomUI cascade layer in styled mode." />
         </Head>
 
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>CSS Layer</h1>
-                    <p>Best practices for the PrimeVue cascade layer in styled mode.</p>
+                    <p>Best practices for the CoscomUI cascade layer in styled mode.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>
@@ -42,7 +42,7 @@ export default {
                 {
                     id: 'libraries',
                     label: 'Libraries',
-                    description: 'Compatibility between PrimeVue and CSS libraries.',
+                    description: 'Compatibility between CoscomUI and CSS libraries.',
                     children: [
                         {
                             id: 'tailwind',

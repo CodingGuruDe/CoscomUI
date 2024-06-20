@@ -15,38 +15,38 @@ describe('Menubar.vue', () => {
                 model: [
                     {
                         label: 'File',
-                        icon: 'pi pi-fw pi-file',
+                        icon: 'cs el-fw pi-file',
                         items: [
                             {
                                 label: 'New',
-                                icon: 'pi pi-fw pi-plus',
+                                icon: 'cs el-fw pi-plus',
                                 items: [
                                     {
                                         label: 'Bookmark',
-                                        icon: 'pi pi-fw pi-bookmark'
+                                        icon: 'cs el-fw pi-bookmark'
                                     },
                                     {
                                         label: 'Video',
-                                        icon: 'pi pi-fw pi-video'
+                                        icon: 'cs el-fw pi-video'
                                     }
                                 ]
                             },
                             {
                                 label: 'Delete',
-                                icon: 'pi pi-fw pi-trash'
+                                icon: 'cs el-fw pi-trash'
                             },
                             {
                                 separator: true
                             },
                             {
                                 label: 'Export',
-                                icon: 'pi pi-fw pi-external-link'
+                                icon: 'cs el-fw pi-external-link'
                             }
                         ]
                     },
                     {
                         label: 'Quit',
-                        icon: 'pi pi-fw pi-power-off'
+                        icon: 'cs el-fw pi-power-off'
                     }
                 ]
             },

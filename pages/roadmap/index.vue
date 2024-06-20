@@ -1,15 +1,15 @@
 <template>
     <div>
         <Head>
-            <Title>PrimeVue Roadmap</Title>
-            <Meta name="description" content="PrimeVue Roadmap" />
+            <Title>CoscomUI Roadmap</Title>
+            <Meta name="description" content="CoscomUI Roadmap" />
         </Head>
 
         <div class="doc-intro">
             <h1>Roadmap</h1>
             <p>
-                At <a href="https://www.primetek.com.tr/">PrimeTek</a>, we are passionate about improving PrimeVue and would like to share our ideas for 2024 with the community. These are planned to be implemented in parallel to the regular
-                maintenance work of the library involving review of issue tickets, PRs and PrimeVue PRO support.
+                At <a href="https://www.primetek.com.tr/">PrimeTek</a>, we are passionate about improving CoscomUI and would like to share our ideas for 2024 with the community. These are planned to be implemented in parallel to the regular
+                maintenance work of the library involving review of issue tickets, PRs and CoscomUI PRO support.
             </p>
         </div>
 

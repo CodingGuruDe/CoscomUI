@@ -2,7 +2,6 @@
  *
  * Badge represents people using icons, labels and images.
  *
- * [Live Demo](https://www.primevue.org/badge)
  *
  * @module badge
  *
@@ -108,13 +107,10 @@ export interface BadgeSlots {
 export interface BadgeEmits {}
 
 /**
- * **PrimeVue - Badge**
+ * **CoscomUI - Badge**
  *
  * _Badge represents people using icons, labels and images._
  *
- * [Live Demo](https://www.primevue.org/badge/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -2,7 +2,6 @@
  *
  * DataView displays data in grid or list layout with pagination and sorting features.
  *
- * [Live Demo](https://www.primevue.org/dataview/)
  *
  * @module dataview
  *
@@ -328,13 +327,10 @@ export interface DataViewEmits {
 }
 
 /**
- * **PrimeVue - DataViewLayoutOptions**
+ * **CoscomUI - DataViewLayoutOptions**
  *
  * _DataView displays data in grid or list layout with pagination and sorting features._
  *
- * [Live Demo](https://www.primevue.org/dataview/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

@@ -462,7 +462,7 @@ function addPackageJson() {
     "homepage": "https://coscom.org/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/coscom/coscom-ui.git"
+        "url": "https://github.com/CodingGuruDe/CoscomUI.git"
     },
     "license": "MIT",
     "keywords": [

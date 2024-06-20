@@ -1,8 +1,7 @@
 /**
  *
- * ColorPicker groups a collection of contents in tabs.
+ * The v-color-picker allows you to select a color using a variety of input methods.
  *
- * [Live Demo](https://www.primevue.org/colorpicker/)
  *
  * @module colorpicker
  *
@@ -226,13 +225,10 @@ export interface ColorPickerEmits {
 }
 
 /**
- * **PrimeVue - ColorPicker**
+ * **CoscomUI - ColorPicker**
  *
- * _ColorPicker groups a collection of contents in tabs._
+ * _The v-color-picker allows you to select a color using a variety of input methods._
  *
- * [Live Demo](https://www.primevue.org/colorpicker/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

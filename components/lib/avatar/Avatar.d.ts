@@ -2,7 +2,6 @@
  *
  * Avatar represents people using icons, labels and images.
  *
- * - [Live Demo](https://primevue.org/avatar)
  *
  * @module avatar
  */
@@ -151,13 +150,10 @@ export interface AvatarEmits {
 }
 
 /**
- * **PrimeVue - Avatar**
+ * **CoscomUI - Avatar**
  *
  * _Avatar represents people using icons, labels and images._
  *
- * [Live Demo](https://www.primevue.org/avatar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

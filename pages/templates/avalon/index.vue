@@ -31,7 +31,7 @@
             </template>
             <template #description4>
                 Avalon uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/file/LuzEn29BAxr03T2vMQ5A1y/Preview-%7C-Avalon-1.0.0?type=design&mode=design&t=ME7xK2sAYOLoKCrT-1">preview the Figma file</a> before the purchase. Note that PrimeVue UI components are excluded from the
+                <a href="https://www.figma.com/file/LuzEn29BAxr03T2vMQ5A1y/Preview-%7C-Avalon-1.0.0?type=design&mode=design&t=ME7xK2sAYOLoKCrT-1">preview the Figma file</a> before the purchase. Note that CoscomUI UI components are excluded from the
                 Avalon Figma file as they are available in <NuxtLink to="/uikit">PrimeOne for Figma</NuxtLink> only.
             </template>
         </TemplateFeaturesAnimation>

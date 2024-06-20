@@ -1,13 +1,13 @@
 <template>
     <Head>
-        <Title>Auto Import - PrimeVue</Title>
-        <Meta name="description" content="On-demand PrimeVue components with auto importing." />
+        <Title>Auto Import - CoscomUI</Title>
+        <Meta name="description" content="On-demand CoscomUI components with auto importing." />
     </Head>
     <div class="doc">
         <div class="doc-main">
             <div class="doc-intro">
                 <h1>Auto Import</h1>
-                <p>On-demand PrimeVue components with auto importing.</p>
+                <p>On-demand CoscomUI components with auto importing.</p>
             </div>
             <DocSections :docs="docs" />
         </div>

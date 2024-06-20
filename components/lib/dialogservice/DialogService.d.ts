@@ -1,6 +1,5 @@
 /**
  *
- * [Live Demo](https://www.primevue.org/dynamicdialog/)
  * @module dialogservice-usedialog
  */
 import { Plugin } from 'vue';

@@ -2,7 +2,6 @@
  *
  * Splitter is utilized to separate and resize panels.
  *
- * [Live Demo](https://www.primevue.org/splitter/)
  *
  * @module splitter
  *
@@ -221,13 +220,10 @@ export interface SplitterEmits {
 }
 
 /**
- * **PrimeVue - Splitter**
+ * **CoscomUI - Splitter**
  *
  * _Splitter is utilized to separate and resize panels._
  *
- * [Live Demo](https://www.primevue.org/splitter/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

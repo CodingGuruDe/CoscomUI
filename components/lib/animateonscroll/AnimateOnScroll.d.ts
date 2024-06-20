@@ -2,7 +2,6 @@
  *
  *  AnimateOnScroll manages PrimeFlex CSS classes declaratively to during enter/leave animations on scroll or on page load.
  *
- * [Live Demo](https://primevue.org/animateonscroll)
  *
  * @module animateonscroll
  */
@@ -73,13 +72,10 @@ export interface AnimateOnScrollDirectiveBinding extends Omit<DirectiveBinding, 
 }
 
 /**
- * **PrimeVue - AnimateOnScroll**
+ * **CoscomUI - AnimateOnScroll**
  *
  * _AnimateOnScroll manages PrimeFlex CSS classes declaratively to during enter/leave animations on scroll or on page load._
  *
- * [Live Demo](https://www.primevue.org/animateonscroll/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  */
 declare const AnimateOnScroll: ObjectDirective;

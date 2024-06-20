@@ -34,7 +34,7 @@ describe('Tag.vue', () => {
 
 describe('Tag.vue', () => {
     it('renders props icon when passed', () => {
-        const icon = 'pi pi-discord';
+        const icon = 'cs el-discord';
         const wrapper = mount(Tag, {
             props: { icon }
         });
@@ -60,7 +60,7 @@ describe('Tag.vue', () => {
     it('should render default slot', () => {
         const wrapper = mount(Tag, {
             slots: {
-                default: h('i', { class: 'pi pi-discord' }, '')
+                default: h('i', { class: 'cs el-discord' }, '')
             }
         });
 

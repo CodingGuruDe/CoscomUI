@@ -1,15 +1,15 @@
 <template>
     <div>
         <Head>
-            <Title>Color System - PrimeVue</Title>
-            <Meta name="description" content="Each PrimeVue theme exports its own color palette." />
+            <Title>Color System - CoscomUI</Title>
+            <Meta name="description" content="Each CoscomUI theme exports its own color palette." />
         </Head>
 
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Color System</h1>
-                    <p>Each PrimeVue theme exports its own color palette.</p>
+                    <p>Each CoscomUI theme exports its own color palette.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>

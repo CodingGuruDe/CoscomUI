@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Menu from './Menu.vue';
 
 describe('Menu.vue', () => {
@@ -8,7 +8,7 @@ describe('Menu.vue', () => {
     beforeEach(() => {
         wrapper = mount(Menu, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     'router-link': true,
                     teleport: true
@@ -21,14 +21,14 @@ describe('Menu.vue', () => {
                         items: [
                             {
                                 label: 'Update',
-                                icon: 'pi pi-refresh',
+                                icon: 'cs el-refresh',
                                 command: () => {
                                     this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
                                 }
                             },
                             {
                                 label: 'Delete',
-                                icon: 'pi pi-times',
+                                icon: 'cs el-times',
                                 command: () => {
                                     this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
                                 }
@@ -40,12 +40,12 @@ describe('Menu.vue', () => {
                         items: [
                             {
                                 label: 'Vue Website',
-                                icon: 'pi pi-external-link',
+                                icon: 'cs el-external-link',
                                 url: 'https://vuejs.org/'
                             },
                             {
                                 label: 'Router',
-                                icon: 'pi pi-upload',
+                                icon: 'cs el-upload',
                                 to: '/fileupload'
                             }
                         ]

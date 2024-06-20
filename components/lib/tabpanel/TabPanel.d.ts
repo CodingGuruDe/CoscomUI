@@ -2,7 +2,6 @@
  *
  * TabPanel is a helper component for TabPanel component.
  *
- * [Live Demo](https://www.primevue.org/tabview/)
  *
  * @module tabpanel
  *
@@ -179,13 +178,10 @@ export interface TabPanelSlots {
 export interface TabPanelEmits {}
 
 /**
- * **PrimeVue - TabPanel**
+ * **CoscomUI - TabPanel**
  *
  * _TabPanel is a helper component for TabView component._
  *
- * [Live Demo](https://www.primevue.org/tabview/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

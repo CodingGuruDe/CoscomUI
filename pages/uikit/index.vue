@@ -1,19 +1,19 @@
 <template>
     <div>
         <Head>
-            <Title>UI Kit - PrimeVue</Title>
-            <Meta name="description" content="Design files for PrimeVue Components." />
+            <Title>UI Kit - CoscomUI</Title>
+            <Meta name="description" content="Design files for CoscomUI Components." />
         </Head>
 
         <div>
             <div style="border-radius: 50px; max-height: 500px" class="overflow-hidden mb-5 flex align-items-center">
-                <img alt="PrimeVue Designer" :src="coverImage" class="w-full" />
+                <img alt="CoscomUI Designer" :src="coverImage" class="w-full" />
             </div>
 
             <div class="card mb-5" style="border-radius: 50px">
                 <div class="flex flex-column md:flex-row align-items-center gap-4 md:gap-8 mb-8">
                     <div class="w-full md:w-6">
-                        <img alt="PrimeVue UI Kit" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-figma.png" class="w-full" />
+                        <img alt="CoscomUI UI Kit" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-figma.png" class="w-full" />
                     </div>
                     <div class="w-full md:w-6">
                         <div class="text-primary font-bold mb-2">UP-TO-DATE</div>
@@ -74,12 +74,12 @@
                         </ul>
                     </div>
                     <div class="w-full md:w-6">
-                        <img alt="PrimeVue Designer" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-system.png" class="w-full" />
+                        <img alt="CoscomUI Designer" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-system.png" class="w-full" />
                     </div>
                 </div>
                 <div class="flex flex-column md:flex-row align-items-center gap-4 md:gap-8 mb-8">
                     <div class="w-full md:w-6">
-                        <img alt="PrimeVue Designer" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-themes.png" class="w-full" />
+                        <img alt="CoscomUI Designer" src="https://primefaces.org/cdn/primevue/images/uikit/uikit-themes.png" class="w-full" />
                     </div>
                     <div class="w-full md:w-6">
                         <div class="text-primary font-bold mb-2">DARK MODE</div>

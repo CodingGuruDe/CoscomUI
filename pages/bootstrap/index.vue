@@ -1,8 +1,8 @@
 <template>
     <div>
         <Head>
-            <Title>Bootstrap - PrimeVue</Title>
-            <Meta name="description" content="Styling PrimeVue with Boostrap." />
+            <Title>Bootstrap - CoscomUI</Title>
+            <Meta name="description" content="Styling CoscomUI with Boostrap." />
         </Head>
 
         <div class="doc">

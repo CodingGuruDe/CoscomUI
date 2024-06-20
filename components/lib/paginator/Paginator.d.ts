@@ -2,7 +2,6 @@
  *
  * Paginator is a generic component to display content in paged format.
  *
- * [Live Demo](https://primevue.org/paginator)
  *
  * @module paginator
  *
@@ -364,13 +363,10 @@ export interface PaginatorEmits {
 }
 
 /**
- * **PrimeVue - Paginator**
+ * **CoscomUI - Paginator**
  *
  * _Paginator is a generic widget to display content in paged format._
  *
- * [Live Demo](https://www.primevue.org/paginator/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

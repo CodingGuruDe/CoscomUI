@@ -2,7 +2,6 @@
  *
  * TieredMenu displays submenus in nested overlays.
  *
- * [Live Demo](https://www.primevue.org/menu/)
  *
  * @module tieredmenu
  *
@@ -374,13 +373,10 @@ export interface TieredMenuEmits {
 }
 
 /**
- * **PrimeVue - TieredMenu**
+ * **CoscomUI - TieredMenu**
  *
  * _TieredMenu displays submenus in nested overlays._
  *
- * [Live Demo](https://www.primevue.org/tieredmenu/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

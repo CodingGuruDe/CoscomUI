@@ -2,7 +2,6 @@
  *
  * Tag component is used to categorize content.
  *
- * [Live Demo](https://www.primevue.org/tag)
  *
  * @module tag
  *
@@ -130,13 +129,10 @@ export interface TagSlots {
 export interface TagEmits {}
 
 /**
- * **PrimeVue - Tag**
+ * **CoscomUI - Tag**
  *
  * _Tag component is used to categorize content._
  *
- * [Live Demo](https://www.primevue.org/tag/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -2,7 +2,6 @@
  *
  * Menu is a navigation / command component that supports dynamic and static positioning.
  *
- * [Live Demo](https://www.primevue.org/menu/)
  *
  * @module menu
  *
@@ -324,13 +323,10 @@ export interface MenuEmits {
 }
 
 /**
- * **PrimeVue - Menu**
+ * **CoscomUI - Menu**
  *
  * _Menu is a navigation / command component that supports dynamic and static positioning._
  *
- * [Live Demo](https://www.primevue.org/menu/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

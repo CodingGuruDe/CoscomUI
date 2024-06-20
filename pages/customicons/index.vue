@@ -1,15 +1,15 @@
 <template>
     <div>
         <Head>
-            <Title>Vue Icon Library - PrimeVue</Title>
-            <Meta name="description" content="PrimeVue components can be used with any icon library using the templating features." />
+            <Title>Vue Icon Library - CoscomUI</Title>
+            <Meta name="description" content="CoscomUI components can be used with any icon library using the templating features." />
         </Head>
 
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Custom Icons</h1>
-                    <p>PrimeVue components can be used with any icon library using the templating features.</p>
+                    <p>CoscomUI components can be used with any icon library using the templating features.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>

@@ -46,7 +46,7 @@
             </template>
             <template #description4>
                 Ultima uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/file/ijQrxq13lxacgkb6XHlLxA/Preview-%7C-Ultima-2022?node-id=354%3A7715&t=gjWHprUDE5RJIg78-1">preview the Figma file</a> before the purchase. Note that PrimeVue UI components are excluded from the Ultima
+                <a href="https://www.figma.com/file/ijQrxq13lxacgkb6XHlLxA/Preview-%7C-Ultima-2022?node-id=354%3A7715&t=gjWHprUDE5RJIg78-1">preview the Figma file</a> before the purchase. Note that CoscomUI UI components are excluded from the Ultima
                 Figma file as they are available in <NuxtLink to="/uikit">PrimeOne for Figma</NuxtLink> only.
             </template>
         </TemplateFeaturesAnimation>

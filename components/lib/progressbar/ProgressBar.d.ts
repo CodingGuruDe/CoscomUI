@@ -2,7 +2,6 @@
  *
  * ProgressBar is a process status indicator.
  *
- * [Live Demo](https://www.primevue.org/progressbar)
  *
  * @module progressbar
  *
@@ -118,13 +117,10 @@ export interface ProgressBarSlots {
 export interface ProgressBarEmits {}
 
 /**
- * **PrimeVue - ProgressBar**
+ * **CoscomUI - ProgressBar**
  *
  * ProgressBar is a process status indicator._
  *
- * [Live Demo](https://www.primevue.org/progressbar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

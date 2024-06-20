@@ -2,7 +2,6 @@
  *
  * Rating component is a star based selection input.
  *
- * [Live Demo](https://www.primevue.org/rating/)
  *
  * @module rating
  *
@@ -287,13 +286,10 @@ export interface RatingEmits {
 }
 
 /**
- * **PrimeVue - Rating**
+ * **CoscomUI - Rating**
  *
  * _Rating component is a star based selection input._
  *
- * [Live Demo](https://www.primevue.org/rating/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

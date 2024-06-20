@@ -32,27 +32,7 @@
                     <img src="https://primefaces.org/cdn/primevue/images/themes/aura.png" alt="Aura" style="width: 1.5rem" />
                     <span class="font-medium">Aura</span>
                 </div>
-                <div class="flex align-items-center justify-content-between gap-3 mb-3">
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'green'), 'hover:border-500 surface-border': !isThemeActive('aura', 'green') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'green')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #4dac9c 0%, rgba(77, 172, 156, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'cyan'), 'hover:border-500 surface-border': !isThemeActive('aura', 'cyan') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'cyan')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #06b6d4 0%, rgba(6, 182, 212, 0.5) 100%)"></span>
-                    </button>
+                <div class="flex align-items-center gap-3 mb-3">
                     <button
                         :class="[
                             'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
@@ -61,90 +41,19 @@
                         style="border-radius: 30px"
                         @click="changeTheme('aura', 'blue')"
                     >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #4378e6 0%, rgba(67, 120, 230, 0.5) 100%)"></span>
+                        <span class="block h-1rem w-full" style="border-radius: 30px; background: #3399ff"></span>
                     </button>
                     <button
                         :class="[
                             'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'indigo'), 'hover:border-500 surface-border': !isThemeActive('aura', 'indigo') }
+                            { 'border-primary': isThemeActive('aura', 'green'), 'hover:border-500 surface-border': !isThemeActive('aura', 'green') }
                         ]"
                         style="border-radius: 30px"
-                        @click="changeTheme('aura', 'indigo')"
+                        @click="changeTheme('aura', 'green')"
                     >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #585fe0 0%, rgba(88, 95, 224, 0.5) 100%)"></span>
+                        <span class="block h-1rem w-full" style="border-radius: 30px; background: #0e9d6e"></span>
                     </button>
                 </div>
-                <div class="flex align-items-center justify-content-between gap-3 mb-3">
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'purple'), 'hover:border-500 surface-border': !isThemeActive('aura', 'purple') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'purple')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #7758e4 0%, rgba(119, 88, 228, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'amber'), 'hover:border-500 surface-border': !isThemeActive('aura', 'amber') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'amber')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #f59e0b 0%, rgba(245, 158, 11, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'teal'), 'hover:border-500 surface-border': !isThemeActive('aura', 'teal') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'teal')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #14b8a6 0%, rgba(20, 184, 166, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'pink'), 'hover:border-500 surface-border': !isThemeActive('aura', 'pink') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'pink')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #ec4899 0%, rgba(236, 72, 153, 0.5) 100%)"></span>
-                    </button>
-                </div>
-                <div class="flex align-items-center justify-content-between gap-3">
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'noir'), 'hover:border-500 surface-border': !isThemeActive('aura', 'noir') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'noir')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #0f172a 0%, rgba(0, 0, 0, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('aura', 'lime'), 'hover:border-500 surface-border': !isThemeActive('aura', 'lime') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('aura', 'lime')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #84cc16 0%, rgb(132, 204, 22, 0.5) 100%)"></span>
-                    </button>
-                    <span class="w-3"></span>
-                    <span class="w-3"></span>
-                </div>
-
-                <section class="pt-4 flex align-items-center justify-content-between">
-                    <span class="text-sm">Primary Focus Ring</span>
-                    <InputSwitch :modelValue="primaryFocusRing" @update:modelValue="onFocusRingColorChange" />
-                </section>
             </section>
 
             <section class="py-4 border-bottom-1 surface-border">
@@ -152,7 +61,7 @@
                     <img src="https://primefaces.org/cdn/primevue/images/themes/lara-light-teal.png" alt="Lara Light Teal" class="border-circle" style="width: 1.5rem" />
                     <span class="font-medium">Lara</span>
                 </div>
-                <div class="flex align-items-center justify-content-between gap-3 mb-3">
+                <div class="flex align-items-center gap-3 mb-3">
                     <button
                         :class="[
                             'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
@@ -161,7 +70,7 @@
                         style="border-radius: 30px"
                         @click="changeTheme('lara', 'green')"
                     >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #4dac9c 0%, rgba(77, 172, 156, 0.5) 100%)"></span>
+                        <span class="block h-1rem w-full" style="border-radius: 30px; background: #0e9d6e"></span>
                     </button>
                     <button
                         :class="[
@@ -171,104 +80,8 @@
                         style="border-radius: 30px"
                         @click="changeTheme('lara', 'cyan')"
                     >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #06b6d4 0%, rgba(6, 182, 212, 0.5) 100%)"></span>
+                        <span class="block h-1rem w-full" style="border-radius: 30px; background: #3399ff"></span>
                     </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'blue'), 'hover:border-500 surface-border': !isThemeActive('lara', 'blue') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'blue')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #4378e6 0%, rgba(67, 120, 230, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'indigo'), 'hover:border-500 surface-border': !isThemeActive('lara', 'indigo') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'indigo')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #585fe0 0%, rgba(88, 95, 224, 0.5) 100%)"></span>
-                    </button>
-                </div>
-                <div class="flex align-items-center justify-content-between gap-3">
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'purple'), 'hover:border-500 surface-border': !isThemeActive('lara', 'purple') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'purple')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #7758e4 0%, rgba(119, 88, 228, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'amber'), 'hover:border-500 surface-border': !isThemeActive('lara', 'amber') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'amber')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #f59e0b 0%, rgba(245, 158, 11, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'teal'), 'hover:border-500 surface-border': !isThemeActive('lara', 'teal') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'teal')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #14b8a6 0%, rgba(20, 184, 166, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('lara', 'pink'), 'hover:border-500 surface-border': !isThemeActive('lara', 'pink') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('lara', 'pink')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #ec4899 0%, rgba(236, 72, 153, 0.5) 100%)"></span>
-                    </button>
-                </div>
-            </section>
-            <section class="py-4 border-bottom-1 surface-border">
-                <div class="flex align-items-center gap-2 mb-3">
-                    <img src="https://primefaces.org/cdn/primevue/images/themes/md-light-indigo.svg" alt="Material Design" class="border-circle" style="width: 1.5rem" />
-                    <span class="font-medium">Material Design</span>
-                    <div class="ml-auto flex align-items-center gap-2">
-                        <label for="material-condensed" class="text-sm">Condensed</label>
-                        <InputSwitch inputId="material-condensed" :modelValue="compactMaterial" @update:modelValue="onCompactMaterialChange" class="ml-auto" />
-                    </div>
-                </div>
-                <div class="flex align-items-center justify-content-between gap-3">
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('md', 'indigo'), 'hover:border-500 surface-border': !isThemeActive('md', 'indigo') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('md', 'indigo')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #0565f2 0%, rgba(5, 101, 242, 0.5) 100%)"></span>
-                    </button>
-                    <button
-                        :class="[
-                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
-                            { 'border-primary': isThemeActive('md', 'deeppurple'), 'hover:border-500 surface-border': !isThemeActive('md', 'deeppurple') }
-                        ]"
-                        style="border-radius: 30px"
-                        @click="changeTheme('md', 'deeppurple')"
-                    >
-                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #702f92 0%, rgba(112, 47, 146, 0.5) 100%)"></span>
-                    </button>
-                    <div class="w-3"></div>
-                    <div class="w-3"></div>
                 </div>
             </section>
         </div>

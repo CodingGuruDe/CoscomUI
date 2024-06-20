@@ -1,15 +1,15 @@
 <template>
     <div>
         <Head>
-            <Title>Unstyled - PrimeVue</Title>
-            <Meta name="description" content="Styling PrimeVue with your favorite CSS library." />
+            <Title>Unstyled - CoscomUI</Title>
+            <Meta name="description" content="Styling CoscomUI with your favorite CSS library." />
         </Head>
 
         <div class="doc">
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Unstyled Mode</h1>
-                    <p>Styling PrimeVue with your favorite CSS library.</p>
+                    <p>Styling CoscomUI with your favorite CSS library.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>

@@ -2,7 +2,6 @@
  *
  * ProgressSpinner is a process status indicator.
  *
- * [Live Demo](https://www.primevue.org/progressspinner)
  *
  * @module progressspinner
  *
@@ -116,13 +115,10 @@ export interface ProgressSpinnerSlots {}
 export interface ProgressSpinnerEmits {}
 
 /**
- * **PrimeVue - ProgressSpinner**
+ * **CoscomUI - ProgressSpinner**
  *
  * _ProgressSpinner is a process status indicator._
  *
- * [Live Demo](https://www.primevue.org/progressspinner/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

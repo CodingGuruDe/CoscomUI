@@ -1,7 +1,6 @@
 /**
  * Row component is a helper component used to create grouping structures in DataTable.
  *
- * [Live Demo](https://www.primevue.org/datatable/)
  *
  * @module row
  */
@@ -95,13 +94,10 @@ export interface RowSlots {}
 export interface RowEmits {}
 
 /**
- * **PrimeVue - Row**
+ * **CoscomUI - Row**
  *
  * _Row component is a helper component used to create grouping structures in DataTable._
  *
- * [Live Demo](https://www.primevue.org/datatable/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

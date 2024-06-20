@@ -2,7 +2,6 @@
  *
  * Terminal is a text based user interface.
  *
- * [Live Demo](https://www.primevue.org/terminal)
  *
  * @module terminal
  *
@@ -152,13 +151,10 @@ export interface TerminalSlots {}
 export interface TerminalEmits {}
 
 /**
- * **PrimeVue - Terminal**
+ * **CoscomUI - Terminal**
  *
  * _Terminal is a text based user interface._
  *
- * [Live Demo](https://www.primevue.org/terminal/)
- * --- ---
- * ![Primevue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

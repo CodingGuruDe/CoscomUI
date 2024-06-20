@@ -2,7 +2,6 @@
  *
  * Card is a flexible container component.
  *
- * [Live Demo](https://www.primevue.org/card/)
  *
  * @module card
  *
@@ -140,13 +139,10 @@ export interface CardSlots {
 export interface CardEmits {}
 
 /**
- * **PrimeVue - Card**
+ * **CoscomUI - Card**
  *
  * _Card is a flexible container component._
  *
- * [Live Demo](https://www.primevue.org/card/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

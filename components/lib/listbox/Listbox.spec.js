@@ -9,10 +9,10 @@ describe('Listbox.vue', () => {
             props: {
                 modelValue: null,
                 options: [
-                    { name: 'New York', code: 'NY' },
-                    { name: 'Rome', code: 'RM' },
-                    { name: 'London', code: 'LDN' },
-                    { name: 'Istanbul', code: 'IST' },
+                    { name: 'Zagreb', code: 'ZG' },
+                    { name: 'Split', code: 'ST' },
+                    { name: 'Ebersberg', code: 'EBE' },
+                    { name: 'Munich', code: 'M' },
                     { name: 'Paris', code: 'PRS' }
                 ],
                 optionLabel: 'name'
@@ -23,7 +23,7 @@ describe('Listbox.vue', () => {
     it('should exist', () => {
         expect(wrapper.find('.p-listbox.p-component').exists()).toBe(true);
         expect(wrapper.findAll('li.p-listbox-item').length).toBe(5);
-        expect(wrapper.findAll('li.p-listbox-item')[0].attributes()['aria-label']).toBe('New York');
+        expect(wrapper.findAll('li.p-listbox-item')[0].attributes()['aria-label']).toBe('Zagreb');
     });
 
     it('should select a list item', async () => {
@@ -40,12 +40,12 @@ describe('Listbox.vue', () => {
         it('should have correct custom icon', async () => {
             await wrapper.setProps({
                 filter: true,
-                filterIcon: 'pi pi-discord'
+                filterIcon: 'cs el-discord'
             });
 
             const icon = wrapper.find('.p-listbox-filter-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
     });
 });

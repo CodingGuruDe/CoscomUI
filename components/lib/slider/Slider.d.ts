@@ -2,7 +2,6 @@
  *
  * Slider is a component to provide input with a drag handle.
  *
- * [Live Demo](https://www.primevue.org/slider/)
  *
  * @module slider
  *
@@ -187,13 +186,10 @@ export interface SliderEmits {
 }
 
 /**
- * **PrimeVue - Slider**
+ * **CoscomUI - Slider**
  *
  * _Slider is a component to provide input with a drag handle._
  *
- * [Live Demo](https://www.primevue.org/slider/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

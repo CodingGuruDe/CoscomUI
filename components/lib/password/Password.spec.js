@@ -42,13 +42,13 @@ describe('Password.vue', () => {
     });
 
     it('should toggle mask', async () => {
-        await wrapper.setProps({ toggleMask: true, showIcon: 'pi pi-eye', hideIcon: 'pi pi-eye-slash' });
+        await wrapper.setProps({ toggleMask: true, showIcon: 'cs el-eye', hideIcon: 'cs el-eye-slash' });
 
-        expect(wrapper.find('.pi.pi-eye').exists()).toBe(true);
+        expect(wrapper.find('.cs.el-eye').exists()).toBe(true);
 
         await wrapper.vm.onMaskToggle();
 
-        expect(wrapper.find('.pi.pi-eye').exists()).toBe(false);
-        expect(wrapper.find('.pi.pi-eye-slash').exists()).toBe(true);
+        expect(wrapper.find('.cs.el-eye').exists()).toBe(false);
+        expect(wrapper.find('.cs.el-eye-slash').exists()).toBe(true);
     });
 });

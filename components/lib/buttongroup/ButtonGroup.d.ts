@@ -2,7 +2,6 @@
  *
  * A set of Buttons can be displayed together using the ButtonGroup component.
  *
- * [Live Demo](https://www.primevue.org/button/)
  *
  * @module buttongroup
  *
@@ -92,13 +91,10 @@ export interface ButtonGroupSlots {
 export interface ButtonGroupEmits {}
 
 /**
- * **PrimeVue - ButtonGroup**
+ * **CoscomUI - ButtonGroup**
  *
  * _A set of Buttons can be displayed together using the ButtonGroup component._
  *
- * [Live Demo](https://www.primevue.org/button/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

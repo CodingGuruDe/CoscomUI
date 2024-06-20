@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Carousel from './Carousel.vue';
 
 describe('Carousel.vue', () => {
     it('should exist', async () => {
         const wrapper = mount(Carousel, {
             global: {
-                plugins: [PrimeVue]
+                plugins: [CoscomUI]
             },
             props: {
                 value: [

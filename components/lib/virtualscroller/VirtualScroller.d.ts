@@ -2,7 +2,6 @@
  *
  * VirtualScroller is a performant approach to handle huge data efficiently.
  *
- * [Live Demo](https://www.primevue.org/virtualscroller/)
  *
  * @module virtualscroller
  *
@@ -484,13 +483,10 @@ export interface VirtualScrollerEmits {
 }
 
 /**
- * **PrimeVue - VirtualScroller**
+ * **CoscomUI - VirtualScroller**
  *
  * _VirtualScroller is a performant approach to handle huge data efficiently._
  *
- * [Live Demo](https://www.primevue.org/virtualscroller/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

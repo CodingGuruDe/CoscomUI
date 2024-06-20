@@ -1,8 +1,7 @@
 /**
  *
- * CascadeSelect is a form component to select a value from a nested structure of options.
+ * CascadeSelect is a component used for collecting user provided information from a nested structure.
  *
- * [Live Demo](https://www.primevue.org/cascadeselect/)
  *
  * @module cascadeselect
  *
@@ -363,27 +362,27 @@ export interface CascadeSelectProps {
      */
     searchLocale?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from PrimeVue locale configuration.
+     * Text to be displayed in hidden accessible field when filtering returns any results. Defaults to value from CoscomUI locale configuration.
      * @defaultValue '{0} results are available'
      */
     searchMessage?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when options are selected. Defaults to value from PrimeVue locale configuration.
+     * Text to be displayed in hidden accessible field when options are selected. Defaults to value from CoscomUI locale configuration.
      * @defaultValue '{0} items selected'
      */
     selectionMessage?: string | undefined;
     /**
-     * Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from PrimeVue locale configuration.
+     * Text to be displayed in hidden accessible field when any option is not selected. Defaults to value from CoscomUI locale configuration.
      * @defaultValue No selected item
      */
     emptySelectionMessage?: string | undefined;
     /**
-     * Text to display when filtering does not return any results. Defaults to value from PrimeVue locale configuration.
+     * Text to display when filtering does not return any results. Defaults to value from CoscomUI locale configuration.
      * @defaultValue No results found
      */
     emptySearchMessage?: string | undefined;
     /**
-     * Text to be displayed when there are no options available. Defaults to value from PrimeVue locale configuration.
+     * Text to be displayed when there are no options available. Defaults to value from CoscomUI locale configuration.
      * @defaultValue No available options
      */
     emptyMessage?: string | undefined;
@@ -516,13 +515,10 @@ export interface CascadeSelectEmits {
 }
 
 /**
- * **PrimeVue - CascadeSelect**
+ * **CoscomUI - CascadeSelect**
  *
- * _CascadeSelect is a form component to select a value from a nested structure of options._
+ * _CascadeSelect is a component used for collecting user provided information from a nested structure._
  *
- * [Live Demo](https://www.primevue.org/cascadeselect/)
- * --- ---
- * ![PrimeVue(https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

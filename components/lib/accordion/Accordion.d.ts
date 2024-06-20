@@ -2,7 +2,6 @@
  *
  * Accordion groups a collection of contents in tabs.
  *
- * [Live Demo](https://coscomui.coscom.de/accordion/)
  *
  * @module accordion
  *
@@ -223,7 +222,6 @@ export interface AccordionEmits {
  *
  * _Accordion groups a collection of contents in tabs._
  *
- * [Live Demo](https://coscomui.coscom.de/accordion/)
  *
  * @group Component
  *

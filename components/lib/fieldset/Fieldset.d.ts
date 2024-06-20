@@ -2,7 +2,6 @@
  *
  * Fieldset is a grouping component with the optional content toggle feature.
  *
- * [Live Demo](https://www.primevue.org/fieldset/)
  *
  * @module fieldset
  *
@@ -198,13 +197,10 @@ export interface FieldsetEmits {
 }
 
 /**
- * **PrimeVue - Fieldset**
+ * **CoscomUI - Fieldset**
  *
  * _Fieldset is a grouping component with the optional content toggle feature._
  *
- * [Live Demo](https://www.primevue.org/fieldset/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

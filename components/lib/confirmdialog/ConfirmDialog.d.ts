@@ -2,7 +2,6 @@
  *
  * ConfirmDialog uses a Dialog UI with confirmDialog method or <ConfirmDialog> tag.
  *
- * [Live Demo](https://www.primevue.org/confirmdialog)
  *
  * @module confirmdialog
  *
@@ -278,13 +277,10 @@ export interface ConfirmDialogSlots {
 export interface ConfirmDialogEmits {}
 
 /**
- * **PrimeVue - ConfirmDialog**
+ * **CoscomUI - ConfirmDialog**
  *
  * _ConfirmDialog uses a Dialog UI with confirmDialog method or <ConfirmDialog> tag._
  *
- * [Live Demo](https://www.primevue.org/confirmdialog/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

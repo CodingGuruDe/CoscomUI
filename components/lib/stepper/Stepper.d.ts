@@ -2,7 +2,6 @@
  *
  * Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multi-step process.
  *
- * [Live Demo](https://www.primevue.org/stepper/)
  *
  * @module stepper
  *
@@ -175,13 +174,10 @@ export interface StepperEmits {
 }
 
 /**
- * **PrimeVue - Stepper**
+ * **CoscomUI - Stepper**
  *
  * _Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multi-step process._
  *
- * [Live Demo](https://www.primevue.org/stepper/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

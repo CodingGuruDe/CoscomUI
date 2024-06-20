@@ -2,7 +2,6 @@
  *
  * SplitterPanel is a helper component for Splitter component.
  *
- * [Live Demo](https://www.primevue.org/splitter/)
  *
  * @module splitterpanel
  *
@@ -119,13 +118,10 @@ export interface SplitterPanelSlots {
 export interface SplitterPanelEmits {}
 
 /**
- * **PrimeVue - SplitterPanel**
+ * **CoscomUI - SplitterPanel**
  *
  * _SplitterPanel is a helper component for Splitter component._
  *
- * [Live Demo](https://www.primevue.org/splitterpanel/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

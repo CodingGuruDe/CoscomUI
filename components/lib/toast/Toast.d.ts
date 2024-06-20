@@ -2,7 +2,6 @@
  *
  * Toast is used to display messages in an overlay.
  *
- * [Live Demo](https://www.primevue.org/toast/)
  *
  * @module toast
  *
@@ -340,13 +339,10 @@ export interface ToastEmits {
 }
 
 /**
- * **PrimeVue - Toast**
+ * **CoscomUI - Toast**
  *
  * _Toast is used to display messages in an overlay._
  *
- * [Live Demo](https://www.primevue.org/toast/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

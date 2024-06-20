@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import MultiSelect from './MultiSelect.vue';
 
 describe('MultiSelect.vue', () => {
@@ -8,7 +8,7 @@ describe('MultiSelect.vue', () => {
     beforeEach(async () => {
         wrapper = mount(MultiSelect, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -16,11 +16,11 @@ describe('MultiSelect.vue', () => {
             props: {
                 modelValue: null,
                 options: [
-                    { name: 'New York', code: 'NY' },
-                    { name: 'Rome', code: 'RM' },
-                    { name: 'London', code: 'LDN' },
-                    { name: 'Istanbul', code: 'IST' },
-                    { name: 'Paris', code: 'PRS' }
+                    { name: 'Ebersberg', code: 'EBE' },
+                    { name: 'Munich', code: 'M' },
+                    { name: 'Zagreb', code: 'ZG' },
+                    { name: 'Split', code: 'ST' },
+                    { name: 'Rijeka', code: 'RI' }
                 ],
                 optionLabel: 'name',
                 placeholder: 'Select Cities',
@@ -37,8 +37,8 @@ describe('MultiSelect.vue', () => {
         await wrapper.vm.onContainerClick();
 
         expect(wrapper.findAll('li.p-multiselect-item').length).toBe(5);
-        expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['aria-label']).toBe('New York');
-        expect(wrapper.findAll('li.p-multiselect-item')[0].text()).toBe('New York');
+        expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['aria-label']).toBe('Ebersberg');
+        expect(wrapper.findAll('li.p-multiselect-item')[0].text()).toBe('Ebersberg');
     });
 
     it('should select an item', async () => {
@@ -80,7 +80,7 @@ describe('MultiSelect.vue', () => {
         });
 
         expect(wrapper.find('.p-multiselect-token').exists()).toBe(true);
-        expect(wrapper.find('.p-multiselect-token-label').text()).toBe('New York');
+        expect(wrapper.find('.p-multiselect-token-label').text()).toBe('Ebersberg');
     });
 
     describe('custom icons', () => {
@@ -88,28 +88,28 @@ describe('MultiSelect.vue', () => {
             await wrapper.setProps({
                 display: 'chip',
                 modelValue: [wrapper.vm.options[0]],
-                removeTokenIcon: 'pi pi-discord'
+                removeTokenIcon: 'cs el-discord'
             });
 
             const icon = wrapper.find('.p-multiselect-token-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom dropdown icon', async () => {
             await wrapper.setProps({
-                dropdownIcon: 'pi pi-discord'
+                dropdownIcon: 'cs el-discord'
             });
 
             const icon = wrapper.find('.p-multiselect-trigger-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom filter icon', async () => {
             await wrapper.setProps({
                 filter: true,
-                filterIcon: 'pi pi-discord'
+                filterIcon: 'cs el-discord'
             });
 
             await wrapper.vm.onContainerClick();
@@ -121,30 +121,30 @@ describe('MultiSelect.vue', () => {
 
         it('should have custom close icon', async () => {
             await wrapper.setProps({
-                closeIcon: 'pi pi-discord'
+                closeIcon: 'cs el-discord'
             });
 
             await wrapper.vm.onContainerClick();
 
             const icon = wrapper.find('.p-multiselect-close-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom checkbox icons', async () => {
             await wrapper.setProps({
-                checkboxIcon: 'pi pi-discord'
+                checkboxIcon: 'cs el-discord'
             });
 
             await wrapper.setProps({
-                checkboxIcon: 'pi pi-discord',
+                checkboxIcon: 'cs el-discord',
                 modelValue: wrapper.vm.options
             });
 
             await wrapper.vm.onContainerClick();
 
             wrapper.findAll('.p-checkbox-icon').forEach((icon) => {
-                expect(icon.classes()).toContain('pi-discord');
+                expect(icon.classes()).toContain('el-discord');
             });
         });
     });
@@ -154,10 +154,20 @@ describe('MultiSelect.vue', () => {
             name: 'Germany',
             code: 'DE',
             items: [
-                { name: 'Berlin', value: 'Berlin' },
-                { name: 'Frankfurt', value: 'Frankfurt' },
+                { name: 'Ebersberg', value: 'Ebersberg' },
+                { name: 'Munich', value: 'Munich' },
                 { name: 'Hamburg', value: 'Hamburg' },
-                { name: 'Munich', value: 'Munich' }
+                { name: 'Dortmund', value: 'Dortmund' }
+            ]
+        },
+        {
+            name: 'Croatia',
+            code: 'HR',
+            items: [
+                { name: 'Zagreb', value: 'Zagreb' },
+                { name: 'Split', value: 'Split' },
+                { name: 'Rijeka', value: 'Rijeka' },
+                { name: 'Osijek', value: 'Osijek' }
             ]
         },
         {
@@ -168,16 +178,6 @@ describe('MultiSelect.vue', () => {
                 { name: 'Los Angeles', value: 'Los Angeles' },
                 { name: 'New York', value: 'New York' },
                 { name: 'San Francisco', value: 'San Francisco' }
-            ]
-        },
-        {
-            name: 'Japan',
-            code: 'JP',
-            items: [
-                { name: 'Kyoto', value: 'Kyoto' },
-                { name: 'Osaka', value: 'Osaka' },
-                { name: 'Tokyo', value: 'Tokyo' },
-                { name: 'Yokohama', value: 'Yokohama' }
             ]
         }
     ];

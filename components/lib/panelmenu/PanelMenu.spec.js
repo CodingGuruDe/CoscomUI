@@ -16,38 +16,38 @@ describe('PanelMenu', () => {
                     {
                         key: '2',
                         label: 'Users',
-                        icon: 'pi pi-fw pi-user',
+                        icon: 'cs el-fw pi-user',
                         items: [
                             {
                                 key: '2_0',
                                 label: 'New',
-                                icon: 'pi pi-fw pi-user-plus'
+                                icon: 'cs el-fw pi-user-plus'
                             },
                             {
                                 key: '2_1',
                                 label: 'Delete',
-                                icon: 'pi pi-fw pi-user-minus'
+                                icon: 'cs el-fw pi-user-minus'
                             },
                             {
                                 key: '2_2',
                                 label: 'Search',
-                                icon: 'pi pi-fw pi-users',
+                                icon: 'cs el-fw pi-users',
                                 items: [
                                     {
                                         key: '2_2_0',
                                         label: 'Filter',
-                                        icon: 'pi pi-fw pi-filter',
+                                        icon: 'cs eli-fw pi-filter',
                                         items: [
                                             {
                                                 key: '2_2_0_0',
                                                 label: 'Print',
-                                                icon: 'pi pi-fw pi-print'
+                                                icon: 'cs el-fw pi-print'
                                             }
                                         ]
                                     },
                                     {
                                         key: '2_2_1',
-                                        icon: 'pi pi-fw pi-bars',
+                                        icon: 'cs el-fw pi-bars',
                                         label: 'List'
                                     }
                                 ]

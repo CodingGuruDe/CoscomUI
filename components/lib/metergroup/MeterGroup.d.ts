@@ -2,7 +2,6 @@
  *
  * MeterGroup is a group of process status indicators.
  *
- * [Live Demo](https://primevue.org/metergroup)
  *
  * @module metergroup
  *
@@ -281,13 +280,10 @@ export interface MeterGroupSlots {
 export interface MeterGroupEmits {}
 
 /**
- * **PrimeVue - MeterGroup**
+ * **CoscomUI - MeterGroup**
  *
  * _MeterGroup is a group of process status indicators._
  *
- * [Live Demo](https://www.primevue.org/metergroup/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

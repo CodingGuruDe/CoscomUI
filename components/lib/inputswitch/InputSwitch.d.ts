@@ -2,7 +2,6 @@
  *
  * InputSwitch is used to select a boolean value.
  *
- * [Live Demo](https://www.primevue.org/inputswitch/)
  *
  * @module inputswitch
  *
@@ -194,13 +193,10 @@ export interface InputSwitchEmits {
 }
 
 /**
- * **PrimeVue - InputSwitch**
+ * **CoscomUI - InputSwitch**
  *
  * _InputSwitch is used to select a boolean value._
  *
- * [Live Demo](https://www.primevue.org/inputswitch/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

@@ -2,7 +2,6 @@
  *
  * InputGroupAddon displays text, icon, buttons and other content can be grouped next to an input.
  *
- * [Live Demo](https://www.primevue.org/inputgroup/)
  *
  * @module inputgroupaddon
  *
@@ -101,13 +100,10 @@ export interface InputGroupAddonSlots {
 export interface InputGroupAddonEmits {}
 
 /**
- * **PrimeVue - InputGroupAddon**
+ * **CoscomUI - InputGroupAddon**
  *
  * _InputGroupAddon displays text, icon, buttons and other content can be grouped next to an input._
  *
- * [Live Demo](https://www.primevue.org/inputgroupaddon/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

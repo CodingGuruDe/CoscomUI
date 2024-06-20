@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import ColorPicker from './ColorPicker.vue';
 
 describe('ColorPicker.vue', () => {
@@ -8,7 +8,7 @@ describe('ColorPicker.vue', () => {
     beforeEach(() => {
         wrapper = mount(ColorPicker, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }

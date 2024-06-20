@@ -1,13 +1,13 @@
 import { inject } from 'vue';
 
-export const PrimeVueToastSymbol = Symbol();
+export const CoscomToastSymbol = Symbol();
 
 export function useToast() {
-    const PrimeVueToast = inject(PrimeVueToastSymbol);
+    const CoscomToast = inject(CoscomToastSymbol);
 
-    if (!PrimeVueToast) {
-        throw new Error('No PrimeVue Toast provided!');
+    if (!CoscomToast) {
+        throw new Error('No Toast provided!');
     }
 
-    return PrimeVueToast;
+    return CoscomToast;
 }

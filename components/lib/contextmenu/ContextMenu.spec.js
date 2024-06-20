@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import ContextMenu from './ContextMenu.vue';
 
 describe('ContextMenu.vue', () => {
@@ -8,7 +8,7 @@ describe('ContextMenu.vue', () => {
     beforeEach(() => {
         wrapper = mount(ContextMenu, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     'router-link': true,
                     teleport: true
@@ -18,85 +18,85 @@ describe('ContextMenu.vue', () => {
                 model: [
                     {
                         label: 'File',
-                        icon: 'pi pi-fw pi-file',
+                        icon: 'cs el-fw pi-file',
                         items: [
                             {
                                 label: 'New',
-                                icon: 'pi pi-fw pi-plus',
+                                icon: 'cs el-fw pi-plus',
                                 items: [
                                     {
                                         label: 'Bookmark',
-                                        icon: 'pi pi-fw pi-bookmark'
+                                        icon: 'cs el-fw pi-bookmark'
                                     },
                                     {
                                         label: 'Video',
-                                        icon: 'pi pi-fw pi-video'
+                                        icon: 'cs el-fw pi-video'
                                     }
                                 ]
                             },
                             {
                                 label: 'Delete',
-                                icon: 'pi pi-fw pi-trash'
+                                icon: 'cs el-fw pi-trash'
                             },
                             {
                                 separator: true
                             },
                             {
                                 label: 'Export',
-                                icon: 'pi pi-fw pi-external-link'
+                                icon: 'cs el-fw pi-external-link'
                             }
                         ]
                     },
                     {
                         label: 'Edit',
-                        icon: 'pi pi-fw pi-pencil',
+                        icon: 'cs el-fw pi-pencil',
                         items: [
                             {
                                 label: 'Left',
-                                icon: 'pi pi-fw pi-align-left'
+                                icon: 'cs el-fw pi-align-left'
                             },
                             {
                                 label: 'Right',
-                                icon: 'pi pi-fw pi-align-right'
+                                icon: 'cs el-fw pi-align-right'
                             },
                             {
                                 label: 'Center',
-                                icon: 'pi pi-fw pi-align-center'
+                                icon: 'cs el-fw pi-align-center'
                             },
                             {
                                 label: 'Justify',
-                                icon: 'pi pi-fw pi-align-justify'
+                                icon: 'cs el-fw pi-align-justify'
                             }
                         ]
                     },
                     {
                         label: 'Users',
-                        icon: 'pi pi-fw pi-user',
+                        icon: 'cs el-fw pi-user',
                         items: [
                             {
                                 label: 'New',
-                                icon: 'pi pi-fw pi-user-plus'
+                                icon: 'cs el-fw pi-user-plus'
                             },
                             {
                                 label: 'Delete',
-                                icon: 'pi pi-fw pi-user-minus'
+                                icon: 'cs el-fw pi-user-minus'
                             },
                             {
                                 label: 'Search',
-                                icon: 'pi pi-fw pi-users',
+                                icon: 'cs el-fw pi-users',
                                 items: [
                                     {
                                         label: 'Filter',
-                                        icon: 'pi pi-fw pi-filter',
+                                        icon: 'cs el-fw pi-filter',
                                         items: [
                                             {
                                                 label: 'Print',
-                                                icon: 'pi pi-fw pi-print'
+                                                icon: 'cs el-fw pi-print'
                                             }
                                         ]
                                     },
                                     {
-                                        icon: 'pi pi-fw pi-bars',
+                                        icon: 'cs el-fw pi-bars',
                                         label: 'List'
                                     }
                                 ]
@@ -105,29 +105,29 @@ describe('ContextMenu.vue', () => {
                     },
                     {
                         label: 'Events',
-                        icon: 'pi pi-fw pi-calendar',
+                        icon: 'cs el-fw pi-calendar',
                         items: [
                             {
                                 label: 'Edit',
-                                icon: 'pi pi-fw pi-pencil',
+                                icon: 'cs el-fw pi-pencil',
                                 items: [
                                     {
                                         label: 'Save',
-                                        icon: 'pi pi-fw pi-calendar-plus'
+                                        icon: 'cs el-fw pi-calendar-plus'
                                     },
                                     {
                                         label: 'Delete',
-                                        icon: 'pi pi-fw pi-calendar-minus'
+                                        icon: 'cs el-fw pi-calendar-minus'
                                     }
                                 ]
                             },
                             {
                                 label: 'Archive',
-                                icon: 'pi pi-fw pi-calendar-times',
+                                icon: 'cs el-fw pi-calendar-times',
                                 items: [
                                     {
                                         label: 'Remove',
-                                        icon: 'pi pi-fw pi-calendar-minus'
+                                        icon: 'cs el-fw pi-calendar-minus'
                                     }
                                 ]
                             }
@@ -138,7 +138,7 @@ describe('ContextMenu.vue', () => {
                     },
                     {
                         label: 'Quit',
-                        icon: 'pi pi-fw pi-power-off'
+                        icon: 'cs el-fw pi-power-off'
                     }
                 ]
             }

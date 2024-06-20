@@ -21,24 +21,24 @@ describe('Chips.vue', () => {
     it('should add item', async () => {
         const addItem = vi.spyOn(wrapper.vm, 'addItem');
 
-        await wrapper.vm.addItem({}, 'PrimeVue', false);
+        await wrapper.vm.addItem({}, 'CoscomUI', false);
 
-        await wrapper.setProps({ modelValue: ['PrimeVue'] });
+        await wrapper.setProps({ modelValue: ['CoscomUI'] });
 
         expect(addItem).toHaveBeenCalled();
         expect(wrapper.findAll('.p-chips-token').length).toBe(1);
         expect(wrapper.find('.p-chips-token-label').exists()).toBe(true);
-        expect(wrapper.find('.p-chips-token-label').text()).toBe('PrimeVue');
+        expect(wrapper.find('.p-chips-token-label').text()).toBe('CoscomUI');
     });
 
     it('should have correct custom chip removal icon', async () => {
         await wrapper.setProps({
             modelValue: ['foo', 'bar'],
-            removeTokenIcon: 'pi pi-discord'
+            removeTokenIcon: 'cs el-discord'
         });
 
         const icon = wrapper.find('.p-chips-token-icon');
 
-        expect(icon.classes()).toContain('pi-discord');
+        expect(icon.classes()).toContain('el-discord');
     });
 });

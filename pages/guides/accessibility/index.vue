@@ -1,7 +1,7 @@
 <template>
     <div>
         <Head>
-            <Title>Accessibility - PrimeVue</Title>
+            <Title>Accessibility - CoscomUI</Title>
             <Meta name="description" content="Accessible Vue UI Components." />
         </Head>
 
@@ -9,7 +9,7 @@
             <div class="doc-main">
                 <div class="doc-intro">
                     <h1>Accessibility</h1>
-                    <p>PrimeVue has WCAG 2.1 AA level compliance, refer to the accessibility documentation of each component for detailed information.</p>
+                    <p>CoscomUI has WCAG 2.1 AA level compliance, refer to the accessibility documentation of each component for detailed information.</p>
                 </div>
                 <DocSections :docs="docs" />
             </div>

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Head>
-            <Title>Bulma - PrimeVue</Title>
+            <Title>Bulma - CoscomUI</Title>
             <Meta name="description" content="Bulma is a free, open source framework that provides ready-to-use frontend components and utilities.." />
         </Head>
 

@@ -2,7 +2,6 @@
  *
  * Textarea is a multi-line text input element.
  *
- * [Live Demo](https://www.primevue.org/textarea/)
  *
  * @module textarea
  *
@@ -141,13 +140,10 @@ export interface TextareaEmits {
 }
 
 /**
- * **PrimeVue - Textarea**
+ * **CoscomUI - Textarea**
  *
  * _Textarea is a multi-line text input element._
  *
- * [Live Demo](https://www.primevue.org/textarea/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

@@ -2,7 +2,6 @@
  *
  * ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.
  *
- * [Live Demo](https://www.primevue.org/scrollpanel/)
  *
  * @module scrollpanel
  *
@@ -147,13 +146,10 @@ export interface ScrollPanelSlots {
 export interface ScrollPanelEmits {}
 
 /**
- * **PrimeVue - ScrollPanel**
+ * **CoscomUI - ScrollPanel**
  *
  * _ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.._
  *
- * [Live Demo](https://www.primevue.org/scrollpanel/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

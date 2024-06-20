@@ -2,7 +2,6 @@
  *
  * AccordionTab is a helper component for Accordion.
  *
- * [Live Demo](https://www.primevue.org/accordion/)
  *
  * @module accordiontab
  *
@@ -214,13 +213,10 @@ export interface AccordionTabSlots {
 export interface AccordionTabEmits {}
 
 /**
- * **PrimeVue - Accordion**
+ * **CoscomUI - Accordion**
  *
  * _AccordionTab is a helper component for Accordion.._
  *
- * [Live Demo](https://www.primevue.org/accordion/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

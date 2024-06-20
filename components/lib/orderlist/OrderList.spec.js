@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import OrderList from './OrderList.vue';
 
 describe('OrderList.vue', () => {
@@ -8,7 +8,7 @@ describe('OrderList.vue', () => {
     beforeEach(() => {
         wrapper = mount(OrderList, {
             global: {
-                plugins: [PrimeVue]
+                plugins: [CoscomUI]
             },
             props: {
                 modelValue: [

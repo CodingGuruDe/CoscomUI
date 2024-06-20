@@ -75,7 +75,7 @@ describe('Inplace.vue', () => {
             },
             props: {
                 closable: true,
-                closeIcon: 'pi pi-discord'
+                closeIcon: 'cs el-discord'
             },
             slots: {
                 display: `{{'Click to Edit'}}`,
@@ -85,6 +85,6 @@ describe('Inplace.vue', () => {
 
         await wrapper.vm.open({});
 
-        expect(wrapper.find('.pi.pi-discord').exists()).toBe(true);
+        expect(wrapper.find('.cs.el-discord').exists()).toBe(true);
     });
 });

@@ -2,7 +2,6 @@
  *
  * PickList is used to reorder items between different lists.
  *
- * [Live Demo](https://primevue.org/picklist)
  *
  * @module picklist
  *
@@ -594,13 +593,10 @@ export interface PickListEmits {
 }
 
 /**
- * **PrimeVue - PickList**
+ * **CoscomUI - PickList**
  *
  * _PickList is used to reorder items between different lists._
  *
- * [Live Demo](https://www.primevue.org/picklist/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

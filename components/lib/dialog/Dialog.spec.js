@@ -1,4 +1,4 @@
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import { mount } from '@vue/test-utils';
 import Dialog from './Dialog.vue';
 
@@ -6,7 +6,7 @@ describe('Dialog.vue', () => {
     it('is Dialog element exist', async () => {
         const wrapper = mount(Dialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -32,7 +32,7 @@ describe('Dialog.vue', () => {
     it('slot checks', async () => {
         const wrapper = mount(Dialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -59,14 +59,14 @@ describe('closable', () => {
     it('should have custom close icon when provided', async () => {
         const wrapper = mount(Dialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 closable: true,
-                closeIcon: 'pi pi-discord',
+                closeIcon: 'cs el-discord',
                 showHeader: true,
                 visible: false
             },
@@ -81,7 +81,7 @@ describe('closable', () => {
 
         const icon = wrapper.find('.p-dialog-header-close-icon');
 
-        expect(icon.classes()).toContain('pi-discord');
+        expect(icon.classes()).toContain('el-discord');
     });
 });
 
@@ -89,15 +89,15 @@ describe('maximizable', () => {
     it('should have custom maximize and minimize icons when provided', async () => {
         const wrapper = mount(Dialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 maximizable: true,
-                maximizeIcon: 'pi pi-discord',
-                minimizeIcon: 'pi pi-facebook',
+                maximizeIcon: 'cs el-discord',
+                minimizeIcon: 'cs el-facebook',
                 showHeader: true,
                 visible: false
             },
@@ -113,10 +113,10 @@ describe('maximizable', () => {
 
         const icon = wrapper.find('.p-dialog-header-maximize-icon');
 
-        expect(icon.classes()).toContain('pi-discord');
+        expect(icon.classes()).toContain('el-discord');
 
         await wrapper.setData({ maximized: true });
 
-        expect(icon.classes()).toContain('pi-facebook');
+        expect(icon.classes()).toContain('el-facebook');
     });
 });

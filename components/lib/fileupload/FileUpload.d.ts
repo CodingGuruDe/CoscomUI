@@ -2,7 +2,6 @@
  *
  * FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
  *
- * [Live Demo](https://www.primevue.org/fileupload/)
  *
  * @module fileupload
  *
@@ -398,20 +397,20 @@ export interface FileUploadProps {
      */
     previewWidth?: number | undefined;
     /**
-     * Label of the choose button. Defaults to PrimeVue Locale configuration.
+     * Label of the choose button. Defaults to CoscomUI Locale configuration.
      */
     chooseLabel?: string | undefined;
     /**
-     * Label of the upload button. Defaults to PrimeVue Locale configuration.
+     * Label of the upload button. Defaults to CoscomUI Locale configuration.
      */
     uploadLabel?: string | undefined;
     /**
-     * Label of the cancel button. Defaults to PrimeVue Locale configuration.
+     * Label of the cancel button. Defaults to CoscomUI Locale configuration.
      * @defaultValue Cancel
      */
     cancelLabel?: string | undefined;
     /**
-     * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeVue Locale configuration.
+     * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to CoscomUI Locale configuration.
      */
     customUpload?: boolean | undefined;
     /**
@@ -611,13 +610,10 @@ export interface FileUploadEmits {
 }
 
 /**
- * **PrimeVue - FileUpload**
+ * **CoscomUI - FileUpload**
  *
  * _FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations._
  *
- * [Live Demo](https://www.primevue.org/fileupload/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

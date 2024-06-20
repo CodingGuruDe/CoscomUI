@@ -2,7 +2,6 @@
  *
  * FloatLabel appears on top of the input field when focused.
  *
- * [Live Demo](https://www.primevue.org/inputtext/)
  *
  * @module floatlabel
  *
@@ -102,13 +101,10 @@ export interface FloatLabelSlots {
 export interface FloatLabelEmits {}
 
 /**
- * **PrimeVue - FloatLabel**
+ * **CoscomUI - FloatLabel**
  *
  * _FloatLabel appears on top of the input field when focused._
  *
- * [Live Demo](https://www.primevue.org/inputtext/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

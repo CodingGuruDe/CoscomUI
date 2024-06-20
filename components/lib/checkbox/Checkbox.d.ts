@@ -1,8 +1,7 @@
 /**
  *
- * Checkbox is an extension to standard checkbox element with theming.
+ * The v-checkbox component provides users the ability to choose between two distinct values.
  *
- * [Live Demo](https://www.primevue.org/checkbox/)
  *
  * @module checkbox
  *
@@ -250,13 +249,10 @@ export interface CheckboxEmits {
 }
 
 /**
- * **PrimeVue - Checkbox**
+ * **CoscomUI - Checkbox**
  *
- * _Accordion groups a collection of contents in tabs._
+ * _The v-checkbox component provides users the ability to choose between two distinct values._
  *
- * [Live Demo](https://www.primevue.org/checkbox/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

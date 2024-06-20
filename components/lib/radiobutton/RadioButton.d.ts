@@ -2,7 +2,6 @@
  *
  * RadioButton is an extension to standard radio button element with theming.
  *
- * [Live Demo](https://www.primevue.org/radiobutton/)
  *
  * @module radiobutton
  *
@@ -216,13 +215,10 @@ export interface RadioButtonEmits {
 }
 
 /**
- * **PrimeVue - RadioButton**
+ * **CoscomUI - RadioButton**
  *
  * _RadioButton is an extension to standard radio button element with theming._
  *
- * [Live Demo](https://www.primevue.org/radiobutton/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

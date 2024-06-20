@@ -7,8 +7,8 @@ describe('Chip.vue', () => {
     beforeEach(() => {
         wrapper = mount(Chip, {
             props: {
-                label: 'PrimeVue',
-                icon: 'pi pi-primevue',
+                label: 'CoscomUI',
+                icon: 'cs el-discorde',
                 removable: true
             }
         });
@@ -20,8 +20,8 @@ describe('Chip.vue', () => {
 
     it('should exists', () => {
         expect(wrapper.find('.p-chip.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-chip-icon').classes()).toContain('pi-primevue');
-        expect(wrapper.find('.p-chip-text').text()).toBe('PrimeVue');
+        expect(wrapper.find('.p-chip-icon').classes()).toContain('el-discord');
+        expect(wrapper.find('.p-chip-text').text()).toBe('CoscomUI');
         expect(wrapper.find('.p-chip-remove-icon').exists()).toBe(true);
     });
 

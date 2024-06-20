@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import SplitButton from './SplitButton.vue';
 
 describe('SplitButton.vue', () => {
@@ -8,7 +8,7 @@ describe('SplitButton.vue', () => {
     beforeEach(async () => {
         wrapper = mount(SplitButton, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     'router-link': true
@@ -19,20 +19,20 @@ describe('SplitButton.vue', () => {
                 model: [
                     {
                         label: 'Update',
-                        icon: 'pi pi-refresh'
+                        icon: 'cs el-refresh'
                     },
                     {
                         label: 'Delete',
-                        icon: 'pi pi-times'
+                        icon: 'cs el-times'
                     },
                     {
                         label: 'Vue Website',
-                        icon: 'pi pi-external-link',
+                        icon: 'cs el-external-link',
                         command: () => {
                             window.location.href = 'https://vuejs.org/';
                         }
                     },
-                    { label: 'Upload', icon: 'pi pi-upload', to: '/fileupload' }
+                    { label: 'Upload', icon: 'cs el-upload', to: '/fileupload' }
                 ]
             }
         });

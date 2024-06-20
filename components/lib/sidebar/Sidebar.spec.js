@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import { describe, expect, it } from 'vitest';
 import DomHandler from '../utils/DomHandler';
 import Sidebar from './Sidebar.vue';
@@ -9,7 +9,7 @@ describe('Sidebar.vue', () => {
     beforeEach(async () => {
         wrapper = mount(Sidebar, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }

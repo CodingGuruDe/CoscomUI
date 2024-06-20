@@ -2,7 +2,6 @@
  *
  * Toolbar is a grouping component for buttons and other content.
  *
- * [Live Demo](https://www.primevue.org/toolbar/)
  *
  * @module toolbar
  *
@@ -125,13 +124,10 @@ export interface ToolbarSlots {
 export interface ToolbarEmits {}
 
 /**
- * **PrimeVue - Toolbar**
+ * **CoscomUI - Toolbar**
  *
  * _Toolbar is a grouping component for buttons and other content._
  *
- * [Live Demo](https://www.primevue.org/toolbar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

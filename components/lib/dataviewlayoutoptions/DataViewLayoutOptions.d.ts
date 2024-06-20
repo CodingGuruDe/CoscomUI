@@ -2,7 +2,6 @@
  *
  * The helper DataViewLayoutOptions component can be used to switch between the modes however this component is optional and you may use your own UI to switch modes as well.
  *
- * [Live Demo](https://www.primevue.org/dataview/)
  *
  * @module dataviewlayoutoptions
  *
@@ -155,13 +154,10 @@ export interface DataViewLayoutOptionsEmits {
 }
 
 /**
- * **PrimeVue - DataViewLayoutOptions**
+ * **CoscomUI - DataViewLayoutOptions**
  *
  * _The helper DataViewLayoutOptions component can be used to switch between the modes however this component is optional and you may use your own UI to switch modes as well._
  *
- * [Live Demo](https://www.primevue.org/dataview/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

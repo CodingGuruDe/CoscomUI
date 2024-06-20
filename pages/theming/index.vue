@@ -1,7 +1,7 @@
 <template>
     <div>
         <Head>
-            <Title>Theming - PrimeVue</Title>
+            <Title>Theming - CoscomUI</Title>
             <Meta name="description" content="Choose from a variety of themes or develop your own theme easily." />
         </Head>
 

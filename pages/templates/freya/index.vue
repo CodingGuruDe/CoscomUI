@@ -44,7 +44,7 @@
             </template>
             <template #description4>
                 Freya uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/file/eYBoRNff6GPTlrgYZaMStp/Preview-%7C-Freya-2022?node-id=0%3A1&t=MGAABDlOnz4QBcEk-1">preview the Figma file</a> before the purchase. Note that PrimeVue UI components are excluded from the Freya Figma
+                <a href="https://www.figma.com/file/eYBoRNff6GPTlrgYZaMStp/Preview-%7C-Freya-2022?node-id=0%3A1&t=MGAABDlOnz4QBcEk-1">preview the Figma file</a> before the purchase. Note that CoscomUI UI components are excluded from the Freya Figma
                 file as they are available in <NuxtLink to="/uikit">PrimeOne for Figma</NuxtLink> only.
             </template>
         </TemplateFeaturesAnimation>

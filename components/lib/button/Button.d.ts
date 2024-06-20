@@ -2,7 +2,6 @@
  *
  * Button is an extension to standard button element with icons and theming.
  *
- * [Live Demo](https://coscomui.coscom.de/)
  *
  * @module button
  *
@@ -231,11 +230,10 @@ export interface ButtonSlots {
 export interface ButtonEmits {}
 
 /**
- * **PrimeVue - Button**
+ * **CoscomUI - Button**
  *
  * _Button is an extension to standard button element with icons and theming._
  *
- * [Live Demo](https://coscomui.coscom.de/)
  *
  * @group Component
  */

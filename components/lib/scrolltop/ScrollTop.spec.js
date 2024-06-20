@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import ScrollTop from './ScrollTop.vue';
 
 describe('ScrollTop.vue', () => {
@@ -8,7 +8,7 @@ describe('ScrollTop.vue', () => {
     beforeEach(() => {
         wrapper = mount(ScrollTop, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     transition: false
                 }

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import OverlayPanel from './OverlayPanel.vue';
 
 describe('OverlayPanel.vue', () => {
@@ -8,7 +8,7 @@ describe('OverlayPanel.vue', () => {
     beforeEach(async () => {
         wrapper = mount(OverlayPanel, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -17,7 +17,7 @@ describe('OverlayPanel.vue', () => {
                 showCloseIcon: true
             },
             slots: {
-                default: 'PrimeVue'
+                default: 'CoscomUI'
             }
         });
 
@@ -27,7 +27,7 @@ describe('OverlayPanel.vue', () => {
     it('should exist', () => {
         expect(wrapper.find('.p-overlaypanel.p-component').exists()).toBe(true);
         expect(wrapper.find('.p-overlaypanel-content').exists()).toBe(true);
-        expect(wrapper.find('.p-overlaypanel-content').text()).toBe('PrimeVue');
+        expect(wrapper.find('.p-overlaypanel-content').text()).toBe('CoscomUI');
         expect(wrapper.find('.p-overlaypanel-close').exists()).toBe(true);
     });
 });

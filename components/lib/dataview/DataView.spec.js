@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import DataView from './DataView.vue';
 
 describe('DataView.vue', () => {
     it('should exist', () => {
         const wrapper = mount(DataView, {
             global: {
-                plugins: [PrimeVue]
+                plugins: [CoscomUI]
             },
             props: {
                 value: [

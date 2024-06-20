@@ -2,7 +2,6 @@
  *
  * Message groups a collection of contents in tabs.
  *
- * [Live Demo](https://www.primevue.org/message/)
  *
  * @module message
  *
@@ -225,13 +224,10 @@ export interface MessageEmits {
 }
 
 /**
- * **PrimeVue - Message**
+ * **CoscomUI - Message**
  *
  * _Messages is used to display inline messages with various severities._
  *
- * [Live Demo](https://www.primevue.org/message/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

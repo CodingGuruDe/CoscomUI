@@ -10,26 +10,26 @@ describe('SpeedDial.vue', () => {
                 model: [
                     {
                         label: 'Add',
-                        icon: 'pi pi-pencil'
+                        icon: 'cs el-pencil'
                     },
                     {
                         label: 'Update',
-                        icon: 'pi pi-refresh'
+                        icon: 'cs el-refresh'
                     },
                     {
                         label: 'Delete',
-                        icon: 'pi pi-trash'
+                        icon: 'cs el-trash'
                     },
                     {
                         label: 'Upload',
-                        icon: 'pi pi-upload',
+                        icon: 'cs el-upload',
                         command: () => {
                             window.location.hash = '/fileupload';
                         }
                     },
                     {
                         label: 'Vue Website',
-                        icon: 'pi pi-external-link',
+                        icon: 'cs el-external-link',
                         command: () => {
                             window.location.href = 'https://vuejs.org/';
                         }
@@ -78,13 +78,13 @@ describe('SpeedDial.vue', () => {
     });
 
     it('should have hide icon', async () => {
-        await wrapper.setProps({ showIcon: 'pi pi-bars', hideIcon: 'pi pi-times' });
+        await wrapper.setProps({ showIcon: 'cs el-bars', hideIcon: 'cs el-times' });
 
         const button = wrapper.find('.p-speeddial-button');
 
-        expect(button.find('span').classes()).toContain('pi-bars');
+        expect(button.find('span').classes()).toContain('el-bars');
 
-        expect(button.find('span').classes()).not.toContain('pi-times');
+        expect(button.find('span').classes()).not.toContain('el-times');
     });
 
     it('should have mask', async () => {

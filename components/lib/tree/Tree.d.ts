@@ -2,7 +2,6 @@
  *
  * Tree is used to display hierarchical data.
  *
- * [Live Demo](https://www.primevue.org/tree/)
  *
  * @module tree
  *
@@ -429,13 +428,10 @@ export interface TreeEmits {
 }
 
 /**
- * **PrimeVue - Tree**
+ * **CoscomUI - Tree**
  *
  * _Tree is used to display hierarchical data._
  *
- * [Live Demo](https://www.primevue.org/tree/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

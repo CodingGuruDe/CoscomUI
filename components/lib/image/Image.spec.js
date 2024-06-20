@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Image from './Image.vue';
 
 describe('Image.vue', () => {
     it('should exist', () => {
         const wrapper = mount(Image, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -23,7 +23,7 @@ describe('Image.vue', () => {
     it('should preview', async () => {
         const wrapper = mount(Image, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }

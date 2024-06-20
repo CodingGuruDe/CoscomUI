@@ -2,7 +2,6 @@
  *
  * Skeleton is a placeholder to display instead of the actual content.
  *
- * [Live Demo](https://www.primevue.org/skeleton/)
  *
  * @module skeleton
  *
@@ -122,13 +121,10 @@ export interface SkeletonSlots {}
 export interface SkeletonEmits {}
 
 /**
- * **PrimeVue - Skeleton**
+ * **CoscomUI - Skeleton**
  *
  * _Skeleton is a placeholder to display instead of the actual content._
  *
- * [Live Demo](https://www.primevue.org/skeleton/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

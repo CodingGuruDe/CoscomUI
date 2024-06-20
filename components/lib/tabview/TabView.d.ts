@@ -2,7 +2,6 @@
  *
  * TabView is a container component to group content with tabs.
  *
- * [Live Demo](https://www.primevue.org/tabview/)
  *
  * @module tabview
  *
@@ -265,13 +264,10 @@ export interface TabViewEmits {
 }
 
 /**
- * **PrimeVue - TabView**
+ * **CoscomUI - TabView**
  *
  * _TabView is a container component to group content with tabs._
  *
- * [Live Demo](https://www.primevue.org/tabview/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

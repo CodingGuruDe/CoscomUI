@@ -2,7 +2,6 @@
  *
  * Divider is used to separate contents.
  *
- * [Live Demo](https://primevue.org/divider)
  *
  * @module divider
  *
@@ -115,13 +114,10 @@ export interface DividerSlots {
 export interface DividerEmits {}
 
 /**
- * **PrimeVue - Divider**
+ * **CoscomUI - Divider**
  *
  * _Divider is used to separate contents._
  *
- * [Live Demo](https://primevue.org/divider)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

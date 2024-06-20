@@ -2,7 +2,6 @@
  *
  * Dialog is a container to display content in an overlay window.
  *
- * [Live Demo](https://www.primevue.org/dialog)
  *
  * @module dialog
  *
@@ -403,13 +402,10 @@ export interface DialogEmits {
 }
 
 /**
- * **PrimeVue - Dialog**
+ * **CoscomUI - Dialog**
  *
  * _Dialog is a container to display content in an overlay window._
  *
- * [Live Demo](https://www.primevue.org/dialog/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

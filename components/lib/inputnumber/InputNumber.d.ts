@@ -2,7 +2,6 @@
  *
  * InputNumber is an input component to provide numerical input.
  *
- * [Live Demo](https://www.primevue.org/inputnumber/)
  *
  * @module inputnumber
  *
@@ -380,13 +379,10 @@ export interface InputNumberEmits {
 }
 
 /**
- * **PrimeVue - InputNumber**
+ * **CoscomUI - InputNumber**
  *
  * _InputNumber is an input component to provide numerical input._
  *
- * [Live Demo](https://www.primevue.org/inputnumber/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

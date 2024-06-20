@@ -1,5 +1,5 @@
 import DynamicDialogEventBus from '@coscom/coscom-ui/dynamicdialogeventbus';
-import { PrimeVueDialogSymbol } from '@coscom/coscom-ui/usedialog';
+import { CoscomDialogSymbol } from '@coscom/coscom-ui/usedialog';
 import { markRaw } from 'vue';
 
 export default {
@@ -23,6 +23,6 @@ export default {
 
         // app.config.unwrapInjectedRef = true; // Remove it after Vue 3.3. Details: https://vuejs.org/guide/components/provide-inject.html#working-with-reactivity
         app.config.globalProperties.$dialog = DialogService;
-        app.provide(PrimeVueDialogSymbol, DialogService);
+        app.provide(CoscomDialogSymbol, DialogService);
     }
 };

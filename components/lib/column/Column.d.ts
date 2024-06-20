@@ -3,7 +3,6 @@
  * Column component defines various options to specify corresponding features.
  * It is a helper component for DataTable and TreeTable.
  *
- * [Live Demo](https://www.primevue.org/datatable/)
  *
  * @module column
  *
@@ -387,7 +386,7 @@ export interface ColumnProps {
      */
     filterField?: string | ((item: any) => string) | undefined;
     /**
-     * Type of data. It's value is related to PrimeVue.filterMatchModeOptions config.
+     * Type of data. It's value is related to CoscomUI.filterMatchModeOptions config.
      */
     dataType?: string | undefined;
     /**
@@ -969,13 +968,10 @@ export interface ColumnSlots {
 export interface ColumnEmits {}
 
 /**
- * **PrimeVue - Column**
+ * **CoscomUI - Column**
  *
  * _Column is a helper component for Column and TreeTable._
  *
- * [Live Demo](https://www.primevue.org/Column/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -44,7 +44,7 @@
             </template>
             <template #description4>
                 Apollo uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/file/zQOW0XBXdCTqODzEOqwBtt/Preview-%7C-Apollo-2022?node-id=335%3A21768&t=urYI89V3PLNAZEJG-1/">preview the Figma file</a> before the purchase. Note that PrimeVue UI components are excluded from the
+                <a href="https://www.figma.com/file/zQOW0XBXdCTqODzEOqwBtt/Preview-%7C-Apollo-2022?node-id=335%3A21768&t=urYI89V3PLNAZEJG-1/">preview the Figma file</a> before the purchase. Note that CoscomUI UI components are excluded from the
                 Apollo Figma file as they are available in <NuxtLink to="/uikit">PrimeOne for Figma</NuxtLink> only.
             </template>
         </TemplateFeaturesAnimation>
@@ -240,7 +240,7 @@ export default {
                 pattern: 'https://primefaces.org/cdn/primevue/images/templates/apollo/apollo-hero-pattern.png',
                 dashboard1: 'https://primefaces.org/cdn/primevue/images/templates/apollo/apollo-hero-dashboard1.png',
                 dashboard2: 'https://primefaces.org/cdn/primevue/images/templates/apollo/apollo-hero-dashboard2.png',
-                description: 'Application template for Vue based on Vite with light-dim-dark modes, four menu layouts, various menu themes, sample apps, ready to use template pages and 24 PrimeVue themes.',
+                description: 'Application template for Vue based on Vite with light-dim-dark modes, four menu layouts, various menu themes, sample apps, ready to use template pages and 24 CoscomUI themes.',
                 liveHref: 'https://apollo.primevue.org',
                 docHref: 'https://apollo.primevue.org/documentation'
             }

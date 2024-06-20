@@ -1,8 +1,7 @@
 /**
  *
- * Chips groups a collection of contents in tabs.
+ * The v-chip component is used to convey small pieces of information.
  *
- * [Live Demo](https://www.primevue.org/chips/)
  *
  * @module chips
  *
@@ -289,13 +288,10 @@ export interface ChipsEmits {
 }
 
 /**
- * **PrimeVue - Chips**
+ * **CoscomUI - Chips**
  *
  * _Chips is used to enter multiple values on an input field._
  *
- * [Live Demo](https://www.primevue.org/chips/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

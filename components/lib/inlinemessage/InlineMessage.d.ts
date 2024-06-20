@@ -2,7 +2,6 @@
  *
  * InlineMessage component is useful in cases where a single message needs to be displayed related to an element such as forms. It has one property, severity of the message.
  *
- * [Live Demo](https://www.primevue.org/inlinemessage/)
  *
  * @module inlinemessage
  *
@@ -133,13 +132,10 @@ export interface InlineMessageSlots {
 export interface InlineMessageEmits {}
 
 /**
- * **PrimeVue - InlineMessage**
+ * **CoscomUI - InlineMessage**
  *
  * _InlineMessage component is useful in cases where a single message needs to be displayed related to an element such as forms. It has one property, severity of the message._
  *
- * [Live Demo](https://www.primevue.org/inlinemessage/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

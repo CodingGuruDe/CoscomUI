@@ -15,7 +15,7 @@
             <div class="card m-0 xl:w-9 text-white bg-cover" style="background-image: url('https://primefaces.org/cdn/primevue/images/support/card-pro.jpg')">
                 <div class="text-2xl font-semibold mb-3">PRO Support</div>
                 <p class="m-0 line-height-3 text-lg">
-                    With PRO support, it's easy to support, tune and add features to PrimeVue as if it were an in- house library. PRO is a term based commercial support service. With the exclusive services of PRO account, it is no longer needed to
+                    With PRO support, it's easy to support, tune and add features to CoscomUI as if it were an in- house library. PRO is a term based commercial support service. With the exclusive services of PRO account, it is no longer needed to
                     post questions in community forum and issue reports to community issue tracker at GitHub. A JIRA account will be created to the customer by PrimeTek, this account can be shared between any number of users within your organization.
                 </p>
             </div>

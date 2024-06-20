@@ -2,7 +2,6 @@
  *
  * TreeTable is used to display hierarchical data in tabular format.
  *
- * [Live Demo](https://www.primevue.org/treetable/)
  *
  * @module treetable
  *
@@ -797,13 +796,10 @@ export interface TreeTableEmits {
 }
 
 /**
- * **PrimeVue - TreeTable**
+ * **CoscomUI - TreeTable**
  *
  * _TreeTable is used to display hierarchical data in tabular format._
  *
- * [Live Demo](https://www.primevue.org/treetable/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

@@ -2,7 +2,6 @@
  *
  * Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
  *
- * [Live Demo](https://www.primevue.org/inplace)
  *
  * @module inplace
  *
@@ -196,13 +195,10 @@ export interface InplaceEmits {
 }
 
 /**
- * **PrimeVue - Inplace**
+ * **CoscomUI - Inplace**
  *
  * _Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content._
  *
- * [Live Demo](https://www.primevue.org/inplace/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

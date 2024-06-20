@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <Title>Configuration - PrimeVue</Title>
+        <Title>Configuration - CoscomUI</Title>
         <Meta name="description" content="Global configuration options of the components." />
     </Head>
     <div class="doc">

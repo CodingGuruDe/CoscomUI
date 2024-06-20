@@ -1,6 +1,5 @@
 /**
  *
- * [Live Demo](https://www.primevue.org/toast/)
  *
  * @module toastservice-usetoast
  * @todo 'use' is not a valid name for a module. Next release will change.

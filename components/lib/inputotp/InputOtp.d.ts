@@ -2,7 +2,6 @@
  *
  * InputOtp is used to enter one time passwords.
  *
- * [Live Demo](https://www.primevue.org/inputotp/)
  *
  * @module inputotp
  *
@@ -253,13 +252,10 @@ export interface InputOtpEmits {
 }
 
 /**
- * **PrimeVue - InputOtp**
+ * **CoscomUI - InputOtp**
  *
  * _InputOtp  is used to enter one time passwords._
  *
- * [Live Demo](https://www.primevue.org/inputotp/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

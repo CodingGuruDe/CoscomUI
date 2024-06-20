@@ -2,7 +2,6 @@
  *
  * A set of Avatars can be displayed together using the AvatarGroup component.
  *
- * [Live Demo](https://www.primevue.org/avatar/)
  *
  * @module avatargroup
  *
@@ -100,13 +99,10 @@ export interface AvatarGroupSlots {
 export interface AvatarGroupEmits {}
 
 /**
- * **PrimeVue - AvatarGroup**
+ * **CoscomUI - AvatarGroup**
  *
  * _A set of Avatars can be displayed together using the AvatarGroup component._
  *
- * [Live Demo](https://www.primevue.org/avatar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

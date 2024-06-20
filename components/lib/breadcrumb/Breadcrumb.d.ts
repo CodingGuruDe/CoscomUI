@@ -2,7 +2,6 @@
  *
  * Breadcrumb provides contextual information about page hierarchy.
  *
- * [Live Demo](https://www.primevue.org/breadcrumb/)
  *
  * @module breadcrumb
  *
@@ -219,13 +218,10 @@ export interface BreadcrumbSlots {
 export interface BreadcrumbEmits {}
 
 /**
- * **PrimeVue - Breadcrumb**
+ * **CoscomUI - Breadcrumb**
  *
  * _Breadcrumb provides contextual information about page hierarchy._
  *
- * [Live Demo](https://www.primevue.org/breadcrumb/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

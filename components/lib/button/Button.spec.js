@@ -13,7 +13,7 @@ describe('Button.vue', () => {
 
 describe('Button.vue', () => {
     it('is icon exist and right position', () => {
-        const icon = 'pi pi-discord';
+        const icon = 'cs el-discord';
         const iconPos = 'right';
         const label = 'Save';
         const props = { icon, iconPos };
@@ -48,7 +48,7 @@ describe('Button.vue', () => {
 
 describe('Button.vue', () => {
     it('is loading working', async () => {
-        const loadingIcon = 'pi pi-discord';
+        const loadingIcon = 'cs el-discord';
         const wrapper = mount(Button, {
             props: {
                 loading: false,
@@ -75,10 +75,10 @@ describe('Button.vue', () => {
     it('should render default slot', () => {
         const wrapper = mount(Button, {
             slots: {
-                default: h('span', { class: 'ml-2 font-bold' }, 'Default PrimeVue Button')
+                default: h('span', { class: 'ml-2 font-bold' }, 'Default CoscomUI Button')
             }
         });
 
-        expect(wrapper.html()).toBe(`<button class="p-button p-component" type="button" data-pc-name="button" data-pc-section="root"><span class="ml-2 font-bold">Default PrimeVue Button</span></button>`);
+        expect(wrapper.html()).toBe(`<button class="p-button p-component" type="button" data-pc-name="button" data-pc-section="root"><span class="ml-2 font-bold">Default CoscomUI Button</span></button>`);
     });
 });

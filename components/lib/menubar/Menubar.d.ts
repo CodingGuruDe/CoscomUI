@@ -2,7 +2,6 @@
  *
  * Menubar is a horizontal menu component.
  *
- * [Live Demo](https://www.primevue.org/menubar/)
  *
  * @module menubar
  *
@@ -377,13 +376,10 @@ export interface MenubarSlots {
 export interface MenubarEmits {}
 
 /**
- * **PrimeVue - Menubar**
+ * **CoscomUI - Menubar**
  *
  * _Menubar is a horizontal menu component._
  *
- * [Live Demo](https://www.primevue.org/menubar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

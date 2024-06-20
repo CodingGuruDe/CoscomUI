@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Paginator from './Paginator.vue';
 
 describe('Paginator.vue', () => {
@@ -8,7 +8,7 @@ describe('Paginator.vue', () => {
     beforeEach(() => {
         wrapper = mount(Paginator, {
             global: {
-                plugins: [PrimeVue]
+                plugins: [CoscomUI]
             },
             props: {
                 rows: 10,

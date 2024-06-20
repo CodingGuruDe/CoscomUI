@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import { h } from 'vue';
 import Dropdown from './Dropdown.vue';
 
@@ -9,7 +9,7 @@ describe('Dropdown.vue', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -34,18 +34,19 @@ describe('option checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 options: [
-                    { name: 'New York', code: 'NY' },
-                    { name: 'Rome', code: 'RM' },
+                    { name: 'Zagreb', code: 'ZG' },
+                    { name: 'Ebersberg', code: 'EBE' },
+                    { name: 'Munich', code: 'M' },
                     { name: 'London', code: 'LDN' },
-                    { name: 'Istanbul', code: 'IST' },
-                    { name: 'Paris', code: 'PRS' }
+                    { name: 'Paris', code: 'PRS' },
+                    { name: 'New York', code: 'NY' }
                 ],
                 optionLabel: 'name',
                 optionValue: 'code',
@@ -61,7 +62,7 @@ describe('option checks', () => {
         expect(wrapper.find('.p-dropdown-items-wrapper > .p-dropdown-items').exists()).toBe(true);
         expect(wrapper.find('.p-dropdown-item').exists()).toBe(true);
         expect(wrapper.findAll('.p-dropdown-item').length).toBe(5);
-        expect(wrapper.findAll('.p-dropdown-item')[0].text()).toBe('New York');
+        expect(wrapper.findAll('.p-dropdown-item')[0].text()).toBe('Zagreb');
     });
 });
 
@@ -71,13 +72,13 @@ describe('clear checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
-                clearIcon: 'pi pi-discord',
+                clearIcon: 'cs el-discord',
                 modelValue: 'value',
                 showClear: true
             }
@@ -87,7 +88,7 @@ describe('clear checks', () => {
     });
 
     it('should have correct icon', () => {
-        expect(wrapper.find('.p-dropdown-clear-icon').classes()).toContain('pi-discord');
+        expect(wrapper.find('.p-dropdown-clear-icon').classes()).toContain('el-discord');
     });
 
     it('should clear with delete key', async () => {
@@ -105,18 +106,19 @@ describe('editable checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 options: [
-                    { name: 'New York', code: 'NY' },
-                    { name: 'Rome', code: 'RM' },
+                    { name: 'Zagreb', code: 'ZG' },
+                    { name: 'Ebersberg', code: 'EBE' },
+                    { name: 'Munich', code: 'M' },
                     { name: 'London', code: 'LDN' },
-                    { name: 'Istanbul', code: 'IST' },
-                    { name: 'Paris', code: 'PRS' }
+                    { name: 'Paris', code: 'PRS' },
+                    { name: 'New York', code: 'NY' }
                 ],
                 optionLabel: 'name',
                 optionValue: 'code',
@@ -140,13 +142,23 @@ describe('option groups checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 options: [
+                    {
+                        label: 'Croatia',
+                        code: 'HR',
+                        items: [
+                            { label: 'Zagreb', value: 'Zagreb' },
+                            { label: 'Split', value: 'Split' },
+                            { label: 'Rijeka', value: 'Rijeka' },
+                            { label: 'Osijek', value: 'Osijek' }
+                        ]
+                    },
                     {
                         label: 'Germany',
                         code: 'DE',
@@ -166,16 +178,6 @@ describe('option groups checks', () => {
                             { label: 'New York', value: 'New York' },
                             { label: 'San Francisco', value: 'San Francisco' }
                         ]
-                    },
-                    {
-                        label: 'Japan',
-                        code: 'JP',
-                        items: [
-                            { label: 'Kyoto', value: 'Kyoto' },
-                            { label: 'Osaka', value: 'Osaka' },
-                            { label: 'Tokyo', value: 'Tokyo' },
-                            { label: 'Yokohama', value: 'Yokohama' }
-                        ]
                     }
                 ],
                 optionLabel: 'label',
@@ -189,7 +191,7 @@ describe('option groups checks', () => {
 
     it('should show the option groups', () => {
         expect(wrapper.findAll('.p-dropdown-item-group').length).toBe(3);
-        expect(wrapper.findAll('.p-dropdown-item-group')[0].text()).toBe('Germany');
+        expect(wrapper.findAll('.p-dropdown-item-group')[0].text()).toBe('Croatia');
     });
 });
 
@@ -199,7 +201,7 @@ describe('templating checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -251,7 +253,7 @@ describe('empty templating checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
@@ -281,20 +283,21 @@ describe('loader checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 loading: true,
-                loadingIcon: 'pi pi-discord',
+                loadingIcon: 'cs el-discord',
                 options: [
-                    { name: 'New York', code: 'NY' },
-                    { name: 'Rome', code: 'RM' },
+                    { name: 'Zagreb', code: 'ZG' },
+                    { name: 'Ebersberg', code: 'EBE' },
+                    { name: 'Munich', code: 'M' },
                     { name: 'London', code: 'LDN' },
-                    { name: 'Istanbul', code: 'IST' },
-                    { name: 'Paris', code: 'PRS' }
+                    { name: 'Paris', code: 'PRS' },
+                    { name: 'New York', code: 'NY' }
                 ],
                 optionLabel: 'name',
                 optionValue: 'code',
@@ -306,11 +309,11 @@ describe('loader checks', () => {
     });
 
     it('should show the loader', async () => {
-        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).toContain('pi-discord');
+        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).toContain('el-discord');
 
         await wrapper.setProps({ loading: false });
 
-        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).not.toContain('pi-discord');
+        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).not.toContain('el-discord');
     });
 });
 
@@ -320,14 +323,14 @@ describe('filter checks', () => {
     beforeEach(async () => {
         wrapper = mount(Dropdown, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }
             },
             props: {
                 filter: true,
-                filterIcon: 'pi pi-discord',
+                filterIcon: 'cs el-discord',
                 options: [
                     { name: 'Australia', code: 'AU' },
                     { name: 'Brazil', code: 'BR' },
@@ -335,7 +338,7 @@ describe('filter checks', () => {
                     { name: 'Egypt', code: 'EG' },
                     { name: 'France', code: 'FR' },
                     { name: 'Germany', code: 'DE' },
-                    { name: 'India', code: 'IN' },
+                    { name: 'Croatia', code: 'HR' },
                     { name: 'Japan', code: 'JP' },
                     { name: 'Spain', code: 'ES' },
                     { name: 'United States', code: 'US' }
@@ -352,7 +355,7 @@ describe('filter checks', () => {
         const filterIcon = wrapper.find('.p-dropdown-filter-icon');
 
         expect(filterInput.exists()).toBe(true);
-        expect(filterIcon.classes()).toContain('pi-discord');
+        expect(filterIcon.classes()).toContain('el-discord');
 
         const event = { target: { value: 'c' } };
         const onFilterChange = vi.spyOn(wrapper.vm, 'onFilterChange');

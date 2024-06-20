@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import ConfirmDialog from './ConfirmDialog.vue';
 
 describe('ConfirmDialog', () => {
     it('should exist', async () => {
         const wrapper = mount(ConfirmDialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -17,7 +17,7 @@ describe('ConfirmDialog', () => {
                     confirmation: {
                         message: 'Are you sure you want to proceed?',
                         header: 'Confirmation',
-                        icon: 'pi pi-exclamation-triangle'
+                        icon: 'cs el-exclamation-triangle'
                     },
                     visible: true
                 };
@@ -38,7 +38,7 @@ describe('ConfirmDialog', () => {
     it('should dialog trigger the accept function', async () => {
         const wrapper = mount(ConfirmDialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -71,7 +71,7 @@ describe('ConfirmDialog', () => {
     it('should dialog trigger the reject function', async () => {
         const wrapper = mount(ConfirmDialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -82,7 +82,7 @@ describe('ConfirmDialog', () => {
                     confirmation: {
                         message: 'Are you sure you want to proceed?',
                         header: 'Confirmation',
-                        icon: 'pi pi-exclamation-triangle',
+                        icon: 'cs el-exclamation-triangle',
                         accept: () => {},
                         reject: () => {}
                     },
@@ -104,7 +104,7 @@ describe('ConfirmDialog', () => {
     it('should dialog close button work', async () => {
         const wrapper = mount(ConfirmDialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -115,7 +115,7 @@ describe('ConfirmDialog', () => {
                     confirmation: {
                         message: 'Are you sure you want to proceed?',
                         header: 'Confirmation',
-                        icon: 'pi pi-exclamation-triangle'
+                        icon: 'cs el-exclamation-triangle'
                     },
                     visible: true
                 };
@@ -134,7 +134,7 @@ describe('ConfirmDialog', () => {
     it('should position work', async () => {
         const wrapper = mount(ConfirmDialog, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: false
@@ -146,7 +146,7 @@ describe('ConfirmDialog', () => {
                         group: 'positionDialog',
                         message: 'Do you want to delete this record?',
                         header: 'Delete Confirmation',
-                        icon: 'pi pi-info-circle',
+                        icon: 'cs el-info-circle',
                         position: 'bottom'
                     },
                     visible: true

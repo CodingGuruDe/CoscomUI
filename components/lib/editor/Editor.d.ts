@@ -2,7 +2,6 @@
  *
  * Editor groups a collection of contents in tabs.
  *
- * [Live Demo](https://www.primevue.org/editor/)
  *
  * @module editor
  *
@@ -292,13 +291,10 @@ export interface EditorEmits {
 }
 
 /**
- * **PrimeVue - Editor**
+ * **CoscomUI - Editor**
  *
  * _Editor groups a collection of contents in tabs._
  *
- * [Live Demo](https://www.primevue.org/editor/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

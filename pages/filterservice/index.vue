@@ -2,7 +2,7 @@
     <div>
         <Head>
             <Title>Vue Filter Service</Title>
-            <Meta name="description" content="PrimeVue Filter Service is a helper utility to filter." />
+            <Meta name="description" content="CoscomUI Filter Service is a helper utility to filter." />
         </Head>
 
         <div class="doc">

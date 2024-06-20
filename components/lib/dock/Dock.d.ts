@@ -2,7 +2,6 @@
  *
  * Dock is a navigation component consisting of menuitems.
  *
- * [Live Demo](https://www.primevue.org/dock/)
  *
  * @module dock
  *
@@ -298,13 +297,10 @@ export interface DockEmits {
 }
 
 /**
- * **PrimeVue - Dock**
+ * **CoscomUI - Dock**
  *
  * _Dock is a navigation component consisting of menuitems._
  *
- * [Live Demo](https://www.primevue.org/dock/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

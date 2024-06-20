@@ -495,7 +495,7 @@
                         },
                         {
                             "name": "Sass API",
-                            "href": "https://www.primefaces.org/designer/api/primevue/3.9.0"
+                            "href": "#"
                         }
                     ]
                 },
@@ -530,7 +530,7 @@
         {
             "name": "Tailwind",
             "icon": "cs el-heart",
-            "href": "https://tailwind.primevue.org/",
+            "href": "#",
             "badge": "NEW"
         },
         {
@@ -561,7 +561,7 @@
         {
             "name": "PrimeBlocks",
             "icon": "cs el-server",
-            "href": "https://blocks.primevue.org"
+            "href": "#"
         },
         {
             "name": "Guides",
@@ -574,7 +574,7 @@
                 {
                     "name": "PrimeTV",
                     "icon": "cs el-youtube",
-                    "href": "https://www.youtube.com/channel/UCTgmp69aBOlLnPEqlUyetWw"
+                    "href": "#"
                 }
             ]
         },
@@ -588,7 +588,7 @@
                 },
                 {
                     "name": "Forum",
-                    "href": "https://github.com/orgs/primefaces/discussions"
+                    "href": "#"
                 },
                 {
                     "name": "PRO Support",
@@ -610,32 +610,32 @@
                 },
                 {
                     "name": "Source Code",
-                    "href": "https://github.com/primefaces/primevue"
+                    "href": "#"
                 },
                 {
                     "name": "Changelog",
-                    "href": "https://github.com/primefaces/primevue/blob/master/CHANGELOG.md"
+                    "href": "#"
                 },
                 {
                     "name": "Store",
-                    "href": "https://www.primefaces.org/store/"
+                    "href": "#"
                 },
                 {
                     "name": "Twitter",
-                    "href": "https://twitter.com/primevue"
+                    "href": "#"
                 },
                 {
                     "name": "Newsletter",
-                    "href": "https://www.primefaces.org/newsletter"
+                    "href": "#"
                 },
                 {
                     "name": "PrimeGear",
-                    "href": "https://gear.primefaces.org"
+                    "href": "#"
                 },
                 {
                     "name": "PrimeFlex CSS",
                     "icon": "cs el-table",
-                    "href": "https://primeflex.org"
+                    "href": "#"
                 }
             ]
         }

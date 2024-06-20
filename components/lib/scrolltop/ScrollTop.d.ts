@@ -2,7 +2,6 @@
  *
  * ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.
  *
- * [Live Demo](https://www.primevue.org/scrolltop/)
  *
  * @module scrolltop
  *
@@ -145,13 +144,10 @@ export interface ScrollTopSlots {
 export interface ScrollTopEmits {}
 
 /**
- * **PrimeVue - ScrollTop**
+ * **CoscomUI - ScrollTop**
  *
  * _ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly._
  *
- * [Live Demo](https://www.primevue.org/scrolltop/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

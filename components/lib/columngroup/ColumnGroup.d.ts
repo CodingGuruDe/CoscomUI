@@ -2,7 +2,6 @@
  * Columns can be grouped at header and footer sections by defining a ColumnGroup component.
  * It is a helper component for DataTable.
  *
- * [Live Demo](https://www.primevue.org/datatable/)
  * @module columngroup
  */
 import { ComponentHooks } from '../basecomponent';
@@ -115,13 +114,10 @@ export interface ColumnGroupSlots {}
 export interface ColumnGroupEmits {}
 
 /**
- * **PrimeVue - ColumnGroup**
+ * **CoscomUI - ColumnGroup**
  *
  * _It is a helper component for DataTable._
  *
- * [Live Demo](https://www.primevue.org/datatable/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

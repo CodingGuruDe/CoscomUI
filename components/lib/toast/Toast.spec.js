@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Toast from './Toast.vue';
 
 describe('Toast.vue', () => {
@@ -8,7 +8,7 @@ describe('Toast.vue', () => {
     beforeEach(() => {
         wrapper = mount(Toast, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true,
                     transition: true
@@ -78,18 +78,18 @@ describe('Toast.vue', () => {
 
     describe('custom icons', () => {
         it('should have custom close icon', async () => {
-            await wrapper.setProps({ closeIcon: 'pi pi-discord' });
+            await wrapper.setProps({ closeIcon: 'cs el-discord' });
             await wrapper.setData({
                 messages: [{ severity: 'info', summary: 'Message 1', detail: 'Message 1 Content', life: 3000 }]
             });
 
             const icon = wrapper.find('.p-toast-icon-close-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom info severity icon', async () => {
-            await wrapper.setProps({ infoIcon: 'pi pi-discord' });
+            await wrapper.setProps({ infoIcon: 'cs el-discord' });
             await wrapper.setData({
                 messages: [{ severity: 'info', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
@@ -100,36 +100,36 @@ describe('Toast.vue', () => {
         });
 
         it('should have custom warn severity icon', async () => {
-            await wrapper.setProps({ warnIcon: 'pi pi-discord' });
+            await wrapper.setProps({ warnIcon: 'cs el-discord' });
             await wrapper.setData({
                 messages: [{ severity: 'warn', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
             const icon = wrapper.find('.p-toast-message-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom error severity icon', async () => {
-            await wrapper.setProps({ errorIcon: 'pi pi-discord' });
+            await wrapper.setProps({ errorIcon: 'cs el-discord' });
             await wrapper.setData({
                 messages: [{ severity: 'error', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
             const icon = wrapper.find('.p-toast-message-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
 
         it('should have custom success severity icon', async () => {
-            await wrapper.setProps({ successIcon: 'pi pi-discord' });
+            await wrapper.setProps({ successIcon: 'cs el-discord' });
             await wrapper.setData({
                 messages: [{ severity: 'success', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
             const icon = wrapper.find('.p-toast-message-icon');
 
-            expect(icon.classes()).toContain('pi-discord');
+            expect(icon.classes()).toContain('el-discord');
         });
     });
 });

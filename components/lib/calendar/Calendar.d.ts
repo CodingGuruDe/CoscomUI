@@ -1,8 +1,7 @@
 /**
  *
- * Calendar also known as DatePicker, is a form component to work with dates.
+ * The v-calendar component is used to display information in a daily, weekly, monthly, or category view. The daily view has slots for all day or timed elements, and the weekly and monthly view has a slot for each day.
  *
- * [Live Demo](https://www.primevue.org/calendar/)
  *
  * @module calendar
  *
@@ -508,7 +507,7 @@ export interface CalendarProps {
      */
     selectionMode?: 'single' | 'multiple' | 'range' | undefined;
     /**
-     * Format of the date. Defaults to PrimeVue Locale configuration.
+     * Format of the date. Defaults to CoscomUI Locale configuration.
      */
     dateFormat?: string | undefined;
     /**
@@ -997,13 +996,10 @@ export interface CalendarEmits {
 }
 
 /**
- * **PrimeVue - Calendar**
+ * **CoscomUI - Calendar**
  *
- * _Calendar also known as DatePicker, is a form component to work with dates._
+ * _The v-calendar component is used to display information in a daily, weekly, monthly, or category view. The daily view has slots for all day or timed elements, and the weekly and monthly view has a slot for each day._
  *
- * [Live Demo](https://www.primevue.org/calendar/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

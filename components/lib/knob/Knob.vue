@@ -223,5 +223,4 @@ export default {
         }
     }
 };
-//Derived and forked from https://github.com/kramer99/vue-knob-control
 </script>

@@ -8,7 +8,7 @@ describe('Terminal.vue', () => {
             components: {
                 Terminal
             },
-            template: `<Terminal welcomeMessage="Welcome to PrimeVue" prompt="primevue $" class="dark-demo-terminal" />`,
+            template: `<Terminal welcomeMessage="Welcome to Coscom" prompt="coscomui $" class="dark-demo-terminal" />`,
             mounted() {
                 TerminalService.on('command', this.commandHandler);
             },
@@ -44,7 +44,7 @@ describe('Terminal.vue', () => {
             components: {
                 Terminal
             },
-            template: `<Terminal welcomeMessage="Welcome to PrimeVue" prompt="primevue $" class="dark-demo-terminal" />`,
+            template: `<Terminal welcomeMessage="Welcome to Coscom" prompt="coscomui $" class="dark-demo-terminal" />`,
             mounted() {
                 TerminalService.on('command', this.commandHandler);
             },

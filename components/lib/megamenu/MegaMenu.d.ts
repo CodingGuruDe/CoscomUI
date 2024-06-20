@@ -2,7 +2,6 @@
  *
  * MegaMenu is navigation component that displays submenus together.
  *
- * [Live Demo](https://www.primevue.org/megamenu/)
  *
  * @module megamenu
  *
@@ -392,13 +391,10 @@ export interface MegaMenuEmits {
 }
 
 /**
- * **PrimeVue - MegaMenu**
+ * **CoscomUI - MegaMenu**
  *
  * _MegaMenu is navigation component that displays submenus together._
  *
- * [Live Demo](https://www.primevue.org/megamenu/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

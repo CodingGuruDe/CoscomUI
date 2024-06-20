@@ -39,7 +39,7 @@
             </template>
             <template #description4>
                 Diamond uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/file/lKooXEoqqWz7PBYwJ7B8QS/Preview-%7C-Diamond-2022?node-id=271%3A12531">preview the Figma file</a> before the purchase. Note that PrimeVue UI components are excluded from the Diamond Figma file as they
+                <a href="https://www.figma.com/file/lKooXEoqqWz7PBYwJ7B8QS/Preview-%7C-Diamond-2022?node-id=271%3A12531">preview the Figma file</a> before the purchase. Note that CoscomUI UI components are excluded from the Diamond Figma file as they
                 are available in <NuxtLink to="/uikit">PrimeOne for Figma</NuxtLink> only.
             </template>
         </TemplateFeaturesAnimation>
@@ -217,7 +217,7 @@ export default {
                 pattern: 'https://primefaces.org/cdn/primevue/images/templates/diamond/diamond-hero-pattern.png',
                 dashboard1: 'https://primefaces.org/cdn/primevue/images/templates/diamond/diamond-hero-dashboard1.png',
                 dashboard2: 'https://primefaces.org/cdn/primevue/images/templates/diamond/diamond-hero-dashboard2.png',
-                description: 'An amazing application template for Vue based on Vite with light-dim-dark modes, four menu layouts, various menu themes, sample apps, ready to use template pages and 30 PrimeVue themes.',
+                description: 'An amazing application template for Vue based on Vite with light-dim-dark modes, four menu layouts, various menu themes, sample apps, ready to use template pages and 30 CoscomUI themes.',
                 liveHref: 'https://diamond.primevue.org',
                 docHref: 'https://diamond.primevue.org/documentation'
             }

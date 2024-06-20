@@ -2,7 +2,6 @@
  *
  * Timeline visualizes a series of chained events.
  *
- * [Live Demo](https://primevue.org/timeline)
  *
  * @module timeline
  */
@@ -206,13 +205,10 @@ export interface TimelineSlots {
 export interface TimelineEmits {}
 
 /**
- * **PrimeVue - Timeline**
+ * **CoscomUI - Timeline**
  *
  * _Timeline visualizes a series of chained events._
  *
- * [Live Demo](https://www.primevue.org/timeline/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

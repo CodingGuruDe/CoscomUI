@@ -1,5 +1,5 @@
 import ToastEventBus from '@coscom/coscom-ui/toasteventbus';
-import { PrimeVueToastSymbol } from '@coscom/coscom-ui/usetoast';
+import { CoscomToastSymbol } from '@coscom/coscom-ui/usetoast';
 
 export default {
     install: (app) => {
@@ -19,6 +19,6 @@ export default {
         };
 
         app.config.globalProperties.$toast = ToastService;
-        app.provide(PrimeVueToastSymbol, ToastService);
+        app.provide(CoscomToastSymbol, ToastService);
     }
 };

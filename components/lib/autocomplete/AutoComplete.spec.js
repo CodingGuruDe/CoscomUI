@@ -9,7 +9,7 @@ describe('AutoComplete.vue', () => {
     beforeEach(async () => {
         wrapper = mount(AutoComplete, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [Coscom],
                 stubs: {
                     teleport: true
                 }
@@ -21,9 +21,9 @@ describe('AutoComplete.vue', () => {
             data() {
                 return {
                     countries: [
-                        { name: 'Afghanistan', code: 'AF' },
-                        { name: 'Bahrain', code: 'BH' },
-                        { name: 'Chile', code: 'CL' },
+                        { name: 'Croatia', code: 'HR' },
+                        { name: 'Germany', code: 'DE' },
+                        { name: 'Italy', code: 'IT' },
                         { name: 'Denmark', code: 'DK' }
                     ]
                 };
@@ -48,7 +48,7 @@ describe('AutoComplete.vue', () => {
         await wrapper.vm.$nextTick();
 
         await wrapper.setProps({
-            suggestions: [{ name: 'Bahrain', code: 'BH' }]
+            suggestions: [{ name: 'Croatia', code: 'HR' }]
         });
 
         expect(wrapper.find('.p-autocomplete-items').exists()).toBe(true);
@@ -74,14 +74,14 @@ describe('AutoComplete.vue', () => {
         it('should have correct custom icon', async () => {
             wrapper.setProps({
                 dropdown: true,
-                dropdownIcon: 'pi pi-discord'
+                dropdownIcon: 'cs el-discord'
             });
 
             await nextTick();
 
             const token = wrapper.find('.p-button').find('span');
 
-            expect(token.classes()).toContain('pi-discord');
+            expect(token.classes()).toContain('el-discord');
         });
     });
 
@@ -89,14 +89,14 @@ describe('AutoComplete.vue', () => {
         it('should have correct custom icon', async () => {
             wrapper.setProps({
                 multiple: true,
-                removeTokenIcon: 'pi pi-discord',
+                removeTokenIcon: 'cs el-discord',
                 modelValue: ['foo', 'bar']
             });
 
             await nextTick();
 
             wrapper.findAll('.p-autocomplete-token-icon').forEach((tokenIcon) => {
-                expect(tokenIcon.classes()).toContain('pi-discord');
+                expect(tokenIcon.classes()).toContain('el-discord');
             });
         });
     });

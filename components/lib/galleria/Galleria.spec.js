@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Galleria from './Galleria.vue';
 
 describe('Gallleria.vue', () => {
@@ -8,7 +8,7 @@ describe('Gallleria.vue', () => {
     beforeEach(() => {
         wrapper = mount(Galleria, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }

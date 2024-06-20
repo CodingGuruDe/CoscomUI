@@ -2,7 +2,6 @@
  *
  * OrganizationChart visualizes hierarchical organization data.
  *
- * [Live Demo](https://primevue.org/organizationchart)
  *
  * @module organizationchart
  *
@@ -329,13 +328,10 @@ export interface OrganizationChartEmits {
 }
 
 /**
- * **PrimeVue - OrganizationChart**
+ * **CoscomUI - OrganizationChart**
  *
  * _OrganizationChart visualizes hierarchical organization data._
  *
- * [Live Demo](https://www.primevue.org/organizationchart/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

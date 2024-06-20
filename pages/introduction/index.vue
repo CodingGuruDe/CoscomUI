@@ -7,8 +7,8 @@
         <div class="doc-main">
             <div class="doc-intro">
                 <div style="border-radius: 20px; max-height: 640px" class="overflow-hidden mb-5 flex align-items-center">
-                    <img alt="PrimeVue Designer" :src="introDesktopImg" class="w-full hidden md:block" />
-                    <img alt="PrimeVue Designer" :src="introMobileImg" class="w-full md:hidden" />
+                    <img alt="CoscomUI Designer" :src="introDesktopImg" class="w-full hidden md:block" />
+                    <img alt="CoscomUI Designer" :src="introMobileImg" class="w-full md:hidden" />
                 </div>
                 <h1>Introduction</h1>
                 <p>Next-generation UI Component suite for Vue.</p>

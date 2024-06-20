@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from '@coscom/coscom-ui/config';
+import CoscomUI from '@coscom/coscom-ui/config';
 import Calendar from './Calendar.vue';
 
 describe('Calendar.vue', () => {
@@ -8,7 +8,7 @@ describe('Calendar.vue', () => {
     beforeEach(() => {
         wrapper = mount(Calendar, {
             global: {
-                plugins: [PrimeVue],
+                plugins: [CoscomUI],
                 stubs: {
                     teleport: true
                 }

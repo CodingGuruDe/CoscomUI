@@ -2,7 +2,6 @@
  *
  * Panel is a container with the optional content toggle feature.
  *
- * [Live Demo](https://www.primevue.org/panel/)
  *
  * @module panel
  *
@@ -230,13 +229,10 @@ export interface PanelEmits {
 }
 
 /**
- * **PrimeVue - Panel**
+ * **CoscomUI - Panel**
  *
  * _Panel is a container with the optional content toggle feature._
  *
- * [Live Demo](https://www.primevue.org/panel/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *

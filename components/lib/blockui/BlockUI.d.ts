@@ -2,7 +2,6 @@
  *
  * BlockUI represents people using icons, labels and images.
  *
- * [Live Demo](https://www.primevue.org/blockui)
  *
  * @module blockui
  *
@@ -148,13 +147,10 @@ export interface BlockUIEmits {
 }
 
 /**
- * **PrimeVue - BlockUI**
+ * **CoscomUI - BlockUI**
  *
  * _BlockUI represents people using icons, labels and images._
  *
- * [Live Demo](https://www.primevue.org/blockui/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  */

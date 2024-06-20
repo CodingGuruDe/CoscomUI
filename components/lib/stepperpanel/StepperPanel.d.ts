@@ -2,7 +2,6 @@
  *
  * StepperPanel is a helper component for Stepper component.
  *
- * [Live Demo](https://www.primevue.org/stepper/)
  *
  * @module stepperpanel
  *
@@ -264,13 +263,10 @@ export interface StepperPanelSlots {
 export interface StepperPanelEmits {}
 
 /**
- * **PrimeVue - StepperPanel**
+ * **CoscomUI - StepperPanel**
  *
  * _StepperPanel is a helper component for Stepper component._
  *
- * [Live Demo](https://www.primevue.org/stepper/)
- * --- ---
- * ![PrimeVue](https://primefaces.org/cdn/primevue/images/logo-100.png)
  *
  * @group Component
  *
