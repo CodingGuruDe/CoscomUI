@@ -1,10 +1,10 @@
-# CoscomBase/Coscom-UI
+# Coscom/Coscom-UI
 
 Coscom UI is a lightweight UI components library for VueJS made for internal use. It offers a set of easily customisable components and doesn't depend on any specific style or CSS framework. More components will be added in the future.
 
 ## Download
 
-Coscom UI is available at [npm](https://www.npmjs.com/package/coscom/coscom-ui).
+Coscom UI is available at [npm](https://www.npmjs.com/package/@coscom/coscom-ui).
 
 ```
 # Using npm
@@ -55,7 +55,7 @@ No dependency on a specific CSS framework/library but you can easily integrate t
 
 ```javascript
 // theme
-import 'coscom-ui/resources/themes/light-blue/theme.css';
+import 'coscom-ui/resources/themes/skyblue-light/theme.css';
 ```
 
 **Unstyled Mode**

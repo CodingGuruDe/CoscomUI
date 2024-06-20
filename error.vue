@@ -5,7 +5,7 @@
                 <div class="flex flex-column sm:flex-row align-items-center justify-content-center gap-3 text-primary">
                     <span class="font-bold" :style="{ fontSize: '144px' }"> 4 </span>
                     <div class="flex align-items-center justify-content-center bg-primary border-circle w-8rem h-8rem">
-                        <i class="cs el-prime text-7xl"></i>
+                        <i class="cs el-megaphone text-7xl"></i>
                     </div>
                     <span class="font-bold" :style="{ fontSize: '144px' }"> 4 </span>
                 </div>
@@ -22,7 +22,7 @@ export default {
         $route: {
             handler(to) {
                 if (to.name === 'index') {
-                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'aura-dark-green' : 'aura-light-green', dark: this.$appState.darkTheme });
+                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'skyblue-dark' : 'skyblue-light', dark: this.$appState.darkTheme });
                 }
             }
         }
@@ -33,7 +33,7 @@ export default {
                 {
                     id: 'theme-link',
                     rel: 'stylesheet',
-                    href: '/themes/aura-light-green/theme.css'
+                    href: '/themes/skyblue-light/theme.css'
                 }
             ]
         });

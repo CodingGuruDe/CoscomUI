@@ -12,7 +12,7 @@ export default {
         $route: {
             handler(to) {
                 if (to.name === 'index') {
-                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'aura-dark-green' : 'aura-light-green', dark: this.$appState.darkTheme });
+                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'skyblue-dark' : 'skyblue-light', dark: this.$appState.darkTheme });
                 }
             }
         }
@@ -23,12 +23,12 @@ export default {
                 {
                     id: 'theme-link',
                     rel: 'stylesheet',
-                    href: '/themes/aura-light-green/theme.css'
+                    href: '/themes/skyblue-light/theme.css'
                 },
                 {
                     id: 'home-table-link',
                     rel: 'stylesheet',
-                    href: '/styles/landing/themes/aura-light-green/theme.css'
+                    href: '/styles/landing/themes/skyblue-light/theme.css'
                 }
             ]
         });

@@ -101,7 +101,7 @@ export default {
                 newTheme = currentTheme.replace('dark', 'light');
             } else {
                 if (currentTheme.includes('light')) newTheme = currentTheme.replace('light', 'dark');
-                else newTheme = 'aura-dark-green'; //fallback
+                else newTheme = 'skyblue'; //fallback
             }
 
             EventBus.emit('theme-change', { theme: newTheme, dark: !this.$appState.darkTheme });

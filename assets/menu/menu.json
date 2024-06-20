@@ -55,11 +55,11 @@
             ]
         },
         {
-            "name": "Components",
+            "name": "UI Components",
             "icon": "cs el-compass",
             "children": [
                 {
-                    "name": "Form",
+                    "name": "Form inputs & controls",
                     "children": [
                         {
                             "name": "AutoComplete",

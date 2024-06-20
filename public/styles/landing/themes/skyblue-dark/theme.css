@@ -289,7 +289,7 @@
   color: var(--primary-color);
 }
 
-@layer primevue {
+@layer coscomui {
   .p-component, .p-component * {
     box-sizing: border-box;
   }
@@ -10795,7 +10795,7 @@
     font-size: 1rem;
   }
 }
-@layer primevue {
+@layer coscomui {
   .p-accordion .p-accordion-header .p-accordion-header-link {
     border-radius: 6px !important;
     flex-direction: row-reverse;

@@ -99,7 +99,7 @@
                         class="px-link flex align-items-center surface-card h-2rem px-2 border-1 border-solid surface-border transition-all transition-duration-300 hover:border-primary"
                     >
                         <span class="text-900 block white-space-nowrap overflow-hidden"> {{ versions[1].version }}</span>
-                        <span class="ml-2 pi pi-angle-down text-600"></span>
+                        <span class="ml-2 cs el-angle-down text-600"></span>
                     </button>
 
                     <div class="p-3 surface-overlay hidden absolute right-0 top-auto border-round shadow-2 origin-top w-8rem">
@@ -148,17 +148,17 @@ export default {
                 {
                     name: 'v4',
                     version: 'v4-beta.1',
-                    url: 'https://v4.primevue.org'
+                    url: '#'
                 },
                 {
                     name: 'v3',
                     version: pkg.version,
-                    url: 'https://primevue.org'
+                    url: '#'
                 },
                 {
                     name: 'v2',
                     version: '2.10.4',
-                    url: 'https://www.primefaces.org/primevue-v2'
+                    url: '#'
                 }
             ]
         };
