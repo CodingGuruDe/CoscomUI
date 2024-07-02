@@ -39,22 +39,22 @@ describe('Accordion.vue', () => {
     });
 
     it('should Accordion and AccordionTab component exist', () => {
-        expect(wrapper.find('.v-accordion.v-component').exists()).toBe(true);
-        expect(wrapper.find('.v-accordion-tab').exists()).toBe(true);
-        expect(wrapper.findAll('.v-accordion-tab').length).toBe(3);
+        expect(wrapper.find('.p-accordion.p-component').exists()).toBe(true);
+        expect(wrapper.find('.p-accordion-tab').exists()).toBe(true);
+        expect(wrapper.findAll('.p-accordion-tab').length).toBe(3);
     });
 
     it('should activeIndex change', async () => {
         await wrapper.setProps({ activeIndex: 1 });
 
-        const allTabs = wrapper.findAll('.v-accordion-tab');
+        const allTabs = wrapper.findAll('.p-accordion-tab');
 
-        expect(allTabs[0].classes()).not.toContain('v-accordion-tab-active');
-        expect(allTabs[1].classes()).toContain('v-accordion-tab-active');
+        expect(allTabs[0].classes()).not.toContain('p-accordion-tab-active');
+        expect(allTabs[1].classes()).toContain('p-accordion-tab-active');
     });
 
     it('should work tab click', async () => {
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('click');
 
@@ -64,7 +64,7 @@ describe('Accordion.vue', () => {
 
     it('When invalid key triggered OnTabKey should break', async () => {
         const keydownOptions = ['onTabHomeKey', 'onTabEnterKey', 'onTabEndKey', 'onTabArrowDownKey', 'onTabArrowUpKey'];
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('keydown', { code: 'ArrowRight' });
 
@@ -74,7 +74,7 @@ describe('Accordion.vue', () => {
     });
 
     it('When keydown enter is triggered on component header changeActiveIndex should be triggered', async () => {
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
         const changeActiveIndexSpy = vi.spyOn(wrapper.vm, 'changeActiveIndex');
 
         await firstHeader.trigger('keydown', { code: 'Enter' });
@@ -83,7 +83,7 @@ describe('Accordion.vue', () => {
     });
 
     it('When keydown end is triggered on component header changeFocusedTab should be triggered', async () => {
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
         const changeFocusedTabSpy = vi.spyOn(wrapper.vm, 'changeFocusedTab');
         const findLastHeaderActionSpy = vi.spyOn(wrapper.vm, 'findLastHeaderAction');
 
@@ -94,7 +94,7 @@ describe('Accordion.vue', () => {
     });
 
     it('When keydown home is triggered on component header changeFocusedTab should be triggered', async () => {
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
         const changeFocusedTabSpy = vi.spyOn(wrapper.vm, 'changeFocusedTab');
         const findFirstHeaderActionSpy = vi.spyOn(wrapper.vm, 'findFirstHeaderAction');
 
@@ -108,7 +108,7 @@ describe('Accordion.vue', () => {
         const findPrevHeaderActionSpy = vi.spyOn(wrapper.vm, 'findPrevHeaderAction').mockImplementation(() => true);
         const onTabEndKeySpy = vi.spyOn(wrapper.vm, 'onTabEndKey');
         const changeFocusedTabSpy = vi.spyOn(wrapper.vm, 'changeFocusedTab').mockImplementation(() => true);
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('keydown', { code: 'ArrowUp' });
 
@@ -120,7 +120,7 @@ describe('Accordion.vue', () => {
     it('When keydown ArrowUp is triggered and findPrevHeaderAction is false onTabEndKey should be triggered', async () => {
         const findPrevHeaderActionSpy = vi.spyOn(wrapper.vm, 'findPrevHeaderAction').mockImplementation(() => false);
         const onTabEndKeySpy = vi.spyOn(wrapper.vm, 'onTabEndKey');
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('keydown', { code: 'ArrowUp' });
 
@@ -132,7 +132,7 @@ describe('Accordion.vue', () => {
         const findNextHeaderActionSpy = vi.spyOn(wrapper.vm, 'findNextHeaderAction').mockImplementation(() => true);
         const onTabHomeKeySpy = vi.spyOn(wrapper.vm, 'onTabHomeKey');
         const changeFocusedTabSpy = vi.spyOn(wrapper.vm, 'changeFocusedTab').mockImplementation(() => true);
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('keydown', { code: 'ArrowDown' });
 
@@ -144,7 +144,7 @@ describe('Accordion.vue', () => {
     it('When keydown ArrowDown is triggered and nextHeaderAction is false onTabHomeKey should be triggered', async () => {
         const findNextHeaderActionSpy = vi.spyOn(wrapper.vm, 'findNextHeaderAction').mockImplementation(() => false);
         const onTabHomeKeySpy = vi.spyOn(wrapper.vm, 'onTabHomeKey');
-        const firstHeader = wrapper.find('a.v-accordion-header-link');
+        const firstHeader = wrapper.find('a.p-accordion-header-link');
 
         await firstHeader.trigger('keydown', { code: 'ArrowDown' });
 

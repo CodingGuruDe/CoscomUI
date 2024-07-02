@@ -17,35 +17,35 @@ export default {
             items: [
                 {
                     label: 'Add',
-                    icon: 'pi pi-pencil',
+                    icon: 'cs el-pencil',
                     command: () => {
                         this.$toast.add({ severity: 'info', summary: 'Add', detail: 'Data Added' });
                     }
                 },
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh',
+                    icon: 'cs el-refresh',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Update', detail: 'Data Updated' });
                     }
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-trash',
+                    icon: 'cs el-trash',
                     command: () => {
                         this.$toast.add({ severity: 'error', summary: 'Delete', detail: 'Data Deleted' });
                     }
                 },
                 {
                     label: 'Upload',
-                    icon: 'pi pi-upload',
+                    icon: 'cs el-upload',
                     command: () => {
                         this.$router.push('/fileupload');
                     }
                 },
                 {
                     label: 'Vue Website',
-                    icon: 'pi pi-external-link',
+                    icon: 'cs el-external-link',
                     command: () => {
                         window.location.href = 'https://vuejs.org/';
                     }
@@ -72,35 +72,35 @@ export default {
             items: [
                 {
                     label: 'Add',
-                    icon: 'pi pi-pencil',
+                    icon: 'cs el-pencil',
                     command: () => {
                         this.$toast.add({ severity: 'info', summary: 'Add', detail: 'Data Added' });
                     }
                 },
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh',
+                    icon: 'cs el-refresh',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Update', detail: 'Data Updated' });
                     }
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-trash',
+                    icon: 'cs el-trash',
                     command: () => {
                         this.$toast.add({ severity: 'error', summary: 'Delete', detail: 'Data Deleted' });
                     }
                 },
                 {
                     label: 'Upload',
-                    icon: 'pi pi-upload',
+                    icon: 'cs el-upload',
                     command: () => {
                         this.$router.push('/fileupload');
                     }
                 },
                 {
                     label: 'Vue Website',
-                    icon: 'pi pi-external-link',
+                    icon: 'cs el-external-link',
                     command: () => {
                         window.location.href = 'https://vuejs.org/';
                     }
@@ -132,35 +132,34 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Add',
-        icon: 'pi pi-pencil',
+        icon: 'cs el-pencil',
         command: () => {
             toast.add({ severity: 'info', summary: 'Add', detail: 'Data Added' });
         }
     },
     {
         label: 'Update',
-        icon: 'pi pi-refresh',
+        icon: 'cs el-refresh',
         command: () => {
             toast.add({ severity: 'success', summary: 'Update', detail: 'Data Updated' });
         }
     },
     {
         label: 'Delete',
-        icon: 'pi pi-trash',
+        icon: 'cs el-trash',
         command: () => {
             toast.add({ severity: 'error', summary: 'Delete', detail: 'Data Deleted' });
         }
     },
     {
         label: 'Upload',
-        icon: 'pi pi-upload',
-        command: () => {
+        icon: 'cs el=> {
             router.push('/fileupload');
         }
     },
     {
         label: 'Vue Website',
-        icon: 'pi pi-external-link',
+        icon: 'cs el-external-link',
         command: () => {
             window.location.href = 'https://vuejs.org/'
         }
