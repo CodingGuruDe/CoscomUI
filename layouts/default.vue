@@ -1,6 +1,5 @@
 <template>
     <div class="layout-wrapper" :class="containerClass" :data-p-theme="$appState.theme">
-        <AppNews />
         <AppTopBar @menubutton-click="onMenuButtonClick" @darkswitch-click="onDarkModeToggle" />
         <div :class="['layout-mask', { 'layout-mask-active': sidebarActive }]" @click="onMaskClick"></div>
         <div class="layout-content">
@@ -22,7 +21,6 @@ import DomHandler from '@/components/lib/utils/DomHandler';
 import EventBus from '@/layouts/AppEventBus';
 import AppFooter from './AppFooter.vue';
 import AppMenu from './AppMenu.vue';
-import AppNews from './AppNews.vue';
 import AppTopBar from './AppTopBar.vue';
 
 export default {
@@ -111,7 +109,6 @@ export default {
         containerClass() {
             return [
                 {
-                    'layout-news-active': this.$appState.newsActive,
                     'p-ripple-disabled': this.$appState.ripple === false,
                     'layout-dark': this.$appState.darkTheme,
                     'layout-light': !this.$appState.darkTheme
@@ -122,8 +119,7 @@ export default {
     components: {
         AppTopBar,
         AppMenu,
-        AppFooter,
-        AppNews
+        AppFooter
     }
 };
 </script>

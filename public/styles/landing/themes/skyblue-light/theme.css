@@ -194,8 +194,8 @@
 
 .p-editor-container .p-editor-toolbar {
   background: #ffffff;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 .p-editor-container .p-editor-toolbar.ql-snow {
   border: 1px solid #e2e8f0;
@@ -232,7 +232,7 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
+  border-radius: 3px;
   padding: 0.25rem 0.25rem;
 }
 .p-editor-container .p-editor-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-picker-item {
@@ -246,8 +246,8 @@
   padding: 0.5rem 0.75rem;
 }
 .p-editor-container .p-editor-content {
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .p-editor-container .p-editor-content.ql-snow {
   border: 1px solid #e2e8f0;
@@ -255,8 +255,8 @@
 .p-editor-container .p-editor-content .ql-editor {
   background: #ffffff;
   color: #334155;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 .p-editor-container .ql-snow.ql-toolbar button:hover,
 .p-editor-container .ql-snow.ql-toolbar button:focus {
@@ -1273,7 +1273,7 @@
     z-index: 1;
     outline: 0 none;
     border: 1px solid #cbd5e1;
-    border-radius: 6px;
+    border-radius: 2px;
   }
   .p-checkbox .p-checkbox-box {
     border: 1px solid #cbd5e1;
@@ -1282,7 +1282,7 @@
     height: 1.25rem;
     color: #334155;
     border-radius: 6px;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, outline-color 0.2s;
     outline-color: transparent;
   }
   .p-checkbox .p-checkbox-box .p-checkbox-icon {
@@ -2061,9 +2061,9 @@
     background: #ffffff;
     padding: 0.5rem 0.75rem;
     border: 1px solid #cbd5e1;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, outline-color 0.2s;
     appearance: none;
-    border-radius: 6px;
+    border-radius: 3px;
     outline-color: transparent;
   }
   .p-inputtext:enabled:hover {
@@ -2401,8 +2401,8 @@
   .p-multiselect {
     background: #ffffff;
     border: 1px solid #cbd5e1;
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, outline-color 0.2s;
+    border-radius: 3px;
     outline-color: transparent;
   }
   .p-multiselect:not(.p-disabled):hover {
@@ -3178,7 +3178,7 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 6px;
+    border-radius: 3px;
     outline-color: transparent;
   }
   .p-button:not(:disabled):hover {
@@ -10944,7 +10944,7 @@
   }
 
   .p-card {
-    border-radius: 6px;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
   }
@@ -10987,8 +10987,8 @@
   }
 
   .p-checkbox .p-checkbox-box {
-    border-radius: 4px;
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+    border-radius: 2px;
+    box-shadow: none;
   }
   .p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
     outline-width: 1px;
@@ -11314,7 +11314,7 @@
   }
 
   .p-inputtext {
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+    box-shadow: none;
   }
 
   .p-inputtext:disabled {
@@ -11415,7 +11415,7 @@
   }
 
   .p-multiselect {
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+    box-shadow: none;
   }
   .p-multiselect.p-disabled {
     opacity: 1;

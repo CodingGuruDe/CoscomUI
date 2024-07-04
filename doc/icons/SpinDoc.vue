@@ -3,8 +3,8 @@
         <p>Special <i>el-spin</i> class applies infinite rotation to an icon.</p>
     </DocSectionText>
     <div class="card flex justify-content-center gap-3">
-        <i class="cs el-spin pi-spinner" style="font-size: 2rem"></i>
-        <i class="cs el-spin pi-cog" style="font-size: 2rem"></i>
+        <i class="cs el-spin el-spinner" style="font-size: 2rem"></i>
+        <i class="cs el-spin el-cog" style="font-size: 2rem"></i>
     </div>
     <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
 </template>
@@ -15,8 +15,8 @@ export default {
         return {
             code: {
                 basic: `
-<i class="cs el-spin pi-spinner" style="font-size: 2rem"></i>
-<i class="cs el-spin pi-cog" style="font-size: 2rem"></i>
+<i class="cs el-spin el-spinner" style="font-size: 2rem"></i>
+<i class="cs el-spin el-cog" style="font-size: 2rem"></i>
 `
             }
         };

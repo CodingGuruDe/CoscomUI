@@ -1,3 +1,5 @@
+
+
 .landing-hero {
     .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
         background: transparent;
@@ -13,10 +15,159 @@
     }
 }
 
-@media screen and (min-width: 1660px) {
-    .landing-hero {
-        width: 1504px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+.n-layout.n-layout--absolute-positioned {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.n-layout {
+    color: #333639;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    z-index: auto;
+    flex: auto;
+    overflow: hidden;
+    transition: box-shadow .3s cubic-bezier(4,0,2,1), background-color .3s cubic-bezier(4,0,2,1), color .3s cubic-bezier(4,0,2,1);
+}
+
+.banner::after {
+    content: '';
+    width: 100%;
+    height: 64px;
+  }
+  
+  .naive-title {
+    line-height: 1;
+    font-family: Metropolis, sans-serif;
+    margin-bottom: 18px !important;
+  }
+
+.n-scrollbar {
+    .n-scrollbar-container {
+        .n-scrollbar-content {
+            .banner {
+                h1 {
+                    font-size: 80px;
+                }
+                .left-image {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .right-image {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .n-button {
+                    margin: 0;
+                    font-weight: 500;
+                    line-height: 1;
+                    font-family: inherit;
+                    padding: 0 18px;
+                    height: 40px;
+                    font-size: 15px;
+                    border-radius: 3px;
+                    color: #333639;
+                    background-color: #0000;
+                    width: initial;
+                    white-space: nowrap;
+                    outline: none;
+                    position: relative;
+                    z-index: auto;
+                    border: none;
+                    display: inline-flex;
+                    flex-wrap: nowrap;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: center;
+                    user-select: none;
+                    -webkit-user-select: none;
+                    text-align: center;
+                    cursor: pointer;
+                    text-decoration: none;
+                    transition: color .3s cubic-bezier(4,0,2,1), background-color .3s cubic-bezier(4,0,2,1), opacity .3s cubic-bezier(4,0,2,1), border-color .3s cubic-bezier(4,0,2,1);
+                }
+                
+            }
+            
+        }
     }
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .left-image {
+        right: calc(50% + 270px);
+    }
+}
+
+
+
+@media screen and (min-width: 1660px) {
+    .n-scrollbar {
+        overflow: hidden;
+        position: relative;
+        z-index: auto;
+        height: 100%;
+        width: 100%;
+    
+    .n-scrollbar-container {
+        width: 100%;
+        overflow: scroll;
+        height: 100%;
+        min-height: inherit;
+        max-height: inherit;
+        scrollbar-width: none;
+            .n-scrollbar-content {
+                box-sizing: border-box;
+                min-width: 100%;
+                .banner {
+                    display: flex;
+                    flex-direction: column;
+                    height: calc(100vh - 64px);
+                    justify-content: center;
+                    position: relative;
+                    text-align: center;
+                    .left-image {
+                        left: 0;
+                        width: 700px;
+                    }
+                    .right-image {
+                        right: 0;
+                        width: 700px;
+                    }
+                }
+                
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 1023px) {
+    .left-image {
+        left: -16px;
+        min-width: unset;
+        position: relative;
+        top: 8px;
+        transform: none;
+        width: 300px;
+    }
+    .banner {
+        height: calc(100vh - 124px);
+        min-height: 550px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 60px;
+        position: static;
+        text-align: left;
+        transform: none;
+    }
+
 }

@@ -1,78 +1,11 @@
 <template>
     <section class="landing-footer pt-8 px-5 lg:px-8">
         <div class="landing-footer-container">
-            <div class="flex flex-wrap z-1">
-                <div class="w-6 lg:w-3 flex">
-                    <ul class="list-none p-0 m-0">
-                        <li class="font-bold mb-5">General</li>
-                        <li class="mb-4">
-                            <NuxtLink to="/setup" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300">Get Started</NuxtLink>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://github.com/primefaces/primevue-examples" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Examples</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-6 lg:w-3 flex">
-                    <ul class="list-none p-0 m-0">
-                        <li class="font-bold mb-5">Support</li>
-                        <li class="mb-4">
-                            <a href="https://github.com/orgs/primefaces/discussions" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Forum</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://discord.gg/gzKFYnpmCY" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Discord</a>
-                        </li>
-                        <li class="mb-4">
-                            <NuxtLink to="/support" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300">PRO Support</NuxtLink>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-6 lg:w-3 flex">
-                    <ul class="list-none p-0 m-0">
-                        <li class="font-bold mt-5 lg:mt-0 mb-5">Theming</li>
-                        <li class="mb-4">
-                            <NuxtLink to="/theming" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300">Styled Mode</NuxtLink>
-                        </li>
-                        <li class="mb-4">
-                            <NuxtLink to="/unstyled" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300">Unstyled Mode</NuxtLink>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-6 lg:w-3 flex">
-                    <ul class="list-none p-0 m-0">
-                        <li class="font-bold mt-5 lg:mt-0 mb-5">Resources</li>
-                        <li class="mb-4">
-                            <a href="https://www.youtube.com/channel/UCTgmp69aBOlLnPEqlUyetWw" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer"
-                                >PrimeTV</a
-                            >
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://www.primefaces.org/store/" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Store</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://github.com/primefaces/primevue" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Source Code</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://twitter.com/primevue" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Twitter</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://www.primefaces.org/newsletter" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">Newsletter</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="https://gear.primefaces.org/" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300" target="_blank" rel="noopener noreferrer">PrimeGear</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="mailto:contact@primetek.com.tr" class="text-secondary font-medium hover:text-primary border-round transition-all transition-duration-300">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
             <hr class="section-divider mt-8" />
 
             <div class="flex flex-wrap justify-content-between py-6 gap-5">
                 <span>
-                    <svg width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 120px">
+                    <!-- <svg width="165" height="40" viewBox="0 0 165 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 120px">
                         <path
                             fill-rule="evenodd"
                             clip-rule="evenodd"
@@ -113,7 +46,7 @@
                         <path d="M29.8 5.20001L23.1 5.70001L19.4 17.15L19.9 17.14L23.8 15.7L29.8 5.20001Z" fill="var(--text-color)" />
                         <path d="M12.1 18.2L12.6 17.4L14.3 18.2H20.3L21.6 17.4L22.2 18.2L17.15 26.8L12.1 18.2Z" fill="var(--text-color)" />
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0297 0L17.1214 13.1536L22.5526 0H12.0297Z" fill="var(--primary-color)" />
-                    </svg>
+                    </svg> -->
                 </span>
                 <div class="flex align-items-center gap-2">
                     <a href="https://twitter.com/coscomui" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">

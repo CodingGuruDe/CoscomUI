@@ -17,6 +17,20 @@ yarn add @coscom/coscom-ui
 pnpm add @coscom/coscom-ui
 ```
 
+## Features
+
+-   🚀 80+ High Quality Components
+-   💪 Write Once, Multi-End Use
+-   📖 Based on JD APP 10.0 Visual Specifications
+-   🍭 Support Tree Shaking
+-   📖 Extensive Documentation and Demos
+-   💪 Written in TypeScript
+-   💪 Support SSR (Experimental)
+-   🍭 Support Custom Themes with 700+ Style Variables
+-   🌍 Support i18n
+-   🍭 100%+ Unit Test Coverage
+-   📖 Provide Sketch Design Resources
+
 ## Explanation
 
 ````

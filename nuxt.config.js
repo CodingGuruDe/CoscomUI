@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     },
     routeRules: {
         '/accessibility': { redirect: { to: '/guides/accessibility', statusCode: 301 } },
-        '/installation': { redirect: { to: '/vite', statusCode: 301 } }
+        '/installation': { redirect: { to: '/installation', statusCode: 301 } }
     },
     coscom: {
         options: {

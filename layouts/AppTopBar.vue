@@ -35,84 +35,27 @@
                     </svg>
                 </NuxtLink>
                 <NuxtLink to="/" class="layout-topbar-icon" aria-label="Coscom logo">
-                    <svg width="35" height="40" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 105 105">
+                        <circle cx="52.64" cy="52.5" r="50.33" fill="#ffed00" />
                         <path
-                            d="M25.87 18.05L23.16 17.45L25.27 20.46V29.78L32.49 23.76V13.53L29.18 14.73L25.87 18.04V18.05ZM25.27 35.49L29.18 31.58V27.67L25.27 30.98V35.49ZM20.16 17.14H20.03H20.17H20.16ZM30.1 5.19L34.89 4.81L33.08 12.33L24.1 15.67L30.08 5.2L30.1 5.19ZM5.72 14.74L2.41 13.54V23.77L9.63 29.79V20.47L11.74 17.46L9.03 18.06L5.72 14.75V14.74ZM9.63 30.98L5.72 27.67V31.58L9.63 35.49V30.98ZM4.8 5.2L10.78 15.67L1.81 12.33L0 4.81L4.79 5.19L4.8 5.2ZM24.37 21.05V34.59L22.56 37.29L20.46 39.4H14.44L12.34 37.29L10.53 34.59V21.05L12.42 18.23L17.45 26.8L22.48 18.23L24.37 21.05ZM22.85 0L22.57 0.69L17.45 13.08L12.33 0.69L12.05 0H22.85Z"
-                            fill="var(--primary-color)"
-                        />
-                        <path
-                            d="M30.69 4.21L24.37 4.81L22.57 0.69L22.86 0H26.48L30.69 4.21ZM23.75 5.67L22.66 3.08L18.05 14.24V17.14H19.7H20.03H20.16H20.2L24.1 15.7L30.11 5.19L23.75 5.67ZM4.21002 4.21L10.53 4.81L12.33 0.69L12.05 0H8.43002L4.22002 4.21H4.21002ZM21.9 17.4L20.6 18.2H14.3L13 17.4L12.4 18.2L12.42 18.23L17.45 26.8L22.48 18.23L22.5 18.2L21.9 17.4ZM4.79002 5.19L10.8 15.7L14.7 17.14H14.74H15.2H16.85V14.24L12.24 3.09L11.15 5.68L4.79002 5.2V5.19Z"
-                            fill="var(--text-color)"
+                            d="M72.48,23.16c0-1.48-1.2-2.69-2.69-2.69c-0.03,0-0.06,0.01-0.09,0.01v-0.01H41.08v0c-4.58,0.03-8.28,3.75-8.28,8.33  c0,0.03,0,0.05,0,0.08h0l0,47.3l0,0l0,0v0.24h0.01c0.12,4.36,3.59,7.88,7.93,8.08v0.02H69.7v-0.01c0.03,0,0.06,0.01,0.09,0.01  c1.48,0,2.69-1.2,2.69-2.69c0-0.14-0.02-0.28-0.04-0.42h0.04V70.97h-0.03c-0.16-1.33-1.28-2.36-2.65-2.36  c-0.03,0-0.06,0.01-0.09,0.01v-0.01h-7.56H54.6h-0.19c-1.42,0-2.58-1.15-2.58-2.58V39.71c0-1.42,1.15-2.58,2.58-2.58h0.19v0h15.1  v-0.01c0.03,0,0.06,0.01,0.09,0.01c1.48,0,2.69-1.2,2.69-2.69c0-0.02,0-0.03,0-0.05h0V23.16L72.48,23.16  C72.48,23.16,72.48,23.16,72.48,23.16z"
                         />
                     </svg>
                 </NuxtLink>
             </div>
 
-            <ul class="flex list-none m-0 p-0 gap-2 align-items-center">
-                <li>
-                    <div id="docsearch"></div>
-                </li>
-                <li>
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex flex-shrink-0 px-link border-1 border-solid w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                    >
-                        <i class="cs el-github text-700"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex flex-shrink-0 px-link border-1 border-solid w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                    >
-                        <i class="cs el-discord text-700"></i>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        href="#"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex flex-shrink-0 px-link border-1 border-solid w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                    >
-                        <i class="cs el-comments text-700"></i>
-                    </a>
-                </li>
-                <li>
-                    <button
-                        type="button"
-                        class="flex flex-shrink-0 px-link border-1 border-solid w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                        @click="toggleDarkMode"
-                    >
-                        <i :class="['cs text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
-                    </button>
-                </li>
-                <li class="relative">
-                    <button
-                        v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true }"
-                        type="button"
-                        style="max-width: 8rem"
-                        class="px-link flex align-items-center surface-card h-2rem px-2 border-1 border-solid surface-border transition-all transition-duration-300 hover:border-primary"
-                    >
-                        <span class="text-900 block white-space-nowrap overflow-hidden"> {{ versions[1].version }}</span>
-                        <span class="ml-2 cs el-angle-down text-600"></span>
-                    </button>
+            <div class="nav-end">
+                <button size="small" class="v-button nav-picker" @click="toggleDarkMode">
+                    <i :class="['cs surface-card text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
+                </button>
 
-                    <div class="p-3 surface-overlay hidden absolute right-0 top-auto border-round shadow-2 origin-top w-8rem">
-                        <ul class="list-none m-0 p-0">
-                            <li v-for="version in versions" :key="version.version" role="none">
-                                <a :href="version.url" class="inline-flex p-2 border-round hover:surface-hover w-full">
-                                    <span class="font-bold text-900">{{ version.name }}</span>
-                                    <span class="ml-2 text-700 white-space-nowrap block overflow-hidden text-overflow-ellipsis">{{ version.version }}</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <li>
+                    <a :href="repoUrl" class="v-button v-button--default-type v-button--small-type nav-picker" target="_blank" rel="noopener noreferrer"> GitHub </a>
                 </li>
+                <button size="small" class="v-button nav-picker">
+                    {{ versions[0].name }}
+                </button>
+
                 <li v-if="showMenuButton" class="menu-button">
                     <button
                         type="button"
@@ -124,7 +67,7 @@
                         <i class="cs el-bars text-700"></i>
                     </button>
                 </li>
-            </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -132,6 +75,7 @@
 <script>
 import pkg from '@/package.json';
 import docsearch from '@docsearch/js';
+import { repoUrl } from '@/utils/github-url';
 
 export default {
     emits: ['menubutton-click', 'configbutton-click', 'darkswitch-click'],
@@ -168,28 +112,28 @@ export default {
     mounted() {
         this.bindScrollListener();
 
-        docsearch({
-            container: '#docsearch',
-            appId: '01CMUF4W4R',
-            indexName: 'primevue',
-            apiKey: '9bb5939e36897b26ff7de5b7b64d6c43',
-            transformItems: (items) => {
-                const isLocalhost = process.env.NODE_ENV !== 'production';
+        // docsearch({
+        //     container: '#docsearch',
+        //     appId: '01CMUF4W4R',
+        //     indexName: 'primevue',
+        //     apiKey: '9bb5939e36897b26ff7de5b7b64d6c43',
+        //     transformItems: (items) => {
+        //         const isLocalhost = process.env.NODE_ENV !== 'production';
 
-                return items.map((item) => {
-                    if (isLocalhost) {
-                        const url = new URL(item.url);
+        //         return items.map((item) => {
+        //             if (isLocalhost) {
+        //                 const url = new URL(item.url);
 
-                        url.protocol = window.location.protocol;
-                        url.hostname = window.location.hostname;
-                        url.port = window.location.port;
-                        item.url = url.toString();
-                    }
+        //                 url.protocol = window.location.protocol;
+        //                 url.hostname = window.location.hostname;
+        //                 url.port = window.location.port;
+        //                 item.url = url.toString();
+        //             }
 
-                    return item;
-                });
-            }
-        });
+        //             return item;
+        //         });
+        //     }
+        // });
     },
     beforeUnmount() {
         if (this.scrollListener) {

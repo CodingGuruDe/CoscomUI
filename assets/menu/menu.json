@@ -5,34 +5,8 @@
             "icon": "cs el-home",
             "children": [
                 {
-                    "name": "Introduction",
-                    "to": "/introduction"
-                },
-                {
-                    "name": "Setup",
-                    "to": "/setup"
-                },
-                {
-                    "name": "Playground",
-                    "to": "/playground"
-                }
-            ]
-        },
-        {
-            "name": "Installation",
-            "icon": "cs el-cloud-download",
-            "children": [
-                {
-                    "name": "Vite",
-                    "to": "/vite"
-                },
-                {
-                    "name": "Nuxt",
-                    "to": "/nuxt"
-                },
-                {
-                    "name": "CDN",
-                    "to": "/cdn"
+                    "name": "Installation",
+                    "to": "/installation"
                 }
             ]
         },
@@ -55,8 +29,74 @@
             ]
         },
         {
-            "name": "UI Components",
-            "icon": "cs el-compass",
+            "name": "Common Components(15)",
+            "icon": "cs el-verified",
+            "children": [
+                {
+                    "name": "Avatar",
+                    "to": "/avatar"
+                },
+                {
+                    "name": "Button",
+                    "to": "/button"
+                },
+                {
+                    "name": "Card",
+                    "to": "/card"
+                },
+                {
+                    "name": "Carousel",
+                    "to": "/carousel"
+                },
+                {
+                    "name": "Checkbox",
+                    "to": "/checkbox"
+                },
+                {
+                    "name": "Collapse",
+                    "to": "/accordion"
+                },
+                {
+                    "name": "Editor",
+                    "to": "/editor"
+                },
+                {
+                    "name": "Data Table",
+                    "to": "/datatable"
+                },
+                {
+                    "name": "Divider",
+                    "to": "/divider"
+                },
+                {
+                    "name": "Dropdown",
+                    "to": "/dropdown"
+                },
+                {
+                    "name": "Input",
+                    "to": "/inputtext"
+                },
+                {
+                    "name": "Input Number",
+                    "to": "/inputnumber"
+                },
+                {
+                    "name": "Multi Select",
+                    "to": "/multiselect"
+                },
+                {
+                    "name": "Radio Button",
+                    "to": "/radiobutton"
+                },
+                {
+                    "name": "Select Button",
+                    "to": "/selectbutton"
+                }
+            ]
+        },
+        {
+            "name": "Other Components(80)",
+            "icon": "cs el-box",
             "children": [
                 {
                     "name": "Form inputs & controls",
@@ -86,44 +126,32 @@
                             "to": "/colorpicker"
                         },
                         {
-                            "name": "Dropdown",
-                            "to": "/dropdown"
-                        },
-                        {
-                            "name": "Editor",
-                            "to": "/editor"
-                        },
-                        {
                             "name": "FloatLabel",
                             "to": "/floatlabel"
                         },
                         {
-                            "name": "IconField",
+                            "name": "Icon Field",
                             "to": "/iconfield"
                         },
                         {
-                            "name": "InputGroup",
+                            "name": "Input Group",
                             "to": "/inputgroup"
                         },
                         {
-                            "name": "InputMask",
+                            "name": "Input Mask",
                             "to": "/inputmask"
                         },
                         {
-                            "name": "InputNumber",
+                            "name": "Input Number",
                             "to": "/inputnumber"
                         },
                         {
-                            "name": "InputOtp",
+                            "name": "Input Otp",
                             "to": "/inputotp"
                         },
                         {
-                            "name": "InputSwitch",
+                            "name": "Input Switch",
                             "to": "/inputswitch"
-                        },
-                        {
-                            "name": "InputText",
-                            "to": "/inputtext"
                         },
                         {
                             "name": "Knob",
@@ -142,16 +170,8 @@
                             "to": "/password"
                         },
                         {
-                            "name": "RadioButton",
-                            "to": "/radiobutton"
-                        },
-                        {
                             "name": "Rating",
                             "to": "/rating"
-                        },
-                        {
-                            "name": "SelectButton",
-                            "to": "/selectbutton"
                         },
                         {
                             "name": "Slider",
@@ -162,7 +182,7 @@
                             "to": "/textarea"
                         },
                         {
-                            "name": "ToggleButton",
+                            "name": "Toggle Button",
                             "to": "/togglebutton"
                         },
                         {
@@ -170,7 +190,7 @@
                             "to": "/treeselect"
                         },
                         {
-                            "name": "TriStateCheckbox",
+                            "name": "TriState Checkbox",
                             "to": "/tristatecheckbox"
                         }
                     ]
@@ -178,10 +198,6 @@
                 {
                     "name": "Button",
                     "children": [
-                        {
-                            "name": "Button",
-                            "to": "/button"
-                        },
                         {
                             "name": "Speed Dial",
                             "to": "/speeddial"
@@ -196,23 +212,19 @@
                     "name": "Data",
                     "children": [
                         {
-                            "name": "DataTable",
-                            "to": "/datatable"
-                        },
-                        {
                             "name": "DataView",
                             "to": "/dataview"
                         },
                         {
-                            "name": "OrderList",
+                            "name": "Order List",
                             "to": "/orderlist"
                         },
                         {
-                            "name": "Org Chart",
+                            "name": "Organization Chart",
                             "to": "/organizationchart"
                         },
                         {
-                            "name": "Paginator",
+                            "name": "Pagination",
                             "to": "/paginator"
                         },
                         {
@@ -232,7 +244,7 @@
                             "to": "/timeline"
                         },
                         {
-                            "name": "VirtualScroller",
+                            "name": "Virtual Scroller",
                             "to": "/virtualscroller"
                         }
                     ]
@@ -241,20 +253,8 @@
                     "name": "Panel",
                     "children": [
                         {
-                            "name": "Accordion",
-                            "to": "/accordion"
-                        },
-                        {
-                            "name": "Card",
-                            "to": "/card"
-                        },
-                        {
                             "name": "Deferred",
                             "to": "/deferredcontent"
-                        },
-                        {
-                            "name": "Divider",
-                            "to": "/divider"
                         },
                         {
                             "name": "Fieldset",
@@ -265,7 +265,7 @@
                             "to": "/panel"
                         },
                         {
-                            "name": "ScrollPanel",
+                            "name": "Scroll Panel",
                             "to": "/scrollpanel"
                         },
                         {
@@ -290,11 +290,11 @@
                     "name": "Overlay",
                     "children": [
                         {
-                            "name": "ConfirmDialog",
+                            "name": "Confirm Dialog",
                             "to": "/confirmdialog"
                         },
                         {
-                            "name": "ConfirmPopup",
+                            "name": "Confirm Popup",
                             "to": "/confirmpopup"
                         },
                         {
@@ -302,11 +302,11 @@
                             "to": "/dialog"
                         },
                         {
-                            "name": "DynamicDialog",
+                            "name": "Dynamic Dialog",
                             "to": "/dynamicdialog"
                         },
                         {
-                            "name": "OverlayPanel",
+                            "name": "Overlay Panel",
                             "to": "/overlaypanel"
                         },
                         {
@@ -336,7 +336,7 @@
                             "to": "/breadcrumb"
                         },
                         {
-                            "name": "ContextMenu",
+                            "name": "Context Menu",
                             "to": "/contextmenu"
                         },
                         {
@@ -352,11 +352,11 @@
                             "to": "/menubar"
                         },
                         {
-                            "name": "MegaMenu",
+                            "name": "Mega Menu",
                             "to": "/megamenu"
                         },
                         {
-                            "name": "PanelMenu",
+                            "name": "Panel Menu",
                             "to": "/panelmenu"
                         },
                         {
@@ -368,7 +368,7 @@
                             "to": "/tabmenu"
                         },
                         {
-                            "name": "TieredMenu",
+                            "name": "Tiered Menu",
                             "to": "/tieredmenu"
                         }
                     ]
@@ -381,7 +381,7 @@
                             "to": "/message"
                         },
                         {
-                            "name": "InlineMessage",
+                            "name": "Inline Message",
                             "to": "/inlinemessage"
                         },
                         {
@@ -393,10 +393,6 @@
                 {
                     "name": "Media",
                     "children": [
-                        {
-                            "name": "Carousel",
-                            "to": "/carousel"
-                        },
                         {
                             "name": "Galleria",
                             "to": "/galleria"
@@ -411,15 +407,11 @@
                     "name": "Misc",
                     "children": [
                         {
-                            "name": "Avatar",
-                            "to": "/avatar"
-                        },
-                        {
                             "name": "Badge",
                             "to": "/badge"
                         },
                         {
-                            "name": "BlockUI",
+                            "name": "Block UI",
                             "to": "/blockui"
                         },
                         {
@@ -427,7 +419,7 @@
                             "to": "/chip"
                         },
                         {
-                            "name": "FocusTrap",
+                            "name": "Focus Trap",
                             "to": "/focustrap"
                         },
                         {
@@ -439,7 +431,7 @@
                             "to": "/metergroup"
                         },
                         {
-                            "name": "ScrollTop",
+                            "name": "Scroll Top",
                             "to": "/scrolltop"
                         },
                         {
@@ -447,11 +439,11 @@
                             "to": "/skeleton"
                         },
                         {
-                            "name": "ProgressBar",
+                            "name": "Progress Bar",
                             "to": "/progressbar"
                         },
                         {
-                            "name": "ProgressSpinner",
+                            "name": "Progress Spinner",
                             "to": "/progressspinner"
                         },
                         {
@@ -463,7 +455,7 @@
                             "to": "/ripple"
                         },
                         {
-                            "name": "StyleClass",
+                            "name": "Style Class",
                             "to": "/styleclass"
                         },
                         {
@@ -479,46 +471,20 @@
             ]
         },
         {
-            "name": "Theming",
+            "name": "Styling",
             "icon": "cs el-palette",
             "children": [
                 {
-                    "name": "Styled Mode",
-                    "children": [
-                        {
-                            "name": "Overview",
-                            "to": "/theming"
-                        },
-                        {
-                            "name": "Colors",
-                            "to": "/colors"
-                        },
-                        {
-                            "name": "Sass API",
-                            "href": "#"
-                        }
-                    ]
+                    "name": "Overview",
+                    "to": "/theming"
                 },
                 {
-                    "name": "Unstyled Mode",
-                    "children": [
-                        {
-                            "name": "Overview",
-                            "to": "/unstyled"
-                        },
-                        {
-                            "name": "Bootstrap",
-                            "to": "/bootstrap"
-                        },
-                        {
-                            "name": "Bulma",
-                            "to": "/bulma"
-                        },
-                        {
-                            "name": "UnoCSS",
-                            "to": "/unocss"
-                        }
-                    ]
+                    "name": "Colors",
+                    "to": "/colors"
+                },
+                {
+                    "name": "Sass API",
+                    "href": "#"
                 }
             ]
         },
@@ -528,116 +494,9 @@
             "to": "/passthrough"
         },
         {
-            "name": "Tailwind",
-            "icon": "cs el-heart",
-            "href": "#",
-            "badge": "NEW"
-        },
-        {
-            "name": "Figma UI Kit",
-            "icon": "cs el-pencil",
-            "to": "/uikit"
-        },
-        {
             "name": "Icons",
-            "icon": "cs el-eye",
-            "children": [
-                {
-                    "name": "Prime Icons",
-                    "to": "/icons",
-                    "badge": "UPDATED"
-                },
-                {
-                    "name": "Custom Icons",
-                    "to": "/customicons"
-                }
-            ]
-        },
-        {
-            "name": "Templates",
-            "icon": "cs el-star",
-            "to": "/templates"
-        },
-        {
-            "name": "PrimeBlocks",
-            "icon": "cs el-server",
-            "href": "#"
-        },
-        {
-            "name": "Guides",
-            "icon": "cs el-book",
-            "children": [
-                {
-                    "name": "Accessibility",
-                    "to": "/guides/accessibility"
-                },
-                {
-                    "name": "PrimeTV",
-                    "icon": "cs el-youtube",
-                    "href": "#"
-                }
-            ]
-        },
-        {
-            "name": "Support",
-            "icon": "cs el-question",
-            "children": [
-                {
-                    "name": "Discord Server",
-                    "href": "https://discord.gg/gzKFYnpmCY"
-                },
-                {
-                    "name": "Forum",
-                    "href": "#"
-                },
-                {
-                    "name": "PRO Support",
-                    "to": "/support"
-                }
-            ]
-        },
-        {
-            "name": "Discover",
-            "icon": "cs el-search",
-            "children": [
-                {
-                    "name": "About Us",
-                    "to": "/team"
-                },
-                {
-                    "name": "Roadmap",
-                    "to": "/roadmap"
-                },
-                {
-                    "name": "Source Code",
-                    "href": "#"
-                },
-                {
-                    "name": "Changelog",
-                    "href": "#"
-                },
-                {
-                    "name": "Store",
-                    "href": "#"
-                },
-                {
-                    "name": "Twitter",
-                    "href": "#"
-                },
-                {
-                    "name": "Newsletter",
-                    "href": "#"
-                },
-                {
-                    "name": "PrimeGear",
-                    "href": "#"
-                },
-                {
-                    "name": "PrimeFlex CSS",
-                    "icon": "cs el-table",
-                    "href": "#"
-                }
-            ]
+            "icon": "cs el-flag",
+            "to": "/icons"
         }
     ]
 }

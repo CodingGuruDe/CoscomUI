@@ -5,7 +5,7 @@
     width: calc(100% - var(--scrollbar-width, 0px));
     z-index: 1100;
     transition: background-color .5s, border-color .5s;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid #efeff5;
 
     &.layout-topbar-sticky {
         border-bottom: 1px solid var(--surface-border);
@@ -55,4 +55,94 @@
     .menu-button {
         display: none;
     }
+}
+
+.nav-picker[data-v-b03e9704] {
+    margin-right: 4px;
+}
+
+.nav-end {
+    align-items: center;
+    display: flex;
+    li {
+        list-style: none;
+        
+    }
+}
+
+.v-button {
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+    font-family: inherit;
+    padding: 0 10px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 3px;
+    color: #333639;
+    background-color: #0000;
+    width: initial;
+    white-space: nowrap;
+    outline: none;
+    position: relative;
+    z-index: auto;
+    border: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .3s cubic-bezier(4,0,2,1), background-color .3s cubic-bezier(4,0,2,1), opacity .3s cubic-bezier(4,0,2,1), border-color .3s cubic-bezier(4,0,2,1);
+}
+
+.v-button:not(.v-button--disabled):hover {
+    background-color: #2e333817;
+    color: #333639;
+}
+
+.v-button .n-button__content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 0;
+}
+
+.v-button .v-base-wave {
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation-iteration-count: 1;
+    animation-duration: .6s;
+    animation-timing-function: cubic-bezier(4,0,2,1), cubic-bezier(4,0,2,1);
+}
+
+.v-base-wave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.nav-picker:last-child {
+    margin-right: 0;
+}
+.nav-picker.padded {
+    padding: 0 10px;
+}
+.nav-picker {
+    margin-right: 4px;
+}
+
+.n-text {
+    transition: color .3s cubic-bezier(4,0,2,1);
+    color: #333639
 }

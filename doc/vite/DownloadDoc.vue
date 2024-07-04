@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>CoscomUI is available for download on <a href="https://www.npmjs.com/package/coscom/coscom-ui/">npm Registry</a>.</p>
+        <p>Coscom UI is available for installation from <a href="https://www.npmjs.com/package/@coscom/coscom-ui/" target="_blank">npm Registry</a>.</p>
     </DocSectionText>
     <DocSectionCode :code="code" hideToggleCode hideStackBlitz />
 </template>
@@ -16,9 +16,6 @@ npm install @coscom/coscom-ui
 
 # Using yarn
 yarn add @coscom/coscom-ui
-
-# Using pnpm
-pnpm add @coscom/coscom-ui
 `
             }
         };

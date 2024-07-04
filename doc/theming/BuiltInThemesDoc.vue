@@ -14,14 +14,8 @@ export default {
         return {
             code: {
                 basic: `
-coscom/resources/themes/aura-light-blue/theme.css
-coscom/resources/themes/aura-light-green/theme.css
-coscom/resources/themes/aura-dark-blue/theme.css
-coscom/resources/themes/aura-dark-green/theme.css
-coscom/resources/themes/lara-light-blue/theme.css
-coscom/resources/themes/lara-light-green/theme.css
-coscom/resources/themes/lara-dark-blue/theme.css
-coscom/resources/themes/lara-dark-green/theme.css
+coscom/resources/themes/skyblue-light/theme.css
+coscom/resources/themes/skyblue-dark/theme.css
 `
             }
         };
