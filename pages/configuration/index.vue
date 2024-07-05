@@ -21,11 +21,8 @@ import InputStyleDoc from '@/doc/configuration/InputStyleDoc.vue';
 import PTDoc from '@/doc/configuration/PTDoc.vue';
 import PTOptionsDoc from '@/doc/configuration/PTOptionsDoc.vue';
 import RippleDoc from '@/doc/configuration/RippleDoc.vue';
-import UnstyledDoc from '@/doc/configuration/UnstyledDoc.vue';
 import ZIndexDoc from '@/doc/configuration/ZIndexDoc.vue';
-import NonceDoc from '@/doc/configuration/csp/NonceDoc.vue';
 import LocaleApiDoc from '@/doc/configuration/locale/LocaleApiDoc.vue';
-import RepositoryDoc from '@/doc/configuration/locale/RepositoryDoc.vue';
 import SetLocaleDoc from '@/doc/configuration/locale/SetLocaleDoc.vue';
 
 export default {
@@ -36,11 +33,6 @@ export default {
                     id: 'import',
                     label: 'Import',
                     component: ImportDoc
-                },
-                {
-                    id: 'unstyled',
-                    label: 'Unstyled',
-                    component: UnstyledDoc
                 },
                 {
                     id: 'pt',
@@ -68,17 +60,6 @@ export default {
                     component: ZIndexDoc
                 },
                 {
-                    id: 'csp',
-                    label: 'CSP',
-                    children: [
-                        {
-                            id: 'nonce',
-                            label: 'Nonce',
-                            component: NonceDoc
-                        }
-                    ]
-                },
-                {
                     id: 'locale',
                     label: 'Locale',
                     children: [
@@ -86,11 +67,6 @@ export default {
                             id: 'setlocale',
                             label: 'Set Locale',
                             component: SetLocaleDoc
-                        },
-                        {
-                            id: 'repository',
-                            label: 'Repository',
-                            component: RepositoryDoc
                         },
                         {
                             id: 'localeapi',

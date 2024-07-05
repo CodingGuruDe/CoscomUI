@@ -46,7 +46,7 @@
 
             <div class="nav-end">
                 <button size="small" class="v-button nav-picker" @click="toggleDarkMode">
-                    <i :class="['cs surface-card text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
+                    <i :class="['cs text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
                 </button>
 
                 <li>

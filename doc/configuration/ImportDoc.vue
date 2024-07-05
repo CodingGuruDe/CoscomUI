@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Configuration is managed by the <i>CoscomUI</i> instance imported from <i>primevue/config</i>.</p>
+        <p>Configuration is managed by the <i>Coscom UI</i> instance imported from <i>@coscom/coscom-ui/config</i>.</p>
     </DocSectionText>
     <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
 </template>
