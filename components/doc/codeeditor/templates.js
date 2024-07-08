@@ -4,7 +4,7 @@ import { services } from './services';
 const Coscom = {
     version: '^3.50.0',
     description:
-        'Coscom UI is an open source UI library for Vue featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 400+ ready to use UI blocks to build spectacular applications in no time.'
+        'Coscom UI is a lightweight UI components library for VueJS made for internal use. It offers a set of easily customisable components and does not depend on any specific style or CSS framework. More components will be added in the future.'
 };
 
 const app_dependencies = pkg ? pkg.devDependencies : {};
@@ -21,7 +21,7 @@ const core_dependencies = {
 // create-vue -> https://github.com/vuejs/create-vue
 const getVueApp = (props = {}, sourceType) => {
     const path = 'src/';
-    const { code: sources, title = 'Coscom_demo', description = '', service, extPages, dependencies: deps, component, extFiles, embedded } = props;
+    const { code: sources, title = 'coscom_demo', description = '', service, extPages, dependencies: deps, component, extFiles, embedded } = props;
     const dependencies = { ...core_dependencies, ...deps };
 
     const fileExtension = '.vue';
@@ -80,9 +80,6 @@ import ThemeSwitcher from './components/ThemeSwitcher.vue';`;
         // main.js
         pvTheme += `import "primeflex/primeflex.css";
 import "coscom/resources/themes/aura-light-green/theme.css";`;
-
-        // package.json
-        dependencies['primeflex'] = app_dependencies['primeflex'] || 'latest';
     }
 
     const files = {
@@ -125,7 +122,7 @@ export default defineConfig({
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="**${description}** ${Coscom.description}" />
         <!-- Added to show icons in the editor -->
-        <link rel="stylesheet" href="https://unpkg.com/@coscom-ui/solid-icons@${dependencies['solid-icons'].replace(/[\^|~]/gi, '')}/solidicons.css">
+        <link rel="stylesheet" href="https://unpkg.com/@coscom-ui/coscom-icons@${dependencies['coscom-icons'].replace(/[\^|~]/gi, '')}/style.css">
         <title>Coscom UI App</title>
     </head>
     <body>
@@ -137,7 +134,7 @@ export default defineConfig({
         [`${path}main.js`]: {
             content: `${pvTheme}
 import "coscom/resources/coscom.min.css"; /* Deprecated */
-import "solidicons/solidicons.css";
+import "@coscom/coscom-icons/style.css";
 import "./style.css";
 import "./flags.css";
 
@@ -491,13 +488,13 @@ export default {
 
 <script setup>
 import {ref} from 'vue';
-const iconClass = ref('pi-moon');
+const iconClass = ref('el-moon');
 
 const onThemeToggler = () => {
     const root = document.getElementsByTagName('html')[0];
 
     root.classList.toggle('dark');
-    iconClass.value = iconClass.value === 'pi-moon' ? 'pi-sun': 'pi-moon';
+    iconClass.value = iconClass.value === 'el-moon' ? 'el-sun': 'el-moon';
 };
 </script>`
         };

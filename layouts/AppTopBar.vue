@@ -53,7 +53,7 @@
                     <a :href="repoUrl" class="v-button v-button--default-type v-button--small-type nav-picker" target="_blank" rel="noopener noreferrer"> GitHub </a>
                 </li>
                 <button size="small" class="v-button nav-picker">
-                    {{ versions[0].name }}
+                    {{ versions[0].version }}
                 </button>
 
                 <li v-if="showMenuButton" class="menu-button">
@@ -90,18 +90,8 @@ export default {
         return {
             versions: [
                 {
-                    name: 'v4',
-                    version: 'v4-beta.1',
-                    url: '#'
-                },
-                {
-                    name: 'v3',
-                    version: pkg.version,
-                    url: '#'
-                },
-                {
-                    name: 'v2',
-                    version: '2.10.4',
+                    name: 'v1',
+                    version: 'v1-beta.1',
                     url: '#'
                 }
             ]

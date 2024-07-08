@@ -1,4 +1,3 @@
-import sdk from '@stackblitz/sdk';
 import { getVueApp } from './templates';
 
 const useCodeSandbox = (language, code, service, extPages, dependencies, component, extFiles) => {
@@ -28,41 +27,4 @@ const useCodeSandbox = (language, code, service, extPages, dependencies, compone
         .then((data) => window.open(`https://codesandbox.io/s/${data.sandbox_id}`, '_blank'));
 };
 
-const useStackBlitz = (language, code, service, extPages, dependencies, component, extFiles, embedded = false) => {
-    const getStackBlitzParameters = (sourceType) => {
-        const { files, dependenciesDemo, sourceFileName } = getVueApp({ code, service, extPages, dependencies, component, extFiles, embedded }, sourceType);
-
-        return { files, dependenciesDemo, sourceFileName };
-    };
-
-    const stackBlitzParameters = getStackBlitzParameters({ language });
-
-    let files = {};
-
-    Object.entries(stackBlitzParameters.files).forEach(([k, v]) => (files[`${k}`] = typeof v.content === 'object' ? JSON.stringify(v.content, null, 2) : v.content));
-
-    const coscomui = {
-        title: embedded ? 'Coscom UI Tailwind Demo' : 'Coscom UI Demo',
-        template: 'node',
-        description: embedded
-            ? "This example demonstrates how to style components with Tailwind CSS using Coscom UI's unstyled property. As mentioned in the Coscom UI documentation, components can be styled or have HTML attributes added using a global or inline pass through approach. In this example, we utilize the global PT approach with Tailwind CSS."
-            : '**\n Coscom UI is an open source UI library for Vue featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 400+ ready to use UI blocks to build spectacular applications in no time.',
-        dependencies: stackBlitzParameters.dependencies,
-        files
-    };
-
-    if (embedded) {
-        sdk.embedProject('embed', coscomui, {
-            openFile: 'src/main.js',
-            view: 'default',
-            height: '800px'
-        });
-    } else {
-        sdk.openProject(coscomui, {
-            newWindow: true,
-            openFile: [stackBlitzParameters.sourceFileName]
-        });
-    }
-};
-
-export { useCodeSandbox, useStackBlitz };
+export { useCodeSandbox };

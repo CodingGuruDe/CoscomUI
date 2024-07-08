@@ -5,7 +5,7 @@
             application.
         </p>
     </DocSectionText>
-    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
+    <DocSectionCode :code="code" hideToggleCode importCode />
 </template>
 
 <script>

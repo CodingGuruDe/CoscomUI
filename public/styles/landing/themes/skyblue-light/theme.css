@@ -3175,11 +3175,13 @@
     color: #ffffff;
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
-    padding: 0.5rem 1rem;
+    padding: 0 14px;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
     border-radius: 3px;
     outline-color: transparent;
+    height: 34px;
+    width: initial;
   }
   .p-button:not(:disabled):hover {
     background: #0678e9;

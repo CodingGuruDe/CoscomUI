@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>If you want to use the Single File Component(SFC) style, you can directly import components from Coscom UI or install it globally to a Vue app.</p>
     </DocSectionText>
-    <DocSectionCode :code="code" importCode hideToggleCode hideStackBlitz />
+    <DocSectionCode :code="code" importCode hideToggleCode />
 </template>
 
 <script>

@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>Coscom UI is available for installation from <a href="https://www.npmjs.com/package/@coscom/coscom-ui/" target="_blank">npm Registry</a>.</p>
     </DocSectionText>
-    <DocSectionCode :code="code" hideToggleCode hideStackBlitz />
+    <DocSectionCode :code="code" hideToggleCode hideCodeSandbox />
 </template>
 
 <script>
