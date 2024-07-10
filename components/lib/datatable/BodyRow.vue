@@ -33,10 +33,10 @@
             @dragend="onRowDragEnd"
             @drop="onRowDrop"
             v-bind="getBodyRowPTOptions('bodyRow')"
-            :data-p-index="rowIndex"
-            :data-p-selectable-row="selectionMode ? true : false"
-            :data-p-highlight="selection && isSelected"
-            :data-p-highlight-contextmenu="contextMenuSelection && isSelectedWithContextMenu"
+            :data-v-index="rowIndex"
+            :data-v-selectable-row="selectionMode ? true : false"
+            :data-v-highlight="selection && isSelected"
+            :data-v-highlight-contextmenu="contextMenuSelection && isSelectedWithContextMenu"
         >
             <template v-for="(col, i) of columns">
                 <DTBodyCell

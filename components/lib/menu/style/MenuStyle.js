@@ -2,28 +2,28 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-menu p-component',
+        'v-menu v-component',
         {
-            'p-menu-overlay': props.popup,
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-menu-overlay': props.popup,
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    start: 'p-menu-start',
-    menu: 'p-menu-list p-reset',
-    submenuHeader: 'p-submenu-header',
-    separator: 'p-menuitem-separator',
-    end: 'p-menu-end',
+    start: 'v-menu-start',
+    menu: 'v-menu-list p-reset',
+    submenuHeader: 'v-submenu-header',
+    separator: 'v-menuitem-separator',
+    end: 'v-menu-end',
     menuitem: ({ instance }) => [
-        'p-menuitem',
+        'v-menuitem',
         {
-            'p-focus': instance.id === instance.focusedOptionId,
-            'p-disabled': instance.disabled()
+            'v-focus': instance.id === instance.focusedOptionId,
+            'v-disabled': instance.disabled()
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text'
+    content: 'v-menuitem-content',
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text'
 };
 
 export default BaseStyle.extend({

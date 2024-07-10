@@ -1,36 +1,36 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-panelmenu p-component',
-    panel: 'p-panelmenu-panel',
+    root: 'v-panelmenu v-component',
+    panel: 'v-panelmenu-panel',
     header: ({ instance, item }) => [
-        'p-panelmenu-header',
+        'v-panelmenu-header',
         {
-            'p-highlight': instance.isItemActive(item) && !!item.items,
-            'p-disabled': instance.isItemDisabled(item)
+            'v-highlight': instance.isItemActive(item) && !!item.items,
+            'v-disabled': instance.isItemDisabled(item)
         }
     ],
-    headerContent: 'p-panelmenu-header-content',
-    headerAction: 'p-panelmenu-header-action',
-    headerIcon: 'p-menuitem-icon',
-    headerLabel: 'p-menuitem-text',
-    toggleableContent: 'p-toggleable-content',
-    menuContent: 'p-panelmenu-content',
-    menu: 'p-panelmenu-root-list',
+    headerContent: 'v-panelmenu-header-content',
+    headerAction: 'v-panelmenu-header-action',
+    headerIcon: 'v-menuitem-icon',
+    headerLabel: 'v-menuitem-text',
+    toggleableContent: 'v-toggleable-content',
+    menuContent: 'v-panelmenu-content',
+    menu: 'v-panelmenu-root-list',
     menuitem: ({ instance, processedItem }) => [
-        'p-menuitem',
+        'v-menuitem',
         {
-            'p-focus': instance.isItemFocused(processedItem),
-            'p-disabled': instance.isItemDisabled(processedItem)
+            'v-focus': instance.isItemFocused(processedItem),
+            'v-disabled': instance.isItemDisabled(processedItem)
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text',
-    submenuIcon: 'p-submenu-icon',
-    submenu: 'p-submenu-list',
-    separator: 'p-menuitem-separator'
+    content: 'v-menuitem-content',
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text',
+    submenuIcon: 'v-submenu-icon',
+    submenu: 'v-submenu-list',
+    separator: 'v-menuitem-separator'
 };
 
 export default BaseStyle.extend({

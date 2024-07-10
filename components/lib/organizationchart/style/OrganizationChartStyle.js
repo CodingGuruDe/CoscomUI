@@ -1,16 +1,16 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-organizationchart p-component',
-    table: 'p-organizationchart-table',
-    node: ({ instance }) => ['p-organizationchart-node-content', { 'p-organizationchart-selectable-node': instance.selectable, 'p-highlight': instance.selected }],
-    nodeToggler: 'p-node-toggler',
-    nodeTogglerIcon: 'p-node-toggler-icon',
-    lines: 'p-organizationchart-lines',
-    lineDown: 'p-organizationchart-line-down',
-    lineLeft: ({ index }) => ['p-organizationchart-line-left', { 'p-organizationchart-line-top': !(index === 0) }],
-    lineRight: ({ props, index }) => ['p-organizationchart-line-right', { 'p-organizationchart-line-top': !(index === props.node.children.length - 1) }],
-    nodes: 'p-organizationchart-nodes'
+    root: 'v-organizationchart v-component',
+    table: 'v-organizationchart-table',
+    node: ({ instance }) => ['v-organizationchart-node-content', { 'v-organizationchart-selectable-node': instance.selectable, 'v-highlight': instance.selected }],
+    nodeToggler: 'v-node-toggler',
+    nodeTogglerIcon: 'v-node-toggler-icon',
+    lines: 'v-organizationchart-lines',
+    lineDown: 'v-organizationchart-line-down',
+    lineLeft: ({ index }) => ['v-organizationchart-line-left', { 'v-organizationchart-line-top': !(index === 0) }],
+    lineRight: ({ props, index }) => ['v-organizationchart-line-right', { 'v-organizationchart-line-top': !(index === props.node.children.length - 1) }],
+    nodes: 'v-organizationchart-nodes'
 };
 
 export default BaseStyle.extend({

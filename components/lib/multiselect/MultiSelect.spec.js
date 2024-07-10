@@ -30,15 +30,15 @@ describe('MultiSelect.vue', () => {
     });
 
     it('should exist', async () => {
-        expect(wrapper.find('.p-multiselect.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-multiselect-label.p-placeholder').text()).toBe('Select Cities');
-        expect(wrapper.find('.p-multiselect-panel').exists()).toBe(false);
+        expect(wrapper.find('.v-multiselect.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-multiselect-label.v-placeholder').text()).toBe('Select Cities');
+        expect(wrapper.find('.v-multiselect-panel').exists()).toBe(false);
 
         await wrapper.vm.onContainerClick();
 
-        expect(wrapper.findAll('li.p-multiselect-item').length).toBe(5);
-        expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['aria-label']).toBe('Ebersberg');
-        expect(wrapper.findAll('li.p-multiselect-item')[0].text()).toBe('Ebersberg');
+        expect(wrapper.findAll('li.v-multiselect-item').length).toBe(5);
+        expect(wrapper.findAll('li.v-multiselect-item')[0].attributes()['aria-label']).toBe('Ebersberg');
+        expect(wrapper.findAll('li.v-multiselect-item')[0].text()).toBe('Ebersberg');
     });
 
     it('should select an item', async () => {
@@ -49,8 +49,8 @@ describe('MultiSelect.vue', () => {
         await wrapper.setProps({ modelValue: [wrapper.vm.options[0]] });
         await wrapper.vm.onContainerClick();
 
-        expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['data-p-highlight']).toBe('true');
-        expect(wrapper.find('.p-multiselect-label').text()).toBe('Ebersberg');
+        expect(wrapper.findAll('li.v-multiselect-item')[0].attributes()['data-v-highlight']).toBe('true');
+        expect(wrapper.find('.v-multiselect-label').text()).toBe('Ebersberg');
     });
 
     it('should select multiple item', async () => {
@@ -63,14 +63,14 @@ describe('MultiSelect.vue', () => {
         await wrapper.setProps({ modelValue: [wrapper.vm.options[0], wrapper.vm.options[1]] });
         await wrapper.vm.onContainerClick();
 
-        expect(wrapper.findAll('li.p-multiselect-item')[0].attributes()['data-p-highlight']).toBe('true');
-        expect(wrapper.findAll('li.p-multiselect-item')[1].attributes()['data-p-highlight']).toBe('true');
+        expect(wrapper.findAll('li.v-multiselect-item')[0].attributes()['data-v-highlight']).toBe('true');
+        expect(wrapper.findAll('li.v-multiselect-item')[1].attributes()['data-v-highlight']).toBe('true');
     });
 
     it('should close panel', async () => {
         await wrapper.vm.onCloseClick();
 
-        expect(wrapper.find('.p-multiselect-panel').exists()).toBe(false);
+        expect(wrapper.find('.v-multiselect-panel').exists()).toBe(false);
     });
 
     it('should chip work', async () => {
@@ -79,8 +79,8 @@ describe('MultiSelect.vue', () => {
             modelValue: [wrapper.vm.options[0]]
         });
 
-        expect(wrapper.find('.p-multiselect-token').exists()).toBe(true);
-        expect(wrapper.find('.p-multiselect-token-label').text()).toBe('Ebersberg');
+        expect(wrapper.find('.v-multiselect-token').exists()).toBe(true);
+        expect(wrapper.find('.v-multiselect-token-label').text()).toBe('Ebersberg');
     });
 
     describe('custom icons', () => {
@@ -91,7 +91,7 @@ describe('MultiSelect.vue', () => {
                 removeTokenIcon: 'cs el-discord'
             });
 
-            const icon = wrapper.find('.p-multiselect-token-icon');
+            const icon = wrapper.find('.v-multiselect-token-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -101,7 +101,7 @@ describe('MultiSelect.vue', () => {
                 dropdownIcon: 'cs el-discord'
             });
 
-            const icon = wrapper.find('.p-multiselect-trigger-icon');
+            const icon = wrapper.find('.v-multiselect-trigger-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -114,7 +114,7 @@ describe('MultiSelect.vue', () => {
 
             await wrapper.vm.onContainerClick();
 
-            const icon = wrapper.find('.p-multiselect-filter-icon');
+            const icon = wrapper.find('.v-multiselect-filter-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -126,7 +126,7 @@ describe('MultiSelect.vue', () => {
 
             await wrapper.vm.onContainerClick();
 
-            const icon = wrapper.find('.p-multiselect-close-icon');
+            const icon = wrapper.find('.v-multiselect-close-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -143,7 +143,7 @@ describe('MultiSelect.vue', () => {
 
             await wrapper.vm.onContainerClick();
 
-            wrapper.findAll('.p-checkbox-icon').forEach((icon) => {
+            wrapper.findAll('.v-checkbox-icon').forEach((icon) => {
                 expect(icon.classes()).toContain('el-discord');
             });
         });
@@ -191,7 +191,7 @@ describe('MultiSelect.vue', () => {
             });
 
             await wrapper.vm.onContainerClick();
-            expect(wrapper.find('.p-multiselect-item-group').exists()).toBe(true);
+            expect(wrapper.find('.v-multiselect-item-group').exists()).toBe(true);
         });
 
         it('should show emit the filter event when filter text is entered', async () => {
@@ -204,7 +204,7 @@ describe('MultiSelect.vue', () => {
             });
 
             await wrapper.vm.onContainerClick();
-            const input = await wrapper.find('input.p-multiselect-filter');
+            const input = await wrapper.find('input.v-multiselect-filter');
 
             input.setValue('Ber');
             input.trigger('input');
@@ -222,13 +222,13 @@ describe('MultiSelect.vue', () => {
             });
 
             await wrapper.vm.onContainerClick();
-            const input = await wrapper.find('input.p-multiselect-filter');
+            const input = await wrapper.find('input.v-multiselect-filter');
 
             input.value = 'Ber';
 
             await wrapper.vm.onFilterChange({ target: input });
-            expect(wrapper.findAll('.p-multiselect-item-group').length).toBe(1);
-            expect(wrapper.find('.p-multiselect-item-group').text()).toBe('Germany');
+            expect(wrapper.findAll('.v-multiselect-item-group').length).toBe(1);
+            expect(wrapper.find('.v-multiselect-item-group').text()).toBe('Germany');
         });
     });
 });

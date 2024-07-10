@@ -194,7 +194,7 @@ export interface SpeedDialProps {
      * Specifies the opening direction of actions.
      * @defaultValue up
      */
-    direction?: 'up' | 'down' | 'left' | 'right' | 'up-left' | 'up-right' | 'down-left' | 'down-right' | undefined;
+    direction?: 'up' | 'down' | 'left' | 'right' | '.v-left' | '.v-right' | 'down-left' | 'down-right' | undefined;
     /**
      * Transition delay step for each action item.
      * @defaultValue 30

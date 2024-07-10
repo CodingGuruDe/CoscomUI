@@ -19,28 +19,28 @@ const classes = {
         const pos = positions.find((item) => item === props.position);
 
         return [
-            'p-sidebar-mask',
+            'v-sidebar-mask',
             {
-                'p-component-overlay p-component-overlay-enter': props.modal,
-                'p-sidebar-mask-scrollblocker': props.blockScroll,
-                'p-sidebar-visible': instance.containerVisible,
-                'p-sidebar-full': instance.fullScreen
+                'v-component-overlay v-component-overlay-enter': props.modal,
+                'v-sidebar-mask-scrollblocker': props.blockScroll,
+                'v-sidebar-visible': instance.containerVisible,
+                'v-sidebar-full': instance.fullScreen
             },
             pos ? `p-sidebar-${pos}` : ''
         ];
     },
     root: ({ instance }) => [
-        'p-sidebar p-component',
+        'v-sidebar v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false,
-            'p-sidebar-full': instance.fullScreen
+            'v-ripple-disabled': instance.$coscom.config.ripple === false,
+            'v-sidebar-full': instance.fullScreen
         }
     ],
-    header: 'p-sidebar-header',
-    title: 'p-sidebar-header-content',
-    closeButton: 'p-sidebar-close p-sidebar-icon p-link',
-    closeIcon: 'p-sidebar-close-icon',
-    content: 'p-sidebar-content'
+    header: 'v-sidebar-header',
+    title: 'v-sidebar-header-content',
+    closeButton: 'v-sidebar-close p-sidebar-icon v-link',
+    closeIcon: 'v-sidebar-close-icon',
+    content: 'v-sidebar-content'
 };
 
 export default BaseStyle.extend({

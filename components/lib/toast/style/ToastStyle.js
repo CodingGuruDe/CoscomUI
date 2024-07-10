@@ -13,25 +13,25 @@ const inlineStyles = {
 
 const classes = {
     root: ({ props, instance }) => [
-        'p-toast p-component p-toast-' + props.position,
+        'v-toast v-component p-toast-' + props.position,
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
     container: ({ props }) => [
-        'p-toast-message',
+        'v-toast-message',
         {
-            'p-toast-message-info': props.message.severity === 'info' || props.message.severity === undefined,
-            'p-toast-message-warn': props.message.severity === 'warn',
-            'p-toast-message-error': props.message.severity === 'error',
-            'p-toast-message-success': props.message.severity === 'success',
-            'p-toast-message-secondary': props.message.severity === 'secondary',
-            'p-toast-message-contrast': props.message.severity === 'contrast'
+            'v-toast-message-info': props.message.severity === 'info' || props.message.severity === undefined,
+            'v-toast-message-warn': props.message.severity === 'warn',
+            'v-toast-message-error': props.message.severity === 'error',
+            'v-toast-message-success': props.message.severity === 'success',
+            'v-toast-message-secondary': props.message.severity === 'secondary',
+            'v-toast-message-contrast': props.message.severity === 'contrast'
         }
     ],
-    content: 'p-toast-message-content',
+    content: 'v-toast-message-content',
     icon: ({ props }) => [
-        'p-toast-message-icon',
+        'v-toast-message-icon',
         {
             [props.infoIcon]: props.message.severity === 'info',
             [props.warnIcon]: props.message.severity === 'warn',
@@ -39,11 +39,11 @@ const classes = {
             [props.successIcon]: props.message.severity === 'success'
         }
     ],
-    text: 'p-toast-message-text',
-    summary: 'p-toast-summary',
-    detail: 'p-toast-detail',
-    closeButton: 'p-toast-icon-close p-link',
-    closeIcon: 'p-toast-icon-close-icon'
+    text: 'v-toast-message-text',
+    summary: 'v-toast-summary',
+    detail: 'v-toast-detail',
+    closeButton: 'v-toast-icon-close v-link',
+    closeIcon: 'v-toast-icon-close-icon'
 };
 
 export default BaseStyle.extend({

@@ -53,7 +53,7 @@
             </slot>
         </template>
         <Portal :appendTo="appendTo" :disabled="inline">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter($event)" @after-enter="onOverlayEnterComplete" @after-leave="onOverlayAfterLeave" @leave="onOverlayLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter($event)" @after-enter="onOverlayEnterComplete" @after-leave="onOverlayAfterLeave" @leave="onOverlayLeave" v-bind="ptm('transition')">
                 <div
                     v-if="inline || overlayVisible"
                     :ref="overlayRef"
@@ -173,7 +173,7 @@
                                     <table :class="cx('table')" role="grid" v-bind="ptm('table')">
                                         <thead v-bind="ptm('tableHeader')">
                                             <tr v-bind="ptm('tableHeaderRow')">
-                                                <th v-if="showWeek" scope="col" :class="cx('weekHeader')" v-bind="ptm('weekHeader', { context: { disabled: showWeek } })" :data-p-disabled="showWeek" data-pc-group-section="tableheadercell">
+                                                <th v-if="showWeek" scope="col" :class="cx('weekHeader')" v-bind="ptm('weekHeader', { context: { disabled: showWeek } })" :data-v-disabled="showWeek" data-pc-group-section="tableheadercell">
                                                     <slot name="weekheaderlabel">
                                                         <span v-bind="ptm('weekHeaderLabel', { context: { disabled: showWeek } })" data-pc-group-section="tableheadercelllabel">
                                                             {{ weekHeaderLabel }}
@@ -188,7 +188,7 @@
                                         <tbody v-bind="ptm('tableBody')">
                                             <tr v-for="(week, i) of month.dates" :key="week[0].day + '' + week[0].month" v-bind="ptm('tableBodyRow')">
                                                 <td v-if="showWeek" :class="cx('weekNumber')" v-bind="ptm('weekNumber')" data-pc-group-section="tablebodycell">
-                                                    <span :class="cx('weekLabelContainer')" v-bind="ptm('weekLabelContainer', { context: { disabled: showWeek } })" :data-p-disabled="showWeek" data-pc-group-section="tablebodycelllabel">
+                                                    <span :class="cx('weekLabelContainer')" v-bind="ptm('weekLabelContainer', { context: { disabled: showWeek } })" :data-v-disabled="showWeek" data-pc-group-section="tablebodycelllabel">
                                                         <slot name="weeklabel" :weekNumber="month.weekNumbers[i]">
                                                             <span v-if="month.weekNumbers[i] < 10" style="visibility: hidden" v-bind="ptm('weekLabel')">0</span>
                                                             {{ month.weekNumbers[i] }}
@@ -211,8 +211,8 @@
                                                             }
                                                         })
                                                     "
-                                                    :data-p-today="date.today"
-                                                    :data-p-other-month="date.otherMonth"
+                                                    :data-v-today="date.today"
+                                                    :data-v-other-month="date.otherMonth"
                                                     data-pc-group-section="tablebodycell"
                                                 >
                                                     <span
@@ -234,13 +234,13 @@
                                                                 }
                                                             })
                                                         "
-                                                        :data-p-disabled="!date.selectable"
-                                                        :data-p-highlight="isSelected(date)"
+                                                        :data-v-disabled="!date.selectable"
+                                                        :data-v-highlight="isSelected(date)"
                                                         data-pc-group-section="tablebodycelllabel"
                                                     >
                                                         <slot name="date" :date="date">{{ date.day }}</slot>
                                                     </span>
-                                                    <div v-if="isSelected(date)" class="p-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenSelectedDay')" :data-p-hidden-accessible="true">
+                                                    <div v-if="isSelected(date)" class="v-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenSelectedDay')" :data-v-hidden-accessible="true">
                                                         {{ date.day }}
                                                     </div>
                                                 </td>
@@ -268,11 +268,11 @@
                                         }
                                     })
                                 "
-                                :data-p-disabled="!m.selectable"
-                                :data-p-highlight="isMonthSelected(i)"
+                                :data-v-disabled="!m.selectable"
+                                :data-v-highlight="isMonthSelected(i)"
                             >
                                 {{ m.value }}
-                                <div v-if="isMonthSelected(i)" class="p-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenMonth')" :data-p-hidden-accessible="true">
+                                <div v-if="isMonthSelected(i)" class="v-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenMonth')" :data-v-hidden-accessible="true">
                                     {{ m.value }}
                                 </div>
                             </span>
@@ -294,11 +294,11 @@
                                         }
                                     })
                                 "
-                                :data-p-disabled="!y.selectable"
-                                :data-p-highlight="isYearSelected(y.value)"
+                                :data-v-disabled="!y.selectable"
+                                :data-v-highlight="isYearSelected(y.value)"
                             >
                                 {{ y.value }}
-                                <div v-if="isYearSelected(y.value)" class="p-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenYear')" :data-p-hidden-accessible="true">
+                                <div v-if="isYearSelected(y.value)" class="v-hidden-accessible" aria-live="polite" v-bind="ptm('hiddenYear')" :data-v-hidden-accessible="true">
                                     {{ y.value }}
                                 </div>
                             </span>
@@ -1129,7 +1129,7 @@ export default {
                 return;
             }
 
-            DomHandler.find(this.overlay, 'table td span:not([data-p-disabled="true"])').forEach((cell) => (cell.tabIndex = -1));
+            DomHandler.find(this.overlay, 'table td span:not([data-v-disabled="true"])').forEach((cell) => (cell.tabIndex = -1));
 
             if (event) {
                 event.currentTarget.focus();
@@ -1360,7 +1360,7 @@ export default {
                                 output += date.getTime();
                                 break;
                             case '!':
-                                output += date.getTime() * 10000 + this.ticksTo1970;
+                                output += date.getTime() * 10000 + this.ticksTo1980;
                                 break;
                             case "'":
                                 if (lookAhead("'")) {
@@ -1696,11 +1696,11 @@ export default {
         },
         enableModality() {
             if (!this.mask) {
-                let styleClass = 'p-datepicker-mask p-datepicker-mask-scrollblocker p-component-overlay p-component-overlay-enter';
+                let styleClass = 'v-datepicker-mask v-datepicker-mask-scrollblocker v-component-overlay v-component-overlay-enter';
 
                 this.mask = DomHandler.createElement('div', {
                     class: !this.isUnstyled && styleClass,
-                    'p-bind': this.ptm('datepickermask')
+                    'v-bind': this.ptm('datepickermask')
                 });
                 this.mask.style.zIndex = String(parseInt(this.overlay.style.zIndex, 10) - 1);
 
@@ -1719,7 +1719,7 @@ export default {
                 if (this.isUnstyled) {
                     this.destroyMask();
                 } else {
-                    DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+                    DomHandler.addClass(this.mask, 'v-component-overlay-leave');
                     this.mask.addEventListener('animationend', () => {
                         this.destroyMask();
                     });
@@ -1984,7 +1984,7 @@ export default {
                             day = date.getDate();
                             break;
                         case '!':
-                            date = new Date((getNumber('!') - this.ticksTo1970) / 10000);
+                            date = new Date((getNumber('!') - this.ticksTo1980) / 10000);
                             year = date.getFullYear();
                             month = date.getMonth() + 1;
                             day = date.getDate();
@@ -2073,7 +2073,7 @@ export default {
                         let hasNextFocusableDate = nextTableRows.find((el) => {
                             let focusCell = el.children[cellIndex].children[0];
 
-                            return !DomHandler.getAttribute(focusCell, 'data-p-disabled');
+                            return !DomHandler.getAttribute(focusCell, 'data-v-disabled');
                         });
 
                         if (hasNextFocusableDate) {
@@ -2111,7 +2111,7 @@ export default {
                             let hasNextFocusableDate = prevTableRows.find((el) => {
                                 let focusCell = el.children[cellIndex].children[0];
 
-                                return !DomHandler.getAttribute(focusCell, 'data-p-disabled');
+                                return !DomHandler.getAttribute(focusCell, 'data-v-disabled');
                             });
 
                             if (hasNextFocusableDate) {
@@ -2144,7 +2144,7 @@ export default {
                         let hasNextFocusableDate = prevCells.find((el) => {
                             let focusCell = el.children[0];
 
-                            return !DomHandler.getAttribute(focusCell, 'data-p-disabled');
+                            return !DomHandler.getAttribute(focusCell, 'data-v-disabled');
                         });
 
                         if (hasNextFocusableDate) {
@@ -2173,7 +2173,7 @@ export default {
                         let hasNextFocusableDate = nextCells.find((el) => {
                             let focusCell = el.children[0];
 
-                            return !DomHandler.getAttribute(focusCell, 'data-p-disabled');
+                            return !DomHandler.getAttribute(focusCell, 'data-v-disabled');
                         });
 
                         if (hasNextFocusableDate) {
@@ -2220,7 +2220,7 @@ export default {
                     let currentRow = cell.parentElement;
                     let focusCell = currentRow.children[0].children[0];
 
-                    if (DomHandler.getAttribute(focusCell, 'data-p-disabled')) {
+                    if (DomHandler.getAttribute(focusCell, 'data-v-disabled')) {
                         this.navigateToMonth(event, true, groupIndex);
                     } else {
                         focusCell.tabIndex = '0';
@@ -2236,7 +2236,7 @@ export default {
                     let currentRow = cell.parentElement;
                     let focusCell = currentRow.children[currentRow.children.length - 1].children[0];
 
-                    if (DomHandler.getAttribute(focusCell, 'data-p-disabled')) {
+                    if (DomHandler.getAttribute(focusCell, 'data-v-disabled')) {
                         this.navigateToMonth(event, false, groupIndex);
                     } else {
                         focusCell.tabIndex = '0';
@@ -2281,7 +2281,7 @@ export default {
                     this.navBackward(event);
                 } else {
                     let prevMonthContainer = this.overlay.children[groupIndex - 1];
-                    let cells = DomHandler.find(prevMonthContainer, 'table td span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                    let cells = DomHandler.find(prevMonthContainer, 'table td span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
                     let focusCell = cells[cells.length - 1];
 
                     focusCell.tabIndex = '0';
@@ -2293,7 +2293,7 @@ export default {
                     this.navForward(event);
                 } else {
                     let nextMonthContainer = this.overlay.children[groupIndex + 1];
-                    let focusCell = DomHandler.findSingle(nextMonthContainer, 'table td span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                    let focusCell = DomHandler.findSingle(nextMonthContainer, 'table td span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
 
                     focusCell.tabIndex = '0';
                     focusCell.focus();
@@ -2502,11 +2502,11 @@ export default {
                         let cells;
 
                         if (this.currentView === 'month') {
-                            cells = DomHandler.find(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"]:not([data-p-disabled="true"])');
+                            cells = DomHandler.find(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"]:not([data-v-disabled="true"])');
                         } else if (this.currentView === 'year') {
-                            cells = DomHandler.find(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"]:not([data-p-disabled="true"])');
+                            cells = DomHandler.find(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"]:not([data-v-disabled="true"])');
                         } else {
-                            cells = DomHandler.find(this.overlay, 'table td span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                            cells = DomHandler.find(this.overlay, 'table td span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
                         }
 
                         if (cells && cells.length > 0) {
@@ -2514,11 +2514,11 @@ export default {
                         }
                     } else {
                         if (this.currentView === 'month') {
-                            cell = DomHandler.findSingle(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"]:not([data-p-disabled="true"])');
+                            cell = DomHandler.findSingle(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"]:not([data-v-disabled="true"])');
                         } else if (this.currentView === 'year') {
-                            cell = DomHandler.findSingle(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"]:not([data-p-disabled="true"])');
+                            cell = DomHandler.findSingle(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"]:not([data-v-disabled="true"])');
                         } else {
-                            cell = DomHandler.findSingle(this.overlay, 'table td span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                            cell = DomHandler.findSingle(this.overlay, 'table td span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
                         }
                     }
 
@@ -2538,24 +2538,24 @@ export default {
 
             if (this.currentView === 'month') {
                 let cells = DomHandler.find(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"]');
-                let selectedCell = DomHandler.findSingle(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"][data-p-highlight="true"]');
+                let selectedCell = DomHandler.findSingle(this.overlay, '[data-pc-section="monthpicker"] [data-pc-section="month"][data-v-highlight="true"]');
 
                 cells.forEach((cell) => (cell.tabIndex = -1));
                 cell = selectedCell || cells[0];
             } else if (this.currentView === 'year') {
                 let cells = DomHandler.find(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"]');
-                let selectedCell = DomHandler.findSingle(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"][data-p-highlight="true"]');
+                let selectedCell = DomHandler.findSingle(this.overlay, '[data-pc-section="yearpicker"] [data-pc-section="year"][data-v-highlight="true"]');
 
                 cells.forEach((cell) => (cell.tabIndex = -1));
                 cell = selectedCell || cells[0];
             } else {
-                cell = DomHandler.findSingle(this.overlay, 'span[data-p-highlight="true"]');
+                cell = DomHandler.findSingle(this.overlay, 'span[data-v-highlight="true"]');
 
                 if (!cell) {
-                    let todayCell = DomHandler.findSingle(this.overlay, 'td.p-datepicker-today span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                    let todayCell = DomHandler.findSingle(this.overlay, 'td.v-datepicker-today span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
 
                     if (todayCell) cell = todayCell;
-                    else cell = DomHandler.findSingle(this.overlay, '.p-datepicker-calendar td span:not([data-p-disabled="true"]):not([data-p-ink="true"])');
+                    else cell = DomHandler.findSingle(this.overlay, '.v-datepicker-calendar td span:not([data-v-disabled="true"]):not([data-v-ink="true"])');
                 }
             }
 
@@ -2748,14 +2748,14 @@ export default {
                     for (let i = 0; i < responsiveOptions.length; i++) {
                         let { breakpoint, numMonths } = responsiveOptions[i];
                         let styles = `
-                            .p-datepicker[${this.attributeSelector}] .p-datepicker-group:nth-child(${numMonths}) .p-datepicker-next {
+                            .v-datepicker[${this.attributeSelector}] .v-datepicker-group:nth-child(${numMonths}) .v-datepicker-next {
                                 display: inline-flex;
                             }
                         `;
 
                         for (let j = numMonths; j < this.numberOfMonths; j++) {
                             styles += `
-                                .p-datepicker[${this.attributeSelector}] .p-datepicker-group:nth-child(${j + 1}) {
+                                .v-datepicker[${this.attributeSelector}] .v-datepicker-group:nth-child(${j + 1}) {
                                     display: none;
                                 }
                             `;
@@ -2896,8 +2896,8 @@ export default {
 
             return weekDays;
         },
-        ticksTo1970() {
-            return ((1970 - 1) * 365 + Math.floor(1970 / 4) - Math.floor(1970 / 100) + Math.floor(1970 / 400)) * 24 * 60 * 60 * 10000000;
+        ticksTo1980() {
+            return ((1980 - 1) * 365 + Math.floor(1980 / 4) - Math.floor(1980 / 100) + Math.floor(1980 / 400)) * 24 * 60 * 60 * 10000000;
         },
         sundayIndex() {
             return this.$coscom.config.locale.firstDayOfWeek > 0 ? 7 - this.$coscom.config.locale.firstDayOfWeek : 0;

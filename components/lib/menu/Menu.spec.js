@@ -56,12 +56,12 @@ describe('Menu.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-menu.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('.p-submenu-header').length).toBe(2);
-        expect(wrapper.findAll('.p-submenu-header')[0].text()).toBe('Options');
-        expect(wrapper.findAll('.p-menuitem').length).toBe(4);
-        expect(wrapper.findAll('.p-menuitem')[0].find('span.p-menuitem-text').text()).toBe('Update');
-        expect(wrapper.findAll('.p-menuitem')[2].find('a').attributes().href).toBe('https://vuejs.org/');
+        expect(wrapper.find('.v-menu.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('.v-submenu-header').length).toBe(2);
+        expect(wrapper.findAll('.v-submenu-header')[0].text()).toBe('Options');
+        expect(wrapper.findAll('.v-menuitem').length).toBe(4);
+        expect(wrapper.findAll('.v-menuitem')[0].find('span.v-menuitem-text').text()).toBe('Update');
+        expect(wrapper.findAll('.v-menuitem')[2].find('a').attributes().href).toBe('https://vuejs.org/');
     });
 
     it('should popup work', async () => {
@@ -69,6 +69,6 @@ describe('Menu.vue', () => {
 
         await wrapper.vm.toggle({});
 
-        expect(wrapper.find('.p-menu.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-menu.v-component').exists()).toBe(true);
     });
 });

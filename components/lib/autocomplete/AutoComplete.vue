@@ -100,11 +100,11 @@
                 </slot>
             </template>
         </Button>
-        <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSearchResult')" :data-p-hidden-accessible="true">
+        <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSearchResult')" :data-v-hidden-accessible="true">
             {{ searchResultMessageText }}
         </span>
         <Portal :appendTo="appendTo">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
                 <div
                     v-if="overlayVisible"
                     :ref="overlayRef"
@@ -136,9 +136,9 @@
                                         :aria-posinset="getAriaPosInset(getOptionIndex(i, getItemOptions))"
                                         @click="onOptionSelect($event, option)"
                                         @mousemove="onOptionMouseMove($event, getOptionIndex(i, getItemOptions))"
-                                        :data-p-highlight="isSelected(option)"
-                                        :data-p-focus="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
-                                        :data-p-disabled="isOptionDisabled(option)"
+                                        :data-v-highlight="isSelected(option)"
+                                        :data-v-focus="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
+                                        :data-v-disabled="isOptionDisabled(option)"
                                         v-bind="getPTOptions(option, getItemOptions, i, 'item')"
                                     >
                                         <slot v-if="$slots.option" name="option" :option="option" :index="getOptionIndex(i, getItemOptions)">{{ getOptionLabel(option) }}</slot>
@@ -156,7 +156,7 @@
                         </template>
                     </VirtualScroller>
                     <slot name="footer" :value="modelValue" :suggestions="visibleOptions"></slot>
-                    <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-p-hidden-accessible="true">
+                    <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-v-hidden-accessible="true">
                         {{ selectedMessageText }}
                     </span>
                 </div>

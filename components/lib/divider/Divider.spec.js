@@ -5,9 +5,9 @@ describe('Divider.vue', () => {
     it('should exist', () => {
         const wrapper = mount(Divider);
 
-        expect(wrapper.find('.p-divider.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-divider.p-component').classes()).toContain('p-divider-horizontal');
-        expect(wrapper.find('.p-divider.p-component').classes()).toContain('p-divider-left');
+        expect(wrapper.find('.v-divider.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-divider.v-component').classes()).toContain('v-divider-horizontal');
+        expect(wrapper.find('.v-divider.v-component').classes()).toContain('v-divider-left');
     });
 
     it('should exist', () => {
@@ -19,8 +19,8 @@ describe('Divider.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-divider-vertical').exists()).toBe(true);
-        expect(wrapper.find('.p-divider-dashed').exists()).toBe(true);
-        expect(wrapper.find('.p-divider-center').exists()).toBe(true);
+        expect(wrapper.find('.v-divider-vertical').exists()).toBe(true);
+        expect(wrapper.find('.v-divider-dashed').exists()).toBe(true);
+        expect(wrapper.find('.v-divider-center').exists()).toBe(true);
     });
 });

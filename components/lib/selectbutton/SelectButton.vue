@@ -15,8 +15,8 @@
             @focus="onFocus($event)"
             @blur="onBlur($event, option)"
             v-bind="getPTOptions(option, 'button')"
-            :data-p-highlight="isSelected(option)"
-            :data-p-disabled="isOptionDisabled(option)"
+            :data-v-highlight="isSelected(option)"
+            :data-v-disabled="isOptionDisabled(option)"
         >
             <slot name="option" :option="option" :index="i" :class="cx('label')">
                 <span :class="cx('label')" v-bind="getPTOptions(option, 'label')">{{ getOptionLabel(option) }}</span>
@@ -46,10 +46,10 @@ export default {
     methods: {
         defaultTabIndexes() {
             let opts = DomHandler.find(this.$refs.container, '[data-pc-section="button"]');
-            let firstHighlight = DomHandler.findSingle(this.$refs.container, '[data-p-highlight="true"]');
+            let firstHighlight = DomHandler.findSingle(this.$refs.container, '[data-v-highlight="true"]');
 
             for (let i = 0; i < opts.length; i++) {
-                if ((DomHandler.getAttribute(opts[i], 'data-p-highlight') === true && ObjectUtils.equals(opts[i], firstHighlight)) || (firstHighlight === null && i == 0)) {
+                if ((DomHandler.getAttribute(opts[i], 'data-v-highlight') === true && ObjectUtils.equals(opts[i], firstHighlight)) || (firstHighlight === null && i == 0)) {
                     this.focusedIndex = i;
                 }
             }
@@ -169,7 +169,7 @@ export default {
         },
         findNextElement(target) {
             if (target.nextElementSibling) {
-                if (DomHandler.getAttribute(target.nextElementSibling, 'data-p-disabled')) {
+                if (DomHandler.getAttribute(target.nextElementSibling, 'data-v-disabled')) {
                     return this.findNextElement(target.nextElementSibling);
                 }
 
@@ -180,7 +180,7 @@ export default {
         },
         findPrevElement(target) {
             if (target.previousElementSibling) {
-                if (DomHandler.getAttribute(target.previousElementSibling, 'data-p-disabled')) {
+                if (DomHandler.getAttribute(target.previousElementSibling, 'data-v-disabled')) {
                     return this.findPrevElement(target.previousElementSibling);
                 }
 

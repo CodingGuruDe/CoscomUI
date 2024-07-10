@@ -27,11 +27,11 @@ const Ripple = BaseRipple.extend('ripple', {
             const ink = DomHandler.createElement('span', {
                 role: 'presentation',
                 'aria-hidden': true,
-                'data-p-ink': true,
-                'data-p-ink-active': false,
+                'data-v-ink': true,
+                'data-v-ink-active': false,
                 class: !this.isUnstyled() && this.cx('root'),
                 onAnimationEnd: this.onAnimationEnd.bind(this),
-                'p-bind': this.ptm('root')
+                'v-bind': this.ptm('root')
             });
 
             el.appendChild(ink);
@@ -55,8 +55,8 @@ const Ripple = BaseRipple.extend('ripple', {
                 return;
             }
 
-            !this.isUnstyled() && DomHandler.removeClass(ink, 'p-ink-active');
-            ink.setAttribute('data-p-ink-active', 'false');
+            !this.isUnstyled() && DomHandler.removeClass(ink, 'v-ink-active');
+            ink.setAttribute('data-v-ink-active', 'false');
 
             if (!DomHandler.getHeight(ink) && !DomHandler.getWidth(ink)) {
                 let d = Math.max(DomHandler.getOuterWidth(target), DomHandler.getOuterHeight(target));
@@ -72,13 +72,13 @@ const Ripple = BaseRipple.extend('ripple', {
             ink.style.top = y + 'px';
             ink.style.left = x + 'px';
 
-            !this.isUnstyled() && DomHandler.addClass(ink, 'p-ink-active');
-            ink.setAttribute('data-p-ink-active', 'true');
+            !this.isUnstyled() && DomHandler.addClass(ink, 'v-ink-active');
+            ink.setAttribute('data-v-ink-active', 'true');
 
             this.timeout = setTimeout(() => {
                 if (ink) {
-                    !this.isUnstyled() && DomHandler.removeClass(ink, 'p-ink-active');
-                    ink.setAttribute('data-p-ink-active', 'false');
+                    !this.isUnstyled() && DomHandler.removeClass(ink, 'v-ink-active');
+                    ink.setAttribute('data-v-ink-active', 'false');
                 }
             }, 401);
         },
@@ -87,8 +87,8 @@ const Ripple = BaseRipple.extend('ripple', {
                 clearTimeout(this.timeout);
             }
 
-            !this.isUnstyled() && DomHandler.removeClass(event.currentTarget, 'p-ink-active');
-            event.currentTarget.setAttribute('data-p-ink-active', 'false');
+            !this.isUnstyled() && DomHandler.removeClass(event.currentTarget, 'v-ink-active');
+            event.currentTarget.setAttribute('data-v-ink-active', 'false');
         },
         getInk(el) {
             return el && el.children ? [...el.children].find((child) => DomHandler.getAttribute(child, 'data-pc-name') === 'ripple') : undefined;

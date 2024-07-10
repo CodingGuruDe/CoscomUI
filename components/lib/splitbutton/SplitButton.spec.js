@@ -41,11 +41,11 @@ describe('SplitButton.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-splitbutton.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-tieredmenu.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('li.p-menuitem').length).toBe(4);
-        expect(wrapper.find('.p-splitbutton-defaultbutton').exists()).toBe(true);
-        expect(wrapper.find('.p-button-label').text()).toBe('Save');
+        expect(wrapper.find('.v-splitbutton.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-tieredmenu.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('li.v-menuitem').length).toBe(4);
+        expect(wrapper.find('.v-splitbutton-defaultbutton').exists()).toBe(true);
+        expect(wrapper.find('.v-button-label').text()).toBe('Save');
     });
 
     it('should hide when default button is clicked', async () => {

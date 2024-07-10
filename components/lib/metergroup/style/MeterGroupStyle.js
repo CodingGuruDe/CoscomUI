@@ -2,25 +2,25 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-metergroup p-component',
+        'v-metergroup v-component',
         {
-            'p-metergroup-horizontal': props.orientation === 'horizontal',
-            'p-metergroup-vertical': props.orientation === 'vertical'
+            'v-metergroup-horizontal': props.orientation === 'horizontal',
+            'v-metergroup-vertical': props.orientation === 'vertical'
         }
     ],
-    metercontainer: 'p-metergroup-meters',
-    meter: 'p-metergroup-meter',
+    metercontainer: 'v-metergroup-meters',
+    meter: 'v-metergroup-meter',
     labellist: ({ props }) => [
-        'p-metergroup-labels',
+        'v-metergroup-labels',
         {
-            'p-metergroup-labels-vertical': props.labelOrientation === 'vertical',
-            'p-metergroup-labels-horizontal': props.labelOrientation === 'horizontal'
+            'v-metergroup-labels-vertical': props.labelOrientation === 'vertical',
+            'v-metergroup-labels-horizontal': props.labelOrientation === 'horizontal'
         }
     ],
-    labellistitem: 'p-metergroup-label',
-    labelicon: 'p-metergroup-label-icon',
-    labellisttype: 'p-metergroup-label-marker',
-    label: 'p-metergroup-label-text'
+    labellistitem: 'v-metergroup-label',
+    labelicon: 'v-metergroup-label-icon',
+    labellisttype: 'v-metergroup-label-marker',
+    label: 'v-metergroup-label-text'
 };
 
 export default BaseStyle.extend({

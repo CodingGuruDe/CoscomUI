@@ -1,13 +1,13 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-timeline p-component', 'p-timeline-' + props.align, 'p-timeline-' + props.layout],
-    event: 'p-timeline-event',
-    opposite: 'p-timeline-event-opposite',
-    separator: 'p-timeline-event-separator',
-    marker: 'p-timeline-event-marker',
-    connector: 'p-timeline-event-connector',
-    content: 'p-timeline-event-content'
+    root: ({ props }) => ['v-timeline v-component', 'v-timeline-' + props.align, 'v-timeline-' + props.layout],
+    event: 'v-timeline-event',
+    opposite: 'v-timeline-event-opposite',
+    separator: 'v-timeline-event-separator',
+    marker: 'v-timeline-event-marker',
+    connector: 'v-timeline-event-connector',
+    content: 'v-timeline-event-content'
 };
 
 export default BaseStyle.extend({

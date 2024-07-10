@@ -142,7 +142,7 @@ export default {
                 ]
             }),
             text: {
-                class: 'p-3 bg-gray-600 text-white rounded-md whitespace-pre-line break-words'
+                class: 'v-3 bg-gray-600 text-white rounded-md whitespace-pre-line break-words'
             }
         }
     },
@@ -153,7 +153,7 @@ export default {
                 'flex items-center justify-between', // flex and alignments
                 'border border-gray-300 bg-gray-100 text-gray-700 rounded-tl-lg rounded-tr-lg', // borders and colors
                 'dark:bg-gray-900 dark:border-blue-900/40 dark:text-white/80', // Dark mode
-                { 'p-5': !props.toggleable, 'py-3 px-5': props.toggleable } // condition
+                { 'v-5': !props.toggleable, 'py-3 px-5': props.toggleable } // condition
             ]
         }),
         title: {
@@ -172,7 +172,7 @@ export default {
         },
         content: {
             class: [
-                'p-5 border border-gray-300 bg-white text-gray-700 border-t-0 last:rounded-br-lg last:rounded-bl-lg',
+                'v-5 border border-gray-300 bg-white text-gray-700 border-t-0 last:rounded-br-lg last:rounded-bl-lg',
                 'dark:bg-gray-900 dark:border-blue-900/40 dark:text-white/80' // Dark mode
             ]
         },
@@ -194,7 +194,7 @@ export default {
             headerAction: ({ context }) => ({
                 class: [
                     'flex items-center cursor-pointer relative no-underline select-none', // Alignments
-                    'p-5 transition duration-200 ease-in-out rounded-t-md font-bold transition-shadow duration-200', // Padding and transition
+                    'v-5 transition duration-200 ease-in-out rounded-t-md font-bold transition-shadow duration-200', // Padding and transition
                     'border border-gray-300 bg-gray-100 text-gray-600', // Borders and colors
                     'dark:bg-gray-900 dark:border-blue-900/40 dark:text-white/80 dark:hover:bg-gray-800/80 dark:focus:shadow-[inset_0_0_0_0.2rem_rgba(147,197,253,0.5)]', // Dark mode
                     'hover:border-gray-300 hover:bg-gray-200 hover:text-gray-800', // Hover
@@ -210,7 +210,7 @@ export default {
             },
             content: {
                 class: [
-                    'p-5 border border-gray-300 bg-white text-gray-700 border-t-0 rounded-tl-none rounded-tr-none rounded-br-lg rounded-bl-lg',
+                    'v-5 border border-gray-300 bg-white text-gray-700 border-t-0 rounded-tl-none rounded-tr-none rounded-br-lg rounded-bl-lg',
                     'dark:bg-gray-900 dark:border-blue-900/40 dark:text-white/80' // Dark mode
                 ]
             },
@@ -225,7 +225,7 @@ export default {
             ]
         },
         body: {
-            class: 'p-5'
+            class: 'v-5'
         }, // Padding.
         title: {
             class: 'text-2xl font-bold mb-2' // Font size, font weight, and margin bottom.
@@ -275,8 +275,8 @@ export default {
                 'border border-gray-300 text-gray-700 bg-gray-50 font-bold rounded-md',
                 'dark:bg-gray-900 dark:border-blue-900/40 dark:text-white/80 ', //dark
                 {
-                    'p-0 transition-none hover:bg-gray-100 hover:border-gray-300 hover:text-gray-900 dark:hover:text-white/80 dark:hover:bg-gray-800/80 dark:focus:shadow-[inset_0_0_0_0.2rem_rgba(147,197,253,0.5)]': props.toggleable,
-                    'p-5': !props.toggleable
+                    'v-0 transition-none hover:bg-gray-100 hover:border-gray-300 hover:text-gray-900 dark:hover:text-white/80 dark:hover:bg-gray-800/80 dark:focus:shadow-[inset_0_0_0_0.2rem_rgba(147,197,253,0.5)]': props.toggleable,
+                    'v-5': !props.toggleable
                 }
             ]
         }),
@@ -284,7 +284,7 @@ export default {
             class: [
                 'flex items-center justify-center',
                 {
-                    'p-5 text-gray-700 rounded-md transition-none cursor-pointer overflow-hidden relative select-none hover:text-gray-900 focus:focus:shadow-[inset_0_0_0_0.2rem_rgba(191,219,254,1)] dark:text-white/80 dark:hover:text-white/80 dark:hover:bg-gray-800/60 dark:focus:shadow-[inset_0_0_0_0.2rem_rgba(147,197,253,0.5)]':
+                    'v-5 text-gray-700 rounded-md transition-none cursor-pointer overflow-hidden relative select-none hover:text-gray-900 focus:focus:shadow-[inset_0_0_0_0.2rem_rgba(191,219,254,1)] dark:text-white/80 dark:hover:text-white/80 dark:hover:bg-gray-800/60 dark:focus:shadow-[inset_0_0_0_0.2rem_rgba(147,197,253,0.5)]':
                         props.toggleable
                 }
             ]
@@ -296,7 +296,7 @@ export default {
             class: 'flex items-center justify-center leading-none' // alignments, and leading style.
         },
         content: {
-            class: 'p-5' // Padding.
+            class: 'v-5' // Padding.
         },
         transition: TRANSITIONS.toggleable
     },
@@ -493,7 +493,7 @@ export default {
             ]
         },
         content: {
-            class: 'p-5 items-center flex'
+            class: 'v-5 items-center flex'
         },
         icon: {
             class: 'text-2xl'
@@ -517,7 +517,7 @@ export default {
             ]
         },
         content: {
-            class: 'p-5 items-center flex'
+            class: 'v-5 items-center flex'
         },
         transition: TRANSITIONS.overlay
     },
@@ -535,7 +535,7 @@ export default {
             ]
         }),
         header: {
-            class: ['flex items-center justify-end', 'p-5']
+            class: ['flex items-center justify-end', 'v-5']
         },
         closeButton: {
             class: [
@@ -550,7 +550,7 @@ export default {
             class: 'w-4 h-4 inline-block'
         },
         content: {
-            class: ['p-5 pt-0 h-full w-full', 'grow overflow-y-auto']
+            class: ['v-5 pt-0 h-full w-full', 'grow overflow-y-auto']
         },
         mask: ({ props }) => ({
             class: ['flex pointer-events-auto', 'transition duration-200 z-20 transition-colors', { 'bg-black/40': props.modal }]
@@ -629,7 +629,7 @@ export default {
             class: ['relative', 'bg-white dark:bg-gray-900 p-8 border border-gray-300 dark:border-blue-900/40 text-gray-700 dark:text-white/80 rounded-b-lg']
         },
         file: {
-            class: ['flex items-center flex-wrap', 'p-4 border border-gray-300 dark:border-blue-900/40 rounded gap-2 mb-2', 'last:mb-0']
+            class: ['flex items-center flex-wrap', 'v-4 border border-gray-300 dark:border-blue-900/40 rounded gap-2 mb-2', 'last:mb-0']
         },
         thumbnail: {
             class: 'shrink-0'
@@ -681,7 +681,7 @@ export default {
         root: ({ props }) => ({
             class: [
                 'inline-flex items-center justify-center align-top',
-                'p-3 m-0 rounded-md',
+                'v-3 m-0 rounded-md',
                 {
                     'bg-blue-100 border-0 text-blue-700': props.severity == 'info',
                     'bg-green-100 border-0 text-green-700': props.severity == 'success',
@@ -1057,7 +1057,7 @@ export default {
                 {
                     'text-lg px-4 py-4': props.size == 'large',
                     'text-xs px-2 py-2': props.size == 'small',
-                    'p-3 text-base': props.size == null
+                    'v-3 text-base': props.size == null
                 }
             ]
         })
@@ -1073,7 +1073,7 @@ export default {
                         // { test: parent }
                         'm-0',
                         'font-sans text-gray-600 dark:text-white/80 bg-white dark:bg-gray-900 border border-gray-300 dark:border-blue-900/40 transition-colors duration-200 appearance-none rounded-lg',
-                        'p-3 text-base',
+                        'v-3 text-base',
                         {
                             'rounded-tr-none rounded-br-none': parent.props.showButtons && parent.props.buttonLayout == 'stacked'
                         },
@@ -1347,7 +1347,7 @@ export default {
             ]
         }),
         panel: {
-            class: 'p-5 bg-white dark:bg-gray-900 text-gray-700 dark:text-white/80 shadow-md rounded-md'
+            class: 'v-5 bg-white dark:bg-gray-900 text-gray-700 dark:text-white/80 shadow-md rounded-md'
         },
         meter: {
             class: 'mb-2 bg-gray-300 dark:bg-gray-700 h-3'
@@ -1487,7 +1487,7 @@ export default {
                 'cursor-pointer block flex flex-auto overflow-hidden text-ellipsis whitespace-nowrap relative',
                 'bg-transparent border-0 text-gray-800',
                 'dark:text-white/80',
-                'p-3 transition duration-200 bg-transparent rounded appearance-none font-sans text-base',
+                'v-3 transition duration-200 bg-transparent rounded appearance-none font-sans text-base',
                 'focus:outline-none focus:shadow-none',
                 { 'pr-7': props.showClear }
             ]
@@ -1517,7 +1517,7 @@ export default {
             class: ['m-0 p-3 text-gray-800 bg-white font-bold', 'dark:bg-gray-900 dark:text-white/80', 'cursor-auto']
         },
         header: {
-            class: ['p-3 border-b border-gray-300 text-gray-700 bg-gray-100 mt-0 rounded-tl-lg rounded-tr-lg', 'dark:bg-gray-800 dark:text-white/80 dark:border-blue-900/40']
+            class: ['v-3 border-b border-gray-300 text-gray-700 bg-gray-100 mt-0 rounded-tl-lg rounded-tr-lg', 'dark:bg-gray-800 dark:text-white/80 dark:border-blue-900/40']
         },
         filtercontainer: {
             class: 'relative'
@@ -1580,7 +1580,7 @@ export default {
             ]
         }),
         header: {
-            class: ['flex items-center justify-between', 'p-2 text-gray-700 dark:text-white/80 bg-white dark:bg-gray-900 font-semibold m-0 border-b border-gray-300 dark:border-blue-900/40 rounded-t-lg']
+            class: ['flex items-center justify-between', 'v-2 text-gray-700 dark:text-white/80 bg-white dark:bg-gray-900 font-semibold m-0 border-b border-gray-300 dark:border-blue-900/40 rounded-t-lg']
         },
         previousbutton: {
             class: [
@@ -1609,13 +1609,13 @@ export default {
             class: ['border-collapse w-full', 'my-2']
         },
         tableheadercell: {
-            class: 'p-2'
+            class: 'v-2'
         },
         weekday: {
             class: 'text-gray-600 dark:text-white/70'
         },
         day: {
-            class: 'p-2'
+            class: 'v-2'
         },
         daylabel: ({ context }) => ({
             class: [
@@ -1638,7 +1638,7 @@ export default {
         month: ({ context }) => ({
             class: [
                 'w-1/3 inline-flex items-center justify-center cursor-pointer overflow-hidden relative',
-                'p-2 transition-shadow duration-200 rounded-lg',
+                'v-2 transition-shadow duration-200 rounded-lg',
                 'focus:outline-none focus:outline-offset-0 focus:shadow-[0_0_0_0.2rem_rgba(191,219,254,1)] dark:focus:shadow-[0_0_0_0.2rem_rgba(147,197,253,0.5)]',
                 { 'text-gray-600 dark:text-white/70 bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800/80': !context.selected && !context.disabled, 'text-blue-700 bg-blue-100 hover:bg-blue-200': context.selected && !context.disabled }
             ]
@@ -1649,7 +1649,7 @@ export default {
         year: ({ context }) => ({
             class: [
                 'w-1/2 inline-flex items-center justify-center cursor-pointer overflow-hidden relative',
-                'p-2 transition-shadow duration-200 rounded-lg',
+                'v-2 transition-shadow duration-200 rounded-lg',
                 'focus:outline-none focus:outline-offset-0 focus:shadow-[0_0_0_0.2rem_rgba(191,219,254,1)] dark:focus:shadow-[0_0_0_0.2rem_rgba(147,197,253,0.5)]',
                 {
                     'text-gray-600 dark:text-white/70 bg-transparent hover:bg-gray-200 dark:hover:bg-gray-800/80': !context.selected && !context.disabled,
@@ -1723,7 +1723,7 @@ export default {
             class: ['m-0 p-3 text-gray-800 bg-white font-bold', 'dark:bg-gray-900 dark:text-white/80', 'cursor-auto']
         },
         header: {
-            class: ['p-3 border-b border-gray-300 text-gray-700 bg-gray-100 mt-0 rounded-tl-lg rounded-tr-lg', 'dark:bg-gray-800 dark:text-white/80 dark:border-blue-900/40']
+            class: ['v-3 border-b border-gray-300 text-gray-700 bg-gray-100 mt-0 rounded-tl-lg rounded-tr-lg', 'dark:bg-gray-800 dark:text-white/80 dark:border-blue-900/40']
         },
         filtercontainer: {
             class: 'relative'
@@ -1757,11 +1757,11 @@ export default {
             class: [
                 'block overflow-hidden whitespace-nowrap cursor-pointer text-ellipsis',
                 'text-gray-800 dark:text-white/80',
-                'p-3 transition duration-200',
+                'v-3 transition duration-200',
                 {
-                    '!p-3': props.display !== 'chip' && (props?.modelValue == null || props?.modelValue == undefined),
+                    '.v-3': props.display !== 'chip' && (props?.modelValue == null || props?.modelValue == undefined),
                     '!py-1.5 px-3': props.display == 'chip' && props?.modelValue !== null,
-                    '!p-3': props.display == 'chip' && props?.modelValue == null
+                    '.v-3': props.display == 'chip' && props?.modelValue == null
                 }
             ]
         }),
@@ -1778,7 +1778,7 @@ export default {
             class: ['bg-white dark:bg-gray-900 text-gray-700 dark:text-white/80 border-0 rounded-md shadow-lg']
         },
         header: {
-            class: ['p-3 border-b border-gray-300 dark:border-blue-900/40 text-gray-700 dark:text-white/80 bg-gray-100 dark:bg-gray-800 rounded-t-lg', 'flex items-center justify-between']
+            class: ['v-3 border-b border-gray-300 dark:border-blue-900/40 text-gray-700 dark:text-white/80 bg-gray-100 dark:bg-gray-800 rounded-t-lg', 'flex items-center justify-between']
         },
         headerCheckboxContainer: {
             class: ['inline-flex cursor-pointer select-none align-bottom relative', 'mr-2', 'w-6 h-6']
@@ -1889,7 +1889,7 @@ export default {
             class: ['overflow-hidden flex flex-auto cursor-pointer']
         },
         label: {
-            class: ['block overflow-hidden whitespace-nowrap cursor-pointer text-ellipsis', 'text-gray-800 dark:text-white/80', 'p-3 transition duration-200']
+            class: ['block overflow-hidden whitespace-nowrap cursor-pointer text-ellipsis', 'text-gray-800 dark:text-white/80', 'v-3 transition duration-200']
         },
         trigger: {
             class: ['flex items-center justify-center shrink-0', 'bg-transparent text-gray-600 dark:text-white/70 w-12 rounded-tr-lg rounded-br-lg']
@@ -2189,7 +2189,7 @@ export default {
     },
     inplace: {
         display: {
-            class: ['p-3 rounded-md transition duration-200 text-gray-700 dark:text-white/80', 'inline cursor-pointer', 'hover:bg-gray-200 hover:text-gray-700 dark:hover:bg-gray-800/80 dark:hover:text-white/80']
+            class: ['v-3 rounded-md transition duration-200 text-gray-700 dark:text-white/80', 'inline cursor-pointer', 'hover:bg-gray-200 hover:text-gray-700 dark:hover:bg-gray-800/80 dark:hover:text-white/80']
         }
     },
     scrolltop: {
@@ -2316,7 +2316,7 @@ export default {
         }),
         menuitem: ({ props, context, instance }) => ({
             class: [
-                'p-2 rounded-md',
+                'v-2 rounded-md',
                 'transition-all duration-200 ease-cubic-bezier-will-change-transform transform ',
                 {
                     'origin-bottom hover:mx-6': props.position == 'bottom',
@@ -2364,7 +2364,7 @@ export default {
     },
     menubar: {
         root: {
-            class: ['p-2 bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-blue-900/40 rounded-md', 'flex items-center relative']
+            class: ['v-2 bg-gray-100 dark:bg-gray-900 border border-gray-300 dark:border-blue-900/40 rounded-md', 'flex items-center relative']
         },
         menu: ({ props }) => ({
             class: [
@@ -2446,7 +2446,7 @@ export default {
     },
     megamenu: {
         root: ({ props }) => ({
-            class: ['bg-gray-100 dark:bg-gray-900  border border-gray-300 dark:border-blue-900/40  rounded-md', 'flex relative', { 'p-2 items-center': props.orientation == 'horizontal', 'flex-col w-48 p-0 py-1': props.orientation !== 'horizontal' }]
+            class: ['bg-gray-100 dark:bg-gray-900  border border-gray-300 dark:border-blue-900/40  rounded-md', 'flex relative', { 'v-2 items-center': props.orientation == 'horizontal', 'flex-col w-48 p-0 py-1': props.orientation !== 'horizontal' }]
         }),
         menu: {
             class: ['m-0 sm:p-0 list-none relative', 'outline-none', 'flex items-center flex-wrap flex-row top-auto left-auto relative bg-transparent shadow-none w-auto']
@@ -2562,7 +2562,7 @@ export default {
             class: 'mr-2'
         },
         submenu: {
-            class: 'p-0 pl-4 m-0 list-none'
+            class: 'v-0 pl-4 m-0 list-none'
         },
         transition: TRANSITIONS.toggleable
     },
@@ -2571,7 +2571,7 @@ export default {
             class: 'relative'
         },
         menu: {
-            class: 'p-0 m-0 list-none flex'
+            class: 'v-0 m-0 list-none flex'
         },
         menuitem: {
             class: ['relative flex justify-center flex-1 overflow-hidden', 'before:border-t before:border-gray-300 before:dark:border-blue-900/40 before:w-full before:absolute before:top-1/4 before:left-0 before:transform before:-translate-y-1/2']
@@ -2678,7 +2678,7 @@ export default {
             class: ['fixed top-0 left-0 w-full h-full', 'flex items-center justify-center', 'bg-black bg-opacity-90']
         },
         toolbar: {
-            class: ['absolute top-0 right-0 z-10 flex', 'p-4']
+            class: ['absolute top-0 right-0 z-10 flex', 'v-4']
         },
         rotaterightbutton: {
             class: [
@@ -2790,7 +2790,7 @@ export default {
             ]
         },
         indicators: {
-            class: ['flex items-center justify-center', 'p-4']
+            class: ['flex items-center justify-center', 'v-4']
         },
         indicator: {
             class: 'mr-2'
@@ -2917,7 +2917,7 @@ export default {
             class: 'm-0 p-0 list-none overflow-auto'
         },
         node: {
-            class: 'p-1 outline-none'
+            class: 'v-1 outline-none'
         },
         content: ({ context, props }) => ({
             class: [
@@ -2965,7 +2965,7 @@ export default {
             class: 'mr-2 text-gray-600 dark:text-white/70'
         },
         subgroup: {
-            class: ['m-0 list-none', 'p-0 pl-4']
+            class: ['m-0 list-none', 'v-0 pl-4']
         },
         filtercontainer: {
             class: ['mb-2', 'relative block w-full']
@@ -3834,7 +3834,7 @@ export default {
                     'text-left border-gray-300 border font-bold',
                     'transition duration-200',
                     context.sorted ? 'bg-blue-50 text-blue-700' : 'bg-slate-50',
-                    context?.size === 'small' ? 'p-2' : context?.size === 'large' ? 'p-5' : 'p-4', // Size
+                    context?.size === 'small' ? 'v-2' : context?.size === 'large' ? 'v-5' : 'v-4', // Size
                     'dark:border-blue-900/40 dark:text-white/80 dark:bg-gray-900', //Dark Mode
                     {
                         'flex flex-1 items-center': context.scrollable,
@@ -3849,7 +3849,7 @@ export default {
                 class: [
                     'text-left border-gray-300 border',
                     'transition duration-200',
-                    context?.size === 'small' ? 'p-2' : context?.size === 'large' ? 'p-5' : 'p-4', // Size
+                    context?.size === 'small' ? 'v-2' : context?.size === 'large' ? 'v-5' : 'v-4', // Size
                     'dark:border-blue-900/40', //Dark Mode
                     {
                         'cursor-pointer': context.selectable,
@@ -3979,7 +3979,7 @@ export default {
                 class: [
                     'text-left border-0 border-b border-solid border-gray-300 dark:border-blue-900/40 font-bold',
                     'transition duration-200',
-                    context?.size === 'small' ? 'p-2' : context?.size === 'large' ? 'p-5' : 'p-4', // Size
+                    context?.size === 'small' ? 'v-2' : context?.size === 'large' ? 'v-5' : 'v-4', // Size
                     context.sorted ? 'bg-blue-50 text-blue-700' : 'bg-slate-50 text-slate-700', // Sort
                     context.sorted ? 'dark:text-white/80 dark:bg-blue-300' : 'dark:text-white/80 dark:bg-gray-900', // Dark Mode
                     {
@@ -3995,7 +3995,7 @@ export default {
             bodycell: ({ props, context }) => ({
                 class: [
                     'text-left border-0 border-b border-solid border-gray-300',
-                    context?.size === 'small' ? 'p-2' : context?.size === 'large' ? 'p-5' : 'p-4', // Size
+                    context?.size === 'small' ? 'v-2' : context?.size === 'large' ? 'v-5' : 'v-4', // Size
                     'dark:text-white/80 dark:border-blue-900/40', // Dark Mode
                     {
                         'sticky bg-inherit': props.frozen || props.frozen === '', // Frozen Columns
@@ -4008,7 +4008,7 @@ export default {
                     'text-left border-0 border-b border-solid border-gray-300 font-bold',
                     'bg-slate-50 text-slate-700',
                     'transition duration-200',
-                    context?.size === 'small' ? 'p-2' : context?.size === 'large' ? 'p-5' : 'p-4', // Size
+                    context?.size === 'small' ? 'v-2' : context?.size === 'large' ? 'v-5' : 'v-4', // Size
                     'dark:text-white/80 dark:bg-gray-900 dark:border-blue-900/40', // Dark Mode
                     {
                         'border-x border-y': context?.showGridlines
@@ -4058,7 +4058,7 @@ export default {
                 }
             },
             filterconstraint: {
-                class: 'p-5 border-b border-solid border-gray-300 dark:border-blue-900/40'
+                class: 'v-5 border-b border-solid border-gray-300 dark:border-blue-900/40'
             },
             filteraddrule: {
                 class: 'py-3 px-5'

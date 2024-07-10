@@ -24,7 +24,7 @@
                     </template>
                 </div>
             </slot>
-            <div v-if="showSpacer" class="p-virtualscroller-spacer" :style="spacerStyle" v-bind="ptm('spacer')"></div>
+            <div v-if="showSpacer" class="v-virtualscroller-spacer" :style="spacerStyle" v-bind="ptm('spacer')"></div>
             <div v-if="!loaderDisabled && showLoader && d_loading" :class="loaderClass" v-bind="ptm('loader')">
                 <template v-if="$slots && $slots.loader">
                     <template v-for="(_, index) of loaderArr" :key="index">
@@ -32,7 +32,7 @@
                     </template>
                 </template>
                 <slot name="loadingicon">
-                    <SpinnerIcon spin class="p-virtualscroller-loading-icon" v-bind="ptm('loadingIcon')" />
+                    <SpinnerIcon spin class="v-virtualscroller-loading-icon" v-bind="ptm('loadingIcon')" />
                 </slot>
             </div>
         </div>
@@ -636,28 +636,28 @@ export default {
     computed: {
         containerClass() {
             return [
-                'p-virtualscroller',
+                'v-virtualscroller',
                 this.class,
                 {
-                    'p-virtualscroller-inline': this.inline,
-                    'p-virtualscroller-both p-both-scroll': this.isBoth(),
-                    'p-virtualscroller-horizontal p-horizontal-scroll': this.isHorizontal()
+                    'v-virtualscroller-inline': this.inline,
+                    'v-virtualscroller-both v-both-scroll': this.isBoth(),
+                    'v-virtualscroller-horizontal v-horizontal-scroll': this.isHorizontal()
                 }
             ];
         },
         contentClass() {
             return [
-                'p-virtualscroller-content',
+                'v-virtualscroller-content',
                 {
-                    'p-virtualscroller-loading': this.d_loading
+                    'v-virtualscroller-loading': this.d_loading
                 }
             ];
         },
         loaderClass() {
             return [
-                'p-virtualscroller-loader',
+                'v-virtualscroller-loader',
                 {
-                    'p-component-overlay': !this.$slots.loader
+                    'v-component-overlay': !this.$slots.loader
                 }
             ];
         },

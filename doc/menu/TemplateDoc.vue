@@ -34,7 +34,7 @@
                 </a>
             </template>
             <template #end>
-                <button v-ripple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
+                <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
                     <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>
@@ -118,7 +118,7 @@ export default {
         </a>
     </template>
     <template #end>
-        <button v-ripple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
+        <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
             <Avatar image="/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
             <span class="inline-flex flex-column">
                 <span class="font-bold">Amy Elsner</span>
@@ -159,7 +159,7 @@ export default {
                 </a>
             </template>
             <template #end>
-                <button v-ripple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
+                <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
                     <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>
@@ -254,7 +254,7 @@ export default {
                 </a>
             </template>
             <template #end>
-                <button v-ripple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
+                <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
                     <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>

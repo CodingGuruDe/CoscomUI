@@ -2,28 +2,28 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-togglebutton p-component',
+        'v-togglebutton v-component',
         {
-            'p-disabled': props.disabled,
-            'p-highlight': instance.active,
-            'p-invalid': props.invalid
+            'v-disabled': props.disabled,
+            'v-highlight': instance.active,
+            'v-invalid': props.invalid
         }
     ],
-    input: 'p-togglebutton-input',
+    input: 'v-togglebutton-input',
     box: ({ instance }) => [
-        'p-button p-component',
+        'v-button v-component',
         {
-            'p-button-icon-only': instance.hasIcon && !instance.hasLabel
+            'v-button-icon-only': instance.hasIcon && !instance.hasLabel
         }
     ],
     icon: ({ instance, props }) => [
-        'p-button-icon',
+        'v-button-icon',
         {
-            'p-button-icon-left': props.iconPos === 'left' && instance.label,
-            'p-button-icon-right': props.iconPos === 'right' && instance.label
+            'v-button-icon-left': props.iconPos === 'left' && instance.label,
+            'v-button-icon-right': props.iconPos === 'right' && instance.label
         }
     ],
-    label: 'p-button-label'
+    label: 'v-button-label'
 };
 
 export default BaseStyle.extend({

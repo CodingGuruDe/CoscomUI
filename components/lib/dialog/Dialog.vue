@@ -149,7 +149,7 @@ export default {
         },
         onBeforeLeave() {
             if (this.modal) {
-                !this.isUnstyled && DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+                !this.isUnstyled && DomHandler.addClass(this.mask, 'v-component-overlay-leave');
             }
         },
         onLeave() {
@@ -302,7 +302,7 @@ export default {
 
                 this.container.style.margin = '0';
                 document.body.setAttribute('data-p-unselectable-text', 'true');
-                !this.isUnstyled && DomHandler.addClass(document.body, 'p-unselectable-text');
+                !this.isUnstyled && DomHandler.addClass(document.body, 'v-unselectable-text');
             }
         },
         bindGlobalListeners() {
@@ -369,7 +369,7 @@ export default {
                 if (this.dragging) {
                     this.dragging = false;
                     document.body.removeAttribute('data-p-unselectable-text');
-                    !this.isUnstyled && DomHandler.removeClass(document.body, 'p-unselectable-text');
+                    !this.isUnstyled && DomHandler.removeClass(document.body, 'v-unselectable-text');
 
                     this.$emit('dragend', event);
                 }

@@ -19,6 +19,6 @@ describe('ScrollTop.vue', () => {
     it('should exist', async () => {
         await wrapper.setData({ visible: true });
 
-        expect(wrapper.find('.p-scrolltop.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-scrolltop.v-component').exists()).toBe(true);
     });
 });

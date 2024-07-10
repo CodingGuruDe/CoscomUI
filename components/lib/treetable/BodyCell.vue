@@ -1,5 +1,5 @@
 <template>
-    <td :style="containerStyle" :class="containerClass" role="cell" v-bind="{ ...getColumnPT('root'), ...getColumnPT('bodyCell') }" :data-p-frozen-column="columnProp('frozen')">
+    <td :style="containerStyle" :class="containerClass" role="cell" v-bind="{ ...getColumnPT('root'), ...getColumnPT('bodyCell') }" :data-v-frozen-column="columnProp('frozen')">
         <button v-if="columnProp('expander')" v-ripple type="button" :class="cx('rowToggler')" @click="toggle" :style="togglerStyle" tabindex="-1" v-bind="getColumnPT('rowToggler')" data-pc-group-section="rowactionbutton">
             <template v-if="node.loading && loadingMode === 'icon'">
                 <component v-if="templates['nodetogglericon']" :is="templates['nodetogglericon']" :class="cx('nodetogglericon')" />
@@ -20,9 +20,9 @@
             :tabindex="-1"
             :unstyled="unstyled"
             :pt="getColumnCheckboxPT('rowCheckbox')"
-            :data-p-highlight="checked"
-            :data-p-checked="checked"
-            :data-p-partialchecked="partialChecked"
+            :data-v-highlight="checked"
+            :data-v-checked="checked"
+            :data-v-partialchecked="partialChecked"
         >
             <template #icon="slotProps">
                 <component v-if="templates['checkboxicon']" :is="templates['checkboxicon']" :checked="slotProps.checked" :partialChecked="partialChecked" :class="slotProps.class" />
@@ -172,7 +172,7 @@ export default {
 
                 if (align === 'right') {
                     let right = 0;
-                    let next = DomHandler.getNextElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let next = DomHandler.getNextElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (next) {
                         right = DomHandler.getOuterWidth(next) + parseFloat(next.style.right || 0);
@@ -181,7 +181,7 @@ export default {
                     this.styleObject.right = right + 'px';
                 } else {
                     let left = 0;
-                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (prev) {
                         left = DomHandler.getOuterWidth(prev) + parseFloat(prev.style.left || 0);

@@ -2,32 +2,32 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-image p-component',
+        'v-image v-component',
         {
-            'p-image-preview-container': props.preview
+            'v-image-preview-container': props.preview
         }
     ],
     image: ({ props }) => props.image,
-    button: 'p-image-preview-indicator',
-    icon: 'p-image-preview-icon',
-    mask: 'p-image-mask p-component-overlay p-component-overlay-enter',
-    toolbar: 'p-image-toolbar',
-    rotateRightButton: 'p-image-action p-link',
-    rotateLeftButton: 'p-image-action p-link',
+    button: 'v-image-preview-indicator',
+    icon: 'v-image-preview-icon',
+    mask: 'v-image-mask v-component-overlay v-component-overlay-enter',
+    toolbar: 'v-image-toolbar',
+    rotateRightButton: 'v-image-action v-link',
+    rotateLeftButton: 'v-image-action v-link',
     zoomOutButton: ({ instance }) => [
-        'p-image-action p-link',
+        'v-image-action v-link',
         {
-            'p-disabled': instance.isZoomOutDisabled
+            'v-disabled': instance.isZoomOutDisabled
         }
     ],
     zoomInButton: ({ instance }) => [
-        'p-image-action p-link',
+        'v-image-action v-link',
         {
-            'p-disabled': instance.isZoomInDisabled
+            'v-disabled': instance.isZoomInDisabled
         }
     ],
-    closeButton: 'p-image-action p-link',
-    preview: 'p-image-preview'
+    closeButton: 'v-image-action v-link',
+    preview: 'v-image-preview'
 };
 
 export default BaseStyle.extend({

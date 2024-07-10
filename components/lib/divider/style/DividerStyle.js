@@ -10,17 +10,17 @@ const inlineStyles = {
 
 const classes = {
     root: ({ props }) => [
-        'p-divider p-component',
-        'p-divider-' + props.layout,
-        'p-divider-' + props.type,
-        { 'p-divider-left': props.layout === 'horizontal' && (!props.align || props.align === 'left') },
-        { 'p-divider-center': props.layout === 'horizontal' && props.align === 'center' },
-        { 'p-divider-right': props.layout === 'horizontal' && props.align === 'right' },
-        { 'p-divider-top': props.layout === 'vertical' && props.align === 'top' },
-        { 'p-divider-center': props.layout === 'vertical' && (!props.align || props.align === 'center') },
-        { 'p-divider-bottom': props.layout === 'vertical' && props.align === 'bottom' }
+        'v-divider v-component',
+        'v-divider-' + props.layout,
+        'v-divider-' + props.type,
+        { 'v-divider-left': props.layout === 'horizontal' && (!props.align || props.align === 'left') },
+        { 'v-divider-center': props.layout === 'horizontal' && props.align === 'center' },
+        { 'v-divider-right': props.layout === 'horizontal' && props.align === 'right' },
+        { 'v-divider-top': props.layout === 'vertical' && props.align === 'top' },
+        { 'v-divider-center': props.layout === 'vertical' && (!props.align || props.align === 'center') },
+        { 'v-divider-bottom': props.layout === 'vertical' && props.align === 'bottom' }
     ],
-    content: 'p-divider-content'
+    content: 'v-divider-content'
 };
 
 export default BaseStyle.extend({

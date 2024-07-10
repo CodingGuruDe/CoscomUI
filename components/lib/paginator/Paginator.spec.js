@@ -19,22 +19,22 @@ describe('Paginator.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-paginator.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('.p-paginator-page.p-paginator-element').length).toBe(5);
-        expect(wrapper.find('.p-dropdown.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-dropdown-label').text()).toBe('10');
-        expect(wrapper.find('.p-paginator-first').classes()).toContain('p-disabled');
-        expect(wrapper.find('.p-paginator-prev').classes()).toContain('p-disabled');
+        expect(wrapper.find('.v-paginator.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('.v-paginator-page.v-paginator-element').length).toBe(5);
+        expect(wrapper.find('.v-dropdown.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-label').text()).toBe('10');
+        expect(wrapper.find('.v-paginator-first').classes()).toContain('v-disabled');
+        expect(wrapper.find('.v-paginator-prev').classes()).toContain('v-disabled');
         expect(wrapper.vm.pageCount).toBe(12);
     });
 
     it('show jump to the end', async () => {
         await wrapper.vm.changePageToLast({ preventDefault: () => {} });
 
-        expect(wrapper.findAll('.p-paginator-page.p-paginator-element')[4].classes()).toContain('p-highlight');
-        expect(wrapper.findAll('.p-paginator-page.p-paginator-element')[4].text()).toBe('12');
-        expect(wrapper.find('.p-paginator-next').classes()).toContain('p-disabled');
-        expect(wrapper.find('.p-paginator-last').classes()).toContain('p-disabled');
+        expect(wrapper.findAll('.v-paginator-page.v-paginator-element')[4].classes()).toContain('v-highlight');
+        expect(wrapper.findAll('.v-paginator-page.v-paginator-element')[4].text()).toBe('12');
+        expect(wrapper.find('.v-paginator-next').classes()).toContain('v-disabled');
+        expect(wrapper.find('.v-paginator-last').classes()).toContain('v-disabled');
     });
 
     it('should change row count', async () => {
@@ -46,6 +46,6 @@ describe('Paginator.vue', () => {
 
         await wrapper.setProps({ rows: 20 });
 
-        expect(wrapper.find('.p-dropdown-label').text()).toBe('20');
+        expect(wrapper.find('.v-dropdown-label').text()).toBe('20');
     });
 });

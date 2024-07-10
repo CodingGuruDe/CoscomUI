@@ -13,18 +13,18 @@ describe('Slider.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-slider.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-slider').classes()).toContain('p-slider-horizontal');
+        expect(wrapper.find('.v-slider.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-slider').classes()).toContain('v-slider-horizontal');
     });
 
     it('should drag start and end', async () => {
         await wrapper.vm.onDragStart({ preventDefault: () => {}, currentTarget: { focus: () => {} } });
 
-        expect(wrapper.find('.p-slider').classes()).toStrictEqual(['p-slider', 'p-component', 'p-slider-horizontal']);
+        expect(wrapper.find('.v-slider').classes()).toStrictEqual(['v-slider', 'v-component', 'v-slider-horizontal']);
 
         await wrapper.vm.onDragEnd();
 
-        expect(wrapper.find('.p-slider').classes()).not.toContain('p-slider-sliding');
+        expect(wrapper.find('.v-slider').classes()).not.toContain('v-slider-sliding');
     });
 
     it('should set value', async () => {

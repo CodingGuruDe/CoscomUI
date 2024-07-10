@@ -2,15 +2,15 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance }) => [
-        'p-progressbar p-component',
+        'v-progressbar v-component',
         {
-            'p-progressbar-determinate': instance.determinate,
-            'p-progressbar-indeterminate': instance.indeterminate
+            'v-progressbar-determinate': instance.determinate,
+            'v-progressbar-indeterminate': instance.indeterminate
         }
     ],
-    container: 'p-progressbar-indeterminate-container',
-    value: 'p-progressbar-value p-progressbar-value-animate',
-    label: 'p-progressbar-label'
+    container: 'v-progressbar-indeterminate-container',
+    value: 'v-progressbar-value v-progressbar-value-animate',
+    label: 'v-progressbar-label'
 };
 
 export default BaseStyle.extend({

@@ -15,8 +15,8 @@ describe('ToggleButton', () => {
     });
 
     it('is ToggleButton exist', () => {
-        expect(wrapper.find('.p-togglebutton.p-component').exists()).toBe(true);
-        expect(wrapper.find('span.el-times.p-button-icon').exists()).toBe(true);
+        expect(wrapper.find('.v-togglebutton.v-component').exists()).toBe(true);
+        expect(wrapper.find('span.el-times.v-button-icon').exists()).toBe(true);
     });
 
     it('should have onIcon', async () => {
@@ -44,11 +44,11 @@ describe('ToggleButton', () => {
             style: 'width: 10em'
         });
 
-        expect(wrapper.find('.p-button-label').text()).toBe('I confirm');
+        expect(wrapper.find('.v-button-label').text()).toBe('I confirm');
         expect(wrapper.attributes().style).toContain('width: 10em');
 
         await wrapper.setProps({ modelValue: false });
 
-        expect(wrapper.find('.p-button-label').text()).toBe('I reject');
+        expect(wrapper.find('.v-button-label').text()).toBe('I reject');
     });
 });

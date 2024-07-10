@@ -60,10 +60,10 @@ describe('PanelMenu', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-panelmenu.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('.p-menuitem').length).toBe(6);
-        expect(wrapper.findAll('.p-toggleable-content').length).toBe(7);
-        expect(wrapper.findAll('.p-submenu-list').length).toBe(3);
+        expect(wrapper.find('.v-panelmenu.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('.v-menuitem').length).toBe(6);
+        expect(wrapper.findAll('.v-toggleable-content').length).toBe(7);
+        expect(wrapper.findAll('.v-submenu-list').length).toBe(3);
     });
 
     it('should update expandedKeys', async () => {

@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>A floating label appears on top of the input field when focused. Visit <NuxtLink to="/floatlabel">FloatLabel</NuxtLink> documentation for more information.</p>
     </DocSectionText>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <FloatLabel>
             <Chips id="chips" v-model="value" />
             <label for="chips">Chips</label>
@@ -25,7 +25,7 @@ export default {
 `,
                 options: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <FloatLabel>
             <Chips id="chips" v-model="value" />
             <label for="chips">Chips</label>
@@ -45,7 +45,7 @@ export default {
 `,
                 composition: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <FloatLabel>
             <Chips id="chips" v-model="value" />
             <label for="chips">Chips</label>

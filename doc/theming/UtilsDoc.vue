@@ -12,7 +12,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-component</td>
+                    <td>v-component</td>
                     <td>Applies component theming such as font-family and font-size to an element.</td>
                 </tr>
                 <tr>
@@ -32,7 +32,7 @@
                     <td>Resets the browsers defaults.</td>
                 </tr>
                 <tr>
-                    <td>p-link</td>
+                    <td>v-link</td>
                     <td>Renders a button as a link.</td>
                 </tr>
                 <tr>

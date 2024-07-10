@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-inputgroup-addon'
+    root: 'v-inputgroup-addon'
 };
 
 export default BaseStyle.extend({

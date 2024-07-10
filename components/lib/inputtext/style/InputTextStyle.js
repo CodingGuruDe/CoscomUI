@@ -2,13 +2,13 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-inputtext p-component',
+        'v-inputtext v-component',
         {
-            'p-filled': instance.filled,
-            'p-inputtext-sm': props.size === 'small',
-            'p-inputtext-lg': props.size === 'large',
-            'p-invalid': props.invalid,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-filled': instance.filled,
+            'v-inputtext-sm': props.size === 'small',
+            'v-inputtext-lg': props.size === 'large',
+            'v-invalid': props.invalid,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ]
 };

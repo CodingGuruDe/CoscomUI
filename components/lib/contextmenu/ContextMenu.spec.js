@@ -153,9 +153,9 @@ describe('ContextMenu.vue', () => {
         await wrapper.setData({ visible: true });
 
         expect(show).toHaveBeenCalled();
-        expect(wrapper.find('.p-contextmenu.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('.p-menuitem').length).toBe(5);
-        expect(wrapper.findAll('.p-menuitem-text')[0].text()).toBe('File');
+        expect(wrapper.find('.v-contextmenu.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('.v-menuitem').length).toBe(5);
+        expect(wrapper.findAll('.v-menuitem-text')[0].text()).toBe('File');
     });
 
     it('should hide menu', async () => {
@@ -167,6 +167,6 @@ describe('ContextMenu.vue', () => {
         await wrapper.setData({ visible: false });
 
         expect(hide).toHaveBeenCalled();
-        expect(wrapper.find('.p-contextmenu.p-component').exists()).toBe(false);
+        expect(wrapper.find('.v-contextmenu.v-component').exists()).toBe(false);
     });
 });

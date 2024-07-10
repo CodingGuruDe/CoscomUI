@@ -6,30 +6,30 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-password p-component p-inputwrapper',
+        'v-password v-component v-inputwrapper',
         {
-            'p-inputwrapper-filled': instance.filled,
-            'p-inputwrapper-focus': instance.focused,
-            'p-icon-field p-icon-field-right': props.toggleMask
+            'v-inputwrapper-filled': instance.filled,
+            'v-inputwrapper-focus': instance.focused,
+            'v-icon-field v-icon-field-right': props.toggleMask
         }
     ],
     input: ({ props }) => [
-        'p-password-input',
+        'v-password-input',
         {
-            'p-disabled': props.disabled
+            'v-disabled': props.disabled
         }
     ],
-    hideIcon: 'p-input-icon',
-    showIcon: 'p-input-icon',
+    hideIcon: 'v-input-icon',
+    showIcon: 'v-input-icon',
     panel: ({ instance }) => [
-        'p-password-panel p-component',
+        'v-password-panel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    meter: 'p-password-meter',
-    meterLabel: ({ instance }) => `p-password-strength ${instance.meter ? instance.meter.strength : ''}`,
-    info: 'p-password-info'
+    meter: 'v-password-meter',
+    meterLabel: ({ instance }) => `v-password-strength ${instance.meter ? instance.meter.strength : ''}`,
+    info: 'v-password-info'
 };
 
 export default BaseStyle.extend({

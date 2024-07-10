@@ -181,15 +181,15 @@ export default {
                         `;
                     } else {
                         innerHTML += `
-.paginator[${this.attributeSelector}], .p-paginator-${key} {
+.paginator[${this.attributeSelector}], .v-paginator-${key} {
     display: none;
 }
 @media screen ${minValue} and (max-width: ${key}) {
-    .paginator[${this.attributeSelector}], .p-paginator-${key} {
+    .paginator[${this.attributeSelector}], .v-paginator-${key} {
         display: flex;
     }
     .paginator[${this.attributeSelector}],
-    .p-paginator-default{
+    .v-paginator-default{
         display: none;
     }
 }

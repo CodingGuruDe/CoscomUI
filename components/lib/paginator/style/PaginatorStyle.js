@@ -2,53 +2,53 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     paginator: ({ instance, key }) => [
-        'p-paginator p-component',
+        'v-paginator v-component',
         {
-            'p-paginator-default': !instance.hasBreakpoints(),
-            [`p-paginator-${key}`]: instance.hasBreakpoints()
+            'v-paginator-default': !instance.hasBreakpoints(),
+            [`v-paginator-${key}`]: instance.hasBreakpoints()
         }
     ],
-    start: 'p-paginator-left-content',
-    end: 'p-paginator-right-content',
+    start: 'v-paginator-left-content',
+    end: 'v-paginator-right-content',
     firstPageButton: ({ instance }) => [
-        'p-paginator-first p-paginator-element p-link',
+        'v-paginator-first v-paginator-element v-link',
         {
-            'p-disabled': instance.$attrs.disabled
+            'v-disabled': instance.$attrs.disabled
         }
     ],
-    firstPageIcon: 'p-paginator-icon',
+    firstPageIcon: 'v-paginator-icon',
     previousPageButton: ({ instance }) => [
-        'p-paginator-prev p-paginator-element p-link',
+        'v-paginator-prev v-paginator-element v-link',
         {
-            'p-disabled': instance.$attrs.disabled
+            'v-disabled': instance.$attrs.disabled
         }
     ],
-    previousPageIcon: 'p-paginator-icon',
+    previousPageIcon: 'v-paginator-icon',
     nextPageButton: ({ instance }) => [
-        'p-paginator-next p-paginator-element p-link',
+        'v-paginator-next v-paginator-element v-link',
         {
-            'p-disabled': instance.$attrs.disabled
+            'v-disabled': instance.$attrs.disabled
         }
     ],
-    nextPageIcon: 'p-paginator-icon',
+    nextPageIcon: 'v-paginator-icon',
     lastPageButton: ({ instance }) => [
-        'p-paginator-last p-paginator-element p-link',
+        'v-paginator-last v-paginator-element v-link',
         {
-            'p-disabled': instance.$attrs.disabled
+            'v-disabled': instance.$attrs.disabled
         }
     ],
-    lastPageIcon: 'p-paginator-icon',
-    pages: 'p-paginator-pages',
+    lastPageIcon: 'v-paginator-icon',
+    pages: 'v-paginator-pages',
     pageButton: ({ props, pageLink }) => [
-        'p-paginator-page p-paginator-element p-link',
+        'v-paginator-page v-paginator-element v-link',
         {
-            'p-highlight': pageLink - 1 === props.page
+            'v-highlight': pageLink - 1 === props.page
         }
     ],
-    current: 'p-paginator-current',
-    rowPerPageDropdown: 'p-paginator-rpp-options',
-    jumpToPageDropdown: 'p-paginator-page-options',
-    jumpToPageInput: 'p-paginator-page-input'
+    current: 'v-paginator-current',
+    rowPerPageDropdown: 'v-paginator-rpp-options',
+    jumpToPageDropdown: 'v-paginator-page-options',
+    jumpToPageInput: 'v-paginator-page-input'
 };
 
 export default BaseStyle.extend({

@@ -32,7 +32,7 @@ describe('Sidebar.vue', () => {
     it('When mask element triggered, sidebar should be hide', async () => {
         const hideSpy = vi.spyOn(wrapper.vm, 'hide');
 
-        await wrapper.find('.p-sidebar-mask').trigger('mousedown');
+        await wrapper.find('.v-sidebar-mask').trigger('mousedown');
 
         expect(wrapper.emitted()['update:visible'].length).toBe(1);
         expect(hideSpy).toHaveBeenCalled();
@@ -73,7 +73,7 @@ describe('Sidebar.vue', () => {
     it('When keydown is triggered , hide method should be triggered', async () => {
         const hideSpy = vi.spyOn(wrapper.vm, 'hide');
 
-        await wrapper.find('.p-sidebar-close').trigger('click');
+        await wrapper.find('.v-sidebar-close').trigger('click');
 
         expect(hideSpy).toHaveBeenCalled();
     });

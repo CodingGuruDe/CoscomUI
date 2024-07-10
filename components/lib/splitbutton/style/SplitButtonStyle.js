@@ -2,18 +2,18 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-splitbutton p-component',
+        'v-splitbutton v-component',
         {
-            'p-button-raised': props.raised,
-            'p-button-rounded': props.rounded,
-            'p-button-text': props.text,
-            'p-button-outlined': props.outlined,
-            'p-button-sm': props.size === 'small',
-            'p-button-lg': props.size === 'large'
+            'v-button-raised': props.raised,
+            'v-button-rounded': props.rounded,
+            'v-button-text': props.text,
+            'v-button-outlined': props.outlined,
+            'v-button-sm': props.size === 'small',
+            'v-button-lg': props.size === 'large'
         }
     ],
-    button: 'p-splitbutton-defaultbutton',
-    menuButton: 'p-splitbutton-menubutton'
+    button: 'v-splitbutton-defaultbutton',
+    menuButton: 'v-splitbutton-menubutton'
 };
 
 export default BaseStyle.extend({

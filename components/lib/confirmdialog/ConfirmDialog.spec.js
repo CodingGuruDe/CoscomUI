@@ -26,13 +26,13 @@ describe('ConfirmDialog', () => {
 
         await wrapper.vm.$nextTick();
 
-        expect(wrapper.find('.p-dialog-mask .p-dialog.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-dialog-title').text()).toBe('Confirmation');
-        expect(wrapper.find('.p-confirm-dialog-message').text()).toBe('Are you sure you want to proceed?');
+        expect(wrapper.find('.v-dialog-mask .v-dialog.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-dialog-title').text()).toBe('Confirmation');
+        expect(wrapper.find('.v-confirm-dialog-message').text()).toBe('Are you sure you want to proceed?');
 
         await wrapper.vm.reject();
 
-        expect(wrapper.find('.p-dialog-mask .p-dialog.p-component').exists()).toBe(false);
+        expect(wrapper.find('.v-dialog-mask .v-dialog.v-component').exists()).toBe(false);
     });
 
     it('should dialog trigger the accept function', async () => {
@@ -61,7 +61,7 @@ describe('ConfirmDialog', () => {
         await wrapper.vm.$nextTick();
 
         const acceptTriggered = vi.spyOn(wrapper.componentVM.confirmation, 'accept');
-        const CDAcceptBtn = wrapper.find('.p-confirm-dialog-accept');
+        const CDAcceptBtn = wrapper.find('.v-confirm-dialog-accept');
 
         await CDAcceptBtn.trigger('click');
 
@@ -94,7 +94,7 @@ describe('ConfirmDialog', () => {
         await wrapper.vm.$nextTick();
 
         const rejectTriggered = vi.spyOn(wrapper.componentVM.confirmation, 'reject');
-        const CDRejectBtn = wrapper.find('.p-confirm-dialog-reject');
+        const CDRejectBtn = wrapper.find('.v-confirm-dialog-reject');
 
         await CDRejectBtn.trigger('click');
 
@@ -124,11 +124,11 @@ describe('ConfirmDialog', () => {
 
         await wrapper.vm.$nextTick();
 
-        const dialogCloseBtn = wrapper.find('.p-dialog-header-close');
+        const dialogCloseBtn = wrapper.find('.v-dialog-header-close');
 
         await dialogCloseBtn.trigger('click');
 
-        expect(wrapper.find('.p-dialog-mask .p-dialog.p-component').exists()).toBe(false);
+        expect(wrapper.find('.v-dialog-mask .v-dialog.v-component').exists()).toBe(false);
     });
 
     it('should position work', async () => {
@@ -156,6 +156,6 @@ describe('ConfirmDialog', () => {
 
         await wrapper.vm.$nextTick();
 
-        expect(wrapper.find('.p-dialog-mask.p-dialog-bottom').exists()).toBe(true);
+        expect(wrapper.find('.v-dialog-mask.v-dialog-bottom').exists()).toBe(true);
     });
 });

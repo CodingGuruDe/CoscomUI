@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>A new chip is added when <i>enter</i> key is pressed, <i>separator</i> property allows definining an additional key. Currently only valid value is <i>,</i> to create a new item when comma key is pressed.</p>
     </DocSectionText>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" separator="," />
     </div>
     <DocSectionCode :code="code" />
@@ -19,7 +19,7 @@ export default {
 `,
                 options: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" separator="," />
     </div>
 </template>
@@ -36,7 +36,7 @@ export default {
 `,
                 composition: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" separator=","  />
     </div>
 </template>

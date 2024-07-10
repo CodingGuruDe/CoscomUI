@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-input-icon'
+    root: 'v-input-icon'
 };
 
 export default BaseStyle.extend({

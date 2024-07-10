@@ -2,20 +2,20 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-orderlist p-component',
+        'v-orderlist v-component',
         {
-            'p-orderlist-striped': props.stripedRows
+            'v-orderlist-striped': props.stripedRows
         }
     ],
-    controls: 'p-orderlist-controls',
-    container: 'p-orderlist-list-container',
-    header: 'p-orderlist-header',
-    list: 'p-orderlist-list',
+    controls: 'v-orderlist-controls',
+    container: 'v-orderlist-list-container',
+    header: 'v-orderlist-header',
+    list: 'v-orderlist-list',
     item: ({ instance, item, id }) => [
-        'p-orderlist-item',
+        'v-orderlist-item',
         {
-            'p-highlight': instance.isSelected(item),
-            'p-focus': id === instance.focusedOptionId
+            'v-highlight': instance.isSelected(item),
+            'v-focus': id === instance.focusedOptionId
         }
     ]
 };

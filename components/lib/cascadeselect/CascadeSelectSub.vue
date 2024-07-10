@@ -12,10 +12,10 @@
                 :aria-setsize="options.length"
                 :aria-posinset="index + 1"
                 v-bind="getPTOptions(processedOption, index, 'item')"
-                :data-p-item-group="isOptionGroup(processedOption)"
-                :data-p-highlight="isOptionActive(processedOption)"
-                :data-p-focus="isOptionFocused(processedOption)"
-                :data-p-disabled="isOptionDisabled(processedOption)"
+                :data-v-item-group="isOptionGroup(processedOption)"
+                :data-v-highlight="isOptionActive(processedOption)"
+                :data-v-focus="isOptionFocused(processedOption)"
+                :data-v-disabled="isOptionDisabled(processedOption)"
             >
                 <div v-ripple :class="cx('content')" @click="onOptionClick($event, processedOption)" @mousemove="onOptionMouseMove($event, processedOption)" v-bind="getPTOptions(processedOption, index, 'content')">
                     <component v-if="templates['option']" :is="templates['option']" :option="processedOption.option" />

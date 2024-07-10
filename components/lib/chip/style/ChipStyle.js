@@ -2,14 +2,14 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-chip p-component',
+        'v-chip v-component',
         {
-            'p-chip-image': props.image != null
+            'v-chip-image': props.image != null
         }
     ],
-    icon: 'p-chip-icon',
-    label: 'p-chip-text',
-    removeIcon: 'p-chip-remove-icon'
+    icon: 'v-chip-icon',
+    label: 'v-chip-text',
+    removeIcon: 'v-chip-remove-icon'
 };
 
 export default BaseStyle.extend({

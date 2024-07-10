@@ -1,6 +1,6 @@
 <template>
     <div ref="container" :class="cx('root')" :style="sx('root')" @click="onContainerClick($event)" v-bind="ptmi('root')">
-        <div class="p-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-p-hidden-accessible="true">
+        <div class="v-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-v-hidden-accessible="true">
             <input
                 ref="focusInput"
                 :id="inputId"
@@ -32,18 +32,18 @@
         </span>
         <div :class="cx('dropdownButton')" role="button" tabindex="-1" aria-hidden="true" v-bind="ptm('dropdownButton')">
             <slot v-if="loading" name="loadingicon" :class="cx('loadingIcon')">
-                <span v-if="loadingIcon" :class="[cx('loadingIcon'), 'pi-spin', loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
+                <span v-if="loadingIcon" :class="[cx('loadingIcon'), 'el-spin', loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
                 <SpinnerIcon v-else :class="cx('loadingIcon')" spin aria-hidden="true" v-bind="ptm('loadingIcon')" />
             </slot>
             <slot v-else name="dropdownicon" :class="cx('dropdownIcon')">
                 <component :is="dropdownIcon ? 'span' : 'ChevronDownIcon'" :class="[cx('dropdownIcon'), dropdownIcon]" aria-hidden="true" v-bind="ptm('dropdownIcon')" />
             </slot>
         </div>
-        <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSearchResult')" :data-p-hidden-accessible="true">
+        <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSearchResult')" :data-v-hidden-accessible="true">
             {{ searchResultMessageText }}
         </span>
         <Portal :appendTo="appendTo">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
                 <div v-if="overlayVisible" :ref="overlayRef" :class="[cx('panel'), panelClass]" :style="panelStyle" @click="onOverlayClick" @keydown="onOverlayKeyDown" v-bind="{ ...panelProps, ...ptm('panel') }">
                     <div :class="cx('wrapper')" v-bind="ptm('wrapper')">
                         <CascadeSelectSub
@@ -68,7 +68,7 @@
                             :unstyled="unstyled"
                         />
                     </div>
-                    <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-p-hidden-accessible="true">
+                    <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-v-hidden-accessible="true">
                         {{ selectedMessageText }}
                     </span>
                 </div>
@@ -718,7 +718,7 @@ export default {
             return ObjectUtils.isNotEmpty(this.modelValue);
         },
         label() {
-            const label = this.placeholder || 'p-emptylabel';
+            const label = this.placeholder || 'v-emptylabel';
 
             if (this.hasSelectedOption) {
                 const activeOptionPath = this.findOptionPathByValue(this.modelValue);

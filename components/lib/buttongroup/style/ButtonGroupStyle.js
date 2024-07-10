@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-button-group p-component'
+    root: 'v-button-group v-component'
 };
 
 export default BaseStyle.extend({

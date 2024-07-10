@@ -17,16 +17,16 @@ describe('Ripple', () => {
     it('should exist', async () => {
         const wrapper = mount({
             template: `
-                <div class="card p-ripple" v-ripple>Default</div>
+                <div class="card v-ripple" v-ripple>Default</div>
             `
         });
 
         const card = wrapper.find('.card');
 
-        expect(wrapper.find('.p-ink').exists()).toBe(true);
+        expect(wrapper.find('.v-ink').exists()).toBe(true);
 
         await card.trigger('mousedown');
 
-        expect(wrapper.find('.p-ink').classes()).toContain('p-ink-active');
+        expect(wrapper.find('.v-ink').classes()).toContain('v-ink-active');
     });
 });

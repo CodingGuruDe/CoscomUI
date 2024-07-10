@@ -1,19 +1,19 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-tabmenu p-component',
-    menu: 'p-tabmenu-nav p-reset',
+    root: 'v-tabmenu v-component',
+    menu: 'v-tabmenu-nav p-reset',
     menuitem: ({ instance, index, item }) => [
-        'p-tabmenuitem',
+        'v-tabmenuitem',
         {
-            'p-highlight': instance.d_activeIndex === index,
-            'p-disabled': instance.disabled(item)
+            'v-highlight': instance.d_activeIndex === index,
+            'v-disabled': instance.disabled(item)
         }
     ],
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text',
-    inkbar: 'p-tabmenu-ink-bar'
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text',
+    inkbar: 'v-tabmenu-ink-bar'
 };
 
 export default BaseStyle.extend({

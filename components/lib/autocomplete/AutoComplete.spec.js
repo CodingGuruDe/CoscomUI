@@ -34,8 +34,8 @@ describe('AutoComplete.vue', () => {
     });
 
     it('should exists', () => {
-        expect(wrapper.find('.p-autocomplete.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-autocomplete-input').exists()).toBe(true);
+        expect(wrapper.find('.v-autocomplete.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-autocomplete-input').exists()).toBe(true);
     });
 
     it('search complete', async () => {
@@ -51,8 +51,8 @@ describe('AutoComplete.vue', () => {
             suggestions: [{ name: 'Germany', code: 'DE' }]
         });
 
-        expect(wrapper.find('.p-autocomplete-items').exists()).toBe(true);
-        expect(wrapper.findAll('.p-autocomplete-item').length).toBe(1);
+        expect(wrapper.find('.v-autocomplete-items').exists()).toBe(true);
+        expect(wrapper.findAll('.v-autocomplete-item').length).toBe(1);
     });
 
     it('should show overlay and empty-message if there are no suggestions', async () => {
@@ -65,9 +65,9 @@ describe('AutoComplete.vue', () => {
             suggestions: []
         });
 
-        expect(wrapper.find('.p-autocomplete-items').exists()).toBe(true);
-        expect(wrapper.findAll('.p-autocomplete-item').length).toBe(0);
-        expect(wrapper.find('.p-autocomplete-empty-message').exists()).toBe(true);
+        expect(wrapper.find('.v-autocomplete-items').exists()).toBe(true);
+        expect(wrapper.findAll('.v-autocomplete-item').length).toBe(0);
+        expect(wrapper.find('.v-autocomplete-empty-message').exists()).toBe(true);
     });
 
     it('dropdown', () => {
@@ -79,7 +79,7 @@ describe('AutoComplete.vue', () => {
 
             await nextTick();
 
-            const token = wrapper.find('.p-button').find('span');
+            const token = wrapper.find('.v-button').find('span');
 
             expect(token.classes()).toContain('el-discord');
         });
@@ -95,7 +95,7 @@ describe('AutoComplete.vue', () => {
 
             await nextTick();
 
-            wrapper.findAll('.p-autocomplete-token-icon').forEach((tokenIcon) => {
+            wrapper.findAll('.v-autocomplete-token-icon').forEach((tokenIcon) => {
                 expect(tokenIcon.classes()).toContain('el-discord');
             });
         });

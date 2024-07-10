@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-badge p-component'
+    root: 'v-badge v-component'
 };
 
 export default BaseStyle.extend({

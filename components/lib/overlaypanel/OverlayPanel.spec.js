@@ -25,9 +25,9 @@ describe('OverlayPanel.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-overlaypanel.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-overlaypanel-content').exists()).toBe(true);
-        expect(wrapper.find('.p-overlaypanel-content').text()).toBe('CoscomUI');
-        expect(wrapper.find('.p-overlaypanel-close').exists()).toBe(true);
+        expect(wrapper.find('.v-overlaypanel.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-overlaypanel-content').exists()).toBe(true);
+        expect(wrapper.find('.v-overlaypanel-content').text()).toBe('CoscomUI');
+        expect(wrapper.find('.v-overlaypanel-close').exists()).toBe(true);
     });
 });

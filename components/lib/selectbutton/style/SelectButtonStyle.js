@@ -2,20 +2,20 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-selectbutton p-button-group p-component',
+        'v-selectbutton v-button-group v-component',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid
         }
     ],
     button: ({ instance, option }) => [
-        'p-button p-component',
+        'v-button v-component',
         {
-            'p-highlight': instance.isSelected(option),
-            'p-disabled': instance.isOptionDisabled(option)
+            'v-highlight': instance.isSelected(option),
+            'v-disabled': instance.isOptionDisabled(option)
         }
     ],
-    label: 'p-button-label'
+    label: 'v-button-label'
 };
 
 export default BaseStyle.extend({

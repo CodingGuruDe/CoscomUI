@@ -13,11 +13,11 @@ describe('Card.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-card.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-card-header').text()).toBe('Advanced Card Header');
-        expect(wrapper.find('.p-card-title').text()).toBe('Advanced Card');
-        expect(wrapper.find('.p-card-subtitle').text()).toBe('Advanced subtitle');
-        expect(wrapper.find('.p-card-content').text()).toBe('Lorem ipsum dolor sit amet, consectetur adipisicing elit.');
-        expect(wrapper.find('.p-card-footer').text()).toBe('Advanced Card Footer');
+        expect(wrapper.find('.v-card.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-card-header').text()).toBe('Advanced Card Header');
+        expect(wrapper.find('.v-card-title').text()).toBe('Advanced Card');
+        expect(wrapper.find('.v-card-subtitle').text()).toBe('Advanced subtitle');
+        expect(wrapper.find('.v-card-content').text()).toBe('Lorem ipsum dolor sit amet, consectetur adipisicing elit.');
+        expect(wrapper.find('.v-card-footer').text()).toBe('Advanced Card Footer');
     });
 });

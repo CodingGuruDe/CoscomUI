@@ -7,15 +7,15 @@ const inlineStyles = {
 
 const classes = {
     root: ({ props }) => [
-        'p-slider p-component',
+        'v-slider v-component',
         {
-            'p-disabled': props.disabled,
-            'p-slider-horizontal': props.orientation === 'horizontal',
-            'p-slider-vertical': props.orientation === 'vertical'
+            'v-disabled': props.disabled,
+            'v-slider-horizontal': props.orientation === 'horizontal',
+            'v-slider-vertical': props.orientation === 'vertical'
         }
     ],
-    range: 'p-slider-range',
-    handle: 'p-slider-handle'
+    range: 'v-slider-range',
+    handle: 'v-slider-handle'
 };
 
 export default BaseStyle.extend({

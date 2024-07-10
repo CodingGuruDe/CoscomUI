@@ -156,7 +156,7 @@ export default {
             this.$emit('show');
         },
         onBeforeLeave() {
-            !this.isUnstyled && DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+            !this.isUnstyled && DomHandler.addClass(this.mask, 'v-component-overlay-leave');
         },
         onLeave() {
             DomHandler.unblockBodyScroll();
@@ -185,7 +185,7 @@ export default {
             return [this.cx('root'), this.class];
         },
         rotateClass() {
-            return 'p-image-preview-rotate-' + this.rotate;
+            return 'v-image-preview-rotate-' + this.rotate;
         },
         imagePreviewStyle() {
             return { transform: 'rotate(' + this.rotate + 'deg) scale(' + this.scale + ')' };

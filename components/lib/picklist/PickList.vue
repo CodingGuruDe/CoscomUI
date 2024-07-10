@@ -66,8 +66,8 @@
                         role="option"
                         :aria-selected="isSelected(item, 0)"
                         v-bind="getPTOptions(item, 'item', `${idSource}_${i}`, 0)"
-                        :data-p-highlight="isSelected(item, 0)"
-                        :data-p-focused="`${idSource}_${i}` === focusedOptionId"
+                        :data-v-highlight="isSelected(item, 0)"
+                        :data-v-focused="`${idSource}_${i}` === focusedOptionId"
                     >
                         <slot name="item" :item="item" :index="i"> </slot>
                     </li>
@@ -141,8 +141,8 @@
                         role="option"
                         :aria-selected="isSelected(item, 1)"
                         v-bind="getPTOptions(item, 'item', `${idTarget}_${i}`, 1)"
-                        :data-p-highlight="isSelected(item, 1)"
-                        :data-p-focused="`${idTarget}_${i}` === focusedOptionId"
+                        :data-v-highlight="isSelected(item, 1)"
+                        :data-v-focused="`${idTarget}_${i}` === focusedOptionId"
                     >
                         <slot name="item" :item="item" :index="i"> </slot>
                     </li>

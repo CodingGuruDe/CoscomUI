@@ -1,10 +1,10 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-knob p-component', { 'p-disabled': props.disabled }],
-    range: 'p-knob-range',
-    value: 'p-knob-value',
-    label: 'p-knob-text'
+    root: ({ props }) => ['v-knob v-component', { 'v-disabled': props.disabled }],
+    range: 'v-knob-range',
+    value: 'v-knob-value',
+    label: 'v-knob-text'
 };
 
 export default BaseStyle.extend({

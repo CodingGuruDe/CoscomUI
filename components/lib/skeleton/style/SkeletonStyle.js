@@ -6,10 +6,10 @@ const inlineStyles = {
 
 const classes = {
     root: ({ props }) => [
-        'p-skeleton p-component',
+        'v-skeleton v-component',
         {
-            'p-skeleton-circle': props.shape === 'circle',
-            'p-skeleton-none': props.animation === 'none'
+            'v-skeleton-circle': props.shape === 'circle',
+            'v-skeleton-none': props.animation === 'none'
         }
     ]
 };

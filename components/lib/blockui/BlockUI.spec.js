@@ -42,7 +42,7 @@ describe('BlockUI.vue', () => {
         await wrapper.setProps({ fullScreen: true });
         await wrapper.vm.block();
 
-        expect(document.querySelector('.p-blockui')).not.toBe(null);
+        expect(document.querySelector('.v-blockui')).not.toBe(null);
     });
 
     it('When removeMask method triggered, isBlocked should be false and emitted', async () => {

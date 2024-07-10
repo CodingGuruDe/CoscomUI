@@ -6,8 +6,8 @@ describe('Button.vue', () => {
     it('is Button element exist', () => {
         const wrapper = mount(Button);
 
-        expect(wrapper.find('.p-button.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-button-label').exists()).toBe(true);
+        expect(wrapper.find('.v-button.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-button-label').exists()).toBe(true);
     });
 });
 
@@ -23,25 +23,25 @@ describe('Button.vue', () => {
             props
         });
 
-        expect(wrapper.find('.p-button-icon-only').exists()).toBe(true);
+        expect(wrapper.find('.v-button-icon-only').exists()).toBe(true);
 
         wrapper = mount(Button, {
             props: { ...props, label }
         });
 
-        expect(wrapper.find('.p-button-icon.p-button-icon-' + iconPos).exists()).toBe(true);
+        expect(wrapper.find('.v-button-icon.v-button-icon-' + iconPos).exists()).toBe(true);
     });
 });
 
 describe('Button.vue', () => {
     it('is badge working', () => {
         const badge = '5';
-        const badgeClass = 'p-badge-danger';
+        const badgeClass = 'v-badge-danger';
         const wrapper = mount(Button, {
             props: { badge, badgeClass }
         });
 
-        expect(wrapper.find('.p-badge').text()).toEqual(badge);
+        expect(wrapper.find('.v-badge').text()).toEqual(badge);
         expect(wrapper.find('.' + badgeClass).exists()).toBe(true);
     });
 });
@@ -56,18 +56,18 @@ describe('Button.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-disabled').exists()).toBe(false);
+        expect(wrapper.find('.v-disabled').exists()).toBe(false);
 
         await wrapper.setProps({ loading: true });
         const array = loadingIcon.split(' ');
         const lastIcon = '.' + array.join('.');
 
-        expect(wrapper.find('.p-button-loading').exists()).toBe(true);
-        expect(wrapper.find('.p-button-loading-icon' + lastIcon).exists()).toBe(true);
+        expect(wrapper.find('.v-button-loading').exists()).toBe(true);
+        expect(wrapper.find('.v-button-loading-icon' + lastIcon).exists()).toBe(true);
 
         await wrapper.setProps({ loading: false });
 
-        expect(wrapper.find('.p-button-loading').exists()).toBe(false);
+        expect(wrapper.find('.v-button-loading').exists()).toBe(false);
     });
 });
 
@@ -79,6 +79,6 @@ describe('Button.vue', () => {
             }
         });
 
-        expect(wrapper.html()).toBe(`<button class="p-button p-component" type="button" data-pc-name="button" data-pc-section="root"><span class="ml-2 font-bold">Default CoscomUI Button</span></button>`);
+        expect(wrapper.html()).toBe(`<button class="v-button v-component" type="button" data-pc-name="button" data-pc-section="root"><span class="ml-2 font-bold">Default CoscomUI Button</span></button>`);
     });
 });

@@ -45,15 +45,15 @@
             </div>
 
             <div class="nav-end">
-                <button size="small" class="v-button nav-picker" @click="toggleDarkMode">
+                <button size="small" class="tp-button nav-picker" @click="toggleDarkMode">
                     <i :class="['cs text-700', { 'el-moon': $appState.darkTheme, 'el-sun': !$appState.darkTheme }]"></i>
                 </button>
 
                 <li>
-                    <a :href="repoUrl" class="v-button v-button--default-type v-button--small-type nav-picker" target="_blank" rel="noopener noreferrer"> GitHub </a>
+                    <a :href="repoUrl" class="tp-button tp-button--default-type v-button--small-type nav-picker" target="_blank" rel="noopener noreferrer"> GitHub </a>
                 </li>
-                <button size="small" class="v-button nav-picker">
-                    {{ versions[0].version }}
+                <button size="small" class="tp-button nav-picker">
+                    {{ versions[0].name }}
                 </button>
 
                 <li v-if="showMenuButton" class="menu-button">

@@ -4,12 +4,12 @@
             ref="firstHiddenFocusableElement"
             role="presentation"
             aria-hidden="true"
-            class="p-hidden-accessible p-hidden-focusable"
+            class="v-hidden-accessible v-hidden-focusable"
             :tabindex="!disabled ? tabindex : -1"
             @focus="onFirstHiddenFocus"
             v-bind="ptm('hiddenFirstFocusableEl')"
-            :data-p-hidden-accessible="true"
-            :data-p-hidden-focusable="true"
+            :data-v-hidden-accessible="true"
+            :data-v-hidden-focusable="true"
         ></span>
         <slot name="header" :value="modelValue" :options="visibleOptions"></slot>
         <div v-if="filter" :class="cx('header')" v-bind="ptm('header')">
@@ -35,7 +35,7 @@
                     <component :is="filterIcon ? 'span' : 'SearchIcon'" :class="[cx('filterIcon'), filterIcon]" v-bind="ptm('filterIcon')" />
                 </slot>
             </div>
-            <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-p-hidden-accessible="true">
+            <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-v-hidden-accessible="true">
                 {{ filterResultMessageText }}
             </span>
         </div>
@@ -80,9 +80,9 @@
                                 @mousemove="onOptionMouseMove($event, getOptionIndex(i, getItemOptions))"
                                 @touchend="onOptionTouchEnd()"
                                 v-bind="getPTOptions(option, getItemOptions, i, 'item')"
-                                :data-p-highlight="isSelected(option)"
-                                :data-p-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
-                                :data-p-disabled="isOptionDisabled(option)"
+                                :data-v-highlight="isSelected(option)"
+                                :data-v-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
+                                :data-v-disabled="isOptionDisabled(option)"
                             >
                                 <slot name="option" :option="option" :index="getOptionIndex(i, getItemOptions)">{{ getOptionLabel(option) }}</slot>
                             </li>
@@ -101,22 +101,22 @@
             </VirtualScroller>
         </div>
         <slot name="footer" :value="modelValue" :options="visibleOptions"></slot>
-        <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-p-hidden-accessible="true">
+        <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-v-hidden-accessible="true">
             {{ emptyMessageText }}
         </span>
-        <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-p-hidden-accessible="true">
+        <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-v-hidden-accessible="true">
             {{ selectedMessageText }}
         </span>
         <span
             ref="lastHiddenFocusableElement"
             role="presentation"
             aria-hidden="true"
-            class="p-hidden-accessible p-hidden-focusable"
+            class="v-hidden-accessible v-hidden-focusable"
             :tabindex="!disabled ? tabindex : -1"
             @focus="onLastHiddenFocus"
             v-bind="ptm('hiddenLastFocusableEl')"
-            :data-p-hidden-accessible="true"
-            :data-p-hidden-focusable="true"
+            :data-v-hidden-accessible="true"
+            :data-v-hidden-focusable="true"
         ></span>
     </div>
 </template>
@@ -200,7 +200,7 @@ export default {
         onFirstHiddenFocus() {
             DomHandler.focus(this.list);
 
-            const firstFocusableEl = DomHandler.getFirstFocusableElement(this.$el, ':not([data-p-hidden-focusable="true"])');
+            const firstFocusableEl = DomHandler.getFirstFocusableElement(this.$el, ':not([data-v-hidden-focusable="true"])');
 
             this.$refs.lastHiddenFocusableElement.tabIndex = DomHandler.isElement(firstFocusableEl) ? undefined : -1;
             this.$refs.firstHiddenFocusableElement.tabIndex = -1;
@@ -209,7 +209,7 @@ export default {
             const relatedTarget = event.relatedTarget;
 
             if (relatedTarget === this.list) {
-                const firstFocusableEl = DomHandler.getFirstFocusableElement(this.$el, ':not([data-p-hidden-focusable="true"])');
+                const firstFocusableEl = DomHandler.getFirstFocusableElement(this.$el, ':not([data-v-hidden-focusable="true"])');
 
                 DomHandler.focus(firstFocusableEl);
                 this.$refs.firstHiddenFocusableElement.tabIndex = undefined;

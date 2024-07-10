@@ -80,9 +80,9 @@ describe('DataView.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-dataview.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-dataview-grid').exists()).toBe(true);
+        expect(wrapper.find('.v-dataview.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-dataview-grid').exists()).toBe(true);
         expect(wrapper.findAll('.product-grid-item').length).toBe(3);
-        expect(wrapper.find('.p-paginator.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-paginator.v-component').exists()).toBe(true);
     });
 });

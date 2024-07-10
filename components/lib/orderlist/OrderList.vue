@@ -66,8 +66,8 @@
                         @mousemove="onOptionMouseMove(i)"
                         :aria-selected="isSelected(item)"
                         v-bind="getPTOptions(item, 'item', i)"
-                        :data-p-highlight="isSelected(item)"
-                        :data-p-focused="`${id}_${i}` === focusedOptionId"
+                        :data-v-highlight="isSelected(item)"
+                        :data-v-focused="`${id}_${i}` === focusedOptionId"
                     >
                         <slot name="item" :item="item" :index="i"> </slot>
                     </li>
@@ -297,7 +297,7 @@ export default {
         },
         findFirstSelectedOptionIndex() {
             if (this.hasSelectedOption) {
-                const selectedFirstItem = DomHandler.findSingle(this.list, '[data-p-highlight="true"]');
+                const selectedFirstItem = DomHandler.findSingle(this.list, '[data-v-highlight="true"]');
 
                 return DomHandler.getAttribute(selectedFirstItem, 'id');
             }
@@ -306,7 +306,7 @@ export default {
         },
         findLastSelectedOptionIndex() {
             if (this.hasSelectedOption) {
-                const selectedItems = DomHandler.find(this.list, '[data-p-highlight="true"]');
+                const selectedItems = DomHandler.find(this.list, '[data-v-highlight="true"]');
 
                 return ObjectUtils.findIndexInList(selectedItems[selectedItems.length - 1], this.list.children);
             }
@@ -488,7 +488,7 @@ export default {
             this.itemTouched = true;
         },
         updateListScroll() {
-            const listItems = DomHandler.find(this.list, '[data-pc-section="item"][data-p-highlight="true"]');
+            const listItems = DomHandler.find(this.list, '[data-pc-section="item"][data-v-highlight="true"]');
 
             if (listItems && listItems.length) {
                 switch (this.reorderDirection) {
@@ -523,21 +523,21 @@ export default {
 
                 let innerHTML = `
 @media screen and (max-width: ${this.breakpoint}) {
-    .p-orderlist[${this.attributeSelector}] {
+    .v-orderlist[${this.attributeSelector}] {
         flex-direction: column;
     }
 
-    .p-orderlist[${this.attributeSelector}] .p-orderlist-controls {
+    .v-orderlist[${this.attributeSelector}] .v-orderlist-controls {
         padding: var(--content-padding);
         flex-direction: row;
     }
 
-    .p-orderlist[${this.attributeSelector}] .p-orderlist-controls .p-button {
+    .p-orderlist[${this.attributeSelector}] .v-orderlist-controls .v-button {
         margin-right: var(--inline-spacing);
         margin-bottom: 0;
     }
 
-    .p-orderlist[${this.attributeSelector}] .p-orderlist-controls .p-button:last-child {
+    .v-orderlist[${this.attributeSelector}] .v-orderlist-controls .v-button:last-child {
         margin-right: 0;
     }
 }

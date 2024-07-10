@@ -31,19 +31,19 @@ describe('TabPanel.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-tabview.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-tabview-ink-bar').exists()).toBe(true);
-        expect(wrapper.findAll('a.p-tabview-nav-link').length).toBe(3);
-        expect(wrapper.findAll('.p-tabview-panel').length).toBe(3);
-        expect(wrapper.findAll('li[role="presentation"]')[0].classes()).toContain('p-highlight');
-        expect(wrapper.findAll('.p-tabview-panel')[1].attributes().style).toBe('display: none;');
+        expect(wrapper.find('.v-tabview.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-tabview-ink-bar').exists()).toBe(true);
+        expect(wrapper.findAll('a.v-tabview-nav-link').length).toBe(3);
+        expect(wrapper.findAll('.v-tabview-panel').length).toBe(3);
+        expect(wrapper.findAll('li[role="presentation"]')[0].classes()).toContain('v-highlight');
+        expect(wrapper.findAll('.v-tabview-panel')[1].attributes().style).toBe('display: none;');
     });
 
     it('should change the active item', async () => {
         await wrapper.vm.onTabClick({}, 1);
 
-        expect(wrapper.findAll('li[role="presentation"]')[1].classes()).toContain('p-tabview-header');
-        expect(wrapper.findAll('.p-tabview-panel')[0].attributes().style).toBe('display: none;');
+        expect(wrapper.findAll('li[role="presentation"]')[1].classes()).toContain('v-tabview-header');
+        expect(wrapper.findAll('.v-tabview-panel')[0].attributes().style).toBe('display: none;');
     });
 });
 
@@ -64,11 +64,11 @@ describe('dynamic tabs', () => {
             }
         });
 
-        expect(wrapper.find('.p-tabview.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-tabview-ink-bar').exists()).toBe(true);
-        expect(wrapper.findAll('a.p-tabview-nav-link').length).toBe(5);
-        expect(wrapper.findAll('.p-tabview-panel').length).toBe(5);
-        expect(wrapper.findAll('li[role="presentation"]')[0].classes()).toContain('p-highlight');
-        expect(wrapper.findAll('.p-tabview-panel')[1].attributes().style).toBe('display: none;');
+        expect(wrapper.find('.v-tabview.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-tabview-ink-bar').exists()).toBe(true);
+        expect(wrapper.findAll('a.v-tabview-nav-link').length).toBe(5);
+        expect(wrapper.findAll('.v-tabview-panel').length).toBe(5);
+        expect(wrapper.findAll('li[role="presentation"]')[0].classes()).toContain('v-highlight');
+        expect(wrapper.findAll('.v-tabview-panel')[1].attributes().style).toBe('display: none;');
     });
 });

@@ -26,7 +26,7 @@
                 :aria-setsize="modelValue.length"
                 :aria-posinset="i + 1"
                 v-bind="ptm('token')"
-                :data-p-focused="focusedIndex === i"
+                :data-v-focused="focusedIndex === i"
             >
                 <slot name="chip" :class="cx('label')" :value="val">
                     <span :class="cx('label')" v-bind="ptm('label')">{{ val }}</span>

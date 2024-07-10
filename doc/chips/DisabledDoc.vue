@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>When <i>disabled</i> is present, the element cannot be edited and focused.</p>
     </DocSectionText>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" disabled />
     </div>
     <DocSectionCode :code="code" />
@@ -19,7 +19,7 @@ export default {
 `,
                 options: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" disabled />
     </div>
 </template>
@@ -36,7 +36,7 @@ export default {
 `,
                 composition: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" disabled />
     </div>
 </template>

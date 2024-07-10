@@ -1,10 +1,10 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-toolbar p-component',
-    start: 'p-toolbar-group-start p-toolbar-group-left',
-    center: 'p-toolbar-group-center',
-    end: 'p-toolbar-group-end p-toolbar-group-right'
+    root: 'v-toolbar v-component',
+    start: 'v-toolbar-group-start p-toolbar-group-left',
+    center: 'v-toolbar-group-center',
+    end: 'v-toolbar-group-end p-toolbar-group-right'
 };
 
 export default BaseStyle.extend({

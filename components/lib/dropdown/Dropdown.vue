@@ -34,7 +34,7 @@
             :style="inputStyle"
             :tabindex="!disabled ? tabindex : -1"
             role="combobox"
-            :aria-label="ariaLabel || (label === 'p-emptylabel' ? undefined : label)"
+            :aria-label="ariaLabel || (label === 'v-emptylabel' ? undefined : label)"
             :aria-labelledby="ariaLabelledby"
             aria-haspopup="listbox"
             :aria-expanded="overlayVisible"
@@ -46,7 +46,7 @@
             @keydown="onKeyDown"
             v-bind="{ ...inputProps, ...ptm('input') }"
         >
-            <slot name="value" :value="modelValue" :placeholder="placeholder">{{ label === 'p-emptylabel' ? '&nbsp;' : label || 'empty' }}</slot>
+            <slot name="value" :value="modelValue" :placeholder="placeholder">{{ label === 'v-emptylabel' ? '&nbsp;' : label || 'empty' }}</slot>
         </span>
         <slot v-if="showClear && modelValue != null" name="clearicon" :class="cx('clearIcon')" :onClick="onClearClick" :clearCallback="onClearClick">
             <component :is="clearIcon ? 'i' : 'TimesIcon'" ref="clearIcon" :class="[cx('clearIcon'), clearIcon]" @click="onClearClick" v-bind="{ ...clearIconProps, ...ptm('clearIcon') }" data-pc-section="clearicon" />
@@ -67,12 +67,12 @@
                         ref="firstHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onFirstHiddenFocus"
                         v-bind="ptm('hiddenFirstFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                     <slot name="header" :value="modelValue" :options="visibleOptions"></slot>
                     <div v-if="filter" :class="cx('header')" v-bind="ptm('header')">
@@ -98,7 +98,7 @@
                                 <component :is="filterIcon ? 'span' : 'SearchIcon'" :class="[cx('filterIcon'), filterIcon]" v-bind="ptm('filterIcon')" />
                             </slot>
                         </div>
-                        <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-p-hidden-accessible="true">
+                        <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-v-hidden-accessible="true">
                             {{ filterResultMessageText }}
                         </span>
                     </div>
@@ -126,9 +126,9 @@
                                             :aria-posinset="getAriaPosInset(getOptionIndex(i, getItemOptions))"
                                             @click="onOptionSelect($event, option)"
                                             @mousemove="onOptionMouseMove($event, getOptionIndex(i, getItemOptions))"
-                                            :data-p-highlight="isSelected(option)"
-                                            :data-p-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
-                                            :data-p-disabled="isOptionDisabled(option)"
+                                            :data-v-highlight="isSelected(option)"
+                                            :data-v-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
+                                            :data-v-disabled="isOptionDisabled(option)"
                                             v-bind="getPTItemOptions(option, getItemOptions, i, 'item')"
                                         >
                                             <template v-if="checkmark">
@@ -140,10 +140,10 @@
                                             </slot>
                                         </li>
                                     </template>
-                                    <li v-if="filterValue && (!items || (items && items.length === 0))" :class="cx('emptyMessage')" role="option" v-bind="ptm('emptyMessage')" :data-p-hidden-accessible="true">
+                                    <li v-if="filterValue && (!items || (items && items.length === 0))" :class="cx('emptyMessage')" role="option" v-bind="ptm('emptyMessage')" :data-v-hidden-accessible="true">
                                         <slot name="emptyfilter">{{ emptyFilterMessageText }}</slot>
                                     </li>
-                                    <li v-else-if="!options || (options && options.length === 0)" :class="cx('emptyMessage')" role="option" v-bind="ptm('emptyMessage')" :data-p-hidden-accessible="true">
+                                    <li v-else-if="!options || (options && options.length === 0)" :class="cx('emptyMessage')" role="option" v-bind="ptm('emptyMessage')" :data-v-hidden-accessible="true">
                                         <slot name="empty">{{ emptyMessageText }}</slot>
                                     </li>
                                 </ul>
@@ -154,22 +154,22 @@
                         </VirtualScroller>
                     </div>
                     <slot name="footer" :value="modelValue" :options="visibleOptions"></slot>
-                    <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-p-hidden-accessible="true">
+                    <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-v-hidden-accessible="true">
                         {{ emptyMessageText }}
                     </span>
-                    <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-p-hidden-accessible="true">
+                    <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-v-hidden-accessible="true">
                         {{ selectedMessageText }}
                     </span>
                     <span
                         ref="lastHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onLastHiddenFocus"
                         v-bind="ptm('hiddenLastFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                 </div>
             </transition>
@@ -447,12 +447,12 @@ export default {
             this.resetFilterOnClear && (this.filterValue = null);
         },
         onFirstHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
         onLastHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
@@ -763,7 +763,7 @@ export default {
             }
         },
         hasFocusableElements() {
-            return DomHandler.getFocusableElements(this.overlay, ':not([data-p-hidden-focusable="true"])').length > 0;
+            return DomHandler.getFocusableElements(this.overlay, ':not([data-v-hidden-focusable="true"])').length > 0;
         },
         isOptionMatched(option) {
             return this.isValidOption(option) && this.getOptionLabel(option)?.toLocaleLowerCase(this.filterLocale).startsWith(this.searchValue.toLocaleLowerCase(this.filterLocale));
@@ -930,7 +930,7 @@ export default {
         label() {
             const selectedOptionIndex = this.findSelectedOptionIndex();
 
-            return selectedOptionIndex !== -1 ? this.getOptionLabel(this.visibleOptions[selectedOptionIndex]) : this.placeholder || 'p-emptylabel';
+            return selectedOptionIndex !== -1 ? this.getOptionLabel(this.visibleOptions[selectedOptionIndex]) : this.placeholder || 'v-emptylabel';
         },
         editableInputValue() {
             const selectedOptionIndex = this.findSelectedOptionIndex();

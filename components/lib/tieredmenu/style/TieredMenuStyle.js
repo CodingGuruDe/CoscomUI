@@ -6,30 +6,30 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-tieredmenu p-component',
+        'v-tieredmenu v-component',
         {
-            'p-tieredmenu-overlay': props.popup,
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-tieredmenu-overlay': props.popup,
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    start: 'p-tieredmenu-start',
-    menu: 'p-tieredmenu-root-list',
+    start: 'v-tieredmenu-start',
+    menu: 'v-tieredmenu-root-list',
     menuitem: ({ instance, processedItem }) => [
-        'p-menuitem',
+        'v-menuitem',
         {
-            'p-menuitem-active p-highlight': instance.isItemActive(processedItem),
-            'p-focus': instance.isItemFocused(processedItem),
-            'p-disabled': instance.isItemDisabled(processedItem)
+            'v-menuitem-active p-highlight': instance.isItemActive(processedItem),
+            'v-focus': instance.isItemFocused(processedItem),
+            'v-disabled': instance.isItemDisabled(processedItem)
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    text: 'p-menuitem-text',
-    submenuIcon: 'p-submenu-icon',
-    submenu: 'p-submenu-list',
-    separator: 'p-menuitem-separator',
-    end: 'p-tieredmenu-end'
+    content: 'v-menuitem-content',
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    text: 'v-menuitem-text',
+    submenuIcon: 'v-submenu-icon',
+    submenu: 'v-submenu-list',
+    separator: 'v-menuitem-separator',
+    end: 'v-tieredmenu-end'
 };
 
 export default BaseStyle.extend({

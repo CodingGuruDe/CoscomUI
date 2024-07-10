@@ -8,10 +8,10 @@
         :aria-sort="ariaSort"
         role="columnheader"
         v-bind="{ ...getColumnPT('root'), ...getColumnPT('headerCell') }"
-        :data-p-sortable-column="columnProp('sortable')"
-        :data-p-resizable-column="resizableColumns"
-        :data-p-highlight="isColumnSorted()"
-        :data-p-frozen-column="columnProp('frozen')"
+        :data-v-sortable-column="columnProp('sortable')"
+        :data-v-resizable-column="resizableColumns"
+        :data-v-highlight="isColumnSorted()"
+        :data-v-frozen-column="columnProp('frozen')"
     >
         <span v-if="resizableColumns && !columnProp('frozen')" :class="cx('columnResizer')" @mousedown="onResizeStart" v-bind="getColumnPT('columnResizer')"></span>
         <component v-if="column.children && column.children.header" :is="column.children.header" :column="column" />
@@ -116,7 +116,7 @@ export default {
 
                 if (align === 'right') {
                     let right = 0;
-                    let next = DomHandler.getNextElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let next = DomHandler.getNextElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (next) {
                         right = DomHandler.getOuterWidth(next) + parseFloat(next.style.right || 0);
@@ -125,7 +125,7 @@ export default {
                     this.styleObject.right = right + 'px';
                 } else {
                     let left = 0;
-                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (prev) {
                         left = DomHandler.getOuterWidth(prev) + parseFloat(prev.style.left || 0);

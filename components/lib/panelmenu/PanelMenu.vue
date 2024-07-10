@@ -14,8 +14,8 @@
                     @click="onHeaderClick($event, item)"
                     @keydown="onHeaderKeyDown($event, item)"
                     v-bind="getPTOptions('header', item, index)"
-                    :data-p-highlight="isItemActive(item)"
-                    :data-p-disabled="isItemDisabled(item)"
+                    :data-v-highlight="isItemActive(item)"
+                    :data-v-disabled="isItemDisabled(item)"
                 >
                     <div :class="cx('headerContent')" v-bind="getPTOptions('headerContent', item, index)">
                         <template v-if="!$slots.item">

@@ -25,7 +25,7 @@
                 </FileUploadButton>
             </slot>
         </div>
-        <div ref="content" :class="cx('content')" @dragenter="onDragEnter" @dragover="onDragOver" @dragleave="onDragLeave" @drop="onDrop" v-bind="ptm('content')" :data-p-highlight="false">
+        <div ref="content" :class="cx('content')" @dragenter="onDragEnter" @dragover="onDragOver" @dragleave="onDragLeave" @drop="onDrop" v-bind="ptm('content')" :data-v-highlight="false">
             <slot name="content" :files="files" :uploadedFiles="uploadedFiles" :removeUploadedFileCallback="removeUploadedFile" :removeFileCallback="remove" :progress="progress" :messages="messages">
                 <template v-if="hasFiles">
                     <FileUploadProgressBar :value="progress" :showValue="false" :unstyled="unstyled" :pt="ptm('progressbar')" />
@@ -269,7 +269,7 @@ export default {
         },
         onDragOver(event) {
             if (!this.disabled) {
-                !this.isUnstyled && DomHandler.addClass(this.$refs.content, 'p-fileupload-highlight');
+                !this.isUnstyled && DomHandler.addClass(this.$refs.content, 'v-fileupload-highlight');
                 this.$refs.content.setAttribute('data-p-highlight', true);
                 event.stopPropagation();
                 event.preventDefault();
@@ -277,13 +277,13 @@ export default {
         },
         onDragLeave() {
             if (!this.disabled) {
-                !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'p-fileupload-highlight');
+                !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'v-fileupload-highlight');
                 this.$refs.content.setAttribute('data-p-highlight', false);
             }
         },
         onDrop(event) {
             if (!this.disabled) {
-                !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'p-fileupload-highlight');
+                !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'v-fileupload-highlight');
                 this.$refs.content.setAttribute('data-p-highlight', false);
                 event.stopPropagation();
                 event.preventDefault();

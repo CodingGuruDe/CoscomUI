@@ -29,9 +29,9 @@
                                 :key="index + '_scloned'"
                                 :class="cx('itemCloned', { index, value, totalShiftedItems, d_numVisible })"
                                 v-bind="ptm('itemCloned')"
-                                :data-p-carousel-item-active="totalShiftedItems * -1 === value.length + d_numVisible"
-                                :data-p-carousel-item-start="index === 0"
-                                :data-p-carousel-item-end="value.slice(-1 * d_numVisible).length - 1 === index"
+                                :data-v-carousel-item-active="totalShiftedItems * -1 === value.length + d_numVisible"
+                                :data-v-carousel-item-start="index === 0"
+                                :data-v-carousel-item-end="value.slice(-1 * d_numVisible).length - 1 === index"
                             >
                                 <slot name="item" :data="item" :index="index"></slot>
                             </div>
@@ -45,9 +45,9 @@
                             :aria-label="ariaSlideNumber(index)"
                             :aria-roledescription="ariaSlideLabel"
                             v-bind="ptm('item')"
-                            :data-p-carousel-item-active="firstIndex() <= index && lastIndex() >= index"
-                            :data-p-carousel-item-start="firstIndex() === index"
-                            :data-p-carousel-item-end="lastIndex() === index"
+                            :data-v-carousel-item-active="firstIndex() <= index && lastIndex() >= index"
+                            :data-v-carousel-item-start="firstIndex() === index"
+                            :data-v-carousel-item-end="lastIndex() === index"
                         >
                             <slot name="item" :data="item" :index="index"></slot>
                         </div>
@@ -76,7 +76,7 @@
                 </button>
             </div>
             <ul v-if="totalIndicators >= 0 && showIndicators" ref="indicatorContent" :class="[cx('indicators'), indicatorsContentClass]" @keydown="onIndicatorKeydown" v-bind="ptm('indicators')">
-                <li v-for="(indicator, i) of totalIndicators" :key="'p-carousel-indicator-' + i.toString()" :class="cx('indicator', { index: i })" v-bind="ptm('indicator', getIndicatorPTOptions(i))" :data-p-highlight="d_page === i">
+                <li v-for="(indicator, i) of totalIndicators" :key="'v-carousel-indicator-' + i.toString()" :class="cx('indicator', { index: i })" v-bind="ptm('indicator', getIndicatorPTOptions(i))" :data-v-highlight="d_page === i">
                     <button
                         :class="cx('indicatorButton')"
                         type="button"
@@ -311,7 +311,7 @@ export default {
             }
 
             if (this.$refs.itemsContainer) {
-                !this.isUnstyled && DomHandler.removeClass(this.$refs.itemsContainer, 'p-items-hidden');
+                !this.isUnstyled && DomHandler.removeClass(this.$refs.itemsContainer, 'v-items-hidden');
                 this.$refs.itemsContainer.style.transform = this.isVertical() ? `translate3d(0, ${totalShiftedItems * (100 / this.d_numVisible)}%, 0)` : `translate3d(${totalShiftedItems * (100 / this.d_numVisible)}%, 0, 0)`;
                 this.$refs.itemsContainer.style.transition = 'transform 500ms ease 0s';
             }
@@ -392,7 +392,7 @@ export default {
         },
         onTransitionEnd() {
             if (this.$refs.itemsContainer) {
-                !this.isUnstyled && DomHandler.addClass(this.$refs.itemsContainer, 'p-items-hidden');
+                !this.isUnstyled && DomHandler.addClass(this.$refs.itemsContainer, 'v-items-hidden');
                 this.$refs.itemsContainer.style.transition = '';
 
                 if ((this.d_page === 0 || this.d_page === this.totalIndicators - 1) && this.isCircular()) {

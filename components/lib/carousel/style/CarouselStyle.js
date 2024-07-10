@@ -2,56 +2,56 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance }) => [
-        'p-carousel p-component',
+        'v-carousel v-component',
         {
-            'p-carousel-vertical': instance.isVertical(),
-            'p-carousel-horizontal': !instance.isVertical()
+            'v-carousel-vertical': instance.isVertical(),
+            'v-carousel-horizontal': !instance.isVertical()
         }
     ],
-    header: 'p-carousel-header',
-    content: 'p-carousel-content',
-    container: 'p-carousel-container',
+    header: 'v-carousel-header',
+    content: 'v-carousel-content',
+    container: 'v-carousel-container',
     previousButton: ({ instance }) => [
-        'p-carousel-prev p-link',
+        'v-carousel-prev v-link',
         {
-            'p-disabled': instance.backwardIsDisabled
+            'v-disabled': instance.backwardIsDisabled
         }
     ],
-    previousButtonIcon: 'p-carousel-next-icon',
-    itemsContent: 'p-carousel-items-content',
-    itemsContainer: 'p-carousel-items-container',
+    previousButtonIcon: 'v-carousel-next-icon',
+    itemsContent: 'v-carousel-items-content',
+    itemsContainer: 'v-carousel-items-container',
     itemCloned: ({ index, value, totalShiftedItems, d_numVisible }) => [
-        'p-carousel-item p-carousel-item-cloned',
+        'v-carousel-item p-carousel-item-cloned',
         {
-            'p-carousel-item-active': totalShiftedItems * -1 === value.length + d_numVisible,
-            'p-carousel-item-start': index === 0,
-            'p-carousel-item-end': value.slice(-1 * d_numVisible).length - 1 === index
+            'v-carousel-item-active': totalShiftedItems * -1 === value.length + d_numVisible,
+            'v-carousel-item-start': index === 0,
+            'v-carousel-item-end': value.slice(-1 * d_numVisible).length - 1 === index
         }
     ],
     item: ({ instance, index }) => [
-        'p-carousel-item',
+        'v-carousel-item',
         {
-            'p-carousel-item-active': instance.firstIndex() <= index && instance.lastIndex() >= index,
-            'p-carousel-item-start': instance.firstIndex() === index,
-            'p-carousel-item-end': instance.lastIndex() === index
+            'v-carousel-item-active': instance.firstIndex() <= index && instance.lastIndex() >= index,
+            'v-carousel-item-start': instance.firstIndex() === index,
+            'v-carousel-item-end': instance.lastIndex() === index
         }
     ],
     nextButton: ({ instance }) => [
-        'p-carousel-next p-link',
+        'v-carousel-next v-link',
         {
-            'p-disabled': instance.forwardIsDisabled
+            'v-disabled': instance.forwardIsDisabled
         }
     ],
-    nextButtonIcon: 'p-carousel-prev-icon',
-    indicators: 'p-carousel-indicators p-reset',
+    nextButtonIcon: 'v-carousel-prev-icon',
+    indicators: 'v-carousel-indicators p-reset',
     indicator: ({ instance, index }) => [
-        'p-carousel-indicator',
+        'v-carousel-indicator',
         {
-            'p-highlight': instance.d_page === index
+            'v-highlight': instance.d_page === index
         }
     ],
-    indicatorButton: 'p-link',
-    footer: 'p-carousel-footer'
+    indicatorButton: 'v-link',
+    footer: 'v-carousel-footer'
 };
 
 export default BaseStyle.extend({

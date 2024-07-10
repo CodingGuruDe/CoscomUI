@@ -1,8 +1,8 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const css = `
-@layer primevue {
-    .p-virtualscroller {
+@layer coscomui {
+    .v-virtualscroller {
         position: relative;
         overflow: auto;
         contain: strict;
@@ -11,7 +11,7 @@ const css = `
         outline: 0 none;
     }
 
-    .p-virtualscroller-content {
+    .v-virtualscroller-content {
         position: absolute;
         top: 0;
         left: 0;
@@ -21,7 +21,7 @@ const css = `
         will-change: transform;
     }
 
-    .p-virtualscroller-spacer {
+    .v-virtualscroller-spacer {
         position: absolute;
         top: 0;
         left: 0;
@@ -31,7 +31,7 @@ const css = `
         pointer-events: none;
     }
 
-    .p-virtualscroller .p-virtualscroller-loader {
+    .v-virtualscroller .v-virtualscroller-loader {
         position: sticky;
         top: 0;
         left: 0;
@@ -39,27 +39,27 @@ const css = `
         height: 100%;
     }
 
-    .p-virtualscroller-loader.p-component-overlay {
+    .v-virtualscroller-loader.v-component-overlay {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .p-virtualscroller-loading-icon {
+    .v-virtualscroller-loading-icon {
         font-size: 2rem;
     }
 
-    .p-virtualscroller-loading-icon.p-icon {
+    .v-virtualscroller-loading-icon.v-icon {
         width: 2rem;
         height: 2rem;
     }
 
-    .p-virtualscroller-horizontal > .p-virtualscroller-content {
+    .v-virtualscroller-horizontal > .v-virtualscroller-content {
         display: flex;
     }
 
     /* Inline */
-    .p-virtualscroller-inline .p-virtualscroller-content {
+    .v-virtualscroller-inline .v-virtualscroller-content {
         position: static;
     }
 }

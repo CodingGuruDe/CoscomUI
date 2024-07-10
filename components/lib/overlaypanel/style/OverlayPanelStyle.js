@@ -2,14 +2,14 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance }) => [
-        'p-overlaypanel p-component',
+        'v-overlaypanel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    content: 'p-overlaypanel-content',
-    closeButton: 'p-overlaypanel-close p-link',
-    closeIcon: 'p-overlaypanel-close-icon'
+    content: 'v-overlaypanel-content',
+    closeButton: 'v-overlaypanel-close v-link',
+    closeIcon: 'v-overlaypanel-close-icon'
 };
 
 export default BaseStyle.extend({

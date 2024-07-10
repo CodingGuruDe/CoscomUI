@@ -2,40 +2,40 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-tree p-component',
+        'v-tree v-component',
         {
-            'p-tree-selectable': props.selectionMode != null,
-            'p-tree-loading': props.loading,
-            'p-tree-flex-scrollable': props.scrollHeight === 'flex'
+            'v-tree-selectable': props.selectionMode != null,
+            'v-tree-loading': props.loading,
+            'v-tree-flex-scrollable': props.scrollHeight === 'flex'
         }
     ],
-    loadingOverlay: 'p-tree-loading-overlay p-component-overlay',
-    loadingIcon: 'p-tree-loading-icon',
-    filterContainer: 'p-tree-filter-container',
-    input: 'p-tree-filter p-inputtext p-component',
-    searchIcon: 'p-tree-filter-icon',
-    wrapper: 'p-tree-wrapper',
-    container: 'p-tree-container',
-    node: ({ instance }) => ['p-treenode', { 'p-treenode-leaf': instance.leaf }],
+    loadingOverlay: 'v-tree-loading-overlay v-component-overlay',
+    loadingIcon: 'v-tree-loading-icon',
+    filterContainer: 'v-tree-filter-container',
+    input: 'v-tree-filter v-inputtext v-component',
+    searchIcon: 'v-tree-filter-icon',
+    wrapper: 'v-tree-wrapper',
+    container: 'v-tree-container',
+    node: ({ instance }) => ['v-treenode', { 'v-treenode-leaf': instance.leaf }],
     content: ({ instance }) => [
-        'p-treenode-content',
+        'v-treenode-content',
         instance.node.styleClass,
         {
-            'p-treenode-selectable': instance.selectable,
-            'p-highlight': instance.checkboxMode && instance.$parentInstance.highlightOnSelect ? instance.checked : instance.selected
+            'v-treenode-selectable': instance.selectable,
+            'v-highlight': instance.checkboxMode && instance.$parentInstance.highlightOnSelect ? instance.checked : instance.selected
         }
     ],
-    toggler: 'p-tree-toggler p-link',
-    togglerIcon: 'p-tree-toggler-icon',
-    nodeTogglerIcon: 'p-tree-node-toggler-icon',
+    toggler: 'v-tree-toggler v-link',
+    togglerIcon: 'v-tree-toggler-icon',
+    nodeTogglerIcon: 'v-tree-node-toggler-icon',
     nodeCheckbox: ({ instance }) => [
         {
-            'p-indeterminate': instance.partialChecked
+            'v-indeterminate': instance.partialChecked
         }
     ],
-    nodeIcon: 'p-treenode-icon',
-    label: 'p-treenode-label',
-    subgroup: 'p-treenode-children'
+    nodeIcon: 'v-treenode-icon',
+    label: 'v-treenode-label',
+    subgroup: 'v-treenode-children'
 };
 
 export default BaseStyle.extend({

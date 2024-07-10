@@ -95,7 +95,7 @@
             ]
         },
         {
-            "name": "Other Components(80)",
+            "name": "Other Components(77)",
             "icon": "cs el-box",
             "children": [
                 {
@@ -110,12 +110,8 @@
                             "to": "/calendar"
                         },
                         {
-                            "name": "CascadeSelect",
+                            "name": "Cascade Select",
                             "to": "/cascadeselect"
-                        },
-                        {
-                            "name": "Checkbox",
-                            "to": "/checkbox"
                         },
                         {
                             "name": "Chips",
@@ -142,10 +138,6 @@
                             "to": "/inputmask"
                         },
                         {
-                            "name": "Input Number",
-                            "to": "/inputnumber"
-                        },
-                        {
                             "name": "Input Otp",
                             "to": "/inputotp"
                         },
@@ -160,10 +152,6 @@
                         {
                             "name": "Listbox",
                             "to": "/listbox"
-                        },
-                        {
-                            "name": "MultiSelect",
-                            "to": "/multiselect"
                         },
                         {
                             "name": "Password",

@@ -25,7 +25,7 @@ const FocusTrap = BaseFocusTrap.extend('focustrap', {
     },
     methods: {
         getComputedSelector(selector) {
-            return `:not(.p-hidden-focusable):not([data-p-hidden-focusable="true"])${selector ?? ''}`;
+            return `:not(.v-hidden-focusable):not([data-v-hidden-focusable="true"])${selector ?? ''}`;
         },
         bind(el, binding) {
             const { onFocusIn, onFocusOut } = binding.value || {};
@@ -97,12 +97,12 @@ const FocusTrap = BaseFocusTrap.extend('focustrap', {
 
             const createFocusableElement = (onFocus) => {
                 return DomHandler.createElement('span', {
-                    class: 'p-hidden-accessible p-hidden-focusable',
+                    class: 'v-hidden-accessible v-hidden-focusable',
                     tabIndex,
                     role: 'presentation',
                     'aria-hidden': true,
-                    'data-p-hidden-accessible': true,
-                    'data-p-hidden-focusable': true,
+                    'data-v-hidden-accessible': true,
+                    'data-v-hidden-focusable': true,
                     onFocus: onFocus?.bind(this)
                 });
             };

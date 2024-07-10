@@ -2,27 +2,27 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance }) => [
-        'p-contextmenu p-component',
+        'v-contextmenu v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    menu: 'p-contextmenu-root-list',
+    menu: 'v-contextmenu-root-list',
     menuitem: ({ instance, processedItem }) => [
-        'p-menuitem',
+        'v-menuitem',
         {
-            'p-menuitem-active p-highlight': instance.isItemActive(processedItem),
-            'p-focus': instance.isItemFocused(processedItem),
-            'p-disabled': instance.isItemDisabled(processedItem)
+            'v-menuitem-active v-highlight': instance.isItemActive(processedItem),
+            'v-focus': instance.isItemFocused(processedItem),
+            'v-disabled': instance.isItemDisabled(processedItem)
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text',
-    submenuIcon: 'p-submenu-icon',
-    submenu: 'p-submenu-list',
-    separator: 'p-menuitem-separator'
+    content: 'v-menuitem-content',
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text',
+    submenuIcon: 'v-submenu-icon',
+    submenu: 'v-submenu-list',
+    separator: 'v-menuitem-separator'
 };
 
 export default BaseStyle.extend({

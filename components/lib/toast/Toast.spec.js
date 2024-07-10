@@ -23,23 +23,23 @@ describe('Toast.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-toast.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-toast-message').classes()).toContain('p-toast-message-success');
-        expect(wrapper.find('.p-toast-summary').text()).toBe('Success Message');
-        expect(wrapper.find('.p-toast-detail').text()).toBe('Message Content');
+        expect(wrapper.find('.v-toast.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-toast-message').classes()).toContain('v-toast-message-success');
+        expect(wrapper.find('.v-toast-summary').text()).toBe('Success Message');
+        expect(wrapper.find('.v-toast-detail').text()).toBe('Message Content');
     });
 
     it('should show grouped toast', async () => {
         await wrapper.setProps({ group: 'br' });
 
-        expect(wrapper.find('.p-toast.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-toast.v-component').exists()).toBe(true);
     });
 
     it('should close toast', async () => {
         await wrapper.vm.remove({ message: { severity: 'success', summary: 'Success Message', detail: 'Message Content', life: 3000 }, type: 'close' });
 
         expect(wrapper.emitted()['close'][0][0].message).not.toBe({});
-        expect(wrapper.find('.p-toast-message').exists()).toBe(false);
+        expect(wrapper.find('.v-toast-message').exists()).toBe(false);
     });
 
     it('should show multiple toast', async () => {
@@ -51,7 +51,7 @@ describe('Toast.vue', () => {
             ]
         });
 
-        expect(wrapper.findAll('.p-toast-message').length).toBe(3);
+        expect(wrapper.findAll('.v-toast-message').length).toBe(3);
     });
 
     it('should close multiple toast', async () => {
@@ -65,7 +65,7 @@ describe('Toast.vue', () => {
 
         await wrapper.vm.onRemoveAllGroups();
 
-        expect(wrapper.findAll('.p-toast-message').length).toBe(0);
+        expect(wrapper.findAll('.v-toast-message').length).toBe(0);
     });
 
     it('should close grouped toast', async () => {
@@ -73,7 +73,7 @@ describe('Toast.vue', () => {
 
         await wrapper.vm.onRemoveGroup('br');
 
-        expect(wrapper.findAll('.p-toast-message').length).toBe(0);
+        expect(wrapper.findAll('.v-toast-message').length).toBe(0);
     });
 
     describe('custom icons', () => {
@@ -83,7 +83,7 @@ describe('Toast.vue', () => {
                 messages: [{ severity: 'info', summary: 'Message 1', detail: 'Message 1 Content', life: 3000 }]
             });
 
-            const icon = wrapper.find('.p-toast-icon-close-icon');
+            const icon = wrapper.find('.v-toast-icon-close-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -94,7 +94,7 @@ describe('Toast.vue', () => {
                 messages: [{ severity: 'info', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
-            const icon = wrapper.find('.p-toast-message-icon');
+            const icon = wrapper.find('.v-toast-message-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -105,7 +105,7 @@ describe('Toast.vue', () => {
                 messages: [{ severity: 'warn', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
-            const icon = wrapper.find('.p-toast-message-icon');
+            const icon = wrapper.find('.v-toast-message-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -116,7 +116,7 @@ describe('Toast.vue', () => {
                 messages: [{ severity: 'error', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
-            const icon = wrapper.find('.p-toast-message-icon');
+            const icon = wrapper.find('.v-toast-message-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });
@@ -127,7 +127,7 @@ describe('Toast.vue', () => {
                 messages: [{ severity: 'success', summary: 'Message', detail: 'Message Content', life: 3000 }]
             });
 
-            const icon = wrapper.find('.p-toast-message-icon');
+            const icon = wrapper.find('.v-toast-message-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });

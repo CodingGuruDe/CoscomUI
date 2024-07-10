@@ -1,5 +1,5 @@
 <template>
-    <div :class="cx('root')" v-bind="getPTOptions('root')" :data-p-highlight="active" :data-p-disabled="disabled">
+    <div :class="cx('root')" v-bind="getPTOptions('root')" :data-v-highlight="active" :data-v-disabled="disabled">
         <input
             :id="inputId"
             type="checkbox"
@@ -18,7 +18,7 @@
             @change="onChange"
             v-bind="getPTOptions('input')"
         />
-        <span role="status" class="p-hidden-accessible" aria-live="polite" v-bind="getPTOptions('hiddenValueLabel')" :data-p-hidden-accessible="true">{{ ariaValueLabel }}</span>
+        <span role="status" class="v-hidden-accessible" aria-live="polite" v-bind="getPTOptions('hiddenValueLabel')" :data-v-hidden-accessible="true">{{ ariaValueLabel }}</span>
         <div :class="cx('box')" v-bind="getPTOptions('box')">
             <slot v-if="modelValue === true" name="checkicon" :class="cx('checkIcon')">
                 <CheckIcon :class="cx('checkIcon')" v-bind="getPTOptions('checkIcon')" />

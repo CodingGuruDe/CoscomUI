@@ -14,7 +14,7 @@ describe('RadioButton.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-radiobutton.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-radiobutton.v-component').exists()).toBe(true);
         expect(wrapper.find('input').attributes().type).toBe('radio');
     });
 
@@ -43,7 +43,7 @@ describe('RadioButton.vue', () => {
         await wrapper.setProps({ modelValue: 'Tatooine' });
 
         expect(wrapper.vm.checked).toBe(true);
-        expect(wrapper.find('.p-radiobutton').classes()).toContain('p-highlight');
+        expect(wrapper.find('.v-radiobutton').classes()).toContain('v-highlight');
     });
 
     it('When component focused onFocus method should be called', async () => {

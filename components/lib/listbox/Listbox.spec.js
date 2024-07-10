@@ -21,9 +21,9 @@ describe('Listbox.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-listbox.p-component').exists()).toBe(true);
-        expect(wrapper.findAll('li.p-listbox-item').length).toBe(5);
-        expect(wrapper.findAll('li.p-listbox-item')[0].attributes()['aria-label']).toBe('Zagreb');
+        expect(wrapper.find('.v-listbox.v-component').exists()).toBe(true);
+        expect(wrapper.findAll('li.v-listbox-item').length).toBe(5);
+        expect(wrapper.findAll('li.v-listbox-item')[0].attributes()['aria-label']).toBe('Zagreb');
     });
 
     it('should select a list item', async () => {
@@ -33,7 +33,7 @@ describe('Listbox.vue', () => {
 
         await wrapper.setProps({ modelValue: wrapper.vm.options[0] });
 
-        expect(wrapper.findAll('li.p-listbox-item')[0].classes()).toContain('p-highlight');
+        expect(wrapper.findAll('li.v-listbox-item')[0].classes()).toContain('v-highlight');
     });
 
     describe('filter', () => {
@@ -43,7 +43,7 @@ describe('Listbox.vue', () => {
                 filterIcon: 'cs el-discord'
             });
 
-            const icon = wrapper.find('.p-listbox-filter-icon');
+            const icon = wrapper.find('.v-listbox-filter-icon');
 
             expect(icon.classes()).toContain('el-discord');
         });

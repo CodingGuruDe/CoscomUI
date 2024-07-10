@@ -1,8 +1,8 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-inputotp p-component',
-    input: 'p-inputotp-input'
+    root: 'v-inputotp v-component',
+    input: 'v-inputotp-input'
 };
 
 export default BaseStyle.extend({

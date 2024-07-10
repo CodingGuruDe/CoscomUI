@@ -1,12 +1,12 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => 'p-message p-component p-message-' + props.severity,
-    wrapper: 'p-message-wrapper',
-    icon: 'p-message-icon',
-    text: 'p-message-text',
-    closeButton: 'p-message-close p-link',
-    closeIcon: 'p-message-close-icon'
+    root: ({ props }) => 'v-message v-component v-message-' + props.severity,
+    wrapper: 'v-message-wrapper',
+    icon: 'v-message-icon',
+    text: 'v-message-text',
+    closeButton: 'v-message-close v-link',
+    closeIcon: 'v-message-close-icon'
 };
 
 export default BaseStyle.extend({

@@ -2,7 +2,7 @@
     <div ref="container" :class="cx('root')" v-bind="ptmi('root')">
         <input v-if="!inline" ref="input" type="text" :class="cx('input')" readonly="readonly" :tabindex="tabindex" :disabled="disabled" @click="onInputClick" @keydown="onInputKeydown" v-bind="ptm('input')" />
         <Portal :appendTo="appendTo" :disabled="inline">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
                 <div v-if="inline ? true : overlayVisible" :ref="pickerRef" :class="[cx('panel'), panelClass]" @click="onOverlayClick" v-bind="ptm('panel')">
                     <div :class="cx('content')" v-bind="ptm('content')">
                         <div :ref="colorSelectorRef" :class="cx('selector')" @mousedown="onColorMousedown($event)" @touchstart="onColorDragStart($event)" @touchmove="onDrag($event)" @touchend="onDragEnd()" v-bind="ptm('selector')">
@@ -386,8 +386,8 @@ export default {
 
             this.colorDragging = true;
             this.pickColor(event);
-            this.$el.setAttribute('p-colorpicker-dragging', 'true');
-            !this.isUnstyled && DomHandler.addClass(this.$el, 'p-colorpicker-dragging');
+            this.$el.setAttribute('v-colorpicker-dragging', 'true');
+            !this.isUnstyled && DomHandler.addClass(this.$el, 'v-colorpicker-dragging');
             event.preventDefault();
         },
         onDrag(event) {
@@ -404,8 +404,8 @@ export default {
         onDragEnd() {
             this.colorDragging = false;
             this.hueDragging = false;
-            this.$el.setAttribute('p-colorpicker-dragging', 'false');
-            !this.isUnstyled && DomHandler.removeClass(this.$el, 'p-colorpicker-dragging');
+            this.$el.setAttribute('v-colorpicker-dragging', 'false');
+            !this.isUnstyled && DomHandler.removeClass(this.$el, 'v-colorpicker-dragging');
             this.unbindDragListeners();
         },
         onHueMousedown(event) {
@@ -423,7 +423,7 @@ export default {
 
             this.hueDragging = true;
             this.pickHue(event);
-            !this.isUnstyled && DomHandler.addClass(this.$el, 'p-colorpicker-dragging');
+            !this.isUnstyled && DomHandler.addClass(this.$el, 'v-colorpicker-dragging');
         },
         isInputClicked(event) {
             return this.$refs.input && this.$refs.input.isSameNode(event.target);
@@ -546,39 +546,39 @@ export default {
 </script>
 
 <style>
-.p-colorpicker {
+.v-colorpicker {
     display: inline-block;
 }
 
-.p-colorpicker-dragging {
+.v-colorpicker-dragging {
     cursor: pointer;
 }
 
-.p-colorpicker-overlay {
+.v-colorpicker-overlay {
     position: relative;
 }
 
-.p-colorpicker-panel {
+.v-colorpicker-panel {
     position: relative;
     width: 193px;
     height: 166px;
 }
 
-.p-colorpicker-overlay-panel {
+.v-colorpicker-overlay-panel {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.p-colorpicker-preview {
+.v-colorpicker-preview {
     cursor: pointer;
 }
 
-.p-colorpicker-panel .p-colorpicker-content {
+.v-colorpicker-panel .v-colorpicker-content {
     position: relative;
 }
 
-.p-colorpicker-panel .p-colorpicker-color-selector {
+.v-colorpicker-panel .v-colorpicker-color-selector {
     width: 150px;
     height: 150px;
     top: 8px;
@@ -586,12 +586,12 @@ export default {
     position: absolute;
 }
 
-.p-colorpicker-panel .p-colorpicker-color {
+.v-colorpicker-panel .v-colorpicker-color {
     width: 150px;
     height: 150px;
 }
 
-.p-colorpicker-panel .p-colorpicker-color-handle {
+.v-colorpicker-panel .v-colorpicker-color-handle {
     position: absolute;
     top: 0px;
     left: 150px;
@@ -605,7 +605,7 @@ export default {
     opacity: 0.85;
 }
 
-.p-colorpicker-panel .p-colorpicker-hue {
+.v-colorpicker-panel .v-colorpicker-hue {
     width: 17px;
     height: 150px;
     top: 8px;
@@ -614,7 +614,7 @@ export default {
     opacity: 0.85;
 }
 
-.p-colorpicker-panel .p-colorpicker-hue-handle {
+.v-colorpicker-panel .v-colorpicker-hue-handle {
     position: absolute;
     top: 150px;
     left: 0px;

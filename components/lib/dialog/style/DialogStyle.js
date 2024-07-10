@@ -26,30 +26,30 @@ const classes = {
         const pos = positions.find((item) => item === props.position);
 
         return [
-            'p-dialog-mask',
+            'v-dialog-mask',
             {
-                'p-component-overlay p-component-overlay-enter': props.modal
+                'v-component-overlay v-component-overlay-enter': props.modal
             },
-            pos ? `p-dialog-${pos}` : ''
+            pos ? `v-dialog-${pos}` : ''
         ];
     },
     root: ({ props, instance }) => [
-        'p-dialog p-component',
+        'v-dialog v-component',
         {
-            'p-dialog-rtl': props.rtl,
-            'p-dialog-maximized': props.maximizable && instance.maximized,
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-dialog-rtl': props.rtl,
+            'v-dialog-maximized': props.maximizable && instance.maximized,
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    header: 'p-dialog-header',
-    title: 'p-dialog-title',
-    icons: 'p-dialog-header-icons',
-    maximizableButton: 'p-dialog-header-icon p-dialog-header-maximize p-link',
-    maximizableIcon: 'p-dialog-header-maximize-icon',
-    closeButton: 'p-dialog-header-icon p-dialog-header-close p-link',
-    closeButtonIcon: 'p-dialog-header-close-icon',
-    content: 'p-dialog-content',
-    footer: 'p-dialog-footer'
+    header: 'v-dialog-header',
+    title: 'v-dialog-title',
+    icons: 'v-dialog-header-icons',
+    maximizableButton: 'v-dialog-header-icon v-dialog-header-maximize v-link',
+    maximizableIcon: 'v-dialog-header-maximize-icon',
+    closeButton: 'v-dialog-header-icon v-dialog-header-close v-link',
+    closeButtonIcon: 'v-dialog-header-close-icon',
+    content: 'v-dialog-content',
+    footer: 'v-dialog-footer'
 };
 
 export default BaseStyle.extend({

@@ -12,10 +12,10 @@
                     role="presentation"
                     v-bind="{ ...getStepPT(step, 'root', index), ...getStepPT(step, 'header', index) }"
                     data-pc-name="stepperpanel"
-                    :data-p-highlight="isStepActive(index)"
-                    :data-p-disabled="isItemDisabled(index)"
+                    :data-v-highlight="isStepActive(index)"
+                    :data-v-disabled="isItemDisabled(index)"
                     :data-pc-index="index"
-                    :data-p-active="isStepActive(index)"
+                    :data-v-active="isStepActive(index)"
                 >
                     <slot name="header">
                         <StepperHeader
@@ -77,10 +77,10 @@
                 :aria-current="isStepActive(index) ? 'step' : undefined"
                 v-bind="{ ...getStepPT(step, 'root', index), ...getStepPT(step, 'panel', index) }"
                 data-pc-name="stepperpanel"
-                :data-p-highlight="isStepActive(index)"
-                :data-p-disabled="isItemDisabled(index)"
+                :data-v-highlight="isStepActive(index)"
+                :data-v-disabled="isItemDisabled(index)"
                 :data-pc-index="index"
-                :data-p-active="isStepActive(index)"
+                :data-v-active="isStepActive(index)"
             >
                 <div :class="cx('stepper.header', { step, index })" v-bind="getStepPT(step, 'header', index)">
                     <slot name="header">
@@ -101,7 +101,7 @@
                     </slot>
                 </div>
 
-                <transition name="p-toggleable-content" v-bind="getStepPT(step, 'transition', index)">
+                <transition name="v-toggleable-content" v-bind="getStepPT(step, 'transition', index)">
                     <div v-show="isStepActive(index)" :class="cx('stepper.toggleableContent')" v-bind="getStepPT(step, 'toggleableContent', index)">
                         <slot v-if="index !== stepperpanels.length - 1" name="separator">
                             <StepperSeparator

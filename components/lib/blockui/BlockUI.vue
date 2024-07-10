@@ -32,10 +32,10 @@ export default {
     },
     methods: {
         block() {
-            let styleClass = 'p-blockui p-component-overlay p-component-overlay-enter';
+            let styleClass = 'v-blockui v-component-overlay v-component-overlay-enter';
 
             if (this.fullScreen) {
-                styleClass += ' p-blockui-document';
+                styleClass += '.v-blockui-document';
 
                 this.mask = DomHandler.createElement('div', {
                     style: {
@@ -46,7 +46,7 @@ export default {
                         height: '100%'
                     },
                     class: !this.isUnstyled && styleClass,
-                    'p-bind': this.ptm('mask')
+                    'v-bind': this.ptm('mask')
                 });
 
                 document.body.appendChild(this.mask);
@@ -62,7 +62,7 @@ export default {
                         height: '100%'
                     },
                     class: !this.isUnstyled && styleClass,
-                    'p-bind': this.ptm('mask')
+                    'v-bind': this.ptm('mask')
                 });
                 this.$refs.container.appendChild(this.mask);
             }
@@ -75,7 +75,7 @@ export default {
             this.$emit('block');
         },
         unblock() {
-            !this.isUnstyled && DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+            !this.isUnstyled && DomHandler.addClass(this.mask, 'v-component-overlay-leave');
 
             if (DomHandler.hasCSSAnimation(this.mask) > 0) {
                 this.mask.addEventListener('animationend', () => {

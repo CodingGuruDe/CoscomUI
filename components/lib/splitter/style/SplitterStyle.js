@@ -1,9 +1,9 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-splitter p-component', 'p-splitter-' + props.layout],
-    gutter: 'p-splitter-gutter',
-    gutterHandler: 'p-splitter-gutter-handle'
+    root: ({ props }) => ['v-splitter v-component', 'v-splitter-' + props.layout],
+    gutter: 'v-splitter-gutter',
+    gutterHandler: 'v-splitter-gutter-handle'
 };
 
 const inlineStyles = {

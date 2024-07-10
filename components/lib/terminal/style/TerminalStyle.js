@@ -1,13 +1,13 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-terminal p-component',
-    content: 'p-terminal-content',
-    prompt: 'p-terminal-prompt',
-    command: 'p-terminal-command',
-    response: 'p-terminal-response',
-    container: 'p-terminal-prompt-container',
-    commandText: 'p-terminal-input'
+    root: 'v-terminal v-component',
+    content: 'v-terminal-content',
+    prompt: 'v-terminal-prompt',
+    command: 'v-terminal-command',
+    response: 'v-terminal-response',
+    container: 'v-terminal-prompt-container',
+    commandText: 'v-terminal-input'
 };
 
 export default BaseStyle.extend({

@@ -2,39 +2,39 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-stepper p-component',
+        'v-stepper v-component',
         {
-            'p-stepper-horizontal': props.orientation === 'horizontal',
-            'p-stepper-vertical': props.orientation === 'vertical',
-            'p-readonly': props.linear
+            'v-stepper-horizontal': props.orientation === 'horizontal',
+            'v-stepper-vertical': props.orientation === 'vertical',
+            'v-readonly': props.linear
         }
     ],
-    nav: 'p-stepper-nav',
+    nav: 'v-stepper-nav',
     stepper: {
         header: ({ instance, step, index }) => [
-            'p-stepper-header',
+            'v-stepper-header',
             {
-                'p-highlight': instance.isStepActive(index),
-                'p-disabled': instance.isItemDisabled(index)
+                'v-highlight': instance.isStepActive(index),
+                'v-disabled': instance.isItemDisabled(index)
             }
         ],
-        action: 'p-stepper-action',
-        number: 'p-stepper-number',
-        title: 'p-stepper-title',
-        separator: 'p-stepper-separator',
-        toggleableContent: 'p-stepper-toggleable-content',
+        action: 'v-stepper-action',
+        number: 'v-stepper-number',
+        title: 'v-stepper-title',
+        separator: 'v-stepper-separator',
+        toggleableContent: 'v-stepper-toggleable-content',
         content: ({ props }) => [
-            'p-stepper-content',
+            'v-stepper-content',
             {
-                'p-toggleable-content': props.orientation === 'vertical'
+                'v-toggleable-content': props.orientation === 'vertical'
             }
         ]
     },
-    panelContainer: 'p-stepper-panels',
+    panelContainer: 'v-stepper-panels',
     panel: ({ instance, props, index }) => [
-        'p-stepper-panel',
+        'v-stepper-panel',
         {
-            'p-stepper-panel-active': props.orientation === 'vertical' && instance.isStepActive(index)
+            'v-stepper-panel-active': props.orientation === 'vertical' && instance.isStepActive(index)
         }
     ]
 };

@@ -34,7 +34,7 @@ afterEach(() => {
 
 describe('BreadcrumbItem', () => {
     it('When component is mount and template.item equal to null, text should not be exists', () => {
-        expect(wrapper.find('.p-menuitem-text').exists()).toBe(false);
+        expect(wrapper.find('.v-menuitem-text').exists()).toBe(false);
     });
 
     it('When tag is triggered, onClick method should be called', async () => {

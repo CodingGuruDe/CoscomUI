@@ -164,7 +164,7 @@ export default {
 
             if (containerOffset.top < targetOffset.top) {
                 this.container.setAttribute('data-p-overlaypanel-flipped', 'true');
-                !this.isUnstyled && DomHandler.addClass(this.container, 'p-overlaypanel-flipped');
+                !this.isUnstyled && DomHandler.addClass(this.container, 'v-overlaypanel-flipped');
             }
         },
         onContentKeydown(event) {

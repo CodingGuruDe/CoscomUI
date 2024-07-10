@@ -6,7 +6,7 @@
                     <div :class="[cx('node'), node.styleClass]" @click="onNodeClick" v-bind="getPTOptions('node')">
                         <component :is="templates[node.type] || templates['default']" :node="node" />
                         <a v-if="toggleable" tabindex="0" :class="cx('nodeToggler')" @click="toggleNode" @keydown="onKeydown" v-bind="getPTOptions('nodeToggler')">
-                            <component v-if="templates.togglericon" :is="templates.togglericon" :expanded="expanded" class="p-node-toggler-icon" />
+                            <component v-if="templates.togglericon" :is="templates.togglericon" :expanded="expanded" class="v-node-toggler-icon" />
                             <component v-else :is="expanded ? 'ChevronDownIcon' : 'ChevronUpIcon'" :class="cx('nodeTogglerIcon')" v-bind="getPTOptions('nodeTogglerIcon')" />
                         </a>
                     </div>

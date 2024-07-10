@@ -16,9 +16,9 @@
                 :aria-setsize="getAriaSetSize()"
                 :aria-posinset="getAriaPosInset(index)"
                 v-bind="getPTOptions(processedItem, index, 'menuitem')"
-                :data-p-highlight="isItemActive(processedItem)"
-                :data-p-focused="isItemFocused(processedItem)"
-                :data-p-disabled="isItemDisabled(processedItem)"
+                :data-v-highlight="isItemActive(processedItem)"
+                :data-v-focused="isItemFocused(processedItem)"
+                :data-v-disabled="isItemDisabled(processedItem)"
             >
                 <div :class="cx('content')" @click="onItemClick($event, processedItem)" @mouseenter="onItemMouseEnter($event, processedItem)" v-bind="getPTOptions(processedItem, index, 'content')">
                     <template v-if="!templates.item">

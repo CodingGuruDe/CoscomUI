@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>Chips is used as a controlled input with <i>v-model</i> property where it should be an array.</p>
     </DocSectionText>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" />
     </div>
     <DocSectionCode :code="code" />
@@ -19,7 +19,7 @@ export default {
 `,
                 options: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" />
     </div>
 </template>
@@ -36,7 +36,7 @@ export default {
 `,
                 composition: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value" />
     </div>
 </template>

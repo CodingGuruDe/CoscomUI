@@ -6,7 +6,7 @@ describe('Tag.vue', () => {
     it('is Tag element exist', () => {
         const wrapper = mount(Tag);
 
-        expect(wrapper.find('.p-tag.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-tag.v-component').exists()).toBe(true);
     });
 });
 
@@ -17,7 +17,7 @@ describe('Tag.vue', () => {
             props: { severity }
         });
 
-        expect(wrapper.find('.p-tag-' + severity).exists()).toBe(true);
+        expect(wrapper.find('.v-tag-' + severity).exists()).toBe(true);
     });
 });
 
@@ -41,8 +41,8 @@ describe('Tag.vue', () => {
         const array = icon.split(' ');
         const lastIcon = '.' + array.join('.');
 
-        expect(wrapper.find('.p-tag-icon').isVisible()).toBe(true);
-        expect(wrapper.find('.p-tag-icon' + lastIcon).exists()).toBe(true);
+        expect(wrapper.find('.v-tag-icon').isVisible()).toBe(true);
+        expect(wrapper.find('.v-tag-icon' + lastIcon).exists()).toBe(true);
     });
 });
 
@@ -52,7 +52,7 @@ describe('Tag.vue', () => {
             props: { rounded: true }
         });
 
-        expect(wrapper.find('.p-tag-rounded').exists()).toBe(true);
+        expect(wrapper.find('.v-tag-rounded').exists()).toBe(true);
     });
 });
 
@@ -64,6 +64,6 @@ describe('Tag.vue', () => {
             }
         });
 
-        expect(wrapper.html()).toBe('<span class="p-tag p-component" data-pc-name="tag" data-pc-section="root"><!--v-if--><i class="cs el-discord"></i></span>');
+        expect(wrapper.html()).toBe('<span class="v-tag v-component" data-pc-name="tag" data-pc-section="root"><!--v-if--><i class="cs el-discord"></i></span>');
     });
 });

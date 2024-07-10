@@ -98,28 +98,28 @@ describe('CascadeSelect.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-cascadeselect.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-cascadeselect.v-component').exists()).toBe(true);
     });
 
     it('should show list and sublist', async () => {
-        expect(wrapper.find('.p-cascadeselect.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-cascadeselect.v-component').exists()).toBe(true);
 
         await wrapper.trigger('click');
 
-        expect(wrapper.find('.p-cascadeselect-panel.p-cascadeselect-items').exists()).toBe(true);
-        expect(wrapper.findAll('.p-cascadeselect-item').length).toBe(3);
-        expect(wrapper.findAll('.p-cascadeselect-item-text')[0].text()).toBe('Croatia');
+        expect(wrapper.find('.v-cascadeselect-panel.v-cascadeselect-items').exists()).toBe(true);
+        expect(wrapper.findAll('.v-cascadeselect-item').length).toBe(3);
+        expect(wrapper.findAll('.v-cascadeselect-item-text')[0].text()).toBe('Croatia');
 
-        const firstGroup = wrapper.findAll('.p-cascadeselect-item-content')[0];
+        const firstGroup = wrapper.findAll('.v-cascadeselect-item-content')[0];
 
         await firstGroup.trigger('click');
 
-        expect(wrapper.find('.p-cascadeselect-panel.p-cascadeselect-sublist').exists()).toBe(true);
+        expect(wrapper.find('.v-cascadeselect-panel.v-cascadeselect-sublist').exists()).toBe(true);
 
-        const sublist = wrapper.find('.p-cascadeselect-panel.p-cascadeselect-sublist');
+        const sublist = wrapper.find('.v-cascadeselect-panel.v-cascadeselect-sublist');
 
-        expect(sublist.findAll('.p-cascadeselect-item.p-cascadeselect-item-group').length).toBe(2);
-        expect(sublist.findAll('.p-cascadeselect-item-text')[0].text()).toBe('Dalmatia');
+        expect(sublist.findAll('.v-cascadeselect-item.v-cascadeselect-item-group').length).toBe(2);
+        expect(sublist.findAll('.v-cascadeselect-item-text')[0].text()).toBe('Dalmatia');
     });
 
     it('should accept custom icons', async () => {
@@ -130,10 +130,10 @@ describe('CascadeSelect.vue', () => {
 
         await nextTick();
 
-        expect(wrapper.find('.p-cascadeselect-trigger-icon').classes()).toContain('el-discord');
+        expect(wrapper.find('.v-cascadeselect-trigger-icon').classes()).toContain('el-discord');
 
         await wrapper.trigger('click');
 
-        expect(wrapper.find('.p-cascadeselect-group-icon').classes()).toContain('el-bell');
+        expect(wrapper.find('.v-cascadeselect-group-icon').classes()).toContain('el-bell');
     });
 });

@@ -1,30 +1,30 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => [`p-fileupload p-fileupload-${props.mode} p-component`],
-    buttonbar: 'p-fileupload-buttonbar',
+    root: ({ props }) => [`p-fileupload p-fileupload-${props.mode} v-component`],
+    buttonbar: 'v-fileupload-buttonbar',
     chooseButton: ({ instance, props }) => [
-        'p-button p-component p-fileupload-choose',
+        'v-button v-component p-fileupload-choose',
         {
-            'p-fileupload-choose-selected': props.mode === 'basic' && instance.hasFiles,
-            'p-disabled': props.disabled,
-            'p-focus': instance.focused
+            'v-fileupload-choose-selected': props.mode === 'basic' && instance.hasFiles,
+            'v-disabled': props.disabled,
+            'v-focus': instance.focused
         }
     ],
-    chooseIcon: 'p-button-icon p-button-icon-left',
-    chooseButtonLabel: 'p-button-label',
-    content: 'p-fileupload-content',
-    empty: 'p-fileupload-empty',
-    uploadIcon: 'p-button-icon p-button-icon-left',
-    label: 'p-button-label',
-    file: 'p-fileupload-file',
-    thumbnail: 'p-fileupload-file-thumbnail',
-    details: 'p-fileupload-file-details',
-    fileName: 'p-fileupload-file-name',
-    fileSize: 'p-fileupload-file-size',
-    badge: 'p-fileupload-file-badge',
-    actions: 'p-fileupload-file-actions',
-    removeButton: 'p-fileupload-file-remove'
+    chooseIcon: 'v-button-icon p-button-icon-left',
+    chooseButtonLabel: 'v-button-label',
+    content: 'v-fileupload-content',
+    empty: 'v-fileupload-empty',
+    uploadIcon: 'v-button-icon p-button-icon-left',
+    label: 'v-button-label',
+    file: 'v-fileupload-file',
+    thumbnail: 'v-fileupload-file-thumbnail',
+    details: 'v-fileupload-file-details',
+    fileName: 'v-fileupload-file-name',
+    fileSize: 'v-fileupload-file-size',
+    badge: 'v-fileupload-file-badge',
+    actions: 'v-fileupload-file-actions',
+    removeButton: 'v-fileupload-file-remove'
 };
 
 export default BaseStyle.extend({

@@ -12,10 +12,10 @@
         @keydown="onKeyDown"
         role="cell"
         v-bind="{ ...getColumnPT('root'), ...getColumnPT('bodyCell') }"
-        :data-p-selection-column="columnProp('selectionMode') != null"
-        :data-p-editable-column="isEditable()"
-        :data-p-cell-editing="d_editing"
-        :data-p-frozen-column="columnProp('frozen')"
+        :data-v-selection-column="columnProp('selectionMode') != null"
+        :data-v-editable-column="isEditable()"
+        :data-v-cell-editing="d_editing"
+        :data-v-frozen-column="columnProp('frozen')"
     >
         <span v-if="responsiveLayout === 'stack'" :class="cx('columnTitle')" v-bind="getColumnPT('columnTitle')">{{ columnProp('header') }}</span>
         <component
@@ -380,7 +380,7 @@ export default {
             if (element) {
                 let cell = element;
 
-                while (cell && !DomHandler.getAttribute(cell, 'data-p-cell-editing')) {
+                while (cell && !DomHandler.getAttribute(cell, 'data-v-cell-editing')) {
                     cell = cell.parentElement;
                 }
 
@@ -401,7 +401,7 @@ export default {
             }
 
             if (prevCell) {
-                if (DomHandler.getAttribute(prevCell, 'data-p-editable-column')) return prevCell;
+                if (DomHandler.getAttribute(prevCell, 'data-v-editable-column')) return prevCell;
                 else return this.findPreviousEditableColumn(prevCell);
             } else {
                 return null;
@@ -419,7 +419,7 @@ export default {
             }
 
             if (nextCell) {
-                if (DomHandler.getAttribute(nextCell, 'data-p-editable-column')) return nextCell;
+                if (DomHandler.getAttribute(nextCell, 'data-v-editable-column')) return nextCell;
                 else return this.findNextEditableColumn(nextCell);
             } else {
                 return null;
@@ -458,7 +458,7 @@ export default {
 
                 if (align === 'right') {
                     let right = 0;
-                    let next = DomHandler.getNextElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let next = DomHandler.getNextElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (next) {
                         right = DomHandler.getOuterWidth(next) + parseFloat(next.style.right || 0);
@@ -467,7 +467,7 @@ export default {
                     this.styleObject.right = right + 'px';
                 } else {
                     let left = 0;
-                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (prev) {
                         left = DomHandler.getOuterWidth(prev) + parseFloat(prev.style.left || 0);

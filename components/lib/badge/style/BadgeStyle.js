@@ -3,18 +3,18 @@ import { ObjectUtils } from '@coscom/coscom-ui/utils';
 
 const classes = {
     root: ({ props, instance }) => [
-        'p-badge p-component',
+        'v-badge v-component',
         {
-            'p-badge-no-gutter': ObjectUtils.isNotEmpty(props.value) && String(props.value).length === 1,
-            'p-badge-dot': ObjectUtils.isEmpty(props.value) && !instance.$slots.default,
-            'p-badge-lg': props.size === 'large',
-            'p-badge-xl': props.size === 'xlarge',
-            'p-badge-info': props.severity === 'info',
-            'p-badge-success': props.severity === 'success',
-            'p-badge-warning': props.severity === 'warning',
-            'p-badge-danger': props.severity === 'danger',
-            'p-badge-secondary': props.severity === 'secondary',
-            'p-badge-contrast': props.severity === 'contrast'
+            'v-badge-no-gutter': ObjectUtils.isNotEmpty(props.value) && String(props.value).length === 1,
+            'v-badge-dot': ObjectUtils.isEmpty(props.value) && !instance.$slots.default,
+            'v-badge-lg': props.size === 'large',
+            'v-badge-xl': props.size === 'xlarge',
+            'v-badge-info': props.severity === 'info',
+            'v-badge-success': props.severity === 'success',
+            'v-badge-warning': props.severity === 'warning',
+            'v-badge-danger': props.severity === 'danger',
+            'v-badge-secondary': props.severity === 'secondary',
+            'v-badge-contrast': props.severity === 'contrast'
         }
     ]
 };

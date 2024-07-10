@@ -10,8 +10,8 @@
                     @click="onItemClick($event, item, index)"
                     @keydown="onItemKeydown($event, item, index)"
                     v-bind="getPTOptions('menuitem', item, index)"
-                    :data-p-highlight="isActive(index)"
-                    :data-p-disabled="isItemDisabled(item, index)"
+                    :data-v-highlight="isActive(index)"
+                    :data-v-disabled="isItemDisabled(item, index)"
                 >
                     <template v-if="!$slots.item">
                         <span :class="cx('action')" v-bind="getPTOptions('action', item, index)">

@@ -12,8 +12,8 @@ describe('InlineMessage.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-inline-message.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-inline-message.p-component').text()).toBe('Username is required');
-        expect(wrapper.find('.p-inline-message-error').exists()).toBe(true);
+        expect(wrapper.find('.v-inline-message.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-inline-message.v-component').text()).toBe('Username is required');
+        expect(wrapper.find('.v-inline-message-error').exists()).toBe(true);
     });
 });

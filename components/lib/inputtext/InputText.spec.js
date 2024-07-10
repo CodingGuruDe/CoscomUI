@@ -5,11 +5,11 @@ describe('InputText.vue', () => {
     it('is InputText component exists', async () => {
         const wrapper = mount(InputText);
 
-        expect(wrapper.find('.p-inputtext.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-inputtext.v-component').exists()).toBe(true);
 
         await wrapper.setProps({ modelValue: 'CoscomUI' });
 
-        expect(wrapper.find('.p-filled').exists()).toBe(true);
+        expect(wrapper.find('.v-filled').exists()).toBe(true);
 
         const input = wrapper.find('input');
 

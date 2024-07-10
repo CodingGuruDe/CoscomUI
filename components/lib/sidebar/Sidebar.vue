@@ -83,7 +83,7 @@ export default {
         },
         onBeforeLeave() {
             if (this.modal) {
-                !this.isUnstyled && DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+                !this.isUnstyled && DomHandler.addClass(this.mask, 'v-component-overlay-leave');
             }
         },
         onLeave() {

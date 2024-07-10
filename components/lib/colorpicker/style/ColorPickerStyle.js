@@ -1,22 +1,22 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-colorpicker p-component', { 'p-colorpicker-overlay': !props.inline }],
-    input: ({ props }) => ['p-colorpicker-preview p-inputtext', { 'p-disabled': props.disabled }],
+    root: ({ props }) => ['v-colorpicker v-component', { 'v-colorpicker-overlay': !props.inline }],
+    input: ({ props }) => ['v-colorpicker-preview v-inputtext', { 'v-disabled': props.disabled }],
     panel: ({ instance, props }) => [
-        'p-colorpicker-panel',
+        'v-colorpicker-panel',
         {
-            'p-colorpicker-overlay-panel': !props.inline,
-            'p-disabled': props.disabled,
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-colorpicker-overlay-panel': !props.inline,
+            'v-disabled': props.disabled,
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    content: 'p-colorpicker-content',
-    selector: 'p-colorpicker-color-selector',
-    color: 'p-colorpicker-color',
-    colorHandle: 'p-colorpicker-color-handle',
-    hue: 'p-colorpicker-hue',
-    hueHandle: 'p-colorpicker-hue-handle'
+    content: 'v-colorpicker-content',
+    selector: 'v-colorpicker-color-selector',
+    color: 'v-colorpicker-color',
+    colorHandle: 'v-colorpicker-color-handle',
+    hue: 'v-colorpicker-hue',
+    hueHandle: 'v-colorpicker-hue-handle'
 };
 
 export default BaseStyle.extend({

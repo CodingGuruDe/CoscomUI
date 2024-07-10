@@ -1,8 +1,8 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-scrolltop p-link p-component', { 'p-scrolltop-sticky': props.target !== 'window' }],
-    icon: 'p-scrolltop-icon'
+    root: ({ props }) => ['v-scrolltop v-link v-component', { 'v-scrolltop-sticky': props.target !== 'window' }],
+    icon: 'v-scrolltop-icon'
 };
 
 export default BaseStyle.extend({

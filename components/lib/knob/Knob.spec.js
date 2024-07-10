@@ -13,8 +13,8 @@ describe('Knob.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-knob.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-knob-text').text()).toBe('20');
+        expect(wrapper.find('.v-knob.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-knob-text').text()).toBe('20');
     });
 
     it('should change with click event', async () => {
@@ -48,12 +48,12 @@ describe('Knob.vue', () => {
     it('should work with string valueTemplate', async () => {
         await wrapper.setProps({ valueTemplate: '{value}%' });
 
-        expect(wrapper.find('.p-knob-text').text()).toBe('20%');
+        expect(wrapper.find('.v-knob-text').text()).toBe('20%');
     });
 
     it('should work with function valueTemplate', async () => {
         await wrapper.setProps({ valueTemplate: (val) => val * 10 });
 
-        expect(wrapper.find('.p-knob-text').text()).toBe('200');
+        expect(wrapper.find('.v-knob-text').text()).toBe('200');
     });
 });

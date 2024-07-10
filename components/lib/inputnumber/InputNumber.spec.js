@@ -13,8 +13,8 @@ describe('InputNumber.vue', () => {
     });
 
     it('is exist', () => {
-        expect(wrapper.find('.p-inputnumber.p-component').exists()).toBe(true);
-        expect(wrapper.find('input.p-inputnumber-input').exists()).toBe(true);
+        expect(wrapper.find('.v-inputnumber.v-component').exists()).toBe(true);
+        expect(wrapper.find('input.v-inputnumber-input').exists()).toBe(true);
     });
 
     it('is keydown called when down and up keys pressed', async () => {
@@ -31,14 +31,14 @@ describe('InputNumber.vue', () => {
         await wrapper.vm.onInputKeyDown({ code: 'Tab', target: { value: '12' }, preventDefault: () => {} });
 
         expect(wrapper.emitted()['update:modelValue'][0]).toEqual([12]);
-        expect(wrapper.find('input.p-inputnumber-input').attributes()['aria-valuenow']).toBe('12');
+        expect(wrapper.find('input.v-inputnumber-input').attributes()['aria-valuenow']).toBe('12');
     });
 
     it('is keydown called when enter key pressed', async () => {
         await wrapper.vm.onInputKeyDown({ code: 'Enter', target: { value: '12' }, preventDefault: () => {} });
 
         expect(wrapper.emitted()['update:modelValue'][0]).toEqual([12]);
-        expect(wrapper.find('input.p-inputnumber-input').attributes()['aria-valuenow']).toBe('12');
+        expect(wrapper.find('input.v-inputnumber-input').attributes()['aria-valuenow']).toBe('12');
     });
 
     it('should have min boundary', async () => {
@@ -68,12 +68,12 @@ describe('InputNumber.vue', () => {
     it('should have currency', async () => {
         await wrapper.setProps({ modelValue: 12345, mode: 'currency', currency: 'USD', locale: 'en-US' });
 
-        expect(wrapper.find('input.p-inputnumber-input').element._value).toBe('$12,345.00');
+        expect(wrapper.find('input.v-inputnumber-input').element._value).toBe('$12,345.00');
     });
 
     it('should have prefix', async () => {
         await wrapper.setProps({ modelValue: 20, prefix: '%' });
 
-        expect(wrapper.find('input.p-inputnumber-input').element._value).toBe('%20');
+        expect(wrapper.find('input.v-inputnumber-input').element._value).toBe('%20');
     });
 });

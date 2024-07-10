@@ -2,28 +2,28 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-listbox p-component',
+        'v-listbox v-component',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid
         }
     ],
-    header: 'p-listbox-header',
-    filterContainer: 'p-listbox-filter-container',
-    filterInput: 'p-listbox-filter p-inputtext p-component',
-    filterIcon: 'p-listbox-filter-icon',
-    wrapper: 'p-listbox-list-wrapper',
-    list: 'p-listbox-list',
-    itemGroup: 'p-listbox-item-group',
+    header: 'v-listbox-header',
+    filterContainer: 'v-listbox-filter-container',
+    filterInput: 'v-listbox-filter v-inputtext v-component',
+    filterIcon: 'v-listbox-filter-icon',
+    wrapper: 'v-listbox-list-wrapper',
+    list: 'v-listbox-list',
+    itemGroup: 'v-listbox-item-group',
     item: ({ instance, option, index, getItemOptions }) => [
-        'p-listbox-item',
+        'v-listbox-item',
         {
-            'p-highlight': instance.isSelected(option),
-            'p-focus': instance.focusedOptionIndex === instance.getOptionIndex(index, getItemOptions),
-            'p-disabled': instance.isOptionDisabled(option)
+            'v-highlight': instance.isSelected(option),
+            'v-focus': instance.focusedOptionIndex === instance.getOptionIndex(index, getItemOptions),
+            'v-disabled': instance.isOptionDisabled(option)
         }
     ],
-    emptyMessage: 'p-listbox-empty-message'
+    emptyMessage: 'v-listbox-empty-message'
 };
 
 export default BaseStyle.extend({

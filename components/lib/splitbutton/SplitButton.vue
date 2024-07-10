@@ -1,5 +1,5 @@
 <template>
-    <div :class="containerClass" :style="style" v-bind="ptmi('root')" :data-p-severity="severity">
+    <div :class="containerClass" :style="style" v-bind="ptmi('root')" :data-v-severity="severity">
         <PVSButton
             type="button"
             :class="cx('button')"

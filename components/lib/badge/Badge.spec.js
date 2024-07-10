@@ -15,11 +15,11 @@ describe('Badge.vue', () => {
         });
     });
     it('should exist', () => {
-        expect(wrapper.find('.p-badge.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-badge-warning').exists()).toBe(true);
-        expect(wrapper.find('.p-badge-lg').exists()).toBe(true);
-        expect(wrapper.find('.p-badge-no-gutter').exists()).toBe(false);
+        expect(wrapper.find('.v-badge.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-badge-warning').exists()).toBe(true);
+        expect(wrapper.find('.v-badge-lg').exists()).toBe(true);
+        expect(wrapper.find('.v-badge-no-gutter').exists()).toBe(false);
 
-        expect(wrapper.vm.containerClass).not.toBe('p-overlay-badge');
+        expect(wrapper.vm.containerClass).not.toBe('v-overlay-badge');
     });
 });

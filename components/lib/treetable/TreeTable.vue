@@ -1,5 +1,5 @@
 <template>
-    <div :class="cx('root')" data-scrollselectors=".p-treetable-scrollable-body" role="table" v-bind="ptmi('root')">
+    <div :class="cx('root')" data-scrollselectors=".v-treetable-scrollable-body" role="table" v-bind="ptmi('root')">
         <slot></slot>
         <div v-if="loading && loadingMode === 'mask'" :class="cx('loadingWrapper')" v-bind="ptm('loadingWrapper')">
             <div :class="cx('loadingOverlay')" v-bind="ptm('loadingOverlay')">
@@ -392,12 +392,12 @@ export default {
                 const columnField = this.columnProp(column, 'sortField') || this.columnProp(column, 'field');
 
                 if (
-                    DomHandler.getAttribute(targetNode, 'data-p-sortable-column') === true ||
+                    DomHandler.getAttribute(targetNode, 'data-v-sortable-column') === true ||
                     DomHandler.getAttribute(targetNode, 'data-pc-section') === 'headertitle' ||
                     DomHandler.getAttribute(targetNode, 'data-pc-section') === 'sorticon' ||
                     DomHandler.getAttribute(targetNode.parentElement, 'data-pc-section') === 'sorticon' ||
                     DomHandler.getAttribute(targetNode.parentElement.parentElement, 'data-pc-section') === 'sorticon' ||
-                    targetNode.closest('[data-p-sortable-column="true"]')
+                    targetNode.closest('[data-v-sortable-column="true"]')
                 ) {
                     DomHandler.clearSelection();
 
@@ -629,8 +629,8 @@ export default {
         onColumnResize(event) {
             let containerLeft = DomHandler.getOffset(this.$el).left;
 
-            this.$el.setAttribute('data-p-unselectable-text', 'true');
-            !this.isUnstyled && DomHandler.addClass(this.$el, 'p-unselectable-text');
+            this.$el.setAttribute('data-v-unselectable-text', 'true');
+            !this.isUnstyled && DomHandler.addClass(this.$el, 'v-unselectable-text');
             this.$refs.resizeHelper.style.height = this.$el.offsetHeight + 'px';
             this.$refs.resizeHelper.style.top = 0 + 'px';
             this.$refs.resizeHelper.style.left = event.pageX - containerLeft + this.$el.scrollLeft + 'px';
@@ -674,8 +674,8 @@ export default {
 
             this.$refs.resizeHelper.style.display = 'none';
             this.resizeColumn = null;
-            this.$el.removeAttribute('data-p-unselectable-text');
-            !this.isUnstyled && DomHandler.removeClass(this.$el, 'p-unselectable-text');
+            this.$el.removeAttribute('data-v-unselectable-text');
+            !this.isUnstyled && DomHandler.removeClass(this.$el, 'v-unselectable-text');
 
             this.unbindColumnResizeEvents();
         },
@@ -729,7 +729,7 @@ export default {
             }
         },
         onColumnKeyDown(event, col) {
-            if ((event.code === 'Enter' || event.code === 'NumpadEnter') && event.currentTarget.nodeName === 'TH' && DomHandler.getAttribute(event.currentTarget, 'data-p-sortable-column')) {
+            if ((event.code === 'Enter' || event.code === 'NumpadEnter') && event.currentTarget.nodeName === 'TH' && DomHandler.getAttribute(event.currentTarget, 'data-v-sortable-column')) {
                 this.onColumnHeaderClick(event, col);
             }
         },

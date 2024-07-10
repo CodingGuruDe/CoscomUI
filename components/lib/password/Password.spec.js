@@ -21,8 +21,8 @@ describe('Password.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-password.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-password-panel').exists()).toBe(true);
+        expect(wrapper.find('.v-password.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-password-panel').exists()).toBe(true);
     });
 
     it('should update modelValue', async () => {
@@ -32,13 +32,13 @@ describe('Password.vue', () => {
     });
 
     it('should meter update', async () => {
-        expect(wrapper.find('.p-password-info').text()).toBe('Enter a password');
+        expect(wrapper.find('.v-password-info').text()).toBe('Enter a password');
 
         await wrapper.vm.onKeyUp(event);
 
-        expect(wrapper.find('.p-password-info').text()).toBe('Weak');
+        expect(wrapper.find('.v-password-info').text()).toBe('Weak');
 
-        expect(wrapper.find('.p-password-strength').classes()).toContain('weak');
+        expect(wrapper.find('.v-password-strength').classes()).toContain('weak');
     });
 
     it('should toggle mask', async () => {

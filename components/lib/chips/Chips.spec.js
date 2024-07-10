@@ -13,9 +13,9 @@ describe('Chips.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-chips.p-component.p-inputwrapper').exists()).toBe(true);
-        expect(wrapper.find('ul.p-chips-multiple-container').exists()).toBe(true);
-        expect(wrapper.find('li.p-chips-input-token').exists()).toBe(true);
+        expect(wrapper.find('.v-chips.v-component.v-inputwrapper').exists()).toBe(true);
+        expect(wrapper.find('ul.v-chips-multiple-container').exists()).toBe(true);
+        expect(wrapper.find('li.v-chips-input-token').exists()).toBe(true);
     });
 
     it('should add item', async () => {
@@ -26,9 +26,9 @@ describe('Chips.vue', () => {
         await wrapper.setProps({ modelValue: ['CoscomUI'] });
 
         expect(addItem).toHaveBeenCalled();
-        expect(wrapper.findAll('.p-chips-token').length).toBe(1);
-        expect(wrapper.find('.p-chips-token-label').exists()).toBe(true);
-        expect(wrapper.find('.p-chips-token-label').text()).toBe('CoscomUI');
+        expect(wrapper.findAll('.v-chips-token').length).toBe(1);
+        expect(wrapper.find('.v-chips-token-label').exists()).toBe(true);
+        expect(wrapper.find('.v-chips-token-label').text()).toBe('CoscomUI');
     });
 
     it('should have correct custom chip removal icon', async () => {
@@ -37,7 +37,7 @@ describe('Chips.vue', () => {
             removeTokenIcon: 'cs el-discord'
         });
 
-        const icon = wrapper.find('.p-chips-token-icon');
+        const icon = wrapper.find('.v-chips-token-icon');
 
         expect(icon.classes()).toContain('el-discord');
     });

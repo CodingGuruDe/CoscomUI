@@ -1,14 +1,14 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-card p-component',
-    header: 'p-card-header',
-    body: 'p-card-body',
-    caption: 'p-card-caption',
-    title: 'p-card-title',
-    subtitle: 'p-card-subtitle',
-    content: 'p-card-content',
-    footer: 'p-card-footer'
+    root: 'v-card v-component',
+    header: 'v-card-header',
+    body: 'v-card-body',
+    caption: 'v-card-caption',
+    title: 'v-card-title',
+    subtitle: 'v-card-subtitle',
+    content: 'v-card-content',
+    footer: 'v-card-footer'
 };
 
 export default BaseStyle.extend({

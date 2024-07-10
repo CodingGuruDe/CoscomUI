@@ -16,15 +16,15 @@ describe('Panel.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-panel.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-panel-content').text()).toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt');
-        expect(wrapper.find('.p-panel-title').text()).toBe('CoscomUI');
+        expect(wrapper.find('.v-panel.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-panel-content').text()).toBe('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt');
+        expect(wrapper.find('.v-panel-title').text()).toBe('CoscomUI');
     });
 
     it('should be toggleable', async () => {
         await wrapper.setProps({ toggleable: true });
 
-        expect(wrapper.find('.p-panel.p-component').classes()).toContain('p-panel-toggleable');
+        expect(wrapper.find('.v-panel.v-component').classes()).toContain('v-panel-toggleable');
 
         await wrapper.vm.toggle({});
 

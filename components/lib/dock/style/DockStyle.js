@@ -2,29 +2,29 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-dock p-component',
+        'v-dock v-component',
         `p-dock-${props.position}`,
         {
-            'p-dock-mobile': instance.queryMatches
+            'v-dock-mobile': instance.queryMatches
         }
     ],
-    container: 'p-dock-list-container',
-    menu: 'p-dock-list',
+    container: 'v-dock-list-container',
+    menu: 'v-dock-list',
     menuitem: ({ instance, processedItem, index, id }) => [
-        'p-dock-item',
+        'v-dock-item',
         {
-            'p-focus': instance.isItemActive(id),
-            'p-disabled': instance.disabled(processedItem),
-            'p-dock-item-second-prev': instance.currentIndex - 2 === index,
-            'p-dock-item-prev': instance.currentIndex - 1 === index,
-            'p-dock-item-current': instance.currentIndex === index,
-            'p-dock-item-next': instance.currentIndex + 1 === index,
-            'p-dock-item-second-next': instance.currentIndex + 2 === index
+            'v-focus': instance.isItemActive(id),
+            'v-disabled': instance.disabled(processedItem),
+            'v-dock-item-second-prev': instance.currentIndex - 2 === index,
+            'v-dock-item-prev': instance.currentIndex - 1 === index,
+            'v-dock-item-current': instance.currentIndex === index,
+            'v-dock-item-next': instance.currentIndex + 1 === index,
+            'v-dock-item-second-next': instance.currentIndex + 2 === index
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-dock-link',
-    icon: 'p-dock-icon'
+    content: 'v-menuitem-content',
+    action: 'v-dock-link',
+    icon: 'v-dock-icon'
 };
 
 export default BaseStyle.extend({

@@ -10,8 +10,8 @@
                     @click="onItemClick($event, item, i)"
                     @keydown="onKeydownItem($event, item, i)"
                     v-bind="getPTOptions('menuitem', item, i)"
-                    :data-p-highlight="d_activeIndex === i"
-                    :data-p-disabled="disabled(item)"
+                    :data-v-highlight="d_activeIndex === i"
+                    :data-v-disabled="disabled(item)"
                 >
                     <template v-if="!$slots.item">
                         <a ref="tabLink" v-ripple role="menuitem" :href="item.url" :class="cx('action')" :target="item.target" :aria-label="label(item)" :aria-disabled="disabled(item)" :tabindex="-1" v-bind="getPTOptions('action', item, i)">

@@ -230,7 +230,7 @@ export default {
 
                     if (matchedEvent) {
                         element.addEventListener(matchedEvent[1].toLowerCase(), value);
-                    } else if (key === 'p-bind') {
+                    } else if (key === 'v-bind') {
                         this.setAttributes(element, value);
                     } else {
                         value = key === 'class' ? [...new Set(computedStyles('class', value))].join(' ').trim() : key === 'style' ? computedStyles('style', value).join(';').trim() : value;
@@ -773,7 +773,7 @@ export default {
                 parentNode === 'TEXTAREA' ||
                 parentNode === 'BUTTON' ||
                 parentNode === 'A' ||
-                !!element.closest('.p-button, .p-checkbox, .p-radiobutton') // @todo Add [data-pc-section="button"]
+                !!element.closest('.v-button, .p-checkbox, .p-radiobutton') // @todo Add [data-pc-section="button"]
             );
         }
 
@@ -848,12 +848,12 @@ export default {
         }
     },
 
-    blockBodyScroll(className = 'p-overflow-hidden') {
+    blockBodyScroll(className = 'v-overflow-hidden') {
         document.body.style.setProperty('--scrollbar-width', this.calculateBodyScrollbarWidth() + 'px');
         this.addClass(document.body, className);
     },
 
-    unblockBodyScroll(className = 'p-overflow-hidden') {
+    unblockBodyScroll(className = 'v-overflow-hidden') {
         document.body.style.removeProperty('--scrollbar-width');
         this.removeClass(document.body, className);
     }

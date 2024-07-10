@@ -1,7 +1,7 @@
 import { useStyle } from '@coscom/coscom-ui/usestyle';
 
 const css = `
-.p-hidden-accessible {
+.v-hidden-accessible {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -12,12 +12,12 @@ const css = `
     width: 1px;
 }
 
-.p-hidden-accessible input,
-.p-hidden-accessible select {
+.v-hidden-accessible input,
+.v-hidden-accessible select {
     transform: scale(0);
 }
 
-.p-overflow-hidden {
+.v-overflow-hidden {
     overflow: hidden;
     padding-right: var(--scrollbar-width);
 }

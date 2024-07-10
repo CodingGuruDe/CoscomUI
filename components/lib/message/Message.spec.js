@@ -16,9 +16,9 @@ describe('Message.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-message.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-message.p-component').classes()).toContain('p-message-error');
-        expect(wrapper.find('.p-message-text').text()).toContain('Error Message Content');
+        expect(wrapper.find('.v-message.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-message.v-component').classes()).toContain('v-message-error');
+        expect(wrapper.find('.v-message-text').text()).toContain('Error Message Content');
     });
 
     it('should close the message', async () => {
@@ -30,7 +30,7 @@ describe('Message.vue', () => {
 
     it('should have custom close icon if provided', async () => {
         await wrapper.setProps({ closeIcon: 'cs el-discord' });
-        const icon = wrapper.find('.p-message-close-icon');
+        const icon = wrapper.find('.v-message-close-icon');
 
         expect(icon.classes()).toContain('el-discord');
     });

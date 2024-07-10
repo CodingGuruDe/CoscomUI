@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-avatar-group p-component'
+    root: 'v-avatar-group v-component'
 };
 
 export default BaseStyle.extend({

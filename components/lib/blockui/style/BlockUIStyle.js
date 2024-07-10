@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-blockui-container'
+    root: 'v-blockui-container'
 };
 
 export default BaseStyle.extend({

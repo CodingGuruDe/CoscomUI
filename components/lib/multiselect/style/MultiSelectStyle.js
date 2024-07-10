@@ -6,61 +6,61 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-multiselect p-component p-inputwrapper',
+        'v-multiselect v-component v-inputwrapper',
         {
-            'p-multiselect-chip': props.display === 'chip',
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
-            'p-focus': instance.focused,
-            'p-inputwrapper-filled': props.modelValue && props.modelValue.length,
-            'p-inputwrapper-focus': instance.focused || instance.overlayVisible,
-            'p-overlay-open': instance.overlayVisible
+            'v-multiselect-chip': props.display === 'chip',
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
+            'v-focus': instance.focused,
+            'v-inputwrapper-filled': props.modelValue && props.modelValue.length,
+            'v-inputwrapper-focus': instance.focused || instance.overlayVisible,
+            'v-overlay-open': instance.overlayVisible
         }
     ],
-    labelContainer: 'p-multiselect-label-container',
+    labelContainer: 'v-multiselect-label-container',
     label: ({ instance, props }) => [
-        'p-multiselect-label',
+        'v-multiselect-label',
         {
-            'p-placeholder': instance.label === props.placeholder,
-            'p-multiselect-label-empty': !props.placeholder && (!props.modelValue || props.modelValue.length === 0)
+            'v-placeholder': instance.label === props.placeholder,
+            'v-multiselect-label-empty': !props.placeholder && (!props.modelValue || props.modelValue.length === 0)
         }
     ],
-    token: 'p-multiselect-token',
-    tokenLabel: 'p-multiselect-token-label',
-    removeTokenIcon: 'p-multiselect-token-icon',
-    trigger: 'p-multiselect-trigger',
-    loadingIcon: 'p-multiselect-trigger-icon',
-    dropdownIcon: 'p-multiselect-trigger-icon',
+    token: 'v-multiselect-token',
+    tokenLabel: 'v-multiselect-token-label',
+    removeTokenIcon: 'v-multiselect-token-icon',
+    trigger: 'v-multiselect-trigger',
+    loadingIcon: 'v-multiselect-trigger-icon',
+    dropdownIcon: 'v-multiselect-trigger-icon',
     panel: ({ props, instance }) => [
-        'p-multiselect-panel p-component',
+        'v-multiselect-panel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    header: 'p-multiselect-header',
-    filterContainer: 'p-multiselect-filter-container',
+    header: 'v-multiselect-header',
+    filterContainer: 'v-multiselect-filter-container',
     filterInput: ({ props, instance }) => [
-        'p-multiselect-filter p-inputtext p-component',
+        'v-multiselect-filter v-inputtext v-component',
         {
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
-    filterIcon: 'p-multiselect-filter-icon',
-    closeButton: 'p-multiselect-close p-link',
-    closeIcon: 'p-multiselect-close-icon',
-    wrapper: 'p-multiselect-items-wrapper',
-    list: 'p-multiselect-items p-component',
-    itemGroup: 'p-multiselect-item-group',
+    filterIcon: 'v-multiselect-filter-icon',
+    closeButton: 'v-multiselect-close v-link',
+    closeIcon: 'v-multiselect-close-icon',
+    wrapper: 'v-multiselect-items-wrapper',
+    list: 'v-multiselect-items v-component',
+    itemGroup: 'v-multiselect-item-group',
     item: ({ instance, option, index, getItemOptions, props }) => [
-        'p-multiselect-item',
+        'v-multiselect-item',
         {
-            'p-highlight': instance.isSelected(option) && props.highlightOnSelect,
-            'p-focus': instance.focusedOptionIndex === instance.getOptionIndex(index, getItemOptions),
-            'p-disabled': instance.isOptionDisabled(option)
+            'v-highlight': instance.isSelected(option) && props.highlightOnSelect,
+            'v-focus': instance.focusedOptionIndex === instance.getOptionIndex(index, getItemOptions),
+            'v-disabled': instance.isOptionDisabled(option)
         }
     ],
-    emptyMessage: 'p-multiselect-empty-message'
+    emptyMessage: 'v-multiselect-empty-message'
 };
 
 export default BaseStyle.extend({

@@ -24,9 +24,9 @@ export default {
             return {
                 ...(!this.isUnstyled && {
                     class: [
-                        'p-icon',
+                        'v-icon',
                         {
-                            'p-icon-spin': this.spin
+                            'v-icon-spin': this.spin
                         }
                     ]
                 }),

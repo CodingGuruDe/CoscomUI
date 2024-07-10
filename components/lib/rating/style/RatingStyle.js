@@ -2,28 +2,28 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-rating',
+        'v-rating',
         {
-            'p-readonly': props.readonly,
-            'p-disabled': props.disabled
+            'v-readonly': props.readonly,
+            'v-disabled': props.disabled
         }
     ],
     cancelItem: ({ instance }) => [
-        'p-rating-item p-rating-cancel-item',
+        'v-rating-item v-rating-cancel-item',
         {
-            'p-focus': instance.focusedOptionIndex === 0 && instance.isFocusVisibleItem
+            'v-focus': instance.focusedOptionIndex === 0 && instance.isFocusVisibleItem
         }
     ],
-    cancelIcon: 'p-rating-icon p-rating-cancel',
+    cancelIcon: 'v-rating-icon v-rating-cancel',
     item: ({ instance, props, value }) => [
-        'p-rating-item',
+        'v-rating-item',
         {
-            'p-rating-item-active': value <= props.modelValue,
-            'p-focus': value === instance.focusedOptionIndex && instance.isFocusVisibleItem
+            'v-rating-item-active': value <= props.modelValue,
+            'v-focus': value === instance.focusedOptionIndex && instance.isFocusVisibleItem
         }
     ],
-    onIcon: 'p-rating-icon',
-    offIcon: 'p-rating-icon'
+    onIcon: 'v-rating-icon',
+    offIcon: 'v-rating-icon'
 };
 
 export default BaseStyle.extend({

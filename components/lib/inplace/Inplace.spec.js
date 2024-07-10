@@ -6,7 +6,7 @@ describe('Inplace.vue', () => {
     it('should exist', () => {
         const wrapper = mount(Inplace);
 
-        expect(wrapper.find('.p-inplace.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-inplace.v-component').exists()).toBe(true);
     });
 
     it('should slots display', () => {
@@ -25,7 +25,7 @@ describe('Inplace.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-inplace-display').exists()).toBe(true);
+        expect(wrapper.find('.v-inplace-display').exists()).toBe(true);
 
         wrapper.vm.open({});
 
@@ -52,18 +52,18 @@ describe('Inplace.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-inplace-closable').exists()).toBe(true);
-        expect(wrapper.find('.p-inplace-display').text()).toBe('Click to Edit');
+        expect(wrapper.find('.v-inplace-closable').exists()).toBe(true);
+        expect(wrapper.find('.v-inplace-display').text()).toBe('Click to Edit');
 
         await wrapper.vm.open({});
 
-        expect(wrapper.find('.p-inputtext').exists()).toBe(true);
-        expect(wrapper.find('.p-inplace-content').exists()).toBe(true);
+        expect(wrapper.find('.v-inputtext').exists()).toBe(true);
+        expect(wrapper.find('.v-inplace-content').exists()).toBe(true);
 
         await wrapper.vm.close({});
 
-        expect(wrapper.find('.p-inplace-display').exists()).toBe(true);
-        expect(wrapper.find('.p-inplace-content').exists()).toBe(false);
+        expect(wrapper.find('.v-inplace-display').exists()).toBe(true);
+        expect(wrapper.find('.v-inplace-content').exists()).toBe(false);
     });
 
     it('should have custom close icon', async () => {

@@ -22,11 +22,11 @@ describe('Dialog.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-dialog.p-component').exists()).toBe(false);
+        expect(wrapper.find('.v-dialog.v-component').exists()).toBe(false);
 
         await wrapper.setProps({ visible: true });
 
-        expect(wrapper.find('.p-dialog.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-dialog.v-component').exists()).toBe(true);
     });
 
     it('slot checks', async () => {
@@ -50,8 +50,8 @@ describe('Dialog.vue', () => {
 
         await wrapper.setProps({ visible: true });
 
-        expect(wrapper.find('.p-dialog-content').exists()).toBe(true);
-        expect(wrapper.find('.p-dialog-footer').exists()).toBe(true);
+        expect(wrapper.find('.v-dialog-content').exists()).toBe(true);
+        expect(wrapper.find('.v-dialog-footer').exists()).toBe(true);
     });
 });
 
@@ -79,7 +79,7 @@ describe('closable', () => {
 
         await wrapper.setProps({ visible: true });
 
-        const icon = wrapper.find('.p-dialog-header-close-icon');
+        const icon = wrapper.find('.v-dialog-header-close-icon');
 
         expect(icon.classes()).toContain('el-discord');
     });
@@ -111,7 +111,7 @@ describe('maximizable', () => {
         await wrapper.setProps({ visible: true });
         await wrapper.setData({ maximized: false });
 
-        const icon = wrapper.find('.p-dialog-header-maximize-icon');
+        const icon = wrapper.find('.v-dialog-header-maximize-icon');
 
         expect(icon.classes()).toContain('el-discord');
 

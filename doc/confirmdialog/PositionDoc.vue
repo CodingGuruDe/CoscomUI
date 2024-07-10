@@ -74,10 +74,10 @@ export default {
                 group: 'positioned',
                 message: 'Are you sure you want to proceed?',
                 header: 'Confirmation',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 position: position,
-                rejectClass: 'p-button-secondary p-button-text',
-                acceptClass: 'p-button-text',
+                rejectClass: 'v-button-secondary v-button-text',
+                acceptClass: 'v-button-text',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Save',
                 accept: () => {
@@ -115,8 +115,8 @@ export default {
 </template>
 
 <script setup>
-import { useConfirm } from "primevue/useconfirm";
-import { useToast } from "primevue/usetoast";
+import { useConfirm } from "@coscom/coscom-ui/useconfirm";
+import { useToast } from "@coscom/coscom-ui/usetoast";
 
 const confirm = useConfirm();
 const toast = useToast();
@@ -126,10 +126,10 @@ const confirmPosition = (position) => {
         group: 'positioned',
         message: 'Are you sure you want to proceed?',
         header: 'Confirmation',
-        icon: 'pi pi-info-circle',
+        icon: 'cs el-info-circle',
         position: position,
-        rejectClass: 'p-button-secondary p-button-text',
-        acceptClass: 'p-button-text',
+        rejectClass: 'v-button-secondary v-button-text',
+        acceptClass: 'v-button-text',
         rejectLabel: 'Cancel',
         acceptLabel: 'Save',
         accept: () => {
@@ -151,10 +151,10 @@ const confirmPosition = (position) => {
                 group: 'positioned',
                 message: 'Are you sure you want to proceed?',
                 header: 'Confirmation',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 position: position,
-                rejectClass: 'p-button-secondary p-button-text',
-                acceptClass: 'p-button-text',
+                rejectClass: 'v-button-secondary v-button-text',
+                acceptClass: 'v-button-text',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Save',
                 accept: () => {

@@ -1,9 +1,9 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-tooltip p-component',
-    arrow: 'p-tooltip-arrow',
-    text: 'p-tooltip-text'
+    root: 'v-tooltip v-component',
+    arrow: 'v-tooltip-arrow',
+    text: 'v-tooltip-text'
 };
 
 export default BaseStyle.extend({

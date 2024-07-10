@@ -8,8 +8,8 @@
         :aria-label="label()"
         :aria-disabled="disabled()"
         v-bind="getPTOptions('menuitem')"
-        :data-p-focused="isItemFocused()"
-        :data-p-disabled="disabled() || false"
+        :data-v-focused="isItemFocused()"
+        :data-v-disabled="disabled() || false"
     >
         <div :class="cx('content')" @click="onItemClick($event)" @mousemove="onItemMouseMove($event)" v-bind="getPTOptions('content')">
             <template v-if="!templates.item">

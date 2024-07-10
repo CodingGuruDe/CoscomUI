@@ -10,8 +10,8 @@ describe('directive badge should exist', () => {
             }
         });
 
-        expect(wrapper.find('.p-overlay-badge').exists()).toBe(true);
-        expect(wrapper.find('.p-badge.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-badge.p-component').text()).toBe('2');
+        expect(wrapper.find('.v-overlay-badge').exists()).toBe(true);
+        expect(wrapper.find('.v-badge.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-badge.v-component').text()).toBe('2');
     });
 });

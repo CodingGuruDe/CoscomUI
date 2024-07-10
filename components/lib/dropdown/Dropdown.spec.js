@@ -20,11 +20,11 @@ describe('Dropdown.vue', () => {
     });
 
     it('should Dropdown exist', () => {
-        expect(wrapper.find('.p-dropdown.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-dropdown-panel').exists()).toBe(true);
-        expect(wrapper.find('.p-dropdown-empty-message').exists()).toBe(true);
-        expect(wrapper.find('.p-inputwrapper-filled').exists()).toBe(false);
-        expect(wrapper.find('.p-inputwrapper-focus').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-panel').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-empty-message').exists()).toBe(true);
+        expect(wrapper.find('.v-inputwrapper-filled').exists()).toBe(false);
+        expect(wrapper.find('.v-inputwrapper-focus').exists()).toBe(true);
     });
 });
 
@@ -58,11 +58,11 @@ describe('option checks', () => {
     });
 
     it('should show the options', () => {
-        expect(wrapper.find('.p-dropdown-label.p-placeholder').text()).toBe('Select a City');
-        expect(wrapper.find('.p-dropdown-items-wrapper > .p-dropdown-items').exists()).toBe(true);
-        expect(wrapper.find('.p-dropdown-item').exists()).toBe(true);
-        expect(wrapper.findAll('.p-dropdown-item').length).toBe(6);
-        expect(wrapper.findAll('.p-dropdown-item')[0].text()).toBe('Zagreb');
+        expect(wrapper.find('.v-dropdown-label.v-placeholder').text()).toBe('Select a City');
+        expect(wrapper.find('.v-dropdown-items-wrapper > .v-dropdown-items').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-item').exists()).toBe(true);
+        expect(wrapper.findAll('.v-dropdown-item').length).toBe(6);
+        expect(wrapper.findAll('.v-dropdown-item')[0].text()).toBe('Zagreb');
     });
 });
 
@@ -88,13 +88,13 @@ describe('clear checks', () => {
     });
 
     it('should have correct icon', () => {
-        expect(wrapper.find('.p-dropdown-clear-icon').classes()).toContain('el-discord');
+        expect(wrapper.find('.v-dropdown-clear-icon').classes()).toContain('el-discord');
     });
 
     it('should clear with delete key', async () => {
         const updateModelSpy = vi.spyOn(wrapper.vm, 'updateModel');
 
-        await wrapper.find('.p-dropdown-label.p-inputtext').trigger('keydown', { code: 'Delete' });
+        await wrapper.find('.v-dropdown-label.v-inputtext').trigger('keydown', { code: 'Delete' });
         expect(updateModelSpy).toHaveBeenCalledOnce();
         expect(updateModelSpy).toHaveBeenCalledWith(expect.any(KeyboardEvent), null);
     });
@@ -131,8 +131,8 @@ describe('editable checks', () => {
     });
 
     it('should show the options', () => {
-        expect(wrapper.find('.p-dropdown-label.p-placeholder').exists()).toBe(false);
-        expect(wrapper.find('.p-dropdown-label.p-inputtext').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-label.v-placeholder').exists()).toBe(false);
+        expect(wrapper.find('.v-dropdown-label.v-inputtext').exists()).toBe(true);
     });
 });
 
@@ -190,8 +190,8 @@ describe('option groups checks', () => {
     });
 
     it('should show the option groups', () => {
-        expect(wrapper.findAll('.p-dropdown-item-group').length).toBe(3);
-        expect(wrapper.findAll('.p-dropdown-item-group')[0].text()).toBe('Croatia');
+        expect(wrapper.findAll('.v-dropdown-item-group').length).toBe(3);
+        expect(wrapper.findAll('.v-dropdown-item-group')[0].text()).toBe('Croatia');
     });
 });
 
@@ -272,8 +272,8 @@ describe('empty templating checks', () => {
     });
 
     it('should see empty slots', () => {
-        expect(wrapper.find('.p-dropdown-empty-message').exists()).toBe(true);
-        expect(wrapper.find('.p-dropdown-empty-message').text()).toBe('Need options prop');
+        expect(wrapper.find('.v-dropdown-empty-message').exists()).toBe(true);
+        expect(wrapper.find('.v-dropdown-empty-message').text()).toBe('Need options prop');
     });
 });
 
@@ -309,11 +309,11 @@ describe('loader checks', () => {
     });
 
     it('should show the loader', async () => {
-        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).toContain('el-discord');
+        expect(wrapper.find('.v-dropdown-trigger-icon').classes()).toContain('el-discord');
 
         await wrapper.setProps({ loading: false });
 
-        expect(wrapper.find('.p-dropdown-trigger-icon').classes()).not.toContain('el-discord');
+        expect(wrapper.find('.v-dropdown-trigger-icon').classes()).not.toContain('el-discord');
     });
 });
 
@@ -351,8 +351,8 @@ describe('filter checks', () => {
     });
 
     it('should make filtering', async () => {
-        const filterInput = wrapper.find('.p-dropdown-filter');
-        const filterIcon = wrapper.find('.p-dropdown-filter-icon');
+        const filterInput = wrapper.find('.v-dropdown-filter');
+        const filterIcon = wrapper.find('.v-dropdown-filter-icon');
 
         expect(filterInput.exists()).toBe(true);
         expect(filterIcon.classes()).toContain('el-discord');
@@ -367,6 +367,6 @@ describe('filter checks', () => {
 
         await wrapper.setData({ filterValue: 'c' });
 
-        expect(wrapper.findAll('.p-dropdown-item').length).toBe(3);
+        expect(wrapper.findAll('.v-dropdown-item').length).toBe(3);
     });
 });

@@ -275,8 +275,8 @@ export default {
         },
 
         onArrowLeft(event) {
-            const leftValidDirections = ['left', 'up-right', 'down-left'];
-            const rightValidDirections = ['right', 'up-left', 'down-right'];
+            const leftValidDirections = ['left', '.v-right', 'down-left'];
+            const rightValidDirections = ['right', '.v-left', 'down-right'];
 
             if (leftValidDirections.includes(this.direction)) {
                 this.navigateNextItem(event);
@@ -288,8 +288,8 @@ export default {
         },
 
         onArrowRight(event) {
-            const leftValidDirections = ['left', 'up-right', 'down-left'];
-            const rightValidDirections = ['right', 'up-left', 'down-right'];
+            const leftValidDirections = ['left', '.v-right', 'down-left'];
+            const rightValidDirections = ['right', '.v-left', 'down-right'];
 
             if (leftValidDirections.includes(this.direction)) {
                 this.navigatePrevItem(event);
@@ -327,7 +327,7 @@ export default {
         },
         changeFocusedOptionIndex(index) {
             const items = DomHandler.find(this.container, '[data-pc-section="menuitem"]');
-            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'p-disabled'));
+            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'v-disabled'));
 
             if (filteredItems[index]) {
                 this.focusedOptionIndex = filteredItems[index].getAttribute('id');
@@ -335,7 +335,7 @@ export default {
         },
         findPrevOptionIndex(index) {
             const items = DomHandler.find(this.container, '[data-pc-section="menuitem"]');
-            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'p-disabled'));
+            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'v-disabled'));
             const newIndex = index === -1 ? filteredItems[filteredItems.length - 1].id : index;
             let matchedOptionIndex = filteredItems.findIndex((link) => link.getAttribute('id') === newIndex);
 
@@ -345,7 +345,7 @@ export default {
         },
         findNextOptionIndex(index) {
             const items = DomHandler.find(this.container, '[data-pc-section="menuitem"]');
-            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'p-disabled'));
+            const filteredItems = [...items].filter((item) => !DomHandler.hasClass(DomHandler.findSingle(item, 'a'), 'v-disabled'));
             const newIndex = index === -1 ? filteredItems[0].id : index;
             let matchedOptionIndex = filteredItems.findIndex((link) => link.getAttribute('id') === newIndex);
 
@@ -388,9 +388,9 @@ export default {
                     const x = `calc(${radius * Math.cos(step * index)}px + var(--item-diff-x, 0px))`;
                     const y = `calc(${radius * Math.sin(step * index)}px + var(--item-diff-y, 0px))`;
 
-                    if (direction === 'up-left') {
+                    if (direction === '.v-left') {
                         return { right: x, bottom: y };
-                    } else if (direction === 'up-right') {
+                    } else if (direction === '.v-right') {
                         return { left: x, bottom: y };
                     } else if (direction === 'down-left') {
                         return { right: y, top: x };

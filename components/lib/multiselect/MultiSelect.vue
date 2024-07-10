@@ -1,6 +1,6 @@
 <template>
     <div ref="container" :class="cx('root')" :style="sx('root')" @click="onContainerClick" v-bind="ptmi('root')">
-        <div class="p-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-p-hidden-accessible="true">
+        <div class="v-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-v-hidden-accessible="true">
             <input
                 ref="focusInput"
                 :id="inputId"
@@ -46,7 +46,7 @@
         </div>
         <div :class="cx('trigger')" v-bind="ptm('trigger')">
             <slot v-if="loading" name="loadingicon" :class="cx('loadingIcon')">
-                <span v-if="loadingIcon" :class="[cx('loadingIcon'), 'pi-spin', loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
+                <span v-if="loadingIcon" :class="[cx('loadingIcon'), 'el-spin', loadingIcon]" aria-hidden="true" v-bind="ptm('loadingIcon')" />
                 <SpinnerIcon v-else :class="cx('loadingIcon')" spin aria-hidden="true" v-bind="ptm('loadingIcon')" />
             </slot>
             <slot v-else name="dropdownicon" :class="cx('dropdownIcon')">
@@ -54,18 +54,18 @@
             </slot>
         </div>
         <Portal :appendTo="appendTo">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
                 <div v-if="overlayVisible" :ref="overlayRef" :style="panelStyle" :class="[cx('panel'), panelClass]" @click="onOverlayClick" @keydown="onOverlayKeyDown" v-bind="{ ...panelProps, ...ptm('panel') }">
                     <span
                         ref="firstHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onFirstHiddenFocus"
                         v-bind="ptm('hiddenFirstFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                     <slot name="header" :value="modelValue" :options="visibleOptions"></slot>
                     <div v-if="(showToggleAll && selectionLimit == null) || filter" :class="cx('header')" v-bind="ptm('header')">
@@ -107,7 +107,7 @@
                                 <component :is="filterIcon ? 'span' : 'SearchIcon'" :class="[cx('filterIcon'), filterIcon]" v-bind="ptm('filterIcon')" />
                             </slot>
                         </div>
-                        <span v-if="filter" role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-p-hidden-accessible="true">
+                        <span v-if="filter" role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-v-hidden-accessible="true">
                             {{ filterResultMessageText }}
                         </span>
                         <button v-ripple :class="cx('closeButton')" :aria-label="closeAriaLabel" @click="onCloseClick" type="button" v-bind="{ ...closeButtonProps, ...ptm('closeButton') }">
@@ -139,9 +139,9 @@
                                             @click="onOptionSelect($event, option, getOptionIndex(i, getItemOptions), true)"
                                             @mousemove="onOptionMouseMove($event, getOptionIndex(i, getItemOptions))"
                                             v-bind="getCheckboxPTOptions(option, getItemOptions, i, 'item')"
-                                            :data-p-highlight="isSelected(option)"
-                                            :data-p-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
-                                            :data-p-disabled="isOptionDisabled(option)"
+                                            :data-v-highlight="isSelected(option)"
+                                            :data-v-focused="focusedOptionIndex === getOptionIndex(i, getItemOptions)"
+                                            :data-v-disabled="isOptionDisabled(option)"
                                         >
                                             <Checkbox :modelValue="isSelected(option)" :binary="true" :tabindex="-1" :variant="variant" :unstyled="unstyled" :pt="getCheckboxPTOptions(option, getItemOptions, i, 'itemCheckbox')">
                                                 <template #icon="slotProps">
@@ -173,22 +173,22 @@
                         </VirtualScroller>
                     </div>
                     <slot name="footer" :value="modelValue" :options="visibleOptions"></slot>
-                    <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-p-hidden-accessible="true">
+                    <span v-if="!options || (options && options.length === 0)" role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenEmptyMessage')" :data-v-hidden-accessible="true">
                         {{ emptyMessageText }}
                     </span>
-                    <span role="status" aria-live="polite" class="p-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-p-hidden-accessible="true">
+                    <span role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenSelectedMessage')" :data-v-hidden-accessible="true">
                         {{ selectedMessageText }}
                     </span>
                     <span
                         ref="lastHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onLastHiddenFocus"
                         v-bind="ptm('hiddenLastFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                 </div>
             </transition>
@@ -442,12 +442,12 @@ export default {
             this.clicked = true;
         },
         onFirstHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
         onLastHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
@@ -812,7 +812,7 @@ export default {
             this.filterValue = null;
         },
         hasFocusableElements() {
-            return DomHandler.getFocusableElements(this.overlay, ':not([data-p-hidden-focusable="true"])').length > 0;
+            return DomHandler.getFocusableElements(this.overlay, ':not([data-v-hidden-focusable="true"])').length > 0;
         },
         isOptionMatched(option) {
             return this.isValidOption(option) && this.getOptionLabel(option)?.toLocaleLowerCase(this.filterLocale).startsWith(this.searchValue.toLocaleLowerCase(this.filterLocale));

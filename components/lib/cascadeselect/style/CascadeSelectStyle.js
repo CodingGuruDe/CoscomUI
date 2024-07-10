@@ -6,48 +6,48 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-cascadeselect p-component p-inputwrapper',
+        'v-cascadeselect v-component v-inputwrapper',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
-            'p-focus': instance.focused,
-            'p-inputwrapper-filled': props.modelValue,
-            'p-inputwrapper-focus': instance.focused || instance.overlayVisible,
-            'p-overlay-open': instance.overlayVisible
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
+            'v-focus': instance.focused,
+            'v-inputwrapper-filled': props.modelValue,
+            'v-inputwrapper-focus': instance.focused || instance.overlayVisible,
+            'v-overlay-open': instance.overlayVisible
         }
     ],
     label: ({ instance, props }) => [
-        'p-cascadeselect-label p-inputtext',
+        'v-cascadeselect-label v-inputtext',
         {
-            'p-placeholder': instance.label === props.placeholder,
-            'p-cascadeselect-label-empty': !instance.$slots['value'] && (instance.label === 'p-emptylabel' || instance.label.length === 0)
+            'v-placeholder': instance.label === props.placeholder,
+            'v-cascadeselect-label-empty': !instance.$slots['value'] && (instance.label === 'v-emptylabel' || instance.label.length === 0)
         }
     ],
-    dropdownButton: 'p-cascadeselect-trigger',
-    loadingIcon: 'p-cascadeselect-trigger-icon',
-    dropdownIcon: 'p-cascadeselect-trigger-icon',
+    dropdownButton: 'v-cascadeselect-trigger',
+    loadingIcon: 'v-cascadeselect-trigger-icon',
+    dropdownIcon: 'v-cascadeselect-trigger-icon',
     panel: ({ props, instance }) => [
-        'p-cascadeselect-panel p-component',
+        'v-cascadeselect-panel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    wrapper: 'p-cascadeselect-items-wrapper',
-    list: 'p-cascadeselect-panel p-cascadeselect-items',
+    wrapper: 'v-cascadeselect-items-wrapper',
+    list: 'v-cascadeselect-panel v-cascadeselect-items',
     item: ({ instance, processedOption }) => [
-        'p-cascadeselect-item',
+        'v-cascadeselect-item',
         {
-            'p-cascadeselect-item-group': instance.isOptionGroup(processedOption),
-            'p-cascadeselect-item-active p-highlight': instance.isOptionActive(processedOption),
-            'p-focus': instance.isOptionFocused(processedOption),
-            'p-disabled': instance.isOptionDisabled(processedOption)
+            'v-cascadeselect-item-group': instance.isOptionGroup(processedOption),
+            'v-cascadeselect-item-active v-highlight': instance.isOptionActive(processedOption),
+            'v-focus': instance.isOptionFocused(processedOption),
+            'v-disabled': instance.isOptionDisabled(processedOption)
         }
     ],
-    content: 'p-cascadeselect-item-content',
-    text: 'p-cascadeselect-item-text',
-    groupIcon: 'p-cascadeselect-group-icon',
-    sublist: 'p-cascadeselect-sublist'
+    content: 'v-cascadeselect-item-content',
+    text: 'v-cascadeselect-item-text',
+    groupIcon: 'v-cascadeselect-group-icon',
+    sublist: 'v-cascadeselect-sublist'
 };
 
 export default BaseStyle.extend({

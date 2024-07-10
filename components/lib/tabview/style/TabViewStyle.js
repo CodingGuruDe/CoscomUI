@@ -2,31 +2,31 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-tabview p-component',
+        'v-tabview v-component',
         {
-            'p-tabview-scrollable': props.scrollable
+            'v-tabview-scrollable': props.scrollable
         }
     ],
-    navContainer: 'p-tabview-nav-container',
-    previousButton: 'p-tabview-nav-prev p-tabview-nav-btn p-link',
-    navContent: 'p-tabview-nav-content',
-    nav: 'p-tabview-nav',
+    navContainer: 'v-tabview-nav-container',
+    previousButton: 'v-tabview-nav-prev p-tabview-nav-btn v-link',
+    navContent: 'v-tabview-nav-content',
+    nav: 'v-tabview-nav',
     tab: {
         header: ({ instance, tab, index }) => [
-            'p-tabview-header',
+            'v-tabview-header',
             instance.getTabProp(tab, 'headerClass'),
             {
-                'p-highlight': instance.d_activeIndex === index,
-                'p-disabled': instance.getTabProp(tab, 'disabled')
+                'v-highlight': instance.d_activeIndex === index,
+                'v-disabled': instance.getTabProp(tab, 'disabled')
             }
         ],
-        headerAction: 'p-tabview-nav-link p-tabview-header-action',
-        headerTitle: 'p-tabview-title',
-        content: ({ instance, tab }) => ['p-tabview-panel', instance.getTabProp(tab, 'contentClass')]
+        headerAction: 'v-tabview-nav-link p-tabview-header-action',
+        headerTitle: 'v-tabview-title',
+        content: ({ instance, tab }) => ['v-tabview-panel', instance.getTabProp(tab, 'contentClass')]
     },
-    inkbar: 'p-tabview-ink-bar',
-    nextButton: 'p-tabview-nav-next p-tabview-nav-btn p-link',
-    panelContainer: 'p-tabview-panels'
+    inkbar: 'v-tabview-ink-bar',
+    nextButton: 'v-tabview-nav-next p-tabview-nav-btn v-link',
+    panelContainer: 'v-tabview-panels'
 };
 
 export default BaseStyle.extend({

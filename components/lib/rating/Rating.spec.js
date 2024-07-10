@@ -10,8 +10,8 @@ describe('Rating.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-rating').exists()).toBe(true);
-        expect(wrapper.find('.p-rating-icon').exists()).toBe(true);
+        expect(wrapper.find('.v-rating').exists()).toBe(true);
+        expect(wrapper.find('.v-rating-icon').exists()).toBe(true);
     });
 
     it('should update model', async () => {
@@ -31,13 +31,13 @@ describe('Rating.vue', () => {
     it('should not cancel', async () => {
         await wrapper.setProps({ cancel: false });
 
-        expect(wrapper.find('.p-rating-cancel').exists()).toBe(false);
+        expect(wrapper.find('.v-rating-cancel').exists()).toBe(false);
     });
 
     it('When star is clicked, onOptionClick method should triggered', async () => {
-        await wrapper.find('.p-rating-item').trigger('click');
+        await wrapper.find('.v-rating-item').trigger('click');
 
-        expect(wrapper.find('[data-p-focused="true"]').exists()).toBe(true);
+        expect(wrapper.find('[data-v-focused="true"]').exists()).toBe(true);
     });
 
     it('When input focused, focusedOptionIndex value should changed', async () => {

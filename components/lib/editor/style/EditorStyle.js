@@ -949,9 +949,9 @@ const quillCSS = `
 `;
 
 const classes = {
-    root: 'p-editor-container',
-    toolbar: 'p-editor-toolbar',
-    content: 'p-editor-content'
+    root: 'v-editor-container',
+    toolbar: 'v-editor-toolbar',
+    content: 'v-editor-content'
 };
 
 export default BaseStyle.extend({

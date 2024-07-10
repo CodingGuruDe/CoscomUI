@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>Chip content is customized using <i>item</i> slot that receives a single chip value as a parameter.</p>
     </DocSectionText>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value">
             <template #chip="slotProps">
                 <div>
@@ -33,7 +33,7 @@ export default {
 `,
                 options: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value">
             <template #chip="slotProps">
                 <div>
@@ -57,7 +57,7 @@ export default {
 `,
                 composition: `
 <template>
-    <div class="card p-fluid">
+    <div class="card v-fluid">
         <Chips v-model="value">
             <template #chip="slotProps">
                 <div>

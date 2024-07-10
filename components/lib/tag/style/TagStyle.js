@@ -2,19 +2,19 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-tag p-component',
+        'v-tag v-component',
         {
-            'p-tag-info': props.severity === 'info',
-            'p-tag-success': props.severity === 'success',
-            'p-tag-warning': props.severity === 'warning',
-            'p-tag-danger': props.severity === 'danger',
-            'p-tag-secondary': props.severity === 'secondary',
-            'p-tag-contrast': props.severity === 'contrast',
-            'p-tag-rounded': props.rounded
+            'v-tag-info': props.severity === 'info',
+            'v-tag-success': props.severity === 'success',
+            'v-tag-warning': props.severity === 'warning',
+            'v-tag-danger': props.severity === 'danger',
+            'v-tag-secondary': props.severity === 'secondary',
+            'v-tag-contrast': props.severity === 'contrast',
+            'v-tag-rounded': props.rounded
         }
     ],
-    icon: 'p-tag-icon',
-    value: 'p-tag-value'
+    icon: 'v-tag-icon',
+    value: 'v-tag-value'
 };
 
 export default BaseStyle.extend({

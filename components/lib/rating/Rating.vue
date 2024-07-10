@@ -1,7 +1,7 @@
 <template>
     <div :class="cx('root')" v-bind="ptmi('root')">
-        <div v-if="cancel" :class="cx('cancelItem')" @click="onOptionClick($event, 0)" v-bind="getPTOptions('cancelItem', 0)" :data-p-focused="focusedOptionIndex === 0">
-            <span class="p-hidden-accessible" v-bind="ptm('hiddenCancelInputWrapper')" :data-p-hidden-accessible="true">
+        <div v-if="cancel" :class="cx('cancelItem')" @click="onOptionClick($event, 0)" v-bind="getPTOptions('cancelItem', 0)" :data-v-focused="focusedOptionIndex === 0">
+            <span class="v-hidden-accessible" v-bind="ptm('hiddenCancelInputWrapper')" :data-v-hidden-accessible="true">
                 <input
                     type="radio"
                     value="0"
@@ -21,8 +21,8 @@
             </slot>
         </div>
         <template v-for="value in stars" :key="value">
-            <div :class="cx('item', { value })" @click="onOptionClick($event, value)" v-bind="getPTOptions('item', value)" :data-p-active="value <= modelValue" :data-p-focused="value === focusedOptionIndex">
-                <span class="p-hidden-accessible" v-bind="ptm('hiddenItemInputWrapper')" :data-p-hidden-accessible="true">
+            <div :class="cx('item', { value })" @click="onOptionClick($event, value)" v-bind="getPTOptions('item', value)" :data-v-active="value <= modelValue" :data-v-focused="value === focusedOptionIndex">
+                <span class="v-hidden-accessible" v-bind="ptm('hiddenItemInputWrapper')" :data-v-hidden-accessible="true">
                     <input
                         type="radio"
                         :value="value"

@@ -25,22 +25,22 @@ describe('Timeline.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-timeline.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-timeline').classes()).toContain('p-timeline-left');
-        expect(wrapper.find('.p-timeline').classes()).toContain('p-timeline-vertical');
-        expect(wrapper.findAll('.p-timeline-event-separator').length).toBe(4);
+        expect(wrapper.find('.v-timeline.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-timeline').classes()).toContain('v-timeline-left');
+        expect(wrapper.find('.v-timeline').classes()).toContain('v-timeline-vertical');
+        expect(wrapper.findAll('.v-timeline-event-separator').length).toBe(4);
     });
 
     it('should align right', async () => {
         await wrapper.setProps({ align: 'right' });
 
-        expect(wrapper.find('.p-timeline').classes()).toContain('p-timeline-right');
+        expect(wrapper.find('.v-timeline').classes()).toContain('v-timeline-right');
     });
 
     it('should horizontal layout', async () => {
         await wrapper.setProps({ layout: 'horizontal' });
 
-        expect(wrapper.find('.p-timeline').classes()).toContain('p-timeline-horizontal');
+        expect(wrapper.find('.v-timeline').classes()).toContain('v-timeline-horizontal');
     });
 });
 
@@ -52,7 +52,7 @@ describe('customized timeline', () => {
             slots: {
                 opposite: `
                     <template #opposite="slotProps">
-                        <small class="p-text-secondary">{{slotProps.item.date}}</small>
+                        <small class="v-text-secondary">{{slotProps.item.date}}</small>
                     </template>
                 `,
                 marker: `
@@ -75,9 +75,9 @@ describe('customized timeline', () => {
     });
 
     it('should have templating', () => {
-        const firstItem = wrapper.findAll('.p-timeline-event')[0];
+        const firstItem = wrapper.findAll('.v-timeline-event')[0];
 
-        expect(firstItem.find('.p-text-secondary').text()).toBe('15/10/2020 10:30');
+        expect(firstItem.find('.v-text-secondary').text()).toBe('15/10/2020 10:30');
         expect(firstItem.find('.custom-marker').attributes().style.backgroundColor).not.toBe('');
     });
 });

@@ -12,7 +12,7 @@ describe('Tree.vue', () => {
                         key: '0',
                         label: 'Documents',
                         data: 'Documents Folder',
-                        icon: 'pi pi-fw pi-inbox',
+                        icon: 'cs el-fw el-inbox',
                         children: []
                     }
                 ]
@@ -24,7 +24,7 @@ describe('Tree.vue', () => {
     });
 
     it('should exists', () => {
-        expect(wrapper.find('.p-tree.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-tree.v-component').exists()).toBe(true);
     });
 
     it('triggers event', async () => {
@@ -48,7 +48,7 @@ describe('Tree.vue', () => {
             }
         });
 
-        let searchField = wrapper.find('input.p-tree-filter');
+        let searchField = wrapper.find('input.v-tree-filter');
 
         await searchField.trigger('keydown.space');
 
@@ -56,8 +56,8 @@ describe('Tree.vue', () => {
     });
 
     it('should render icon', ({ expect }) => {
-        expect(wrapper.find('span.pi-inbox').exists()).toBeTruthy();
-        expect(wrapper.find('span.pi-inbox').classes('p-treenode-icon')).toBeTruthy();
+        expect(wrapper.find('span.el-inbox').exists()).toBeTruthy();
+        expect(wrapper.find('span.el-inbox').classes('v-treenode-icon')).toBeTruthy();
     });
 
     it('should render icon slot', ({ expect }) => {

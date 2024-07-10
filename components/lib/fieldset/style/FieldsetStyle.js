@@ -2,16 +2,16 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-fieldset p-component',
+        'v-fieldset v-component',
         {
-            'p-fieldset-toggleable': props.toggleable
+            'v-fieldset-toggleable': props.toggleable
         }
     ],
-    legend: 'p-fieldset-legend',
-    legendtitle: 'p-fieldset-legend-text',
-    togglericon: 'p-fieldset-toggler',
-    toggleablecontent: 'p-toggleable-content',
-    content: 'p-fieldset-content'
+    legend: 'v-fieldset-legend',
+    legendtitle: 'v-fieldset-legend-text',
+    togglericon: 'v-fieldset-toggler',
+    toggleablecontent: 'v-toggleable-content',
+    content: 'v-fieldset-content'
 };
 
 export default BaseStyle.extend({

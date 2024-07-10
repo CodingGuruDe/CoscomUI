@@ -3,7 +3,7 @@
         <template v-if="loading && loadingMode === 'mask'">
             <div :class="cx('loadingOverlay')" v-bind="ptm('loadingOverlay')">
                 <slot name="loadingicon" :class="cx('loadingIcon')">
-                    <i v-if="loadingIcon" :class="[cx('loadingIcon'), 'pi-spin', loadingIcon]" v-bind="ptm('loadingIcon')" />
+                    <i v-if="loadingIcon" :class="[cx('loadingIcon'), 'el-spin', loadingIcon]" v-bind="ptm('loadingIcon')" />
                     <SpinnerIcon v-else spin :class="cx('loadingIcon')" v-bind="ptm('loadingIcon')" />
                 </slot>
             </div>

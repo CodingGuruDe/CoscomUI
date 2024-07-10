@@ -1,14 +1,14 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-breadcrumb p-component',
-    menu: 'p-breadcrumb-list',
-    home: 'p-breadcrumb-home',
-    separator: 'p-menuitem-separator',
-    menuitem: ({ instance }) => ['p-menuitem', { 'p-disabled': instance.disabled() }],
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text'
+    root: 'v-breadcrumb v-component',
+    menu: 'v-breadcrumb-list',
+    home: 'v-breadcrumb-home',
+    separator: 'v-menuitem-separator',
+    menuitem: ({ instance }) => ['v-menuitem', { 'v-disabled': instance.disabled() }],
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text'
 };
 
 export default BaseStyle.extend({

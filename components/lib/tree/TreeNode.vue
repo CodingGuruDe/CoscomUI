@@ -14,7 +14,7 @@
         @keydown="onKeyDown"
         v-bind="level === 1 ? getPTOptions('node') : ptm('subgroup')"
     >
-        <div :class="cx('content')" @click="onClick" @touchend="onTouchEnd" :style="node.style" v-bind="getPTOptions('content')" :data-p-highlight="checkboxMode ? checked : selected" :data-p-selectable="selectable">
+        <div :class="cx('content')" @click="onClick" @touchend="onTouchEnd" :style="node.style" v-bind="getPTOptions('content')" :data-v-highlight="checkboxMode ? checked : selected" :data-v-selectable="selectable">
             <button v-ripple type="button" :class="cx('toggler')" @click="toggle" tabindex="-1" aria-hidden="true" v-bind="getPTOptions('toggler')">
                 <template v-if="node.loading && loadingMode === 'icon'">
                     <component v-if="templates['nodetogglericon']" :is="templates['nodetogglericon']" :class="cx('nodetogglericon')" />
@@ -26,7 +26,7 @@
                     <component v-else :is="node.collapsedIcon ? 'span' : 'ChevronRightIcon'" :class="cx('togglerIcon')" v-bind="getPTOptions('togglerIcon')" />
                 </template>
             </button>
-            <Checkbox v-if="checkboxMode" :modelValue="checked" :binary="true" :class="cx('nodeCheckbox')" :tabindex="-1" :unstyled="unstyled" :pt="getPTOptions('nodeCheckbox')" :data-p-checked="checked" :data-p-partialchecked="partialChecked">
+            <Checkbox v-if="checkboxMode" :modelValue="checked" :binary="true" :class="cx('nodeCheckbox')" :tabindex="-1" :unstyled="unstyled" :pt="getPTOptions('nodeCheckbox')" :data-v-checked="checked" :data-v-partialchecked="partialChecked">
                 <template #icon="slotProps">
                     <component v-if="templates['checkboxicon']" :is="templates['checkboxicon']" :checked="slotProps.checked" :partialChecked="partialChecked" :class="slotProps.class" />
                     <component v-else :is="checked ? 'CheckIcon' : partialChecked ? 'MinusIcon' : null" :class="slotProps.class" v-bind="getPTOptions('nodeCheckbox.icon')" />

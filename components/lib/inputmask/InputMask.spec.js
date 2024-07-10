@@ -11,8 +11,8 @@ describe('InputMask.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-inputmask.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-inputmask.p-component').attributes().placeholder).toBe('99-999999');
+        expect(wrapper.find('.v-inputmask.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-inputmask.v-component').attributes().placeholder).toBe('99-999999');
 
         const event = { target: { value: '1' } };
 

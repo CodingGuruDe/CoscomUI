@@ -2,25 +2,25 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-chips p-component p-inputwrapper',
+        'v-chips v-component v-inputwrapper',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-focus': instance.focused,
-            'p-inputwrapper-filled': (props.modelValue && props.modelValue.length) || (instance.inputValue && instance.inputValue.length),
-            'p-inputwrapper-focus': instance.focused
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-focus': instance.focused,
+            'v-inputwrapper-filled': (props.modelValue && props.modelValue.length) || (instance.inputValue && instance.inputValue.length),
+            'v-inputwrapper-focus': instance.focused
         }
     ],
     container: ({ props, instance }) => [
-        'p-inputtext p-chips-multiple-container',
+        'v-inputtext v-chips-multiple-container',
         {
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
-    token: ({ state, index }) => ['p-chips-token', { 'p-focus': state.focusedIndex === index }],
-    label: 'p-chips-token-label',
-    removeTokenIcon: 'p-chips-token-icon',
-    inputToken: 'p-chips-input-token'
+    token: ({ state, index }) => ['v-chips-token', { 'v-focus': state.focusedIndex === index }],
+    label: 'v-chips-token-label',
+    removeTokenIcon: 'v-chips-token-icon',
+    inputToken: 'v-chips-input-token'
 };
 
 export default BaseStyle.extend({

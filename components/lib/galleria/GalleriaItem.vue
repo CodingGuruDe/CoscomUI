@@ -26,7 +26,7 @@
                 @mouseenter="onIndicatorMouseEnter(index)"
                 @keydown="onIndicatorKeyDown($event, index)"
                 v-bind="ptm('indicator', getIndicatorPTOptions(index))"
-                :data-p-highlight="isIndicatorItemActive(index)"
+                :data-v-highlight="isIndicatorItemActive(index)"
             >
                 <button v-if="!templates['indicator']" type="button" :tabindex="activeIndex === index ? '0' : '-1'" :class="cx('indicatorButton')" v-bind="ptm('indicatorButton', getIndicatorPTOptions(index))"></button>
                 <component v-if="templates.indicator" :is="templates.indicator" :index="index" />

@@ -30,7 +30,7 @@ export function useStyle(css, options = {}) {
         const _styleProps = { ...props, ..._props };
         const [_name, _id, _nonce] = [_styleProps.name || name, _styleProps.id || id, _styleProps.nonce || nonce];
 
-        styleRef.value = document.querySelector(`style[data-primevue-style-id="${_name}"]`) || document.getElementById(_id) || document.createElement('style');
+        styleRef.value = document.querySelector(`style[data-coscomui-style-id="${_name}"]`) || document.getElementById(_id) || document.createElement('style');
 
         if (!styleRef.value.isConnected) {
             cssRef.value = _css || css;
@@ -42,7 +42,7 @@ export function useStyle(css, options = {}) {
                 nonce: _nonce
             });
             document.head.appendChild(styleRef.value);
-            DomHandler.setAttribute(styleRef.value, 'data-primevue-style-id', name);
+            DomHandler.setAttribute(styleRef.value, 'data-coscomui-style-id', name);
             DomHandler.setAttributes(styleRef.value, _styleProps);
         }
 

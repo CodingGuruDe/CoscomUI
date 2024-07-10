@@ -117,16 +117,16 @@ describe('DataTable.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-datatable.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-datatable-wrapper').exists()).toBe(true);
-        expect(wrapper.find('table.p-datatable-table').exists()).toBe(true);
-        expect(wrapper.find('thead.p-datatable-thead').exists()).toBe(true);
-        expect(wrapper.find('tbody.p-datatable-tbody').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-wrapper').exists()).toBe(true);
+        expect(wrapper.find('table.v-datatable-table').exists()).toBe(true);
+        expect(wrapper.find('thead.v-datatable-thead').exists()).toBe(true);
+        expect(wrapper.find('tbody.v-datatable-tbody').exists()).toBe(true);
     });
 
     it('should have basic demo', () => {
-        expect(wrapper.findAll('.p-column-header-content').length).toEqual(3);
-        const tbody = wrapper.find('.p-datatable-tbody');
+        expect(wrapper.findAll('.v-column-header-content').length).toEqual(3);
+        const tbody = wrapper.find('.v-datatable-tbody');
 
         expect(tbody.findAll('tr').length).toEqual(3);
 
@@ -137,41 +137,41 @@ describe('DataTable.vue', () => {
 
     // table templating
     it('should have header template', () => {
-        expect(wrapper.find('.p-datatable-header').exists()).toBe(true);
-        expect(wrapper.find('.p-datatable-header').text()).toBe('Header Templating');
+        expect(wrapper.find('.v-datatable-header').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-header').text()).toBe('Header Templating');
     });
 
     it('should have footer template', () => {
-        expect(wrapper.find('.p-datatable-footer').exists()).toBe(true);
-        expect(wrapper.find('.p-datatable-footer').text()).toBe('Footer Templating');
+        expect(wrapper.find('.v-datatable-footer').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-footer').text()).toBe('Footer Templating');
     });
 
     it('should have expansion template', async () => {
         await wrapper.setProps({ expandedRows: [smallData[0]] });
 
-        expect(wrapper.find('tr.p-datatable-row-expansion').exists()).toBe(true);
-        expect(wrapper.find('tr.p-datatable-row-expansion').text()).toBe('Expansion Templating');
+        expect(wrapper.find('tr.v-datatable-row-expansion').exists()).toBe(true);
+        expect(wrapper.find('tr.v-datatable-row-expansion').text()).toBe('Expansion Templating');
     });
 
     it('should have empty templating', async () => {
         await wrapper.setProps({ value: [] });
 
-        expect(wrapper.find('tr.p-datatable-emptymessage').exists()).toBe(true);
-        expect(wrapper.find('tr.p-datatable-emptymessage').text()).toBe('Empty Templating');
+        expect(wrapper.find('tr.v-datatable-emptymessage').exists()).toBe(true);
+        expect(wrapper.find('tr.v-datatable-emptymessage').text()).toBe('Empty Templating');
     });
 
     it('should have paginatorstart templating', async () => {
         await wrapper.setProps({ value: data, paginator: true, rows: 5 });
 
-        expect(wrapper.find('.p-paginator-left-content').exists()).toBe(true);
-        expect(wrapper.find('.p-paginator-left-content').text()).toBe('Paginator Start Templating');
+        expect(wrapper.find('.v-paginator-left-content').exists()).toBe(true);
+        expect(wrapper.find('.v-paginator-left-content').text()).toBe('Paginator Start Templating');
     });
 
     it('should have paginatorend templating', async () => {
         await wrapper.setProps({ value: data, paginator: true, rows: 5 });
 
-        expect(wrapper.find('.p-paginator-right-content').exists()).toBe(true);
-        expect(wrapper.find('.p-paginator-right-content').text()).toBe('Paginator End Templating');
+        expect(wrapper.find('.v-paginator-right-content').exists()).toBe(true);
+        expect(wrapper.find('.v-paginator-right-content').text()).toBe('Paginator End Templating');
     });
 
     // column templating
@@ -251,10 +251,10 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-datatable').classes()).toContain('p-datatable-grouped-header');
-        expect(wrapper.find('.p-datatable').classes()).toContain('p-datatable-grouped-footer');
+        expect(wrapper.find('.v-datatable').classes()).toContain('v-datatable-grouped-header');
+        expect(wrapper.find('.v-datatable').classes()).toContain('v-datatable-grouped-footer');
 
-        const headerRows = wrapper.findAll('.p-datatable-thead > tr');
+        const headerRows = wrapper.findAll('.v-datatable-thead > tr');
 
         expect(headerRows.length).toEqual(3);
 
@@ -273,7 +273,7 @@ describe('DataTable.vue', () => {
         expect(headerRows[2].findAll('th')[2].text()).toEqual('Last Year');
         expect(headerRows[2].findAll('th')[3].text()).toEqual('This Year');
 
-        const footerRows = wrapper.findAll('.p-datatable-tfoot > tr');
+        const footerRows = wrapper.findAll('.v-datatable-tfoot > tr');
 
         expect(footerRows.length).toEqual(1);
 
@@ -302,15 +302,15 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const sortableTH = wrapper.findAll('.p-sortable-column')[0];
-        const firstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
+        const sortableTH = wrapper.findAll('.v-sortable-column')[0];
+        const firstCellText = wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text();
         const headerClick = vi.spyOn(wrapper.vm, 'onColumnHeaderClick');
 
         await sortableTH.trigger('click');
 
         expect(headerClick).toHaveBeenCalled();
-        expect(sortableTH.classes()).toContain('p-highlight');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
+        expect(sortableTH.classes()).toContain('v-highlight');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
         expect(wrapper.emitted()['update:sortField'][0]).toEqual(['code']);
         expect(wrapper.emitted()['value-change'][0]).not.toBeNull();
     });
@@ -335,25 +335,25 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const sortableTHs = wrapper.findAll('.p-sortable-column');
-        const firstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
+        const sortableTHs = wrapper.findAll('.v-sortable-column');
+        const firstCellText = wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text();
         const headerClick = vi.spyOn(wrapper.vm, 'onColumnHeaderClick');
 
         await sortableTHs[0].trigger('click');
 
         expect(headerClick).toHaveBeenCalled();
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
 
-        const seconCellText = wrapper.findAll('.p-datatable-tbody > tr')[1].findAll('td')[1].text();
+        const seconCellText = wrapper.findAll('.v-datatable-tbody > tr')[1].findAll('td')[1].text();
 
         await sortableTHs[1].trigger('click');
 
         expect(headerClick).toHaveBeenCalled();
-        expect(sortableTHs[1].classes()).toContain('p-highlight');
+        expect(sortableTHs[1].classes()).toContain('v-highlight');
         expect(wrapper.emitted()['update:multiSortMeta'][0]).toEqual([[{ field: 'code', order: 1 }]]);
         expect(wrapper.emitted()['update:multiSortMeta'][1]).toEqual([[{ field: 'name', order: 1 }]]);
         expect(wrapper.emitted()['value-change'][0]).not.toEqual(wrapper.emitted()['value-change'][1]);
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[1].findAll('td')[1].text()).not.toEqual(seconCellText);
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[1].findAll('td')[1].text()).not.toEqual(seconCellText);
     });
 
     it('should have presort', async () => {
@@ -377,10 +377,10 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const presortedTH = wrapper.findAll('.p-sortable-column')[0];
+        const presortedTH = wrapper.findAll('.v-sortable-column')[0];
 
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual('Game Controller');
-        expect(presortedTH.classes()).toContain('p-highlight');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual('Game Controller');
+        expect(presortedTH.classes()).toContain('v-highlight');
     });
 
     it('should remove sort', async () => {
@@ -403,26 +403,26 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const sortableTH = wrapper.findAll('.p-sortable-column')[0];
-        const firstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
+        const sortableTH = wrapper.findAll('.v-sortable-column')[0];
+        const firstCellText = wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text();
 
         await sortableTH.trigger('click');
 
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(firstCellText);
         expect(sortableTH.attributes()['aria-sort']).toBe('ascending');
 
-        const updatedFirstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
+        const updatedFirstCellText = wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text();
 
         await sortableTH.trigger('click');
 
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(updatedFirstCellText);
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(updatedFirstCellText);
         expect(sortableTH.attributes()['aria-sort']).toBe('descending');
 
-        const latestUpdatedFirstCellText = wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text();
+        const latestUpdatedFirstCellText = wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text();
 
         await sortableTH.trigger('click');
 
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(latestUpdatedFirstCellText);
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).not.toEqual(latestUpdatedFirstCellText);
         expect(sortableTH.attributes()['aria-sort']).toBe('none');
     });
 
@@ -458,7 +458,7 @@ describe('DataTable.vue', () => {
         await wrapper.setProps({ selection: null, selectionMode: 'single' });
 
         await wrapper.vm.onRowClick({
-            originalEvent: { target: wrapper.findAll('tr.p-selectable-row')[0].element },
+            originalEvent: { target: wrapper.findAll('tr.v-selectable-row')[0].element },
             data: smallData[0],
             index: 0
         });
@@ -472,13 +472,13 @@ describe('DataTable.vue', () => {
         await wrapper.setProps({ selection: null, selectionMode: 'multiple' });
 
         await wrapper.vm.onRowClick({
-            originalEvent: { shiftKey: true, target: wrapper.findAll('tr.p-selectable-row')[0].element },
+            originalEvent: { shiftKey: true, target: wrapper.findAll('tr.v-selectable-row')[0].element },
             data: smallData[0],
             index: 0
         });
 
         await wrapper.vm.onRowClick({
-            originalEvent: { shiftKey: true, target: wrapper.findAll('tr.p-selectable-row')[1].element },
+            originalEvent: { shiftKey: true, target: wrapper.findAll('tr.v-selectable-row')[1].element },
             data: smallData[1],
             index: 1
         });
@@ -492,13 +492,13 @@ describe('DataTable.vue', () => {
         await wrapper.setProps({ selection: null, selectionMode: 'multiple', metaKeySelection: false });
 
         await wrapper.vm.onRowClick({
-            originalEvent: { target: wrapper.findAll('tr.p-selectable-row')[0].element },
+            originalEvent: { target: wrapper.findAll('tr.v-selectable-row')[0].element },
             data: smallData[0],
             index: 0
         });
 
         await wrapper.vm.onRowClick({
-            originalEvent: { target: wrapper.findAll('tr.p-selectable-row')[1].element },
+            originalEvent: { target: wrapper.findAll('tr.v-selectable-row')[1].element },
             data: smallData[1],
             index: 1
         });
@@ -533,8 +533,8 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('td.p-selection-column').length).toBe(3);
-        expect(wrapper.findAll('.p-radiobutton').length).toBe(3);
+        expect(wrapper.findAll('td.v-selection-column').length).toBe(3);
+        expect(wrapper.findAll('.v-radiobutton').length).toBe(3);
 
         await wrapper.vm.toggleRowWithRadio({ originalEvent: {}, data: smallData[0], index: 0 });
 
@@ -569,7 +569,7 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-checkbox').length).toBe(4);
+        expect(wrapper.findAll('.v-checkbox').length).toBe(4);
 
         await wrapper.vm.toggleRowWithCheckbox({ originalEvent: {}, data: smallData[0], index: 0 });
 
@@ -640,26 +640,26 @@ describe('DataTable.vue', () => {
     it('should scrolling', async () => {
         await wrapper.setProps({ scrollable: true });
 
-        expect(wrapper.find('.p-datatable-scrollable').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-scrollable').exists()).toBe(true);
     });
 
     it('should vertical scroll', async () => {
         await wrapper.setProps({ scrollable: true, scrollHeight: '100px' });
 
-        expect(wrapper.find('.p-datatable-wrapper').attributes().style).toBe('overflow: auto; max-height: 100px;');
+        expect(wrapper.find('.v-datatable-wrapper').attributes().style).toBe('overflow: auto; max-height: 100px;');
     });
 
     it('should flex scrolling', async () => {
         await wrapper.setProps({ scrollable: true, scrollHeight: 'flex' });
 
-        expect(wrapper.find('.p-datatable-flex-scrollable').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-flex-scrollable').exists()).toBe(true);
     });
 
     it('should have frozen rows', async () => {
         await wrapper.setProps({ frozenValue: [smallData[0]], scrollable: true, scrollHeight: '100px', scrollDirection: 'both' });
 
-        expect(wrapper.findAll('.p-datatable-tbody')[0].classes()).toContain('p-datatable-frozen-tbody');
-        expect(wrapper.findAll('.p-datatable-tbody')[0].attributes().style).toBe('top: 0px;');
+        expect(wrapper.findAll('.v-datatable-tbody')[0].classes()).toContain('v-datatable-frozen-tbody');
+        expect(wrapper.findAll('.v-datatable-tbody')[0].attributes().style).toBe('top: 0px;');
     });
 
     // frozen columns
@@ -686,17 +686,17 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.find('th.p-frozen-column').exists()).toBe(true);
-        // expect(wrapper.find('th.p-frozen-column').attributes().style).toBe('left: 0px;');
-        expect(wrapper.findAll('td.p-frozen-column').length).toBe(3);
-        // expect(wrapper.findAll('td.p-frozen-column')[0].attributes().style).toBe('left: 0px;');
+        expect(wrapper.find('th.v-frozen-column').exists()).toBe(true);
+        // expect(wrapper.find('th.v-frozen-column').attributes().style).toBe('left: 0px;');
+        expect(wrapper.findAll('td.v-frozen-column').length).toBe(3);
+        // expect(wrapper.findAll('td.v-frozen-column')[0].attributes().style).toBe('left: 0px;');
     });
 
     // lazy loading
 
     // row expansion
     it('should have row toggler', () => {
-        expect(wrapper.findAll('.p-row-toggler').length).toBe(3);
+        expect(wrapper.findAll('.v-row-toggler').length).toBe(3);
     });
 
     it('should expand a row', async () => {
@@ -752,14 +752,14 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-editable-column').length).toBe(6);
-        expect(wrapper.findAll('.p-row-editor-init').length).toBe(3);
+        expect(wrapper.findAll('.v-editable-column').length).toBe(6);
+        expect(wrapper.findAll('.v-row-editor-init').length).toBe(3);
 
         await wrapper.vm.onRowEditInit({ data: smallData[0] });
 
         expect(wrapper.emitted()['update:editingRows'][0][0]).toEqual([smallData[0]]);
         expect(wrapper.emitted()['row-edit-init'][0][0].data).toEqual(smallData[0]);
-        expect(wrapper.findAll('.p-datatable-tbody > tr > td')[wrapper.findAll('.p-datatable-tbody > tr > td').length - 1].find('.p-row-editor-init').exists()).toBe(true);
+        expect(wrapper.findAll('.v-datatable-tbody > tr > td')[wrapper.findAll('.v-datatable-tbody > tr > td').length - 1].find('.v-row-editor-init').exists()).toBe(true);
     });
 
     it('should save row editing', async () => {
@@ -858,9 +858,9 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-datatable.p-component').classes()).toContain('p-datatable-resizable');
-        expect(wrapper.find('.p-datatable.p-component').classes()).toContain('p-datatable-resizable-fit');
-        expect(wrapper.findAll('.p-column-resizer').length).toBe(2);
+        expect(wrapper.find('.v-datatable.v-component').classes()).toContain('v-datatable-resizable');
+        expect(wrapper.find('.v-datatable.v-component').classes()).toContain('v-datatable-resizable-fit');
+        expect(wrapper.findAll('.v-column-resizer').length).toBe(2);
     });
 
     it('should fit mode resize start', async () => {
@@ -884,12 +884,12 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const resizer = wrapper.findAll('.p-column-resizer')[0];
+        const resizer = wrapper.findAll('.v-column-resizer')[0];
 
         await wrapper.vm.onColumnResizeStart({ target: resizer.element });
 
         expect(wrapper.componentVM.columnResizing).toBe(true);
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none;');
     });
 
     it('should fit mode resize', async () => {
@@ -915,7 +915,7 @@ describe('DataTable.vue', () => {
 
         await wrapper.vm.onColumnResize({});
 
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none; height: 0px; top: 0px;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none; height: 0px; top: 0px;');
     });
 
     it('should fit mode column resize end', async () => {
@@ -939,13 +939,13 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const resizer = wrapper.findAll('.p-column-resizer')[0];
+        const resizer = wrapper.findAll('.v-column-resizer')[0];
 
         await wrapper.vm.onColumnResizeStart({ target: resizer.element });
 
         await wrapper.vm.onColumnResizeEnd();
 
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none;');
     });
 
     it('should expand mode resize start', async () => {
@@ -969,12 +969,12 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const resizer = wrapper.findAll('.p-column-resizer')[0];
+        const resizer = wrapper.findAll('.v-column-resizer')[0];
 
         await wrapper.vm.onColumnResizeStart({ target: resizer.element });
 
         expect(wrapper.componentVM.columnResizing).toBe(true);
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none;');
     });
 
     it('should fit mode resize', async () => {
@@ -1000,7 +1000,7 @@ describe('DataTable.vue', () => {
 
         await wrapper.vm.onColumnResize({});
 
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none; height: 0px; top: 0px;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none; height: 0px; top: 0px;');
     });
 
     it('should fit mode column resize end', async () => {
@@ -1024,21 +1024,21 @@ describe('DataTable.vue', () => {
             }
         });
 
-        const resizer = wrapper.findAll('.p-column-resizer')[0];
+        const resizer = wrapper.findAll('.v-column-resizer')[0];
 
         await wrapper.vm.onColumnResizeStart({ target: resizer.element });
 
         await wrapper.vm.onColumnResizeEnd();
 
-        expect(wrapper.find('.p-column-resizer-helper').attributes().style).toContain('display: none;');
+        expect(wrapper.find('.v-column-resizer-helper').attributes().style).toContain('display: none;');
     });
 
     // column reorder
     it('should reorder columns', async () => {
         await wrapper.setProps({ reorderableColumns: true });
 
-        expect(wrapper.find('.p-datatable-reorder-indicator-up').exists()).toBe(true);
-        expect(wrapper.find('.p-datatable-reorder-indicator-down').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-reorder-indicator-up').exists()).toBe(true);
+        expect(wrapper.find('.v-datatable-reorder-indicator-down').exists()).toBe(true);
     });
 
     // row reorder
@@ -1062,7 +1062,7 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-datatable-reorderablerow-handle').length).toBe(3);
+        expect(wrapper.findAll('.v-datatable-reorderablerow-handle').length).toBe(3);
     });
 
     // row group
@@ -1094,9 +1094,9 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-datatable-tbody').attributes().role).toBe('rowgroup');
-        expect(wrapper.findAll('.p-column-header-content').length).toBe(1);
-        expect(wrapper.find('.p-column-header-content').text()).toBe('Code');
+        expect(wrapper.find('.v-datatable-tbody').attributes().role).toBe('rowgroup');
+        expect(wrapper.findAll('.v-column-header-content').length).toBe(1);
+        expect(wrapper.find('.v-column-header-content').text()).toBe('Code');
     });
 
     it('should have groupheader templating', () => {
@@ -1126,8 +1126,8 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-rowgroup-header').length).toBe(3);
-        expect(wrapper.find('.p-rowgroup-header').text()).toBe('GroupHeader Templating');
+        expect(wrapper.findAll('.v-rowgroup-header').length).toBe(3);
+        expect(wrapper.find('.v-rowgroup-header').text()).toBe('GroupHeader Templating');
     });
 
     it('should have groupfooter templating', () => {
@@ -1157,8 +1157,8 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-rowgroup-header').length).toBe(3);
-        expect(wrapper.find('.p-rowgroup-footer').text()).toBe('GroupFooter Templating');
+        expect(wrapper.findAll('.v-rowgroup-header').length).toBe(3);
+        expect(wrapper.find('.v-rowgroup-footer').text()).toBe('GroupFooter Templating');
     });
 
     it('should have expandable row groups and expand rows', async () => {
@@ -1275,11 +1275,11 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-datatable-thead > tr > th').length).toBe(3);
-        expect(wrapper.findAll('.p-datatable-tbody > tr.p-rowgroup-header').length).toBe(2);
-        expect(wrapper.findAll('.p-datatable-tbody > tr.p-rowgroup-header')[0].text()).toBe('Amy Elsner');
+        expect(wrapper.findAll('.v-datatable-thead > tr > th').length).toBe(3);
+        expect(wrapper.findAll('.v-datatable-tbody > tr.v-rowgroup-header').length).toBe(2);
+        expect(wrapper.findAll('.v-datatable-tbody > tr.v-rowgroup-header')[0].text()).toBe('Amy Elsner');
 
-        const firstToggler = wrapper.findAll('.p-row-toggler')[0];
+        const firstToggler = wrapper.findAll('.v-row-toggler')[0];
 
         await firstToggler.trigger('click');
 
@@ -1349,12 +1349,12 @@ describe('DataTable.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-datatable-thead > tr').findAll('th')[0].text()).toBe('#');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[0].text()).toBe('0');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].text()).toBe('Black Watch');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[0].findAll('td')[1].attributes().rowspan).toBe('2');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[2].findAll('td')[1].attributes().rowspan).toBe('2');
-        expect(wrapper.findAll('.p-datatable-tbody > tr')[4].findAll('td')[1].attributes().rowspan).toBe('2');
+        expect(wrapper.find('.v-datatable-thead > tr').findAll('th')[0].text()).toBe('#');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[0].text()).toBe('0');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].text()).toBe('Black Watch');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[0].findAll('td')[1].attributes().rowspan).toBe('2');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[2].findAll('td')[1].attributes().rowspan).toBe('2');
+        expect(wrapper.findAll('.v-datatable-tbody > tr')[4].findAll('td')[1].attributes().rowspan).toBe('2');
     });
 
     // export
@@ -1401,11 +1401,11 @@ describe('DataTable.vue', () => {
     it('should have stack layout', async () => {
         await wrapper.setProps({ responsiveLayout: 'stack' });
 
-        expect(wrapper.find('.p-datatable').classes()).toContain('p-datatable-responsive-stack');
+        expect(wrapper.find('.v-datatable').classes()).toContain('v-datatable-responsive-stack');
     });
 
     it('should have scroll layout', () => {
-        expect(wrapper.find('.p-datatable').classes()).toContain('p-datatable-responsive-scroll');
+        expect(wrapper.find('.v-datatable').classes()).toContain('v-datatable-responsive-scroll');
     });
 
     // row styling

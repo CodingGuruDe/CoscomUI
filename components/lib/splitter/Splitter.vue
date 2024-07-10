@@ -1,5 +1,5 @@
 <template>
-    <div :class="cx('root')" :style="sx('root')" :data-p-resizing="false" v-bind="ptmi('root', getPTOptions)">
+    <div :class="cx('root')" :style="sx('root')" :data-v-resizing="false" v-bind="ptmi('root', getPTOptions)">
         <template v-for="(panel, i) of panels" :key="i">
             <component :is="panel" tabindex="-1"></component>
             <div
@@ -12,7 +12,7 @@
                 @touchstart="onGutterTouchStart($event, i)"
                 @touchmove="onGutterTouchMove($event, i)"
                 @touchend="onGutterTouchEnd($event, i)"
-                :data-p-gutter-resizing="false"
+                :data-v-gutter-resizing="false"
                 v-bind="ptm('gutter')"
             >
                 <div :class="cx('gutterHandler')" tabindex="0" :style="[gutterStyle]" :aria-orientation="layout" :aria-valuenow="prevSize" @keyup="onGutterKeyUp" @keydown="onGutterKeyDown($event, i)" v-bind="ptm('gutterHandler')"></div>

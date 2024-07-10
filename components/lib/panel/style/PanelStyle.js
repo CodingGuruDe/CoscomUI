@@ -2,18 +2,18 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-panel p-component',
+        'v-panel v-component',
         {
-            'p-panel-toggleable': props.toggleable
+            'v-panel-toggleable': props.toggleable
         }
     ],
-    header: 'p-panel-header',
-    title: 'p-panel-title',
-    icons: 'p-panel-icons',
-    toggler: 'p-panel-header-icon p-panel-toggler p-link',
-    toggleablecontent: 'p-toggleable-content',
-    content: 'p-panel-content',
-    footer: 'p-panel-footer'
+    header: 'v-panel-header',
+    title: 'v-panel-title',
+    icons: 'v-panel-icons',
+    toggler: 'v-panel-header-icon p-panel-toggler v-link',
+    toggleablecontent: 'v-toggleable-content',
+    content: 'v-panel-content',
+    footer: 'v-panel-footer'
 };
 
 export default BaseStyle.extend({

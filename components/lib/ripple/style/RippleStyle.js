@@ -1,7 +1,7 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: 'p-ink'
+    root: 'v-ink'
 };
 
 export default BaseStyle.extend({

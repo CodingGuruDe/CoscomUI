@@ -13,8 +13,8 @@
                 :aria-setsize="getAriaSetSize()"
                 :aria-posinset="getAriaPosInset(index)"
                 v-bind="getPTOptions('menuitem', processedItem, index)"
-                :data-p-focused="isItemFocused(processedItem)"
-                :data-p-disabled="isItemDisabled(processedItem)"
+                :data-v-focused="isItemFocused(processedItem)"
+                :data-v-disabled="isItemDisabled(processedItem)"
             >
                 <div :class="cx('content')" @click="onItemClick($event, processedItem)" @mousemove="onItemMouseMove($event, processedItem)" v-bind="getPTOptions('content', processedItem, index)">
                     <template v-if="!templates.item">

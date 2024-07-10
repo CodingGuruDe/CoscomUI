@@ -9,30 +9,30 @@ describe('Skeleton.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-skeleton.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-skeleton.v-component').exists()).toBe(true);
     });
 
     it('should get width and height', async () => {
         await wrapper.setProps({ width: '5rem', height: '2rem', borderRadius: '10px' });
 
-        expect(wrapper.find('.p-skeleton').attributes().style).toEqual('position: relative; width: 5rem; height: 2rem; border-radius: 10px;');
+        expect(wrapper.find('.v-skeleton').attributes().style).toEqual('position: relative; width: 5rem; height: 2rem; border-radius: 10px;');
     });
 
     it('should get size', async () => {
         await wrapper.setProps({ size: '4rem' });
 
-        expect(wrapper.find('.p-skeleton').attributes().style).toEqual('position: relative; width: 4rem; height: 4rem;');
+        expect(wrapper.find('.v-skeleton').attributes().style).toEqual('position: relative; width: 4rem; height: 4rem;');
     });
 
     it('should get shape', async () => {
         await wrapper.setProps({ shape: 'circle' });
 
-        expect(wrapper.find('.p-skeleton').classes()).toContain('p-skeleton-circle');
+        expect(wrapper.find('.v-skeleton').classes()).toContain('v-skeleton-circle');
     });
 
     it('should remove animation', async () => {
         await wrapper.setProps({ animation: 'none' });
 
-        expect(wrapper.find('.p-skeleton').classes()).toContain('p-skeleton-none');
+        expect(wrapper.find('.v-skeleton').classes()).toContain('v-skeleton-none');
     });
 });

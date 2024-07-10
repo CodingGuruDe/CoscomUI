@@ -17,16 +17,16 @@ beforeEach(() => {
 
 describe('Avatar.vue', () => {
     it('should exist', () => {
-        expect(wrapper.find('.p-avatar.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-avatar-lg').exists()).toBe(true);
-        expect(wrapper.find('.p-avatar-circle').exists()).toBe(true);
-        expect(wrapper.find('.p-avatar-text').exists()).toBe(true);
-        expect(wrapper.find('.p-avatar-text').text()).toBe('T');
+        expect(wrapper.find('.v-avatar.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar-lg').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar-circle').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar-text').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar-text').text()).toBe('T');
     });
 
     it('should exist', async () => {
         await wrapper.setProps({ image: 'imageTest' });
-        const image = wrapper.find('.p-avatar-image');
+        const image = wrapper.find('.v-avatar-image');
 
         await wrapper.vm.onError();
 

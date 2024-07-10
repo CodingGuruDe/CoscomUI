@@ -1,5 +1,5 @@
 <template>
-    <td :style="containerStyle" :class="containerClass" role="cell" :colspan="columnProp('colspan')" :rowspan="columnProp('rowspan')" v-bind="{ ...getColumnPT('root'), ...getColumnPT('footerCell') }" :data-p-frozen-column="columnProp('frozen')">
+    <td :style="containerStyle" :class="containerClass" role="cell" :colspan="columnProp('colspan')" :rowspan="columnProp('rowspan')" v-bind="{ ...getColumnPT('root'), ...getColumnPT('footerCell') }" :data-v-frozen-column="columnProp('frozen')">
         <component v-if="column.children && column.children.footer" :is="column.children.footer" :column="column" />
         {{ columnProp('footer') }}
     </td>
@@ -69,7 +69,7 @@ export default {
 
                 if (align === 'right') {
                     let right = 0;
-                    let next = DomHandler.getNextElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let next = DomHandler.getNextElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (next) {
                         right = DomHandler.getOuterWidth(next) + parseFloat(next.style.right || 0);
@@ -78,7 +78,7 @@ export default {
                     this.styleObject.right = right + 'px';
                 } else {
                     let left = 0;
-                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-p-frozen-column="true"]');
+                    let prev = DomHandler.getPreviousElementSibling(this.$el, '[data-v-frozen-column="true"]');
 
                     if (prev) {
                         left = DomHandler.getOuterWidth(prev) + parseFloat(prev.style.left || 0);

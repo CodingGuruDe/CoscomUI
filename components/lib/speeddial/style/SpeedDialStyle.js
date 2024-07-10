@@ -14,37 +14,37 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        `p-speeddial p-component p-speeddial-${props.type}`,
+        `v-speeddial v-component v-speeddial-${props.type}`,
         {
-            [`p-speeddial-direction-${props.direction}`]: props.type !== 'circle',
-            'p-speeddial-opened': instance.d_visible,
-            'p-disabled': props.disabled
+            [`v-speeddial-direction-${props.direction}`]: props.type !== 'circle',
+            'v-speeddial-opened': instance.d_visible,
+            'v-disabled': props.disabled
         }
     ],
     button: ({ props }) => [
-        'p-speeddial-button p-button-rounded',
+        'v-speeddial-button v-button-rounded',
         {
-            'p-speeddial-rotate': props.rotateAnimation && !props.hideIcon
+            'v-speeddial-rotate': props.rotateAnimation && !props.hideIcon
         }
     ],
-    menu: 'p-speeddial-list',
+    menu: 'v-speeddial-list',
     menuitem: ({ instance, id }) => [
-        'p-speeddial-item',
+        'v-speeddial-item',
         {
-            'p-focus': instance.isItemActive(id)
+            'v-focus': instance.isItemActive(id)
         }
     ],
     action: ({ item }) => [
-        'p-speeddial-action',
+        'v-speeddial-action',
         {
-            'p-disabled': item.disabled
+            'v-disabled': item.disabled
         }
     ],
-    actionIcon: 'p-speeddial-action-icon',
+    actionIcon: 'v-speeddial-action-icon',
     mask: ({ instance }) => [
-        'p-speeddial-mask',
+        'v-speeddial-mask',
         {
-            'p-speeddial-mask-visible': instance.d_visible
+            'v-speeddial-mask-visible': instance.d_visible
         }
     ]
 };

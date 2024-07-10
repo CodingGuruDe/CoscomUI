@@ -2,7 +2,7 @@
     backdrop-filter: blur(20px);
     background-color: var(--mobile-menu-bg);
 
-    .p-selectbutton {
+    .v-selectbutton {
         .p-button {
             padding: 0.5rem 1rem;
         }
@@ -21,8 +21,8 @@
         }
     }
 
-    .p-inputswitch {
-        .p-inputswitch-slider {
+    .v-inputswitch {
+        .v-inputswitch-slider {
             border-radius: 30px;
             
             &:before {

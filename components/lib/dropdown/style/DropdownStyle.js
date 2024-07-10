@@ -2,60 +2,60 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props, state }) => [
-        'p-dropdown p-component p-inputwrapper',
+        'v-dropdown v-component v-inputwrapper',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
-            'p-dropdown-clearable': props.showClear,
-            'p-focus': state.focused,
-            'p-inputwrapper-filled': instance.hasSelectedOption,
-            'p-inputwrapper-focus': state.focused || state.overlayVisible,
-            'p-overlay-open': state.overlayVisible
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled',
+            'v-dropdown-clearable': props.showClear,
+            'v-focus': state.focused,
+            'v-inputwrapper-filled': instance.hasSelectedOption,
+            'v-inputwrapper-focus': state.focused || state.overlayVisible,
+            'v-overlay-open': state.overlayVisible
         }
     ],
     input: ({ instance, props }) => [
-        'p-dropdown-label p-inputtext',
+        'v-dropdown-label v-inputtext',
         {
-            'p-placeholder': !props.editable && instance.label === props.placeholder,
-            'p-dropdown-label-empty': !props.editable && !instance.$slots['value'] && (instance.label === 'p-emptylabel' || instance.label?.length === 0)
+            'v-placeholder': !props.editable && instance.label === props.placeholder,
+            'v-dropdown-label-empty': !props.editable && !instance.$slots['value'] && (instance.label === 'v-emptylabel' || instance.label?.length === 0)
         }
     ],
-    clearIcon: 'p-dropdown-clear-icon',
-    trigger: 'p-dropdown-trigger',
-    loadingicon: 'p-dropdown-trigger-icon',
-    dropdownIcon: 'p-dropdown-trigger-icon',
+    clearIcon: 'v-dropdown-clear-icon',
+    trigger: 'v-dropdown-trigger',
+    loadingicon: 'v-dropdown-trigger-icon',
+    dropdownIcon: 'v-dropdown-trigger-icon',
     panel: ({ props, instance }) => [
-        'p-dropdown-panel p-component',
+        'v-dropdown-panel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    header: 'p-dropdown-header',
-    filterContainer: 'p-dropdown-filter-container',
+    header: 'v-dropdown-header',
+    filterContainer: 'v-dropdown-filter-container',
     filterInput: ({ props, instance }) => [
-        'p-dropdown-filter p-inputtext p-component',
+        'v-dropdown-filter v-inputtext v-component',
         {
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
-    filterIcon: 'p-dropdown-filter-icon',
-    wrapper: 'p-dropdown-items-wrapper',
-    list: 'p-dropdown-items',
-    itemGroup: 'p-dropdown-item-group',
-    itemGroupLabel: 'p-dropdown-item-group-label',
+    filterIcon: 'v-dropdown-filter-icon',
+    wrapper: 'v-dropdown-items-wrapper',
+    list: 'v-dropdown-items',
+    itemGroup: 'v-dropdown-item-group',
+    itemGroupLabel: 'v-dropdown-item-group-label',
     item: ({ instance, props, state, option, focusedOption }) => [
-        'p-dropdown-item',
+        'v-dropdown-item',
         {
-            'p-highlight': instance.isSelected(option) && props.highlightOnSelect,
-            'p-focus': state.focusedOptionIndex === focusedOption,
-            'p-disabled': instance.isOptionDisabled(option)
+            'v-highlight': instance.isSelected(option) && props.highlightOnSelect,
+            'v-focus': state.focusedOptionIndex === focusedOption,
+            'v-disabled': instance.isOptionDisabled(option)
         }
     ],
-    itemLabel: 'p-dropdown-item-label',
-    checkIcon: 'p-dropdown-check-icon',
-    blankIcon: 'p-dropdown-blank-icon',
-    emptyMessage: 'p-dropdown-empty-message'
+    itemLabel: 'v-dropdown-item-label',
+    checkIcon: 'v-dropdown-check-icon',
+    blankIcon: 'v-dropdown-blank-icon',
+    emptyMessage: 'v-dropdown-empty-message'
 };
 
 export default BaseStyle.extend({

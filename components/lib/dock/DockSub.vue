@@ -26,8 +26,8 @@
                     @click="onItemClick($event, processedItem)"
                     @mouseenter="onItemMouseEnter(index)"
                     v-bind="getPTOptions('menuitem', processedItem, index)"
-                    :data-p-focused="isItemActive(getItemId(index))"
-                    :data-p-disabled="disabled(processedItem) || false"
+                    :data-v-focused="isItemActive(getItemId(index))"
+                    :data-v-disabled="disabled(processedItem) || false"
                 >
                     <div :class="cx('content')" v-bind="getPTOptions('content', processedItem, index)">
                         <template v-if="!templates['item']">

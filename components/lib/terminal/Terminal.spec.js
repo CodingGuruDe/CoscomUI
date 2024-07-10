@@ -35,8 +35,8 @@ describe('Terminal.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-terminal.p-component').exists()).toBe(true);
-        expect(wrapper.find('input.p-terminal-input').exists()).toBe(true);
+        expect(wrapper.find('.v-terminal.v-component').exists()).toBe(true);
+        expect(wrapper.find('input.v-terminal-input').exists()).toBe(true);
     });
 
     it('should return invalid command', async () => {
@@ -71,7 +71,7 @@ describe('Terminal.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-terminal.p-component').exists()).toBe(true);
-        expect(wrapper.find('input.p-terminal-input').exists()).toBe(true);
+        expect(wrapper.find('.v-terminal.v-component').exists()).toBe(true);
+        expect(wrapper.find('input.v-terminal-input').exists()).toBe(true);
     });
 });

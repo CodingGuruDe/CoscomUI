@@ -16,8 +16,8 @@ describe('Image.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-image.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-image.p-component img').attributes().src).toBe('images/galleria/galleria1.jpg');
+        expect(wrapper.find('.v-image.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-image.v-component img').attributes().src).toBe('images/galleria/galleria1.jpg');
     });
 
     it('should preview', async () => {
@@ -34,13 +34,13 @@ describe('Image.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-image-preview-container').exists()).toBe(true);
-        expect(wrapper.find('.p-image-preview-indicator').exists()).toBe(true);
-        expect(wrapper.find('.p-image-mask').exists()).toBe(false);
+        expect(wrapper.find('.v-image-preview-container').exists()).toBe(true);
+        expect(wrapper.find('.v-image-preview-indicator').exists()).toBe(true);
+        expect(wrapper.find('.v-image-mask').exists()).toBe(false);
 
         await wrapper.setData({ maskVisible: true });
 
-        expect(wrapper.find('.p-image-mask').exists()).toBe(true);
-        expect(wrapper.find('.p-image-toolbar').exists()).toBe(true);
+        expect(wrapper.find('.v-image-mask').exists()).toBe(true);
+        expect(wrapper.find('.v-image-toolbar').exists()).toBe(true);
     });
 });

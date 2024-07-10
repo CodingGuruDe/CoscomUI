@@ -1,6 +1,6 @@
 <template>
     <Portal>
-        <transition name="p-confirm-popup" @enter="onEnter" @after-enter="onAfterEnter" @leave="onLeave" @after-leave="onAfterLeave" v-bind="ptm('transition')">
+        <transition name="v-confirm-popup" @enter="onEnter" @after-enter="onAfterEnter" @leave="onLeave" @after-leave="onAfterLeave" v-bind="ptm('transition')">
             <div v-if="visible" :ref="containerRef" v-focustrap role="alertdialog" :class="cx('root')" :aria-modal="visible" @click="onOverlayClick" @keydown="onOverlayKeydown" v-bind="ptmi('root')">
                 <slot v-if="$slots.container" name="container" :message="confirmation" :onAccept="accept" :onReject="reject" :acceptCallback="accept" :rejectCallback="reject"></slot>
                 <template v-else>
@@ -185,8 +185,8 @@ export default {
             this.container.style.setProperty('--overlayArrowLeft', `${arrowLeft}px`);
 
             if (containerOffset.top < targetOffset.top) {
-                this.container.setAttribute('data-p-confirm-popup-flipped', 'true');
-                !this.isUnstyled && DomHandler.addClass(this.container, 'p-confirm-popup-flipped');
+                this.container.setAttribute('data-v-confirm-popup-flipped', 'true');
+                !this.isUnstyled && DomHandler.addClass(this.container, 'v-confirm-popup-flipped');
             }
         },
         bindOutsideClickListener() {

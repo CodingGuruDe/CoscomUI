@@ -15,38 +15,38 @@ describe('Menubar.vue', () => {
                 model: [
                     {
                         label: 'File',
-                        icon: 'cs el-fw pi-file',
+                        icon: 'cs el-fw el-file',
                         items: [
                             {
                                 label: 'New',
-                                icon: 'cs el-fw pi-plus',
+                                icon: 'cs el-fw el-plus',
                                 items: [
                                     {
                                         label: 'Bookmark',
-                                        icon: 'cs el-fw pi-bookmark'
+                                        icon: 'cs el-fw el-bookmark'
                                     },
                                     {
                                         label: 'Video',
-                                        icon: 'cs el-fw pi-video'
+                                        icon: 'cs el-fw el-video'
                                     }
                                 ]
                             },
                             {
                                 label: 'Delete',
-                                icon: 'cs el-fw pi-trash'
+                                icon: 'cs el-fw el-trash'
                             },
                             {
                                 separator: true
                             },
                             {
                                 label: 'Export',
-                                icon: 'cs el-fw pi-external-link'
+                                icon: 'cs el-fw el-external-link'
                             }
                         ]
                     },
                     {
                         label: 'Quit',
-                        icon: 'cs el-fw pi-power-off'
+                        icon: 'cs el-fw el-power-off'
                     }
                 ]
             },
@@ -58,17 +58,17 @@ describe('Menubar.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-menubar.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-menubar-root-list').exists()).toBe(true);
-        expect(wrapper.findAll('ul.p-submenu-list').length).toBe(2);
-        expect(wrapper.findAll('ul.p-submenu-list')[0].findAll('li.p-menuitem')[0].find('.p-menuitem-text').text()).toBe('New');
-        expect(wrapper.findAll('li.p-menuitem').length).toBe(7);
-        expect(wrapper.findAll('li.p-menuitem-separator').length).toBe(1);
+        expect(wrapper.find('.v-menubar.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-menubar-root-list').exists()).toBe(true);
+        expect(wrapper.findAll('ul.v-submenu-list').length).toBe(2);
+        expect(wrapper.findAll('ul.v-submenu-list')[0].findAll('li.v-menuitem')[0].find('.v-menuitem-text').text()).toBe('New');
+        expect(wrapper.findAll('li.v-menuitem').length).toBe(7);
+        expect(wrapper.findAll('li.v-menuitem-separator').length).toBe(1);
     });
 
     it('should slot visible', () => {
-        expect(wrapper.find('.p-menubar-start').exists()).toBe(true);
-        expect(wrapper.find('.p-menubar-end').exists()).toBe(true);
-        expect(wrapper.find('.p-menubar-end').text()).toBe('End Slot');
+        expect(wrapper.find('.v-menubar-start').exists()).toBe(true);
+        expect(wrapper.find('.v-menubar-end').exists()).toBe(true);
+        expect(wrapper.find('.v-menubar-end').text()).toBe('End Slot');
     });
 });

@@ -30,7 +30,7 @@ describe('ScrollPanel.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-scrollpanel.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-scrollpanel.v-component').exists()).toBe(true);
     });
 
     it('should scroll down y', async () => {
@@ -38,7 +38,7 @@ describe('ScrollPanel.vue', () => {
 
         await wrapper.vm.onYBarMouseDown(event);
 
-        expect(wrapper.find('.p-scrollpanel-bar-y').classes()).toContain('p-scrollpanel-grabbed');
+        expect(wrapper.find('.v-scrollpanel-bar-y').classes()).toContain('v-scrollpanel-grabbed');
     });
 
     it('should scroll down x', async () => {
@@ -46,6 +46,6 @@ describe('ScrollPanel.vue', () => {
 
         await wrapper.vm.onXBarMouseDown(event);
 
-        expect(wrapper.find('.p-scrollpanel-bar-x').classes()).toContain('p-scrollpanel-grabbed');
+        expect(wrapper.find('.v-scrollpanel-bar-x').classes()).toContain('v-scrollpanel-grabbed');
     });
 });

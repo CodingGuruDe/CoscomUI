@@ -75,16 +75,16 @@ describe('Carousel.vue', () => {
             }
         });
 
-        expect(wrapper.findAll('.p-carousel-item').length).toBe(4);
+        expect(wrapper.findAll('.v-carousel-item').length).toBe(4);
 
-        const firstItem = wrapper.findAll('.p-carousel-item')[0];
+        const firstItem = wrapper.findAll('.v-carousel-item')[0];
 
-        expect(firstItem.classes()).toContain('p-carousel-item-active');
+        expect(firstItem.classes()).toContain('v-carousel-item-active');
 
-        const nextBtn = wrapper.find('.p-carousel-next');
+        const nextBtn = wrapper.find('.v-carousel-next');
 
         await nextBtn.trigger('click');
 
-        expect(firstItem.classes()).not.toContain('p-carousel-item-active');
+        expect(firstItem.classes()).not.toContain('v-carousel-item-active');
     });
 });

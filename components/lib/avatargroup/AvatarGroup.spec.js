@@ -15,7 +15,7 @@ describe('AvatarGroup.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-avatar-group.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-avatar.p-component').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar-group.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-avatar.v-component').exists()).toBe(true);
     });
 });

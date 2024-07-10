@@ -13,27 +13,27 @@ describe('ProgressBar.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-progressbar.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-progressbar').attributes()['aria-valuemin']).toBe('0');
-        expect(wrapper.find('.p-progressbar').attributes()['aria-valuemax']).toBe('100');
+        expect(wrapper.find('.v-progressbar.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-progressbar').attributes()['aria-valuemin']).toBe('0');
+        expect(wrapper.find('.v-progressbar').attributes()['aria-valuemax']).toBe('100');
     });
 
     it('should value work', async () => {
         await wrapper.setProps({ value: 10 });
 
-        expect(wrapper.find('.p-progressbar').attributes()['aria-valuenow']).toBe('10');
-        expect(wrapper.find('.p-progressbar-label').text()).toBe('10%');
+        expect(wrapper.find('.v-progressbar').attributes()['aria-valuenow']).toBe('10');
+        expect(wrapper.find('.v-progressbar-label').text()).toBe('10%');
     });
 
     it('should not show value', async () => {
         await wrapper.setProps({ showValue: false });
 
-        expect(wrapper.find('.p-progressbar-label').exists()).toBe(false);
+        expect(wrapper.find('.v-progressbar-label').exists()).toBe(false);
     });
 
     it('should be indeterminated', async () => {
         await wrapper.setProps({ mode: 'indeterminate' });
 
-        expect(wrapper.find('.p-progressbar-indeterminate-container').exists()).toBe(true);
+        expect(wrapper.find('.v-progressbar-indeterminate-container').exists()).toBe(true);
     });
 });

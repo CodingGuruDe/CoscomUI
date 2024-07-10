@@ -55,7 +55,7 @@ export default {
             this.focus();
         },
         onBeforeLeave() {
-            !this.isUnstyled && DomHandler.addClass(this.mask, 'p-component-overlay-leave');
+            !this.isUnstyled && DomHandler.addClass(this.mask, 'v-component-overlay-leave');
         },
         onAfterLeave(el) {
             ZIndexUtils.clear(el);

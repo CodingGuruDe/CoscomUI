@@ -46,14 +46,14 @@ describe('PickList.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-picklist.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-picklist-list-wrapper.p-picklist-source-wrapper').exists()).toBe(true);
-        expect(wrapper.find('.p-picklist-list-wrapper.p-picklist-target-wrapper').exists()).toBe(true);
+        expect(wrapper.find('.v-picklist.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-picklist-list-wrapper.v-picklist-source-wrapper').exists()).toBe(true);
+        expect(wrapper.find('.v-picklist-list-wrapper.v-picklist-target-wrapper').exists()).toBe(true);
     });
 
     it('should slots work', () => {
-        expect(wrapper.find('.p-picklist-source-wrapper > .p-picklist-header').text()).toBe('Available');
-        expect(wrapper.find('.p-picklist-target-wrapper > .p-picklist-header').text()).toBe('Selected');
+        expect(wrapper.find('.v-picklist-source-wrapper > .v-picklist-header').text()).toBe('Available');
+        expect(wrapper.find('.v-picklist-target-wrapper > .v-picklist-header').text()).toBe('Selected');
     });
 
     it('should update sourceList and targetList', async () => {

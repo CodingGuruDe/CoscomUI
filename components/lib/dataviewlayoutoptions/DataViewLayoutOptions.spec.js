@@ -9,7 +9,7 @@ describe('DataViewLayoutOptions.vue', () => {
             }
         });
 
-        expect(wrapper.find('.p-dataview-layout-options').exists()).toBe(true);
+        expect(wrapper.find('.v-dataview-layout-options').exists()).toBe(true);
 
         wrapper.vm.$emit('update:modelValue', 'list');
 

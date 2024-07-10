@@ -11,7 +11,7 @@ describe('StyleClass', () => {
     it('should work with next selector', async () => {
         const wrapper = mount({
             template: `
-                <Button label="Toggle p-disabled" v-styleclass="{ selector: '@next', toggleClass: 'p-disabled' }" />
+                <Button label="Toggle p-disabled" v-styleclass="{ selector: '@next', toggleClass: 'v-disabled' }" />
                 <InputText class="block mt-3" />
             `,
             components: {
@@ -20,17 +20,17 @@ describe('StyleClass', () => {
             }
         });
 
-        const button = wrapper.find('.p-button');
-        const input = wrapper.find('.p-inputtext');
+        const button = wrapper.find('.v-button');
+        const input = wrapper.find('.v-inputtext');
 
-        expect(input.classes()).not.toContain('p-disabled');
-
-        await button.trigger('click');
-
-        expect(input.classes()).toContain('p-disabled');
+        expect(input.classes()).not.toContain('v-disabled');
 
         await button.trigger('click');
 
-        expect(input.classes()).not.toContain('p-disabled');
+        expect(input.classes()).toContain('v-disabled');
+
+        await button.trigger('click');
+
+        expect(input.classes()).not.toContain('v-disabled');
     });
 });

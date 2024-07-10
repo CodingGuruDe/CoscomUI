@@ -6,73 +6,73 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance }) => [
-        'p-megamenu p-component',
+        'v-megamenu v-component',
         {
-            'p-megamenu-mobile': instance.queryMatches,
-            'p-megamenu-mobile-active': instance.mobileActive,
-            'p-megamenu-horizontal': instance.horizontal,
-            'p-megamenu-vertical': instance.vertical
+            'v-megamenu-mobile': instance.queryMatches,
+            'v-megamenu-mobile-active': instance.mobileActive,
+            'v-megamenu-horizontal': instance.horizontal,
+            'v-megamenu-vertical': instance.vertical
         }
     ],
-    start: 'p-megamenu-start',
-    menubutton: 'p-megamenu-button',
-    menu: 'p-megamenu-root-list',
+    start: 'v-megamenu-start',
+    menubutton: 'v-megamenu-button',
+    menu: 'v-megamenu-root-list',
     submenuHeader: ({ instance, processedItem }) => [
-        'p-megamenu-submenu-header p-submenu-header',
+        'v-megamenu-submenu-header v-submenu-header',
         {
-            'p-disabled': instance.isItemDisabled(processedItem)
+            'v-disabled': instance.isItemDisabled(processedItem)
         }
     ],
     menuitem: ({ instance, processedItem }) => [
-        'p-menuitem',
+        'v-menuitem',
         {
-            'p-menuitem-active p-highlight': instance.isItemActive(processedItem),
-            'p-focus': instance.isItemFocused(processedItem),
-            'p-disabled': instance.isItemDisabled(processedItem)
+            'v-menuitem-active v-highlight': instance.isItemActive(processedItem),
+            'v-focus': instance.isItemFocused(processedItem),
+            'v-disabled': instance.isItemDisabled(processedItem)
         }
     ],
-    content: 'p-menuitem-content',
-    action: 'p-menuitem-link',
-    icon: 'p-menuitem-icon',
-    label: 'p-menuitem-text',
-    submenuIcon: 'p-submenu-icon',
-    panel: 'p-megamenu-panel',
-    grid: 'p-megamenu-grid',
+    content: 'v-menuitem-content',
+    action: 'v-menuitem-link',
+    icon: 'v-menuitem-icon',
+    label: 'v-menuitem-text',
+    submenuIcon: 'v-submenu-icon',
+    panel: 'v-megamenu-panel',
+    grid: 'v-megamenu-grid',
     column: ({ instance, processedItem }) => {
         let length = instance.isItemGroup(processedItem) ? processedItem.items.length : 0;
         let columnClass;
 
-        if (instance.$parentInstance.queryMatches) columnClass = 'p-megamenu-col-12';
+        if (instance.$parentInstance.queryMatches) columnClass = 'v-megamenu-col-12';
         else {
             switch (length) {
                 case 2:
-                    columnClass = 'p-megamenu-col-6';
+                    columnClass = 'v-megamenu-col-6';
                     break;
 
                 case 3:
-                    columnClass = 'p-megamenu-col-4';
+                    columnClass = 'v-megamenu-col-4';
                     break;
 
                 case 4:
-                    columnClass = 'p-megamenu-col-3';
+                    columnClass = 'v-megamenu-col-3';
                     break;
 
                 case 6:
-                    columnClass = 'p-megamenu-col-2';
+                    columnClass = 'v-megamenu-col-2';
                     break;
 
                 default:
-                    columnClass = 'p-megamenu-col-12';
+                    columnClass = 'v-megamenu-col-12';
                     break;
             }
         }
 
         return columnClass;
     },
-    submenu: 'p-submenu-list p-megamenu-submenu',
-    submenuLabel: 'p-menuitem-text',
-    separator: 'p-menuitem-separator',
-    end: 'p-megamenu-end'
+    submenu: 'v-submenu-list v-megamenu-submenu',
+    submenuLabel: 'v-menuitem-text',
+    separator: 'v-menuitem-separator',
+    end: 'v-megamenu-end'
 };
 
 export default BaseStyle.extend({

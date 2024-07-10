@@ -18,9 +18,9 @@ describe('Fieldset.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-fieldset.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-fieldset-legend').exists()).toBe(true);
-        expect(wrapper.find('.p-toggleable-content').exists()).toBe(true);
+        expect(wrapper.find('.v-fieldset.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-fieldset-legend').exists()).toBe(true);
+        expect(wrapper.find('.v-toggleable-content').exists()).toBe(true);
     });
 
     it('toggleable check', async () => {

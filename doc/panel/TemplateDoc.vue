@@ -20,7 +20,7 @@
                 </div>
             </template>
             <template #icons>
-                <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+                <button class="p-panel-header-icon v-link mr-2" @click="toggle">
                     <span class="cs el-cog"></span>
                 </button>
                 <Menu ref="menu" id="config_menu" :model="items" popup />
@@ -74,7 +74,7 @@ export default {
         </div>
     </template>
     <template #icons>
-        <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+        <button class="p-panel-header-icon v-link mr-2" @click="toggle">
             <span class="cs el-cog"></span>
         </button>
         <Menu ref="menu" id="config_menu" :model="items" popup />
@@ -106,7 +106,7 @@ export default {
                 </div>
             </template>
             <template #icons>
-                <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+                <button class="p-panel-header-icon v-link mr-2" @click="toggle">
                     <span class="cs el-cog"></span>
                 </button>
                 <Menu ref="menu" id="config_menu" :model="items" popup />
@@ -174,7 +174,7 @@ export default {
                 </div>
             </template>
             <template #icons>
-                <button class="p-panel-header-icon p-link mr-2" @click="toggle">
+                <button class="p-panel-header-icon v-link mr-2" @click="toggle">
                     <span class="cs el-cog"></span>
                 </button>
                 <Menu ref="menu" id="config_menu" :model="items" popup />

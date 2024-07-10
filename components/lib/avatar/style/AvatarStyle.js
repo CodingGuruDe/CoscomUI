@@ -2,16 +2,16 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-avatar p-component',
+        'v-avatar v-component',
         {
-            'p-avatar-image': props.image != null,
-            'p-avatar-circle': props.shape === 'circle',
-            'p-avatar-lg': props.size === 'large',
-            'p-avatar-xl': props.size === 'xlarge'
+            'v-avatar-image': props.image != null,
+            'v-avatar-circle': props.shape === 'circle',
+            'v-avatar-lg': props.size === 'large',
+            'v-avatar-xl': props.size === 'xlarge'
         }
     ],
-    label: 'p-avatar-text',
-    icon: 'p-avatar-icon'
+    label: 'v-avatar-text',
+    icon: 'v-avatar-icon'
 };
 
 export default BaseStyle.extend({

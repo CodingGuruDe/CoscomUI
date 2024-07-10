@@ -12,10 +12,10 @@
                         <img alt="Apollo" src="https://primefaces.org/cdn/primevue/images/layouts/apollo-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://apollo.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://apollo.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/apollo" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/apollo" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -27,10 +27,10 @@
                         <img alt="Sakai" src="https://primefaces.org/cdn/primevue/images/layouts/sakai-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://sakai.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://sakai.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/sakai" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/sakai" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -42,10 +42,10 @@
                         <img alt="Atlantis" src="https://primefaces.org/cdn/primevue/images/layouts/atlantis-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://atlantis.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://atlantis.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/atlantis" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/atlantis" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -57,10 +57,10 @@
                         <img alt="Ultima" src="https://primefaces.org/cdn/primevue/images/layouts/ultima-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://ultima.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://ultima.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/ultima" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/ultima" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -72,10 +72,10 @@
                         <img alt="Freya" src="https://primefaces.org/cdn/primevue/images/layouts/freya-vue.png" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://freya.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://freya.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/freya" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/freya" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -87,10 +87,10 @@
                         <img alt="Diamond" src="https://primefaces.org/cdn/primevue/images/layouts/diamond-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://diamond.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://diamond.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/diamond" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/diamond" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -102,10 +102,10 @@
                         <img alt="Verona" src="https://primefaces.org/cdn/primevue/images/layouts/verona-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://verona.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://verona.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/verona" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/verona" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -117,10 +117,10 @@
                         <img alt="Poseidon" src="https://primefaces.org/cdn/primevue/images/layouts/poseidon-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://poseidon.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://poseidon.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/poseidon" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/poseidon" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>
@@ -132,10 +132,10 @@
                         <img alt="Avalon" src="https://primefaces.org/cdn/primevue/images/layouts/avalon-vue.jpg" class="w-full" />
                     </a>
                     <div class="flex gap-3 mt-3">
-                        <a href="https://avalon.primevue.org" class="flex-1 p-button p-component" rel="noopener noreferrer" target="_blank">
+                        <a href="https://avalon.primevue.org" class="flex-1 p-button v-component" rel="noopener noreferrer" target="_blank">
                             <span class="p-button-label white-space-nowrap">Preview</span>
                         </a>
-                        <NuxtLink to="/templates/avalon" class="flex-1 p-button p-component p-button-outlined">
+                        <NuxtLink to="/templates/avalon" class="flex-1 p-button v-component p-button-outlined">
                             <span class="p-button-label white-space-nowrap">Learn More</span>
                         </NuxtLink>
                     </div>

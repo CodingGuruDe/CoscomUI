@@ -10,13 +10,13 @@ describe('OrganizationChart.vue', () => {
                 value: {
                     key: '0',
                     type: 'person',
-                    styleClass: 'p-person',
+                    styleClass: 'v-person',
                     data: { label: 'CEO', name: 'Walter White', avatar: 'walter.jpg' },
                     children: [
                         {
                             key: '0_0',
                             type: 'person',
-                            styleClass: 'p-person',
+                            styleClass: 'v-person',
                             data: { label: 'CFO', name: 'Saul Goodman', avatar: 'saul.jpg' },
                             children: [
                                 {
@@ -36,7 +36,7 @@ describe('OrganizationChart.vue', () => {
                         {
                             key: '0_1',
                             type: 'person',
-                            styleClass: 'p-person',
+                            styleClass: 'v-person',
                             data: { label: 'COO', name: 'Mike E.', avatar: 'mike.jpg' },
                             children: [
                                 {
@@ -50,7 +50,7 @@ describe('OrganizationChart.vue', () => {
                         {
                             key: '0_2',
                             type: 'person',
-                            styleClass: 'p-person',
+                            styleClass: 'v-person',
                             data: { label: 'CTO', name: 'Jesse Pinkman', avatar: 'jesse.jpg' },
                             children: [
                                 {
@@ -121,9 +121,9 @@ describe('OrganizationChart.vue', () => {
     });
 
     it('should exist', () => {
-        expect(wrapper.find('.p-organizationchart.p-component').exists()).toBe(true);
-        expect(wrapper.find('table.p-organizationchart-table').exists()).toBe(true);
-        expect(wrapper.findAll('.p-node-toggler-icon').length).toBe(5);
+        expect(wrapper.find('.v-organizationchart.v-component').exists()).toBe(true);
+        expect(wrapper.find('table.v-organizationchart-table').exists()).toBe(true);
+        expect(wrapper.findAll('.v-node-toggler-icon').length).toBe(5);
     });
 
     it('should collapsed and expand', async () => {
@@ -141,7 +141,7 @@ describe('OrganizationChart.vue', () => {
     });
 
     it('should item select and unselect', async () => {
-        const contents = wrapper.findAll('.p-organizationchart-node-content');
+        const contents = wrapper.findAll('.v-organizationchart-node-content');
 
         await wrapper.vm.onNodeClick(wrapper.vm.value);
 
@@ -150,7 +150,7 @@ describe('OrganizationChart.vue', () => {
 
         await wrapper.setProps({ selectionKeys: { 0: true } });
 
-        expect(contents[0].classes()).toContain('p-highlight');
+        expect(contents[0].classes()).toContain('v-highlight');
 
         await wrapper.vm.onNodeClick(wrapper.vm.value);
 
@@ -159,6 +159,6 @@ describe('OrganizationChart.vue', () => {
 
         await wrapper.setProps({ selectionKeys: {} });
 
-        expect(contents[0].classes()).not.toContain('p-highlight');
+        expect(contents[0].classes()).not.toContain('v-highlight');
     });
 });

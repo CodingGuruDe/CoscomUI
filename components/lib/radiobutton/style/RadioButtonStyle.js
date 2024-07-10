@@ -2,17 +2,17 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-radiobutton p-component',
+        'v-radiobutton v-component',
         {
-            'p-highlight': instance.checked,
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-highlight': instance.checked,
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
-    box: 'p-radiobutton-box',
-    input: 'p-radiobutton-input',
-    icon: 'p-radiobutton-icon'
+    box: 'v-radiobutton-box',
+    input: 'v-radiobutton-input',
+    icon: 'v-radiobutton-icon'
 };
 
 export default BaseStyle.extend({

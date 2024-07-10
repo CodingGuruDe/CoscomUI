@@ -7,54 +7,54 @@ const inlineStyles = {
 
 const classes = {
     root: ({ instance, props }) => [
-        'p-autocomplete p-component p-inputwrapper',
+        'v-autocomplete v-component v-inputwrapper',
         {
-            'p-disabled': props.disabled,
-            'p-invalid': props.invalid,
-            'p-focus': instance.focused,
-            'p-autocomplete-dd': props.dropdown,
-            'p-autocomplete-multiple': props.multiple,
-            'p-inputwrapper-filled': props.modelValue || ObjectUtils.isNotEmpty(instance.inputValue),
-            'p-inputwrapper-focus': instance.focused,
-            'p-overlay-open': instance.overlayVisible
+            'v-disabled': props.disabled,
+            'v-invalid': props.invalid,
+            'v-focus': instance.focused,
+            'v-autocomplete-dd': props.dropdown,
+            'v-autocomplete-multiple': props.multiple,
+            'v-inputwrapper-filled': props.modelValue || ObjectUtils.isNotEmpty(instance.inputValue),
+            'v-inputwrapper-focus': instance.focused,
+            'v-overlay-open': instance.overlayVisible
         }
     ],
     input: ({ props, instance }) => [
-        'p-autocomplete-input p-inputtext p-component',
+        'v-autocomplete-input v-inputtext v-component',
         {
-            'p-autocomplete-dd-input': props.dropdown,
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-autocomplete-dd-input': props.dropdown,
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
     container: ({ props, instance }) => [
-        'p-autocomplete-multiple-container p-component p-inputtext',
+        'v-autocomplete-multiple-container v-component v-inputtext',
         {
-            'p-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
+            'v-variant-filled': props.variant ? props.variant === 'filled' : instance.$coscom.config.inputStyle === 'filled'
         }
     ],
-    token: ({ instance, i }) => ['p-autocomplete-token', { 'p-focus': instance.focusedMultipleOptionIndex === i }],
-    tokenLabel: 'p-autocomplete-token-label',
-    removeTokenIcon: 'p-autocomplete-token-icon',
-    inputToken: 'p-autocomplete-input-token',
-    loadingIcon: 'p-autocomplete-loader',
-    dropdownButton: 'p-autocomplete-dropdown',
+    token: ({ instance, i }) => ['v-autocomplete-token', { 'v-focus': instance.focusedMultipleOptionIndex === i }],
+    tokenLabel: 'v-autocomplete-token-label',
+    removeTokenIcon: 'v-autocomplete-token-icon',
+    inputToken: 'v-autocomplete-input-token',
+    loadingIcon: 'v-autocomplete-loader',
+    dropdownButton: 'v-autocomplete-dropdown',
     panel: ({ props, instance }) => [
-        'p-autocomplete-panel p-component',
+        'v-autocomplete-panel v-component',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
-    list: 'p-autocomplete-items',
-    itemGroup: 'p-autocomplete-item-group',
+    list: 'v-autocomplete-items',
+    itemGroup: 'v-autocomplete-item-group',
     item: ({ instance, option, i, getItemOptions }) => [
-        'p-autocomplete-item',
+        'v-autocomplete-item',
         {
-            'p-highlight': instance.isSelected(option),
-            'p-focus': instance.focusedOptionIndex === instance.getOptionIndex(i, getItemOptions),
-            'p-disabled': instance.isOptionDisabled(option)
+            'v-highlight': instance.isSelected(option),
+            'v-focus': instance.focusedOptionIndex === instance.getOptionIndex(i, getItemOptions),
+            'v-disabled': instance.isOptionDisabled(option)
         }
     ],
-    emptyMessage: 'p-autocomplete-empty-message'
+    emptyMessage: 'v-autocomplete-empty-message'
 };
 
 export default BaseStyle.extend({

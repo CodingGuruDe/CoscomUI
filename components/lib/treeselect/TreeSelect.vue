@@ -1,6 +1,6 @@
 <template>
     <div ref="container" :class="cx('root')" :style="sx('root')" @click="onClick" v-bind="ptmi('root')">
-        <div class="p-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-p-hidden-accessible="true">
+        <div class="v-hidden-accessible" v-bind="ptm('hiddenInputWrapper')" :data-v-hidden-accessible="true">
             <input
                 ref="focusInput"
                 :id="inputId"
@@ -43,18 +43,18 @@
             </slot>
         </div>
         <Portal :appendTo="appendTo">
-            <transition name="p-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
+            <transition name="v-connected-overlay" @enter="onOverlayEnter" @after-enter="onOverlayAfterEnter" @leave="onOverlayLeave" @after-leave="onOverlayAfterLeave" v-bind="ptm('transition')">
                 <div v-if="overlayVisible" :ref="overlayRef" @click="onOverlayClick" :class="[cx('panel'), panelClass]" @keydown="onOverlayKeydown" v-bind="{ ...panelProps, ...ptm('panel') }">
                     <span
                         ref="firstHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onFirstHiddenFocus"
                         v-bind="ptm('hiddenFirstFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                     <slot name="header" :value="modelValue" :options="options"></slot>
                     <div :class="cx('wrapper')" :style="{ 'max-height': scrollHeight }" v-bind="ptm('wrapper')">
@@ -92,12 +92,12 @@
                         ref="lastHiddenFocusableElementOnOverlay"
                         role="presentation"
                         aria-hidden="true"
-                        class="p-hidden-accessible p-hidden-focusable"
+                        class="v-hidden-accessible v-hidden-focusable"
                         :tabindex="0"
                         @focus="onLastHiddenFocus"
                         v-bind="ptm('hiddenLastFocusableEl')"
-                        :data-p-hidden-accessible="true"
-                        :data-p-hidden-focusable="true"
+                        :data-v-hidden-accessible="true"
+                        :data-v-hidden-focusable="true"
                     ></span>
                 </div>
             </transition>
@@ -218,12 +218,12 @@ export default {
             this.expandedKeys = keys;
         },
         onFirstHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getFirstFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
         onLastHiddenFocus(event) {
-            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-p-hidden-focusable="true"])') : this.$refs.focusInput;
+            const focusableEl = event.relatedTarget === this.$refs.focusInput ? DomHandler.getLastFocusableElement(this.overlay, ':not([data-v-hidden-focusable="true"])') : this.$refs.focusInput;
 
             DomHandler.focus(focusableEl);
         },
@@ -290,7 +290,7 @@ export default {
             }
         },
         hasFocusableElements() {
-            return DomHandler.getFocusableElements(this.overlay, ':not([data-p-hidden-focusable="true"])').length > 0;
+            return DomHandler.getFocusableElements(this.overlay, ':not([data-v-hidden-focusable="true"])').length > 0;
         },
         onOverlayEnter(el) {
             ZIndexUtils.set('overlay', el, this.$coscom.config.zIndex.overlay);
@@ -458,7 +458,7 @@ export default {
         },
         scrollValueInView() {
             if (this.overlay) {
-                let selectedItem = DomHandler.findSingle(this.overlay, '[data-p-highlight="true"]');
+                let selectedItem = DomHandler.findSingle(this.overlay, '[data-v-highlight="true"]');
 
                 if (selectedItem) {
                     selectedItem.scrollIntoView({ block: 'nearest', inline: 'start' });

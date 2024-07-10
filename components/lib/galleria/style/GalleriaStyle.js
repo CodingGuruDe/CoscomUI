@@ -2,85 +2,85 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     mask: ({ instance }) => [
-        'p-galleria-mask p-component-overlay p-component-overlay-enter',
+        'v-galleria-mask v-component-overlay v-component-overlay-enter',
         {
-            'p-ripple-disabled': instance.$coscom.config.ripple === false
+            'v-ripple-disabled': instance.$coscom.config.ripple === false
         }
     ],
     root: ({ instance }) => {
-        const thumbnailsPosClass = instance.$attrs.showThumbnails && instance.getPositionClass('p-galleria-thumbnails', instance.$attrs.thumbnailsPosition);
-        const indicatorPosClass = instance.$attrs.showIndicators && instance.getPositionClass('p-galleria-indicators', instance.$attrs.indicatorsPosition);
+        const thumbnailsPosClass = instance.$attrs.showThumbnails && instance.getPositionClass('v-galleria-thumbnails', instance.$attrs.thumbnailsPosition);
+        const indicatorPosClass = instance.$attrs.showIndicators && instance.getPositionClass('v-galleria-indicators', instance.$attrs.indicatorsPosition);
 
         return [
-            'p-galleria p-component',
+            'v-galleria v-component',
             {
-                'p-galleria-fullscreen': instance.$attrs.fullScreen,
-                'p-galleria-indicator-onitem': instance.$attrs.showIndicatorsOnItem,
-                'p-galleria-item-nav-onhover': instance.$attrs.showItemNavigatorsOnHover && !instance.$attrs.fullScreen
+                'v-galleria-fullscreen': instance.$attrs.fullScreen,
+                'v-galleria-indicator-onitem': instance.$attrs.showIndicatorsOnItem,
+                'v-galleria-item-nav-onhover': instance.$attrs.showItemNavigatorsOnHover && !instance.$attrs.fullScreen
             },
             thumbnailsPosClass,
             indicatorPosClass
         ];
     },
-    closeButton: 'p-galleria-close p-link',
-    closeIcon: 'p-galleria-close-icon',
-    header: 'p-galleria-header',
-    content: 'p-galleria-content',
-    footer: 'p-galleria-footer',
-    itemWrapper: 'p-galleria-item-wrapper',
-    itemContainer: 'p-galleria-item-container',
+    closeButton: 'v-galleria-close v-link',
+    closeIcon: 'v-galleria-close-icon',
+    header: 'v-galleria-header',
+    content: 'v-galleria-content',
+    footer: 'v-galleria-footer',
+    itemWrapper: 'v-galleria-item-wrapper',
+    itemContainer: 'v-galleria-item-container',
     previousItemButton: ({ instance }) => [
-        'p-galleria-item-prev p-galleria-item-nav p-link',
+        'v-galleria-item-prev v-galleria-item-nav v-link',
         {
-            'p-disabled': instance.isNavBackwardDisabled()
+            'v-disabled': instance.isNavBackwardDisabled()
         }
     ],
-    previousItemIcon: 'p-galleria-item-prev-icon',
-    item: 'p-galleria-item',
+    previousItemIcon: 'v-galleria-item-prev-icon',
+    item: 'v-galleria-item',
     nextItemButton: ({ instance }) => [
-        'p-galleria-item-next p-galleria-item-nav p-link',
+        'v-galleria-item-next v-galleria-item-nav v-link',
         {
-            'p-disabled': instance.isNavForwardDisabled()
+            'v-disabled': instance.isNavForwardDisabled()
         }
     ],
-    nextItemIcon: 'p-galleria-item-next-icon',
-    caption: 'p-galleria-caption',
-    indicators: 'p-galleria-indicators p-reset',
+    nextItemIcon: 'v-galleria-item-next-icon',
+    caption: 'v-galleria-caption',
+    indicators: 'v-galleria-indicators v-reset',
     indicator: ({ instance, index }) => [
-        'p-galleria-indicator',
+        'v-galleria-indicator',
         {
-            'p-highlight': instance.isIndicatorItemActive(index)
+            'v-highlight': instance.isIndicatorItemActive(index)
         }
     ],
-    indicatorButton: 'p-link',
-    thumbnailWrapper: 'p-galleria-thumbnail-wrapper',
-    thumbnailContainer: 'p-galleria-thumbnail-container',
+    indicatorButton: 'v-link',
+    thumbnailWrapper: 'v-galleria-thumbnail-wrapper',
+    thumbnailContainer: 'v-galleria-thumbnail-container',
     previousThumbnailButton: ({ instance }) => [
-        'p-galleria-thumbnail-prev p-link',
+        'v-galleria-thumbnail-prev v-link',
         {
-            'p-disabled': instance.isNavBackwardDisabled()
+            'v-disabled': instance.isNavBackwardDisabled()
         }
     ],
-    previousThumbnailIcon: 'p-galleria-thumbnail-prev-icon',
-    thumbnailItemsContainer: 'p-galleria-thumbnail-items-container',
-    thumbnailItems: 'p-galleria-thumbnail-items',
+    previousThumbnailIcon: 'v-galleria-thumbnail-prev-icon',
+    thumbnailItemsContainer: 'v-galleria-thumbnail-items-container',
+    thumbnailItems: 'v-galleria-thumbnail-items',
     thumbnailItem: ({ instance, index, activeIndex }) => [
-        'p-galleria-thumbnail-item',
+        'v-galleria-thumbnail-item',
         {
-            'p-galleria-thumbnail-item-current': activeIndex === index,
-            'p-galleria-thumbnail-item-active': instance.isItemActive(index),
-            'p-galleria-thumbnail-item-start': instance.firstItemAciveIndex() === index,
-            'p-galleria-thumbnail-item-end': instance.lastItemActiveIndex() === index
+            'v-galleria-thumbnail-item-current': activeIndex === index,
+            'v-galleria-thumbnail-item-active': instance.isItemActive(index),
+            'v-galleria-thumbnail-item-start': instance.firstItemAciveIndex() === index,
+            'v-galleria-thumbnail-item-end': instance.lastItemActiveIndex() === index
         }
     ],
-    thumbnailItemContent: 'p-galleria-thumbnail-item-content',
+    thumbnailItemContent: 'v-galleria-thumbnail-item-content',
     nextThumbnailButton: ({ instance }) => [
-        'p-galleria-thumbnail-next p-link',
+        'v-galleria-thumbnail-next v-link',
         {
-            'p-disabled': instance.isNavForwardDisabled()
+            'v-disabled': instance.isNavForwardDisabled()
         }
     ],
-    nextThumbnailIcon: 'p-galleria-thumbnail-next-icon'
+    nextThumbnailIcon: 'v-galleria-thumbnail-next-icon'
 };
 
 export default BaseStyle.extend({

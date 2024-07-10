@@ -2,27 +2,27 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-picklist p-component',
+        'v-picklist v-component',
         {
-            'p-picklist-striped': props.stripedRows
+            'v-picklist-striped': props.stripedRows
         }
     ],
-    sourceControls: 'p-picklist-buttons p-picklist-source-controls',
-    sourceWrapper: 'p-picklist-list-wrapper p-picklist-source-wrapper',
-    sourceHeader: 'p-picklist-header',
-    sourceList: 'p-picklist-list p-picklist-source-list',
-    buttons: 'p-picklist-buttons p-picklist-transfer-buttons',
-    targetWrapper: 'p-picklist-list-wrapper p-picklist-target-wrapper',
-    targetHeader: 'p-picklist-header',
-    targetList: 'p-picklist-list p-picklist-target',
+    sourceControls: 'v-picklist-buttons v-picklist-source-controls',
+    sourceWrapper: 'v-picklist-list-wrapper v-picklist-source-wrapper',
+    sourceHeader: 'v-picklist-header',
+    sourceList: 'v-picklist-list v-picklist-source-list',
+    buttons: 'v-picklist-buttons v-picklist-transfer-buttons',
+    targetWrapper: 'v-picklist-list-wrapper v-picklist-target-wrapper',
+    targetHeader: 'v-picklist-header',
+    targetList: 'v-picklist-list v-picklist-target',
     item: ({ instance, item, id, listIndex }) => [
-        'p-picklist-item',
+        'v-picklist-item',
         {
-            'p-highlight': instance.isSelected(item, listIndex),
-            'p-focus': id === instance.focusedOptionId
+            'v-highlight': instance.isSelected(item, listIndex),
+            'v-focus': id === instance.focusedOptionId
         }
     ],
-    targetControls: 'p-picklist-buttons p-picklist-target-controls'
+    targetControls: 'v-picklist-buttons v-picklist-target-controls'
 };
 
 export default BaseStyle.extend({

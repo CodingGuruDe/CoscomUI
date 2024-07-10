@@ -249,14 +249,14 @@ const Tooltip = BaseTooltip.extend('tooltip', {
 
             const tooltipArrow = DomHandler.createElement('div', {
                 class: !this.isUnstyled() && this.cx('arrow'),
-                'p-bind': this.ptm('arrow', {
+                'v-bind': this.ptm('arrow', {
                     context: modifiers
                 })
             });
 
             const tooltipText = DomHandler.createElement('div', {
                 class: !this.isUnstyled() && this.cx('text'),
-                'p-bind': this.ptm('text', {
+                'v-bind': this.ptm('text', {
                     context: modifiers
                 })
             });
@@ -279,7 +279,7 @@ const Tooltip = BaseTooltip.extend('tooltip', {
                         pointerEvents: !this.isUnstyled() && el.$_ptooltipAutoHide && 'none'
                     },
                     class: [!this.isUnstyled() && this.cx('root'), el.$_ptooltipClass],
-                    'p-bind': this.ptm('root', {
+                    'v-bind': this.ptm('root', {
                         context: modifiers
                     })
                 },
@@ -443,7 +443,7 @@ const Tooltip = BaseTooltip.extend('tooltip', {
             return targetLeft + width > viewport.width || targetLeft < 0 || targetTop < 0 || targetTop + height > viewport.height;
         },
         getTarget(el) {
-            return DomHandler.hasClass(el, 'p-inputwrapper') ? DomHandler.findSingle(el, 'input') : el;
+            return DomHandler.hasClass(el, 'v-inputwrapper') ? DomHandler.findSingle(el, 'input') : el;
         },
         getModifiers(options) {
             // modifiers

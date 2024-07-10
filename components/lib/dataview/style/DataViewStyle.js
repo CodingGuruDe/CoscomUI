@@ -2,17 +2,17 @@ import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
     root: ({ props }) => [
-        'p-dataview p-component',
+        'v-dataview v-component',
         {
-            'p-dataview-list': props.layout === 'list',
-            'p-dataview-grid': props.layout === 'grid'
+            'v-dataview-list': props.layout === 'list',
+            'v-dataview-grid': props.layout === 'grid'
         }
     ],
-    header: 'p-dataview-header',
-    paginator: ({ instance }) => (instance.paginatorTop ? 'p-paginator-top' : instance.paginatorBottom ? 'p-paginator-bottom' : ''),
-    content: 'p-dataview-content',
-    emptyMessage: 'p-dataview-emptymessage',
-    footer: 'p-dataview-footer'
+    header: 'v-dataview-header',
+    paginator: ({ instance }) => (instance.paginatorTop ? 'v-paginator-top' : instance.paginatorBottom ? 'v-paginator-bottom' : ''),
+    content: 'v-dataview-content',
+    emptyMessage: 'v-dataview-emptymessage',
+    footer: 'v-dataview-footer'
 };
 
 export default BaseStyle.extend({

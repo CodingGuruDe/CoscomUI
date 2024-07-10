@@ -19,16 +19,16 @@ describe('Chip.vue', () => {
     });
 
     it('should exists', () => {
-        expect(wrapper.find('.p-chip.p-component').exists()).toBe(true);
-        expect(wrapper.find('.p-chip-icon').classes()).toContain('el-discord');
-        expect(wrapper.find('.p-chip-text').text()).toBe('CoscomUI');
-        expect(wrapper.find('.p-chip-remove-icon').exists()).toBe(true);
+        expect(wrapper.find('.v-chip.v-component').exists()).toBe(true);
+        expect(wrapper.find('.v-chip-icon').classes()).toContain('el-discord');
+        expect(wrapper.find('.v-chip-text').text()).toBe('CoscomUI');
+        expect(wrapper.find('.v-chip-remove-icon').exists()).toBe(true);
     });
 
     it('should close icon work', async () => {
-        await wrapper.find('.p-chip-remove-icon').trigger('click');
+        await wrapper.find('.v-chip-remove-icon').trigger('click');
 
-        expect(wrapper.find('.p-chip.p-component').exists()).toBe(false);
+        expect(wrapper.find('.v-chip.v-component').exists()).toBe(false);
     });
 
     it('When removable is true and keydown triggered OnKeydown method should be called', async () => {

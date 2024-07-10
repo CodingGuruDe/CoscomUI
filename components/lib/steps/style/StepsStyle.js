@@ -1,18 +1,18 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => ['p-steps p-component', { 'p-readonly': props.readonly }],
-    menu: 'p-steps-list',
+    root: ({ props }) => ['v-steps v-component', { 'v-readonly': props.readonly }],
+    menu: 'v-steps-list',
     menuitem: ({ instance, item, index }) => [
-        'p-steps-item',
+        'v-steps-item',
         {
-            'p-highlight p-steps-current': instance.isActive(index),
-            'p-disabled': instance.isItemDisabled(item, index)
+            'v-highlight v-steps-current': instance.isActive(index),
+            'v-disabled': instance.isItemDisabled(item, index)
         }
     ],
-    action: 'p-menuitem-link',
-    step: 'p-steps-number',
-    label: 'p-steps-title'
+    action: 'v-menuitem-link',
+    step: 'v-steps-number',
+    label: 'v-steps-title'
 };
 
 export default BaseStyle.extend({

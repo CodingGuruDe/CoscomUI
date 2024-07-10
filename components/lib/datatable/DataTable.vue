@@ -1,5 +1,5 @@
 <template>
-    <div :class="cx('root')" data-scrollselectors=".p-datatable-wrapper" v-bind="ptmi('root')">
+    <div :class="cx('root')" data-scrollselectors=".v-datatable-wrapper" v-bind="ptmi('root')">
         <slot></slot>
         <div v-if="loading" :class="cx('loadingOverlay')" v-bind="ptm('loadingOverlay')">
             <slot v-if="$slots.loading" name="loading"></slot>
@@ -484,13 +484,13 @@ export default {
                 const columnField = this.columnProp(column, 'sortField') || this.columnProp(column, 'field');
 
                 if (
-                    DomHandler.getAttribute(targetNode, 'data-p-sortable-column') === true ||
+                    DomHandler.getAttribute(targetNode, 'data-v-sortable-column') === true ||
                     DomHandler.getAttribute(targetNode, 'data-pc-section') === 'headertitle' ||
                     DomHandler.getAttribute(targetNode, 'data-pc-section') === 'headercontent' ||
                     DomHandler.getAttribute(targetNode, 'data-pc-section') === 'sorticon' ||
                     DomHandler.getAttribute(targetNode.parentElement, 'data-pc-section') === 'sorticon' ||
                     DomHandler.getAttribute(targetNode.parentElement.parentElement, 'data-pc-section') === 'sorticon' ||
-                    (targetNode.closest('[data-p-sortable-column="true"]') && !targetNode.closest('[data-pc-section="filtermenubutton"]') && !DomHandler.isClickable(event.target))
+                    (targetNode.closest('[data-v-sortable-column="true"]') && !targetNode.closest('[data-pc-section="filtermenubutton"]') && !DomHandler.isClickable(event.target))
                 ) {
                     DomHandler.clearSelection();
 
@@ -717,7 +717,7 @@ export default {
         onRowClick(e) {
             const event = e.originalEvent;
             const body = this.$refs.bodyRef && this.$refs.bodyRef.$el;
-            const focusedItem = DomHandler.findSingle(body, 'tr[data-p-selectable-row="true"][tabindex="0"]');
+            const focusedItem = DomHandler.findSingle(body, 'tr[data-v-selectable-row="true"][tabindex="0"]');
 
             if (DomHandler.isClickable(event.target)) {
                 return;
@@ -798,7 +798,7 @@ export default {
             if (focusedItem) {
                 if (event.target?.getAttribute('data-pc-section') === 'rowtogglericon' || event.target?.parentElement?.getAttribute('data-pc-section') === 'rowtogglericon') return;
 
-                const targetRow = event.target?.closest('tr[data-p-selectable-row="true"]');
+                const targetRow = event.target?.closest('tr[data-v-selectable-row="true"]');
 
                 focusedItem.tabIndex = '-1';
                 targetRow.tabIndex = '0';
@@ -962,11 +962,11 @@ export default {
         },
         onTabKey(event, rowIndex) {
             const body = this.$refs.bodyRef && this.$refs.bodyRef.$el;
-            const rows = DomHandler.find(body, 'tr[data-p-selectable-row="true"]');
+            const rows = DomHandler.find(body, 'tr[data-v-selectable-row="true"]');
 
             if (event.code === 'Tab' && rows && rows.length > 0) {
-                const firstSelectedRow = DomHandler.findSingle(body, 'tr[data-p-highlight="true"]');
-                const focusedItem = DomHandler.findSingle(body, 'tr[data-p-selectable-row="true"][tabindex="0"]');
+                const firstSelectedRow = DomHandler.findSingle(body, 'tr[data-v-highlight="true"]');
+                const focusedItem = DomHandler.findSingle(body, 'tr[data-v-selectable-row="true"][tabindex="0"]');
 
                 if (firstSelectedRow) {
                     firstSelectedRow.tabIndex = '0';
@@ -981,7 +981,7 @@ export default {
             let nextRow = row.nextElementSibling;
 
             if (nextRow) {
-                if (DomHandler.getAttribute(nextRow, 'data-p-selectable-row') === true) return nextRow;
+                if (DomHandler.getAttribute(nextRow, 'data-v-selectable-row') === true) return nextRow;
                 else return this.findNextSelectableRow(nextRow);
             } else {
                 return null;
@@ -991,19 +991,19 @@ export default {
             let prevRow = row.previousElementSibling;
 
             if (prevRow) {
-                if (DomHandler.getAttribute(prevRow, 'data-p-selectable-row') === true) return prevRow;
+                if (DomHandler.getAttribute(prevRow, 'data-v-selectable-row') === true) return prevRow;
                 else return this.findPrevSelectableRow(prevRow);
             } else {
                 return null;
             }
         },
         findFirstSelectableRow() {
-            const firstRow = DomHandler.findSingle(this.$refs.table, 'tr[data-p-selectable-row="true"]');
+            const firstRow = DomHandler.findSingle(this.$refs.table, 'tr[data-v-selectable-row="true"]');
 
             return firstRow;
         },
         findLastSelectableRow() {
-            const rows = DomHandler.find(this.$refs.table, 'tr[data-p-selectable-row="true"]');
+            const rows = DomHandler.find(this.$refs.table, 'tr[data-v-selectable-row="true"]');
 
             return rows ? rows[rows.length - 1] : null;
         },
@@ -1236,8 +1236,8 @@ export default {
         onColumnResize(event) {
             let containerLeft = DomHandler.getOffset(this.$el).left;
 
-            this.$el.setAttribute('data-p-unselectable-text', 'true');
-            !this.isUnstyled && DomHandler.addClass(this.$el, 'p-unselectable-text');
+            this.$el.setAttribute('data-v-unselectable-text', 'true');
+            !this.isUnstyled && DomHandler.addClass(this.$el, 'v-unselectable-text');
             this.$refs.resizeHelper.style.height = this.$el.offsetHeight + 'px';
             this.$refs.resizeHelper.style.top = 0 + 'px';
             this.$refs.resizeHelper.style.left = event.pageX - containerLeft + this.$el.scrollLeft + 'px';
@@ -1286,8 +1286,8 @@ export default {
 
             this.$refs.resizeHelper.style.display = 'none';
             this.resizeColumn = null;
-            this.$el.removeAttribute('data-p-unselectable-text');
-            !this.isUnstyled && DomHandler.removeClass(this.$el, 'p-unselectable-text');
+            this.$el.removeAttribute('data-v-unselectable-text');
+            !this.isUnstyled && DomHandler.removeClass(this.$el, 'v-unselectable-text');
 
             this.unbindColumnResizeEvents();
 
@@ -1523,30 +1523,30 @@ export default {
                 let prevRowElement = rowElement.previousElementSibling;
 
                 if (pageY < rowMidY) {
-                    rowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'false');
-                    !this.isUnstyled && DomHandler.removeClass(rowElement, 'p-datatable-dragpoint-bottom');
+                    rowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'false');
+                    !this.isUnstyled && DomHandler.removeClass(rowElement, 'v-datatable-dragpoint-bottom');
 
                     this.droppedRowIndex = index;
 
                     if (prevRowElement) {
-                        prevRowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'true');
-                        !this.isUnstyled && DomHandler.addClass(prevRowElement, 'p-datatable-dragpoint-bottom');
+                        prevRowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'true');
+                        !this.isUnstyled && DomHandler.addClass(prevRowElement, 'v-datatable-dragpoint-bottom');
                     } else {
-                        rowElement.setAttribute('data-p-datatable-dragpoint-top', 'true');
-                        !this.isUnstyled && DomHandler.addClass(rowElement, 'p-datatable-dragpoint-top');
+                        rowElement.setAttribute('data-v-datatable-dragpoint-top', 'true');
+                        !this.isUnstyled && DomHandler.addClass(rowElement, 'v-datatable-dragpoint-top');
                     }
                 } else {
                     if (prevRowElement) {
-                        prevRowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'false');
-                        !this.isUnstyled && DomHandler.removeClass(prevRowElement, 'p-datatable-dragpoint-bottom');
+                        prevRowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'false');
+                        !this.isUnstyled && DomHandler.removeClass(prevRowElement, 'v-datatable-dragpoint-bottom');
                     } else {
-                        rowElement.setAttribute('data-p-datatable-dragpoint-top', 'true');
-                        !this.isUnstyled && DomHandler.addClass(rowElement, 'p-datatable-dragpoint-top');
+                        rowElement.setAttribute('data-v-datatable-dragpoint-top', 'true');
+                        !this.isUnstyled && DomHandler.addClass(rowElement, 'v-datatable-dragpoint-top');
                     }
 
                     this.droppedRowIndex = index + 1;
-                    rowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'true');
-                    !this.isUnstyled && DomHandler.addClass(rowElement, 'p-datatable-dragpoint-bottom');
+                    rowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'true');
+                    !this.isUnstyled && DomHandler.addClass(rowElement, 'v-datatable-dragpoint-bottom');
                 }
 
                 event.preventDefault();
@@ -1557,14 +1557,14 @@ export default {
             let prevRowElement = rowElement.previousElementSibling;
 
             if (prevRowElement) {
-                prevRowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'false');
-                !this.isUnstyled && DomHandler.removeClass(prevRowElement, 'p-datatable-dragpoint-bottom');
+                prevRowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'false');
+                !this.isUnstyled && DomHandler.removeClass(prevRowElement, 'v-datatable-dragpoint-bottom');
             }
 
-            rowElement.setAttribute('data-p-datatable-dragpoint-bottom', 'false');
-            !this.isUnstyled && DomHandler.removeClass(rowElement, 'p-datatable-dragpoint-bottom');
-            rowElement.setAttribute('data-p-datatable-dragpoint-top', 'false');
-            !this.isUnstyled && DomHandler.removeClass(rowElement, 'p-datatable-dragpoint-top');
+            rowElement.setAttribute('data-v-datatable-dragpoint-bottom', 'false');
+            !this.isUnstyled && DomHandler.removeClass(rowElement, 'v-datatable-dragpoint-bottom');
+            rowElement.setAttribute('data-v-datatable-dragpoint-top', 'false');
+            !this.isUnstyled && DomHandler.removeClass(rowElement, 'v-datatable-dragpoint-top');
         },
         onRowDragEnd(event) {
             this.rowDragging = false;
@@ -1917,34 +1917,34 @@ export default {
                 DomHandler.setAttribute(this.responsiveStyleElement, 'nonce', this.$coscom?.config?.csp?.nonce);
                 document.head.appendChild(this.responsiveStyleElement);
 
-                let tableSelector = `.p-datatable-wrapper ${this.virtualScrollerDisabled ? '' : '> .p-virtualscroller'} > .p-datatable-table`;
-                let selector = `.p-datatable[${this.attributeSelector}] > ${tableSelector}`;
-                let gridLinesSelector = `.p-datatable[${this.attributeSelector}].p-datatable-gridlines > ${tableSelector}`;
+                let tableSelector = `.v-datatable-wrapper ${this.virtualScrollerDisabled ? '' : '> .v-virtualscroller'} > .v-datatable-table`;
+                let selector = `.v-datatable[${this.attributeSelector}] > ${tableSelector}`;
+                let gridLinesSelector = `.v-datatable[${this.attributeSelector}].v-datatable-gridlines > ${tableSelector}`;
                 let innerHTML = `
 @media screen and (max-width: ${this.breakpoint}) {
-    ${selector} > .p-datatable-thead > tr > th,
-    ${selector} > .p-datatable-tfoot > tr > td {
+    ${selector} > .v-datatable-thead > tr > th,
+    ${selector} > .v-datatable-tfoot > tr > td {
         display: none;
     }
 
-    ${selector} > .p-datatable-tbody > tr > td {
+    ${selector} > .v-datatable-tbody > tr > td {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: space-between;
     }
 
-    ${selector} > .p-datatable-tbody > tr > td:not(:last-child) {
+    ${selector} > .v-datatable-tbody > tr > td:not(:last-child) {
         border: 0 none;
     }
 
-    ${gridLinesSelector} > .p-datatable-tbody > tr > td:last-child {
+    ${gridLinesSelector} > .v-datatable-tbody > tr > td:last-child {
         border-top: 0;
         border-right: 0;
         border-left: 0;
     }
 
-    ${selector} > .p-datatable-tbody > tr > td > .p-column-title {
+    ${selector} > .v-datatable-tbody > tr > td > .v-column-title {
         display: block;
     }
 }
