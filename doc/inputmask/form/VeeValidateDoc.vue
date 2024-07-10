@@ -4,8 +4,8 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <InputMask v-model="value" mask="(999) 999-9999" placeholder="(999) 999-9999" :class="{ 'p-invalid': errorMessage }" aria-describedby="mask-error" />
-            <small id="mask-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <InputMask v-model="value" mask="(999) 999-9999" placeholder="(999) 999-9999" :class="{ 'v-invalid': errorMessage }" aria-describedby="mask-error" />
+            <small id="mask-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -47,8 +47,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <InputMask v-model="value" mask="(999) 999-9999" placeholder="(999) 999-9999"
-                :class="{ 'p-invalid': errorMessage }" aria-describedby="mask-error" />
-            <small class="p-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
+                :class="{ 'v-invalid': errorMessage }" aria-describedby="mask-error" />
+            <small class="v-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -60,8 +60,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <InputMask v-model="value" mask="(999) 999-9999" placeholder="(999) 999-9999"
-                :class="{ 'p-invalid': errorMessage }" aria-describedby="mask-error" />
-            <small class="p-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
+                :class="{ 'v-invalid': errorMessage }" aria-describedby="mask-error" />
+            <small class="v-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -103,8 +103,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <InputMask v-model="value" mask="(999) 999-9999" placeholder="(999) 999-9999"
-                :class="{ 'p-invalid': errorMessage }" aria-describedby="mask-error" />
-            <small class="p-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
+                :class="{ 'v-invalid': errorMessage }" aria-describedby="mask-error" />
+            <small class="v-error" id="mask-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

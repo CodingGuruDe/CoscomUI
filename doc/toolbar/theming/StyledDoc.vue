@@ -12,19 +12,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-toolbar</td>
+                    <td>v-toolbar</td>
                     <td>Main container element.</td>
                 </tr>
                 <tr>
-                    <td>p-toolbar-group-start</td>
+                    <td>v-toolbar-group-start</td>
                     <td>Start content container.</td>
                 </tr>
                 <tr>
-                    <td>p-toolbar-group-center</td>
+                    <td>v-toolbar-group-center</td>
                     <td>Center content container.</td>
                 </tr>
                 <tr>
-                    <td>p-toolbar-group-end</td>
+                    <td>v-toolbar-group-end</td>
                     <td>End content container.</td>
                 </tr>
             </tbody>

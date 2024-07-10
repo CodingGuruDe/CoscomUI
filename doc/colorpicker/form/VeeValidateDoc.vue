@@ -4,8 +4,8 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <ColorPicker v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="cp-error" />
-            <small id="cp-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ColorPicker v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="cp-error" />
+            <small id="cp-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -45,8 +45,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <ColorPicker v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="cp-error" />
-            <small class="p-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ColorPicker v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="cp-error" />
+            <small class="v-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -57,8 +57,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <ColorPicker v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="cp-error" />
-            <small class="p-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ColorPicker v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="cp-error" />
+            <small class="v-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -98,8 +98,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <ColorPicker v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="cp-error" />
-            <small class="p-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ColorPicker v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="cp-error" />
+            <small class="v-error" id="cp-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

@@ -12,23 +12,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-button</td>
+                    <td>v-button</td>
                     <td>Button element</td>
                 </tr>
                 <tr>
-                    <td>p-button-icon</td>
+                    <td>v-button-icon</td>
                     <td>Icon element</td>
                 </tr>
                 <tr>
-                    <td>p-button-label</td>
+                    <td>v-button-label</td>
                     <td>Label element of the button</td>
                 </tr>
                 <tr>
-                    <td>p-button-sm</td>
+                    <td>v-button-sm</td>
                     <td>Smaller button element</td>
                 </tr>
                 <tr>
-                    <td>p-button-lg</td>
+                    <td>v-button-lg</td>
                     <td>Larger button element</td>
                 </tr>
             </tbody>

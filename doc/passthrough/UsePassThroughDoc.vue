@@ -20,8 +20,8 @@ export default {
             code1: {
                 basic: `
 import { createApp } from "vue";
-import CoscomUI from "primevue/config";
-import { usePassThrough } from "primevue/passthrough";
+import CoscomUI from "@coscom/coscom-ui/config";
+import { usePassThrough } from "@coscom/coscom-ui/passthrough";
 import BasePreset from "./basepreset";
 
 const app = createApp(App);

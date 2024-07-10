@@ -5,8 +5,8 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="chbx">I've read and accept the terms & conditions.</label>
-            <Checkbox id="chbx" v-model="value" :class="{ 'p-invalid': errorMessage }" binary aria-describedby="chbx-error" />
-            <small id="chbx-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Checkbox id="chbx" v-model="value" :class="{ 'v-invalid': errorMessage }" binary aria-describedby="chbx-error" />
+            <small id="chbx-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -47,8 +47,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="chbx">I've read and accept the terms & conditions.</label>
-            <Checkbox id="chbx" v-model="value" :class="{ 'p-invalid': errorMessage }" binary aria-describedby="chbx-error" />
-            <small class="p-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Checkbox id="chbx" v-model="value" :class="{ 'v-invalid': errorMessage }" binary aria-describedby="chbx-error" />
+            <small class="v-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -61,8 +61,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="chbx">I've read and accept the terms & conditions.</label>
-            <Checkbox id="chbx" v-model="value" :class="{ 'p-invalid': errorMessage }" binary aria-describedby="chbx-error" />
-            <small class="p-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Checkbox id="chbx" v-model="value" :class="{ 'v-invalid': errorMessage }" binary aria-describedby="chbx-error" />
+            <small class="v-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -104,8 +104,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="chbx">I've read and accept the terms & conditions.</label>
-            <Checkbox id="chbx" v-model="value" :class="{ 'p-invalid': errorMessage }" binary aria-describedby="chbx-error" />
-            <small class="p-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Checkbox id="chbx" v-model="value" :class="{ 'v-invalid': errorMessage }" binary aria-describedby="chbx-error" />
+            <small class="v-error" id="chbx-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

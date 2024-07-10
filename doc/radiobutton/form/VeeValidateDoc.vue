@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -83,7 +83,7 @@ export default {
             </div>
         </div>
 
-        <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+        <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
         <Button type="submit" label="Submit" />
     </form>
 </div>
@@ -112,7 +112,7 @@ export default {
                 </div>
             </div>
 
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -172,7 +172,7 @@ export default {
                 </div>
             </div>
 
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>

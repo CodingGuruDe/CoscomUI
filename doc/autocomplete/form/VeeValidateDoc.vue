@@ -5,8 +5,8 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="ac">Value</label>
-            <AutoComplete v-model="value" :inputClass="{ 'p-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
-            <small id="ac-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <AutoComplete v-model="value" :inputClass="{ 'v-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
+            <small id="ac-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -49,8 +49,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="ac">Value</label>
-            <AutoComplete v-model="value" :inputClass="{ 'p-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
-            <small class="p-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
+            <AutoComplete v-model="value" :inputClass="{ 'v-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
+            <small class="v-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -61,8 +61,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="ac">Value</label>
-            <AutoComplete v-model="value" :inputClass="{ 'p-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
-            <small class="p-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
+            <AutoComplete v-model="value" :inputClass="{ 'v-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
+            <small class="v-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -114,8 +114,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="ac">Value</label>
-            <AutoComplete v-model="value" :inputClass="{ 'p-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
-            <small class="p-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
+            <AutoComplete v-model="value" :inputClass="{ 'v-invalid': errorMessage }" inputId="ac" :suggestions="items" @complete="search" aria-describedby="ac-error" />
+            <small class="v-error" id="ac-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

@@ -13,15 +13,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-tooltip</td>
+                    <td>v-tooltip</td>
                     <td>Input element.</td>
                 </tr>
                 <tr>
-                    <td>p-tooltip-arrow</td>
+                    <td>v-tooltip-arrow</td>
                     <td>Arrow of the tooltip.</td>
                 </tr>
                 <tr>
-                    <td>p-tooltip-text</td>
+                    <td>v-tooltip-text</td>
                     <td>Text of the tooltip</td>
                 </tr>
             </tbody>

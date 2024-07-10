@@ -11,7 +11,7 @@
                         <span class="font-bold text-900">Amy Elsner</span>
                     </div>
                     <div class="font-medium text-lg my-3 text-900">{{ slotProps.message.summary }}</div>
-                    <Button class="p-button-sm" label="Reply" @click="onReply()"></Button>
+                    <Button class="v-button-sm" label="Reply" @click="onReply()"></Button>
                 </div>
             </template>
         </Toast>
@@ -35,7 +35,7 @@ export default {
                 <span class="font-bold text-900">Amy Elsner</span>
             </div>
             <div class="font-medium text-lg my-3 text-900">{{ slotProps.message.summary }}</div>
-            <Button class="p-button-sm" label="Reply" @click="onReply()"></Button>
+            <Button class="v-button-sm" label="Reply" @click="onReply()"></Button>
         </div>
     </template>
 </Toast>
@@ -52,7 +52,7 @@ export default {
                         <span class="font-bold text-900">Amy Elsner</span>
                     </div>
                     <div class="font-medium text-lg my-3 text-900">{{ slotProps.message.summary }}</div>
-                    <Button class="p-button-sm" label="Reply" @click="onReply()"></Button>
+                    <Button class="v-button-sm" label="Reply" @click="onReply()"></Button>
                 </div>
             </template>
         </Toast>
@@ -96,7 +96,7 @@ export default {
                         <span class="font-bold text-900">Amy Elsner</span>
                     </div>
                     <div class="font-medium text-lg my-3 text-900">{{ slotProps.message.summary }}</div>
-                    <Button class="p-button-sm" label="Reply" @click="onReply()"></Button>
+                    <Button class="v-button-sm" label="Reply" @click="onReply()"></Button>
                 </div>
             </template>
         </Toast>
@@ -105,7 +105,7 @@ export default {
 </template>
 
 <script setup>
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@coscom/coscom-ui/usetoast";
 import { ref } from 'vue';
 const toast = useToast();
 const visible = ref(false);
@@ -114,7 +114,7 @@ const showTemplate = () => {
     if (!visible.value) {
         toast.add({ severity: 'success', summary: 'Can you send me the report?', group: 'bc' });
         visible.value = true;
-    } 
+    }
 };
 
 const onReply = () => {

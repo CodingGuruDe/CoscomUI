@@ -33,6 +33,10 @@
             "icon": "cs el-verified",
             "children": [
                 {
+                    "name": "Accordion",
+                    "to": "/accordion"
+                },
+                {
                     "name": "Avatar",
                     "to": "/avatar"
                 },
@@ -51,10 +55,6 @@
                 {
                     "name": "Checkbox",
                     "to": "/checkbox"
-                },
-                {
-                    "name": "Collapse",
-                    "to": "/accordion"
                 },
                 {
                     "name": "Editor",

@@ -4,8 +4,8 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <Listbox v-model="value" :class="{ 'p-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Listbox v-model="value" :class="{ 'v-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -53,8 +53,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <Listbox v-model="value" :class="{ 'p-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Listbox v-model="value" :class="{ 'v-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -65,8 +65,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <Listbox v-model="value" :class="{ 'p-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Listbox v-model="value" :class="{ 'v-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -118,8 +118,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <Listbox v-model="value" :class="{ 'p-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Listbox v-model="value" :class="{ 'v-invalid': errorMessage }" class="w-full md:w-14rem" :options="cities" optionLabel="name" placeholder="Select Cities" :maxSelectedLabels="3" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

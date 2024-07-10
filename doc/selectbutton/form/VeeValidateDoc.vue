@@ -5,8 +5,8 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="item" :class="['flex justify-content-center', { 'p-error': errorMessage }]"> Engine State </label>
-            <SelectButton id="item" v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <SelectButton id="item" v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -47,8 +47,8 @@ export default {
 <div class="card flex justify-content-center">
     <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
         <label for="item" :class="['flex justify-content-center', { 'p-error': errorMessage }]"> Engine State </label>
-        <SelectButton id="item" v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
-        <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+        <SelectButton id="item" v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
+        <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
         <Button type="submit" label="Submit" />
     </form>
     <Toast />
@@ -59,8 +59,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="item" :class="['flex justify-content-center', { 'p-error': errorMessage }]"> Engine State </label>
-            <SelectButton id="item" v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <SelectButton id="item" v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -106,8 +106,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
             <label for="item" :class="['flex justify-content-center', { 'p-error': errorMessage }]"> Engine State </label>
-            <SelectButton id="item" v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <SelectButton id="item" v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" :options="options" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

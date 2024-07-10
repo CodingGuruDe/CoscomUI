@@ -12,7 +12,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inputmask p-inputtext</td>
+                    <td>p-inputmask.v-inputtext</td>
                     <td>Input element</td>
                 </tr>
             </tbody>

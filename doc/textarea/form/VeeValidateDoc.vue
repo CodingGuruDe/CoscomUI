@@ -5,10 +5,10 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
-                <Textarea id="value" v-model="value" :class="{ 'p-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
+                <Textarea id="value" v-model="value" :class="{ 'v-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
                 <label for="value">Description</label>
             </FloatLabel>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -48,10 +48,10 @@ export default {
 <div class="card flex justify-content-center">
     <form @submit="onSubmit" class="flex flex-column gap-2">
         <FloatLabel>
-            <Textarea id="value" v-model="value" :class="{ 'p-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
+            <Textarea id="value" v-model="value" :class="{ 'v-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
             <label for="value">Description</label>
         </FloatLabel>
-        <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+        <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
         <Button type="submit" label="Submit" />
     </form>
     <Toast />
@@ -62,10 +62,10 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
-                <Textarea id="value" v-model="value" :class="{ 'p-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
+                <Textarea id="value" v-model="value" :class="{ 'v-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
                 <label for="value">Description</label>
             </FloatLabel>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -106,10 +106,10 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
-                <Textarea id="value" v-model="value" :class="{ 'p-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
+                <Textarea id="value" v-model="value" :class="{ 'v-invalid': errorMessage }" rows="4" cols="30" aria-describedby="text-error" />
                 <label for="value">Description</label>
             </FloatLabel>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

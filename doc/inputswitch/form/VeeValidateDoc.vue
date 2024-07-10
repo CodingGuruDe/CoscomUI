@@ -5,8 +5,8 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <div>I've read and accept the terms & conditions.</div>
-            <InputSwitch v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <InputSwitch v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -48,8 +48,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <div>I've read and accept the terms & conditions.</div>
-            <InputSwitch v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <InputSwitch v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -60,8 +60,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <div>I've read and accept the terms & conditions.</div>
-            <InputSwitch v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <InputSwitch v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -103,8 +103,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <div>I've read and accept the terms & conditions.</div>
-            <InputSwitch v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <InputSwitch v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

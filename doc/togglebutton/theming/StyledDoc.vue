@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-togglebutton</td>
+                    <td>v-togglebutton</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-button-icon</td>
+                    <td>v-button-icon</td>
                     <td>Icon element.</td>
                 </tr>
                 <tr>
-                    <td>p-button-text</td>
+                    <td>v-button-text</td>
                     <td>Label element.</td>
                 </tr>
             </tbody>

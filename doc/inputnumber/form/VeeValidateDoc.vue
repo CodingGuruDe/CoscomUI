@@ -5,8 +5,8 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="year">Enter a year between 1960-2050.</label>
-            <InputNumber id="year" v-model="value" :class="{ 'p-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
-            <small id="number-error" class="p-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
+            <InputNumber id="year" v-model="value" :class="{ 'v-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
+            <small id="number-error" class="v-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -50,8 +50,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="year">Enter a year between 1960-2050.</label>
-            <InputNumber id="year" v-model="value" :class="{ 'p-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
-            <small class="p-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
+            <InputNumber id="year" v-model="value" :class="{ 'v-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
+            <small class="v-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -63,8 +63,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="year">Enter a year between 1960-2050.</label>
-            <InputNumber id="year" v-model="value" :class="{ 'p-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
-            <small class="p-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
+            <InputNumber id="year" v-model="value" :class="{ 'v-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
+            <small class="v-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -108,8 +108,8 @@ export default {
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <label for="year">Enter a year between 1960-2050.</label>
-            <InputNumber id="year" v-model="value" :class="{ 'p-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
-            <small class="p-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
+            <InputNumber id="year" v-model="value" :class="{ 'v-invalid': errorMessage }" :useGrouping="false" aria-describedby="number-error" />
+            <small class="v-error" id="number-error">{{ errorMessage || (errors.length > 0 ? errors : '&nbsp;') }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

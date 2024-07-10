@@ -12,31 +12,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-toast</td>
+                    <td>v-toast</td>
                     <td>Main container element.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-message</td>
+                    <td>v-toast-message</td>
                     <td>Container of a message item.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-icon-close</td>
+                    <td>v-toast-icon-close</td>
                     <td>Close icon of a message.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-icon</td>
+                    <td>v-toast-icon</td>
                     <td>Severity icon.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-message-content</td>
+                    <td>v-toast-message-content</td>
                     <td>Container of message texts.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-summary</td>
+                    <td>v-toast-summary</td>
                     <td>Summary of the message.</td>
                 </tr>
                 <tr>
-                    <td>p-toast-detail</td>
+                    <td>v-toast-detail</td>
                     <td>Detail of the message.</td>
                 </tr>
             </tbody>

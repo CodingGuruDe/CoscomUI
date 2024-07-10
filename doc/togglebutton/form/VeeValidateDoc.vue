@@ -4,8 +4,8 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <ToggleButton v-model="value" :class="['w-8rem', { 'p-invalid': errorMessage }]" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ToggleButton v-model="value" :class="['w-8rem', { 'v-invalid': errorMessage }]" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -45,8 +45,8 @@ export default {
                 basic: `
 <div class="card flex justify-content-center">
     <form @submit="onSubmit" class="flex flex-column gap-2">
-        <ToggleButton v-model="value" :class="['w-8rem', { 'p-invalid': errorMessage }]" aria-describedby="text-error" />
-        <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+        <ToggleButton v-model="value" :class="['w-8rem', { 'v-invalid': errorMessage }]" aria-describedby="text-error" />
+        <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
         <Button type="submit" label="Submit" />
     </form>
 </div>
@@ -55,8 +55,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <ToggleButton v-model="value" :class="['w-8rem', { 'p-invalid': errorMessage }]" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ToggleButton v-model="value" :class="['w-8rem', { 'v-invalid': errorMessage }]" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -70,7 +70,7 @@ export default {
     setup() {
         const { handleSubmit, resetForm } = useForm();
         const { value, errorMessage } = useField('value', validateField);
-        
+
         const toast = useToast();
 
         function validateField(value) {
@@ -97,8 +97,8 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <ToggleButton v-model="value" :class="['w-8rem', { 'p-invalid': errorMessage }]" aria-describedby="text-error" />
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <ToggleButton v-model="value" :class="['w-8rem', { 'v-invalid': errorMessage }]" aria-describedby="text-error" />
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

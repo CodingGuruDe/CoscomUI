@@ -46,7 +46,7 @@ export default defineConfig({
             code3: {
                 basic: `
 import { createApp } from "vue";
-import CoscomUI from "primevue/config";
+import CoscomUI from "@coscom/coscom-ui/config";
 import App from './App.vue'
 const app = createApp(App);
 

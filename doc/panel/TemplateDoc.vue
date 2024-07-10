@@ -189,7 +189,7 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@coscom/coscom-ui/usetoast";
 import { useRouter } from 'vue-router';
 import Menu from '@coscom/coscom-ui/menu';
 

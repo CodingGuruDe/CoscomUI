@@ -40,7 +40,7 @@
                     <td>Indicates an error text.</td>
                 </tr>
                 <tr>
-                    <td>p-invalid</td>
+                    <td>v-invalid</td>
                     <td>Applies the invalid style to a text or a form field.</td>
                 </tr>
             </tbody>

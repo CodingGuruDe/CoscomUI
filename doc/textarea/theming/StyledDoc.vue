@@ -12,7 +12,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inputtextarea</td>
+                    <td>v-inputtextarea</td>
                     <td>Textarea element</td>
                 </tr>
             </tbody>

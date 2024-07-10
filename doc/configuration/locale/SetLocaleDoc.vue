@@ -28,7 +28,7 @@ app.use(CoscomUI, {
             code2: {
                 basic: `
 import { defineComponent, onMounted } from "vue";
-import { useCoscomUI } from "primevue/config";
+import { useCoscomUI } from "@coscom/coscom-ui/config";
 
 export default defineComponent({
     setup() {

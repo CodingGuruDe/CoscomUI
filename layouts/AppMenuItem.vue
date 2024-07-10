@@ -5,7 +5,7 @@
                 <i :class="menuitem.icon"></i>
             </span>
             <span>{{ menuitem.name }}</span>
-            <i class="menu-toggle-icon pi pi-angle-down"></i>
+            <i class="menu-toggle-icon cs el-angle-down"></i>
         </button>
 
         <a v-if="menuitem.href" :href="menuitem.href" target="_blank" rel="noopener noreferrer">

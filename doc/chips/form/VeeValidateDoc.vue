@@ -4,8 +4,8 @@
     </DocSectionText>
     <div class="card p-fluid">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <Chips v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="chips-error" />
-            <small id="chips-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Chips v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="chips-error" />
+            <small id="chips-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" class="w-7rem" />
         </form>
     </div>
@@ -46,8 +46,8 @@ export default {
 <template>
     <div class="card p-fluid">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <Chips v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="chips-error" />
-            <small class="p-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Chips v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="chips-error" />
+            <small class="v-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" class="w-7rem" />
         </form>
         <Toast />
@@ -58,8 +58,8 @@ export default {
 <template>
     <div class="card p-fluid">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <Chips v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="chips-error" />
-            <small class="p-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Chips v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="chips-error" />
+            <small class="v-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" class="w-7rem" />
         </form>
         <Toast />
@@ -100,8 +100,8 @@ export default {
 <template>
     <div class="card p-fluid">
         <form @submit="onSubmit" class="flex flex-column gap-2">
-            <Chips v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="chips-error" />
-            <small class="p-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
+            <Chips v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="chips-error" />
+            <small class="v-error" id="chips-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" class="w-7rem" />
         </form>
         <Toast />

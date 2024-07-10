@@ -13,7 +13,7 @@ const inlineStyles = {
 
 const classes = {
     root: ({ props, instance }) => [
-        'v-toast v-component p-toast-' + props.position,
+        'v-toast v-component v-toast-' + props.position,
         {
             'v-ripple-disabled': instance.$coscom.config.ripple === false
         }

@@ -14,7 +14,7 @@
                 </template>
             </Editor>
             <div class="flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
-                <small id="editor-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+                <small id="editor-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
                 <Button type="submit" label="Submit" />
             </div>
         </form>
@@ -66,7 +66,7 @@ export default {
                 </template>
             </Editor>
             <div class="flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
-                <small class="p-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
+                <small class="v-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
                 <Button type="submit" label="Submit" />
             </div>
         </form>
@@ -88,7 +88,7 @@ export default {
                 </template>
             </Editor>
             <div class="flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
-                <small class="p-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
+                <small class="v-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
                 <Button type="submit" label="Submit" />
             </div>
         </form>
@@ -140,7 +140,7 @@ export default {
                 </template>
             </Editor>
             <div class="flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
-                <small class="p-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
+                <small class="v-error" id="editor-error">{{ errorMessage || '&nbsp;' }}</small>
                 <Button type="submit" label="Submit" />
             </div>
         </form>

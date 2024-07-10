@@ -5,10 +5,10 @@
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
-                <Dropdown id="dd" v-model="value" :options="cities" optionLabel="name" :class="['w-full md:w-14rem', { 'p-invalid': errorMessage }]" aria-describedby="dd-error" />
+                <Dropdown id="dd" v-model="value" :options="cities" optionLabel="name" :class="['w-full md:w-14rem', { 'v-invalid': errorMessage }]" aria-describedby="dd-error" />
                 <label for="dd">Select a City</label>
             </FloatLabel>
-            <small id="dd-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="dd-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -58,10 +58,10 @@ export default {
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
                 <Dropdown id="dd" v-model="value" :options="cities" optionLabel="name"
-                    :class="['w-full md:w-14rem', { 'p-invalid': errorMessage }]" aria-describedby="dd-error" />
+                    :class="['w-full md:w-14rem', { 'v-invalid': errorMessage }]" aria-describedby="dd-error" />
                 <label for="dd">Select a City</label>
             </FloatLabel>
-            <small class="p-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small class="v-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -74,10 +74,10 @@ export default {
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
                 <Dropdown id="dd" v-model="value" :options="cities" optionLabel="name"
-                    :class="['w-full md:w-14rem', { 'p-invalid': errorMessage }]" aria-describedby="dd-error" />
+                    :class="['w-full md:w-14rem', { 'v-invalid': errorMessage }]" aria-describedby="dd-error" />
                 <label for="dd">Select a City</label>
             </FloatLabel>
-            <small class="p-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small class="v-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -131,10 +131,10 @@ export default {
         <form @submit="onSubmit" class="flex flex-column gap-2">
             <FloatLabel>
                 <Dropdown id="dd" v-model="value" :options="cities" optionLabel="name"
-                    :class="['w-full md:w-14rem', { 'p-invalid': errorMessage }]" aria-describedby="dd-error" />
+                    :class="['w-full md:w-14rem', { 'v-invalid': errorMessage }]" aria-describedby="dd-error" />
                 <label for="dd">Select a City</label>
             </FloatLabel>
-            <small class="p-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small class="v-error" id="dd-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

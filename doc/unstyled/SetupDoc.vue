@@ -17,7 +17,7 @@ export default {
             code1: {
                 basic: `
 import { createApp } from "vue";
-import CoscomUI from "primevue/config";
+import CoscomUI from "@coscom/coscom-ui/config";
 const app = createApp(App);
 
 app.use(CoscomUI, { unstyled: true });

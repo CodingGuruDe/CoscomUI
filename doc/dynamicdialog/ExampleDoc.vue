@@ -282,7 +282,7 @@ export default {
 
 <script setup>
 import { ref, onMounted, inject } from "vue";
-import { useDialog } from "primevue/usedialog";
+import { useDialog } from "@coscom/coscom-ui/usedialog";
 import { ProductService } from "@/service/ProductService";
 import InfoDemo from "./InfoDemo.vue";
 

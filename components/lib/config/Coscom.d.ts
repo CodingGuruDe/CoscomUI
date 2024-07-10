@@ -14,7 +14,6 @@ import { CalendarPassThroughOptions } from '../calendar/Calendar';
 import { CardPassThroughOptions } from '../card/Card';
 import { CarouselPassThroughOptions } from '../carousel/Carousel';
 import { CascadeSelectPassThroughOptions } from '../cascadeselect/CascadeSelect';
-import { ChartPassThroughOptions } from '../chart/Chart';
 import { CheckboxPassThroughOptions } from '../checkbox/Checkbox';
 import { ChipPassThroughOptions } from '../chip/Chip';
 import { ChipsPassThroughOptions } from '../chips/Chips';
@@ -136,7 +135,6 @@ export interface CoscomPTOptions {
     card?: DefaultPassThrough<CardPassThroughOptions>;
     carousel?: DefaultPassThrough<CarouselPassThroughOptions>;
     cascadeselect?: DefaultPassThrough<CascadeSelectPassThroughOptions>;
-    chart?: DefaultPassThrough<ChartPassThroughOptions>;
     checkbox?: DefaultPassThrough<CheckboxPassThroughOptions>;
     chip?: DefaultPassThrough<ChipPassThroughOptions>;
     chips?: DefaultPassThrough<ChipsPassThroughOptions>;

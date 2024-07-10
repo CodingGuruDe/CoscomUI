@@ -7,7 +7,7 @@ const $appState = {
             sourceType: 'options-api',
             newsActive: false,
             announcement: null,
-            ripple: false,
+            ripple: true,
             storageKey: 'coscomui'
         });
     }

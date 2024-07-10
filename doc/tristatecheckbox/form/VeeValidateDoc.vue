@@ -4,9 +4,9 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <TriStateCheckbox v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
+            <TriStateCheckbox v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
             <div>* I've read and accept the terms & conditions.</div>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
     </div>
@@ -46,9 +46,9 @@ export default {
                 basic: `
 <div class="card flex justify-content-center">
     <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-        <TriStateCheckbox v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
+        <TriStateCheckbox v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
         <div>* I've read and accept the terms & conditions.</div>
-        <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+        <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
         <Button type="submit" label="Submit" />
     </form>
 </div>
@@ -57,9 +57,9 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <TriStateCheckbox v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
+            <TriStateCheckbox v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
             <div>* I've read and accept the terms & conditions.</div>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />
@@ -99,9 +99,9 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <form @submit="onSubmit" class="flex flex-column align-items-center gap-2">
-            <TriStateCheckbox v-model="value" :class="{ 'p-invalid': errorMessage }" aria-describedby="text-error" />
+            <TriStateCheckbox v-model="value" :class="{ 'v-invalid': errorMessage }" aria-describedby="text-error" />
             <div>* I've read and accept the terms & conditions.</div>
-            <small id="text-error" class="p-error">{{ errorMessage || '&nbsp;' }}</small>
+            <small id="text-error" class="v-error">{{ errorMessage || '&nbsp;' }}</small>
             <Button type="submit" label="Submit" />
         </form>
         <Toast />

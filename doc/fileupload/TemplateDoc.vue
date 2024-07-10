@@ -289,7 +289,7 @@ export default {
 <script setup>
 import { ref } from 'vue';
 import { useCoscomUI } from '@coscom/coscom-ui/config';
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@coscom/coscom-ui/usetoast";
 
 const $coscom = useCoscomUI();
 const toast = useToast();

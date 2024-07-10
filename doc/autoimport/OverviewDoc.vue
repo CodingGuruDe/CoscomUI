@@ -12,7 +12,7 @@ export default {
             code: {
                 basic: `
 import { createApp } from "vue";
-import CoscomUI from "primevue/config";
+import CoscomUI from "@coscom/coscom-ui/config";
 import InputText from '@coscom/coscom-ui/inputtext';
 import Button from '@coscom/coscom-ui/button';
 import App from './App.vue'

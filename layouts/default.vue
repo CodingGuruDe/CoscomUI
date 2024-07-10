@@ -1,5 +1,5 @@
 <template>
-    <div class="layout-wrapper" :class="containerClass" :data-p-theme="$appState.theme">
+    <div class="layout-wrapper" :class="containerClass" :data-v-theme="$appState.theme">
         <AppTopBar @menubutton-click="onMenuButtonClick" @darkswitch-click="onDarkModeToggle" />
         <div :class="['layout-mask', { 'layout-mask-active': sidebarActive }]" @click="onMaskClick"></div>
         <div class="layout-content">
@@ -109,7 +109,7 @@ export default {
         containerClass() {
             return [
                 {
-                    'p-ripple-disabled': this.$appState.ripple === false,
+                    'v-ripple-disabled': this.$appState.ripple === false,
                     'layout-dark': this.$appState.darkTheme,
                     'layout-light': !this.$appState.darkTheme
                 }

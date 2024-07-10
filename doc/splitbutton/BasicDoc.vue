@@ -89,7 +89,7 @@ export default {
 </template>
 
 <script setup>
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@coscom/coscom-ui/usetoast";
 const toast = useToast();
 
 const items = [
