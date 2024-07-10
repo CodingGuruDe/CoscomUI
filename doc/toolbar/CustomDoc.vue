@@ -25,7 +25,6 @@
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <Button label="Share" severity="contrast" size="small" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" style="width: 32px; height: 32px" />
                 </div>
             </template>
         </Toolbar>
@@ -55,7 +54,7 @@ export default {
     <template #end>
         <div class="flex align-items-center gap-2">
             <Button label="Share" severity="contrast" size="small" />
-            <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" style="width: 32px; height: 32px" />
+
         </div>
     </template>
 </Toolbar>
@@ -85,7 +84,7 @@ export default {
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <Button label="Share" severity="contrast" size="small" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" style="width: 32px; height: 32px" />
+
                 </div>
             </template>
         </Toolbar>
@@ -120,7 +119,7 @@ export default {
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <Button label="Share" severity="contrast" size="small" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" style="width: 32px; height: 32px" />
+                    
                 </div>
             </template>
         </Toolbar>

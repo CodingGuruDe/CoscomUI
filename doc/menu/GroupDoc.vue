@@ -18,11 +18,11 @@ export default {
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus'
+                            icon: 'cs el-plus'
                         },
                         {
                             label: 'Search',
-                            icon: 'pi pi-search'
+                            icon: 'cs el-search'
                         }
                     ]
                 },
@@ -31,11 +31,11 @@ export default {
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog'
+                            icon: 'cs el-cog'
                         },
                         {
                             label: 'Logout',
-                            icon: 'pi pi-sign-out'
+                            icon: 'cs el-sign-out'
                         }
                     ]
                 }
@@ -61,11 +61,11 @@ export default {
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus'
+                            icon: 'cs el-plus'
                         },
                         {
                             label: 'Search',
-                            icon: 'pi pi-search'
+                            icon: 'cs el-search'
                         }
                     ]
                 },
@@ -74,11 +74,11 @@ export default {
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog'
+                            icon: 'cs el-cog'
                         },
                         {
                             label: 'Logout',
-                            icon: 'pi pi-sign-out'
+                            icon: 'cs el-sign-out'
                         }
                     ]
                 }
@@ -104,11 +104,11 @@ const items = ref([
         items: [
             {
                 label: 'New',
-                icon: 'pi pi-plus'
+                icon: 'cs el-plus'
             },
             {
                 label: 'Search',
-                icon: 'pi pi-search'
+                icon: 'cs el-search'
             }
         ]
     },
@@ -117,11 +117,11 @@ const items = ref([
         items: [
             {
                 label: 'Settings',
-                icon: 'pi pi-cog'
+                icon: 'cs el-cog'
             },
             {
                 label: 'Logout',
-                icon: 'pi pi-sign-out'
+                icon: 'cs el-sign-out'
             }
         ]
     }

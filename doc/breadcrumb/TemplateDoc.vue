@@ -19,8 +19,8 @@
 export default {
     data() {
         return {
-            home: { icon: 'pi pi-home' },
-            items: [{ icon: 'pi pi-sitemap' }, { icon: 'pi pi-book' }, { icon: 'pi pi-wallet' }, { icon: 'pi pi-shopping-bag' }, { icon: 'pi pi-calculator' }],
+            home: { icon: 'cs el-home' },
+            items: [{ icon: 'cs el-sitemap' }, { icon: 'cs el-book' }, { icon: 'cs el-wallet' }, { icon: 'cs el-shopping-bag' }, { icon: 'cs el-calculator' }],
             code: {
                 basic: `
 <Breadcrumb :home="home" :model="items">
@@ -50,8 +50,8 @@ export default {
 export default {
     data() {
         return {
-            home: { icon: 'pi pi-home' },
-            items: [{ icon: 'pi pi-sitemap' }, { icon: 'pi pi-book' }, { icon: 'pi pi-wallet' }, { icon: 'pi pi-shopping-bag' }, { icon: 'pi pi-calculator' }]
+            home: { icon: 'cs el-home' },
+            items: [{ icon: 'cs el-sitemap' }, { icon: 'cs el-book' }, { icon: 'cs el-wallet' }, { icon: 'cs el-shopping-bag' }, { icon: 'cs el-calculator' }]
         }
     }
 }
@@ -74,8 +74,8 @@ export default {
 <script setup>
 import { ref } from "vue";
 
-const home = ref({ icon: 'pi pi-home' });
-const items = ref([{ icon: 'pi pi-sitemap' }, { icon: 'pi pi-book' }, { icon: 'pi pi-wallet' }, { icon: 'pi pi-shopping-bag' }, { icon: 'pi pi-calculator' }]);
+const home = ref({ icon: 'cs el-home' });
+const items = ref([{ icon: 'cs el-sitemap' }, { icon: 'cs el-book' }, { icon: 'cs el-wallet' }, { icon: 'cs el-shopping-bag' }, { icon: 'cs el-calculator' }]);
 <\/script>
 `
             }

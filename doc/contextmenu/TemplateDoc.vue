@@ -49,12 +49,12 @@ export default {
             items: [
                 {
                     label: 'Favorite',
-                    icon: 'pi pi-star',
+                    icon: 'cs el-star',
                     shortcut: '⌘+D'
                 },
                 {
                     label: 'Add',
-                    icon: 'pi pi-shopping-cart',
+                    icon: 'cs el-shopping-cart',
                     shortcut: '⌘+A'
                 },
                 {
@@ -62,16 +62,16 @@ export default {
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp',
+                            icon: 'cs el-whatsapp',
                             badge: 2
                         },
                         {
                             label: 'Instagram',
-                            icon: 'pi pi-instagram',
+                            icon: 'cs el-instagram',
                             badge: 3
                         }
                     ]
@@ -159,12 +159,12 @@ export default {
             items: [
                 {
                     label: 'Favorite',
-                    icon: 'pi pi-star',
+                    icon: 'cs el-star',
                     shortcut: '⌘+D'
                 },
                 {
                     label: 'Add',
-                    icon: 'pi pi-shopping-cart',
+                    icon: 'cs el-shopping-cart',
                     shortcut: '⌘+A'
                 },
                 {
@@ -172,16 +172,16 @@ export default {
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp',
+                            icon: 'cs el-whatsapp',
                             badge: 2
                         },
                         {
                             label: 'Instagram',
-                            icon: 'pi pi-instagram',
+                            icon: 'cs el-instagram',
                             badge: 3
                         }
                     ]
@@ -246,12 +246,12 @@ const menu = ref();
 const items = ref([
     {
         label: 'Favorite',
-        icon: 'pi pi-star',
+        icon: 'cs el-star',
         shortcut: '⌘+D'
     },
     {
         label: 'Add',
-        icon: 'pi pi-shopping-cart',
+        icon: 'cs el-shopping-cart',
         shortcut: '⌘+A'
     },
     {
@@ -259,16 +259,16 @@ const items = ref([
     },
     {
         label: 'Share',
-        icon: 'pi pi-share-alt',
+        icon: 'cs el-share-alt',
         items: [
             {
                 label: 'Whatsapp',
-                icon: 'pi pi-whatsapp',
+                icon: 'cs el-whatsapp',
                 badge: 2
             },
             {
                 label: 'Instagram',
-                icon: 'pi pi-instagram',
+                icon: 'cs el-instagram',
                 badge: 3
             }
         ]

@@ -37,7 +37,7 @@ export default {
             this.$confirm.require({
                 message: 'Are you sure you want to proceed?',
                 header: 'Confirmation',
-                icon: 'pi pi-exclamation-triangle',
+                icon: 'cs el-exclamation-triangle',
                 rejectClass: 'p-button-secondary p-button-outlined',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Save',
@@ -53,7 +53,7 @@ export default {
             this.$confirm.require({
                 message: 'Do you want to delete this record?',
                 header: 'Danger Zone',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Delete',
                 rejectClass: 'p-button-secondary p-button-outlined',
@@ -91,7 +91,7 @@ const confirm1 = () => {
     confirm.require({
         message: 'Are you sure you want to proceed?',
         header: 'Confirmation',
-        icon: 'pi pi-exclamation-triangle',
+        icon: 'cs el-exclamation-triangle',
         rejectClass: 'p-button-secondary p-button-outlined',
         rejectLabel: 'Cancel',
         acceptLabel: 'Save',
@@ -108,7 +108,7 @@ const confirm2 = () => {
     confirm.require({
         message: 'Do you want to delete this record?',
         header: 'Danger Zone',
-        icon: 'pi pi-info-circle',
+        icon: 'cs el-info-circle',
         rejectLabel: 'Cancel',
         acceptLabel: 'Delete',
         rejectClass: 'p-button-secondary p-button-outlined',
@@ -131,7 +131,7 @@ const confirm2 = () => {
             this.$confirm.require({
                 message: 'Are you sure you want to proceed?',
                 header: 'Confirmation',
-                icon: 'pi pi-exclamation-triangle',
+                icon: 'cs el-exclamation-triangle',
                 rejectClass: 'p-button-secondary p-button-outlined',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Save',
@@ -147,7 +147,7 @@ const confirm2 = () => {
             this.$confirm.require({
                 message: 'Do you want to delete this record?',
                 header: 'Danger Zone',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 rejectLabel: 'Cancel',
                 acceptLabel: 'Delete',
                 rejectClass: 'p-button-secondary p-button-outlined',

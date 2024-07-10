@@ -8,7 +8,6 @@
         <Dialog v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
             <template #header>
                 <div class="inline-flex align-items-center justify-content-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
                     <span class="font-bold white-space-nowrap">Amy Elsner</span>
                 </div>
             </template>
@@ -42,7 +41,7 @@ export default {
 <Dialog v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
     <template #header>
         <div class="inline-flex align-items-center justify-content-center gap-2">
-            <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
             <span class="font-bold white-space-nowrap">Amy Elsner</span>
         </div>
     </template>
@@ -68,7 +67,7 @@ export default {
         <Dialog v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
             <template #header>
                 <div class="inline-flex align-items-center justify-content-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
                     <span class="font-bold white-space-nowrap">Amy Elsner</span>
                 </div>
             </template>
@@ -106,7 +105,7 @@ export default {
         <Dialog v-model:visible="visible" modal header="Edit Profile" :style="{ width: '25rem' }">
             <template #header>
                 <div class="inline-flex align-items-center justify-content-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
                     <span class="font-bold white-space-nowrap">Amy Elsner</span>
                 </div>
             </template>

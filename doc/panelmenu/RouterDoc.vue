@@ -29,39 +29,39 @@ export default {
             items: [
                 {
                     label: 'Router',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     items: [
                         {
                             label: 'Styled',
-                            icon: 'pi pi-eraser',
+                            icon: 'cs el-eraser',
                             route: '/theming'
                         },
                         {
                             label: 'Unstyled',
-                            icon: 'pi pi-heart',
+                            icon: 'cs el-heart',
                             route: '/unstyled'
                         }
                     ]
                 },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     command: () => {
                         this.$router.push('/introduction');
                     }
                 },
                 {
                     label: 'External',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     items: [
                         {
                             label: 'Vue.js',
-                            icon: 'pi pi-star',
+                            icon: 'cs el-star',
                             url: 'https://vuejs.org/'
                         },
                         {
                             label: 'Vite.js',
-                            icon: 'pi pi-bookmark',
+                            icon: 'cs el-bookmark',
                             url: 'https://vuejs.org/'
                         }
                     ]
@@ -113,39 +113,39 @@ export default {
             items: [
                 {
                     label: 'Router',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     items: [
                         {
                             label: 'Styled',
-                            icon: 'pi pi-eraser',
+                            icon: 'cs el-eraser',
                             route: '/theming'
                         },
                         {
                             label: 'Unstyled',
-                            icon: 'pi pi-heart',
+                            icon: 'cs el-heart',
                             route: '/unstyled'
                         }
                     ]
                 },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     command: () => {
                         this.$router.push('/introduction');
                     }
                 },
                 {
                     label: 'External',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     items: [
                         {
                             label: 'Vue.js',
-                            icon: 'pi pi-star',
+                            icon: 'cs el-star',
                             url: 'https://vuejs.org/'
                         },
                         {
                             label: 'Vite.js',
-                            icon: 'pi pi-bookmark',
+                            icon: 'cs el-bookmark',
                             url: 'https://vuejs.org/'
                         }
                     ]
@@ -186,39 +186,39 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Router',
-        icon: 'pi pi-palette',
+        icon: 'cs el-palette',
         items: [
             {
                 label: 'Styled',
-                icon: 'pi pi-eraser',
+                icon: 'cs el-eraser',
                 route: '/theming'
             },
             {
                 label: 'Unstyled',
-                icon: 'pi pi-heart',
+                icon: 'cs el-heart',
                 route: '/unstyled'
             }
         ]
     },
     {
         label: 'Programmatic',
-        icon: 'pi pi-link',
+        icon: 'cs el-link',
         command: () => {
             router.push('/introduction');
         }
     },
     {
         label: 'External',
-        icon: 'pi pi-home',
+        icon: 'cs el-home',
         items: [
             {
                 label: 'Vue.js',
-                icon: 'pi pi-star',
+                icon: 'cs el-star',
                 url: 'https://vuejs.org/'
             },
             {
                 label: 'Vite.js',
-                icon: 'pi pi-bookmark',
+                icon: 'cs el-bookmark',
                 url: 'https://vuejs.org/'
             }
         ]

@@ -24,61 +24,61 @@ export default {
             items: [
                 {
                     label: 'Mail',
-                    icon: 'pi pi-envelope',
+                    icon: 'cs el-envelope',
                     badge: 5,
                     items: [
                         {
                             label: 'Compose',
-                            icon: 'pi pi-file-edit',
+                            icon: 'cs el-file-edit',
                             shortcut: '⌘+N'
                         },
                         {
                             label: 'Inbox',
-                            icon: 'pi pi-inbox',
+                            icon: 'cs el-inbox',
                             badge: 5
                         },
                         {
                             label: 'Sent',
-                            icon: 'pi pi-send',
+                            icon: 'cs el-send',
                             shortcut: '⌘+S'
                         },
                         {
                             label: 'Trash',
-                            icon: 'pi pi-trash',
+                            icon: 'cs el-trash',
                             shortcut: '⌘+T'
                         }
                     ]
                 },
                 {
                     label: 'Reports',
-                    icon: 'pi pi-chart-bar',
+                    icon: 'cs el-chart-bar',
                     shortcut: '⌘+R',
                     items: [
                         {
                             label: 'Sales',
-                            icon: 'pi pi-chart-line',
+                            icon: 'cs el-chart-line',
                             badge: 3
                         },
                         {
                             label: 'Products',
-                            icon: 'pi pi-list',
+                            icon: 'cs el-list',
                             badge: 6
                         }
                     ]
                 },
                 {
                     label: 'Profile',
-                    icon: 'pi pi-user',
+                    icon: 'cs el-user',
                     shortcut: '⌘+W',
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog',
+                            icon: 'cs el-cog',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Privacy',
-                            icon: 'pi pi-shield',
+                            icon: 'cs el-shield',
                             shortcut: '⌘+P'
                         }
                     ]
@@ -120,61 +120,61 @@ export default {
             items: [
                 {
                     label: 'Mail',
-                    icon: 'pi pi-envelope',
+                    icon: 'cs el-envelope',
                     badge: 5,
                     items: [
                         {
                             label: 'Compose',
-                            icon: 'pi pi-file-edit',
+                            icon: 'cs el-file-edit',
                             shortcut: '⌘+N'
                         },
                         {
                             label: 'Inbox',
-                            icon: 'pi pi-inbox',
+                            icon: 'cs el-inbox',
                             badge: 5
                         },
                         {
                             label: 'Sent',
-                            icon: 'pi pi-send',
+                            icon: 'cs el-send',
                             shortcut: '⌘+S'
                         },
                         {
                             label: 'Trash',
-                            icon: 'pi pi-trash',
+                            icon: 'cs el-trash',
                             shortcut: '⌘+T'
                         }
                     ]
                 },
                 {
                     label: 'Reports',
-                    icon: 'pi pi-chart-bar',
+                    icon: 'cs el-chart-bar',
                     shortcut: '⌘+R',
                     items: [
                         {
                             label: 'Sales',
-                            icon: 'pi pi-chart-line',
+                            icon: 'cs el-chart-line',
                             badge: 3
                         },
                         {
                             label: 'Products',
-                            icon: 'pi pi-list',
+                            icon: 'cs el-list',
                             badge: 6
                         }
                     ]
                 },
                 {
                     label: 'Profile',
-                    icon: 'pi pi-user',
+                    icon: 'cs el-user',
                     shortcut: '⌘+W',
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog',
+                            icon: 'cs el-cog',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Privacy',
-                            icon: 'pi pi-shield',
+                            icon: 'cs el-shield',
                             shortcut: '⌘+P'
                         }
                     ]
@@ -207,61 +207,61 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Mail',
-        icon: 'pi pi-envelope',
+        icon: 'cs el-envelope',
         badge: 5,
         items: [
             {
                 label: 'Compose',
-                icon: 'pi pi-file-edit',
+                icon: 'cs el-file-edit',
                 shortcut: '⌘+N'
             },
             {
                 label: 'Inbox',
-                icon: 'pi pi-inbox',
+                icon: 'cs el-inbox',
                 badge: 5
             },
             {
                 label: 'Sent',
-                icon: 'pi pi-send',
+                icon: 'cs el-send',
                 shortcut: '⌘+S'
             },
             {
                 label: 'Trash',
-                icon: 'pi pi-trash',
+                icon: 'cs el-trash',
                 shortcut: '⌘+T'
             }
         ]
     },
     {
         label: 'Reports',
-        icon: 'pi pi-chart-bar',
+        icon: 'cs el-chart-bar',
         shortcut: '⌘+R',
         items: [
             {
                 label: 'Sales',
-                icon: 'pi pi-chart-line',
+                icon: 'cs el-chart-line',
                 badge: 3
             },
             {
                 label: 'Products',
-                icon: 'pi pi-list',
+                icon: 'cs el-list',
                 badge: 6
             }
         ]
     },
     {
         label: 'Profile',
-        icon: 'pi pi-user',
+        icon: 'cs el-user',
         shortcut: '⌘+W',
         items: [
             {
                 label: 'Settings',
-                icon: 'pi pi-cog',
+                icon: 'cs el-cog',
                 shortcut: '⌘+O'
             },
             {
                 label: 'Privacy',
-                icon: 'pi pi-shield',
+                icon: 'cs el-shield',
                 shortcut: '⌘+P'
             }
         ]

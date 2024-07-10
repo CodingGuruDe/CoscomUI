@@ -38,9 +38,7 @@
                     <Button :label="item.label" outlined />
                 </div>
             </template>
-            <template #end>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
-            </template>
+            <template #end> </template>
         </MegaMenu>
     </div>
     <DocSectionCode :code="code" />
@@ -58,27 +56,27 @@ export default {
                         [
                             {
                                 items: [
-                                    { label: 'Features', icon: 'pi pi-list', subtext: 'Subtext of item' },
-                                    { label: 'Customers', icon: 'pi pi-users', subtext: 'Subtext of item' },
-                                    { label: 'Case Studies', icon: 'pi pi-file', subtext: 'Subtext of item' }
+                                    { label: 'Features', icon: 'cs el-list', subtext: 'Subtext of item' },
+                                    { label: 'Customers', icon: 'cs el-users', subtext: 'Subtext of item' },
+                                    { label: 'Case Studies', icon: 'cs el-file', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
                         [
                             {
                                 items: [
-                                    { label: 'Solutions', icon: 'pi pi-shield', subtext: 'Subtext of item' },
-                                    { label: 'Faq', icon: 'pi pi-question', subtext: 'Subtext of item' },
-                                    { label: 'Library', icon: 'pi pi-search', subtext: 'Subtext of item' }
+                                    { label: 'Solutions', icon: 'cs el-shield', subtext: 'Subtext of item' },
+                                    { label: 'Faq', icon: 'cs el-question', subtext: 'Subtext of item' },
+                                    { label: 'Library', icon: 'cs el-search', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
                         [
                             {
                                 items: [
-                                    { label: 'Community', icon: 'pi pi-comments', subtext: 'Subtext of item' },
-                                    { label: 'Rewards', icon: 'pi pi-star', subtext: 'Subtext of item' },
-                                    { label: 'Investors', icon: 'pi pi-globe', subtext: 'Subtext of item' }
+                                    { label: 'Community', icon: 'cs el-comments', subtext: 'Subtext of item' },
+                                    { label: 'Rewards', icon: 'cs el-star', subtext: 'Subtext of item' },
+                                    { label: 'Investors', icon: 'cs el-globe', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
@@ -128,7 +126,7 @@ export default {
         </div>
     </template>
     <template #end>
-        <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
+
     </template>
 </MegaMenu>
 `,
@@ -169,7 +167,7 @@ export default {
                 </div>
             </template>
             <template #end>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
             </template>
         </MegaMenu>
     </div>
@@ -187,27 +185,27 @@ export default {
                         [
                             {
                                 items: [
-                                    { label: 'Features', icon: 'pi pi-list', subtext: 'Subtext of item' },
-                                    { label: 'Customers', icon: 'pi pi-users', subtext: 'Subtext of item' },
-                                    { label: 'Case Studies', icon: 'pi pi-file', subtext: 'Subtext of item' }
+                                    { label: 'Features', icon: 'cs el-list', subtext: 'Subtext of item' },
+                                    { label: 'Customers', icon: 'cs el-users', subtext: 'Subtext of item' },
+                                    { label: 'Case Studies', icon: 'cs el-file', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
                         [
                             {
                                 items: [
-                                    { label: 'Solutions', icon: 'pi pi-shield', subtext: 'Subtext of item' },
-                                    { label: 'Faq', icon: 'pi pi-question', subtext: 'Subtext of item' },
-                                    { label: 'Library', icon: 'pi pi-search', subtext: 'Subtext of item' }
+                                    { label: 'Solutions', icon: 'cs el-shield', subtext: 'Subtext of item' },
+                                    { label: 'Faq', icon: 'cs el-question', subtext: 'Subtext of item' },
+                                    { label: 'Library', icon: 'cs el-search', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
                         [
                             {
                                 items: [
-                                    { label: 'Community', icon: 'pi pi-comments', subtext: 'Subtext of item' },
-                                    { label: 'Rewards', icon: 'pi pi-star', subtext: 'Subtext of item' },
-                                    { label: 'Investors', icon: 'pi pi-globe', subtext: 'Subtext of item' }
+                                    { label: 'Community', icon: 'cs el-comments', subtext: 'Subtext of item' },
+                                    { label: 'Rewards', icon: 'cs el-star', subtext: 'Subtext of item' },
+                                    { label: 'Investors', icon: 'cs el-globe', subtext: 'Subtext of item' }
                                 ]
                             }
                         ],
@@ -269,7 +267,7 @@ export default {
                 </div>
             </template>
             <template #end>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
             </template>
         </MegaMenu>
     </div>
@@ -286,27 +284,27 @@ const items = ref([
             [
                 {
                     items: [
-                        { label: 'Features', icon: 'pi pi-list', subtext: 'Subtext of item' },
-                        { label: 'Customers', icon: 'pi pi-users', subtext: 'Subtext of item' },
-                        { label: 'Case Studies', icon: 'pi pi-file', subtext: 'Subtext of item' }
+                        { label: 'Features', icon: 'cs el-list', subtext: 'Subtext of item' },
+                        { label: 'Customers', icon: 'cs el-users', subtext: 'Subtext of item' },
+                        { label: 'Case Studies', icon: 'cs el-file', subtext: 'Subtext of item' }
                     ]
                 }
             ],
             [
                 {
                     items: [
-                        { label: 'Solutions', icon: 'pi pi-shield', subtext: 'Subtext of item' },
-                        { label: 'Faq', icon: 'pi pi-question', subtext: 'Subtext of item' },
-                        { label: 'Library', icon: 'pi pi-search', subtext: 'Subtext of item' }
+                        { label: 'Solutions', icon: 'cs el-shield', subtext: 'Subtext of item' },
+                        { label: 'Faq', icon: 'cs el-question', subtext: 'Subtext of item' },
+                        { label: 'Library', icon: 'cs el-search', subtext: 'Subtext of item' }
                     ]
                 }
             ],
             [
                 {
                     items: [
-                        { label: 'Community', icon: 'pi pi-comments', subtext: 'Subtext of item' },
-                        { label: 'Rewards', icon: 'pi pi-star', subtext: 'Subtext of item' },
-                        { label: 'Investors', icon: 'pi pi-globe', subtext: 'Subtext of item' }
+                        { label: 'Community', icon: 'cs el-comments', subtext: 'Subtext of item' },
+                        { label: 'Rewards', icon: 'cs el-star', subtext: 'Subtext of item' },
+                        { label: 'Investors', icon: 'cs el-globe', subtext: 'Subtext of item' }
                     ]
                 }
             ],

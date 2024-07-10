@@ -35,7 +35,6 @@
             </template>
             <template #end>
                 <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Admin</span>
@@ -60,12 +59,12 @@ export default {
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             shortcut: '⌘+N'
                         },
                         {
                             label: 'Search',
-                            icon: 'pi pi-search',
+                            icon: 'cs el-search',
                             shortcut: '⌘+S'
                         }
                     ]
@@ -75,17 +74,17 @@ export default {
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog',
+                            icon: 'cs el-cog',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Messages',
-                            icon: 'pi pi-inbox',
+                            icon: 'cs el-inbox',
                             badge: 2
                         },
                         {
                             label: 'Logout',
-                            icon: 'pi pi-sign-out',
+                            icon: 'cs el-sign-out',
                             shortcut: '⌘+Q'
                         }
                     ]
@@ -119,7 +118,7 @@ export default {
     </template>
     <template #end>
         <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-            <Avatar image="/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+
             <span class="inline-flex flex-column">
                 <span class="font-bold">Amy Elsner</span>
                 <span class="text-sm">Admin</span>
@@ -160,7 +159,7 @@ export default {
             </template>
             <template #end>
                 <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Admin</span>
@@ -184,12 +183,12 @@ export default {
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             shortcut: '⌘+N'
                         },
                         {
                             label: 'Search',
-                            icon: 'pi pi-search',
+                            icon: 'cs el-search',
                             shortcut: '⌘+S'
                         }
                     ]
@@ -199,17 +198,17 @@ export default {
                     items: [
                         {
                             label: 'Settings',
-                            icon: 'pi pi-cog',
+                            icon: 'cs el-cog',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Messages',
-                            icon: 'pi pi-inbox',
+                            icon: 'cs el-inbox',
                             badge: 2
                         },
                         {
                             label: 'Logout',
-                            icon: 'pi pi-sign-out',
+                            icon: 'cs el-sign-out',
                             shortcut: '⌘+Q'
                         }
                     ]
@@ -255,7 +254,7 @@ export default {
             </template>
             <template #end>
                 <button v-ripple class="relative overflow-hidden w-full v-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" class="mr-2" shape="circle" />
+
                     <span class="inline-flex flex-column">
                         <span class="font-bold">Amy Elsner</span>
                         <span class="text-sm">Admin</span>
@@ -278,12 +277,12 @@ const items = ref([
         items: [
             {
                 label: 'New',
-                icon: 'pi pi-plus',
+                icon: 'cs el-plus',
                 shortcut: '⌘+N'
             },
             {
                 label: 'Search',
-                icon: 'pi pi-search',
+                icon: 'cs el-search',
                 shortcut: '⌘+S'
             }
         ]
@@ -293,17 +292,17 @@ const items = ref([
         items: [
             {
                 label: 'Settings',
-                icon: 'pi pi-cog',
+                icon: 'cs el-cog',
                 shortcut: '⌘+O'
             },
             {
                 label: 'Messages',
-                icon: 'pi pi-inbox',
+                icon: 'cs el-inbox',
                 badge: 2
             },
             {
                 label: 'Logout',
-                icon: 'pi pi-sign-out',
+                icon: 'cs el-sign-out',
                 shortcut: '⌘+Q'
             }
         ]

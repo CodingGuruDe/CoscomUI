@@ -37,7 +37,7 @@ export default {
             items: [
                 {
                     label: 'Roles',
-                    icon: 'pi pi-users',
+                    icon: 'cs el-users',
                     items: [
                         {
                             label: 'Admin',
@@ -61,7 +61,7 @@ export default {
                 },
                 {
                     label: 'Invite',
-                    icon: 'pi pi-user-plus',
+                    icon: 'cs el-user-plus',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Success', detail: 'Invitation sent!', life: 3000 });
                     }
@@ -123,7 +123,7 @@ export default {
             items: [
                 {
                     label: 'Roles',
-                    icon: 'pi pi-users',
+                    icon: 'cs el-users',
                     items: [
                         {
                             label: 'Admin',
@@ -147,7 +147,7 @@ export default {
                 },
                 {
                     label: 'Invite',
-                    icon: 'pi pi-user-plus',
+                    icon: 'cs el-user-plus',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Success', detail: 'Invitation sent!', life: 3000 });
                     }
@@ -208,7 +208,7 @@ const users = ref([
 const items = ref([
     {
         label: 'Roles',
-        icon: 'pi pi-users',
+        icon: 'cs el-users',
         items: [
             {
                 label: 'Admin',
@@ -232,7 +232,7 @@ const items = ref([
     },
     {
         label: 'Invite',
-        icon: 'pi pi-user-plus',
+        icon: 'cs el-user-plus',
         command: () => {
             toast.add({ severity: 'success', summary: 'Success', detail: 'Invitation sent!', life: 3000 });
         }

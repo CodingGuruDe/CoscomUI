@@ -37,10 +37,6 @@
                     "to": "/accordion"
                 },
                 {
-                    "name": "Avatar",
-                    "to": "/avatar"
-                },
-                {
                     "name": "Button",
                     "to": "/button"
                 },
@@ -87,10 +83,6 @@
                 {
                     "name": "Radio Button",
                     "to": "/radiobutton"
-                },
-                {
-                    "name": "Select Button",
-                    "to": "/selectbutton"
                 }
             ]
         },

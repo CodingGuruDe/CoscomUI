@@ -15,39 +15,39 @@ export default {
             items: [
                 {
                     label: 'Files',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'Documents',
-                            icon: 'pi pi-file',
+                            icon: 'cs el-file',
                             items: [
                                 {
                                     label: 'Invoices',
-                                    icon: 'pi pi-file-pdf',
+                                    icon: 'cs el-file-pdf',
                                     items: [
                                         {
                                             label: 'Pending',
-                                            icon: 'pi pi-stop'
+                                            icon: 'cs el-stop'
                                         },
                                         {
                                             label: 'Paid',
-                                            icon: 'pi pi-check-circle'
+                                            icon: 'cs el-check-circle'
                                         }
                                     ]
                                 },
                                 {
                                     label: 'Clients',
-                                    icon: 'pi pi-users'
+                                    icon: 'cs el-users'
                                 }
                             ]
                         },
                         {
                             label: 'Images',
-                            icon: 'pi pi-image',
+                            icon: 'cs el-image',
                             items: [
                                 {
                                     label: 'Logos',
-                                    icon: 'pi pi-image'
+                                    icon: 'cs el-image'
                                 }
                             ]
                         }
@@ -55,37 +55,37 @@ export default {
                 },
                 {
                     label: 'Cloud',
-                    icon: 'pi pi-cloud',
+                    icon: 'cs el-cloud',
                     items: [
                         {
                             label: 'Upload',
-                            icon: 'pi pi-cloud-upload'
+                            icon: 'cs el-cloud-upload'
                         },
                         {
                             label: 'Download',
-                            icon: 'pi pi-cloud-download'
+                            icon: 'cs el-cloud-download'
                         },
                         {
                             label: 'Sync',
-                            icon: 'pi pi-refresh'
+                            icon: 'cs el-refresh'
                         }
                     ]
                 },
                 {
                     label: 'Devices',
-                    icon: 'pi pi-desktop',
+                    icon: 'cs el-desktop',
                     items: [
                         {
                             label: 'Phone',
-                            icon: 'pi pi-mobile'
+                            icon: 'cs el-mobile'
                         },
                         {
                             label: 'Desktop',
-                            icon: 'pi pi-desktop'
+                            icon: 'cs el-desktop'
                         },
                         {
                             label: 'Tablet',
-                            icon: 'pi pi-tablet'
+                            icon: 'cs el-tablet'
                         }
                     ]
                 }
@@ -108,39 +108,39 @@ export default {
             items: [
                 {
                     label: 'Files',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'Documents',
-                            icon: 'pi pi-file',
+                            icon: 'cs el-file',
                             items: [
                                 {
                                     label: 'Invoices',
-                                    icon: 'pi pi-file-pdf',
+                                    icon: 'cs el-file-pdf',
                                     items: [
                                         {
                                             label: 'Pending',
-                                            icon: 'pi pi-stop'
+                                            icon: 'cs el-stop'
                                         },
                                         {
                                             label: 'Paid',
-                                            icon: 'pi pi-check-circle'
+                                            icon: 'cs el-check-circle'
                                         }
                                     ]
                                 },
                                 {
                                     label: 'Clients',
-                                    icon: 'pi pi-users'
+                                    icon: 'cs el-users'
                                 }
                             ]
                         },
                         {
                             label: 'Images',
-                            icon: 'pi pi-image',
+                            icon: 'cs el-image',
                             items: [
                                 {
                                     label: 'Logos',
-                                    icon: 'pi pi-image'
+                                    icon: 'cs el-image'
                                 }
                             ]
                         }
@@ -148,37 +148,37 @@ export default {
                 },
                 {
                     label: 'Cloud',
-                    icon: 'pi pi-cloud',
+                    icon: 'cs el-cloud',
                     items: [
                         {
                             label: 'Upload',
-                            icon: 'pi pi-cloud-upload'
+                            icon: 'cs el-cloud-upload'
                         },
                         {
                             label: 'Download',
-                            icon: 'pi pi-cloud-download'
+                            icon: 'cs el-cloud-download'
                         },
                         {
                             label: 'Sync',
-                            icon: 'pi pi-refresh'
+                            icon: 'cs el-refresh'
                         }
                     ]
                 },
                 {
                     label: 'Devices',
-                    icon: 'pi pi-desktop',
+                    icon: 'cs el-desktop',
                     items: [
                         {
                             label: 'Phone',
-                            icon: 'pi pi-mobile'
+                            icon: 'cs el-mobile'
                         },
                         {
                             label: 'Desktop',
-                            icon: 'pi pi-desktop'
+                            icon: 'cs el-desktop'
                         },
                         {
                             label: 'Tablet',
-                            icon: 'pi pi-tablet'
+                            icon: 'cs el-tablet'
                         }
                     ]
                 }
@@ -201,39 +201,39 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Files',
-        icon: 'pi pi-file',
+        icon: 'cs el-file',
         items: [
             {
                 label: 'Documents',
-                icon: 'pi pi-file',
+                icon: 'cs el-file',
                 items: [
                     {
                         label: 'Invoices',
-                        icon: 'pi pi-file-pdf',
+                        icon: 'cs el-file-pdf',
                         items: [
                             {
                                 label: 'Pending',
-                                icon: 'pi pi-stop'
+                                icon: 'cs el-stop'
                             },
                             {
                                 label: 'Paid',
-                                icon: 'pi pi-check-circle'
+                                icon: 'cs el-check-circle'
                             }
                         ]
                     },
                     {
                         label: 'Clients',
-                        icon: 'pi pi-users'
+                        icon: 'cs el-users'
                     }
                 ]
             },
             {
                 label: 'Images',
-                icon: 'pi pi-image',
+                icon: 'cs el-image',
                 items: [
                     {
                         label: 'Logos',
-                        icon: 'pi pi-image'
+                        icon: 'cs el-image'
                     }
                 ]
             }
@@ -241,37 +241,37 @@ const items = ref([
     },
     {
         label: 'Cloud',
-        icon: 'pi pi-cloud',
+        icon: 'cs el-cloud',
         items: [
             {
                 label: 'Upload',
-                icon: 'pi pi-cloud-upload'
+                icon: 'cs el-cloud-upload'
             },
             {
                 label: 'Download',
-                icon: 'pi pi-cloud-download'
+                icon: 'cs el-cloud-download'
             },
             {
                 label: 'Sync',
-                icon: 'pi pi-refresh'
+                icon: 'cs el-refresh'
             }
         ]
     },
     {
         label: 'Devices',
-        icon: 'pi pi-desktop',
+        icon: 'cs el-desktop',
         items: [
             {
                 label: 'Phone',
-                icon: 'pi pi-mobile'
+                icon: 'cs el-mobile'
             },
             {
                 label: 'Desktop',
-                icon: 'pi pi-desktop'
+                icon: 'cs el-desktop'
             },
             {
                 label: 'Tablet',
-                icon: 'pi pi-tablet'
+                icon: 'cs el-tablet'
             }
         ]
     }

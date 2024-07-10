@@ -21,7 +21,7 @@ describe('Breadcrumb', () => {
                 }
             },
             props: {
-                home: { icon: 'pi pi-home', to: '/' },
+                home: { icon: 'cs el-home', to: '/' },
                 model: [{ label: 'Computer' }, { label: 'Notebook' }, { label: 'Accessories' }, { label: 'Backpacks' }, { label: 'Item' }]
             }
         });

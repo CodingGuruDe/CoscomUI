@@ -19,11 +19,11 @@ export default {
                     items: [
                         {
                             label: 'Refresh',
-                            icon: 'pi pi-refresh'
+                            icon: 'cs el-refresh'
                         },
                         {
                             label: 'Export',
-                            icon: 'pi pi-upload'
+                            icon: 'cs el-upload'
                         }
                     ]
                 }
@@ -48,11 +48,11 @@ export default {
             items: [
                 {
                     label: 'Refresh',
-                    icon: 'pi pi-refresh'
+                    icon: 'cs el-refresh'
                 },
                 {
                     label: 'Export',
-                    icon: 'pi pi-upload'
+                    icon: 'cs el-upload'
                 }
             ]
         };
@@ -83,11 +83,11 @@ const items = ref([
         items: [
             {
                 label: 'Refresh',
-                icon: 'pi pi-refresh'
+                icon: 'cs el-refresh'
             },
             {
                 label: 'Export',
-                icon: 'pi pi-upload'
+                icon: 'cs el-upload'
             }
         ]
     }

@@ -21,7 +21,7 @@ export default {
                 {
                     key: '0',
                     label: 'Users',
-                    icon: 'pi pi-users',
+                    icon: 'cs el-users',
                     items: [
                         {
                             key: '0_1',
@@ -46,7 +46,7 @@ export default {
                 {
                     key: '1',
                     label: 'Tasks',
-                    icon: 'pi pi-server',
+                    icon: 'cs el-server',
                     items: [
                         {
                             key: '1_0',
@@ -65,7 +65,7 @@ export default {
                 {
                     key: '2',
                     label: 'Calendar',
-                    icon: 'pi pi-calendar',
+                    icon: 'cs el-calendar',
                     items: [
                         {
                             key: '2_0',
@@ -104,7 +104,7 @@ export default {
                 {
                     key: '0',
                     label: 'Users',
-                    icon: 'pi pi-users',
+                    icon: 'cs el-users',
                     items: [
                         {
                             key: '0_1',
@@ -129,7 +129,7 @@ export default {
                 {
                     key: '1',
                     label: 'Tasks',
-                    icon: 'pi pi-server',
+                    icon: 'cs el-server',
                     items: [
                         {
                             key: '1_0',
@@ -148,7 +148,7 @@ export default {
                 {
                     key: '2',
                     label: 'Calendar',
-                    icon: 'pi pi-calendar',
+                    icon: 'cs el-calendar',
                     items: [
                         {
                             key: '2_0',
@@ -213,7 +213,7 @@ const items = ref([
     {
         key: '0',
         label: 'Users',
-        icon: 'pi pi-users',
+        icon: 'cs el-users',
         items: [
             {
                 key: '0_1',
@@ -238,7 +238,7 @@ const items = ref([
     {
         key: '1',
         label: 'Tasks',
-        icon: 'pi pi-server',
+        icon: 'cs el-server',
         items: [
             {
                 key: '1_0',
@@ -257,7 +257,7 @@ const items = ref([
     {
         key: '2',
         label: 'Calendar',
-        icon: 'pi pi-calendar',
+        icon: 'cs el-calendar',
         items: [
             {
                 key: '2_0',

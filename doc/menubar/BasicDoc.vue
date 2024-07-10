@@ -15,39 +15,39 @@ export default {
             items: [
                 {
                     label: 'Home',
-                    icon: 'pi pi-home'
+                    icon: 'cs el-home'
                 },
                 {
                     label: 'Features',
-                    icon: 'pi pi-star'
+                    icon: 'cs el-star'
                 },
                 {
                     label: 'Projects',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     items: [
                         {
                             label: 'Components',
-                            icon: 'pi pi-bolt'
+                            icon: 'cs el-bolt'
                         },
                         {
                             label: 'Blocks',
-                            icon: 'pi pi-server'
+                            icon: 'cs el-server'
                         },
                         {
                             label: 'UI Kit',
-                            icon: 'pi pi-pencil'
+                            icon: 'cs el-pencil'
                         },
                         {
                             label: 'Templates',
-                            icon: 'pi pi-palette',
+                            icon: 'cs el-palette',
                             items: [
                                 {
                                     label: 'Apollo',
-                                    icon: 'pi pi-palette'
+                                    icon: 'cs el-palette'
                                 },
                                 {
                                     label: 'Ultima',
-                                    icon: 'pi pi-palette'
+                                    icon: 'cs el-palette'
                                 }
                             ]
                         }
@@ -55,7 +55,7 @@ export default {
                 },
                 {
                     label: 'Contact',
-                    icon: 'pi pi-envelope'
+                    icon: 'cs el-envelope'
                 }
             ],
             code: {
@@ -76,39 +76,39 @@ export default {
             items: [
                 {
                     label: 'Home',
-                    icon: 'pi pi-home'
+                    icon: 'cs el-home'
                 },
                 {
                     label: 'Features',
-                    icon: 'pi pi-star'
+                    icon: 'cs el-star'
                 },
                 {
                     label: 'Projects',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     items: [
                         {
                             label: 'Components',
-                            icon: 'pi pi-bolt'
+                            icon: 'cs el-bolt'
                         },
                         {
                             label: 'Blocks',
-                            icon: 'pi pi-server'
+                            icon: 'cs el-server'
                         },
                         {
                             label: 'UI Kit',
-                            icon: 'pi pi-pencil'
+                            icon: 'cs el-pencil'
                         },
                         {
                             label: 'Templates',
-                            icon: 'pi pi-palette',
+                            icon: 'cs el-palette',
                             items: [
                                 {
                                     label: 'Apollo',
-                                    icon: 'pi pi-palette'
+                                    icon: 'cs el-palette'
                                 },
                                 {
                                     label: 'Ultima',
-                                    icon: 'pi pi-palette'
+                                    icon: 'cs el-palette'
                                 }
                             ]
                         }
@@ -116,7 +116,7 @@ export default {
                 },
                 {
                     label: 'Contact',
-                    icon: 'pi pi-envelope'
+                    icon: 'cs el-envelope'
                 }
             ]
         };
@@ -137,39 +137,39 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Home',
-        icon: 'pi pi-home'
+        icon: 'cs el-home'
     },
     {
         label: 'Features',
-        icon: 'pi pi-star'
+        icon: 'cs el-star'
     },
     {
         label: 'Projects',
-        icon: 'pi pi-search',
+        icon: 'cs el-search',
         items: [
             {
                 label: 'Components',
-                icon: 'pi pi-bolt'
+                icon: 'cs el-bolt'
             },
             {
                 label: 'Blocks',
-                icon: 'pi pi-server'
+                icon: 'cs el-server'
             },
             {
                 label: 'UI Kit',
-                icon: 'pi pi-pencil'
+                icon: 'cs el-pencil'
             },
             {
                 label: 'Templates',
-                icon: 'pi pi-palette',
+                icon: 'cs el-palette',
                 items: [
                     {
                         label: 'Apollo',
-                        icon: 'pi pi-palette'
+                        icon: 'cs el-palette'
                     },
                     {
                         label: 'Ultima',
-                        icon: 'pi pi-palette'
+                        icon: 'cs el-palette'
                     }
                 ]
             }
@@ -177,7 +177,7 @@ const items = ref([
     },
     {
         label: 'Contact',
-        icon: 'pi pi-envelope'
+        icon: 'cs el-envelope'
     }
 ]);
 <\/script>

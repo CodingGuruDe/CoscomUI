@@ -24,13 +24,12 @@
                     <span class="ml-2">{{ item.label }}</span>
                     <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge" />
                     <span v-if="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
-                    <i v-if="hasSubmenu" :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+                    <i v-if="hasSubmenu" :class="['cs el-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
                 </a>
             </template>
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
                 </div>
             </template>
         </Menubar>
@@ -45,29 +44,29 @@ export default {
             items: [
                 {
                     label: 'Home',
-                    icon: 'pi pi-home'
+                    icon: 'cs el-home'
                 },
                 {
                     label: 'Features',
-                    icon: 'pi pi-star'
+                    icon: 'cs el-star'
                 },
                 {
                     label: 'Projects',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     items: [
                         {
                             label: 'Core',
-                            icon: 'pi pi-bolt',
+                            icon: 'cs el-bolt',
                             shortcut: '⌘+S'
                         },
                         {
                             label: 'Blocks',
-                            icon: 'pi pi-server',
+                            icon: 'cs el-server',
                             shortcut: '⌘+B'
                         },
                         {
                             label: 'UI Kit',
-                            icon: 'pi pi-pencil',
+                            icon: 'cs el-pencil',
                             shortcut: '⌘+U'
                         },
                         {
@@ -75,16 +74,16 @@ export default {
                         },
                         {
                             label: 'Templates',
-                            icon: 'pi pi-palette',
+                            icon: 'cs el-palette',
                             items: [
                                 {
                                     label: 'Apollo',
-                                    icon: 'pi pi-palette',
+                                    icon: 'cs el-palette',
                                     badge: 2
                                 },
                                 {
                                     label: 'Ultima',
-                                    icon: 'pi pi-palette',
+                                    icon: 'cs el-palette',
                                     badge: 3
                                 }
                             ]
@@ -93,7 +92,7 @@ export default {
                 },
                 {
                     label: 'Contact',
-                    icon: 'pi pi-envelope',
+                    icon: 'cs el-envelope',
                     badge: 3
                 }
             ],
@@ -112,13 +111,13 @@ export default {
             <span class="ml-2">{{ item.label }}</span>
             <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge" />
             <span v-if="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
-            <i v-if="hasSubmenu" :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+            <i v-if="hasSubmenu" :class="['cs el-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
         </a>
     </template>
     <template #end>
         <div class="flex align-items-center gap-2">
             <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
-            <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
+
         </div>
     </template>
 </Menubar>
@@ -145,13 +144,13 @@ export default {
                     <span class="ml-2">{{ item.label }}</span>
                     <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge" />
                     <span v-if="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
-                    <i v-if="hasSubmenu" :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+                    <i v-if="hasSubmenu" :class="['cs el-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
                 </a>
             </template>
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
                 </div>
             </template>
         </Menubar>
@@ -165,29 +164,29 @@ export default {
             items: [
                 {
                     label: 'Home',
-                    icon: 'pi pi-home'
+                    icon: 'cs el-home'
                 },
                 {
                     label: 'Features',
-                    icon: 'pi pi-star'
+                    icon: 'cs el-star'
                 },
                 {
                     label: 'Projects',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     items: [
                         {
                             label: 'Core',
-                            icon: 'pi pi-bolt',
+                            icon: 'cs el-bolt',
                             shortcut: '⌘+S'
                         },
                         {
                             label: 'Blocks',
-                            icon: 'pi pi-server',
+                            icon: 'cs el-server',
                             shortcut: '⌘+B'
                         },
                         {
                             label: 'UI Kit',
-                            icon: 'pi pi-pencil',
+                            icon: 'cs el-pencil',
                             shortcut: '⌘+U'
                         },
                         {
@@ -195,16 +194,16 @@ export default {
                         },
                         {
                             label: 'Templates',
-                            icon: 'pi pi-palette',
+                            icon: 'cs el-palette',
                             items: [
                                 {
                                     label: 'Apollo',
-                                    icon: 'pi pi-palette',
+                                    icon: 'cs el-palette',
                                     badge: 2
                                 },
                                 {
                                     label: 'Ultima',
-                                    icon: 'pi pi-palette',
+                                    icon: 'cs el-palette',
                                     badge: 3
                                 }
                             ]
@@ -213,7 +212,7 @@ export default {
                 },
                 {
                     label: 'Contact',
-                    icon: 'pi pi-envelope',
+                    icon: 'cs el-envelope',
                     badge: 3
                 }
             ]
@@ -244,13 +243,13 @@ export default {
                     <span class="ml-2">{{ item.label }}</span>
                     <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge" />
                     <span v-if="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{ item.shortcut }}</span>
-                    <i v-if="hasSubmenu" :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+                    <i v-if="hasSubmenu" :class="['cs el-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
                 </a>
             </template>
             <template #end>
                 <div class="flex align-items-center gap-2">
                     <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+                    
                 </div>
             </template>
         </Menubar>
@@ -263,29 +262,29 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Home',
-        icon: 'pi pi-home'
+        icon: 'cs el-home'
     },
     {
         label: 'Features',
-        icon: 'pi pi-star'
+        icon: 'cs el-star'
     },
     {
         label: 'Projects',
-        icon: 'pi pi-search',
+        icon: 'cs el-search',
         items: [
             {
                 label: 'Core',
-                icon: 'pi pi-bolt',
+                icon: 'cs el-bolt',
                 shortcut: '⌘+S'
             },
             {
                 label: 'Blocks',
-                icon: 'pi pi-server',
+                icon: 'cs el-server',
                 shortcut: '⌘+B'
             },
             {
                 label: 'UI Kit',
-                icon: 'pi pi-pencil',
+                icon: 'cs el-pencil',
                 shortcut: '⌘+U'
             },
             {
@@ -293,16 +292,16 @@ const items = ref([
             },
             {
                 label: 'Templates',
-                icon: 'pi pi-palette',
+                icon: 'cs el-palette',
                 items: [
                     {
                         label: 'Apollo',
-                        icon: 'pi pi-palette',
+                        icon: 'cs el-palette',
                         badge: 2
                     },
                     {
                         label: 'Ultima',
-                        icon: 'pi pi-palette',
+                        icon: 'cs el-palette',
                         badge: 3
                     }
                 ]
@@ -311,7 +310,7 @@ const items = ref([
     },
     {
         label: 'Contact',
-        icon: 'pi pi-envelope',
+        icon: 'cs el-envelope',
         badge: 3
     }
 ]);

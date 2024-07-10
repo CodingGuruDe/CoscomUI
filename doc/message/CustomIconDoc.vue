@@ -5,9 +5,7 @@
     <div class="card">
         <Message severity="info" icon="cs el-send">Info Message</Message>
         <Message severity="success">
-            <template #messageicon>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
-            </template>
+            <template #messageicon> </template>
             <span class="ml-2">How may I help you?</span>
         </Message>
     </div>
@@ -23,7 +21,7 @@ export default {
 <Message severity="info" icon="cs el-send">Info Message</Message>
 <Message severity="success">
     <template #messageicon>
-        <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
+
     </template>
     <span class="ml-2">How may I help you?</span>
 </Message>
@@ -34,7 +32,7 @@ export default {
         <Message severity="info" icon="cs el-send">Info Message</Message>
         <Message severity="success">
             <template #messageicon>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
             </template>
             <span class="ml-2">How may I help you?</span>
         </Message>
@@ -50,7 +48,7 @@ export default {
         <Message severity="info" icon="cs el-send">Info Message</Message>
         <Message severity="success">
             <template #messageicon>
-                <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
             </template>
             <span class="ml-2">How may I help you?</span>
         </Message>

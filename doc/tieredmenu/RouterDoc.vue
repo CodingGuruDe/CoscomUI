@@ -29,7 +29,7 @@ export default {
             items: [
                 {
                     label: 'Router',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     items: [
                         {
                             label: 'Styled',
@@ -43,14 +43,14 @@ export default {
                 },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     command: () => {
                         this.$router.push('/introduction');
                     }
                 },
                 {
                     label: 'External',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     items: [
                         {
                             label: 'Vue.js',
@@ -109,7 +109,7 @@ export default {
             items: [
                 {
                     label: 'Router',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     items: [
                         {
                             label: 'Styled',
@@ -123,14 +123,14 @@ export default {
                 },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     command: () => {
                         this.$router.push('/introduction');
                     }
                 },
                 {
                     label: 'External',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     items: [
                         {
                             label: 'Vue.js',
@@ -178,7 +178,7 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Router',
-        icon: 'pi pi-palette',
+        icon: 'cs el-palette',
         items: [
             {
                 label: 'Styled',
@@ -192,14 +192,14 @@ const items = ref([
     },
     {
         label: 'Programmatic',
-        icon: 'pi pi-link',
+        icon: 'cs el-link',
         command: () => {
             router.push('/introduction');
         }
     },
     {
         label: 'External',
-        icon: 'pi pi-home',
+        icon: 'cs el-home',
         items: [
             {
                 label: 'Vue.js',

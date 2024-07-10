@@ -31,8 +31,8 @@ export default {
             products: null,
             selectedProduct: null,
             menuModel: [
-                { label: 'View', icon: 'pi pi-fw pi-search', command: () => this.viewProduct(this.selectedProduct) },
-                { label: 'Delete', icon: 'pi pi-fw pi-times', command: () => this.deleteProduct(this.selectedProduct) }
+                { label: 'View', icon: 'cs el-fw pi-search', command: () => this.viewProduct(this.selectedProduct) },
+                { label: 'Delete', icon: 'cs el-fw pi-times', command: () => this.deleteProduct(this.selectedProduct) }
             ],
             code: {
                 basic: `
@@ -77,8 +77,8 @@ export default {
             products: null,
             selectedProduct: null,
             menuModel: [
-                {label: 'View', icon: 'pi pi-fw pi-search', command: () => this.viewProduct(this.selectedProduct)},
-                {label: 'Delete', icon: 'pi pi-fw pi-times', command: () => this.deleteProduct(this.selectedProduct)}
+                {label: 'View', icon: 'cs el-fw pi-search', command: () => this.viewProduct(this.selectedProduct)},
+                {label: 'Delete', icon: 'cs el-fw pi-times', command: () => this.deleteProduct(this.selectedProduct)}
             ]
         }
     },
@@ -138,8 +138,8 @@ const toast = useToast();
 const products = ref();
 const selectedProduct = ref();
 const menuModel = ref([
-    {label: 'View', icon: 'pi pi-fw pi-search', command: () => viewProduct(selectedProduct)},
-    {label: 'Delete', icon: 'pi pi-fw pi-times', command: () => deleteProduct(selectedProduct)}
+    {label: 'View', icon: 'cs el-fw pi-search', command: () => viewProduct(selectedProduct)},
+    {label: 'Delete', icon: 'cs el-fw pi-times', command: () => deleteProduct(selectedProduct)}
 ]);
 const onRowContextMenu = (event) => {
     cm.value.show(event.originalEvent);

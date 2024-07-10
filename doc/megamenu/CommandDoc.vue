@@ -13,7 +13,7 @@ export default {
                 basic: `
 {
     label: 'Log out',
-    icon: 'pi pi-signout',
+    icon: 'cs el-signout',
     command: () => {
         // Callback to run
     }

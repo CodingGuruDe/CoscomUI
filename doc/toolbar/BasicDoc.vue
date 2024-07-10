@@ -32,11 +32,11 @@ export default {
             items: [
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh'
+                    icon: 'cs el-refresh'
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times'
+                    icon: 'cs el-times'
                 }
             ],
             code: {
@@ -91,11 +91,11 @@ export default {
             items: [
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh'
+                    icon: 'cs el-refresh'
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times'
+                    icon: 'cs el-times'
                 }
             ]
         };
@@ -133,11 +133,11 @@ import { ref } from 'vue';
 const items = ref([
     {
         label: 'Update',
-        icon: 'pi pi-refresh'
+        icon: 'cs el-refresh'
     },
     {
         label: 'Delete',
-        icon: 'pi pi-times'
+        icon: 'cs el-times'
     }
 ])
 <\/script>

@@ -21,7 +21,7 @@ const classes = {
     itemsContent: 'v-carousel-items-content',
     itemsContainer: 'v-carousel-items-container',
     itemCloned: ({ index, value, totalShiftedItems, d_numVisible }) => [
-        'v-carousel-item p-carousel-item-cloned',
+        'v-carousel-item v-carousel-item-cloned',
         {
             'v-carousel-item-active': totalShiftedItems * -1 === value.length + d_numVisible,
             'v-carousel-item-start': index === 0,
@@ -43,7 +43,7 @@ const classes = {
         }
     ],
     nextButtonIcon: 'v-carousel-prev-icon',
-    indicators: 'v-carousel-indicators p-reset',
+    indicators: 'v-carousel-indicators v-reset',
     indicator: ({ instance, index }) => [
         'v-carousel-indicator',
         {

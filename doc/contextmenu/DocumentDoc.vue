@@ -16,19 +16,19 @@ export default {
             items: [
                 {
                     label: 'Translate',
-                    icon: 'pi pi-language'
+                    icon: 'cs el-language'
                 },
                 {
                     label: 'Speech',
-                    icon: 'pi pi-volume-up',
+                    icon: 'cs el-volume-up',
                     items: [
                         {
                             label: 'Start',
-                            icon: 'pi pi-caret-right'
+                            icon: 'cs el-caret-right'
                         },
                         {
                             label: 'Stop',
-                            icon: 'pi pi-pause'
+                            icon: 'cs el-pause'
                         }
                     ]
                 },
@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     label: 'Print',
-                    icon: 'pi pi-print'
+                    icon: 'cs el-print'
                 }
             ],
             code: {
@@ -59,19 +59,19 @@ export default {
             items: [
                 {
                     label: 'Translate',
-                    icon: 'pi pi-language'
+                    icon: 'cs el-language'
                 },
                 {
                     label: 'Speech',
-                    icon: 'pi pi-volume-up',
+                    icon: 'cs el-volume-up',
                     items: [
                         {
                             label: 'Start',
-                            icon: 'pi pi-caret-right'
+                            icon: 'cs el-caret-right'
                         },
                         {
                             label: 'Stop',
-                            icon: 'pi pi-pause'
+                            icon: 'cs el-pause'
                         }
                     ]
                 },
@@ -80,7 +80,7 @@ export default {
                 },
                 {
                     label: 'Print',
-                    icon: 'pi pi-print'
+                    icon: 'cs el-print'
                 }
             ]
         };
@@ -102,19 +102,19 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Translate',
-        icon: 'pi pi-language'
+        icon: 'cs el-language'
     },
     {
         label: 'Speech',
-        icon: 'pi pi-volume-up',
+        icon: 'cs el-volume-up',
         items: [
             {
                 label: 'Start',
-                icon: 'pi pi-caret-right'
+                icon: 'cs el-caret-right'
             },
             {
                 label: 'Stop',
-                icon: 'pi pi-pause'
+                icon: 'cs el-pause'
             }
         ]
     },
@@ -123,7 +123,7 @@ const items = ref([
     },
     {
         label: 'Print',
-        icon: 'pi pi-print'
+        icon: 'cs el-print'
     }
 ]);
 <\/script>

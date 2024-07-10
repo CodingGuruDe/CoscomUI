@@ -554,7 +554,7 @@ export default {
             }
 
             let innerHTML = `
-                .p-carousel[${this.attributeSelector}] .p-carousel-item {
+                .v-carousel[${this.attributeSelector}] .v-carousel-item {
                     flex: 1 0 ${100 / this.d_numVisible}%
                 }
             `;
@@ -575,7 +575,7 @@ export default {
 
                     innerHTML += `
                         @media screen and (max-width: ${res.breakpoint}) {
-                            .p-carousel[${this.attributeSelector}] .p-carousel-item {
+                            .v-carousel[${this.attributeSelector}] .v-carousel-item {
                                 flex: 1 0 ${100 / res.numVisible}%
                             }
                         }

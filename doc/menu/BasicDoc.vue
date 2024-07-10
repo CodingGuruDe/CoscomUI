@@ -13,8 +13,8 @@ export default {
     data() {
         return {
             items: [
-                { label: 'New', icon: 'pi pi-plus' },
-                { label: 'Search', icon: 'pi pi-search' }
+                { label: 'New', icon: 'cs el-plus' },
+                { label: 'Search', icon: 'cs el-search' }
             ],
             code: {
                 basic: `
@@ -32,8 +32,8 @@ export default {
     data() {
         return {
             items: [
-                { label: 'New', icon: 'pi pi-plus' },
-                { label: 'Search', icon: 'pi pi-search' }
+                { label: 'New', icon: 'cs el-plus' },
+                { label: 'Search', icon: 'cs el-search' }
             ]
         };
     }
@@ -51,8 +51,8 @@ export default {
 import { ref } from "vue";
 
 const items = ref([
-    { label: 'New', icon: 'pi pi-plus' },
-    { label: 'Search', icon: 'pi pi-search' }
+    { label: 'New', icon: 'cs el-plus' },
+    { label: 'Search', icon: 'cs el-search' }
 ]);
 <\/script>
 `

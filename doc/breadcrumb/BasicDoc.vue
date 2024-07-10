@@ -13,7 +13,7 @@ export default {
     data() {
         return {
             home: {
-                icon: 'pi pi-home'
+                icon: 'cs el-home'
             },
             items: [{ label: 'Electronics' }, { label: 'Computer' }, { label: 'Accessories' }, { label: 'Keyboard' }, { label: 'Wireless' }],
             code: {
@@ -32,7 +32,7 @@ export default {
     data() {
         return {
             home: {
-                icon: 'pi pi-home'
+                icon: 'cs el-home'
             },
             items: [
                 { label: 'Electronics' }, 
@@ -57,7 +57,7 @@ export default {
 import { ref } from "vue";
 
 const home = ref({
-    icon: 'pi pi-home'
+    icon: 'cs el-home'
 });
 const items = ref([
     { label: 'Electronics' }, 

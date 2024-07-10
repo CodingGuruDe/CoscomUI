@@ -3,8 +3,6 @@ import { AccordionPassThroughOptions } from '../accordion/Accordion';
 import { AccordionTabPassThroughOptions } from '../accordiontab/AccordionTab';
 import { AnimateOnScrollDirectivePassThroughOptions } from '../animateonscroll/AnimateOnScroll';
 import { AutoCompletePassThroughOptions } from '../autocomplete/AutoComplete';
-import { AvatarPassThroughOptions } from '../avatar/Avatar';
-import { AvatarGroupPassThroughOptions } from '../avatargroup/AvatarGroup';
 import { BadgePassThroughOptions } from '../badge/Badge';
 import { BadgeDirectivePassThroughOptions } from '../badgedirective/BadgeDirective';
 import { BlockUIPassThroughOptions } from '../blockui/BlockUI';
@@ -125,8 +123,6 @@ export interface CoscomPTOptions {
     accordion?: DefaultPassThrough<AccordionPassThroughOptions>;
     accordiontab?: DefaultPassThrough<AccordionTabPassThroughOptions>;
     autocomplete?: DefaultPassThrough<AutoCompletePassThroughOptions>;
-    avatar?: DefaultPassThrough<AvatarPassThroughOptions>;
-    avatargroup?: DefaultPassThrough<AvatarGroupPassThroughOptions>;
     badge?: DefaultPassThrough<BadgePassThroughOptions>;
     blockui?: DefaultPassThrough<BlockUIPassThroughOptions>;
     breadcrumb?: DefaultPassThrough<BreadcrumbPassThroughOptions>;

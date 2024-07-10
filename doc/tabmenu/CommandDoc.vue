@@ -15,28 +15,28 @@ export default {
             items: [
                 {
                     label: 'Dashboard',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Dashboard', life: 3000 });
                     }
                 },
                 {
                     label: 'Transactions',
-                    icon: 'pi pi-chart-line',
+                    icon: 'cs el-chart-line',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Transactions', life: 3000 });
                     }
                 },
                 {
                     label: 'Products',
-                    icon: 'pi pi-list',
+                    icon: 'cs el-list',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Products', life: 3000 });
                     }
                 },
                 {
                     label: 'Messages',
-                    icon: 'pi pi-inbox',
+                    icon: 'cs el-inbox',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Messages', life: 3000 });
                     }
@@ -62,28 +62,28 @@ export default {
             items: [
                 {
                     label: 'Dashboard',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Dashboard', life: 3000 });
                     }
                 },
                 {
                     label: 'Transactions',
-                    icon: 'pi pi-chart-line',
+                    icon: 'cs el-chart-line',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Transactions', life: 3000 });
                     }
                 },
                 {
                     label: 'Products',
-                    icon: 'pi pi-list',
+                    icon: 'cs el-list',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Products', life: 3000 });
                     }
                 },
                 {
                     label: 'Messages',
-                    icon: 'pi pi-inbox',
+                    icon: 'cs el-inbox',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Selected', detail: 'Messages', life: 3000 });
                     }
@@ -111,28 +111,28 @@ const toast = useToast();
 const items = ref([
     {
         label: 'Dashboard',
-        icon: 'pi pi-home',
+        icon: 'cs el-home',
         command: () => {
             toast.add({ severity: 'success', summary: 'Selected', detail: 'Dashboard', life: 3000 });
         }
     },
     {
         label: 'Transactions',
-        icon: 'pi pi-chart-line',
+        icon: 'cs el-chart-line',
         command: () => {
             toast.add({ severity: 'success', summary: 'Selected', detail: 'Transactions', life: 3000 });
         }
     },
     {
         label: 'Products',
-        icon: 'pi pi-list',
+        icon: 'cs el-list',
         command: () => {
             toast.add({ severity: 'success', summary: 'Selected', detail: 'Products', life: 3000 });
         }
     },
     {
         label: 'Messages',
-        icon: 'pi pi-inbox',
+        icon: 'cs el-inbox',
         command: () => {
             toast.add({ severity: 'success', summary: 'Selected', detail: 'Messages', life: 3000 });
         }

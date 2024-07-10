@@ -15,26 +15,26 @@ export default {
             items: [
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh',
+                    icon: 'cs el-refresh',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
                     }
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times',
+                    icon: 'cs el-times',
                     command: () => {
                         this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
                     }
                 },
                 {
                     label: 'Vue Website',
-                    icon: 'pi pi-external-link',
+                    icon: 'cs el-external-link',
                     command: () => {
                         window.location.href = 'https://vuejs.org/';
                     }
                 },
-                { label: 'Upload', icon: 'pi pi-upload', to: '/fileupload' }
+                { label: 'Upload', icon: 'cs el-upload', to: '/fileupload' }
             ],
             code: {
                 basic: `
@@ -55,26 +55,26 @@ export default {
             items: [
                 {
                     label: 'Update',
-                    icon: 'pi pi-refresh',
+                    icon: 'cs el-refresh',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
                     }
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times',
+                    icon: 'cs el-times',
                     command: () => {
                         this.$toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
                     }
                 },
                 {
                     label: 'Vue Website',
-                    icon: 'pi pi-external-link',
+                    icon: 'cs el-external-link',
                     command: () => {
                         window.location.href = 'https://vuejs.org/';
                     }
                 },
-                { label: 'Upload', icon: 'pi pi-upload', to: '/fileupload' }
+                { label: 'Upload', icon: 'cs el-upload', to: '/fileupload' }
             ]
         };
     },
@@ -101,26 +101,26 @@ const toast = useToast();
 const items = [
     {
         label: 'Update',
-        icon: 'pi pi-refresh',
+        icon: 'cs el-refresh',
         command: () => {
             toast.add({ severity: 'success', summary: 'Updated', detail: 'Data Updated', life: 3000 });
         }
     },
     {
         label: 'Delete',
-        icon: 'pi pi-times',
+        icon: 'cs el-times',
         command: () => {
             toast.add({ severity: 'warn', summary: 'Delete', detail: 'Data Deleted', life: 3000 });
         }
     },
     {
         label: 'Vue Website',
-        icon: 'pi pi-external-link',
+        icon: 'cs el-external-link',
         command: () => {
             window.location.href = 'https://vuejs.org/';
         }
     },
-    { label: 'Upload', icon: 'pi pi-upload', to: '/fileupload' }
+    { label: 'Upload', icon: 'cs el-upload', to: '/fileupload' }
 ];
 
 const save = () => {

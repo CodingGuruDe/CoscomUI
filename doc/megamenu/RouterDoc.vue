@@ -53,7 +53,7 @@ export default {
             items: [
                 {
                     label: 'Navigation',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     items: [
                         [
                             {
@@ -129,7 +129,7 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Navigation',
-        icon: 'pi pi-link',
+        icon: 'cs el-link',
         items: [
             [
                 {

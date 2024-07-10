@@ -26,15 +26,15 @@ export default {
     data() {
         return {
             items: [
-                { label: 'Router Link', icon: 'pi pi-home', route: '/tabmenu' },
+                { label: 'Router Link', icon: 'cs el-home', route: '/tabmenu' },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     command: () => {
                         this.$router.push('/unstyled');
                     }
                 },
-                { label: 'External', icon: 'pi pi-link', url: 'https://vuejs.org/' }
+                { label: 'External', icon: 'cs el-link', url: 'https://vuejs.org/' }
             ],
             code: {
                 basic: `
@@ -78,15 +78,15 @@ export default {
     data() {
         return {
             items: [
-                { label: 'Router Link', icon: 'pi pi-home', route: '/tabmenu' },
+                { label: 'Router Link', icon: 'cs el-home', route: '/tabmenu' },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     command: () => {
                         this.$router.push('/unstyled');
                     }
                 },
-                { label: 'External', icon: 'pi pi-link', url: 'https://vuejs.org/' }
+                { label: 'External', icon: 'cs el-link', url: 'https://vuejs.org/' }
             ]
         }
     }
@@ -117,15 +117,15 @@ export default {
 import { ref } from "vue";
 
 const items = ref([
-    { label: 'Router Link', icon: 'pi pi-home', route: '/tabmenu' },
+    { label: 'Router Link', icon: 'cs el-home', route: '/tabmenu' },
     {
         label: 'Programmatic',
-        icon: 'pi pi-palette',
+        icon: 'cs el-palette',
         command: () => {
             this.$router.push('/unstyled');
         }
     },
-    { label: 'External', icon: 'pi pi-link', url: 'https://vuejs.org/' }
+    { label: 'External', icon: 'cs el-link', url: 'https://vuejs.org/' }
 ]);
 <\/script>
 `

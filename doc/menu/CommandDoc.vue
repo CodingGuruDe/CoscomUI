@@ -15,14 +15,14 @@ export default {
             items: [
                 {
                     label: 'New',
-                    icon: 'pi pi-plus',
+                    icon: 'cs el-plus',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Success', detail: 'File created', life: 3000 });
                     }
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     command: () => {
                         this.$toast.add({ severity: 'warn', summary: 'Search Completed', detail: 'No results found', life: 3000 });
                     }
@@ -48,14 +48,14 @@ export default {
             items: [
                 {
                     label: 'New',
-                    icon: 'pi pi-plus',
+                    icon: 'cs el-plus',
                     command: () => {
                         this.$toast.add({ severity: 'success', summary: 'Success', detail: 'File created', life: 3000 });
                     }
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     command: () => {
                         this.$toast.add({ severity: 'warn', summary: 'Search Completed', detail: 'No results found', life: 3000 });
                     }
@@ -83,14 +83,14 @@ const toast = useToast();
 const items = ref([
     {
         label: 'New',
-        icon: 'pi pi-plus',
+        icon: 'cs el-plus',
         command: () => {
             toast.add({ severity: 'success', summary: 'Success', detail: 'File created', life: 3000 });
         }
     },
     {
         label: 'Search',
-        icon: 'pi pi-search',
+        icon: 'cs el-search',
         command: () => {
             toast.add({ severity: 'warn', summary: 'Search Completed', detail: 'No results found', life: 3000 });
         }

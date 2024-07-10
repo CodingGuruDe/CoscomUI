@@ -31,19 +31,19 @@ export default {
                     items: [
                         {
                             label: 'Router Link',
-                            icon: 'pi pi-palette',
+                            icon: 'cs el-palette',
                             route: '/unstyled'
                         },
                         {
                             label: 'Programmatic',
-                            icon: 'pi pi-link',
+                            icon: 'cs el-link',
                             command: () => {
                                 this.$router.push('/introduction');
                             }
                         },
                         {
                             label: 'External',
-                            icon: 'pi pi-home',
+                            icon: 'cs el-home',
                             url: 'https://vuejs.org/'
                         }
                     ]
@@ -93,19 +93,19 @@ export default {
             items: [
                 {
                     label: 'Router Link',
-                    icon: 'pi pi-palette',
+                    icon: 'cs el-palette',
                     route: '/unstyled'
                 },
                 {
                     label: 'Programmatic',
-                    icon: 'pi pi-link',
+                    icon: 'cs el-link',
                     command: () => {
                         this.$router.push('/introduction');
                     }
                 },
                 {
                     label: 'External',
-                    icon: 'pi pi-home',
+                    icon: 'cs el-home',
                     url: 'https://vuejs.org/'
                 }
             ]
@@ -143,19 +143,19 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Router Link',
-        icon: 'pi pi-palette',
+        icon: 'cs el-palette',
         route: '/unstyled'
     },
     {
         label: 'Programmatic',
-        icon: 'pi pi-link',
+        icon: 'cs el-link',
         command: () => {
             router.push('/introduction');
         }
     },
     {
         label: 'External',
-        icon: 'pi pi-home',
+        icon: 'cs el-home',
         url: 'https://vuejs.org/'
     }
 ]);

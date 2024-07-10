@@ -25,7 +25,7 @@ export default {
     data() {
         return {
             home: {
-                icon: 'pi pi-home',
+                icon: 'cs el-home',
                 route: '/introduction'
             },
             items: [{ label: 'Components' }, { label: 'Form' }, { label: 'InputText', route: '/inputtext' }],
@@ -69,7 +69,7 @@ export default {
     data() {
         return {
             home: {
-                icon: 'pi pi-home',
+                icon: 'cs el-home',
                 route: '/introduction'
             },
             items: [
@@ -105,7 +105,7 @@ export default {
 import { ref } from "vue";
 
 const home = ref({
-    icon: 'pi pi-home',
+    icon: 'cs el-home',
     route: '/introduction'
 });
 const items = ref([

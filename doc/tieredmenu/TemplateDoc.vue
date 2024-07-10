@@ -25,60 +25,60 @@ export default {
             items: [
                 {
                     label: 'File',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             items: [
                                 {
                                     label: 'Document',
-                                    icon: 'pi pi-file',
+                                    icon: 'cs el-file',
                                     shortcut: '⌘+N'
                                 },
                                 {
                                     label: 'Image',
-                                    icon: 'pi pi-image',
+                                    icon: 'cs el-image',
                                     shortcut: '⌘+I'
                                 },
                                 {
                                     label: 'Video',
-                                    icon: 'pi pi-video',
+                                    icon: 'cs el-video',
                                     shortcut: '⌘+L'
                                 }
                             ]
                         },
                         {
                             label: 'Open',
-                            icon: 'pi pi-folder-open',
+                            icon: 'cs el-folder-open',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Print',
-                            icon: 'pi pi-print',
+                            icon: 'cs el-print',
                             shortcut: '⌘+P'
                         }
                     ]
                 },
                 {
                     label: 'Edit',
-                    icon: 'pi pi-file-edit',
+                    icon: 'cs el-file-edit',
                     items: [
                         {
                             label: 'Copy',
-                            icon: 'pi pi-copy',
+                            icon: 'cs el-copy',
                             shortcut: '⌘+C'
                         },
                         {
                             label: 'Delete',
-                            icon: 'pi pi-times',
+                            icon: 'cs el-times',
                             shortcut: '⌘+D'
                         }
                     ]
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     shortcut: '⌘+S'
                 },
                 {
@@ -86,16 +86,16 @@ export default {
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Slack',
-                            icon: 'pi pi-slack',
+                            icon: 'cs el-slack',
                             badge: 2
                         },
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp',
+                            icon: 'cs el-whatsapp',
                             badge: 3
                         }
                     ]
@@ -139,60 +139,60 @@ export default {
             items: [
                 {
                     label: 'File',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             items: [
                                 {
                                     label: 'Document',
-                                    icon: 'pi pi-file',
+                                    icon: 'cs el-file',
                                     shortcut: '⌘+N'
                                 },
                                 {
                                     label: 'Image',
-                                    icon: 'pi pi-image',
+                                    icon: 'cs el-image',
                                     shortcut: '⌘+I'
                                 },
                                 {
                                     label: 'Video',
-                                    icon: 'pi pi-video',
+                                    icon: 'cs el-video',
                                     shortcut: '⌘+L'
                                 }
                             ]
                         },
                         {
                             label: 'Open',
-                            icon: 'pi pi-folder-open',
+                            icon: 'cs el-folder-open',
                             shortcut: '⌘+O'
                         },
                         {
                             label: 'Print',
-                            icon: 'pi pi-print',
+                            icon: 'cs el-print',
                             shortcut: '⌘+P'
                         }
                     ]
                 },
                 {
                     label: 'Edit',
-                    icon: 'pi pi-file-edit',
+                    icon: 'cs el-file-edit',
                     items: [
                         {
                             label: 'Copy',
-                            icon: 'pi pi-copy',
+                            icon: 'cs el-copy',
                             shortcut: '⌘+C'
                         },
                         {
                             label: 'Delete',
-                            icon: 'pi pi-times',
+                            icon: 'cs el-times',
                             shortcut: '⌘+D'
                         }
                     ]
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search',
+                    icon: 'cs el-search',
                     shortcut: '⌘+S'
                 },
                 {
@@ -200,16 +200,16 @@ export default {
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Slack',
-                            icon: 'pi pi-slack',
+                            icon: 'cs el-slack',
                             badge: 2
                         },
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp',
+                            icon: 'cs el-whatsapp',
                             badge: 3
                         }
                     ]
@@ -243,60 +243,60 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'File',
-        icon: 'pi pi-file',
+        icon: 'cs el-file',
         items: [
             {
                 label: 'New',
-                icon: 'pi pi-plus',
+                icon: 'cs el-plus',
                 items: [
                     {
                         label: 'Document',
-                        icon: 'pi pi-file',
+                        icon: 'cs el-file',
                         shortcut: '⌘+N'
                     },
                     {
                         label: 'Image',
-                        icon: 'pi pi-image',
+                        icon: 'cs el-image',
                         shortcut: '⌘+I'
                     },
                     {
                         label: 'Video',
-                        icon: 'pi pi-video',
+                        icon: 'cs el-video',
                         shortcut: '⌘+L'
                     }
                 ]
             },
             {
                 label: 'Open',
-                icon: 'pi pi-folder-open',
+                icon: 'cs el-folder-open',
                 shortcut: '⌘+O'
             },
             {
                 label: 'Print',
-                icon: 'pi pi-print',
+                icon: 'cs el-print',
                 shortcut: '⌘+P'
             }
         ]
     },
     {
         label: 'Edit',
-        icon: 'pi pi-file-edit',
+        icon: 'cs el-file-edit',
         items: [
             {
                 label: 'Copy',
-                icon: 'pi pi-copy',
+                icon: 'cs el-copy',
                 shortcut: '⌘+C'
             },
             {
                 label: 'Delete',
-                icon: 'pi pi-times',
+                icon: 'cs el-times',
                 shortcut: '⌘+D'
             }
         ]
     },
     {
         label: 'Search',
-        icon: 'pi pi-search',
+        icon: 'cs el-search',
         shortcut: '⌘+S'
     },
     {
@@ -304,16 +304,16 @@ const items = ref([
     },
     {
         label: 'Share',
-        icon: 'pi pi-share-alt',
+        icon: 'cs el-share-alt',
         items: [
             {
                 label: 'Slack',
-                icon: 'pi pi-slack',
+                icon: 'cs el-slack',
                 badge: 2
             },
             {
                 label: 'Whatsapp',
-                icon: 'pi pi-whatsapp',
+                icon: 'cs el-whatsapp',
                 badge: 3
             }
         ]

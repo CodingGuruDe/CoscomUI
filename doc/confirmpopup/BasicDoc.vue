@@ -37,7 +37,7 @@ export default {
             this.$confirm.require({
                 target: event.currentTarget,
                 message: 'Are you sure you want to proceed?',
-                icon: 'pi pi-exclamation-triangle',
+                icon: 'cs el-exclamation-triangle',
                 rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
                 acceptClass: 'p-button-sm',
                 rejectLabel: 'Cancel',
@@ -54,7 +54,7 @@ export default {
             this.$confirm.require({
                 target: event.currentTarget,
                 message: 'Do you want to delete this record?',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
                 acceptClass: 'p-button-danger p-button-sm',
                 rejectLabel: 'Cancel',
@@ -92,7 +92,7 @@ const confirm1 = (event) => {
     confirm.require({
         target: event.currentTarget,
         message: 'Are you sure you want to proceed?',
-        icon: 'pi pi-exclamation-triangle',
+        icon: 'cs el-exclamation-triangle',
         rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
         acceptClass: 'p-button-sm',
         rejectLabel: 'Cancel',
@@ -110,7 +110,7 @@ const confirm2 = (event) => {
     confirm.require({
         target: event.currentTarget,
         message: 'Do you want to delete this record?',
-        icon: 'pi pi-info-circle',
+        icon: 'cs el-info-circle',
         rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
         acceptClass: 'p-button-danger p-button-sm',
         rejectLabel: 'Cancel',
@@ -133,7 +133,7 @@ const confirm2 = (event) => {
             this.$confirm.require({
                 target: event.currentTarget,
                 message: 'Are you sure you want to proceed?',
-                icon: 'pi pi-exclamation-triangle',
+                icon: 'cs el-exclamation-triangle',
                 rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
                 acceptClass: 'p-button-sm',
                 rejectLabel: 'Cancel',
@@ -150,7 +150,7 @@ const confirm2 = (event) => {
             this.$confirm.require({
                 target: event.currentTarget,
                 message: 'Do you want to delete this record?',
-                icon: 'pi pi-info-circle',
+                icon: 'cs el-info-circle',
                 rejectClass: 'p-button-secondary p-button-outlined p-button-sm',
                 acceptClass: 'p-button-danger p-button-sm',
                 rejectLabel: 'Cancel',

@@ -20,10 +20,10 @@ export default {
         return {
             active: 0,
             items: [
-                { label: 'Dashboard', icon: 'pi pi-home' },
-                { label: 'Transactions', icon: 'pi pi-chart-line' },
-                { label: 'Products', icon: 'pi pi-list' },
-                { label: 'Messages', icon: 'pi pi-inbox' }
+                { label: 'Dashboard', icon: 'cs el-home' },
+                { label: 'Transactions', icon: 'cs el-chart-line' },
+                { label: 'Products', icon: 'cs el-list' },
+                { label: 'Messages', icon: 'cs el-inbox' }
             ],
             code: {
                 basic: `
@@ -54,10 +54,10 @@ export default {
         return {
             active: 0,
             items: [
-                { label: 'Dashboard', icon: 'pi pi-home' },
-                { label: 'Transactions', icon: 'pi pi-chart-line' },
-                { label: 'Products', icon: 'pi pi-list' },
-                { label: 'Messages', icon: 'pi pi-inbox' }
+                { label: 'Dashboard', icon: 'cs el-home' },
+                { label: 'Transactions', icon: 'cs el-chart-line' },
+                { label: 'Products', icon: 'cs el-list' },
+                { label: 'Messages', icon: 'cs el-inbox' }
             ]
         }
     }
@@ -83,10 +83,10 @@ import { ref } from "vue";
 const active = ref(0);
 
 const items = ref([
-    { label: 'Dashboard', icon: 'pi pi-home' },
-    { label: 'Transactions', icon: 'pi pi-chart-line' },
-    { label: 'Products', icon: 'pi pi-list' },
-    { label: 'Messages', icon: 'pi pi-inbox' }
+    { label: 'Dashboard', icon: 'cs el-home' },
+    { label: 'Transactions', icon: 'cs el-chart-line' },
+    { label: 'Products', icon: 'cs el-list' },
+    { label: 'Messages', icon: 'cs el-inbox' }
 ]);
 <\/script>
 `

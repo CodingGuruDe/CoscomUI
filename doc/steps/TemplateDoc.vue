@@ -20,13 +20,13 @@ export default {
         return {
             items: [
                 {
-                    icon: 'pi pi-user'
+                    icon: 'cs el-user'
                 },
                 {
-                    icon: 'pi pi-calendar'
+                    icon: 'cs el-calendar'
                 },
                 {
-                    icon: 'pi pi-check'
+                    icon: 'cs el-check'
                 }
             ],
             code: {
@@ -58,13 +58,13 @@ export default {
         return {
             items: [
                 {
-                    icon: 'pi pi-user'
+                    icon: 'cs el-user'
                 },
                 {
-                    icon: 'pi pi-calendar'
+                    icon: 'cs el-calendar'
                 },
                 {
-                    icon: 'pi pi-check'
+                    icon: 'cs el-check'
                 }
             ]
         }
@@ -90,13 +90,13 @@ import { ref } from "vue";
 
 const items = ref([
     {
-        icon: 'pi pi-user'
+        icon: 'cs el-user'
     },
     {
-        icon: 'pi pi-calendar'
+        icon: 'cs el-calendar'
     },
     {
-        icon: 'pi pi-check'
+        icon: 'cs el-check'
     }
 ]);
 

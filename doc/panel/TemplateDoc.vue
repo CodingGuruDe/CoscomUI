@@ -6,7 +6,6 @@
         <Panel toggleable>
             <template #header>
                 <div class="flex align-items-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" size="large" shape="circle" />
                     <span class="font-bold">Amy Elsner</span>
                 </div>
             </template>
@@ -41,18 +40,18 @@ export default {
             items: [
                 {
                     label: 'Refresh',
-                    icon: 'pi pi-refresh'
+                    icon: 'cs el-refresh'
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search'
+                    icon: 'cs el-search'
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times'
+                    icon: 'cs el-times'
                 }
             ],
             code: {
@@ -60,7 +59,7 @@ export default {
 <Panel toggleable>
     <template #header>
         <div class="flex align-items-center gap-2">
-            <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" size="large" shape="circle" />
+
             <span class="font-bold">Amy Elsner</span>
         </div>
     </template>
@@ -92,7 +91,7 @@ export default {
         <Panel toggleable>
             <template #header>
                 <div class="flex align-items-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" size="large" shape="circle" />
+
                     <span class="font-bold">Amy Elsner</span>
                 </div>
             </template>
@@ -126,18 +125,18 @@ export default {
             items: [
                 {
                     label: 'Refresh',
-                    icon: 'pi pi-refresh'
+                    icon: 'cs el-refresh'
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search'
+                    icon: 'cs el-search'
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Delete',
-                    icon: 'pi pi-times'
+                    icon: 'cs el-times'
                 }
             ]
         }
@@ -160,7 +159,7 @@ export default {
         <Panel toggleable>
             <template #header>
                 <div class="flex align-items-center gap-2">
-                    <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" size="large" shape="circle" />
+
                     <span class="font-bold">Amy Elsner</span>
                 </div>
             </template>
@@ -200,18 +199,18 @@ const router = useRouter();
 const items = ref([
     {
         label: 'Refresh',
-        icon: 'pi pi-refresh'
+        icon: 'cs el-refresh'
     },
     {
         label: 'Search',
-        icon: 'pi pi-search'
+        icon: 'cs el-search'
     },
     {
         separator: true
     },
     {
         label: 'Delete',
-        icon: 'pi pi-times'
+        icon: 'cs el-times'
     }
 ]);
 

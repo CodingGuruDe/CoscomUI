@@ -15,7 +15,7 @@ export default {
             items: [
                 {
                     label: 'Furniture',
-                    icon: 'pi pi-box',
+                    icon: 'cs el-box',
                     items: [
                         [
                             {
@@ -49,7 +49,7 @@ export default {
                 },
                 {
                     label: 'Electronics',
-                    icon: 'pi pi-mobile',
+                    icon: 'cs el-mobile',
                     items: [
                         [
                             {
@@ -79,7 +79,7 @@ export default {
                 },
                 {
                     label: 'Sports',
-                    icon: 'pi pi-clock',
+                    icon: 'cs el-clock',
                     items: [
                         [
                             {
@@ -126,7 +126,7 @@ export default {
             items: [
                 {
                     label: 'Furniture',
-                    icon: 'pi pi-box',
+                    icon: 'cs el-box',
                     items: [
                         [
                             {
@@ -160,7 +160,7 @@ export default {
                 },
                 {
                     label: 'Electronics',
-                    icon: 'pi pi-mobile',
+                    icon: 'cs el-mobile',
                     items: [
                         [
                             {
@@ -190,7 +190,7 @@ export default {
                 },
                 {
                     label: 'Sports',
-                    icon: 'pi pi-clock',
+                    icon: 'cs el-clock',
                     items: [
                         [
                             {
@@ -237,7 +237,7 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'Furniture',
-        icon: 'pi pi-box',
+        icon: 'cs el-box',
         items: [
             [
                 {
@@ -271,7 +271,7 @@ const items = ref([
     },
     {
         label: 'Electronics',
-        icon: 'pi pi-mobile',
+        icon: 'cs el-mobile',
         items: [
             [
                 {
@@ -301,7 +301,7 @@ const items = ref([
     },
     {
         label: 'Sports',
-        icon: 'pi pi-clock',
+        icon: 'cs el-clock',
         items: [
             [
                 {

@@ -15,68 +15,68 @@ export default {
             items: [
                 {
                     label: 'File',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             items: [
                                 {
                                     label: 'Document',
-                                    icon: 'pi pi-file'
+                                    icon: 'cs el-file'
                                 },
                                 {
                                     label: 'Image',
-                                    icon: 'pi pi-image'
+                                    icon: 'cs el-image'
                                 },
                                 {
                                     label: 'Video',
-                                    icon: 'pi pi-video'
+                                    icon: 'cs el-video'
                                 }
                             ]
                         },
                         {
                             label: 'Open',
-                            icon: 'pi pi-folder-open'
+                            icon: 'cs el-folder-open'
                         },
                         {
                             label: 'Print',
-                            icon: 'pi pi-print'
+                            icon: 'cs el-print'
                         }
                     ]
                 },
                 {
                     label: 'Edit',
-                    icon: 'pi pi-file-edit',
+                    icon: 'cs el-file-edit',
                     items: [
                         {
                             label: 'Copy',
-                            icon: 'pi pi-copy'
+                            icon: 'cs el-copy'
                         },
                         {
                             label: 'Delete',
-                            icon: 'pi pi-times'
+                            icon: 'cs el-times'
                         }
                     ]
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search'
+                    icon: 'cs el-search'
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Slack',
-                            icon: 'pi pi-slack'
+                            icon: 'cs el-slack'
                         },
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp'
+                            icon: 'cs el-whatsapp'
                         }
                     ]
                 }
@@ -99,68 +99,68 @@ export default {
             items: [
                 {
                     label: 'File',
-                    icon: 'pi pi-file',
+                    icon: 'cs el-file',
                     items: [
                         {
                             label: 'New',
-                            icon: 'pi pi-plus',
+                            icon: 'cs el-plus',
                             items: [
                                 {
                                     label: 'Document',
-                                    icon: 'pi pi-file'
+                                    icon: 'cs el-file'
                                 },
                                 {
                                     label: 'Image',
-                                    icon: 'pi pi-image'
+                                    icon: 'cs el-image'
                                 },
                                 {
                                     label: 'Video',
-                                    icon: 'pi pi-video'
+                                    icon: 'cs el-video'
                                 }
                             ]
                         },
                         {
                             label: 'Open',
-                            icon: 'pi pi-folder-open'
+                            icon: 'cs el-folder-open'
                         },
                         {
                             label: 'Print',
-                            icon: 'pi pi-print'
+                            icon: 'cs el-print'
                         }
                     ]
                 },
                 {
                     label: 'Edit',
-                    icon: 'pi pi-file-edit',
+                    icon: 'cs el-file-edit',
                     items: [
                         {
                             label: 'Copy',
-                            icon: 'pi pi-copy'
+                            icon: 'cs el-copy'
                         },
                         {
                             label: 'Delete',
-                            icon: 'pi pi-times'
+                            icon: 'cs el-times'
                         }
                     ]
                 },
                 {
                     label: 'Search',
-                    icon: 'pi pi-search'
+                    icon: 'cs el-search'
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Share',
-                    icon: 'pi pi-share-alt',
+                    icon: 'cs el-share-alt',
                     items: [
                         {
                             label: 'Slack',
-                            icon: 'pi pi-slack'
+                            icon: 'cs el-slack'
                         },
                         {
                             label: 'Whatsapp',
-                            icon: 'pi pi-whatsapp'
+                            icon: 'cs el-whatsapp'
                         }
                     ]
                 }
@@ -183,68 +183,68 @@ import { ref } from "vue";
 const items = ref([
     {
         label: 'File',
-        icon: 'pi pi-file',
+        icon: 'cs el-file',
         items: [
             {
                 label: 'New',
-                icon: 'pi pi-plus',
+                icon: 'cs el-plus',
                 items: [
                     {
                         label: 'Document',
-                        icon: 'pi pi-file'
+                        icon: 'cs el-file'
                     },
                     {
                         label: 'Image',
-                        icon: 'pi pi-image'
+                        icon: 'cs el-image'
                     },
                     {
                         label: 'Video',
-                        icon: 'pi pi-video'
+                        icon: 'cs el-video'
                     }
                 ]
             },
             {
                 label: 'Open',
-                icon: 'pi pi-folder-open'
+                icon: 'cs el-folder-open'
             },
             {
                 label: 'Print',
-                icon: 'pi pi-print'
+                icon: 'cs el-print'
             }
         ]
     },
     {
         label: 'Edit',
-        icon: 'pi pi-file-edit',
+        icon: 'cs el-file-edit',
         items: [
             {
                 label: 'Copy',
-                icon: 'pi pi-copy'
+                icon: 'cs el-copy'
             },
             {
                 label: 'Delete',
-                icon: 'pi pi-times'
+                icon: 'cs el-times'
             }
         ]
     },
     {
         label: 'Search',
-        icon: 'pi pi-search'
+        icon: 'cs el-search'
     },
     {
         separator: true
     },
     {
         label: 'Share',
-        icon: 'pi pi-share-alt',
+        icon: 'cs el-share-alt',
         items: [
             {
                 label: 'Slack',
-                icon: 'pi pi-slack'
+                icon: 'cs el-slack'
             },
             {
                 label: 'Whatsapp',
-                icon: 'pi pi-whatsapp'
+                icon: 'cs el-whatsapp'
             }
         ]
     }

@@ -79,7 +79,7 @@ import ThemeSwitcher from './components/ThemeSwitcher.vue';`;
     } else {
         // main.js
         pvTheme += `import "primeflex/primeflex.css";
-import "coscom/resources/themes/aura-light-green/theme.css";`;
+import "@coscom/coscom-ui/resources/themes/skyblue-light/theme.css";`;
     }
 
     const files = {
@@ -146,8 +146,6 @@ import AutoComplete from 'coscom/autocomplete';
 import Accordion from 'coscom/accordion';
 import AccordionTab from 'coscom/accordiontab';
 import AnimateOnScroll from 'coscom/animateonscroll';
-import Avatar from 'coscom/avatar';
-import AvatarGroup from 'coscom/avatargroup';
 import Badge from 'coscom/badge';
 import BadgeDirective from "coscom/badgedirective";
 import BlockUI from 'coscom/blockui';
@@ -269,8 +267,6 @@ app.directive('animateonscroll', AnimateOnScroll);
 app.component('Accordion', Accordion);
 app.component('AccordionTab', AccordionTab);
 app.component('AutoComplete', AutoComplete);
-app.component('Avatar', Avatar);
-app.component('AvatarGroup', AvatarGroup);
 app.component('Badge', Badge);
 app.component('BlockUI', BlockUI);
 app.component('Breadcrumb', Breadcrumb);

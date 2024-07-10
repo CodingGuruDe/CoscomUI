@@ -7,7 +7,6 @@
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
                         <span class="font-bold white-space-nowrap">Amy Elsner</span>
                     </div>
                 </template>
@@ -19,7 +18,6 @@
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
                         <span class="font-bold white-space-nowrap">Onyama Limba</span>
                     </div>
                 </template>
@@ -31,7 +29,6 @@
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
                         <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
                         <Badge value="2" />
                     </div>
@@ -56,7 +53,7 @@ export default {
     <TabPanel>
         <template #header>
             <div class="flex align-items-center gap-2">
-                <Avatar image="/images/avatar/amyelsner.png" shape="circle" />
+
                 <span class="font-bold white-space-nowrap">Amy Elsner</span>
             </div>
         </template>
@@ -68,7 +65,7 @@ export default {
     <TabPanel>
         <template #header>
             <div class="flex align-items-center gap-2">
-                <Avatar image="/images/avatar/onyamalimba.png" shape="circle" />
+
                 <span class="font-bold white-space-nowrap">Onyama Limba</span>
             </div>
         </template>
@@ -80,7 +77,7 @@ export default {
     <TabPanel>
         <template #header>
             <div class="flex align-items-center gap-2">
-                <Avatar image="/images/avatar/ionibowcher.png" shape="circle" />
+
                 <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
                 <Badge value="2" />
             </div>
@@ -99,7 +96,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Amy Elsner</span>
                     </div>
                 </template>
@@ -111,7 +108,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Onyama Limba</span>
                     </div>
                 </template>
@@ -123,7 +120,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
                         <Badge value="2" />
                     </div>
@@ -147,7 +144,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Amy Elsner</span>
                     </div>
                 </template>
@@ -159,7 +156,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Onyama Limba</span>
                     </div>
                 </template>
@@ -171,7 +168,7 @@ export default {
             <TabPanel>
                 <template #header>
                     <div class="flex align-items-center gap-2">
-                        <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
+
                         <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
                         <Badge value="2" />
                     </div>
