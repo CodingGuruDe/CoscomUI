@@ -22,10 +22,8 @@ const form = [
     'MultiSelect',
     'Password',
     'RadioButton',
-    'Rating',
     'Slider',
     'Textarea',
-    'ToggleButton',
     'TreeSelect',
     'TriStateCheckbox'
 ];
@@ -34,7 +32,7 @@ const button = ['Button', 'ButtonGroup', 'SpeedDial', 'SplitButton'];
 
 const data = ['Column', 'Row', 'ColumnGroup', 'DataTable', 'DataView', 'DataViewLayoutOptions', 'OrderList', 'OrganizationChart', 'Paginator', 'PickList', 'Tree', 'TreeTable', 'Timeline', 'VirtualScroller'];
 
-const panel = ['Accordion', 'AccordionTab', 'Card', 'DeferredContent', 'Divider', 'Fieldset', 'Panel', 'ScrollPanel', 'Splitter', 'SplitterPanel', 'Stepper', 'StepperPanel', 'TabView', 'TabPanel', 'Toolbar'];
+const panel = ['Accordion', 'AccordionTab', 'Card', 'Divider', 'Fieldset', 'Panel', 'ScrollPanel', 'Splitter', 'SplitterPanel', 'Stepper', 'StepperPanel', 'TabView', 'TabPanel', 'Toolbar'];
 
 const overlay = [{ name: 'ConfirmDialog', use: { as: 'ConfirmationService' } }, { name: 'ConfirmPopup', use: { as: 'ConfirmationService' } }, 'Dialog', { name: 'DynamicDialog', use: { as: 'DialogService' } }, 'OverlayPanel', 'Sidebar'];
 
@@ -46,6 +44,6 @@ const messages = ['Message', 'InlineMessage', { name: 'Toast', use: { as: 'Toast
 
 const media = ['Carousel', 'Galleria', 'Image'];
 
-const misc = ['Badge', 'BlockUI', 'Chip', 'Inplace', 'MeterGroup', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner', 'Tag', 'Terminal'];
+const misc = ['Badge', 'Chip', 'Inplace', 'MeterGroup', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner', 'Tag', 'Terminal'];
 
 export const components = [...form, ...button, ...data, ...panel, ...overlay, ...file, ...menu, ...messages, ...media, ...misc].map((c) => (typeof c === 'string' ? { name: c } : c));

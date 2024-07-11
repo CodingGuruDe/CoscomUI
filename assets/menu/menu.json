@@ -29,7 +29,7 @@
             ]
         },
         {
-            "name": "Common Components(15)",
+            "name": "Common Components(12)",
             "icon": "cs el-verified",
             "children": [
                 {
@@ -43,10 +43,6 @@
                 {
                     "name": "Card",
                     "to": "/card"
-                },
-                {
-                    "name": "Carousel",
-                    "to": "/carousel"
                 },
                 {
                     "name": "Checkbox",
@@ -150,20 +146,12 @@
                             "to": "/password"
                         },
                         {
-                            "name": "Rating",
-                            "to": "/rating"
-                        },
-                        {
                             "name": "Slider",
                             "to": "/slider"
                         },
                         {
                             "name": "Textarea",
                             "to": "/textarea"
-                        },
-                        {
-                            "name": "Toggle Button",
-                            "to": "/togglebutton"
                         },
                         {
                             "name": "TreeSelect",
@@ -232,10 +220,6 @@
                 {
                     "name": "Panel",
                     "children": [
-                        {
-                            "name": "Deferred",
-                            "to": "/deferredcontent"
-                        },
                         {
                             "name": "Fieldset",
                             "to": "/fieldset"
@@ -374,6 +358,10 @@
                     "name": "Media",
                     "children": [
                         {
+                            "name": "Carousel",
+                            "to": "/carousel"
+                        },
+                        {
                             "name": "Galleria",
                             "to": "/galleria"
                         },
@@ -389,10 +377,6 @@
                         {
                             "name": "Badge",
                             "to": "/badge"
-                        },
-                        {
-                            "name": "Block UI",
-                            "to": "/blockui"
                         },
                         {
                             "name": "Chip",

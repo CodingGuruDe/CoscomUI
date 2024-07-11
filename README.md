@@ -12,9 +12,6 @@ npm install @coscom/coscom-ui
 
 # Using yarn
 yarn add @coscom/coscom-ui
-
-# Using pnpm
-pnpm add @coscom/coscom-ui
 ```
 
 ## Features

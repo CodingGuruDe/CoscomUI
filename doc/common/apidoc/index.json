@@ -1,6 +1,6 @@
 {
     "accordion": {
-        "description": "Accordion groups a collection of contents in tabs.\n\n[Live Demo](https://coscomui.coscom.de/accordion/)",
+        "description": "Accordion groups a collection of contents in tabs.",
         "components": {
             "default": {
                 "description": "Accordion groups a collection of contents in tabs.",
@@ -461,7 +461,7 @@
         }
     },
     "accordiontab": {
-        "description": "AccordionTab is a helper component for Accordion.\n\n[Live Demo](https://www.primevue.org/accordion/)",
+        "description": "AccordionTab is a helper component for Accordion.",
         "components": {
             "default": {
                 "description": "AccordionTab is a helper component for Accordion..",
@@ -873,7 +873,7 @@
         }
     },
     "animateonscroll": {
-        "description": "AnimateOnScroll manages PrimeFlex CSS classes declaratively to during enter/leave animations on scroll or on page load.\n\n[Live Demo](https://primevue.org/animateonscroll)",
+        "description": "AnimateOnScroll manages PrimeFlex CSS classes declaratively to during enter/leave animations on scroll or on page load.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -1188,7 +1188,7 @@
                     ],
                     "methods": []
                 },
-                "PrimeIconsOptions": {
+                "CoscomIconsOptions": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -3402,10 +3402,10 @@
         }
     },
     "autocomplete": {
-        "description": "AutoComplete is an input component that provides real-time suggestions while being typed.\n\n[Live Demo](https://coscomui.coscom.de/)",
+        "description": "The v-autocomplete component offers simple and flexible type-ahead functionality. This is useful when searching large sets of data or even dynamically requesting information from an API.",
         "components": {
             "default": {
-                "description": "AutoComplete is an input component that provides real-time suggestions while being typed.",
+                "description": "The v-autocomplete component offers simple and flexible type-ahead functionality. This is useful when searching large sets of data or even dynamically requesting information from an API.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -4652,7 +4652,7 @@
         }
     },
     "badge": {
-        "description": "Badge represents people using icons, labels and images.\n\n[Live Demo](https://www.primevue.org/badge)",
+        "description": "Badge represents people using icons, labels and images.",
         "components": {
             "default": {
                 "description": "Badge represents people using icons, labels and images.",
@@ -4888,7 +4888,7 @@
         }
     },
     "badgedirective": {
-        "description": "Badge directive is a small status indicator for another element.\n\n[Live Demo](https://primevue.org/badge)",
+        "description": "Badge directive is a small status indicator for another element.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -5242,7 +5242,7 @@
                         }
                     ],
                     "methods": [],
-                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,AvatarStyle,AvatarGroupStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BlockUIStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,ChartStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DeferredContentStyle,DialogStyle,DividerStyle,DockStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatLabelStyle,FocusTrapStyle,GalleriaStyle,IconFieldStyle,ImageStyle,InlineMessageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputOtpStyle,InputSwitchStyle,InputTextStyle,KnobStyle,ListboxStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MeterGroupStyle,MultiSelectStyle,OrderListStyle,OrganizationChartStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,RadioButtonStyle,RatingStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SelectButtonStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabMenuStyle,TabPanelStyle,TabViewStyle,TagStyle,TerminalStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToggleButtonStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,TriStateCheckboxStyle,VirtualScrollerStyle"
+                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DialogStyle,DividerStyle,DockStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatLabelStyle,FocusTrapStyle,GalleriaStyle,IconFieldStyle,ImageStyle,InlineMessageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputOtpStyle,InputSwitchStyle,InputTextStyle,KnobStyle,ListboxStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MeterGroupStyle,MultiSelectStyle,OrderListStyle,OrganizationChartStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,RadioButtonStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabMenuStyle,TabPanelStyle,TabViewStyle,TagStyle,TerminalStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,TriStateCheckboxStyle,VirtualScrollerStyle"
                 }
             }
         }
@@ -5635,304 +5635,8 @@
             }
         }
     },
-    "blockui": {
-        "description": "BlockUI represents people using icons, labels and images.\n\n[Live Demo](https://www.primevue.org/blockui)",
-        "components": {
-            "default": {
-                "description": "BlockUI represents people using icons, labels and images.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "BlockUIPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "BlockUIProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "BlockUIState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "BlockUIPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "BlockUIProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "BlockUIPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "mask",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "BlockUIPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the mask's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "BlockUIPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "BlockUIState": {
-                    "description": "Defines current inline state in BlockUI component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "isBlocked",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current blocked state as a boolean."
-                        }
-                    ],
-                    "methods": []
-                },
-                "BlockUIProps": {
-                    "description": "Defines valid properties in BlockUI component",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "blocked",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Controls the blocked state."
-                        },
-                        {
-                            "name": "fullScreen",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, the whole document gets blocked."
-                        },
-                        {
-                            "name": "baseZIndex",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "0",
-                            "description": "Base zIndex value to use in layering."
-                        },
-                        {
-                            "name": "autoZIndex",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "true",
-                            "description": "Whether to automatically manage layering."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<BlockUIPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "BlockUISlots": {
-                    "description": "Defines valid slots in BlockUI component",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "default",
-                            "parameters": [],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom content's slot."
-                        }
-                    ]
-                },
-                "BlockUIEmits": {
-                    "description": "Defines valid emits in BlockUI component",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "block",
-                            "parameters": [],
-                            "returnType": "void",
-                            "description": "Fired when the element gets blocked."
-                        },
-                        {
-                            "name": "unblock",
-                            "parameters": [],
-                            "returnType": "void",
-                            "description": "Fired when the element gets unblocked."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "BlockUIPassThroughOptionType": {
-                    "values": "BlockUIPassThroughAttributes | (options: BlockUIPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "blockui/style/BlockUIStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "BlockUIStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "breadcrumb": {
-        "description": "Breadcrumb provides contextual information about page hierarchy.\n\n[Live Demo](https://www.primevue.org/breadcrumb/)",
+        "description": "Breadcrumb provides contextual information about page hierarchy.",
         "components": {
             "default": {
                 "description": "Breadcrumb provides contextual information about page hierarchy.",
@@ -6337,7 +6041,7 @@
         }
     },
     "button": {
-        "description": "Button is an extension to standard button element with icons and theming.\n\n[Live Demo](https://coscomui.coscom.de/)",
+        "description": "Button is an extension to standard button element with icons and theming.",
         "components": {
             "default": {
                 "description": "Button is an extension to standard button element with icons and theming.",
@@ -6783,7 +6487,7 @@
         }
     },
     "buttongroup": {
-        "description": "A set of Buttons can be displayed together using the ButtonGroup component.\n\n[Live Demo](https://www.primevue.org/button/)",
+        "description": "A set of Buttons can be displayed together using the ButtonGroup component.",
         "components": {
             "default": {
                 "description": "A set of Buttons can be displayed together using the ButtonGroup component.",
@@ -6987,10 +6691,10 @@
         }
     },
     "calendar": {
-        "description": "Calendar also known as DatePicker, is a form component to work with dates.\n\n[Live Demo](https://www.primevue.org/calendar/)",
+        "description": "The v-calendar component is used to display information in a daily, weekly, monthly, or category view. The daily view has slots for all day or timed elements, and the weekly and monthly view has a slot for each day.",
         "components": {
             "default": {
-                "description": "Calendar also known as DatePicker, is a form component to work with dates.",
+                "description": "The v-calendar component is used to display information in a daily, weekly, monthly, or category view. The daily view has slots for all day or timed elements, and the weekly and monthly view has a slot for each day.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -8780,7 +8484,7 @@
         }
     },
     "card": {
-        "description": "Card is a flexible container component.\n\n[Live Demo](https://www.primevue.org/card/)",
+        "description": "Card is a flexible container component.",
         "components": {
             "default": {
                 "description": "Card is a flexible container component.",
@@ -9072,7 +8776,7 @@
         }
     },
     "carousel": {
-        "description": "Carousel is a content slider featuring various customization options.\n\n[Live Demo](https://www.primevue.org/carousel/)",
+        "description": "Carousel is a content slider featuring various customization options.",
         "components": {
             "default": {
                 "description": "Carousel is a content slider featuring various customization options.",
@@ -9747,10 +9451,10 @@
         }
     },
     "cascadeselect": {
-        "description": "CascadeSelect is a form component to select a value from a nested structure of options.\n\n[Live Demo](https://www.primevue.org/cascadeselect/)",
+        "description": "CascadeSelect is a component used for collecting user provided information from a nested structure.",
         "components": {
             "default": {
-                "description": "CascadeSelect is a form component to select a value from a nested structure of options.",
+                "description": "CascadeSelect is a component used for collecting user provided information from a nested structure.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -10725,370 +10429,11 @@
             }
         }
     },
-    "chart": {
-        "description": "Chart groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/chart/)",
-        "components": {
-            "default": {
-                "description": "Chart groups a collection of contents in tabs.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": [
-                        {
-                            "name": "refresh",
-                            "parameters": [],
-                            "returnType": "void",
-                            "description": "Redraws the graph."
-                        },
-                        {
-                            "name": "reinit",
-                            "parameters": [],
-                            "returnType": "void",
-                            "description": "Destroys the graph first and then creates it again."
-                        },
-                        {
-                            "name": "generateLegend",
-                            "parameters": [],
-                            "returnType": "any",
-                            "description": "Returns an HTML string of a legend for that chart. The legend is generated from the legendCallback in the options."
-                        },
-                        {
-                            "name": "getChart",
-                            "parameters": [],
-                            "returnType": "any",
-                            "description": "Returns Chart instance."
-                        }
-                    ]
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "ChartPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "ChartProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ChartPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "ChartProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ChartPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "canvas",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ChartPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the canvas's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ChartPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "ChartSelectEvent": {
-                    "description": "Custom select event.",
-                    "relatedProp": "ChartEmits.select",
-                    "props": [
-                        {
-                            "name": "originalEvent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Event",
-                            "default": "",
-                            "description": "Browser event."
-                        },
-                        {
-                            "name": "element",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Selected element."
-                        },
-                        {
-                            "name": "dataset",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Selected dataset."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ChartProps": {
-                    "description": "Defines valid properties in Chart component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "type",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Type of the chart."
-                        },
-                        {
-                            "name": "data",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": "",
-                            "description": "Data to display."
-                        },
-                        {
-                            "name": "options",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": "",
-                            "description": "Options to customize the chart."
-                        },
-                        {
-                            "name": "plugins",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Used to custom plugins of the chart."
-                        },
-                        {
-                            "name": "width",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "300",
-                            "description": "Width of the chart in non-responsive mode."
-                        },
-                        {
-                            "name": "height",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "150",
-                            "description": "Height of the chart in non-responsive mode."
-                        },
-                        {
-                            "name": "canvasProps",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "CanvasHTMLAttributes",
-                            "default": "",
-                            "description": "Used to pass all properties of the CanvasHTMLAttributes to canvas element inside the component."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<ChartPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ChartSlots": {
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": []
-                },
-                "ChartEmits": {
-                    "description": "Defines valid emits in Chart component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "select",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "ChartSelectEvent",
-                                    "description": "Custom select event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when a tab gets expanded."
-                        },
-                        {
-                            "name": "loaded",
-                            "parameters": [
-                                {
-                                    "name": "chart",
-                                    "optional": false,
-                                    "type": "any",
-                                    "description": "Chart instance."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when chart is loaded."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "ChartPassThroughOptionType": {
-                    "values": "ChartPassThroughAttributes | (options: ChartPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "chart/style/ChartStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "ChartStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "checkbox": {
-        "description": "Checkbox is an extension to standard checkbox element with theming.\n\n[Live Demo](https://www.primevue.org/checkbox/)",
+        "description": "The v-checkbox component provides users the ability to choose between two distinct values.",
         "components": {
             "default": {
-                "description": "Accordion groups a collection of contents in tabs.",
+                "description": "The v-checkbox component provides users the ability to choose between two distinct values.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -11577,7 +10922,7 @@
         }
     },
     "chip": {
-        "description": "Chip represents people using icons, labels and images.\n\n[Live Demo](https://www.primevue.org/chip)",
+        "description": "Chip represents people using icons, labels and images.",
         "components": {
             "default": {
                 "description": "Chip represents people using icons, labels and images.",
@@ -11927,7 +11272,7 @@
         }
     },
     "chips": {
-        "description": "Chips groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/chips/)",
+        "description": "The v-chip component is used to convey small pieces of information.",
         "components": {
             "default": {
                 "description": "Chips is used to enter multiple values on an input field.",
@@ -12480,10 +11825,10 @@
         }
     },
     "colorpicker": {
-        "description": "ColorPicker groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/colorpicker/)",
+        "description": "The v-color-picker allows you to select a color using a variety of input methods.",
         "components": {
             "default": {
-                "description": "ColorPicker groups a collection of contents in tabs.",
+                "description": "The v-color-picker allows you to select a color using a variety of input methods.",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -12932,7 +12277,7 @@
         }
     },
     "column": {
-        "description": "Column component defines various options to specify corresponding features.\nIt is a helper component for DataTable and TreeTable.\n\n[Live Demo](https://www.primevue.org/datatable/)",
+        "description": "Column component defines various options to specify corresponding features.\nIt is a helper component for DataTable and TreeTable.",
         "components": {
             "default": {
                 "description": "Column is a helper component for Column and TreeTable.",
@@ -14451,7 +13796,7 @@
         }
     },
     "columngroup": {
-        "description": "Columns can be grouped at header and footer sections by defining a ColumnGroup component.\nIt is a helper component for DataTable.\n\n[Live Demo](https://www.primevue.org/datatable/)",
+        "description": "Columns can be grouped at header and footer sections by defining a ColumnGroup component.\nIt is a helper component for DataTable.",
         "components": {
             "default": {
                 "description": "It is a helper component for DataTable.",
@@ -14867,13 +14212,6 @@
                             "default": ""
                         },
                         {
-                            "name": "blockui",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<BlockUIPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
                             "name": "breadcrumb",
                             "optional": true,
                             "readonly": false,
@@ -14913,13 +14251,6 @@
                             "optional": true,
                             "readonly": false,
                             "type": "DefaultPassThrough<CascadeSelectPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
-                            "name": "chart",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<ChartPassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -15004,13 +14335,6 @@
                             "optional": true,
                             "readonly": false,
                             "type": "DefaultPassThrough<DataViewLayoutOptionsPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
-                            "name": "deferredcontent",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<DeferredContentPassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -15252,13 +14576,6 @@
                             "default": ""
                         },
                         {
-                            "name": "rating",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<RatingPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
                             "name": "row",
                             "optional": true,
                             "readonly": false,
@@ -15305,13 +14622,6 @@
                             "optional": true,
                             "readonly": false,
                             "type": "DefaultPassThrough<SpeedDialPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
-                            "name": "selectbutton",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<SelectButtonPassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -15403,13 +14713,6 @@
                             "optional": true,
                             "readonly": false,
                             "type": "DefaultPassThrough<ToastPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
-                            "name": "togglebutton",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<ToggleButtonPassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -16307,7 +15610,7 @@
         }
     },
     "confirmationoptions": {
-        "description": "[Live Demo](https://www.primevue.org/confirmdialog/)",
+        "description": "",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -16501,7 +15804,7 @@
         }
     },
     "confirmdialog": {
-        "description": "ConfirmDialog uses a Dialog UI with confirmDialog method or <ConfirmDialog> tag.\n\n[Live Demo](https://www.primevue.org/confirmdialog)",
+        "description": "ConfirmDialog uses a Dialog UI with confirmDialog method or <ConfirmDialog> tag.",
         "components": {
             "default": {
                 "description": "ConfirmDialog uses a Dialog UI with confirmDialog method or <ConfirmDialog> tag.",
@@ -16945,7 +16248,7 @@
         }
     },
     "confirmpopup": {
-        "description": "ConfirmPopup displays a confirmation overlay displayed relatively to its target.\n\n[Live Demo](https://www.primevue.org/confirmpopup)",
+        "description": "ConfirmPopup displays a confirmation overlay displayed relatively to its target.",
         "components": {
             "default": {
                 "description": "ConfirmPopup displays a confirmation overlay displayed relatively to its target.",
@@ -17331,7 +16634,7 @@
         }
     },
     "contextmenu": {
-        "description": "ContextMenu displays an overlay menu on right click of its target. Note that components like DataTable has special integration with ContextMenu.\nRefer to documentation of the individual documentation of the with context menu support.\n\n[Live Demo](https://www.primevue.org/contextmenu/)",
+        "description": "ContextMenu displays an overlay menu on right click of its target. Note that components like DataTable has special integration with ContextMenu.\nRefer to documentation of the individual documentation of the with context menu support.",
         "components": {
             "default": {
                 "description": "ContextMenu displays an overlay menu on right click of its target. Note that components like DataTable has special integration with ContextMenu.\nRefer to documentation of the individual documentation of the with context menu support.",
@@ -18010,7 +17313,7 @@
         }
     },
     "datatable": {
-        "description": "DataTable displays data in tabular format.\n\n[Live Demo](https://www.primevue.org/datatable/)",
+        "description": "DataTable displays data in tabular format.",
         "components": {
             "default": {
                 "description": "DataTable displays data in tabular format.",
@@ -21046,7 +20349,7 @@
         }
     },
     "dataview": {
-        "description": "DataView displays data in grid or list layout with pagination and sorting features.\n\n[Live Demo](https://www.primevue.org/dataview/)",
+        "description": "DataView displays data in grid or list layout with pagination and sorting features.",
         "components": {
             "default": {
                 "description": "DataView displays data in grid or list layout with pagination and sorting features.",
@@ -21624,7 +20927,7 @@
         }
     },
     "dataviewlayoutoptions": {
-        "description": "The helper DataViewLayoutOptions component can be used to switch between the modes however this component is optional and you may use your own UI to switch modes as well.\n\n[Live Demo](https://www.primevue.org/dataview/)",
+        "description": "The helper DataViewLayoutOptions component can be used to switch between the modes however this component is optional and you may use your own UI to switch modes as well.",
         "components": {
             "default": {
                 "description": "The helper DataViewLayoutOptions component can be used to switch between the modes however this component is optional and you may use your own UI to switch modes as well.",
@@ -21934,258 +21237,8 @@
             }
         }
     },
-    "deferredcontent": {
-        "description": "DeferredContent postpones the loading the content that is initially not in the viewport until it becomes visible on scroll.\n\n[Live Demo](https://www.primevue.org/deferredcontent/)",
-        "components": {
-            "default": {
-                "description": "DeferredContent postpones the loading the content that is initially not in the viewport until it becomes visible on scroll.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "DeferredContentPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "DeferredContentProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "DeferredContentState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "DeferredContentPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "DeferredContentProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DeferredContentPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "DeferredContentPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "DeferredContentState": {
-                    "description": "Defines current inline state in DeferredContent component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "loaded",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current loaded state as a boolean."
-                        }
-                    ],
-                    "methods": []
-                },
-                "DeferredContentProps": {
-                    "description": "Defines valid props in DeferredContent component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<DeferredContentPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "DeferredContentSlots": {
-                    "description": "Defines valid slots in DeferredContent component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "default",
-                            "parameters": [],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Default content slot."
-                        }
-                    ]
-                },
-                "DeferredContentEmits": {
-                    "description": "Defines valid emits in DeferredContent component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "load",
-                            "parameters": [],
-                            "returnType": "void",
-                            "description": "Callback to invoke when deferred content is loaded."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "DeferredContentPassThroughOptionType": {
-                    "values": "DeferredContentPassThroughAttributes | (options: DeferredContentPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "deferredcontent/style/DeferredContentStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "DeferredContentStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "dialog": {
-        "description": "Dialog is a container to display content in an overlay window.\n\n[Live Demo](https://www.primevue.org/dialog)",
+        "description": "Dialog is a container to display content in an overlay window.",
         "components": {
             "default": {
                 "description": "Dialog is a container to display content in an overlay window.",
@@ -22873,7 +21926,7 @@
         }
     },
     "dialogservice-usedialog": {
-        "description": "[Live Demo](https://www.primevue.org/dynamicdialog/)",
+        "description": "",
         "model": {
             "DialogServiceMethods": {
                 "description": "Dynamic Dialog components methods.",
@@ -22909,7 +21962,7 @@
         }
     },
     "divider": {
-        "description": "Divider is used to separate contents.\n\n[Live Demo](https://primevue.org/divider)",
+        "description": "Divider is used to separate contents.",
         "components": {
             "default": {
                 "description": "Divider is used to separate contents.",
@@ -23160,7 +22213,7 @@
         }
     },
     "dock": {
-        "description": "Dock is a navigation component consisting of menuitems.\n\n[Live Demo](https://www.primevue.org/dock/)",
+        "description": "Dock is a navigation component consisting of menuitems.",
         "components": {
             "default": {
                 "description": "Dock is a navigation component consisting of menuitems.",
@@ -23702,7 +22755,7 @@
         }
     },
     "dropdown": {
-        "description": "Dropdown also known as Select, is used to choose an item from a collection of options.\n\n[Live Demo](https://www.primevue.org/dropdown/)",
+        "description": "Dropdown also known as Select, is used to choose an item from a collection of options.",
         "components": {
             "default": {
                 "description": "Dropdown also known as Select, is used to choose an item from a collection of options.",
@@ -24940,7 +23993,7 @@
         }
     },
     "dynamicdialog": {
-        "description": "DynamicDialogs can be created dynamically with any component as the content using a DialogService.\n\n[Live Demo](https://primevue.org/dynamicdialog)",
+        "description": "DynamicDialogs can be created dynamically with any component as the content using a DialogService.",
         "components": {
             "default": {
                 "description": "DynamicDialogs can be created dynamically with any component as the content using a DialogService.",
@@ -25046,7 +24099,7 @@
         }
     },
     "dynamicdialogoptions": {
-        "description": "[Live Demo](https://www.primevue.org/dynamicdialog/)",
+        "description": "",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -25191,7 +24244,7 @@
         }
     },
     "editor": {
-        "description": "Editor groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/editor/)",
+        "description": "Editor groups a collection of contents in tabs.",
         "components": {
             "default": {
                 "description": "Editor groups a collection of contents in tabs.",
@@ -25781,7 +24834,7 @@
         }
     },
     "fieldset": {
-        "description": "Fieldset is a grouping component with the optional content toggle feature.\n\n[Live Demo](https://www.primevue.org/fieldset/)",
+        "description": "Fieldset is a grouping component with the optional content toggle feature.",
         "components": {
             "default": {
                 "description": "Fieldset is a grouping component with the optional content toggle feature.",
@@ -26181,7 +25234,7 @@
         }
     },
     "fileupload": {
-        "description": "FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.\n\n[Live Demo](https://www.primevue.org/fileupload/)",
+        "description": "FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.",
         "components": {
             "default": {
                 "description": "FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.",
@@ -27206,7 +26259,7 @@
         }
     },
     "floatlabel": {
-        "description": "FloatLabel appears on top of the input field when focused.\n\n[Live Demo](https://www.primevue.org/inputtext/)",
+        "description": "FloatLabel appears on top of the input field when focused.",
         "components": {
             "default": {
                 "description": "FloatLabel appears on top of the input field when focused.",
@@ -27430,7 +26483,7 @@
         }
     },
     "focustrap": {
-        "description": "Focus Trap keeps focus within a certain DOM element while tabbing.\n\n[Live Demo](https://primevue.org/focustrap)",
+        "description": "Focus Trap keeps focus within a certain DOM element while tabbing.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -27615,7 +26668,7 @@
         }
     },
     "galleria": {
-        "description": "Galleria is an advanced content gallery component.\n\n[Live Demo](https://www.primevue.org/galleria/)",
+        "description": "Galleria is an advanced content gallery component.",
         "components": {
             "default": {
                 "description": "Galleria is an advanced content gallery component.",
@@ -28557,7 +27610,7 @@
         }
     },
     "iconfield": {
-        "description": "IconField wraps an input and an icon.\n\n[Live Demo](https://www.primevue.org/inputtext/)",
+        "description": "IconField wraps an input and an icon.",
         "components": {
             "default": {
                 "description": "IconField is used to select a boolean value.",
@@ -28871,7 +27924,7 @@
     "icons/windowmaximize": {},
     "icons/windowminimize": {},
     "image": {
-        "description": "Displays an image with preview and tranformation options. For multiple image, see Galleria.\n\n[Live Demo](https://www.primevue.org/image/)",
+        "description": "Displays an image with preview and tranformation options. For multiple image, see Galleria.",
         "components": {
             "default": {
                 "description": "Displays an image with preview and tranformation options. For multiple image, see Galleria.",
@@ -29408,7 +28461,7 @@
         }
     },
     "inlinemessage": {
-        "description": "InlineMessage component is useful in cases where a single message needs to be displayed related to an element such as forms. It has one property, severity of the message.\n\n[Live Demo](https://www.primevue.org/inlinemessage/)",
+        "description": "InlineMessage component is useful in cases where a single message needs to be displayed related to an element such as forms. It has one property, severity of the message.",
         "components": {
             "default": {
                 "description": "InlineMessage component is useful in cases where a single message needs to be displayed related to an element such as forms. It has one property, severity of the message.",
@@ -29689,7 +28742,7 @@
         }
     },
     "inplace": {
-        "description": "Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.\n\n[Live Demo](https://www.primevue.org/inplace)",
+        "description": "Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.",
         "components": {
             "default": {
                 "description": "Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.",
@@ -30080,7 +29133,7 @@
         }
     },
     "inputgroup": {
-        "description": "InputGroup displays text, icon, buttons and other content can be grouped next to an input.\n\n[Live Demo](https://www.primevue.org/inputgroup/)",
+        "description": "InputGroup displays text, icon, buttons and other content can be grouped next to an input.",
         "components": {
             "default": {
                 "description": "InputGroup displays text, icon, buttons and other content can be grouped next to an input.",
@@ -30299,7 +29352,7 @@
         }
     },
     "inputgroupaddon": {
-        "description": "InputGroupAddon displays text, icon, buttons and other content can be grouped next to an input.\n\n[Live Demo](https://www.primevue.org/inputgroup/)",
+        "description": "InputGroupAddon displays text, icon, buttons and other content can be grouped next to an input.",
         "components": {
             "default": {
                 "description": "InputGroupAddon displays text, icon, buttons and other content can be grouped next to an input.",
@@ -30518,7 +29571,7 @@
         }
     },
     "inputicon": {
-        "description": "InputIcon displays an icon.\n\n[Live Demo](https://www.primevue.org/inputgroup/)",
+        "description": "InputIcon displays an icon.",
         "components": {
             "default": {
                 "description": "InputIcon displays text, icon, buttons and other content can be grouped next to an input.",
@@ -30730,7 +29783,7 @@
         }
     },
     "inputmask": {
-        "description": "InputMask component is used to enter input in a certain format such as numeric, date, currency, email and phone.\n\n[Live Demo](https://www.primevue.org/inputmask/)",
+        "description": "InputMask component is used to enter input in a certain format such as numeric, date, currency, email and phone.",
         "components": {
             "default": {
                 "description": "InputMask component is used to enter input in a certain format such as numeric, date, currency, email and phone.",
@@ -31110,7 +30163,7 @@
         }
     },
     "inputnumber": {
-        "description": "InputNumber is an input component to provide numerical input.\n\n[Live Demo](https://www.primevue.org/inputnumber/)",
+        "description": "InputNumber is an input component to provide numerical input.",
         "components": {
             "default": {
                 "description": "InputNumber is an input component to provide numerical input.",
@@ -31822,7 +30875,7 @@
         }
     },
     "inputotp": {
-        "description": "InputOtp is used to enter one time passwords.\n\n[Live Demo](https://www.primevue.org/inputotp/)",
+        "description": "InputOtp is used to enter one time passwords.",
         "components": {
             "default": {
                 "description": "InputOtp  is used to enter one time passwords.",
@@ -32276,7 +31329,7 @@
         }
     },
     "inputswitch": {
-        "description": "InputSwitch is used to select a boolean value.\n\n[Live Demo](https://www.primevue.org/inputswitch/)",
+        "description": "InputSwitch is used to select a boolean value.",
         "components": {
             "default": {
                 "description": "InputSwitch is used to select a boolean value.",
@@ -32684,10 +31737,10 @@
         }
     },
     "inputtext": {
-        "description": "InputText renders a text field to enter data.\n\n[Live Demo](https://www.primevue.org/inputtext/)",
+        "description": "InputText component is used for collecting user provided information.",
         "components": {
             "default": {
-                "description": "InputText renders a text field to enter data.",
+                "description": "InputText component is used for collecting user provided information..",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -32967,7 +32020,7 @@
         }
     },
     "knob": {
-        "description": "Knob is a form component to define number inputs with a dial.\n\n[Live Demo](https://www.primevue.org/knob/)",
+        "description": "Knob is a form component to define number inputs with a dial.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -33410,7 +32463,7 @@
         }
     },
     "listbox": {
-        "description": "ListBox is used to select one or more values from a list of items.\n\n[Live Demo](https://www.primevue.org/listbox/)",
+        "description": "ListBox is used to select one or more values from a list of items.",
         "components": {
             "default": {
                 "description": "ListBox is used to select one or more values from a list of items.",
@@ -34294,7 +33347,7 @@
         }
     },
     "megamenu": {
-        "description": "MegaMenu is navigation component that displays submenus together.\n\n[Live Demo](https://www.primevue.org/megamenu/)",
+        "description": "MegaMenu is navigation component that displays submenus together.",
         "components": {
             "default": {
                 "description": "MegaMenu is navigation component that displays submenus together.",
@@ -34978,7 +34031,7 @@
         }
     },
     "menu": {
-        "description": "Menu is a navigation / command component that supports dynamic and static positioning.\n\n[Live Demo](https://www.primevue.org/menu/)",
+        "description": "Menu is a navigation / command component that supports dynamic and static positioning.",
         "components": {
             "default": {
                 "description": "Menu is a navigation / command component that supports dynamic and static positioning.",
@@ -35603,7 +34656,7 @@
         }
     },
     "menubar": {
-        "description": "Menubar is a horizontal menu component.\n\n[Live Demo](https://www.primevue.org/menubar/)",
+        "description": "Menubar is a horizontal menu component.",
         "components": {
             "default": {
                 "description": "Menubar is a horizontal menu component.",
@@ -36383,7 +35436,7 @@
         }
     },
     "message": {
-        "description": "Message groups a collection of contents in tabs.\n\n[Live Demo](https://www.primevue.org/message/)",
+        "description": "Message groups a collection of contents in tabs.",
         "components": {
             "default": {
                 "description": "Messages is used to display inline messages with various severities.",
@@ -36803,7 +35856,7 @@
         }
     },
     "metergroup": {
-        "description": "MeterGroup is a group of process status indicators.\n\n[Live Demo](https://primevue.org/metergroup)",
+        "description": "MeterGroup is a group of process status indicators.",
         "components": {
             "default": {
                 "description": "MeterGroup is a group of process status indicators.",
@@ -37241,7 +36294,7 @@
         }
     },
     "multiselect": {
-        "description": "MultiSelect is used to select multiple items from a collection.\n\n[Live Demo](https://www.primevue.org/multiselect/)",
+        "description": "MultiSelect is used to select multiple items from a collection.",
         "components": {
             "default": {
                 "description": "MultiSelect is used to select multiple items from a collection.",
@@ -38633,7 +37686,7 @@
         }
     },
     "orderlist": {
-        "description": "OrderList is used to managed the order of a collection.\n\n[Live Demo](https://primevue.org/orderlist)",
+        "description": "OrderList is used to managed the order of a collection.",
         "components": {
             "default": {
                 "description": "OrderList is used to sort a collection.",
@@ -39337,7 +38390,7 @@
         }
     },
     "organizationchart": {
-        "description": "OrganizationChart visualizes hierarchical organization data.\n\n[Live Demo](https://primevue.org/organizationchart)",
+        "description": "OrganizationChart visualizes hierarchical organization data.",
         "components": {
             "default": {
                 "description": "OrganizationChart visualizes hierarchical organization data.",
@@ -39977,7 +39030,7 @@
         }
     },
     "overlaypanel": {
-        "description": "OverlayPanel is a container component positioned as connected to its target.\n\n[Live Demo](https://primevue.org/overlaypanel)",
+        "description": "OverlayPanel is a container component positioned as connected to its target.",
         "components": {
             "default": {
                 "description": "OverlayPanel, also known as Popover, is a container component that can overlay other components on page.",
@@ -40412,7 +39465,7 @@
         }
     },
     "paginator": {
-        "description": "Paginator is a generic component to display content in paged format.\n\n[Live Demo](https://primevue.org/paginator)",
+        "description": "Paginator is a generic component to display content in paged format.",
         "components": {
             "default": {
                 "description": "Paginator is a generic widget to display content in paged format.",
@@ -41050,7 +40103,7 @@
         }
     },
     "panel": {
-        "description": "Panel is a container with the optional content toggle feature.\n\n[Live Demo](https://www.primevue.org/panel/)",
+        "description": "Panel is a container with the optional content toggle feature.",
         "components": {
             "default": {
                 "description": "Panel is a container with the optional content toggle feature.",
@@ -41489,7 +40542,7 @@
         }
     },
     "panelmenu": {
-        "description": "PanelMenu is a hybrid of Accordion and Tree components.\n\n[Live Demo](https://www.primevue.org/panelmenu/)",
+        "description": "PanelMenu is a hybrid of Accordion and Tree components.",
         "components": {
             "default": {
                 "description": "PanelMenu is a hybrid of Accordion and Tree components.",
@@ -42247,7 +41300,7 @@
     },
     "passthrough/tailwind": {},
     "password": {
-        "description": "Password displays strength indicator for password fields.\n\n[Live Demo](https://www.primevue.org/password/)",
+        "description": "Password displays strength indicator for password fields.",
         "components": {
             "default": {
                 "description": "Password displays strength indicator for password fields.",
@@ -42926,7 +41979,7 @@
         }
     },
     "picklist": {
-        "description": "PickList is used to reorder items between different lists.\n\n[Live Demo](https://primevue.org/picklist)",
+        "description": "PickList is used to reorder items between different lists.",
         "components": {
             "default": {
                 "description": "PickList is used to reorder items between different lists.",
@@ -44160,10 +43213,10 @@
         }
     },
     "progressbar": {
-        "description": "ProgressBar is a process status indicator.\n\n[Live Demo](https://www.primevue.org/progressbar)",
+        "description": "ProgressBar is a process status indicator.",
         "components": {
             "default": {
-                "description": "\n\n[Live Demo](https://www.primevue.org/progressbar/)\n--- ---\n![CoscomUI](https://primefaces.org/cdn/primevue/images/logo-100.png)",
+                "description": "**CoscomUI - ProgressBar**\n\nProgressBar is a process status indicator._",
                 "methods": {
                     "description": "Defines methods that can be accessed by the component's reference.",
                     "values": []
@@ -44412,7 +43465,7 @@
         }
     },
     "progressspinner": {
-        "description": "ProgressSpinner is a process status indicator.\n\n[Live Demo](https://www.primevue.org/progressspinner)",
+        "description": "ProgressSpinner is a process status indicator.",
         "components": {
             "default": {
                 "description": "ProgressSpinner is a process status indicator.",
@@ -44665,7 +43718,7 @@
         }
     },
     "radiobutton": {
-        "description": "RadioButton is an extension to standard radio button element with theming.\n\n[Live Demo](https://www.primevue.org/radiobutton/)",
+        "description": "RadioButton is an extension to standard radio button element with theming.",
         "components": {
             "default": {
                 "description": "RadioButton is an extension to standard radio button element with theming.",
@@ -45117,546 +44170,8 @@
             }
         }
     },
-    "rating": {
-        "description": "Rating component is a star based selection input.\n\n[Live Demo](https://www.primevue.org/rating/)",
-        "components": {
-            "default": {
-                "description": "Rating component is a star based selection input.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "RatingPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "RatingProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "RatingState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "context",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "RatingContext",
-                            "default": "",
-                            "description": "Defines current options."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "RatingProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "cancelItem",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the cancel item's DOM element."
-                        },
-                        {
-                            "name": "cancelIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the cancel icon's DOM element."
-                        },
-                        {
-                            "name": "item",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the item's DOM element."
-                        },
-                        {
-                            "name": "onIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the on icon's DOM element."
-                        },
-                        {
-                            "name": "offIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the off icon's DOM element."
-                        },
-                        {
-                            "name": "hiddenCancelInputWrapper",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the hidden cancel inputW wapper's DOM element."
-                        },
-                        {
-                            "name": "hiddenCancelInput",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the hidden cancel input's DOM element."
-                        },
-                        {
-                            "name": "hiddenItemInputWrapper",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the hidden item input wrapper's DOM element."
-                        },
-                        {
-                            "name": "hiddenItemInput",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "RatingPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the hidden item input's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingState": {
-                    "description": "Defines current inline state in Rating component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "name state as a number."
-                        },
-                        {
-                            "name": "focusedOptionIndex",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "",
-                            "description": "focusedOptionIndex state as a number."
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingContext": {
-                    "description": "Defines current options in Rating component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "active",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current active state of the item as a boolean."
-                        },
-                        {
-                            "name": "focused",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current focused state of item as a boolean."
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingChangeEvent": {
-                    "description": "Custom change event.",
-                    "relatedProp": "RatingEmits.change",
-                    "props": [
-                        {
-                            "name": "originalEvent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Event",
-                            "default": "",
-                            "description": "Browser event"
-                        },
-                        {
-                            "name": "value",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "",
-                            "description": "Selected option value"
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingProps": {
-                    "description": "Defines valid properties in Rating component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "modelValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "",
-                            "description": "Value of the rating."
-                        },
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Name of the element."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the element should be disabled."
-                        },
-                        {
-                            "name": "readonly",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that component is read-only."
-                        },
-                        {
-                            "name": "stars",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "5",
-                            "description": "Number of stars."
-                        },
-                        {
-                            "name": "cancel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "true",
-                            "description": "When specified a cancel icon is displayed to allow clearing the value."
-                        },
-                        {
-                            "name": "onIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Icon for the on state.",
-                            "deprecated": "since v3.27.0. Use 'onicon' slot."
-                        },
-                        {
-                            "name": "offIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Icon for the off state.",
-                            "deprecated": "since v3.27.0. Use 'officon' slot."
-                        },
-                        {
-                            "name": "cancelIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Icon for the cancelable state.",
-                            "deprecated": "since v3.27.0. Use 'cancelicon' slot."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<RatingPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "RatingSlots": {
-                    "description": "Defines valid slots in Rating component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "cancelicon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "cancelicon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom cancel icon template."
-                        },
-                        {
-                            "name": "onicon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Item value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "on icon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom on icon template."
-                        },
-                        {
-                            "name": "officon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Item value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "off icon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom off icon template."
-                        }
-                    ]
-                },
-                "RatingEmits": {
-                    "description": "Defines valid emits in Rating component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "update:modelValue",
-                            "parameters": [
-                                {
-                                    "name": "value",
-                                    "optional": false,
-                                    "type": "number",
-                                    "description": "New value."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Emitted when the value changes."
-                        },
-                        {
-                            "name": "change",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "RatingChangeEvent",
-                                    "description": "Custom change event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when a suggestion is selected."
-                        },
-                        {
-                            "name": "focus",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component receives focus."
-                        },
-                        {
-                            "name": "blur",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component loses focus."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "RatingPassThroughOptionType": {
-                    "values": "RatingPassThroughAttributes | (options: RatingPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "rating/style/RatingStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "RatingStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "ripple": {
-        "description": "Ripple directive adds ripple effect to the host element.\n\n[Live Demo](https://primevue.org/ripple)",
+        "description": "Ripple directive adds ripple effect to the host element.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -45817,7 +44332,7 @@
         }
     },
     "row": {
-        "description": "Row component is a helper component used to create grouping structures in DataTable.\n\n[Live Demo](https://www.primevue.org/datatable/)",
+        "description": "Row component is a helper component used to create grouping structures in DataTable.",
         "components": {
             "default": {
                 "description": "Row component is a helper component used to create grouping structures in DataTable.",
@@ -46037,7 +44552,7 @@
         }
     },
     "scrollpanel": {
-        "description": "ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.\n\n[Live Demo](https://www.primevue.org/scrollpanel/)",
+        "description": "ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.",
         "components": {
             "default": {
                 "description": "ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar..",
@@ -46344,7 +44859,7 @@
         }
     },
     "scrolltop": {
-        "description": "ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.\n\n[Live Demo](https://www.primevue.org/scrolltop/)",
+        "description": "ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.",
         "components": {
             "default": {
                 "description": "ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.",
@@ -46638,485 +45153,8 @@
             }
         }
     },
-    "selectbutton": {
-        "description": "SelectButton is used to choose single or multiple items from a list using buttons.\n\n[Live Demo](https://www.primevue.org/selectbutton/)",
-        "components": {
-            "default": {
-                "description": "SelectButton is used to choose single or multiple items from a list using buttons.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "SelectButtonPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "SelectButtonProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "SelectButtonState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "context",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "SelectButtonContext",
-                            "default": "",
-                            "description": "Defines current options."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "SelectButtonProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "SelectButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "button",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "SelectButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the button's DOM element."
-                        },
-                        {
-                            "name": "label",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "SelectButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the label's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonChangeEvent": {
-                    "description": "Custom change event.",
-                    "relatedProp": "SelectButtonEmits.change",
-                    "props": [
-                        {
-                            "name": "originalEvent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Event",
-                            "default": "",
-                            "description": "Browser event."
-                        },
-                        {
-                            "name": "value",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Single value or an array of values that are selected."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonState": {
-                    "description": "Defines current inline state in SelectButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "focusedIndex",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "",
-                            "description": "FocusedIndex state as a number."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonContext": {
-                    "description": "Defines current options in SelectButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "active",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current active state of the item as a boolean."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current disabled state of the item as a boolean."
-                        },
-                        {
-                            "name": "option",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Available option."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonProps": {
-                    "description": "Defines valid properties in SelectButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "modelValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Value of the component."
-                        },
-                        {
-                            "name": "options",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "any[]",
-                            "default": "",
-                            "description": "An array of selectitems to display as the available options."
-                        },
-                        {
-                            "name": "optionLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | Function",
-                            "default": "",
-                            "description": "Property name or getter function to use as the label of an option."
-                        },
-                        {
-                            "name": "optionValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | Function",
-                            "default": "",
-                            "description": "Property name or getter function to use as the value of an option, defaults to the option itself when not defined."
-                        },
-                        {
-                            "name": "optionDisabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | Function",
-                            "default": "",
-                            "description": "Property name or getter function to use as the disabled flag of an option, defaults to false when not defined."
-                        },
-                        {
-                            "name": "multiple",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When specified, allows selecting multiple values."
-                        },
-                        {
-                            "name": "invalid",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should have invalid state style."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the element should be disabled."
-                        },
-                        {
-                            "name": "dataKey",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "A property to uniquely identify an option."
-                        },
-                        {
-                            "name": "unselectable",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "true",
-                            "description": "Whether selection can be cleared.",
-                            "deprecated": "Use 'allowEmpty' property instead."
-                        },
-                        {
-                            "name": "allowEmpty",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "true",
-                            "description": "Whether selection can be cleared."
-                        },
-                        {
-                            "name": "ariaLabelledby",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Identifier of the underlying element."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<SelectButtonPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "SelectButtonSlots": {
-                    "description": "Defines valid slots in SelectButton component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "option",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">option</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Option instance</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the option</span>\n }",
-                                    "description": "option slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom content for each option."
-                        }
-                    ]
-                },
-                "SelectButtonEmits": {
-                    "description": "Defines valid emits in SelectButton component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "update:modelValue",
-                            "parameters": [
-                                {
-                                    "name": "value",
-                                    "optional": false,
-                                    "type": "any",
-                                    "description": "New value."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Emitted when the value changes."
-                        },
-                        {
-                            "name": "change",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "SelectButtonChangeEvent",
-                                    "description": "Custom change event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on value change."
-                        },
-                        {
-                            "name": "focus",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event"
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on focus."
-                        },
-                        {
-                            "name": "blur",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on blur."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "SelectButtonPassThroughOptionType": {
-                    "values": "SelectButtonPassThroughAttributes | (options: SelectButtonPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "selectbutton/style/SelectButtonStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "SelectButtonStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "sidebar": {
-        "description": "Sidebar is a panel component displayed as an overlay at the edges of the screen.\n\n[Live Demo](https://primevue.org/sidebar)",
+        "description": "Sidebar is a panel component displayed as an overlay at the edges of the screen.",
         "components": {
             "default": {
                 "description": "Sidebar is a panel component displayed as an overlay.",
@@ -47564,7 +45602,7 @@
         }
     },
     "skeleton": {
-        "description": "Skeleton is a placeholder to display instead of the actual content.\n\n[Live Demo](https://www.primevue.org/skeleton/)",
+        "description": "Skeleton is a placeholder to display instead of the actual content.",
         "components": {
             "default": {
                 "description": "Skeleton is a placeholder to display instead of the actual content.",
@@ -47825,7 +45863,7 @@
         }
     },
     "slider": {
-        "description": "Slider is a component to provide input with a drag handle.\n\n[Live Demo](https://www.primevue.org/slider/)",
+        "description": "Slider is a component to provide input with a drag handle.",
         "components": {
             "default": {
                 "description": "Slider is a component to provide input with a drag handle.",
@@ -48213,7 +46251,7 @@
         }
     },
     "speeddial": {
-        "description": "When pressed, a floating action button can display multiple primary actions that can be performed on a page.\n\n[Live Demo](https://www.primevue.org/speeddial/)",
+        "description": "When pressed, a floating action button can display multiple primary actions that can be performed on a page.",
         "components": {
             "default": {
                 "description": "When pressed, a floating action button can display multiple primary actions that can be performed on a page.",
@@ -48522,7 +46560,7 @@
                             "name": "direction",
                             "optional": true,
                             "readonly": false,
-                            "type": "\"left\" | \"right\" | \"up\" | \"down\" | \"up-left\" | \"up-right\" | \"down-left\" | \"down-right\"",
+                            "type": "\"left\" | \"right\" | \"up\" | \"down\" | \".v-left\" | \".v-right\" | \"down-left\" | \"down-right\"",
                             "default": "up",
                             "description": "Specifies the opening direction of actions."
                         },
@@ -48866,7 +46904,7 @@
         }
     },
     "splitbutton": {
-        "description": "SplitButton groups a set of commands in an overlay with a default command.\n\n[Live Demo](https://www.primevue.org/splitbutton/)",
+        "description": "SplitButton groups a set of commands in an overlay with a default command.",
         "components": {
             "default": {
                 "description": "SplitButton groups a set of commands in an overlay with a default command.",
@@ -49382,7 +47420,7 @@
         }
     },
     "splitter": {
-        "description": "Splitter is utilized to separate and resize panels.\n\n[Live Demo](https://www.primevue.org/splitter/)",
+        "description": "Splitter is utilized to separate and resize panels.",
         "components": {
             "default": {
                 "description": "Splitter is utilized to separate and resize panels.",
@@ -49813,7 +47851,7 @@
         }
     },
     "splitterpanel": {
-        "description": "SplitterPanel is a helper component for Splitter component.\n\n[Live Demo](https://www.primevue.org/splitter/)",
+        "description": "SplitterPanel is a helper component for Splitter component.",
         "components": {
             "default": {
                 "description": "SplitterPanel is a helper component for Splitter component.",
@@ -50072,7 +48110,7 @@
         }
     },
     "stepper": {
-        "description": "Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multi-step process.\n\n[Live Demo](https://www.primevue.org/stepper/)",
+        "description": "Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multi-step process.",
         "components": {
             "default": {
                 "description": "Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multi-step process.",
@@ -50426,7 +48464,7 @@
         }
     },
     "stepperpanel": {
-        "description": "StepperPanel is a helper component for Stepper component.\n\n[Live Demo](https://www.primevue.org/stepper/)",
+        "description": "StepperPanel is a helper component for Stepper component.",
         "components": {
             "default": {
                 "description": "StepperPanel is a helper component for Stepper component.",
@@ -50826,7 +48864,7 @@
         }
     },
     "steps": {
-        "description": "Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps.\n\n[Live Demo](https://www.primevue.org/steps/)",
+        "description": "Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps.",
         "components": {
             "default": {
                 "description": "Steps components is an indicator for the steps in a wizard workflow. Example below uses nested routes with Steps.",
@@ -51212,7 +49250,7 @@
         }
     },
     "styleclass": {
-        "description": "StyleClass manages css classes declaratively to during enter/leave animations or just to toggle classes on an element.\n\n[Live Demo](https://primevue.org/styleclass)",
+        "description": "StyleClass manages css classes declaratively to during enter/leave animations or just to toggle classes on an element.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -51426,7 +49464,7 @@
         }
     },
     "tabmenu": {
-        "description": "TabMenu is a navigation component that displays items as tab headers. Example below uses nested routes with TabMenu.\n\n[Live Demo](https://www.primevue.org/tabmenu/)",
+        "description": "TabMenu is a navigation component that displays items as tab headers. Example below uses nested routes with TabMenu.",
         "components": {
             "default": {
                 "description": "TabMenu is a navigation component that displays items as tab headers. Example below uses nested routes with TabMenu.",
@@ -51877,7 +49915,7 @@
         }
     },
     "tabpanel": {
-        "description": "TabPanel is a helper component for TabPanel component.\n\n[Live Demo](https://www.primevue.org/tabview/)",
+        "description": "TabPanel is a helper component for TabPanel component.",
         "components": {
             "default": {
                 "description": "TabPanel is a helper component for TabView component.",
@@ -52255,7 +50293,7 @@
         }
     },
     "tabview": {
-        "description": "TabView is a container component to group content with tabs.\n\n[Live Demo](https://www.primevue.org/tabview/)",
+        "description": "TabView is a container component to group content with tabs.",
         "components": {
             "default": {
                 "description": "TabView is a container component to group content with tabs.",
@@ -52787,7 +50825,7 @@
         }
     },
     "tag": {
-        "description": "Tag component is used to categorize content.\n\n[Live Demo](https://www.primevue.org/tag)",
+        "description": "Tag component is used to categorize content.",
         "components": {
             "default": {
                 "description": "Tag component is used to categorize content.",
@@ -53062,7 +51100,7 @@
         }
     },
     "terminal": {
-        "description": "Terminal is a text based user interface.\n\n[Live Demo](https://www.primevue.org/terminal)",
+        "description": "Terminal is a text based user interface.",
         "components": {
             "default": {
                 "description": "Terminal is a text based user interface.",
@@ -53454,7 +51492,7 @@
         }
     },
     "textarea": {
-        "description": "Textarea is a multi-line text input element.\n\n[Live Demo](https://www.primevue.org/textarea/)",
+        "description": "Textarea is a multi-line text input element.",
         "components": {
             "default": {
                 "description": "Textarea is a multi-line text input element.",
@@ -53739,7 +51777,7 @@
         }
     },
     "tieredmenu": {
-        "description": "TieredMenu displays submenus in nested overlays.\n\n[Live Demo](https://www.primevue.org/menu/)",
+        "description": "TieredMenu displays submenus in nested overlays.",
         "components": {
             "default": {
                 "description": "TieredMenu displays submenus in nested overlays.",
@@ -54406,7 +52444,7 @@
         }
     },
     "timeline": {
-        "description": "Timeline visualizes a series of chained events.\n\n[Live Demo](https://primevue.org/timeline)",
+        "description": "Timeline visualizes a series of chained events.",
         "components": {
             "default": {
                 "description": "Timeline visualizes a series of chained events.",
@@ -54774,7 +52812,7 @@
         }
     },
     "toast": {
-        "description": "Toast is used to display messages in an overlay.\n\n[Live Demo](https://www.primevue.org/toast/)",
+        "description": "Toast is used to display messages in an overlay.",
         "components": {
             "default": {
                 "description": "Toast is used to display messages in an overlay.",
@@ -55385,7 +53423,7 @@
         }
     },
     "toastservice-usetoast": {
-        "description": "[Live Demo](https://www.primevue.org/toast/)",
+        "description": "",
         "model": {
             "ToastServiceMethods": {
                 "description": "Toast Service methods.",
@@ -55446,494 +53484,8 @@
             }
         }
     },
-    "togglebutton": {
-        "description": "ToggleButton is used to select a boolean value using a button.\n\n[Live Demo](https://www.primevue.org/togglebutton/)",
-        "components": {
-            "default": {
-                "description": "ToggleButton is used to select a boolean value using a button.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "ToggleButtonPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "ToggleButtonProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "ToggleButtonState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "context",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "ToggleButtonContext",
-                            "default": "",
-                            "description": "Defines current options."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "ToggleButtonProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ToggleButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "input",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ToggleButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the input's DOM element."
-                        },
-                        {
-                            "name": "box",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ToggleButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the box's DOM element."
-                        },
-                        {
-                            "name": "icon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ToggleButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the icon's DOM element."
-                        },
-                        {
-                            "name": "label",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ToggleButtonPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the label's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonState": {
-                    "description": "Defines current inline state in ToggleButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonContext": {
-                    "description": "Defines current options in ToggleButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "active",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current highlighted state as a boolean."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current disabled state as a boolean."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonProps": {
-                    "description": "Defines valid properties in ToggleButton component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "modelValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Value of the component."
-                        },
-                        {
-                            "name": "onIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Icon for the on state.",
-                            "deprecated": "since v3.27.0. Use 'icon' slot."
-                        },
-                        {
-                            "name": "offIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Icon for the off state.",
-                            "deprecated": "since v3.27.0. Use 'icon' slot."
-                        },
-                        {
-                            "name": "onLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "yes",
-                            "description": "Label for the on state."
-                        },
-                        {
-                            "name": "offLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "no",
-                            "description": "Label for the off state."
-                        },
-                        {
-                            "name": "iconPos",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "\"left\" | \"right\"",
-                            "default": "left",
-                            "description": "Position of the icon."
-                        },
-                        {
-                            "name": "invalid",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should have invalid state style."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the element should be disabled."
-                        },
-                        {
-                            "name": "readonly",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "",
-                            "description": "When present, it specifies that an input field is read-only."
-                        },
-                        {
-                            "name": "tabindex",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Index of the element in tabbing order."
-                        },
-                        {
-                            "name": "inputId",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Identifier of the focus input to match a label defined for the chips."
-                        },
-                        {
-                            "name": "inputClass",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | object",
-                            "default": "",
-                            "description": "Style class of the input field."
-                        },
-                        {
-                            "name": "inputStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": "",
-                            "description": "Inline style of the input field."
-                        },
-                        {
-                            "name": "ariaLabelledby",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs."
-                        },
-                        {
-                            "name": "ariaLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Establishes a string value that labels the component."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<ToggleButtonPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "ToggleButtonSlots": {
-                    "description": "Defines valid slots in ToggleButton component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "icon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">value</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Current value</span>\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">any</span>, <span class=\"doc-option-parameter-type\">// Icon style class</span>\n }",
-                                    "description": "icon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom icon template."
-                        }
-                    ]
-                },
-                "ToggleButtonEmits": {
-                    "description": "Defines valid emits in ToggleButton component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "update:modelValue",
-                            "parameters": [
-                                {
-                                    "name": "value",
-                                    "optional": false,
-                                    "type": "boolean",
-                                    "description": "New value."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Emitted when the value changes."
-                        },
-                        {
-                            "name": "change",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on value change."
-                        },
-                        {
-                            "name": "focus",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component receives focus."
-                        },
-                        {
-                            "name": "blur",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component loses focus."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "ToggleButtonPassThroughOptionType": {
-                    "values": "ToggleButtonPassThroughAttributes | (options: ToggleButtonPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "togglebutton/style/ToggleButtonStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "ToggleButtonStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "toolbar": {
-        "description": "Toolbar is a grouping component for buttons and other content.\n\n[Live Demo](https://www.primevue.org/toolbar/)",
+        "description": "Toolbar is a grouping component for buttons and other content.",
         "components": {
             "default": {
                 "description": "Toolbar is a grouping component for buttons and other content.",
@@ -56197,7 +53749,7 @@
         }
     },
     "tooltip": {
-        "description": "Tooltip directive provides advisory information for a component.\n\n[Live Demo](https://primevue.org/tooltip)",
+        "description": "Tooltip directive provides advisory information for a component.",
         "interfaces": {
             "description": "Defines the custom interfaces used by the module.",
             "eventDescription": "Defines the custom events used by the component's emit.",
@@ -56578,7 +54130,7 @@
         }
     },
     "tree": {
-        "description": "Tree is used to display hierarchical data.\n\n[Live Demo](https://www.primevue.org/tree/)",
+        "description": "Tree is used to display hierarchical data.",
         "components": {
             "default": {
                 "description": "Tree is used to display hierarchical data.",
@@ -57480,7 +55032,7 @@
         }
     },
     "treeselect": {
-        "description": "TreeSelect is a form component to choose from hierarchical data.\n\n[Live Demo](https://www.primevue.org/treeselect/)",
+        "description": "TreeSelect is a form component to choose from hierarchical data.",
         "components": {
             "default": {
                 "description": "TreeSelect is a form component to choose from hierarchical data.",
@@ -57843,7 +55395,7 @@
                             "readonly": false,
                             "type": "string",
                             "default": "No results found",
-                            "description": "Text to display when there are no options available. Defaults to value from CoscomUI locale configuration."
+                            "description": "Text to display when there are no options available. Defaults to value from CosocmUI locale configuration."
                         },
                         {
                             "name": "display",
@@ -58217,7 +55769,7 @@
         }
     },
     "treetable": {
-        "description": "TreeTable is used to display hierarchical data in tabular format.\n\n[Live Demo](https://www.primevue.org/treetable/)",
+        "description": "TreeTable is used to display hierarchical data in tabular format.",
         "components": {
             "default": {
                 "description": "TreeTable is used to display hierarchical data in tabular format.",
@@ -59752,7 +57304,7 @@
         }
     },
     "tristatecheckbox": {
-        "description": "TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.\n\n[Live Demo](https://www.primevue.org/tristatecheckbox/)",
+        "description": "TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.",
         "components": {
             "default": {
                 "description": "TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.",
@@ -60481,7 +58033,7 @@
         }
     },
     "virtualscroller": {
-        "description": "VirtualScroller is a performant approach to handle huge data efficiently.\n\n[Live Demo](https://www.primevue.org/virtualscroller/)",
+        "description": "VirtualScroller is a performant approach to handle huge data efficiently.",
         "components": {
             "default": {
                 "description": "VirtualScroller is a performant approach to handle huge data efficiently.",
