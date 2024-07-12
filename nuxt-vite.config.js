@@ -101,7 +101,8 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/tree/style': path.resolve(__dirname, './components/lib/tree/style/TreeStyle.js'),
     '@coscom/coscom-ui/treeselect/style': path.resolve(__dirname, './components/lib/treeselect/style/TreeSelectStyle.js'),
     '@coscom/coscom-ui/treetable/style': path.resolve(__dirname, './components/lib/treetable/style/TreeTableStyle.js'),
-    '@coscom/coscom-ui/virtualscroller/style': path.resolve(__dirname, './components/lib/virtualscroller/style/VirtualScrollerStyle.js')
+    '@coscom/coscom-ui/virtualscroller/style': path.resolve(__dirname, './components/lib/virtualscroller/style/VirtualScrollerStyle.js'),
+    '@coscom/coscom-ui/qrcode/style': path.resolve(__dirname, './components/lib/qrcode/style/QrCodeStyle.js')
 };
 
 const ICON_ALIAS = {

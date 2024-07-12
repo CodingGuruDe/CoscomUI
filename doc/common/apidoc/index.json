@@ -5242,7 +5242,7 @@
                         }
                     ],
                     "methods": [],
-                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DialogStyle,DividerStyle,DockStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatLabelStyle,FocusTrapStyle,GalleriaStyle,IconFieldStyle,ImageStyle,InlineMessageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputOtpStyle,InputSwitchStyle,InputTextStyle,KnobStyle,ListboxStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MeterGroupStyle,MultiSelectStyle,OrderListStyle,OrganizationChartStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,RadioButtonStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabMenuStyle,TabPanelStyle,TabViewStyle,TagStyle,TerminalStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,TriStateCheckboxStyle,VirtualScrollerStyle"
+                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DialogStyle,DividerStyle,DockStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatLabelStyle,FocusTrapStyle,GalleriaStyle,IconFieldStyle,ImageStyle,InlineMessageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputSwitchStyle,InputTextStyle,KnobStyle,ListboxStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MeterGroupStyle,MultiSelectStyle,OrderListStyle,OrganizationChartStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,QrCodeStyle,RadioButtonStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabMenuStyle,TabPanelStyle,TabViewStyle,TagStyle,TerminalStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,VirtualScrollerStyle"
                 }
             }
         }
@@ -14737,10 +14737,10 @@
                             "default": ""
                         },
                         {
-                            "name": "tristatecheckbox",
+                            "name": "qrcode",
                             "optional": true,
                             "readonly": false,
-                            "type": "DefaultPassThrough<TriStateCheckboxPassThroughOptions>",
+                            "type": "DefaultPassThrough<QrCodePassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -30874,460 +30874,6 @@
             }
         }
     },
-    "inputotp": {
-        "description": "InputOtp is used to enter one time passwords.",
-        "components": {
-            "default": {
-                "description": "InputOtp  is used to enter one time passwords.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "InputOtpPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "InputOtpProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "InputOtpState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpSharedPassThroughMethodOptions": {
-                    "description": "Custom shared passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "InputOtpProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "InputOtpState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "InputOtpProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "InputOtpPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "input",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "InputTextPassThroughOptions<InputOtpSharedPassThroughMethodOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to the InputText component."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpState": {
-                    "description": "Defines current inline state in InputOtp component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "tokens",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "string[] | number[]",
-                            "default": "",
-                            "description": "Array of input tokens"
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpTemplateAttrsOptions": {
-                    "description": "InputOtp attr options",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "value",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Input token value"
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpTemplateEvents": {
-                    "description": "InputOtp templating events",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "input",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "keydown",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "focus",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "blur",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "paste",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpProps": {
-                    "description": "Defines valid properties in InputOtp component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "modelValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | boolean",
-                            "default": "false",
-                            "description": "Specifies whether a inputotp should be checked or not."
-                        },
-                        {
-                            "name": "invalid",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should have invalid state style."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should be disabled."
-                        },
-                        {
-                            "name": "readonly",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that an input field is read-only."
-                        },
-                        {
-                            "name": "variant",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "\"filled\" | \"outlined\"",
-                            "default": "outlined",
-                            "description": "Specifies the input variant of the component."
-                        },
-                        {
-                            "name": "tabindex",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "",
-                            "description": "Index of the element in tabbing order."
-                        },
-                        {
-                            "name": "length",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "number",
-                            "default": "4",
-                            "description": "Number of characters to initiate."
-                        },
-                        {
-                            "name": "mask",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Mask pattern."
-                        },
-                        {
-                            "name": "integerOnly",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that an input field is integer-only."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<InputOtpPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "InputOtpSlots": {
-                    "description": "",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "default",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n \t <span class=\"ml-3 doc-option-parameter-name\">events</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; InputOtpTemplateEvents</span>, <span class=\"doc-option-parameter-type\">// Events of the component</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">attrs</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">index</span>: number) &rArr; InputOtpTemplateAttrsOptions</span>, <span class=\"doc-option-parameter-type\">// Attributes of the component</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">index</span>: <span class=\"doc-option-parameter-type\">number</span>, <span class=\"doc-option-parameter-type\">// Index of the input field</span>\n }"
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Default content slot."
-                        }
-                    ]
-                },
-                "InputOtpEmits": {
-                    "description": "Defines valid emits in InputOtp component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "update:modelValue",
-                            "parameters": [
-                                {
-                                    "name": "value",
-                                    "optional": false,
-                                    "type": "boolean",
-                                    "description": "New value."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Emitted when the value changes."
-                        },
-                        {
-                            "name": "change",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on value change."
-                        },
-                        {
-                            "name": "focus",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component receives focus."
-                        },
-                        {
-                            "name": "blur",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component loses focus."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "InputOtpPassThroughOptionType": {
-                    "values": "InputOtpPassThroughAttributes | (options: InputOtpPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "inputotp/style/InputOtpStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "InputOtpStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
     "inputswitch": {
         "description": "InputSwitch is used to select a boolean value.",
         "components": {
@@ -43666,6 +43212,459 @@
             "typeDescription": "Defines the custom types used by the module.",
             "values": {
                 "ProgressSpinnerStyle": {
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "name",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": ""
+                        },
+                        {
+                            "name": "css",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": ""
+                        },
+                        {
+                            "name": "classes",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "object",
+                            "default": ""
+                        },
+                        {
+                            "name": "inlineStyles",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "object",
+                            "default": ""
+                        },
+                        {
+                            "name": "loadStyle",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "Function",
+                            "default": ""
+                        },
+                        {
+                            "name": "getStyleSheet",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "Function",
+                            "default": ""
+                        }
+                    ],
+                    "methods": [],
+                    "extendedTypes": "BaseStyle"
+                }
+            }
+        }
+    },
+    "qrcode": {
+        "description": "Qr Code is an extension to standard radio button element with theming.",
+        "components": {
+            "default": {
+                "description": "QrCode is an extension to standard radio button element with theming.",
+                "methods": {
+                    "description": "Defines methods that can be accessed by the component's reference.",
+                    "values": []
+                }
+            }
+        },
+        "interfaces": {
+            "description": "Defines the custom interfaces used by the module.",
+            "eventDescription": "Defines the custom events used by the component's emit.",
+            "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "values": {
+                "QrCodePassThroughMethodOptions": {
+                    "description": "Custom passthrough(pt) option method.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "instance",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines instance."
+                        },
+                        {
+                            "name": "props",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "QrCodeProps",
+                            "default": "",
+                            "description": "Defines valid properties."
+                        },
+                        {
+                            "name": "state",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "QrCodeState",
+                            "default": "",
+                            "description": "Defines current inline state."
+                        },
+                        {
+                            "name": "context",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "QrCodeContext",
+                            "default": "",
+                            "description": "Defines current options."
+                        },
+                        {
+                            "name": "attrs",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines valid attributes."
+                        },
+                        {
+                            "name": "parent",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines parent options."
+                        },
+                        {
+                            "name": "global",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "undefined | object",
+                            "default": "",
+                            "description": "Defines passthrough(pt) options in global config."
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodePassThroughOptions": {
+                    "description": "Custom passthrough(pt) options.",
+                    "relatedProp": "QrCodeProps.pt",
+                    "props": [
+                        {
+                            "name": "root",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "QrCodePassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the root's DOM element."
+                        },
+                        {
+                            "name": "input",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "QrCodePassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the input's DOM element."
+                        },
+                        {
+                            "name": "box",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "QrCodePassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the box's DOM element."
+                        },
+                        {
+                            "name": "icon",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "QrCodePassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the icon's DOM element."
+                        },
+                        {
+                            "name": "hooks",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "ComponentHooks",
+                            "default": "",
+                            "description": "Used to manage all lifecycle hooks."
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodePassThroughAttributes": {
+                    "description": "Custom passthrough attributes for each DOM elements",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "[key: string]",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any"
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodeState": {
+                    "description": "Defines current inline state in QrCode component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "[key: string]",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any"
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodeProps": {
+                    "description": "Defines valid properties in QrCode component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "value",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Value of the checkbox."
+                        },
+                        {
+                            "name": "modelValue",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Value binding of the checkbox."
+                        },
+                        {
+                            "name": "name",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Name of the input element."
+                        },
+                        {
+                            "name": "binary",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "",
+                            "description": "Allows to select a boolean value."
+                        },
+                        {
+                            "name": "invalid",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "When present, it specifies that the component should have invalid state style."
+                        },
+                        {
+                            "name": "disabled",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "When present, it specifies that the component should be disabled."
+                        },
+                        {
+                            "name": "variant",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "\"filled\" | \"outlined\"",
+                            "default": "outlined",
+                            "description": "Specifies the input variant of the component."
+                        },
+                        {
+                            "name": "readonly",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "",
+                            "description": "When present, it specifies that an input field is read-only."
+                        },
+                        {
+                            "name": "tabindex",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "number",
+                            "default": "",
+                            "description": "Index of the element in tabbing order."
+                        },
+                        {
+                            "name": "inputId",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Identifier of the underlying input element."
+                        },
+                        {
+                            "name": "inputStyle",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "object",
+                            "default": "",
+                            "description": "Inline style of the input field."
+                        },
+                        {
+                            "name": "inputClass",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string | object",
+                            "default": "",
+                            "description": "Style class of the input field."
+                        },
+                        {
+                            "name": "ariaLabelledby",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs."
+                        },
+                        {
+                            "name": "ariaLabel",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Establishes a string value that labels the component."
+                        },
+                        {
+                            "name": "pt",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "PassThrough<QrCodePassThroughOptions>",
+                            "default": "",
+                            "description": "Used to pass attributes to DOM elements inside the component."
+                        },
+                        {
+                            "name": "ptOptions",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "PassThroughOptions",
+                            "default": "",
+                            "description": "Used to configure passthrough(pt) options of the component."
+                        },
+                        {
+                            "name": "unstyled",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "When enabled, it removes component related styles in the core."
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodeContext": {
+                    "description": "Defines current options in QrCode component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "checked",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current checked state of the item as a boolean."
+                        },
+                        {
+                            "name": "disabled",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current disabled state of the item as a boolean."
+                        }
+                    ],
+                    "methods": []
+                },
+                "QrCodeSlots": {
+                    "relatedProp": "",
+                    "props": [],
+                    "methods": []
+                },
+                "QrCodeEmits": {
+                    "description": "Defines valid emits in QrCode component.",
+                    "relatedProp": "",
+                    "props": [],
+                    "methods": [
+                        {
+                            "name": "update:modelValue",
+                            "parameters": [
+                                {
+                                    "name": "value",
+                                    "optional": false,
+                                    "type": "any",
+                                    "description": "New value."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Emitted when the value changes."
+                        },
+                        {
+                            "name": "change",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Callback to invoke on radio button value change."
+                        },
+                        {
+                            "name": "focus",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Callback to invoke when the component receives focus."
+                        },
+                        {
+                            "name": "blur",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Callback to invoke when the component loses focus."
+                        }
+                    ]
+                }
+            }
+        },
+        "types": {
+            "description": "Defines the custom types used by the module.",
+            "values": {
+                "QrCodePassThroughOptionType": {
+                    "values": "QrCodePassThroughAttributes | (options: QrCodePassThroughMethodOptions) => undefined | string | null | undefined"
+                }
+            }
+        }
+    },
+    "qrcode/style/QrCodeStyle": {
+        "interfaces": {
+            "description": "Defines the custom interfaces used by the module.",
+            "eventDescription": "Defines the custom events used by the component's emit.",
+            "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "values": {
+                "QrCodeStyle": {
                     "relatedProp": "",
                     "props": [
                         {
@@ -57252,500 +57251,6 @@
             "typeDescription": "Defines the custom types used by the module.",
             "values": {
                 "TreeTableStyle": {
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "name",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "css",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": ""
-                        },
-                        {
-                            "name": "classes",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "inlineStyles",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": ""
-                        },
-                        {
-                            "name": "loadStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        },
-                        {
-                            "name": "getStyleSheet",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Function",
-                            "default": ""
-                        }
-                    ],
-                    "methods": [],
-                    "extendedTypes": "BaseStyle"
-                }
-            }
-        }
-    },
-    "tristatecheckbox": {
-        "description": "TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.",
-        "components": {
-            "default": {
-                "description": "TriStateCheckbox is used to select either 'true', 'false' or 'null' as the value.",
-                "methods": {
-                    "description": "Defines methods that can be accessed by the component's reference.",
-                    "values": []
-                }
-            }
-        },
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "TriStateCheckboxPassThroughMethodOptions": {
-                    "description": "Custom passthrough(pt) option method.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "instance",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines instance."
-                        },
-                        {
-                            "name": "props",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "TriStateCheckboxProps",
-                            "default": "",
-                            "description": "Defines valid properties."
-                        },
-                        {
-                            "name": "state",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "TriStateCheckboxState",
-                            "default": "",
-                            "description": "Defines current inline state."
-                        },
-                        {
-                            "name": "context",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "TriStateCheckboxContext",
-                            "default": "",
-                            "description": "Defines current options."
-                        },
-                        {
-                            "name": "attrs",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines valid attributes."
-                        },
-                        {
-                            "name": "parent",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any",
-                            "default": "",
-                            "description": "Defines parent options."
-                        },
-                        {
-                            "name": "global",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "undefined | object",
-                            "default": "",
-                            "description": "Defines passthrough(pt) options in global config."
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxPassThroughOptions": {
-                    "description": "Custom passthrough(pt) options.",
-                    "relatedProp": "TriStateCheckboxProps.pt",
-                    "props": [
-                        {
-                            "name": "root",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the root's DOM element."
-                        },
-                        {
-                            "name": "input",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the input's DOM element."
-                        },
-                        {
-                            "name": "box",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the box's DOM element."
-                        },
-                        {
-                            "name": "checkIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the check icon's DOM element."
-                        },
-                        {
-                            "name": "uncheckIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the uncheck icon's DOM element."
-                        },
-                        {
-                            "name": "nullableIcon",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the nullable icon's DOM element."
-                        },
-                        {
-                            "name": "hiddenValueLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "TriStateCheckboxPassThroughOptionType",
-                            "default": "",
-                            "description": "Used to pass attributes to the hidden value label's DOM element."
-                        },
-                        {
-                            "name": "hooks",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "ComponentHooks",
-                            "default": "",
-                            "description": "Used to manage all lifecycle hooks."
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxPassThroughAttributes": {
-                    "description": "Custom passthrough attributes for each DOM elements",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxState": {
-                    "description": "Defines current inline state in TriStateCheckbox component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "[key: string]",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "any"
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxContext": {
-                    "description": "Defines current options in TriStateCheckbox component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "active",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current active state as a boolean."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": false,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "Current disabled state as a boolean."
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxProps": {
-                    "description": "Defines valid properties in TriStateCheckbox component.",
-                    "relatedProp": "",
-                    "props": [
-                        {
-                            "name": "modelValue",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "Nullable<boolean>",
-                            "default": "null",
-                            "description": "Value of the component."
-                        },
-                        {
-                            "name": "invalid",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should have invalid state style."
-                        },
-                        {
-                            "name": "disabled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When present, it specifies that the component should be disabled."
-                        },
-                        {
-                            "name": "variant",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "\"filled\" | \"outlined\"",
-                            "default": "outlined",
-                            "description": "Specifies the input variant of the component."
-                        },
-                        {
-                            "name": "readonly",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "",
-                            "description": "When present, it specifies that an input field is read-only."
-                        },
-                        {
-                            "name": "tabindex",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Index of the element in tabbing order."
-                        },
-                        {
-                            "name": "inputId",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Identifier of the underlying input element."
-                        },
-                        {
-                            "name": "inputClass",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "object",
-                            "default": "",
-                            "description": "Style class of the input field."
-                        },
-                        {
-                            "name": "inputStyle",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string | object",
-                            "default": "",
-                            "description": "Inline style of the input field."
-                        },
-                        {
-                            "name": "ariaLabelledby",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Establishes relationships between the component and label(s) where its value should be one or more element IDs."
-                        },
-                        {
-                            "name": "ariaLabel",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "string",
-                            "default": "",
-                            "description": "Establishes a string value that labels the component."
-                        },
-                        {
-                            "name": "pt",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThrough<TriStateCheckboxPassThroughOptions>",
-                            "default": "",
-                            "description": "Used to pass attributes to DOM elements inside the component."
-                        },
-                        {
-                            "name": "ptOptions",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "PassThroughOptions",
-                            "default": "",
-                            "description": "Used to configure passthrough(pt) options of the component."
-                        },
-                        {
-                            "name": "unstyled",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "boolean",
-                            "default": "false",
-                            "description": "When enabled, it removes component related styles in the core."
-                        }
-                    ],
-                    "methods": []
-                },
-                "TriStateCheckboxSlots": {
-                    "description": "Defines valid slots in TriStateCheckbox component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "checkicon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "checkicon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom check icon template."
-                        },
-                        {
-                            "name": "uncheckicon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "uncheckicon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom uncheck icon template."
-                        },
-                        {
-                            "name": "nullableicon",
-                            "parameters": [
-                                {
-                                    "name": "scope",
-                                    "optional": false,
-                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">class</span>: <span class=\"doc-option-parameter-type\">string</span>, <span class=\"doc-option-parameter-type\">// Style class of the icon.</span>\n }",
-                                    "description": "nullableicon slot's params."
-                                }
-                            ],
-                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
-                            "description": "Custom nullable icon template."
-                        }
-                    ]
-                },
-                "TriStateCheckboxEmits": {
-                    "description": "Defines valid emits in TriStateCheckbox component.",
-                    "relatedProp": "",
-                    "props": [],
-                    "methods": [
-                        {
-                            "name": "update:modelValue",
-                            "parameters": [
-                                {
-                                    "name": "value",
-                                    "optional": false,
-                                    "type": "Nullable<boolean>",
-                                    "description": "New value."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Emitted when the value changes."
-                        },
-                        {
-                            "name": "change",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke on value change."
-                        },
-                        {
-                            "name": "focus",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component receives focus."
-                        },
-                        {
-                            "name": "blur",
-                            "parameters": [
-                                {
-                                    "name": "event",
-                                    "optional": false,
-                                    "type": "Event",
-                                    "description": "Browser event."
-                                }
-                            ],
-                            "returnType": "void",
-                            "description": "Callback to invoke when the component loses focus."
-                        }
-                    ]
-                }
-            }
-        },
-        "types": {
-            "description": "Defines the custom types used by the module.",
-            "values": {
-                "TriStateCheckboxPassThroughOptionType": {
-                    "values": "TriStateCheckboxPassThroughAttributes | (options: TriStateCheckboxPassThroughMethodOptions) => undefined | string | null | undefined"
-                }
-            }
-        }
-    },
-    "tristatecheckbox/style/TriStateCheckboxStyle": {
-        "interfaces": {
-            "description": "Defines the custom interfaces used by the module.",
-            "eventDescription": "Defines the custom events used by the component's emit.",
-            "methodDescription": "Defines methods that can be accessed by the component's reference.",
-            "typeDescription": "Defines the custom types used by the module.",
-            "values": {
-                "TriStateCheckboxStyle": {
                     "relatedProp": "",
                     "props": [
                         {

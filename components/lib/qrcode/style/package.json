@@ -1,0 +1,6 @@
+{
+    "main": "./qrcodestyle.cjs.js",
+    "module": "./qrcodestyle.esm.js",
+    "unpkg": "./qrcodestyle.min.js",
+    "types": "./QrCodeStyle.d.ts"
+}

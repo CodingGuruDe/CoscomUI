@@ -23,7 +23,8 @@ const form = [
     'RadioButton',
     'Slider',
     'Textarea',
-    'TreeSelect'
+    'TreeSelect',
+    'QrCode'
 ];
 
 const button = ['Button', 'ButtonGroup', 'SpeedDial', 'SplitButton'];

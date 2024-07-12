@@ -85,7 +85,7 @@ import { TooltipDirectivePassThroughOptions } from '../tooltip/Tooltip';
 import { TreePassThroughOptions } from '../tree/Tree';
 import { TreeSelectPassThroughOptions } from '../treeselect/TreeSelect';
 import { TreeTablePassThroughOptions } from '../treetable/TreeTable';
-import { TriStateCheckboxPassThroughOptions } from '../tristatecheckbox/TriStateCheckbox';
+import { QrCodePassThroughOptions } from '../qrcode/QrCode';
 import { DefaultPassThrough, PassThrough } from '../ts-helpers';
 import { VirtualScrollerPassThroughOptions } from '../virtualscroller/VirtualScroller';
 
@@ -194,7 +194,7 @@ export interface CoscomPTOptions {
     toolbar?: DefaultPassThrough<ToolbarPassThroughOptions>;
     tree?: DefaultPassThrough<TreePassThroughOptions>;
     treeselect?: DefaultPassThrough<TreeSelectPassThroughOptions>;
-    tristatecheckbox?: DefaultPassThrough<TriStateCheckboxPassThroughOptions>;
+    qrcode?: DefaultPassThrough<QrCodePassThroughOptions>;
     treetable?: DefaultPassThrough<TreeTablePassThroughOptions>;
     virtualscroller?: DefaultPassThrough<VirtualScrollerPassThroughOptions>;
     directives?: {

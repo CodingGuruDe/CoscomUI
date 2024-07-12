@@ -1,0 +1,9 @@
+{
+    "main": "./qrcode.cjs.js",
+    "module": "./qrcode.esm.js",
+    "unpkg": "./qrcode.min.js",
+    "types": "./QrCode.d.ts",
+    "browser": {
+        "./sfc": "./QrCode.vue"
+    }
+}

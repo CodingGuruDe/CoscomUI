@@ -15,6 +15,6 @@
         "jsx": "preserve",
         "incremental": true
     },
-    "include": ["**/*.ts"],
+    "include": ["**/*.ts", "components/lib/qrcode/qrcodegen.js"],
     "exclude": ["node_modules", "dist"]
 }

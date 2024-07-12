@@ -152,6 +152,10 @@
                         {
                             "name": "TreeSelect",
                             "to": "/treeselect"
+                        },
+                        {
+                            "name": "QrCode",
+                            "to": "/qrcode"
                         }
                     ]
                 },
