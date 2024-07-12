@@ -14,7 +14,6 @@ const form = [
     'InputIcon',
     'InputMask',
     'InputNumber',
-    'InputOtp',
     'InputSwitch',
     'InputText',
     'Knob',
@@ -24,8 +23,7 @@ const form = [
     'RadioButton',
     'Slider',
     'Textarea',
-    'TreeSelect',
-    'TriStateCheckbox'
+    'TreeSelect'
 ];
 
 const button = ['Button', 'ButtonGroup', 'SpeedDial', 'SplitButton'];

@@ -51,7 +51,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/inputicon/style': path.resolve(__dirname, './components/lib/inputicon/style/InputIconStyle.js'),
     '@coscom/coscom-ui/inputmask/style': path.resolve(__dirname, './components/lib/inputmask/style/InputMaskStyle.js'),
     '@coscom/coscom-ui/inputnumber/style': path.resolve(__dirname, './components/lib/inputnumber/style/InputNumberStyle.js'),
-    '@coscom/coscom-ui/inputotp/style': path.resolve(__dirname, './components/lib/inputotp/style/InputOtpStyle.js'),
     '@coscom/coscom-ui/inputswitch/style': path.resolve(__dirname, './components/lib/inputswitch/style/InputSwitchStyle.js'),
     '@coscom/coscom-ui/inputtext/style': path.resolve(__dirname, './components/lib/inputtext/style/InputTextStyle.js'),
     '@coscom/coscom-ui/knob/style': path.resolve(__dirname, './components/lib/knob/style/KnobStyle.js'),
@@ -102,7 +101,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/tree/style': path.resolve(__dirname, './components/lib/tree/style/TreeStyle.js'),
     '@coscom/coscom-ui/treeselect/style': path.resolve(__dirname, './components/lib/treeselect/style/TreeSelectStyle.js'),
     '@coscom/coscom-ui/treetable/style': path.resolve(__dirname, './components/lib/treetable/style/TreeTableStyle.js'),
-    '@coscom/coscom-ui/tristatecheckbox/style': path.resolve(__dirname, './components/lib/tristatecheckbox/style/TriStateCheckboxStyle.js'),
     '@coscom/coscom-ui/virtualscroller/style': path.resolve(__dirname, './components/lib/virtualscroller/style/VirtualScrollerStyle.js')
 };
 

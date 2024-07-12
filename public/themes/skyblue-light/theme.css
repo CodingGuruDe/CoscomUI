@@ -34,7 +34,7 @@
   --gray-950: #020617;
   --content-padding: 1.125rem;
   --inline-spacing: 0.5rem;
-  --border-radius: 3px;
+  --border-radius: 4px;
   --surface-ground: #f8fafc;
   --surface-section: #ffffff;
   --surface-card: #ffffff;
@@ -194,8 +194,8 @@
 
 .v-editor-container .v-editor-toolbar {
   background: #ffffff;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
 }
 .v-editor-container .v-editor-toolbar.ql-snow {
   border: 1px solid #e2e8f0;
@@ -232,7 +232,7 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 0.25rem 0.25rem;
 }
 .v-editor-container .v-editor-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options .ql-picker-item {
@@ -246,8 +246,8 @@
   padding: 0.5rem 0.75rem;
 }
 .v-editor-container .v-editor-content {
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .v-editor-container .v-editor-content.ql-snow {
   border: 1px solid #e2e8f0;
@@ -255,8 +255,8 @@
 .v-editor-container .v-editor-content .ql-editor {
   background: #ffffff;
   color: #334155;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 .v-editor-container .ql-snow.ql-toolbar button:hover,
 .v-editor-container .ql-snow.ql-toolbar button:focus {
@@ -453,7 +453,7 @@
     font-family: var(--font-family);
     font-feature-settings: var(--font-feature-settings, normal);
     font-size: 1rem;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-link:focus-visible {
@@ -635,7 +635,7 @@
     background: #ffffff;
     color: #334155;
     border: 1px solid #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
   }
   .v-autocomplete-panel .v-autocomplete-items {
@@ -840,7 +840,7 @@
     background: #ffffff;
     color: #334155;
     border: 1px solid #cbd5e1;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-datepicker:not(.v-datepicker-inline) {
     background: #ffffff;
@@ -989,7 +989,7 @@
   .v-datepicker .v-monthpicker .v-monthpicker-month {
     padding: 0.25rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-datepicker .v-monthpicker .v-monthpicker-month.v-highlight {
     color: #3399ff;
@@ -1001,7 +1001,7 @@
   .v-datepicker .v-yearpicker .v-yearpicker-year {
     padding: 0.25rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-datepicker .v-yearpicker .v-yearpicker-year.v-highlight {
     color: #3399ff;
@@ -1153,7 +1153,7 @@
     background: #ffffff;
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-cascadeselect:not(.v-disabled):hover {
@@ -1201,7 +1201,7 @@
     background: #ffffff;
     color: #334155;
     border: 1px solid #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
   }
   .v-cascadeselect-panel .v-cascadeselect-items {
@@ -1273,7 +1273,7 @@
     z-index: 1;
     outline: 0 none;
     border: 1px solid #cbd5e1;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-checkbox .v-checkbox-box {
     border: 1px solid #cbd5e1;
@@ -1281,7 +1281,7 @@
     width: 1.25rem;
     height: 1.25rem;
     color: #334155;
-    border-radius: 3px;
+    border-radius: 4px;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
     outline-color: transparent;
   }
@@ -1554,7 +1554,7 @@
     background: #ffffff;
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-dropdown:not(.v-disabled):hover {
@@ -1611,7 +1611,7 @@
     background: #ffffff;
     color: #334155;
     border: 1px solid #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
   }
   .v-dropdown-panel .v-dropdown-header {
@@ -2068,7 +2068,7 @@
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
     appearance: none;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-inputtext:enabled:hover {
@@ -2407,7 +2407,7 @@
     background: #ffffff;
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-multiselect:not(.v-disabled):hover {
@@ -2464,7 +2464,7 @@
     background: #ffffff;
     color: #334155;
     border: 1px solid #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
   }
   .v-multiselect-panel .v-multiselect-header {
@@ -2954,7 +2954,7 @@
     background: #ffffff;
     border: 1px solid #cbd5e1;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-treeselect:not(.v-disabled):hover {
@@ -3183,7 +3183,7 @@
     padding: 0.5rem 1rem;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 3px;
+    border-radius: 4px;
     outline-color: transparent;
   }
   .v-button:not(:disabled):hover {
@@ -6143,7 +6143,7 @@
   .v-scrollpanel-bar {
     position: relative;
     background: #c1c1c1;
-    border-radius: 3px;
+    border-radius: 4px;
     z-index: 2;
     cursor: pointer;
     opacity: 0;
@@ -6853,7 +6853,7 @@
   }
 
   .v-dialog {
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none;
     border: 1px solid #e2e8f0;
   }
@@ -6862,8 +6862,8 @@
     background: #ffffff;
     color: #334155;
     padding: 1.5rem;
-    border-top-right-radius: 6px;
-    border-top-left-radius: 6px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
   }
   .v-dialog .v-dialog-header .v-dialog-title {
     font-weight: 600;
@@ -10437,7 +10437,7 @@
     border: 0 none;
     height: 1.25rem;
     background: #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-progressbar .v-progressbar-value {
     border: 0 none;
@@ -10637,7 +10637,7 @@
   }
   .v-skeleton {
     background-color: #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-skeleton:after {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
@@ -10665,7 +10665,7 @@
     font-size: 0.75rem;
     font-weight: 700;
     padding: 0.25rem 0.4rem;
-    border-radius: 3px;
+    border-radius: 4px
   }
   .v-tag.v-tag-success {
     background-color: #22c55e;
@@ -10739,7 +10739,7 @@
 }
 @layer coscomui {
   .v-accordion .v-accordion-header .v-accordion-header-link {
-    border-radius: 6px !important;
+    border-radius: 4px !important;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
@@ -10885,7 +10885,7 @@
   }
 
   .v-card {
-    border-radius: 3px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
   }
@@ -11434,7 +11434,7 @@
     margin-right: 0.5rem;
   }
   .v-panelmenu .v-panelmenu-content {
-    border-radius: 3px;
+    border-radius: 4px;
     padding: 0 0 0 1rem;
   }
   .v-panelmenu .v-panelmenu-content .v-menuitem:first-child {
@@ -11448,7 +11448,7 @@
     overflow: hidden;
     margin-bottom: 0.75rem;
     border: 1px solid #e2e8f0;
-    border-radius: 3px;
+    border-radius: 4px
   }
 
   .v-password-panel {
@@ -11583,7 +11583,7 @@
 
   .v-panel {
     border: 1px solid #e2e8f0;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: #ffffff;
   }
   .v-panel .v-panel-header,

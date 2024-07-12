@@ -126,10 +126,6 @@
                             "to": "/inputmask"
                         },
                         {
-                            "name": "Input Otp",
-                            "to": "/inputotp"
-                        },
-                        {
                             "name": "Input Switch",
                             "to": "/inputswitch"
                         },
@@ -156,10 +152,6 @@
                         {
                             "name": "TreeSelect",
                             "to": "/treeselect"
-                        },
-                        {
-                            "name": "TriState Checkbox",
-                            "to": "/tristatecheckbox"
                         }
                     ]
                 },
