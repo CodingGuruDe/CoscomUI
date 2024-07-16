@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>Second parameter of the use function can be used to initiate the locale during CoscomUI installation.</p>
 
-        <DocSectionCode :code="code1" hideToggleCode importCode hideStackBlitz />
+        <DocSectionCode :code="code1" importCode hideStackBlitz hideCodeSandbox />
 
         <p>The locale configuration is reactive so that any changes are instantly reflected in the UI. Suppose you are doing a multi language application and need to change the language dynamically.</p>
 
@@ -18,8 +18,8 @@ export default {
                 basic: `
 app.use(CoscomUI, {
     locale: {
-        accept: 'Aceptar',
-        reject: 'Rechazar',
+        accept: 'Annehmen',
+        reject: 'Ablehnen',
         //...
     }
 });
@@ -32,14 +32,14 @@ import { useCoscomUI } from "@coscom/coscom-ui/config";
 
 export default defineComponent({
     setup() {
-        const changeToSpanish = () => {
-            const primevue = useCoscomUI();
-            primevue.config.locale.accept = "Aceptar";
-            primevue.config.locale.reject = "Rechazar";
+        const changeToGerman = () => {
+            const coscomui = useCoscomUI();
+            coscomui.config.locale.accept = "Annehmen";
+            coscomui.config.locale.reject = "Ablehnen";
         }
 
         onMounted(() => {
-            changeToSpanish();
+            changeToGerman();
         })
     }
 });

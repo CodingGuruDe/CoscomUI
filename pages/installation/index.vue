@@ -16,11 +16,10 @@
 </template>
 
 <script>
-import DownloadDoc from '@/doc/vite/DownloadDoc.vue';
-import ImportDoc from '@/doc/vite/ImportDoc.vue';
-import InstallDoc from '@/doc/vite/InstallDoc.vue';
-import PluginDoc from '@/doc/vite/PluginDoc.vue';
-import UsageDoc from '@/doc/vite/UsageDoc.vue';
+import DownloadDoc from '@/doc/installation/DownloadDoc.vue';
+import ImportDoc from '@/doc/installation/ImportDoc.vue';
+import ConfigurationDoc from '@/doc/installation/ConfigurationDoc.vue';
+import SingleFileDoc from '@/doc/installation/SingleFileDoc.vue';
 
 export default {
     data() {
@@ -33,23 +32,18 @@ export default {
                 },
                 {
                     id: 'import',
-                    label: 'Usage SFC',
+                    label: 'Import config file & Components',
                     component: ImportDoc
                 },
                 {
-                    id: 'install-globaly',
-                    label: 'Install Globally (Not Recommended)',
-                    component: InstallDoc
-                },
-                {
-                    id: 'plugin',
-                    label: 'Plugin',
-                    component: PluginDoc
+                    id: 'config',
+                    label: 'Import all in main file',
+                    component: ConfigurationDoc
                 },
                 {
                     id: 'usage',
-                    label: 'Usage',
-                    component: UsageDoc
+                    label: 'Usage SFC',
+                    component: SingleFileDoc
                 }
             ]
         };

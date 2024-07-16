@@ -63,5 +63,5 @@ export default defineNuxtConfig({
             contextPath: baseUrl
         }
     },
-    css: ['@/assets/styles/flexbox.css', '/node_modules/@coscom/coscom-icons/style.css', '@/assets/styles/flags.css', '@docsearch/css/dist/style.css', '@/assets/styles/layout/landing/_landing.scss', '@/assets/styles/layout/layout.scss']
+    css: ['@/assets/styles/main.css', '/node_modules/@coscom/coscom-icons/style.css', '@/assets/styles/flags.css', '@docsearch/css/dist/style.css', '@/assets/styles/layout/landing/_landing.scss', '@/assets/styles/layout/layout.scss']
 });
