@@ -4,13 +4,13 @@
     </DocSectionText>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" rounded />
-        <Button label="Secondary" severity="secondary" rounded />
-        <Button label="Success" severity="success" rounded />
-        <Button label="Info" severity="info" rounded />
-        <Button label="Warning" severity="warning" rounded />
-        <Button label="Help" severity="help" rounded />
-        <Button label="Danger" severity="danger" rounded />
-        <Button label="Contrast" severity="contrast" rounded />
+        <Button label="Secondary" type="secondary" rounded />
+        <Button label="Success" type="success" rounded />
+        <Button label="Info" type="info" rounded />
+        <Button label="Warning" type="warning" rounded />
+        <Button label="Help" type="help" rounded />
+        <Button label="Danger" type="danger" rounded />
+        <Button label="Contrast" type="contrast" rounded />
     </div>
     <DocSectionCode :code="code" />
 </template>
@@ -22,25 +22,25 @@ export default {
             code: {
                 basic: `
 <Button label="Primary" rounded />
-<Button label="Secondary" severity="secondary" rounded />
-<Button label="Success" severity="success" rounded />
-<Button label="Info" severity="info" rounded />
-<Button label="Warning" severity="warning" rounded />
-<Button label="Help" severity="help" rounded />
-<Button label="Danger" severity="danger" rounded />
-<Button label="Contrast" severity="contrast" rounded />
+<Button label="Secondary" type="secondary" rounded />
+<Button label="Success" type="success" rounded />
+<Button label="Info" type="info" rounded />
+<Button label="Warning" type="warning" rounded />
+<Button label="Help" type="help" rounded />
+<Button label="Danger" type="danger" rounded />
+<Button label="Contrast" type="contrast" rounded />
 `,
                 options: `
 <template>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" rounded />
-        <Button label="Secondary" severity="secondary" rounded />
-        <Button label="Success" severity="success" rounded />
-        <Button label="Info" severity="info" rounded />
-        <Button label="Warning" severity="warning" rounded />
-        <Button label="Help" severity="help" rounded />
-        <Button label="Danger" severity="danger" rounded />
-        <Button label="Contrast" severity="contrast" rounded />
+        <Button label="Secondary" type="secondary" rounded />
+        <Button label="Success" type="success" rounded />
+        <Button label="Info" type="info" rounded />
+        <Button label="Warning" type="warning" rounded />
+        <Button label="Help" type="help" rounded />
+        <Button label="Danger" type="danger" rounded />
+        <Button label="Contrast" type="contrast" rounded />
     </div>
 </template>
 
@@ -51,13 +51,13 @@ export default {
 <template>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" rounded />
-        <Button label="Secondary" severity="secondary" rounded />
-        <Button label="Success" severity="success" rounded />
-        <Button label="Info" severity="info" rounded />
-        <Button label="Warning" severity="warning" rounded />
-        <Button label="Help" severity="help" rounded />
-        <Button label="Danger" severity="danger" rounded />
-        <Button label="Contrast" severity="contrast" rounded />
+        <Button label="Secondary" type="secondary" rounded />
+        <Button label="Success" type="success" rounded />
+        <Button label="Info" type="info" rounded />
+        <Button label="Warning" type="warning" rounded />
+        <Button label="Help" type="help" rounded />
+        <Button label="Danger" type="danger" rounded />
+        <Button label="Contrast" type="contrast" rounded />
     </div>
 </template>
 

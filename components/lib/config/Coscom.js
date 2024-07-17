@@ -2,7 +2,7 @@ import { FilterMatchMode } from '@coscom/coscom-ui/api';
 import { inject, reactive } from 'vue';
 
 export const defaultOptions = {
-    ripple: false,
+    ripple: true,
     inputStyle: null,
     locale: {
         startsWith: 'Starts with',

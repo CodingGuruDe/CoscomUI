@@ -10,7 +10,7 @@ const classes = {
             'v-button-loading': props.loading,
             'v-button-loading-label-only': props.loading && !instance.hasIcon && props.label,
             'v-button-link': props.link,
-            [`p-button-${props.severity}`]: props.severity,
+            [`v-button-${props.type}`]: props.type,
             'v-button-raised': props.raised,
             'v-button-rounded': props.rounded,
             'v-button-text': props.text,
@@ -20,7 +20,7 @@ const classes = {
             'v-button-plain': props.plain
         }
     ],
-    loadingIcon: 'v-button-loading-icon pi-spin',
+    loadingIcon: 'v-button-loading-icon el-spin',
     icon: ({ props }) => [
         'v-button-icon',
         {

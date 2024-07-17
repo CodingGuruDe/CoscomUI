@@ -4,13 +4,13 @@
     </DocSectionText>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" outlined />
-        <Button label="Secondary" severity="secondary" outlined />
-        <Button label="Success" severity="success" outlined />
-        <Button label="Info" severity="info" outlined />
-        <Button label="Warning" severity="warning" outlined />
-        <Button label="Help" severity="help" outlined />
-        <Button label="Danger" severity="danger" outlined />
-        <Button label="Contrast" severity="contrast" outlined />
+        <Button label="Secondary" type="secondary" outlined />
+        <Button label="Success" type="success" outlined />
+        <Button label="Info" type="info" outlined />
+        <Button label="Warning" type="warning" outlined />
+        <Button label="Help" type="help" outlined />
+        <Button label="Danger" type="danger" outlined />
+        <Button label="Contrast" type="contrast" outlined />
     </div>
     <DocSectionCode :code="code" />
 </template>
@@ -22,25 +22,25 @@ export default {
             code: {
                 basic: `
 <Button label="Primary" outlined />
-<Button label="Secondary" severity="secondary" outlined />
-<Button label="Success" severity="success" outlined />
-<Button label="Info" severity="info" outlined />
-<Button label="Warning" severity="warning" outlined />
-<Button label="Help" severity="help" outlined />
-<Button label="Danger" severity="danger" outlined />
-<Button label="Contrast" severity="contrast" outlined />
+<Button label="Secondary" type="secondary" outlined />
+<Button label="Success" type="success" outlined />
+<Button label="Info" type="info" outlined />
+<Button label="Warning" type="warning" outlined />
+<Button label="Help" type="help" outlined />
+<Button label="Danger" type="danger" outlined />
+<Button label="Contrast" type="contrast" outlined />
 `,
                 options: `
 <template>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" outlined />
-        <Button label="Secondary" severity="secondary" outlined />
-        <Button label="Success" severity="success" outlined />
-        <Button label="Info" severity="info" outlined />
-        <Button label="Warning" severity="warning" outlined />
-        <Button label="Help" severity="help" outlined />
-        <Button label="Danger" severity="danger" outlined />
-        <Button label="Contrast" severity="contrast" outlined />
+        <Button label="Secondary" type="secondary" outlined />
+        <Button label="Success" type="success" outlined />
+        <Button label="Info" type="info" outlined />
+        <Button label="Warning" type="warning" outlined />
+        <Button label="Help" type="help" outlined />
+        <Button label="Danger" type="danger" outlined />
+        <Button label="Contrast" type="contrast" outlined />
     </div>
 </template>
 
@@ -51,13 +51,13 @@ export default {
 <template>
     <div class="card flex justify-content-center flex-wrap gap-3">
         <Button label="Primary" outlined />
-        <Button label="Secondary" severity="secondary" outlined />
-        <Button label="Success" severity="success" outlined />
-        <Button label="Info" severity="info" outlined />
-        <Button label="Warning" severity="warning" outlined />
-        <Button label="Help" severity="help" outlined />
-        <Button label="Danger" severity="danger" outlined />
-        <Button label="Contrast" severity="contrast" outlined />
+        <Button label="Secondary" type="secondary" outlined />
+        <Button label="Success" type="success" outlined />
+        <Button label="Info" type="info" outlined />
+        <Button label="Warning" type="warning" outlined />
+        <Button label="Help" type="help" outlined />
+        <Button label="Danger" type="danger" outlined />
+        <Button label="Contrast" type="contrast" outlined />
     </div>
 </template>
 

@@ -25,7 +25,7 @@ import OutlinedDoc from '@/doc/button/OutlinedDoc.vue';
 import RaisedDoc from '@/doc/button/RaisedDoc.vue';
 import RaisedTextDoc from '@/doc/button/RaisedTextDoc.vue';
 import RoundedDoc from '@/doc/button/RoundedDoc.vue';
-import SeverityDoc from '@/doc/button/SeverityDoc.vue';
+import TypeDoc from '@/doc/button/TypeDoc.vue';
 import TemplateDoc from '@/doc/button/TemplateDoc.vue';
 import TextDoc from '@/doc/button/TextDoc.vue';
 import PTComponent from '@/doc/button/pt/index.vue';
@@ -61,9 +61,9 @@ export default {
                     component: LoadingDoc
                 },
                 {
-                    id: 'severity',
-                    label: 'Severity',
-                    component: SeverityDoc
+                    id: 'type',
+                    label: 'Type',
+                    component: TypeDoc
                 },
                 {
                     id: 'disabled',

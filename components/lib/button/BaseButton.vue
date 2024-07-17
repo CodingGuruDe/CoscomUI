@@ -30,7 +30,7 @@ export default {
             type: String,
             default: null
         },
-        badgeSeverity: {
+        badgeType: {
             type: String,
             default: null
         },
@@ -46,7 +46,7 @@ export default {
             type: Boolean,
             default: false
         },
-        severity: {
+        type: {
             type: String,
             default: null
         },

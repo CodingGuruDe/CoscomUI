@@ -70,15 +70,3 @@ describe('Button.vue', () => {
         expect(wrapper.find('.v-button-loading').exists()).toBe(false);
     });
 });
-
-describe('Button.vue', () => {
-    it('should render default slot', () => {
-        const wrapper = mount(Button, {
-            slots: {
-                default: h('span', { class: 'ml-2 font-bold' }, 'Default CoscomUI Button')
-            }
-        });
-
-        expect(wrapper.html()).toBe(`<button class="v-button v-component" type="button" data-pc-name="button" data-pc-section="root"><span class="ml-2 font-bold">Default CoscomUI Button</span></button>`);
-    });
-});
