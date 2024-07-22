@@ -99,7 +99,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/deferredcontent/style': 'coscom.deferredcontent.style',
     'coscom/dialog/style': 'coscom.dialog.style',
     'coscom/divider/style': 'coscom.divider.style',
-    'coscom/dock/style': 'coscom.dock.style',
     'coscom/dropdown/style': 'coscom.dropdown.style',
     'coscom/dynamicdialog/style': 'coscom.dynamicdialog.style',
     'coscom/editor/style': 'coscom.editor.style',

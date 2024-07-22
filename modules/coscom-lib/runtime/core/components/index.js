@@ -37,7 +37,7 @@ const overlay = [{ name: 'ConfirmDialog', use: { as: 'ConfirmationService' } }, 
 
 const file = ['FileUpload'];
 
-const menu = ['Breadcrumb', 'ContextMenu', 'Dock', 'Menu', 'Menubar', 'MegaMenu', 'PanelMenu', 'Steps', 'TabMenu', 'TieredMenu'];
+const menu = ['Breadcrumb', 'ContextMenu', 'Menu', 'Menubar', 'MegaMenu', 'PanelMenu', 'Steps', 'TabMenu', 'TieredMenu'];
 
 const messages = ['Message', 'InlineMessage', { name: 'Toast', use: { as: 'ToastService' } }];
 

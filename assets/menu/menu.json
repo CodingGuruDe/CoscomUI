@@ -300,10 +300,6 @@
                             "to": "/contextmenu"
                         },
                         {
-                            "name": "Dock",
-                            "to": "/dock"
-                        },
-                        {
                             "name": "Menu",
                             "to": "/menu"
                         },

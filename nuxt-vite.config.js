@@ -32,7 +32,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/dataviewlayoutoptions/style': path.resolve(__dirname, './components/lib/dataviewlayoutoptions/style/DataViewLayoutOptionsStyle.js'),
     '@coscom/coscom-ui/dialog/style': path.resolve(__dirname, './components/lib/dialog/style/DialogStyle.js'),
     '@coscom/coscom-ui/divider/style': path.resolve(__dirname, './components/lib/divider/style/DividerStyle.js'),
-    '@coscom/coscom-ui/dock/style': path.resolve(__dirname, './components/lib/dock/style/DockStyle.js'),
     '@coscom/coscom-ui/dropdown/style': path.resolve(__dirname, './components/lib/dropdown/style/DropdownStyle.js'),
     '@coscom/coscom-ui/dynamicdialog/style': path.resolve(__dirname, './components/lib/dynamicdialog/style/DynamicDialogStyle.js'),
     '@coscom/coscom-ui/editor/style': path.resolve(__dirname, './components/lib/editor/style/EditorStyle.js'),
