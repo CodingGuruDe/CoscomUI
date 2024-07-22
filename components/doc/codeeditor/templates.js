@@ -145,7 +145,6 @@ import Coscom from "coscom/config";
 import AutoComplete from 'coscom/autocomplete';
 import Accordion from 'coscom/accordion';
 import AccordionTab from 'coscom/accordiontab';
-import AnimateOnScroll from 'coscom/animateonscroll';
 import Badge from 'coscom/badge';
 import BadgeDirective from "coscom/badgedirective";
 import BlockUI from 'coscom/blockui';
@@ -262,7 +261,6 @@ app.directive('badge', BadgeDirective);
 app.directive('ripple', Ripple);
 app.directive('styleclass', StyleClass);
 app.directive('focustrap', FocusTrap);
-app.directive('animateonscroll', AnimateOnScroll);
 
 app.component('Accordion', Accordion);
 app.component('AccordionTab', AccordionTab);

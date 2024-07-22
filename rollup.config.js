@@ -72,7 +72,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/basecomponent/style': 'coscom.basecomponent.style',
     'coscom/accordion/style': 'coscom.accordion.style',
     'coscom/accordiontab/style': 'coscom.accordiontab.style',
-    'coscom/animateonscroll/style': 'coscom.animateonscroll.style',
     'coscom/autocomplete/style': 'coscom.autocomplete.style',
     'coscom/badge/style': 'coscom.badge.style',
     'coscom/badgedirective/style': 'coscom.badgedirective.style',
@@ -157,7 +156,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/tabpanel/style': 'coscom.tabpanel.style',
     'coscom/tabview/style': 'coscom.tabview.style',
     'coscom/tag/style': 'coscom.tag.style',
-    'coscom/terminal/style': 'coscom.terminal.style',
     'coscom/textarea/style': 'coscom.textarea.style',
     'coscom/tieredmenu/style': 'coscom.tieredmenu.style',
     'coscom/timeline/style': 'coscom.timeline.style',
@@ -409,7 +407,6 @@ function addDirectives() {
     addEntry('tooltip', 'Tooltip.js', 'tooltip');
     addEntry('focustrap', 'FocusTrap.js', 'focustrap');
     addEntry('styleclass', 'StyleClass.js', 'styleclass');
-    addEntry('animateonscroll', 'AnimateOnScroll.js', 'animateonscroll');
 }
 
 function addConfig() {

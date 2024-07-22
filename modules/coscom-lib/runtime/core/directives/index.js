@@ -3,6 +3,5 @@ export const directives = [
     { name: 'tooltip', as: 'Tooltip', from: 'coscom/tooltip' },
     { name: 'ripple', as: 'Ripple', from: 'coscom/ripple' },
     { name: 'styleclass', as: 'StyleClass', from: 'coscom/styleclass' },
-    { name: 'focustrap', as: 'FocusTrap', from: 'coscom/focustrap' },
-    { name: 'animateonscroll', as: 'AnimateOnScroll', from: 'coscom/animateonscroll' }
+    { name: 'focustrap', as: 'FocusTrap', from: 'coscom/focustrap' }
 ];

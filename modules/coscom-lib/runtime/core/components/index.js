@@ -43,6 +43,6 @@ const messages = ['Message', 'InlineMessage', { name: 'Toast', use: { as: 'Toast
 
 const media = ['Carousel', 'Galleria', 'Image'];
 
-const misc = ['Badge', 'Chip', 'Inplace', 'MeterGroup', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner', 'Tag', 'Terminal'];
+const misc = ['Badge', 'Chip', 'Inplace', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner', 'Tag'];
 
 export const components = [...form, ...button, ...data, ...panel, ...overlay, ...file, ...menu, ...messages, ...media, ...misc].map((c) => (typeof c === 'string' ? { name: c } : c));

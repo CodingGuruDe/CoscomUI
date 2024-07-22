@@ -1,7 +1,6 @@
 import { Plugin } from 'vue';
 import { AccordionPassThroughOptions } from '../accordion/Accordion';
 import { AccordionTabPassThroughOptions } from '../accordiontab/AccordionTab';
-import { AnimateOnScrollDirectivePassThroughOptions } from '../animateonscroll/AnimateOnScroll';
 import { AutoCompletePassThroughOptions } from '../autocomplete/AutoComplete';
 import { BadgePassThroughOptions } from '../badge/Badge';
 import { BadgeDirectivePassThroughOptions } from '../badgedirective/BadgeDirective';
