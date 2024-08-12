@@ -377,7 +377,7 @@ export const NodeService = {
                     {
                         key: '7-1',
                         data: {
-                            name: 'primevue.png',
+                            name: 'coscomui.png',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -385,7 +385,7 @@ export const NodeService = {
                     {
                         key: '7-2',
                         data: {
-                            name: 'prime.jpg',
+                            name: 'coscomui.jpg',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -403,7 +403,7 @@ export const NodeService = {
                     {
                         key: '8-0',
                         data: {
-                            name: 'primefaces.mkv',
+                            name: 'coscomui.mkv',
                             size: '1000kb',
                             type: 'Video'
                         }

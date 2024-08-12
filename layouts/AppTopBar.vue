@@ -105,7 +105,7 @@ export default {
         // docsearch({
         //     container: '#docsearch',
         //     appId: '01CMUF4W4R',
-        //     indexName: 'primevue',
+        //     indexName: 'coscomui',
         //     apiKey: '9bb5939e36897b26ff7de5b7b64d6c43',
         //     transformItems: (items) => {
         //         const isLocalhost = process.env.NODE_ENV !== 'production';

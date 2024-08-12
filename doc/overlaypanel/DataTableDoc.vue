@@ -8,7 +8,7 @@
 
         <div v-if="selectedProduct" class="p-5 surface-card border-round">
             <div class="relative">
-                <img :src="`https://primefaces.org/cdn/primevue/images/product/${selectedProduct.image}`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
+                <img :src="`@/assets/images/product/${selectedProduct.image}`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
             </div>
             <div class="flex align-items-center justify-content-between mt-3 mb-2">
                 <span class="text-900 font-semibold text-xl">{{ selectedProduct.name }}</span>
@@ -22,7 +22,7 @@
                 <Column field="name" header="Name" sortable style="min-width: 12rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="`https://primefaces.org/cdn/primevue/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
+                        <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width: 8rem">
@@ -81,7 +81,7 @@ export default {
 
         <div v-if="selectedProduct" class="p-5 surface-card border-round">
             <div class="relative">
-                <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${selectedProduct.image}\`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
+                <img :src="\`@/assets/images/product/\${selectedProduct.image}\`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
             </div>
             <div class="flex align-items-center justify-content-between mt-3 mb-2">
                 <span class="text-900 font-semibold text-xl">{{ selectedProduct.name }}</span>
@@ -95,7 +95,7 @@ export default {
                 <Column field="name" header="Name" sortable style="min-width: 12rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${selectedProduct.image}\`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
+                        <img :src="\`@/assets/images/product/\${selectedProduct.image}\`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width: 8rem">
@@ -143,7 +143,7 @@ export default {
 
         <div v-if="selectedProduct" class="p-5 surface-card border-round">
             <div class="relative">
-                <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${selectedProduct.image}\`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
+                <img :src="\`@/assets/images/product/\${selectedProduct.image}\`" :alt="selectedProduct.name" class="w-full sm:w-20rem" />
             </div>
             <div class="flex align-items-center justify-content-between mt-3 mb-2">
                 <span class="text-900 font-semibold text-xl">{{ selectedProduct.name }}</span>
@@ -157,7 +157,7 @@ export default {
                 <Column field="name" header="Name" sortable style="min-width: 12rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${selectedProduct.image}\`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
+                        <img :src="\`@/assets/images/product/\${selectedProduct.image}\`" :alt="slotProps.data.image" class="w-4rem shadow-1" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width: 8rem">

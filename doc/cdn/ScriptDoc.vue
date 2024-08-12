@@ -16,7 +16,7 @@ export default {
             code: {
                 basic: `
 https://unpkg.com/vue@3/dist/vue.global.js
-https://unpkg.com/primevue/core/core.min.js
+https://unpkg.com/coscom/coscom-ui/core/core.min.js
 `
             }
         };

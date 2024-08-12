@@ -12,7 +12,7 @@ export default {
             checked: false,
             code: {
                 basic: `
-@layer bootstrap-reboot, primevue;
+@layer bootstrap-reboot, coscomui;
 
 @import "bootstrap-reboot.css" layer(bootstrap-rebooot);
 `

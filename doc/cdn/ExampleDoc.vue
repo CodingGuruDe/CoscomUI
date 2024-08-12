@@ -17,15 +17,15 @@ export default {
     <title>CoscomUI + CDN</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="https://unpkg.com/primevue/resources/themes/lara-light-green/theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/coscom/coscom-ui/resources/themes/skyblue-light/theme.css" />
   </head>
   <body>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"><\/script>
-    <script src="https://unpkg.com/primevue/core/core.min.js"><\/script>
-    <script src="https://unpkg.com/primevue/calendar/calendar.min.js"><\/script>
+    <script src="https://unpkg.com/coscom/coscom-ui/core/core.min.js"><\/script>
+    <script src="https://unpkg.com/coscom/coscom-ui/calendar/calendar.min.js"><\/script>
 
     <div id="app">
-      <p-datepicker v-model="date"></p-datepicker>
+      <v-datepicker v-model="date"></v-datepicker>
       <br /><br />
       {{ date }}
     </div>
@@ -42,8 +42,8 @@ export default {
         },
       });
 
-      app.use(primevue.config.default);
-      app.component('p-datepicker', primevue.calendar);
+      app.use(coscomui.config.default);
+      app.component('v-datepicker', coscomui.calendar);
 
       app.mount('#app');
     <\/script>

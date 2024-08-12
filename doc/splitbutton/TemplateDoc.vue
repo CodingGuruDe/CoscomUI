@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <SplitButton :model="items" @click="save" severity="contrast">
             <span class="flex align-items-center font-bold">
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
+                <img alt="logo" src="@/assets/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
                 <span>CoscomUI</span>
             </span>
         </SplitButton>
@@ -45,7 +45,7 @@ export default {
                 basic: `
 <SplitButton :model="items" @click="save" severity="contrast">
     <span class="flex align-items-center font-bold">
-        <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
+        <img alt="logo" src="@/assets/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
         <span>CoscomUI</span>
     </span>
 </SplitButton>
@@ -56,7 +56,7 @@ export default {
         <Toast />
         <SplitButton :model="items" @click="save" severity="contrast">
             <span class="flex align-items-center font-bold">
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
+                <img alt="logo" src="@/assets/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
                 <span>CoscomUI</span>
             </span>
         </SplitButton>
@@ -107,7 +107,7 @@ export default {
         <Toast />
         <SplitButton :model="items" @click="save" severity="contrast">
             <span class="flex align-items-center font-bold">
-                <img alt="logo" src="https://primefaces.org/cdn/primevue/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
+                <img alt="logo" src="@/assets/images/logo.svg" style="height: 1rem; margin-right: 0.5rem" />
                 <span>CoscomUI</span>
             </span>
         </SplitButton>

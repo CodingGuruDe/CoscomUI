@@ -14,7 +14,7 @@ export default {
         return {
             code: {
                 basic: `
-app.use(primevue.config.default);
+app.use(coscomui.config.default);
 `
             }
         };

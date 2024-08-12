@@ -1,5 +1,4 @@
 /**
- * [Live Demo](https://www.primevue.org/terminal/)
  *
  * @module terminalservice
  *

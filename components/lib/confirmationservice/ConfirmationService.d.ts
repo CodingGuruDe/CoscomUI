@@ -1,6 +1,5 @@
 /**
  *
- * [Live Demo](https://www.primevue.org/confirmdialog/)
  *
  * @module confirmationservice-useconfirm
  *

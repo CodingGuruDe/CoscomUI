@@ -9,7 +9,7 @@
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img class="w-full" alt="Nature" src="https://primefaces.org/cdn/primevue/images/nature/nature1.jpg" />
+                <img class="w-full" alt="Nature" src="@/assets/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>
@@ -41,7 +41,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img class="w-full" src="https://primefaces.org/cdn/primevue/images/nature/nature1.jpg"/>
+                <img class="w-full" src="@/assets/images/nature/nature1.jpg"/>
             </template>
         </Inplace>
     </div>
@@ -59,7 +59,7 @@ export default {
                 <span style="margin-left: 0.5rem; vertical-align: middle">View Picture</span>
             </template>
             <template #content>
-                <img class="w-full" alt="Nature" src="https://primefaces.org/cdn/primevue/images/nature/nature1.jpg" />
+                <img class="w-full" alt="Nature" src="@/assets/images/nature/nature1.jpg" />
             </template>
         </Inplace>
     </div>

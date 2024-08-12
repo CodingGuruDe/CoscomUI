@@ -4,7 +4,7 @@
     </DocSectionText>
     <div class="card flex justify-content-center">
         <div class="flex flex-column align-items-center">
-            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="https://primefaces.org/cdn/primevue/images/card-vue.jpg" :style="filterStyle" />
+            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="@/assets/images/card-vue.jpg" :style="filterStyle" />
             <SelectButton v-model="filter" :options="filterOptions" optionLabel="label" optionValue="value" class="mb-3" />
             <Slider v-model="filterValues[filter]" class="w-14rem" :min="0" :max="200" />
         </div>
@@ -25,7 +25,7 @@ export default {
             ],
             code: {
                 basic: `
-<img alt="user header" class="w-full md:w-20rem border-round mb-4" src="https://primefaces.org/cdn/primevue/images/card-vue.jpg" :style="filterStyle" />
+<img alt="user header" class="w-full md:w-20rem border-round mb-4" src="@/assets/images/card-vue.jpg" :style="filterStyle" />
 <SelectButton v-model="filter" :options="filterOptions" optionLabel="label" optionValue="value" class="mb-3" />
 <Slider v-model="filterValues[filter]" class="w-14rem" :min="0" :max="200" />
 `,
@@ -33,7 +33,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <div class="flex flex-column align-items-center">
-            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="https://primefaces.org/cdn/primevue/images/card-vue.jpg" :style="filterStyle" />
+            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="@/assets/images/card-vue.jpg" :style="filterStyle" />
             <SelectButton v-model="filter" :options="filterOptions" optionLabel="label" optionValue="value" class="mb-3" />
             <Slider v-model="filterValues[filter]" class="w-14rem" :min="0" :max="200" />
         </div>
@@ -67,7 +67,7 @@ export default {
 <template>
     <div class="card flex justify-content-center">
         <div class="flex flex-column align-items-center">
-            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="https://primefaces.org/cdn/primevue/images/card-vue.jpg" :style="filterStyle" />
+            <img alt="user header" class="w-full md:w-20rem border-round mb-4" src="@/assets/images/card-vue.jpg" :style="filterStyle" />
             <SelectButton v-model="filter" :options="filterOptions" optionLabel="label" optionValue="value" class="mb-3" />
             <Slider v-model="filterValues[filter]" class="w-14rem" :min="0" :max="200" />
         </div>

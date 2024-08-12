@@ -82,7 +82,7 @@ export default {
                         ],
                         [
                             {
-                                items: [{ image: 'https://primefaces.org/cdn/primevue/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
+                                items: [{ image: '@/assets/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
                             }
                         ]
                     ]
@@ -211,7 +211,7 @@ export default {
                         ],
                         [
                             {
-                                items: [{ image: 'https://primefaces.org/cdn/primevue/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
+                                items: [{ image: '@/assets/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
                             }
                         ]
                     ]
@@ -310,7 +310,7 @@ const items = ref([
             ],
             [
                 {
-                    items: [{ image: 'https://primefaces.org/cdn/primevue/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
+                    items: [{ image: '@/assets/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
                 }
             ]
         ]

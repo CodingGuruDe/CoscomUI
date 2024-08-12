@@ -10,12 +10,12 @@
             <p>{{ templateHeroData.description }}</p>
             <div class="template-hero-card-buttons">
                 <a :href="templateHeroData.liveHref" target="_blank" class="template-hero-card-buttons-btn1 p-button"> Live Demo </a>
-                <a :href="templateHeroData.storeHref ?? 'https://www.primefaces.org/store/'" target="_blank" class="template-hero-card-buttons-btn2 p-button">
+                <a :href="templateHeroData.storeHref ?? 0" target="_blank" class="template-hero-card-buttons-btn2 p-button">
                     {{ templateHeroData.free ? 'Source Code' : 'Buy Now' }}
                 </a>
             </div>
             <div class="template-hero-card-links">
-                <a :href="templateHeroData.supportHref ?? 'https://github.com/orgs/primefaces/discussions/categories/primevue-templates'" target="_blank">
+                <a :href="templateHeroData.supportHref ?? 0" target="_blank">
                     <i class="cs el-github" />
                     <span>{{ templateHeroData.free ? 'Open Issues' : 'Get Support' }}</span>
                 </a>

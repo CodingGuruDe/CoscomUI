@@ -82,7 +82,7 @@
                     <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                         <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                         <div class="text-center">
-                            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/stepper/content.svg" />
+                            <img alt="logo" src="@/assets/images/stepper/content.svg" />
                         </div>
                     </div>
                     <div class="flex pt-4 justify-content-start">
@@ -194,7 +194,7 @@ export default {
             <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                 <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                 <div class="text-center">
-                    <img alt="logo" src="https://primefaces.org/cdn/primevue/images/stepper/content.svg" />
+                    <img alt="logo" src="@/assets/images/stepper/content.svg" />
                 </div>
             </div>
             <div class="flex pt-4 justify-content-start">
@@ -286,7 +286,7 @@ export default {
                     <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                         <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                         <div class="text-center">
-                            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/stepper/content.svg" />
+                            <img alt="logo" src="@/assets/images/stepper/content.svg" />
                         </div>
                     </div>
                     <div class="flex pt-4 justify-content-start">
@@ -410,7 +410,7 @@ export default {
                     <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                         <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                         <div class="text-center">
-                            <img alt="logo" src="https://primefaces.org/cdn/primevue/images/stepper/content.svg" />
+                            <img alt="logo" src="@/assets/images/stepper/content.svg" />
                         </div>
                     </div>
                     <div class="flex pt-4 justify-content-start">

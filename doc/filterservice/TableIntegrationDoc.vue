@@ -16,7 +16,7 @@
             </Column>
             <Column header="Country" filterField="country.name" :filterMatchModeOptions="matchModeOptions">
                 <template #body="{ data }">
-                    <img :alt="data.country.name" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code} mr-2`" width="18" />
+                    <img :alt="data.country.name" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code} mr-2`" width="18" />
                     <span>{{ data.country.name }}</span>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
@@ -62,7 +62,7 @@ export default {
     </Column>
     <Column header="Country" filterField="country.name" :filterMatchModeOptions="matchModeOptions">
         <template #body="{ data }">
-            <img :alt="data.country.name" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
+            <img :alt="data.country.name" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
             <span>{{ data.country.name }}</span>
         </template>
         <template #filter="{ filterModel, filterCallback }">
@@ -87,7 +87,7 @@ export default {
             </Column>
             <Column header="Country" filterField="country.name" :filterMatchModeOptions="matchModeOptions">
                 <template #body="{ data }">
-                    <img :alt="data.country.name" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
+                    <img :alt="data.country.name" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
                     <span>{{ data.country.name }}</span>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
@@ -156,7 +156,7 @@ export default {
             </Column>
             <Column header="Country" filterField="country.name" :filterMatchModeOptions="matchModeOptions">
                 <template #body="{ data }">
-                    <img :alt="data.country.name" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
+                    <img :alt="data.country.name" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code} mr-2\`" width="18" />
                     <span>{{ data.country.name }}</span>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">

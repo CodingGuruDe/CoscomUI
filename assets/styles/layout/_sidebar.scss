@@ -36,9 +36,9 @@
                 display: flex;
                 width: 100%;
                 align-items: center;
-                padding: .5rem 0;
-                color: var(--surface-900);
-                font-weight: 600;
+                padding: 1rem 0;
+                color: #333639;
+                font-weight: 500;
                 transition: all .2s;
                 position: relative;
                 border-radius: var(--border-radius);
@@ -63,7 +63,7 @@
                 }
     
                 .menu-toggle-icon {
-                    color: var(--surface-700);
+                    color: #333639;
                     margin-left: auto;
                 }
 
@@ -101,9 +101,13 @@
                     list-style: none;
 
                     li {
+                        padding: 6px 0;
+                        &:hover {   
+                            background-color: var(--surface-200);
+                            border-radius: 2px;
+                        }
                         a {
                             color: var(--surface-700);
-                            border-left: 1px solid var(--surface-border);
                             transition: all .2s;
                             font-weight: 450;
                             display: flex;
@@ -120,12 +124,12 @@
             
                             &:hover {
                                 color: var(--surface-900);
-                                border-left-color: var(--surface-500);
+                                
                             }
 
                             &.router-link-active {
                                 color: var(--primary-color-default);
-                                border-left-color: var(--primary-color-default);
+                                
                             }
                         }
 

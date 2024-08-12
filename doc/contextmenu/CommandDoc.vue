@@ -11,7 +11,7 @@
                 @contextmenu="onRightClick($event, user)"
             >
                 <div class="flex align-items-center gap-2">
-                    <img :alt="user.name" :src="`https://primefaces.org/cdn/primevue/images/avatar/${user.image}`" style="width: 32px" />
+                    <img :alt="user.name" :src="`@/assets/images/avatar/${user.image}`" style="width: 32px" />
                     <span class="font-bold">{{ user.name }}</span>
                 </div>
                 <Tag :value="user.role" :severity="getBadge(user)" />
@@ -97,7 +97,7 @@ export default {
                 @contextmenu="onRightClick($event, user)"
             >
                 <div class="flex align-items-center gap-2">
-                    <img :alt="user.name" :src="\`https://primefaces.org/cdn/primevue/images/avatar/\${user.image}\`" style="width: 32px" />
+                    <img :alt="user.name" :src="\`@/assets/images/avatar/\${user.image}\`" style="width: 32px" />
                     <span class="font-bold">{{ user.name }}</span>
                 </div>
                 <Tag :value="user.role" :severity="getBadge(user)" />
@@ -180,7 +180,7 @@ export default {
                 @contextmenu="onRightClick($event, user)"
             >
                 <div class="flex align-items-center gap-2">
-                    <img :alt="user.name" :src="\`https://primefaces.org/cdn/primevue/images/avatar/\${user.image}\`" style="width: 32px" />
+                    <img :alt="user.name" :src="\`@/assets/images/avatar/\${user.image}\`" style="width: 32px" />
                     <span class="font-bold">{{ user.name }}</span>
                 </div>
                 <Tag :value="user.role" :severity="getBadge(user)" />

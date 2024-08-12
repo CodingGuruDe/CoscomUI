@@ -15597,7 +15597,7 @@
         }
     },
     "confirmationservice-useconfirm": {
-        "description": "[Live Demo](https://www.primevue.org/confirmdialog/)",
+        "description": "#",
         "model": {
             "ConfirmationServiceMethods": {
                 "description": "Confirmation Service methods.",
@@ -51252,7 +51252,7 @@
         }
     },
     "terminalservice": {
-        "description": "[Live Demo](https://www.primevue.org/terminal/)",
+        "description": "#",
         "model": {
             "TerminalServiceOptions": {
                 "description": "Confirmation Service methods.",

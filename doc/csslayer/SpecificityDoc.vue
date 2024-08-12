@@ -3,7 +3,7 @@
         <p class="notification">A CSS layer is utilized in styled mode only, in unstyled mode the built-in CSS classes are not included and as a result no layer is defined. This documentation only applies to styled mode.</p>
         <p>
             The <i>@layer</i> is a standard CSS feature to define cascade layers for a customizable order of precedence. If you need to become more familiar with layers, visit the documentation at
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">MDN</a> to begin with. In styled mode, CoscomUI wraps the built-in style classes under the <i>primevue</i> cascade layer to make the library styles easy to override. CSS in
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer">MDN</a> to begin with. In styled mode, CoscomUI wraps the built-in style classes under the <i>coscomui</i> cascade layer to make the library styles easy to override. CSS in
             your app without a layer has the highest CSS specificity, so you'll be able to override styles regardless of the location or how strong a class is written.
         </p>
         <p>

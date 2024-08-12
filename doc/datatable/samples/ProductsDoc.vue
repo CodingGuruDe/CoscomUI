@@ -45,7 +45,7 @@
                 <Column field="name" header="Name" sortable style="min-width: 16rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="`https://primefaces.org/cdn/primevue/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
+                        <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width: 8rem">
@@ -75,7 +75,7 @@
     </DeferredDemo>
 
     <Dialog v-model:visible="productDialog" :style="{ width: '450px' }" header="Product Details" :modal="true" class="p-fluid">
-        <img v-if="product.image" :src="`https://primefaces.org/cdn/primevue/images/product/${product.image}`" :alt="product.image" class="block m-auto pb-3" />
+        <img v-if="product.image" :src="`@/assets/images/product/${product.image}`" :alt="product.image" class="block m-auto pb-3" />
         <div class="field">
             <label for="name">Name</label>
             <InputText id="name" v-model.trim="product.name" required="true" autofocus :invalid="submitted && !product.name" />
@@ -221,7 +221,7 @@ export default {
     <Column field="name" header="Name" sortable style="min-width:16rem"></Column>
     <Column header="Image">
         <template #body="slotProps">
-            <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
+            <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
         </template>
     </Column>
     <Column field="price" header="Price" sortable style="min-width:8rem">
@@ -285,7 +285,7 @@ export default {
                 <Column field="name" header="Name" sortable style="min-width:16rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
+                        <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width:8rem">
@@ -314,7 +314,7 @@ export default {
         </div>
 
         <Dialog v-model:visible="productDialog" :style="{width: '450px'}" header="Product Details" :modal="true" class="p-fluid">
-            <img v-if="product.image" :src="\`https://primefaces.org/cdn/primevue/images/product/\${product.image}\`" :alt="product.image" class="block m-auto pb-3" />
+            <img v-if="product.image" :src="\`@/assets/images/product/\${product.image}\`" :alt="product.image" class="block m-auto pb-3" />
             <div class="field">
                 <label for="name">Name</label>
                 <InputText id="name" v-model.trim="product.name" required="true" autofocus :invalid="submitted && !product.name" />
@@ -576,7 +576,7 @@ export default {
                 <Column field="name" header="Name" sortable style="min-width:16rem"></Column>
                 <Column header="Image">
                     <template #body="slotProps">
-                        <img :src="\`https://primefaces.org/cdn/primevue/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
+                        <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
                     </template>
                 </Column>
                 <Column field="price" header="Price" sortable style="min-width:8rem">
@@ -605,7 +605,7 @@ export default {
         </div>
 
         <Dialog v-model:visible="productDialog" :style="{width: '450px'}" header="Product Details" :modal="true" class="p-fluid">
-            <img v-if="product.image" :src="\`https://primefaces.org/cdn/primevue/images/product/\${product.image}\`" :alt="product.image" class="block m-auto pb-3" />
+            <img v-if="product.image" :src="\`@/assets/images/product/\${product.image}\`" :alt="product.image" class="block m-auto pb-3" />
             <div class="field">
                 <label for="name">Name</label>
                 <InputText id="name" v-model.trim="product.name" required="true" autofocus :invalid="submitted && !product.name" />

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img alt="PRO Support" src="https://primefaces.org/cdn/primevue/images/support/support-header.png" class="w-full block mb-5" style="border-radius: 20px" />
+        <img alt="PRO Support" src="@/assets/images/support/support-header.png" class="w-full block mb-5" style="border-radius: 20px" />
 
         <div class="flex flex-column xl:flex-row mb-5 gap-5">
             <div class="card xl:w-3 m-0 relative overflow-hidden">
@@ -12,7 +12,7 @@
                     secure our response within 1 business day, you may consider PRO support instead.
                 </p>
             </div>
-            <div class="card m-0 xl:w-9 text-white bg-cover" style="background-image: url('https://primefaces.org/cdn/primevue/images/support/card-pro.jpg')">
+            <div class="card m-0 xl:w-9 text-white bg-cover" style="background-image: url('@/assets/images/support/card-pro.jpg')">
                 <div class="text-2xl font-semibold mb-3">PRO Support</div>
                 <p class="m-0 line-height-3 text-lg">
                     With PRO support, it's easy to support, tune and add features to CoscomUI as if it were an in- house library. PRO is a term based commercial support service. With the exclusive services of PRO account, it is no longer needed to

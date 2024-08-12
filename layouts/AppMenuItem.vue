@@ -1,9 +1,6 @@
 <template>
     <li v-for="(menuitem, index) in menu" :key="`_root${index}`">
-        <button v-if="menuitem.children && root" v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'slidedown', leaveToClass: 'hidden', leaveActiveClass: 'slideup' }" type="button" class="px-link">
-            <span class="menu-icon">
-                <i :class="menuitem.icon"></i>
-            </span>
+        <button v-if="menuitem.children && root" v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'slidedown', leaveToClass: 'hidden', leaveActiveClass: 'slideup' }" type="button" class="px-link submenu">
             <span>{{ menuitem.name }}</span>
             <i class="menu-toggle-icon cs el-angle-down"></i>
         </button>

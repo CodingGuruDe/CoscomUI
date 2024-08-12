@@ -11,10 +11,10 @@
                 <i class="cs el-search"></i>
             </template>
             <template #image>
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="image" width="250" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="image" width="250" />
             </template>
             <template #preview="slotProps">
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
             </template>
         </Image>
     </div>
@@ -47,10 +47,10 @@ export default {
                 <i class="cs el-search"></i>
             </template>
             <template #image>
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="image" width="250" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="image" width="250" />
             </template>
             <template #preview="slotProps">
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
             </template>
         </Image>
     </div>
@@ -64,10 +64,10 @@ export default {
                 <i class="cs el-search"></i>
             </template>
             <template #image>
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="image" width="250" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="image" width="250" />
             </template>
             <template #preview="slotProps">
-                <img src="https://primefaces.org/cdn/primevue/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
+                <img src="@/assets/images/galleria/galleria11.jpg" alt="preview" :style="slotProps.style" @click="slotProps.onClick" />
             </template>
         </Image>
     </div>

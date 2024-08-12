@@ -11,7 +11,7 @@ export default {
         return {
             code: {
                 basic: `
-<link rel="stylesheet" href="https://unpkg.com/primevue/resources/themes/lara-light-green/theme.css" />
+<link rel="stylesheet" href="https://unpkg.com/coscom/coscom-ui/resources/themes/skyblue-light/theme.css" />
 `
             }
         };

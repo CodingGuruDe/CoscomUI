@@ -2,7 +2,6 @@
     "data": [
         {
             "name": "Getting Started",
-            "icon": "cs el-home",
             "children": [
                 {
                     "name": "Installation",
@@ -12,7 +11,6 @@
         },
         {
             "name": "Configuration",
-            "icon": "cs el-cog",
             "children": [
                 {
                     "name": "Options",
@@ -30,7 +28,6 @@
         },
         {
             "name": "Common Components(12)",
-            "icon": "cs el-verified",
             "children": [
                 {
                     "name": "Accordion",
@@ -84,7 +81,6 @@
         },
         {
             "name": "Other Components(77)",
-            "icon": "cs el-box",
             "children": [
                 {
                     "name": "Form inputs & controls",
@@ -416,7 +412,6 @@
         },
         {
             "name": "Styling",
-            "icon": "cs el-palette",
             "children": [
                 {
                     "name": "Overview",
@@ -425,21 +420,15 @@
                 {
                     "name": "Colors",
                     "to": "/colors"
-                },
-                {
-                    "name": "Sass API",
-                    "href": "#"
                 }
             ]
         },
         {
             "name": "Pass Through",
-            "icon": "cs el-directions",
             "to": "/passthrough"
         },
         {
             "name": "Icons",
-            "icon": "cs el-flag",
             "to": "/icons"
         }
     ]

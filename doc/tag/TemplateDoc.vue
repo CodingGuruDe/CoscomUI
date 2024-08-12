@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Tag style="background: linear-gradient(to right, var(--surface-900), var(--surface-700)); color: var(--surface-0)">
             <div class="flex align-items-center gap-2 px-1">
-                <img alt="Country" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
+                <img alt="Country" src="@/assets/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
                 <span class="text-base">Italy</span>
             </div>
         </Tag>
@@ -21,7 +21,7 @@ export default {
                 basic: `
 <Tag style="background: linear-gradient(to right, var(--surface-900), var(--surface-700)); color: var(--surface-0)">
     <div class="flex align-items-center gap-2 px-1">
-        <img alt="Country" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
+        <img alt="Country" src="@/assets/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
         <span class="text-base">Italy</span>
     </div>
 </Tag>
@@ -31,7 +31,7 @@ export default {
     <div class="card flex justify-content-center">
         <Tag style="background: linear-gradient(to right, var(--surface-900), var(--surface-700)); color: var(--surface-0)">
             <div class="flex align-items-center gap-2 px-1">
-                <img alt="Country" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
+                <img alt="Country" src="@/assets/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
                 <span class="text-base">Italy</span>
             </div>
         </Tag>
@@ -46,7 +46,7 @@ export default {
     <div class="card flex justify-content-center">
         <Tag style="background: linear-gradient(to right, var(--surface-900), var(--surface-700)); color: var(--surface-0)">
             <div class="flex align-items-center gap-2 px-1">
-                <img alt="Country" src="https://primefaces.org/cdn/primevue/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
+                <img alt="Country" src="@/assets/images/flag/flag_placeholder.png" class="flag flag-it" style="width: 18px" />
                 <span class="text-base">Italy</span>
             </div>
         </Tag>

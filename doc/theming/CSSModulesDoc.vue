@@ -9,10 +9,6 @@
         </div>
         <DocSectionCode :code="code1" hideToggleCode importCode hideStackBlitz />
         <DocSectionCode :code="code2" hideToggleCode hideStackBlitz />
-        <p>An in-depth video tutorial is available to cover advanced uses cases with Pass Through props.</p>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/n5zvMo7ykgw?si=lw1dGEHclmhIfZTr" frameborder="0" allowfullscreen></iframe>
-        </div>
     </DocSectionText>
 </template>
 

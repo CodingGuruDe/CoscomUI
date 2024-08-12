@@ -1,8 +1,8 @@
 <template>
     <DocSectionText v-bind="$attrs">
         <p>
-            Themes are created with SASS using the <i>primevue-sass-theme</i> project available at <a href="http://github.com/primefaces/primevue-sass-theme">github</a>. This repository contains all the scss files for the components and the variables
-            of the built-in themes so that you may customize an existing theme or create your own. The scss variables used in a theme are available at the <a href="https://www.primefaces.org/designer/api/primevue/3.9.0">SASS API</a> documentation.
+            Themes are created with SASS using the <i>coscomui-sass-theme</i> project available at <a href="https://github.com/CodingGuruDe/coscomui-sass-theme">github</a>. This repository contains all the scss files for the components and the
+            variables of the built-in themes so that you may customize an existing theme or create your own. The scss variables used in a theme are available at the <a href="#">SASS API</a> documentation.
         </p>
         <p>
             There are 2 alternatives to create your own theme. First option is compiling a theme with command line sass whereas second option is embedding scss files within your project to let your build environment do the compilation. In all cases,
@@ -11,11 +11,11 @@
 
         <h3>Theme SCSS</h3>
         <p>
-            The theme scss is available as open source at <a href="http://github.com/primefaces/primevue-sass-theme">primevue-sass-theme</a> repository. The <i>theme-base</i> folder contains the theming structure of the components, themes under
+            The theme scss is available as open source at <a href="https://github.com/CodingGuruDe/coscomui-sass-theme">coscomui-sass-theme</a> repository. The <i>theme-base</i> folder contains the theming structure of the components, themes under
             <i>themes</i> folder import the base and define the SCSS variables. The <i>themes</i> folder also contains all the built-in themes so you can customize their code as well.
         </p>
         <p>
-            To create your own theme, <a href="https://github.com/primefaces/primevue-sass-theme/releases">download</a> the release matching your CoscomUI version and access the <i>themes/mytheme</i> folder. The sass variables to customize are
+            To create your own theme, <a href="https://github.com/CodingGuruDe/coscomui-sass-theme/releases">download</a> the release matching your CoscomUI version and access the <i>themes/mytheme</i> folder. The sass variables to customize are
             available under the <i>variables</i> folder. The <i>_fonts</i> file can be used to define a custom font for your project whereas the optional <i>_extensions</i> file is provided to add overrides to the components designs. The
             <i>theme.scss</i> file imports the theme files along with the <i>theme-base</i> folder at the root to combine everything together. Next step would be compilation of the scss that can either be command line or within your project.
         </p>
