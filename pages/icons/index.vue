@@ -2,7 +2,7 @@
     <div>
         <Head>
             <Title>Vue Icon Library - CoscomUI</Title>
-            <Meta name="description" content="PrimeIcons is the default icon library of CoscomUI with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as CoscomUI components can use any icon with templating." />
+            <Meta name="description" content="CoscomIcons is the default icon library of CoscomUI with over 250 open source icons. CoscomIcons library is optional as CoscomUI components can use any icon with templating." />
         </Head>
 
         <div class="doc">
@@ -10,8 +10,8 @@
                 <div class="doc-intro">
                     <h1>Icons</h1>
                     <p>
-                        <a href="https://github.com/primefaces/primeicons"> PrimeIcons </a>
-                        is the default icon library of CoscomUI with over 250 open source icons developed by PrimeTek. PrimeIcons library is optional as CoscomUI components can use any icon with templating.
+                        <a href="https://www.npmjs.com/package/@coscom/coscom-icons"> CoscomIcons </a>
+                        is the default icon library of CoscomUI with over 250 open source icons. CoscomIcons library is optional as CoscomUI components can use any icon with templating.
                     </p>
                 </div>
                 <DocSections :docs="docs" />

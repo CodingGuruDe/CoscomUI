@@ -1,13 +1,16 @@
 <template>
     <Head>
         <Title>Installation</Title>
-        <Meta name="description" content="Please note that coscom-ui only supports Vue3. If you are using Vue2, you may look at other libraries." />
+        <Meta name="description" content="Please note that coscom-ui only supports Vue3." />
     </Head>
     <div class="doc">
         <div class="doc-main">
             <div class="doc-intro">
                 <h1>Install library to existing project</h1>
-                <p>Please note that coscom-ui only supports Vue3. If you are using Vue2, you may look at other libraries.</p>
+                <p>
+                    Please note that coscom-ui only supports Vue3. We provide an advanced type safe theme system that is built with typescript. All you need is to provide a theme overrides object in JS. Then all the stuffs will be done by us. What's
+                    more, no less/sass/css variables, no webpack loaders are required.
+                </p>
             </div>
             <DocSections :docs="docs" />
         </div>
@@ -17,9 +20,8 @@
 
 <script>
 import DownloadDoc from '@/doc/installation/DownloadDoc.vue';
-import ImportDoc from '@/doc/installation/ImportDoc.vue';
-import ConfigurationDoc from '@/doc/installation/ConfigurationDoc.vue';
-import SingleFileDoc from '@/doc/installation/SingleFileDoc.vue';
+import UsingUmdDoc from '@/doc/installation/UsingUmdDoc.vue';
+import SupportedBrowsersDoc from '@/doc/installation/SupportedBrowsersDoc.vue';
 
 export default {
     data() {
@@ -31,19 +33,14 @@ export default {
                     component: DownloadDoc
                 },
                 {
-                    id: 'import',
-                    label: 'Import config file & Components',
-                    component: ImportDoc
+                    id: 'umd',
+                    label: 'Using UMD',
+                    component: UsingUmdDoc
                 },
                 {
-                    id: 'config',
-                    label: 'Import all in main file',
-                    component: ConfigurationDoc
-                },
-                {
-                    id: 'usage',
-                    label: 'Usage SFC',
-                    component: SingleFileDoc
+                    id: 'browser',
+                    label: 'Supported Browsers',
+                    component: SupportedBrowsersDoc
                 }
             ]
         };

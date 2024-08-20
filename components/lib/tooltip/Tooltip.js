@@ -419,8 +419,8 @@ const Tooltip = BaseTooltip.extend('tooltip', {
 
             tooltipElement.style.left = -999 + 'px';
             tooltipElement.style.top = -999 + 'px';
-            DomHandler.removeClass(tooltipElement, `p-tooltip-${tooltipElement.$_ptooltipPosition}`);
-            !this.isUnstyled() && DomHandler.addClass(tooltipElement, `p-tooltip-${position}`);
+            DomHandler.removeClass(tooltipElement, `v-tooltip-${tooltipElement.$_ptooltipPosition}`);
+            !this.isUnstyled() && DomHandler.addClass(tooltipElement, `v-tooltip-${position}`);
             tooltipElement.$_ptooltipPosition = position;
             tooltipElement.setAttribute('data-p-position', position);
 

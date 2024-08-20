@@ -6,6 +6,10 @@
                 {
                     "name": "Installation",
                     "to": "/installation"
+                },
+                {
+                    "name": "Import Components",
+                    "to": "/import"
                 }
             ]
         },
@@ -83,7 +87,7 @@
             "name": "Other Components(77)",
             "children": [
                 {
-                    "name": "Form inputs & controls",
+                    "name": "Data Input Components(20)",
                     "children": [
                         {
                             "name": "AutoComplete",
@@ -98,20 +102,8 @@
                             "to": "/cascadeselect"
                         },
                         {
-                            "name": "Chips",
-                            "to": "/chips"
-                        },
-                        {
                             "name": "ColorPicker",
                             "to": "/colorpicker"
-                        },
-                        {
-                            "name": "FloatLabel",
-                            "to": "/floatlabel"
-                        },
-                        {
-                            "name": "Icon Field",
-                            "to": "/iconfield"
                         },
                         {
                             "name": "Input Group",
@@ -130,16 +122,8 @@
                             "to": "/knob"
                         },
                         {
-                            "name": "Listbox",
-                            "to": "/listbox"
-                        },
-                        {
                             "name": "Password",
                             "to": "/password"
-                        },
-                        {
-                            "name": "Slider",
-                            "to": "/slider"
                         },
                         {
                             "name": "Textarea",
@@ -150,26 +134,13 @@
                             "to": "/treeselect"
                         },
                         {
-                            "name": "QrCode",
-                            "to": "/qrcode"
+                            "name": "Upload",
+                            "to": "/fileupload"
                         }
                     ]
                 },
                 {
-                    "name": "Button",
-                    "children": [
-                        {
-                            "name": "Speed Dial",
-                            "to": "/speeddial"
-                        },
-                        {
-                            "name": "SplitButton",
-                            "to": "/splitbutton"
-                        }
-                    ]
-                },
-                {
-                    "name": "Data",
+                    "name": "Data Display Components (19)",
                     "children": [
                         {
                             "name": "DataView",
@@ -178,6 +149,10 @@
                         {
                             "name": "Order List",
                             "to": "/orderlist"
+                        },
+                        {
+                            "name": "Listbox",
+                            "to": "/listbox"
                         },
                         {
                             "name": "Organization Chart",
@@ -206,11 +181,15 @@
                         {
                             "name": "Virtual Scroller",
                             "to": "/virtualscroller"
+                        },
+                        {
+                            "name": "QrCode",
+                            "to": "/qrcode"
                         }
                     ]
                 },
                 {
-                    "name": "Panel",
+                    "name": "Navigation Components (9)",
                     "children": [
                         {
                             "name": "Fieldset",
@@ -243,24 +222,8 @@
                     ]
                 },
                 {
-                    "name": "Overlay",
+                    "name": "Layout Components (6)",
                     "children": [
-                        {
-                            "name": "Confirm Dialog",
-                            "to": "/confirmdialog"
-                        },
-                        {
-                            "name": "Confirm Popup",
-                            "to": "/confirmpopup"
-                        },
-                        {
-                            "name": "Dialog",
-                            "to": "/dialog"
-                        },
-                        {
-                            "name": "Dynamic Dialog",
-                            "to": "/dynamicdialog"
-                        },
                         {
                             "name": "Overlay Panel",
                             "to": "/overlaypanel"
@@ -268,24 +231,11 @@
                         {
                             "name": "Sidebar",
                             "to": "/sidebar"
-                        },
-                        {
-                            "name": "Tooltip",
-                            "to": "/tooltip"
                         }
                     ]
                 },
                 {
-                    "name": "File",
-                    "children": [
-                        {
-                            "name": "Upload",
-                            "to": "/fileupload"
-                        }
-                    ]
-                },
-                {
-                    "name": "Menu",
+                    "name": "Menu Components (9)",
                     "children": [
                         {
                             "name": "Breadcrumb",
@@ -326,19 +276,47 @@
                     ]
                 },
                 {
-                    "name": "Messages",
+                    "name": "Feedback Components (15)",
                     "children": [
+                        {
+                            "name": "Badge",
+                            "to": "/badge"
+                        },
+                        {
+                            "name": "Confirm Dialog",
+                            "to": "/confirmdialog"
+                        },
+                        {
+                            "name": "Confirm Popup",
+                            "to": "/confirmpopup"
+                        },
+                        {
+                            "name": "Dialog",
+                            "to": "/dialog"
+                        },
+                        {
+                            "name": "Dynamic Dialog",
+                            "to": "/dynamicdialog"
+                        },
                         {
                             "name": "Message",
                             "to": "/message"
                         },
                         {
-                            "name": "Inline Message",
-                            "to": "/inlinemessage"
+                            "name": "Progress Bar",
+                            "to": "/progressbar"
+                        },
+                        {
+                            "name": "Progress Spinner",
+                            "to": "/progressspinner"
                         },
                         {
                             "name": "Toast",
                             "to": "/toast"
+                        },
+                        {
+                            "name": "Tooltip",
+                            "to": "/tooltip"
                         }
                     ]
                 },
@@ -363,12 +341,28 @@
                     "name": "Misc",
                     "children": [
                         {
-                            "name": "Badge",
-                            "to": "/badge"
+                            "name": "Speed Dial",
+                            "to": "/speeddial"
+                        },
+                        {
+                            "name": "SplitButton",
+                            "to": "/splitbutton"
+                        },
+                        {
+                            "name": "Slider",
+                            "to": "/slider"
                         },
                         {
                             "name": "Chip",
                             "to": "/chip"
+                        },
+                        {
+                            "name": "Chips",
+                            "to": "/chips"
+                        },
+                        {
+                            "name": "FloatLabel",
+                            "to": "/floatlabel"
                         },
                         {
                             "name": "Focus Trap",
@@ -387,26 +381,27 @@
                             "to": "/skeleton"
                         },
                         {
-                            "name": "Progress Bar",
-                            "to": "/progressbar"
-                        },
-                        {
-                            "name": "Progress Spinner",
-                            "to": "/progressspinner"
-                        },
-                        {
                             "name": "Ripple",
                             "to": "/ripple"
                         },
                         {
                             "name": "Style Class",
                             "to": "/styleclass"
-                        },
-                        {
-                            "name": "Tag",
-                            "to": "/tag"
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Developer Instruction",
+            "children": [
+                {
+                    "name": "Overview",
+                    "to": "/developer-instructions"
+                },
+                {
+                    "name": "Naming Convention",
+                    "to": "/naming-convention"
                 }
             ]
         },

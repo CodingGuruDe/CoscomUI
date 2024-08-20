@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>
             <b>Suggested way:</b> If the Plugins directory does not exist, it is necessary to create it first. In the index file, it is necessary to import the config file, as well as all the necessary components. The library works in such a way that
-            we import only those components that we need, in order to reduce the bundle size. This process is called Tree-Shaking
+            we import only those components that we need, in order to reduce the bundle size.
         </p>
     </DocSectionText>
     <DocSectionCode :code="code" importCode hideToggleCode hideCodeSandbox />

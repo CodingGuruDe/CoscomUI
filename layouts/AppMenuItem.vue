@@ -1,6 +1,6 @@
 <template>
     <li v-for="(menuitem, index) in menu" :key="`_root${index}`">
-        <button v-if="menuitem.children && root" v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'slidedown', leaveToClass: 'hidden', leaveActiveClass: 'slideup' }" type="button" class="px-link submenu">
+        <button v-if="menuitem.children && root" v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'slidedown', leaveToClass: 'hidden', leaveActiveClass: 'slideup' }" type="button" class="px-link">
             <span>{{ menuitem.name }}</span>
             <i class="menu-toggle-icon cs el-angle-down"></i>
         </button>
@@ -21,7 +21,7 @@
         </NuxtLink>
 
         <span v-if="!root && menuitem.children" class="menu-child-category">{{ menuitem.name }}</span>
-        <div v-if="menuitem.children" class="overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out" :class="{ hidden: menuitem.children && root && isActiveRootmenuItem(menuitem) }">
+        <div v-if="menuitem.children" class="overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
             <ol>
                 <AppMenuItem :root="false" :menu="menuitem.children"></AppMenuItem>
             </ol>
