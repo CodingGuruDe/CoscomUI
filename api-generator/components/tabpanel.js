@@ -99,8 +99,8 @@ const TabPanelEvents = [
 module.exports = {
     tabpanel: {
         name: 'TabPanel',
-        description: 'TabView element consists of one or more TabPanel elements.',
-        'doc-url': 'tabview',
+        description: 'Tab element consists of one or more TabPanel elements.',
+        'doc-url': 'tab',
         props: TabPanelProps,
         events: TabPanelEvents
     }

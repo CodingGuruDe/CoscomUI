@@ -180,7 +180,7 @@ export interface TabPanelEmits {}
 /**
  * **CoscomUI - TabPanel**
  *
- * _TabPanel is a helper component for TabView component._
+ * _TabPanel is a helper component for Tab component._
  *
  *
  * @group Component

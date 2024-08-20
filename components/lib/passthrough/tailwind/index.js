@@ -314,7 +314,7 @@ export default {
             class: ['relative bg-gray-100 rounded cursor-pointer w-[9px] top-0 z-[2]', 'transition duration-[250ms] ease-linear']
         }
     },
-    tabview: {
+    tab: {
         navContainer: ({ props }) => ({
             class: [
                 'relative', // Relative positioning.

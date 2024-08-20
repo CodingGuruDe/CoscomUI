@@ -73,6 +73,7 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/accordion/style': 'coscom.accordion.style',
     'coscom/accordiontab/style': 'coscom.accordiontab.style',
     'coscom/autocomplete/style': 'coscom.autocomplete.style',
+    'coscom/animateonscroll/style': 'coscom.animateonscroll.style',
     'coscom/badge/style': 'coscom.badge.style',
     'coscom/badgedirective/style': 'coscom.badgedirective.style',
     'coscom/baseicon/style': 'coscom.baseicon.style',
@@ -96,7 +97,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/datatable/style': 'coscom.datatable.style',
     'coscom/dataview/style': 'coscom.dataview.style',
     'coscom/dataviewlayoutoptions/style': 'coscom.dataviewlayoutoptions.style',
-    'coscom/deferredcontent/style': 'coscom.deferredcontent.style',
     'coscom/dialog/style': 'coscom.dialog.style',
     'coscom/divider/style': 'coscom.divider.style',
     'coscom/dropdown/style': 'coscom.dropdown.style',
@@ -107,13 +107,11 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/focustrap/style': 'coscom.focustrap.style',
     'coscom/galleria/style': 'coscom.galleria.style',
     'coscom/image/style': 'coscom.image.style',
-    'coscom/inlinemessage/style': 'coscom.inlinemessage.style',
     'coscom/inplace/style': 'coscom.inplace.style',
     'coscom/inputgroup/style': 'coscom.inputgroup.style',
     'coscom/inputgroupaddon/style': 'coscom.inputgroupaddon.style',
     'coscom/inputmask/style': 'coscom.inputmask.style',
     'coscom/inputnumber/style': 'coscom.inputnumber.style',
-    'coscom/inputotp/style': 'coscom.inputotp.style',
     'coscom/inputswitch/style': 'coscom.inputswitch.style',
     'coscom/inputtext/style': 'coscom.inputtext.style',
     'coscom/knob/style': 'coscom.knob.style',
@@ -153,8 +151,7 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/steps/style': 'coscom.steps.style',
     'coscom/tabmenu/style': 'coscom.tabmenu.style',
     'coscom/tabpanel/style': 'coscom.tabpanel.style',
-    'coscom/tabview/style': 'coscom.tabview.style',
-    'coscom/tag/style': 'coscom.tag.style',
+    'coscom/tab/style': 'coscom.tab.style',
     'coscom/textarea/style': 'coscom.textarea.style',
     'coscom/tieredmenu/style': 'coscom.tieredmenu.style',
     'coscom/timeline/style': 'coscom.timeline.style',
@@ -406,6 +403,7 @@ function addDirectives() {
     addEntry('tooltip', 'Tooltip.js', 'tooltip');
     addEntry('focustrap', 'FocusTrap.js', 'focustrap');
     addEntry('styleclass', 'StyleClass.js', 'styleclass');
+    addEntry('animateonscroll', 'AnimateOnScroll.js', 'animateonscroll');
 }
 
 function addConfig() {

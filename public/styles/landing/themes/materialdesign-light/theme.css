@@ -3818,15 +3818,15 @@
     background: rgba(0, 0, 0, 0.12);
   }
 
-  .v-tabview .v-tabview-nav {
+  .v-tab .v-tab-nav {
     background: #ffffff;
     border: solid rgba(0, 0, 0, 0.12);
     border-width: 0 0 1px 0;
   }
-  .v-tabview .v-tabview-nav li {
+  .v-tab .v-tab-nav li {
     margin-right: 0;
   }
-  .v-tabview .v-tabview-nav li .v-tabview-nav-link {
+  .v-tab .v-tab-nav li .v-tab-nav-link {
     border: solid rgba(0, 0, 0, 0.12);
     border-width: 0 0 1px 0;
     border-color: transparent transparent rgba(0, 0, 0, 0.12) transparent;
@@ -3839,34 +3839,34 @@
     transition: none;
     margin: 0 0 -1px 0;
   }
-  .v-tabview .v-tabview-nav li .v-tabview-nav-link:not(.v-disabled):focus-visible {
+  .v-tab .v-tab-nav li .v-tab-nav-link:not(.v-disabled):focus-visible {
     outline: 0 none;
     outline-offset: 0;
     box-shadow: inset none;
   }
-  .v-tabview .v-tabview-nav li:not(.v-highlight):not(.v-disabled):hover .v-tabview-nav-link {
+  .v-tab .v-tab-nav li:not(.v-highlight):not(.v-disabled):hover .v-tab-nav-link {
     background: rgba(103, 58, 183, 0.04);
     border-color: rgba(0, 0, 0, 0.12);
     color: rgba(0, 0, 0, 0.6);
   }
-  .v-tabview .v-tabview-nav li.v-highlight .v-tabview-nav-link {
+  .v-tab .v-tab-nav li.v-highlight .v-tab-nav-link {
     background: #ffffff;
     border-color: rgba(0, 0, 0, 0.12);
     color: #673AB7;
   }
-  .v-tabview .v-tabview-nav-btn.v-link {
+  .v-tab .v-tab-nav-btn.v-link {
     background: #ffffff;
     color: #673AB7;
     width: 2.25rem;
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     border-radius: 0;
   }
-  .v-tabview .v-tabview-nav-btn.v-link:focus-visible {
+  .v-tab .v-tab-nav-btn.v-link:focus-visible {
     outline: 0 none;
     outline-offset: 0;
     box-shadow: inset none;
   }
-  .v-tabview .v-tabview-panels {
+  .v-tab .v-tab-panels {
     background: #ffffff;
     padding: 0.75rem;
     border: 0 none;
@@ -7069,20 +7069,20 @@
     opacity: 1;
   }
 
-  .v-tabview .v-tabview-nav {
+  .v-tab .v-tab-nav {
     position: relative;
   }
-  .v-tabview .v-tabview-nav li .v-tabview-nav-link {
+  .v-tab .v-tab-nav li .v-tab-nav-link {
     transition: background-color 0.2s;
     border-radius: 0;
   }
-  .v-tabview .v-tabview-nav li .v-tabview-nav-link > .v-ink {
+  .v-tab .v-tab-nav li .v-tab-nav-link > .v-ink {
     background-color: rgba(103, 58, 183, 0.16);
   }
-  .v-tabview .v-tabview-nav li .v-tabview-nav-link:focus {
+  .v-tab .v-tab-nav li .v-tab-nav-link:focus {
     background-color: rgba(103, 58, 183, 0.12);
   }
-  .v-tabview .v-tabview-nav .v-tabview-ink-bar {
+  .v-tab .v-tab-nav .v-tab-ink-bar {
     z-index: 1;
     display: block;
     position: absolute;

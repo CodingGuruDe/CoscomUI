@@ -10,14 +10,12 @@
                 <i :class="menuitem.icon"></i>
             </span>
             <span>{{ menuitem.name }}</span>
-            <Tag v-if="menuitem.badge" :value="menuitem.badge" class="ml-auto"></Tag>
         </a>
         <NuxtLink v-if="menuitem.to" :to="menuitem.to" :class="{ 'router-link-active': menuitem.to === $route.fullPath }">
             <span v-if="menuitem.icon && root" class="menu-icon">
                 <i :class="menuitem.icon"></i>
             </span>
             <span>{{ menuitem.name }}</span>
-            <Tag v-if="menuitem.badge" :value="menuitem.badge"></Tag>
         </NuxtLink>
 
         <span v-if="!root && menuitem.children" class="menu-child-category">{{ menuitem.name }}</span>

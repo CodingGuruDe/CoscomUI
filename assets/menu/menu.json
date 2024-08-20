@@ -151,10 +151,6 @@
                             "to": "/orderlist"
                         },
                         {
-                            "name": "Listbox",
-                            "to": "/listbox"
-                        },
-                        {
                             "name": "Organization Chart",
                             "to": "/organizationchart"
                         },
@@ -212,8 +208,8 @@
                             "to": "/stepper"
                         },
                         {
-                            "name": "TabView",
-                            "to": "/tabview"
+                            "name": "Tabs",
+                            "to": "/tabs"
                         },
                         {
                             "name": "Toolbar",
