@@ -13,15 +13,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-checkbox</td>
+                    <td>v-checkbox</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-checkbox-box</td>
+                    <td>v-checkbox-box</td>
                     <td>Container of icon.</td>
                 </tr>
                 <tr>
-                    <td>p-checkbox-icon</td>
+                    <td>v-checkbox-icon</td>
                     <td>Icon element.</td>
                 </tr>
             </tbody>

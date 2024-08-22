@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs" />
-    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
+    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

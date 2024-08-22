@@ -5,7 +5,7 @@
     <div class="card">
         <Editor v-model="value" editorStyle="height: 320px" />
     </div>
-    <DocSectionCode :code="code" :dependencies="{ quill: '1.3.7' }" component="Editor" />
+    <DocSectionCode :code="code" hideCodeSandbox :dependencies="{ quill: '1.3.7' }" component="Editor" />
 </template>
 
 <script>

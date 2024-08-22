@@ -13,23 +13,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-chips</td>
+                    <td>v-chips</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-chips-token</td>
+                    <td>v-chips-token</td>
                     <td>Chip element container.</td>
                 </tr>
                 <tr>
-                    <td>p-chips-token-icon</td>
+                    <td>v-chips-token-icon</td>
                     <td>Icon of a chip.</td>
                 </tr>
                 <tr>
-                    <td>p-chips-token-label</td>
+                    <td>v-chips-token-label</td>
                     <td>label of a chip.</td>
                 </tr>
                 <tr>
-                    <td>p-chips-input-token</td>
+                    <td>v-chips-input-token</td>
                     <td>Container of input element.</td>
                 </tr>
             </tbody>

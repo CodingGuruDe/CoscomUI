@@ -123,7 +123,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/metergroup/style': 'coscom.metergroup.style',
     'coscom/multiselect/style': 'coscom.multiselect.style',
     'coscom/orderlist/style': 'coscom.orderlist.style',
-    'coscom/organizationchart/style': 'coscom.organizationchart.style',
     'coscom/overlaypanel/style': 'coscom.overlaypanel.style',
     'coscom/paginator/style': 'coscom.paginator.style',
     'coscom/panel/style': 'coscom.panel.style',

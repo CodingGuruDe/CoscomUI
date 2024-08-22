@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideCodeSandbox />
 </template>
 
 <script>

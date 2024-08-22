@@ -5,14 +5,15 @@
     <div class="card">
         <Editor v-model="value" editorStyle="height: 320px" readonly />
     </div>
-    <DocSectionCode :code="code" :dependencies="{ quill: '1.3.7' }" component="Editor" />
+    <DocSectionCode :code="code" hideCodeSandbox :dependencies="{ quill: '1.3.7' }" component="Editor" />
 </template>
 
 <script>
 export default {
     data() {
         return {
-            value: 'Always bet on Prime',
+            image: 'https://www.coscom.de/media/pages/home/e146836319-1715632732/coscom-ecosystem-illustration-1024x.webp',
+            value: 'Das <div style="color: yellow"><b>COSCOM ECO-System</b></div> ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie!',
             code: {
                 basic: `
 <Editor v-model="value" editorStyle="height: 320px" readonly />
@@ -28,7 +29,7 @@ export default {
 export default {
     data() {
         return {
-            value: 'Always bet on Prime'
+            value: 'Das COSCOM ECO-System ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie!'
         }
     }
 }
@@ -44,7 +45,7 @@ export default {
 <script setup>
 import { ref } from "vue";
 
-const value = ref('Always bet on Prime');
+const value = ref('Das COSCOM ECO-System ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie!');
 <\/script>
 `
             }

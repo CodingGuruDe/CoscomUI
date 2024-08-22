@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>Badge Theming</h1>
+            <h1>Badge Styling</h1>
         </div>
         <DocSections :docs="docs" />
     </div>
@@ -10,7 +10,6 @@
 
 <script>
 import StyledDoc from './StyledDoc.vue';
-import TailwindDoc from './TailwindDoc.vue';
 
 export default {
     data() {
@@ -20,18 +19,6 @@ export default {
                     id: 'theming.styled',
                     label: 'Styled',
                     component: StyledDoc
-                },
-                {
-                    id: 'theming.unstyled',
-                    label: 'Unstyled',
-                    description: 'Theming is implemented with the pass through properties in unstyled mode.',
-                    children: [
-                        {
-                            id: 'theming.tailwind',
-                            label: 'Tailwind',
-                            component: TailwindDoc
-                        }
-                    ]
                 }
             ]
         };

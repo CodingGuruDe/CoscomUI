@@ -2,7 +2,7 @@
     <DocComponent
         title="Vue Button Component"
         header="Button"
-        description="Button is an extension to standard input element with icons and theming."
+        description="The Button component replaces the standard html button with a material design theme and a multitude of options. Any color helper class can be used to alter the background or text color."
         :componentDocs="docs"
         :apiDocs="['Button', 'ButtonGroup']"
         :ptTabComponent="ptComponent"

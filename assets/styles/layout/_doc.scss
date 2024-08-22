@@ -24,7 +24,7 @@
             background-color: transparent;
             border: 0 none;
             display: block;
-            padding: 0 2rem 1rem 2rem;
+            padding: 1rem 2rem;
             text-align: center;
             color: var(--surface-700);
             font-size: 1rem;
@@ -36,9 +36,10 @@
             border-top-right-radius: var(--border-round);
             border-top-left-radius: var(--border-round);
             white-space: nowrap;
+            font-weight: 500;
 
             &:hover {
-                border-bottom-color: var(--surface-500);
+                background: var(--surface-100);
             }
 
             &:focus {
@@ -50,7 +51,7 @@
 
         &.doc-tabmenu-active {
             button {
-                border-bottom-color: var(--primary-color-default);
+                border-bottom: 1px solid var(--surface-400);
                 color: var(--primary-color-default);
             }
         }
@@ -338,10 +339,8 @@
             > i:not(.pi) {
                 font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, Liberation Mono, monospace;
                 position: relative;
-                scroll-margin-top: 6.5rem;
-                background-color: var(--doc-highlight-text-bg);
+                scroll-margin-top: 6.5rem;     
                 color: var(--doc-highlight-text-color);
-                border-radius: 6px;
                 padding: 2px 6px;
                 font-weight: 600;
                 font-style: normal;

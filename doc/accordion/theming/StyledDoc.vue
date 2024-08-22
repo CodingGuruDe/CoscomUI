@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-accordion</td>
+                    <td>v-accordion</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-accordion-header</td>
+                    <td>v-accordion-header</td>
                     <td>Header of a tab.</td>
                 </tr>
                 <tr>
-                    <td>p-accordion-content</td>
+                    <td>v-accordion-content</td>
                     <td>Container of a tab.</td>
                 </tr>
             </tbody>

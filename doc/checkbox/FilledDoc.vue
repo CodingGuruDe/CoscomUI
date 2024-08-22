@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Checkbox v-model="checked" binary variant="filled" />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideCodeSandbox />
 </template>
 
 <script>

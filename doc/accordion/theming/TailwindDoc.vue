@@ -1,5 +1,0 @@
-<template>
-    <DocSectionText v-bind="$attrs">
-        Visit <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS</a> project for detailed documentation, examples and ready-to-use presets about how to style CoscomUI components with Tailwind CSS.
-    </DocSectionText>
-</template>

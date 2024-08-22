@@ -16,7 +16,7 @@
                 <button type="button" @click="tab = 2">STYLING</button>
             </li>
             <li v-if="ptTabComponent" :class="{ 'doc-tabmenu-active': tab === 3 }">
-                <button type="button" @click="tab = 3">PASS THROUGH</button>
+                <button type="button" @click="tab = 3">TRAVERSE</button>
             </li>
         </ul>
 

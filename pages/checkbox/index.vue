@@ -2,7 +2,7 @@
     <DocComponent
         title="Vue Checkbox Component"
         header="Checkbox"
-        description="Checkbox is an extension to standard checkbox element with theming."
+        description="The Checkbox component provides users the ability to choose between two distinct values. These are very similar to a switch and can be used in complex forms and checklists."
         :componentDocs="docs"
         :apiDocs="['Checkbox']"
         :ptTabComponent="ptComponent"

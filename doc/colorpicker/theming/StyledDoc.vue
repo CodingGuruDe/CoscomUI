@@ -13,43 +13,43 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-colorpicker</td>
+                    <td>v-colorpicker</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-overlay</td>
+                    <td>v-colorpicker-overlay</td>
                     <td>Container element in overlay mode.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-preview</td>
+                    <td>v-colorpicker-preview</td>
                     <td>Preview input in overlay mode.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-panel</td>
+                    <td>v-colorpicker-panel</td>
                     <td>Panel element of the colorpicker.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-content</td>
+                    <td>v-colorpicker-content</td>
                     <td>Wrapper that contains color and hue sections.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-color-selector</td>
+                    <td>v-colorpicker-color-selector</td>
                     <td>Color selector container.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-color</td>
+                    <td>v-colorpicker-color</td>
                     <td>Color element.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-color-handle</td>
+                    <td>v-colorpicker-color-handle</td>
                     <td>Handle of the color element.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-hue</td>
+                    <td>v-colorpicker-hue</td>
                     <td>Hue slider.</td>
                 </tr>
                 <tr>
-                    <td>p-colorpicker-hue-handle</td>
+                    <td>v-colorpicker-hue-handle</td>
                     <td>Handle of the hue slider.</td>
                 </tr>
             </tbody>

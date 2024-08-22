@@ -9,18 +9,20 @@
                     <button v-tooltip.bottom="'Bold'" class="ql-bold"></button>
                     <button v-tooltip.bottom="'Italic'" class="ql-italic"></button>
                     <button v-tooltip.bottom="'Underline'" class="ql-underline"></button>
+                    <button v-tooltip.bottom="'Link'" class="ql-link"></button>
                 </span>
             </template>
         </Editor>
     </div>
-    <DocSectionCode :code="code" :dependencies="{ quill: '1.3.7' }" component="Editor" />
+    <DocSectionCode :code="code" hideCodeSandbox :dependencies="{ quill: '1.3.7' }" component="Editor" />
 </template>
 
 <script>
 export default {
     data() {
         return {
-            value: '<div>Hello World!</div><div>CoscomUI <b>Editor</b> Rocks</div><div><br></div>',
+            image: 'https://montagearbeitsplatz.coscom.de/icons/statuses/status-8.png',
+            value: '<div><b>COSCOM</b> Virtual Machining ist ein intelligentes Fertigungs-Prozessnetzwerk aus CAD/CAM-Software, Maschinensimulation, Toolmanagement, DNC- / CAM Datenmanagement sowie dem Cockpit für die Fertigung.</br>Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.</div>',
             code: {
                 basic: `
 <Editor v-model="value" editorStyle="height: 320px">
@@ -29,6 +31,7 @@ export default {
             <button v-tooltip.bottom="'Bold'" class="ql-bold"></button>
             <button v-tooltip.bottom="'Italic'" class="ql-italic"></button>
             <button v-tooltip.bottom="'Underline'" class="ql-underline"></button>
+            <button v-tooltip.bottom="'Image'" class="ql-image"></button>
         </span>
     </template>
 </Editor>
@@ -42,6 +45,7 @@ export default {
                     <button v-tooltip.bottom="'Bold'" class="ql-bold"></button>
                     <button v-tooltip.bottom="'Italic'" class="ql-italic"></button>
                     <button v-tooltip.bottom="'Underline'" class="ql-underline"></button>
+                    <button v-tooltip.bottom="'Image'" class="ql-image"></button>
                 </span>
             </template>
         </Editor>
@@ -52,7 +56,7 @@ export default {
 export default {
     data() {
         return {
-            value: '<div>Hello World!</div><div>CoscomUI <b>Editor</b> Rocks</div><div><br></div>'
+            value: '<div><b>COSCOM</b> Virtual Machining ist ein intelligentes Fertigungs-Prozessnetzwerk aus CAD/CAM-Software, Maschinensimulation, Toolmanagement, DNC- / CAM Datenmanagement sowie dem Cockpit für die Fertigung.</br>Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.</div>',
         }
     }
 }
@@ -76,7 +80,7 @@ export default {
 <script setup>
 import { ref } from "vue";
 
-const value = ref('<div>Hello World!</div><div>CoscomUI <b>Editor</b> Rocks</div><div><br></div>');
+const value = ref(''<div><b>COSCOM</b> Virtual Machining ist ein intelligentes Fertigungs-Prozessnetzwerk aus CAD/CAM-Software, Maschinensimulation, Toolmanagement, DNC- / CAM Datenmanagement sowie dem Cockpit für die Fertigung.</br>Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.</div>',);
 <\/script>
 `
             }

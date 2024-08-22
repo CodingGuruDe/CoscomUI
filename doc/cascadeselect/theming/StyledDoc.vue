@@ -12,35 +12,35 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-cascadeselect</td>
+                    <td>v-cascadeselect</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-label</td>
+                    <td>v-cascadeselect-label</td>
                     <td>Element to display label of selected option.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-trigger</td>
+                    <td>v-cascadeselect-trigger</td>
                     <td>Icon element.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-panel</td>
+                    <td>v-cascadeselect-panel</td>
                     <td>Icon element.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-items-wrapper</td>
+                    <td>v-cascadeselect-items-wrapper</td>
                     <td>Wrapper element of items list.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-items</td>
+                    <td>v-cascadeselect-items</td>
                     <td>List element of items.</td>
                 </tr>
                 <tr>
-                    <td>p-cascadeselect-item</td>
+                    <td>v-cascadeselect-item</td>
                     <td>An item in the list.</td>
                 </tr>
                 <tr>
-                    <td>p-overlay-open</td>
+                    <td>v-overlay-open</td>
                     <td>Container element when overlay is visible.</td>
                 </tr>
             </tbody>

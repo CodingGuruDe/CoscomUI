@@ -7,7 +7,7 @@
             <AccordionTab>
                 <template #header>
                     <span class="flex align-items-center gap-2 w-full">
-                        <span class="font-bold white-space-nowrap">Amy Elsner</span>
+                        <span class="font-bold white-space-nowrap">Max Musterman</span>
                         <Badge value="3" class="ml-auto mr-2" />
                     </span>
                 </template>
@@ -19,7 +19,7 @@
             <AccordionTab>
                 <template #header>
                     <span class="flex align-items-center gap-2 w-full">
-                        <span class="font-bold white-space-nowrap">Onyama Limba</span>
+                        <span class="font-bold white-space-nowrap">Harry Angstrom</span>
                         <Badge value="4" class="ml-auto mr-2" />
                     </span>
                 </template>
@@ -31,7 +31,7 @@
             <AccordionTab>
                 <template #header>
                     <span class="flex align-items-center gap-2 w-full">
-                        <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
+                        <span class="font-bold white-space-nowrap">Isabel Archer</span>
                         <Badge value="2" class="ml-auto mr-2" />
                     </span>
                 </template>

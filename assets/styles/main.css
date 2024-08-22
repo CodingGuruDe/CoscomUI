@@ -22,6 +22,8 @@
   .grid-nogutter > [class*=col-] {
     padding: 0;
   }
+
+  
   
   .col {
     flex-grow: 1;

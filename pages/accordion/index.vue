@@ -2,7 +2,7 @@
     <DocComponent
         title="Vue Accordion Component"
         header="Accordion"
-        description="Accordion groups a collection of contents in tabs."
+        description="The accordion component is useful for reducing vertical space with large amounts of information. The default functionality of the component is to only display one accordion-panel body at a time; however, with the multiple property, the accordion-panel can remain open until explicitly closed."
         :componentDocs="docs"
         :apiDocs="['Accordion', 'AccordionTab']"
         :ptTabComponent="ptComponent"

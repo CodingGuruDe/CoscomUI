@@ -57,7 +57,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/message/style': path.resolve(__dirname, './components/lib/message/style/MessageStyle.js'),
     '@coscom/coscom-ui/multiselect/style': path.resolve(__dirname, './components/lib/multiselect/style/MultiSelectStyle.js'),
     '@coscom/coscom-ui/orderlist/style': path.resolve(__dirname, './components/lib/orderlist/style/OrderListStyle.js'),
-    '@coscom/coscom-ui/organizationchart/style': path.resolve(__dirname, './components/lib/organizationchart/style/OrganizationChartStyle.js'),
     '@coscom/coscom-ui/overlaypanel/style': path.resolve(__dirname, './components/lib/overlaypanel/style/OverlayPanelStyle.js'),
     '@coscom/coscom-ui/paginator/style': path.resolve(__dirname, './components/lib/paginator/style/PaginatorStyle.js'),
     '@coscom/coscom-ui/panel/style': path.resolve(__dirname, './components/lib/panel/style/PanelStyle.js'),

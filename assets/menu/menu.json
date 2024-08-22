@@ -87,7 +87,7 @@
             "name": "Other Components(77)",
             "children": [
                 {
-                    "name": "Data Input Components(20)",
+                    "name": "Data Input Components(12)",
                     "children": [
                         {
                             "name": "AutoComplete",
@@ -140,7 +140,7 @@
                     ]
                 },
                 {
-                    "name": "Data Display Components (19)",
+                    "name": "Data Display Components (10)",
                     "children": [
                         {
                             "name": "DataView",
@@ -149,10 +149,6 @@
                         {
                             "name": "Order List",
                             "to": "/orderlist"
-                        },
-                        {
-                            "name": "Organization Chart",
-                            "to": "/organizationchart"
                         },
                         {
                             "name": "Pagination",

@@ -20,7 +20,7 @@
             <label for="ingredient4" class="ml-2"> Onion </label>
         </div>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideCodeSandbox />
 </template>
 
 <script>
