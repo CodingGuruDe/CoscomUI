@@ -13,51 +13,51 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-sidebar</td>
+                    <td>v-sidebar</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-left</td>
+                    <td>v-sidebar-left</td>
                     <td>Container element of left sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-right</td>
+                    <td>v-sidebar-right</td>
                     <td>Container element of right sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-top</td>
+                    <td>v-sidebar-top</td>
                     <td>Container element of top sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-bottom</td>
+                    <td>v-sidebar-bottom</td>
                     <td>Container element of bottom sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-full</td>
+                    <td>v-sidebar-full</td>
                     <td>Container element of a full screen sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-visible</td>
+                    <td>v-sidebar-visible</td>
                     <td>Container element when sidebar is visible.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-close</td>
+                    <td>v-sidebar-close</td>
                     <td>Close anchor element.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-sm</td>
+                    <td>v-sidebar-sm</td>
                     <td>Small sized sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-md</td>
+                    <td>v-sidebar-md</td>
                     <td>Medium sized sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-lg</td>
+                    <td>v-sidebar-lg</td>
                     <td>Large sized sidebar.</td>
                 </tr>
                 <tr>
-                    <td>p-sidebar-mask</td>
+                    <td>v-sidebar-mask</td>
                     <td>Modal layer of the sidebar.</td>
                 </tr>
             </tbody>

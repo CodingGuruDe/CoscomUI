@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>Divider Pass Through</h1>
+            <h1>Divider Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

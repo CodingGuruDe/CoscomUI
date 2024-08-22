@@ -11,7 +11,7 @@
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by name - ${filterModel.matchMode}`" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" :placeholder="`Search by name - ${filterModel.matchMode}`" />
                 </template>
             </Column>
             <Column header="Country" filterField="country.name" :filterMatchModeOptions="matchModeOptions">
@@ -20,7 +20,7 @@
                     <span>{{ data.country.name }}</span>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" :placeholder="`Search by country - ${filterModel.matchMode}`" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" :placeholder="`Search by country - ${filterModel.matchMode}`" />
                 </template>
             </Column>
         </DataTable>

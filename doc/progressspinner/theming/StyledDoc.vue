@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-progress-spinner</td>
+                    <td>v-progress-spinner</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-progress-circle</td>
+                    <td>v-progress-circle</td>
                     <td>SVG element.</td>
                 </tr>
                 <tr>
-                    <td>p-progress-path</td>
+                    <td>v-progress-path</td>
                     <td>Circle element.</td>
                 </tr>
             </tbody>

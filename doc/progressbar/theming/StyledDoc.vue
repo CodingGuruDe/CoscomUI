@@ -12,23 +12,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-progressbar</td>
+                    <td>v-progressbar</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-progressbar-determinate</td>
+                    <td>v-progressbar-determinate</td>
                     <td>Container element of a determinate progressbar.</td>
                 </tr>
                 <tr>
-                    <td>p-progressbar-indeterminate</td>
+                    <td>v-progressbar-indeterminate</td>
                     <td>Container element of an indeterminate progressbar.</td>
                 </tr>
                 <tr>
-                    <td>p-progressbar-value</td>
+                    <td>v-progressbar-value</td>
                     <td>Element whose width changes according to value.</td>
                 </tr>
                 <tr>
-                    <td>p-progressbar-label</td>
+                    <td>v-progressbar-label</td>
                     <td>Label element that displays the current value.</td>
                 </tr>
             </tbody>

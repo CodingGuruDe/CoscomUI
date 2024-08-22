@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inputswitch</td>
+                    <td>v-inputswitch</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-inputswitch-input</td>
+                    <td>v-inputswitch-input</td>
                     <td>Container of input element.</td>
                 </tr>
                 <tr>
-                    <td>p-inputswitch-slider</td>
+                    <td>v-inputswitch-slider</td>
                     <td>Slider element behind the handle.</td>
                 </tr>
             </tbody>

@@ -12,47 +12,47 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-panelmenu</td>
+                    <td>v-panelmenu</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-panelmenu-panel</td>
+                    <td>v-panelmenu-panel</td>
                     <td>Submenu container.</td>
                 </tr>
                 <tr>
-                    <td>p-toggleable-content</td>
+                    <td>v-toggleable-content</td>
                     <td>Accordion content of root submenu.</td>
                 </tr>
                 <tr>
-                    <td>p-panelmenu-header</td>
+                    <td>v-panelmenu-header</td>
                     <td>Accordion header of root submenu.</td>
                 </tr>
                 <tr>
-                    <td>p-panelmenu-header-content</td>
+                    <td>v-panelmenu-header-content</td>
                     <td>Content of accordion header.</td>
                 </tr>
                 <tr>
-                    <td>p-panelmenu-header-action</td>
+                    <td>v-panelmenu-header-action</td>
                     <td>Action of accordion header.</td>
                 </tr>
                 <tr>
-                    <td>p-submenu-list</td>
+                    <td>v-submenu-list</td>
                     <td>List element.</td>
                 </tr>
                 <tr>
-                    <td>p-menuitem</td>
+                    <td>v-menuitem</td>
                     <td>Menuitem element.</td>
                 </tr>
                 <tr>
-                    <td>p-menuitem-text</td>
+                    <td>v-menuitem-text</td>
                     <td>Label of a menuitem.</td>
                 </tr>
                 <tr>
-                    <td>p-menuitem-icon</td>
+                    <td>v-menuitem-icon</td>
                     <td>Icon of a menuitem.</td>
                 </tr>
                 <tr>
-                    <td>p-submenu-icon</td>
+                    <td>v-submenu-icon</td>
                     <td>Arrow icon of an accordion header.</td>
                 </tr>
             </tbody>

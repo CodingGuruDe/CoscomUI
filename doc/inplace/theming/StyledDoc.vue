@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inplace</td>
+                    <td>v-inplace</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-inplace-display</td>
+                    <td>v-inplace-display</td>
                     <td>Display container</td>
                 </tr>
                 <tr>
-                    <td>p-inplace-content</td>
+                    <td>v-inplace-content</td>
                     <td>Content container</td>
                 </tr>
             </tbody>

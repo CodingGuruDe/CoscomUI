@@ -12,23 +12,23 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-speeddial</td>
+                    <td>v-speeddial</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-speeddial-button</td>
+                    <td>v-speeddial-button</td>
                     <td>Button element of speeddial.</td>
                 </tr>
                 <tr>
-                    <td>p-speeddial-mask</td>
+                    <td>v-speeddial-mask</td>
                     <td>Mask element of speeddial.</td>
                 </tr>
                 <tr>
-                    <td>p-speeddial-list</td>
+                    <td>v-speeddial-list</td>
                     <td>List of the actions.</td>
                 </tr>
                 <tr>
-                    <td>p-speeddial-item</td>
+                    <td>v-speeddial-item</td>
                     <td>Each action item of list.</td>
                 </tr>
             </tbody>

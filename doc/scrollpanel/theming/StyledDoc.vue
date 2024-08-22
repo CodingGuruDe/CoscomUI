@@ -12,27 +12,27 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-scrollpanel</td>
+                    <td>v-scrollpanel</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-scrollpanel-wrapper</td>
+                    <td>v-scrollpanel-wrapper</td>
                     <td>Wrapper of content section.</td>
                 </tr>
                 <tr>
-                    <td>p-scrollpanel-content</td>
+                    <td>v-scrollpanel-content</td>
                     <td>Content section.</td>
                 </tr>
                 <tr>
-                    <td>p-scrollpanel-bar</td>
+                    <td>v-scrollpanel-bar</td>
                     <td>Scrollbar handle.</td>
                 </tr>
                 <tr>
-                    <td>p-scrollpanel-bar-x</td>
+                    <td>v-scrollpanel-bar-x</td>
                     <td>Scrollbar handle of a horizontal bar.</td>
                 </tr>
                 <tr>
-                    <td>p-scrollpanel-bar-y</td>
+                    <td>v-scrollpanel-bar-y</td>
                     <td>Scrollbar handle of a vertical bar</td>
                 </tr>
             </tbody>

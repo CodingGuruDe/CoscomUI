@@ -12,31 +12,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-steps</td>
+                    <td>v-steps</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-steps-list</td>
+                    <td>v-steps-list</td>
                     <td>Root list element.</td>
                 </tr>
                 <tr>
-                    <td>p-steps-current</td>
+                    <td>v-steps-current</td>
                     <td>Current menuitem element.</td>
                 </tr>
                 <tr>
-                    <td>p-menuitem-link</td>
+                    <td>v-menuitem-link</td>
                     <td>Link element of the menuitem.</td>
                 </tr>
                 <tr>
-                    <td>p-steps-item</td>
+                    <td>v-steps-item</td>
                     <td>Menuitem element.</td>
                 </tr>
                 <tr>
-                    <td>p-steps-number</td>
+                    <td>v-steps-number</td>
                     <td>Number of menuitem.</td>
                 </tr>
                 <tr>
-                    <td>p-steps-title</td>
+                    <td>v-steps-title</td>
                     <td>Label of menuitem.</td>
                 </tr>
             </tbody>

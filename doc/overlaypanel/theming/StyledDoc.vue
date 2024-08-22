@@ -13,15 +13,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-overlaypanel</td>
+                    <td>v-overlaypanel</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-overlaypanel-content</td>
+                    <td>v-overlaypanel-content</td>
                     <td>Content of the panel.</td>
                 </tr>
                 <tr>
-                    <td>p-overlaypanel-close</td>
+                    <td>v-overlaypanel-close</td>
                     <td>Close icon.</td>
                 </tr>
             </tbody>

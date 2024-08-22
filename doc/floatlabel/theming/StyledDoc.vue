@@ -11,7 +11,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>p-float-label</td>
+                        <td>v-float-label</td>
                         <td>Float label element.</td>
                     </tr>
                 </tbody>

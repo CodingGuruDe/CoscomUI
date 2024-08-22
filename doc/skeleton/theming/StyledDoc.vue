@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-skeleton</td>
+                    <td>v-skeleton</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-skeleton-circle</td>
+                    <td>v-skeleton-circle</td>
                     <td>Container element of a determinate progressbar.</td>
                 </tr>
                 <tr>
-                    <td>p-skeleton-animation-none</td>
+                    <td>v-skeleton-animation-none</td>
                     <td>Container element of an indeterminate progressbar.</td>
                 </tr>
             </tbody>

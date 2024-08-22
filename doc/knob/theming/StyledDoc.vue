@@ -12,19 +12,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-knob</td>
+                    <td>v-knob</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-knob-text</td>
+                    <td>v-knob-text</td>
                     <td>Text element.</td>
                 </tr>
                 <tr>
-                    <td>p-knob-value</td>
+                    <td>v-knob-value</td>
                     <td>Value element.</td>
                 </tr>
                 <tr>
-                    <td>p-knob-text</td>
+                    <td>v-knob-text</td>
                     <td>Text element.</td>
                 </tr>
             </tbody>

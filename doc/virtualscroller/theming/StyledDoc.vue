@@ -13,15 +13,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-virtualscroller</td>
+                    <td>v-virtualscroller</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-virtualscroller-content</td>
+                    <td>v-virtualscroller-content</td>
                     <td>Content element.</td>
                 </tr>
                 <tr>
-                    <td>p-virtualscroller-loader</td>
+                    <td>v-virtualscroller-loader</td>
                     <td>Loader element.</td>
                 </tr>
             </tbody>

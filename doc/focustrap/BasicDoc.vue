@@ -2,7 +2,7 @@
     <DocSectionText v-bind="$attrs">
         <p>FocusTrap is enabled by attaching the directive with the v- prefix.</p>
     </DocSectionText>
-    <div class="card flex justify-content-center p-fluid">
+    <div class="card flex justify-content-center v-fluid">
         <div v-focustrap class="w-full" style="max-width: 20rem">
             <div class="field">
                 <IconField>

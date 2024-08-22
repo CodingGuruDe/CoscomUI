@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>Stepper Pass Through</h1>
+            <h1>Stepper Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

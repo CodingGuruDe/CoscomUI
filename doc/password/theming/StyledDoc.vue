@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-password-panel</td>
+                    <td>v-password-panel</td>
                     <td>Container of password panel</td>
                 </tr>
                 <tr>
-                    <td>p-password-meter</td>
+                    <td>v-password-meter</td>
                     <td>Meter element of password strength</td>
                 </tr>
                 <tr>
-                    <td>p-password-info</td>
+                    <td>v-password-info</td>
                     <td>Text to display strength</td>
                 </tr>
             </tbody>

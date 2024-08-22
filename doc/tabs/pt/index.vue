@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>Tab Pass Through</h1>
+            <h1>Tab Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

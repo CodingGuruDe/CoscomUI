@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>TreeSelect Pass Through</h1>
+            <h1>TreeSelect Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>Textarea Pass Through</h1>
+            <h1>Textarea Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

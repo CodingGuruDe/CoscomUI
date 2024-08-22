@@ -12,11 +12,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-slider</td>
+                    <td>v-slider</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-slider-handle</td>
+                    <td>v-slider-handle</td>
                     <td>Handle element.</td>
                 </tr>
             </tbody>

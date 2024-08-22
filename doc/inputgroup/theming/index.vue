@@ -11,7 +11,6 @@
 <script>
 import InputGroupAddonStyleDoc from './InputGroupAddonStyleDoc.vue';
 import InputGroupStyleDoc from './InputGroupStyleDoc.vue';
-import TailwindDoc from './TailwindDoc.vue';
 
 export default {
     data() {
@@ -30,18 +29,6 @@ export default {
                             id: 'theming.inputgroupaddon',
                             label: 'InputGroupAddon',
                             component: InputGroupAddonStyleDoc
-                        }
-                    ]
-                },
-                {
-                    id: 'theming.unstyled',
-                    label: 'Unstyled',
-                    description: 'Theming is implemented with the pass through properties in unstyled mode.',
-                    children: [
-                        {
-                            id: 'theming.tailwind',
-                            label: 'Tailwind',
-                            component: TailwindDoc
                         }
                     ]
                 }

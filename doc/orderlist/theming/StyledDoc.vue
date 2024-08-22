@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-orderlist</td>
+                    <td>v-orderlist</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-orderlist-list</td>
+                    <td>v-orderlist-list</td>
                     <td>List container.</td>
                 </tr>
                 <tr>
-                    <td>p-orderlist-item</td>
+                    <td>v-orderlist-item</td>
                     <td>An item in the list</td>
                 </tr>
             </tbody>

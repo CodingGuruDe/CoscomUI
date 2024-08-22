@@ -12,27 +12,27 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-treeselect</td>
+                    <td>v-treeselect</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-treeselect-label-container</td>
+                    <td>v-treeselect-label-container</td>
                     <td>Container of the label to display selected items.</td>
                 </tr>
                 <tr>
-                    <td>p-treeselect-label</td>
+                    <td>v-treeselect-label</td>
                     <td>Label to display selected items.</td>
                 </tr>
                 <tr>
-                    <td>p-treeselect-trigger</td>
+                    <td>v-treeselect-trigger</td>
                     <td>Dropdown button.</td>
                 </tr>
                 <tr>
-                    <td>p-treeselect-panel</td>
+                    <td>v-treeselect-panel</td>
                     <td>Overlay panel for items.</td>
                 </tr>
                 <tr>
-                    <td>p-treeselect-items-wrapper</td>
+                    <td>v-treeselect-items-wrapper</td>
                     <td>List container of items.</td>
                 </tr>
             </tbody>

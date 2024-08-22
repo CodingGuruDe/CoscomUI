@@ -12,7 +12,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-confirm-dialog</td>
+                    <td>v-confirm-dialog</td>
                     <td>Container element.</td>
                 </tr>
             </tbody>

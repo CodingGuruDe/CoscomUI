@@ -12,7 +12,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inputgroup</td>
+                    <td>v-inputgroup</td>
                     <td>Input group element</td>
                 </tr>
             </tbody>

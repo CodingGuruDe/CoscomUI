@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-ripple</td>
+                    <td>v-ripple</td>
                     <td>Host element.</td>
                 </tr>
                 <tr>
-                    <td>p-ink</td>
+                    <td>v-ink</td>
                     <td>Ripple element.</td>
                 </tr>
                 <tr>
-                    <td>p-ink-active</td>
+                    <td>v-ink-active</td>
                     <td>Ripple element during animating.</td>
                 </tr>
             </tbody>

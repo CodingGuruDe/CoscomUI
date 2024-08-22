@@ -11,19 +11,19 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>p-fieldset</td>
+                        <td>v-fieldset</td>
                         <td>Fieldset element.</td>
                     </tr>
                     <tr>
-                        <td>p-fieldset-toggleable</td>
+                        <td>v-fieldset-toggleable</td>
                         <td>Toggleable fieldset element.</td>
                     </tr>
                     <tr>
-                        <td>p-fieldset-legend</td>
+                        <td>v-fieldset-legend</td>
                         <td>Legend element.</td>
                     </tr>
                     <tr>
-                        <td>p-fieldset-content</td>
+                        <td>v-fieldset-content</td>
                         <td>Content element.</td>
                     </tr>
                 </tbody>

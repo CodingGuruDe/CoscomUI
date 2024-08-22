@@ -12,39 +12,39 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-inputnumber</td>
+                    <td>v-inputnumber</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-stacked</td>
+                    <td>v-inputnumber-stacked</td>
                     <td>Container element with stacked buttons.</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-horizontal</td>
+                    <td>v-inputnumber-horizontal</td>
                     <td>Container element with horizontal buttons.</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-vertical</td>
+                    <td>v-inputnumber-vertical</td>
                     <td>Container element with vertical buttons.</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-input</td>
+                    <td>v-inputnumber-input</td>
                     <td>Input element</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-button</td>
+                    <td>v-inputnumber-button</td>
                     <td>Input element</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-button-up</td>
+                    <td>v-inputnumber-button-up</td>
                     <td>Increment button</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-button-down</td>
+                    <td>v-inputnumber-button-down</td>
                     <td>Decrement button</td>
                 </tr>
                 <tr>
-                    <td>p-inputnumber-button-icon</td>
+                    <td>v-inputnumber-button-icon</td>
                     <td>Button icon</td>
                 </tr>
             </tbody>

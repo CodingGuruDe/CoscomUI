@@ -21,7 +21,7 @@ FilterService.filters.startsWith(value, 'Vue');                        //false
 FilterService.filters.endsWith(value, 'Vue');                          //true
 FilterService.filters.lt(10, 20);                                      //true
 FilterService.filters.gt(50, 20);                                      //true
-FilterService.filters.in(value, ['PrimeFaces', 'CoscomUI']);           //true   `
+FilterService.filters.in(value, ['CoscomUI', 'CoscomUI']);           //true   `
             }
         };
     }

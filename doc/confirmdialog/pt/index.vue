@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>ConfirmDialog Pass Through</h1>
+            <h1>ConfirmDialog Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>

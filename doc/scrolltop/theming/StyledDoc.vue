@@ -12,11 +12,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-scrolltop</td>
+                    <td>v-scrolltop</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-scrolltop-sticky</td>
+                    <td>v-scrolltop-sticky</td>
                     <td>Container element when attached to its parent.</td>
                 </tr>
             </tbody>

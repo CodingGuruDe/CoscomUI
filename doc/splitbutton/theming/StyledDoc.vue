@@ -12,19 +12,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-splitbutton</td>
+                    <td>v-splitbutton</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-splitbutton-defaultbutton</td>
+                    <td>v-splitbutton-defaultbutton</td>
                     <td>Default button.</td>
                 </tr>
                 <tr>
-                    <td>p-splitbutton-menubutton</td>
+                    <td>v-splitbutton-menubutton</td>
                     <td>Dropdown button.</td>
                 </tr>
                 <tr>
-                    <td>p-tieredmenu</td>
+                    <td>v-tieredmenu</td>
                     <td>Overlay menu.</td>
                 </tr>
             </tbody>

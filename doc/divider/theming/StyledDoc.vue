@@ -12,47 +12,47 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-divider</td>
+                    <td>v-divider</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-horizontal</td>
+                    <td>v-divider-horizontal</td>
                     <td>Container element in horizontal layout.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-vertical</td>
+                    <td>v-divider-vertical</td>
                     <td>Container element in vertical layout.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-solid</td>
+                    <td>v-divider-solid</td>
                     <td>Container element with solid border.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-dashed</td>
+                    <td>v-divider-dashed</td>
                     <td>Container element with dashed border.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-dotted</td>
+                    <td>v-divider-dotted</td>
                     <td>Container element with dotted border.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-left</td>
+                    <td>v-divider-left</td>
                     <td>Container element with content aligned to left.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-right</td>
+                    <td>v-divider-right</td>
                     <td>Container element with content aligned to right.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-center</td>
+                    <td>v-divider-center</td>
                     <td>Container element with content aligned to center.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-bottom</td>
+                    <td>v-divider-bottom</td>
                     <td>Container element with content aligned to bottom.</td>
                 </tr>
                 <tr>
-                    <td>p-divider-top</td>
+                    <td>v-divider-top</td>
                     <td>Container element with content aligned to top.</td>
                 </tr>
             </tbody>

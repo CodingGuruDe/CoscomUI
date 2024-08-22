@@ -12,15 +12,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-radiobutton</td>
+                    <td>v-radiobutton</td>
                     <td>Container element</td>
                 </tr>
                 <tr>
-                    <td>p-radiobutton-box</td>
+                    <td>v-radiobutton-box</td>
                     <td>Container of icon.</td>
                 </tr>
                 <tr>
-                    <td>p-radiobutton-icon</td>
+                    <td>v-radiobutton-icon</td>
                     <td>Icon element.</td>
                 </tr>
             </tbody>

@@ -13,31 +13,31 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>p-dataview</td>
+                    <td>v-dataview</td>
                     <td>Container element.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-list</td>
+                    <td>v-dataview-list</td>
                     <td>Container element in list layout.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-grid</td>
+                    <td>v-dataview-grid</td>
                     <td>Container element in grid layout.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-header</td>
+                    <td>v-dataview-header</td>
                     <td>Header section.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-footer</td>
+                    <td>v-dataview-footer</td>
                     <td>Footer section.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-content</td>
+                    <td>v-dataview-content</td>
                     <td>Container of items.</td>
                 </tr>
                 <tr>
-                    <td>p-dataview-emptymessage</td>
+                    <td>v-dataview-emptymessage</td>
                     <td>Empty message element.</td>
                 </tr>
             </tbody>
