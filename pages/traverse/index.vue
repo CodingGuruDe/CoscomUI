@@ -1,13 +1,13 @@
 <template>
     <Head>
-        <Title>CoscomUI - Pass Through</Title>
-        <Meta name="description" content="The Pass Through props is an API to access the internal DOM Structure of the components." />
+        <Title>CoscomUI - Traverse</Title>
+        <Meta name="description" content="The Traverse props is an API to access the internal DOM Structure of the components." />
     </Head>
     <div class="doc">
         <div class="doc-main">
             <div class="doc-intro">
-                <h1>Pass Through</h1>
-                <p>The Pass Through props is an API to access the internal DOM Structure of the components.</p>
+                <h1>Traverse</h1>
+                <p>The Traverse props is an API to access the internal DOM Structure of the components.</p>
             </div>
             <DocSections :docs="docs" />
         </div>
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import BasicDoc from '@/doc/passthrough/BasicDoc.vue';
-import CustomCSSDoc from '@/doc/passthrough/CustomCSSDoc.vue';
-import DeclarativeDoc from '@/doc/passthrough/DeclarativeDoc.vue';
-import GlobalDoc from '@/doc/passthrough/GlobalDoc.vue';
-import LifecycleDoc from '@/doc/passthrough/LifecycleDoc.vue';
-import UsePassThroughDoc from '@/doc/passthrough/UsePassThroughDoc.vue';
+import BasicDoc from '@/doc/traverse/BasicDoc.vue';
+import CustomCSSDoc from '@/doc/traverse/CustomCSSDoc.vue';
+import DeclarativeDoc from '@/doc/traverse/DeclarativeDoc.vue';
+import GlobalDoc from '@/doc/traverse/GlobalDoc.vue';
+import LifecycleDoc from '@/doc/traverse/LifecycleDoc.vue';
+import UseTraverseDoc from '@/doc/traverse/UseTraverseDoc.vue';
 
 export default {
     data() {
@@ -54,8 +54,8 @@ export default {
                 },
                 {
                     id: 'usepassthrough',
-                    label: 'UsePassThrough',
-                    component: UsePassThroughDoc
+                    label: 'UseTraverse',
+                    component: UseTraverseDoc
                 }
             ]
         };

@@ -320,10 +320,6 @@
                             "to": "/carousel"
                         },
                         {
-                            "name": "Galleria",
-                            "to": "/galleria"
-                        },
-                        {
                             "name": "Image",
                             "to": "/image"
                         }

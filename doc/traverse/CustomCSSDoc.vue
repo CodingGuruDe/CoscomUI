@@ -27,7 +27,7 @@ app.use(CoscomUI, {
                     padding: 2rem;
                 }
 
-                .p-ink {
+                .v-ink {
                     display: block;
                     position: absolute;
                     background: rgba(255, 255, 255, 0.5);
@@ -36,7 +36,7 @@ app.use(CoscomUI, {
                     pointer-events: none;
                 }
 
-                .p-ink-active {
+                .v-ink-active {
                     animation: ripple 0.4s linear;
                 }
 

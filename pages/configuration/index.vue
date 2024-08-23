@@ -36,12 +36,12 @@ export default {
                 },
                 {
                     id: 'pt',
-                    label: 'Pass Through',
+                    label: 'Traverse',
                     component: PTDoc
                 },
                 {
                     id: 'ptoptions',
-                    label: 'Pass Through Options',
+                    label: 'Traverse Options',
                     component: PTOptionsDoc
                 },
                 {
