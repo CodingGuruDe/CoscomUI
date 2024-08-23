@@ -47,6 +47,13 @@
                             </p>
                         </div>
                     </div>
+                    <div class="w-full md:w-2">
+                        <Divider layout="vertical" class="hidden md:flex"><b>OR</b></Divider>
+                        <Divider layout="horizontal" class="flex md:hidden" align="center"><b>OR</b></Divider>
+                    </div>
+                    <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+                        <Button label="Sign Up" icon="cs el-user-plus" severity="success" class="w-10rem"></Button>
+                    </div>
                 </div>
             </template>
         </Card>
@@ -67,47 +74,54 @@ export default {
     <template #title>Login Card</template>
     <template #content>
         <div class="card flex justify-content-left">
-                    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-                        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                            <form>
-                                <div class="flex flex-column gap-2">
-                                    <label for="username">Username</label>
-                                    <InputText v-model="username" aria-describedby="username-help" />
-                                    <small id="username-help">Enter your username.</small>
-                                </div>
-
-                                <div class="mt-4 flex flex-column gap-2">
-                                    <label for="username">Password</label>
-                                    <Password v-model="password">
-                                        <template #header>
-                                            <h6>Pick a password</h6>
-                                        </template>
-                                        <template #footer>
-                                            <Divider />
-                                            <p class="mt-2">Requirements</p>
-                                            <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
-                                                <li>At least one lowercase</li>
-                                                <li>At least one uppercase</li>
-                                                <li>At least one numeric</li>
-                                                <li>Minimum 8 characters</li>
-                                            </ul>
-                                        </template>
-                                    </Password>
-                                    <small id="username-help">Enter your password.</small>
-                                </div>
-
-                                <div class="mt-2">
-                                    <Button type="button" :label="loading ? 'Checking...' : 'Sign in'" iconPos="right" :loading="loading" @click="startloading" />
-                                </div>
-                            </form>
-
-                            <p class="mt-2 text-center text-sm text-gray-500">
-                                Not a member?
-                                <a href="#" class="font-semibold leading-6 text-blue-400 hover:text-blue-600">Contact your local Administrator</a>
-                            </p>
+            <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+                <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+                    <form>
+                        <div class="flex flex-column gap-2">
+                            <label for="username">Username</label>
+                            <InputText v-model="username" aria-describedby="username-help" />
+                            <small id="username-help">Enter your username.</small>
                         </div>
-                    </div>
+
+                        <div class="mt-4 flex flex-column gap-2">
+                            <label for="username">Password</label>
+                            <Password v-model="password">
+                                <template #header>
+                                    <h6>Pick a password</h6>
+                                </template>
+                                <template #footer>
+                                    <Divider />
+                                    <p class="mt-2">Requirements</p>
+                                    <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                                        <li>At least one lowercase</li>
+                                        <li>At least one uppercase</li>
+                                        <li>At least one numeric</li>
+                                        <li>Minimum 8 characters</li>
+                                    </ul>
+                                </template>
+                            </Password>
+                            <small id="username-help">Enter your password.</small>
+                        </div>
+
+                        <div class="mt-2">
+                            <Button type="button" :label="loading ? 'Checking...' : 'Sign in'" iconPos="right" :loading="loading" @click="startloading" />
+                        </div>
+                    </form>
+
+                    <p class="mt-2 text-center text-sm text-gray-500">
+                        Not a member?
+                        <a href="#" class="font-semibold leading-6 text-blue-400 hover:text-blue-600">Contact your local Administrator</a>
+                    </p>
                 </div>
+            </div>
+            <div class="w-full md:w-2">
+                <Divider layout="vertical" class="hidden md:flex"><b>OR</b></Divider>
+                <Divider layout="horizontal" class="flex md:hidden" align="center"><b>OR</b></Divider>
+            </div>
+            <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+                <Button label="Sign Up" icon="cs el-user-plus" severity="success" class="w-10rem"></Button>
+            </div>
+        </div>
     </template>
 </Card>
 `,
@@ -156,6 +170,13 @@ export default {
                                 <a href="#" class="font-semibold leading-6 text-blue-400 hover:text-blue-600">Contact your local Administrator</a>
                             </p>
                         </div>
+                    </div>
+                    <div class="w-full md:w-2">
+                        <Divider layout="vertical" class="hidden md:flex"><b>OR</b></Divider>
+                        <Divider layout="horizontal" class="flex md:hidden" align="center"><b>OR</b></Divider>
+                    </div>
+                    <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+                        <Button label="Sign Up" icon="cs el-user-plus" severity="success" class="w-10rem"></Button>
                     </div>
                 </div>
         </template>
@@ -219,6 +240,13 @@ export default {
                                 <a href="#" class="font-semibold leading-6 text-blue-400 hover:text-blue-600">Contact your local Administrator</a>
                             </p>
                         </div>
+                    </div>
+                    <div class="w-full md:w-2">
+                        <Divider layout="vertical" class="hidden md:flex"><b>OR</b></Divider>
+                        <Divider layout="horizontal" class="flex md:hidden" align="center"><b>OR</b></Divider>
+                    </div>
+                    <div class="w-full md:w-5 flex align-items-center justify-content-center py-5">
+                        <Button label="Sign Up" icon="cs el-user-plus" severity="success" class="w-10rem"></Button>
                     </div>
                 </div>
         </template>

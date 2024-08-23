@@ -39,7 +39,7 @@ const menu = ['Breadcrumb', 'ContextMenu', 'Menu', 'Menubar', 'MegaMenu', 'Panel
 
 const messages = ['Message', { name: 'Toast', use: { as: 'ToastService' } }];
 
-const media = ['Carousel', 'Galleria', 'Image'];
+const media = ['Carousel', 'Image'];
 
 const misc = ['Badge', 'Chip', 'Inplace', 'ScrollTop', 'Skeleton', 'ProgressBar', 'ProgressSpinner'];
 

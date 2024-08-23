@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import ExampleDoc from '@/doc/autoimport/ExampleDoc.vue';
 import OverviewDoc from '@/doc/autoimport/OverviewDoc.vue';
 import UnpluginDoc from '@/doc/autoimport/UnpluginDoc.vue';
 
@@ -33,11 +32,6 @@ export default {
                     id: 'unplugin',
                     label: 'Unplugin',
                     component: UnpluginDoc
-                },
-                {
-                    id: 'example',
-                    label: 'Example',
-                    component: ExampleDoc
                 }
             ]
         };

@@ -407,8 +407,8 @@
             ]
         },
         {
-            "name": "Pass Through",
-            "to": "/passthrough"
+            "name": "Traverse",
+            "to": "/traverse"
         },
         {
             "name": "Icons",

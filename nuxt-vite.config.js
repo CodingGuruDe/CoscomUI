@@ -40,7 +40,6 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/floatlabel/style': path.resolve(__dirname, './components/lib/floatlabel/style/FloatLabelStyle.js'),
     '@coscom/coscom-ui/fileupload/style': path.resolve(__dirname, './components/lib/fileupload/style/FileUploadStyle.js'),
     '@coscom/coscom-ui/focustrap/style': path.resolve(__dirname, './components/lib/focustrap/style/FocusTrapStyle.js'),
-    '@coscom/coscom-ui/galleria/style': path.resolve(__dirname, './components/lib/galleria/style/GalleriaStyle.js'),
     '@coscom/coscom-ui/image/style': path.resolve(__dirname, './components/lib/image/style/ImageStyle.js'),
     '@coscom/coscom-ui/inplace/style': path.resolve(__dirname, './components/lib/inplace/style/InplaceStyle.js'),
     '@coscom/coscom-ui/inputgroup/style': path.resolve(__dirname, './components/lib/inputgroup/style/InputGroupStyle.js'),

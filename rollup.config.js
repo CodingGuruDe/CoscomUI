@@ -105,7 +105,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/fieldset/style': 'coscom.fieldset.style',
     'coscom/fileupload/style': 'coscom.fileupload.style',
     'coscom/focustrap/style': 'coscom.focustrap.style',
-    'coscom/galleria/style': 'coscom.galleria.style',
     'coscom/image/style': 'coscom.image.style',
     'coscom/inplace/style': 'coscom.inplace.style',
     'coscom/inputgroup/style': 'coscom.inputgroup.style',
