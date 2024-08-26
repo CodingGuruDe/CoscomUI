@@ -35,8 +35,8 @@
             }"
         >
             <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Das COSCOM ECO-System ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie! Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze
+                in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.
             </p>
         </Panel>
     </div>
@@ -69,8 +69,8 @@ export default {
         toggler: () => 'bg-primary hover:bg-primary-reverse'  // OR { class: 'bg-primary hover:bg-primary-reverse' }
     }">
     <p class="m-0">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Das COSCOM ECO-System ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie! Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze
+        in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.
     </p>
 </Panel>
 `,
@@ -97,8 +97,8 @@ export default {
                 toggler: () => 'bg-primary hover:bg-primary-reverse'  // OR { class: 'bg-primary hover:bg-primary-reverse' }
             }">
             <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Das COSCOM ECO-System ist ein modulares Applikationssystem, basierend auf einer zentralen Datenplattform. Wo Sie einsteigen, bestimmen Sie! Wir analysieren die Ist-Situation Ihrer Fertigungsprozesse, identifizieren Optimierungsansätze
+                in Digitalisierungsvorhaben über das Prozess-Consulting und erstellen einen erfolgreichen Umsetzungsplan für die Datenvernetzung und die Beschaffungs- und Logistikprozesse in der Planung und Fertigung der CNC-Zerspanung.
             </p>
         </Panel>
     </div>
