@@ -23,12 +23,10 @@
                 tableStyle="min-width: 50rem"
             >
                 <template #header>
-                    <IconField iconPosition="left">
-                        <InputIcon>
-                            <i class="cs el-search" />
-                        </InputIcon>
-                        <InputText v-model="filters['global'].value" placeholder="Global Search" />
-                    </IconField>
+                    <InputIcon>
+                        <i class="cs el-search" />
+                    </InputIcon>
+                    <InputText v-model="filters['global'].value" placeholder="Global Search" />
                 </template>
                 <Column field="name" header="Name" sortable style="width: 25%">
                     <template #filter="{ filterModel }">
@@ -66,12 +64,12 @@
                 </Column>
                 <Column field="status" header="Status" sortable filterMatchMode="equals" style="width: 25%">
                     <template #body="{ data }">
-                        <Tag :value="data.status" :severity="getSeverity(data.status)" />
+                        {{ data.status }}
                     </template>
                     <template #filter="{ filterModel }">
                         <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
                             <template #option="slotProps">
-                                <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
+                                {{ slotProps.option }}
                             </template>
                         </Dropdown>
                     </template>

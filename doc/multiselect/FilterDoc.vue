@@ -17,11 +17,11 @@ export default {
         return {
             selectedCities: null,
             cities: [
-                { name: 'New York', code: 'NY' },
-                { name: 'Rome', code: 'RM' },
-                { name: 'London', code: 'LDN' },
-                { name: 'Istanbul', code: 'IST' },
-                { name: 'Paris', code: 'PRS' }
+                { name: 'Wasserburg am Inn', code: 'WS' },
+                { name: 'Ebersberg', code: 'EBE' },
+                { name: 'Munich', code: 'M' },
+                { name: 'Zagreb', code: 'ZG' },
+                { name: 'Zadar', code: 'ZD' }
             ],
             code: {
                 basic: `
@@ -42,11 +42,11 @@ export default {
         return {
             selectedCities: null,
             cities: [
-                { name: 'New York', code: 'NY' },
-                { name: 'Rome', code: 'RM' },
-                { name: 'London', code: 'LDN' },
-                { name: 'Istanbul', code: 'IST' },
-                { name: 'Paris', code: 'PRS' }
+                { name: 'Wasserburg am Inn', code: 'WS' },
+                { name: 'Ebersberg', code: 'EBE' },
+                { name: 'Munich', code: 'M' },
+                { name: 'Zagreb', code: 'ZG' },
+                { name: 'Zadar', code: 'ZD' }
             ]
         };
     }
@@ -66,11 +66,11 @@ import { ref } from "vue";
 
 const selectedCities = ref();
 const cities = ref([
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' }
+    { name: 'Wasserburg am Inn', code: 'WS' },
+    { name: 'Ebersberg', code: 'EBE' },
+    { name: 'Munich', code: 'M' },
+    { name: 'Zagreb', code: 'ZG' },
+    { name: 'Zadar', code: 'ZD' }
 ]);
 <\/script>
 `

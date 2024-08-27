@@ -22,7 +22,7 @@ export default {
                 { name: 'Accounting', key: 'A' },
                 { name: 'Marketing', key: 'M' },
                 { name: 'Production', key: 'P' },
-                { name: 'Research', key: 'R' }
+                { name: 'Development', key: 'D' }
             ],
             code: {
                 basic: `

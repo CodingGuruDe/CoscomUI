@@ -17,12 +17,11 @@
                 <template #header>
                     <div class="flex justify-content-between">
                         <Button type="button" icon="cs el-filter-slash" label="Clear" outlined @click="clearFilter()" />
-                        <IconField iconPosition="left">
-                            <InputIcon>
-                                <i class="cs el-search" />
-                            </InputIcon>
-                            <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
-                        </IconField>
+
+                        <InputIcon>
+                            <i class="cs el-search" />
+                        </InputIcon>
+                        <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
                     </div>
                 </template>
                 <template #empty> No customers found. </template>
@@ -82,12 +81,12 @@
                 </Column>
                 <Column header="Status" sortable field="status" :filterMenuStyle="{ width: '14rem' }" style="min-width: 12rem">
                     <template #body="{ data }">
-                        <Tag :value="data.status" :severity="getSeverity(data.status)" />
+                        {{ data.status }}
                     </template>
                     <template #filter="{ filterModel }">
                         <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
                             <template #option="slotProps">
-                                <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
+                                {{ slotProps.option }}
                             </template>
                         </Dropdown>
                     </template>

@@ -4,145 +4,130 @@
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
         <div class="card">
-            <DataTable :value="products" tableStyle="min-width: 50rem">
+            <DataTable :value="orders" tableStyle="min-width: 50rem">
                 <template #header>
                     <div class="flex flex-wrap align-items-center justify-content-between gap-2">
-                        <span class="text-xl text-900 font-bold">Products</span>
+                        <span class="text-xl text-900 font-bold">Orders</span>
                         <Button icon="cs el-refresh" rounded raised />
                     </div>
                 </template>
-                <Column field="name" header="Name"></Column>
-                <Column header="Image">
-                    <template #body="slotProps">
-                        <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="w-6rem border-round" />
-                    </template>
-                </Column>
-                <Column field="price" header="Price">
-                    <template #body="slotProps">
-                        {{ formatCurrency(slotProps.data.price) }}
-                    </template>
-                </Column>
-                <Column field="category" header="Category"></Column>
-                <Column field="rating" header="Reviews">
-                    <template #body="slotProps">
-                        <Rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
-                    </template>
-                </Column>
+                <Column field="ProductOrderID" header="ProductOrderID"></Column>
                 <Column header="Status">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
+                        <img :src="`../../../images/status/status-${slotProps.data.ToolCirculationOrderStatus.StatusID}.png`" :alt="slotProps.data.StatusID" class="w-6rem" />
                     </template>
                 </Column>
-                <template #footer> In total there are {{ products ? products.length : 0 }} products. </template>
+                <Column field="PlantID" header="PlantID"></Column>
+                <Column field="MachineID" header="MachineID"></Column>
+                <Column header="Quantity">
+                    <template #body="slotProps">
+                        <Button :label="slotProps.data.ToolCirculationOrderStatus.StatusDescription" :type="getType(slotProps.data)" />
+                    </template>
+                </Column>
+                <template #footer> In total there are {{ orders ? orders.length : 0 }} orders. </template>
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['OrderService']" hideCodeSandbox />
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 export default {
     data() {
         return {
-            products: null,
+            orders: null,
             code: {
                 basic: `
-<DataTable :value="products" tableStyle="min-width: 50rem">
+<DataTable :value="orders" tableStyle="min-width: 50rem">
     <template #header>
         <div class="flex flex-wrap align-items-center justify-content-between gap-2">
             <span class="text-xl text-900 font-bold">Products</span>
             <Button icon="cs el-refresh" rounded raised />
         </div>
     </template>
-    <Column field="name" header="Name"></Column>
-    <Column header="Image">
-        <template #body="slotProps">
-            <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="w-6rem border-round" />
-        </template>
-    </Column>
-    <Column field="price" header="Price">
-        <template #body="slotProps">
-            {{ formatCurrency(slotProps.data.price) }}
-        </template>
-    </Column>
-    <Column field="category" header="Category"></Column>
-    <Column field="rating" header="Reviews">
-        <template #body="slotProps">
-            <Rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
-        </template>
-    </Column>
+    <Column field="ProductOrderID" header="ProductOrderID"></Column>
     <Column header="Status">
         <template #body="slotProps">
-            <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
+            <img :src="\`../../../images/status/\${slotProps.data.ToolCirculationOrderStatus.StatusID}.png\`" :alt="slotProps.data.StatusID" class="w-6rem" />
         </template>
     </Column>
-    <template #footer> In total there are {{ products ? products.length : 0 }} products. </template>
+    <Column field="PlantID" header="PlantID"></Column>
+    <Column field="MachineID" header="MachineID"></Column>
+    <Column header="Quantity">
+        <template #body="slotProps">
+            <Button :label="slotProps.data.ToolCirculationOrderStatus.StatusDescription" :type="getType(slotProps.data)" />
+        </template>
+    </Column>
+    <template #footer> In total there are {{ orders ? orders.length : 0 }} orders. </template>
 </DataTable>
 `,
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="orders" tableStyle="min-width: 50rem">
             <template #header>
                 <div class="flex flex-wrap align-items-center justify-content-between gap-2">
                     <span class="text-xl text-900 font-bold">Products</span>
                     <Button icon="cs el-refresh" rounded raised />
                 </div>
             </template>
-            <Column field="name" header="Name"></Column>
-            <Column header="Image">
-                <template #body="slotProps">
-                    <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="w-6rem border-round" />
-                </template>
-            </Column>
-            <Column field="price" header="Price">
-                <template #body="slotProps">
-                    {{ formatCurrency(slotProps.data.price) }}
-                </template>
-            </Column>
-            <Column field="category" header="Category"></Column>
-            <Column field="rating" header="Reviews">
-                <template #body="slotProps">
-                    <Rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
-                </template>
-            </Column>
+            <Column field="ProductOrderID" header="ProductOrderID"></Column>
             <Column header="Status">
                 <template #body="slotProps">
-                    <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
+                    <img :src="\`../../../images/status/\${slotProps.data.ToolCirculationOrderStatus.StatusID}.png\`" :alt="slotProps.data.StatusID" class="w-6rem" />
                 </template>
             </Column>
-            <template #footer> In total there are {{ products ? products.length : 0 }} products. </template>
+            <Column field="PlantID" header="PlantID"></Column>
+            <Column field="MachineID" header="MachineID"></Column>
+            <Column header="Quantity">
+                <template #body="slotProps">
+                    <Button :label="slotProps.data.ToolCirculationOrderStatus.StatusDescription" :type="getType(slotProps.data)" />
+                </template>
+            </Column>
+            <template #footer> In total there are {{ orders ? orders.length : 0 }} orders. </template>
         </DataTable>
     </div>
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 export default {
     data() {
         return {
-            products: null
+            orders: null
         };
     },
     mounted() {
-        ProductService.getProductsMini().then((data) => (this.products = data));
+        OrderService.getOrders().then((data) => (this.orders = data));
     },
     methods: {
-        formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        },
-        getSeverity(product) {
-            switch (product.inventoryStatus) {
-                case 'INSTOCK':
-                    return 'success';
-
-                case 'LOWSTOCK':
+        getType(order) {
+            switch (order.StatusID) {
+                case 1:
                     return 'warning';
 
-                case 'OUTOFSTOCK':
+                case 2:
+                    return 'info';
+
+                case 3:
+                    return 'secondary';
+
+                case 4:
+                    return 'success';
+
+                case 5:
+                    return 'primary';
+
+                case 6:
+                    return 'info';
+
+                case 7:
+                    return 'success';
+
+                case 8:
                     return 'danger';
 
                 default:
@@ -156,65 +141,69 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="orders" tableStyle="min-width: 50rem">
             <template #header>
                 <div class="flex flex-wrap align-items-center justify-content-between gap-2">
                     <span class="text-xl text-900 font-bold">Products</span>
                     <Button icon="cs el-refresh" rounded raised />
                 </div>
             </template>
-            <Column field="name" header="Name"></Column>
-            <Column header="Image">
-                <template #body="slotProps">
-                    <img :src="\`@/assets/images/product/\${slotProps.data.image}\`" :alt="slotProps.data.image" class="w-6rem border-round" />
-                </template>
-            </Column>
-            <Column field="price" header="Price">
-                <template #body="slotProps">
-                    {{ formatCurrency(slotProps.data.price) }}
-                </template>
-            </Column>
-            <Column field="category" header="Category"></Column>
-            <Column field="rating" header="Reviews">
-                <template #body="slotProps">
-                    <Rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
-                </template>
-            </Column>
+            <Column field="ProductOrderID" header="ProductOrderID"></Column>
             <Column header="Status">
                 <template #body="slotProps">
-                    <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
+                    <img :src="\`../../../images/status/\${slotProps.data.ToolCirculationOrderStatus.StatusID}.png\`" :alt="slotProps.data.StatusID" class="w-6rem" />
                 </template>
             </Column>
-            <template #footer> In total there are {{ products ? products.length : 0 }} products. </template>
+            <Column field="PlantID" header="PlantID"></Column>
+            <Column field="MachineID" header="MachineID"></Column>
+            <Column header="Quantity">
+                <template #body="slotProps">
+                    <Button :label="slotProps.data.ToolCirculationOrderStatus.StatusDescription" :type="getType(slotProps.data)" />
+                </template>
+            </Column>
+            <template #footer> In total there are {{ orders ? orders.length : 0 }} orders. </template>
         </DataTable>
     </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 onMounted(() => {
-    ProductService.getProductsMini().then((data) => (products.value = data));
+    OrderService.getOrders().then((data) => (orders.value = data));
 });
 
-const products = ref();
-const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-};
-const getSeverity = (product) => {
-    switch (product.inventoryStatus) {
-        case 'INSTOCK':
-            return 'success';
+const orders = ref();
+const getType = (order) => {
+    switch (order.StatusID) {
+            case 1:
+                return 'warning';
 
-        case 'LOWSTOCK':
-            return 'warning';
+            case 2:
+                return 'info';
 
-        case 'OUTOFSTOCK':
-            return 'danger';
+            case 3:
+                return 'secondary';
 
-        default:
-            return null;
+            case 4:
+                return 'success';
+
+            case 5:
+                return 'primary';
+
+            case 6:
+                return 'info';
+
+            case 7:
+                return 'success';
+
+            case 8:
+                return 'danger';
+
+            default:
+                return null;
+        }
     }
 };
 
@@ -222,16 +211,11 @@ const getSeverity = (product) => {
 `,
                 data: `
 {
-    id: '1000',
-    code: 'f230fh0g3',
-    name: 'Bamboo Watch',
-    description: 'Product Description',
-    image: 'bamboo-watch.jpg',
-    price: 65,
-    category: 'Accessories',
-    quantity: 24,
-    inventoryStatus: 'INSTOCK',
-    rating: 5
+    ProductOrderID: 'COS_EBE_DMC125FD_08092_01',
+    PlantID: 'COS',
+    MachineID: 'DMC125FD_08092_02',
+    ToolCirculationOrderType.Description: 'Voreinstellauftrag',
+    ToolCirculationOrderStatus.StatusDescription: 'Auf Verfügbarkeit geprüft',
 },
 ...
         `
@@ -240,20 +224,32 @@ const getSeverity = (product) => {
     },
     methods: {
         loadDemoData() {
-            ProductService.getProductsMini().then((data) => (this.products = data));
+            OrderService.getOrders().then((data) => (this.orders = data));
         },
-        formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        },
-        getSeverity(product) {
-            switch (product.inventoryStatus) {
-                case 'INSTOCK':
-                    return 'success';
-
-                case 'LOWSTOCK':
+        getType(order) {
+            switch (order.StatusID) {
+                case 1:
                     return 'warning';
 
-                case 'OUTOFSTOCK':
+                case 2:
+                    return 'info';
+
+                case 3:
+                    return 'secondary';
+
+                case 4:
+                    return 'success';
+
+                case 5:
+                    return 'primary';
+
+                case 6:
+                    return 'info';
+
+                case 7:
+                    return 'success';
+
+                case 8:
                     return 'danger';
 
                 default:

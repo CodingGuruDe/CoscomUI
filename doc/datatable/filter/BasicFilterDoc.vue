@@ -6,82 +6,80 @@
         </p>
         <p>The optional global filtering searches the data against a single value that is bound to the <i>global</i> key of the <i>filters</i> object. The fields to search against is defined with the <i>globalFilterFields</i>.</p>
     </DocSectionText>
-    <DeferredDemo @load="loadDemoData">
-        <div class="card">
-            <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
-                <template #header>
-                    <div class="flex justify-content-end">
-                        <IconField iconPosition="left">
-                            <InputIcon>
-                                <i class="cs el-search" />
-                            </InputIcon>
-                            <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
-                        </IconField>
+
+    <div class="card">
+        <DataTable v-model:filters="filters" :value="customers" paginator :rows="10" dataKey="id" filterDisplay="row" :loading="loading" :globalFilterFields="['name', 'country.name', 'representative.name', 'status']">
+            <template #header>
+                <div class="flex justify-content-end">
+                    <InputIcon>
+                        <i class="cs el-search" />
+                    </InputIcon>
+                    <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
+                </div>
+            </template>
+            <template #empty> No customers found. </template>
+            <template #loading> Loading customers data. Please wait. </template>
+            <Column field="name" header="Name" style="min-width: 12rem">
+                <template #body="{ data }">
+                    {{ data.name }}
+                </template>
+                <template #filter="{ filterModel, filterCallback }">
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by name" />
+                </template>
+            </Column>
+            <Column header="Country" filterField="country.name" style="min-width: 12rem">
+                <template #body="{ data }">
+                    <div class="flex align-items-center gap-2">
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${returnCountryCode(data.country.name)}`" style="width: 24px" />
+                        <span>{{ data.country.name }}</span>
                     </div>
                 </template>
-                <template #empty> No customers found. </template>
-                <template #loading> Loading customers data. Please wait. </template>
-                <Column field="name" header="Name" style="min-width: 12rem">
-                    <template #body="{ data }">
-                        {{ data.name }}
-                    </template>
-                    <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by name" />
-                    </template>
-                </Column>
-                <Column header="Country" filterField="country.name" style="min-width: 12rem">
-                    <template #body="{ data }">
-                        <div class="flex align-items-center gap-2">
-                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code}`" style="width: 24px" />
-                            <span>{{ data.country.name }}</span>
-                        </div>
-                    </template>
-                    <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by country" />
-                    </template>
-                </Column>
-                <Column header="Agent" filterField="representative" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
-                    <template #body="{ data }">
-                        <div class="flex align-items-center gap-2">
-                            <img :alt="data.representative.name" :src="`@/assets/images/avatar/${data.representative.image}`" style="width: 32px" />
-                            <span>{{ data.representative.name }}</span>
-                        </div>
-                    </template>
-                    <template #filter="{ filterModel, filterCallback }">
-                        <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
-                            <template #option="slotProps">
-                                <div class="flex align-items-center gap-2">
-                                    <img :alt="slotProps.option.name" :src="`@/assets/images/avatar/${slotProps.option.image}`" style="width: 32px" />
-                                    <span>{{ slotProps.option.name }}</span>
-                                </div>
-                            </template>
-                        </MultiSelect>
-                    </template>
-                </Column>
-                <Column field="status" header="Status" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 12rem">
-                    <template #body="{ data }">
-                        <Tag :value="data.status" :severity="getSeverity(data.status)" />
-                    </template>
-                    <template #filter="{ filterModel, filterCallback }">
-                        <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="p-column-filter" style="min-width: 12rem" :showClear="true">
-                            <template #option="slotProps">
-                                <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
-                            </template>
-                        </Dropdown>
-                    </template>
-                </Column>
-                <Column field="verified" header="Verified" dataType="boolean" style="min-width: 6rem">
-                    <template #body="{ data }">
-                        <i class="pi" :class="{ 'pi-check-circle text-green-500': data.verified, 'pi-times-circle text-red-400': !data.verified }"></i>
-                    </template>
-                    <template #filter="{ filterModel, filterCallback }">
-                        <TriStateCheckbox v-model="filterModel.value" @change="filterCallback()" />
-                    </template>
-                </Column>
-            </DataTable>
-        </div>
-    </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+                <template #filter="{ filterModel, filterCallback }">
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by country" />
+                </template>
+            </Column>
+            <Column header="Agent" filterField="representative" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
+                <template #body="{ data }">
+                    <div class="flex align-items-center gap-2">
+                        <img :alt="data.representative.name" :src="data.representative.image" style="width: 32px" />
+                        <span>{{ data.representative.name }}</span>
+                    </div>
+                </template>
+                <template #filter="{ filterModel, filterCallback }">
+                    <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
+                        <template #option="slotProps">
+                            <div class="flex align-items-center gap-2">
+                                <img :alt="slotProps.option.name" :src="`${slotProps.option.representative.image}`" style="width: 32px" />
+                                <span>{{ slotProps.option.name }}</span>
+                            </div>
+                        </template>
+                    </MultiSelect>
+                </template>
+            </Column>
+            <Column field="status" header="Status" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 12rem">
+                <template #body="{ data }">
+                    {{ data.status }}
+                </template>
+                <template #filter="{ filterModel, filterCallback }">
+                    <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="v-column-filter" style="min-width: 12rem" :showClear="true">
+                        <template #option="slotProps">
+                            {{ slotProps.option }}
+                        </template>
+                    </Dropdown>
+                </template>
+            </Column>
+            <Column field="verified" header="Verified" dataType="boolean" style="min-width: 6rem">
+                <template #body="{ data }">
+                    <i class="cs" :class="{ 'el-check-circle text-green-500': data.verified, 'el-times-circle text-red-400': !data.verified }"></i>
+                </template>
+                <template #filter="{ filterModel, filterCallback }">
+                    <Checkbox v-model="filterModel.value" inputId="transfer1" name="transfer" value="Sending" @change="filterCallback()" />
+                </template>
+            </Column>
+        </DataTable>
+    </div>
+
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -100,18 +98,7 @@ export default {
                 status: { value: null, matchMode: FilterMatchMode.EQUALS },
                 verified: { value: null, matchMode: FilterMatchMode.EQUALS }
             },
-            representatives: [
-                { name: 'Amy Elsner', image: 'amyelsner.png' },
-                { name: 'Anna Fali', image: 'annafali.png' },
-                { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-                { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-                { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-                { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-                { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-                { name: 'Onyama Limba', image: 'onyamalimba.png' },
-                { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-                { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-            ],
+            representatives: [],
             statuses: ['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal'],
             loading: true,
             code: {
@@ -211,7 +198,7 @@ export default {
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by name" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
             <Column header="Country" filterField="country.name" style="min-width: 12rem">
@@ -222,7 +209,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by country" />
                 </template>
             </Column>
             <Column header="Agent" filterField="representative" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
@@ -248,7 +235,7 @@ export default {
                     <Tag :value="data.status" :severity="getSeverity(data.status)" />
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="p-column-filter" style="min-width: 12rem" :showClear="true">
+                    <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="v-column-filter" style="min-width: 12rem" :showClear="true">
                         <template #option="slotProps">
                             <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                         </template>
@@ -257,7 +244,7 @@ export default {
             </Column>
             <Column field="verified" header="Verified" dataType="boolean" style="min-width: 6rem">
                 <template #body="{ data }">
-                    <i class="pi" :class="{ 'pi-check-circle text-green-500': data.verified, 'pi-times-circle text-red-400': !data.verified }"></i>
+                    <i class="cs" :class="{ 'el-check-circle text-green-500': data.verified, 'el-times-circle text-red-400': !data.verified }"></i>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
                     <TriStateCheckbox v-model="filterModel.value" @change="filterCallback()" />
@@ -283,18 +270,7 @@ export default {
                 status: { value: null, matchMode: FilterMatchMode.EQUALS },
                 verified: { value: null, matchMode: FilterMatchMode.EQUALS }
             },
-            representatives: [
-                { name: 'Amy Elsner', image: 'amyelsner.png' },
-                { name: 'Anna Fali', image: 'annafali.png' },
-                { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-                { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-                { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-                { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-                { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-                { name: 'Onyama Limba', image: 'onyamalimba.png' },
-                { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-                { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-            ],
+            representatives: [],
             statuses: ['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal'],
             loading: true
         };
@@ -302,6 +278,7 @@ export default {
     mounted() {
         CustomerService.getCustomersMedium().then((data) => {
             this.customers = this.getCustomers(data);
+            this.representatives = [];
             this.loading = false;
         });
     },
@@ -319,27 +296,6 @@ export default {
                 month: '2-digit',
                 year: 'numeric'
             });
-        },
-        formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        },
-        getSeverity(status) {
-            switch (status) {
-                case 'unqualified':
-                    return 'danger';
-
-                case 'qualified':
-                    return 'success';
-
-                case 'new':
-                    return 'info';
-
-                case 'negotiation':
-                    return 'warning';
-
-                case 'renewal':
-                    return null;
-            }
         }
     }
 };
@@ -367,7 +323,7 @@ export default {
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by name" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
             <Column header="Country" filterField="country.name" style="min-width: 12rem">
@@ -378,7 +334,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by country" />
                 </template>
             </Column>
             <Column header="Agent" filterField="representative" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
@@ -389,7 +345,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
+                    <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
                         <template #option="slotProps">
                             <div class="flex align-items-center gap-2">
                                 <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />
@@ -404,7 +360,7 @@ export default {
                     <Tag :value="data.status" :severity="getSeverity(data.status)" />
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="p-column-filter" style="min-width: 12rem" :showClear="true">
+                    <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="v-column-filter" style="min-width: 12rem" :showClear="true">
                         <template #option="slotProps">
                             <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                         </template>
@@ -413,7 +369,7 @@ export default {
             </Column>
             <Column field="verified" header="Verified" dataType="boolean" style="min-width: 6rem">
                 <template #body="{ data }">
-                    <i class="pi" :class="{ 'pi-check-circle text-green-500': data.verified, 'pi-times-circle text-red-400': !data.verified }"></i>
+                    <i class="cs" :class="{ 'el-check-circle text-green-500': data.verified, 'el-times-circle text-red-400': !data.verified }"></i>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
                     <TriStateCheckbox v-model="filterModel.value" @change="filterCallback()" />
@@ -437,24 +393,14 @@ const filters = ref({
     status: { value: null, matchMode: FilterMatchMode.EQUALS },
     verified: { value: null, matchMode: FilterMatchMode.EQUALS }
 });
-const representatives = ref([
-    { name: 'Amy Elsner', image: 'amyelsner.png' },
-    { name: 'Anna Fali', image: 'annafali.png' },
-    { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-    { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-    { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-    { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-    { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-    { name: 'Onyama Limba', image: 'onyamalimba.png' },
-    { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-    { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-]);
+const representatives = ref([]);
 const statuses = ref(['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal']);
 const loading = ref(true);
 
 onMounted(() => {
     CustomerService.getCustomersMedium().then((data) => {
             customers.value = getCustomers(data);
+            representatives.value = data;
             loading.value = false;
         });
 });
@@ -473,39 +419,18 @@ const formatDate = (value) => {
         year: 'numeric'
     });
 };
-const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-};
-const getSeverity = (status) => {
-    switch (status) {
-        case 'unqualified':
-            return 'danger';
-
-        case 'qualified':
-            return 'success';
-
-        case 'new':
-            return 'info';
-
-        case 'negotiation':
-            return 'warning';
-
-        case 'renewal':
-            return null;
-    }
-}
 
 <\/script>
 `,
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
-    company: 'Benton, John B Jr',
+    company: 'Coscom GmbH',
     date: '2015-09-13',
     status: 'unqualified',
     verified: true,
@@ -520,19 +445,26 @@ const getSeverity = (status) => {
             }
         };
     },
+    mounted() {
+        CustomerService.getCustomersMedium().then((data) => {
+            this.customers = this.getCustomers(data);
+            this.representatives = data;
+            this.loading = false;
+        });
+    },
     methods: {
-        loadDemoData() {
-            CustomerService.getCustomersMedium().then((data) => {
-                this.customers = this.getCustomers(data);
-                this.loading = false;
-            });
-        },
         getCustomers(data) {
             return [...(data || [])].map((d) => {
                 d.date = new Date(d.date);
 
                 return d;
             });
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         formatDate(value) {
             return value.toLocaleDateString('en-US', {
@@ -543,24 +475,6 @@ const getSeverity = (status) => {
         },
         formatCurrency(value) {
             return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-        },
-        getSeverity(status) {
-            switch (status) {
-                case 'unqualified':
-                    return 'danger';
-
-                case 'qualified':
-                    return 'success';
-
-                case 'new':
-                    return 'info';
-
-                case 'negotiation':
-                    return 'warning';
-
-                case 'renewal':
-                    return null;
-            }
         }
     }
 };

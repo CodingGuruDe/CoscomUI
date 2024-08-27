@@ -50,7 +50,7 @@
                     "to": "/checkbox"
                 },
                 {
-                    "name": "Editor",
+                    "name": "Editor (WYSIWYG)",
                     "to": "/editor"
                 },
                 {
@@ -90,7 +90,7 @@
                     "name": "Data Input Components(12)",
                     "children": [
                         {
-                            "name": "AutoComplete",
+                            "name": "Auto Complete",
                             "to": "/autocomplete"
                         },
                         {
@@ -102,7 +102,7 @@
                             "to": "/cascadeselect"
                         },
                         {
-                            "name": "ColorPicker",
+                            "name": "Color Picker",
                             "to": "/colorpicker"
                         },
                         {
@@ -130,7 +130,7 @@
                             "to": "/textarea"
                         },
                         {
-                            "name": "TreeSelect",
+                            "name": "Tree Select",
                             "to": "/treeselect"
                         },
                         {
@@ -143,7 +143,7 @@
                     "name": "Data Display Components (10)",
                     "children": [
                         {
-                            "name": "DataView",
+                            "name": "Data View",
                             "to": "/dataview"
                         },
                         {
@@ -155,7 +155,7 @@
                             "to": "/paginator"
                         },
                         {
-                            "name": "PickList",
+                            "name": "Pick List",
                             "to": "/picklist"
                         },
                         {

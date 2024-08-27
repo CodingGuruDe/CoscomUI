@@ -9,7 +9,7 @@
             <Button label="Cancel" icon="cs el-times" />
         </ButtonGroup>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

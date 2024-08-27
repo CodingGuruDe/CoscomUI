@@ -28,10 +28,20 @@ export default {
                     label: 'Germany',
                     code: 'DE',
                     items: [
-                        { label: 'Berlin', value: 'Berlin' },
-                        { label: 'Frankfurt', value: 'Frankfurt' },
-                        { label: 'Hamburg', value: 'Hamburg' },
+                        { label: 'Wasserburg am Inn', value: 'Wasserburg am Inn' },
+                        { label: 'Ebersberg', value: 'Ebersberg' },
+                        { label: 'Grafing', value: 'Grafing' },
                         { label: 'Munich', value: 'Munich' }
+                    ]
+                },
+                {
+                    label: 'Croatia',
+                    code: 'HR',
+                    items: [
+                        { label: 'Zagreb', value: 'Zagreb' },
+                        { label: 'Split', value: 'Split' },
+                        { label: 'Osijek', value: 'Osijek' },
+                        { label: 'Zadar', value: 'Zadar' }
                     ]
                 },
                 {
@@ -42,16 +52,6 @@ export default {
                         { label: 'Los Angeles', value: 'Los Angeles' },
                         { label: 'New York', value: 'New York' },
                         { label: 'San Francisco', value: 'San Francisco' }
-                    ]
-                },
-                {
-                    label: 'Japan',
-                    code: 'JP',
-                    items: [
-                        { label: 'Kyoto', value: 'Kyoto' },
-                        { label: 'Osaka', value: 'Osaka' },
-                        { label: 'Tokyo', value: 'Tokyo' },
-                        { label: 'Yokohama', value: 'Yokohama' }
                     ]
                 }
             ],
@@ -90,10 +90,20 @@ export default {
                     label: 'Germany',
                     code: 'DE',
                     items: [
-                        { label: 'Berlin', value: 'Berlin' },
-                        { label: 'Frankfurt', value: 'Frankfurt' },
-                        { label: 'Hamburg', value: 'Hamburg' },
+                        { label: 'Wasserburg am Inn', value: 'Wasserburg am Inn' },
+                        { label: 'Ebersberg', value: 'Ebersberg' },
+                        { label: 'Grafing', value: 'Grafing' },
                         { label: 'Munich', value: 'Munich' }
+                    ]
+                },
+                {
+                    label: 'Croatia',
+                    code: 'HR',
+                    items: [
+                        { label: 'Zagreb', value: 'Zagreb' },
+                        { label: 'Split', value: 'Split' },
+                        { label: 'Osijek', value: 'Osijek' },
+                        { label: 'Zadar', value: 'Zadar' }
                     ]
                 },
                 {
@@ -104,16 +114,6 @@ export default {
                         { label: 'Los Angeles', value: 'Los Angeles' },
                         { label: 'New York', value: 'New York' },
                         { label: 'San Francisco', value: 'San Francisco' }
-                    ]
-                },
-                {
-                    label: 'Japan',
-                    code: 'JP',
-                    items: [
-                        { label: 'Kyoto', value: 'Kyoto' },
-                        { label: 'Osaka', value: 'Osaka' },
-                        { label: 'Tokyo', value: 'Tokyo' },
-                        { label: 'Yokohama', value: 'Yokohama' }
                     ]
                 }
             ]
@@ -145,10 +145,20 @@ const groupedCities = ref([
         label: 'Germany',
         code: 'DE',
         items: [
-            { label: 'Berlin', value: 'Berlin' },
-            { label: 'Frankfurt', value: 'Frankfurt' },
-            { label: 'Hamburg', value: 'Hamburg' },
+            { label: 'Wasserburg am Inn', value: 'Wasserburg am Inn' },
+            { label: 'Ebersberg', value: 'Ebersberg' },
+            { label: 'Grafing', value: 'Grafing' },
             { label: 'Munich', value: 'Munich' }
+        ]
+    },
+    {
+        label: 'Croatia',
+        code: 'HR',
+        items: [
+            { label: 'Zagreb', value: 'Zagreb' },
+            { label: 'Split', value: 'Split' },
+            { label: 'Osijek', value: 'Osijek' },
+            { label: 'Zadar', value: 'Zadar' }
         ]
     },
     {
@@ -159,16 +169,6 @@ const groupedCities = ref([
             { label: 'Los Angeles', value: 'Los Angeles' },
             { label: 'New York', value: 'New York' },
             { label: 'San Francisco', value: 'San Francisco' }
-        ]
-    },
-    {
-        label: 'Japan',
-        code: 'JP',
-        items: [
-            { label: 'Kyoto', value: 'Kyoto' },
-            { label: 'Osaka', value: 'Osaka' },
-            { label: 'Tokyo', value: 'Tokyo' },
-            { label: 'Yokohama', value: 'Yokohama' }
         ]
     }
 ]);

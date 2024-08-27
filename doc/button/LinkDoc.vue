@@ -11,7 +11,7 @@
             <Button label="Router" />
         </router-link>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

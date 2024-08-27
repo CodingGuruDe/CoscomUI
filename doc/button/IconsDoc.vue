@@ -7,7 +7,7 @@
         <Button label="Submit" icon="cs el-check" />
         <Button label="Submit" icon="cs el-check" iconPos="right" />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

@@ -53,7 +53,7 @@
             <Button icon="cs el-times" type="danger" text rounded aria-label="Cancel" />
         </div>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

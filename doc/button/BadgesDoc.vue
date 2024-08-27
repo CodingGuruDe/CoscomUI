@@ -6,7 +6,7 @@
         <Button type="button" label="Emails" badge="2" />
         <Button type="button" label="Messages" icon="cs el-users" badge="2" badgeType="contrast" outlined />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

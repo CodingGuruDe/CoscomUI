@@ -31,12 +31,11 @@
                 <template #header>
                     <div class="flex flex-wrap gap-2 align-items-center justify-content-between">
                         <h4 class="m-0">Manage Products</h4>
-                        <IconField iconPosition="left">
-                            <InputIcon>
-                                <i class="cs el-search" />
-                            </InputIcon>
-                            <InputText v-model="filters['global'].value" placeholder="Search..." />
-                        </IconField>
+
+                        <InputIcon>
+                            <i class="cs el-search" />
+                        </InputIcon>
+                        <InputText v-model="filters['global'].value" placeholder="Search..." />
                     </div>
                 </template>
 
@@ -56,12 +55,12 @@
                 <Column field="category" header="Category" sortable style="min-width: 10rem"></Column>
                 <Column field="rating" header="Reviews" sortable style="min-width: 12rem">
                     <template #body="slotProps">
-                        <Rating :modelValue="slotProps.data.rating" :readonly="true" :cancel="false" />
+                        {{ slotProps.data.rating }}
                     </template>
                 </Column>
                 <Column field="inventoryStatus" header="Status" sortable style="min-width: 12rem">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
+                        {{ slotProps.data.inventoryStatus }}
                     </template>
                 </Column>
                 <Column :exportable="false" style="min-width: 12rem">
@@ -91,10 +90,10 @@
             <Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
                 <template #value="slotProps">
                     <div v-if="slotProps.value && slotProps.value.value">
-                        <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
+                        {{ slotProps.value.value }}
                     </div>
                     <div v-else-if="slotProps.value && !slotProps.value.value">
-                        <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
+                        {{ slotProps.value }}
                     </div>
                     <span v-else>
                         {{ slotProps.placeholder }}
@@ -237,7 +236,7 @@ export default {
     </Column>
     <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
         <template #body="slotProps">
-            <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
+            {{ slotProps.data.inventoryStatus }}
         </template>
     </Column>
     <Column :exportable="false" style="min-width:8rem">
@@ -301,7 +300,7 @@ export default {
                 </Column>
                 <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
+                        {{slotProps.data.inventoryStatus}}
                     </template>
                 </Column>
                 <Column :exportable="false" style="min-width:8rem">
@@ -330,10 +329,10 @@ export default {
 				<Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
 					<template #value="slotProps">
 						<div v-if="slotProps.value && slotProps.value.value">
-                            <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
+                            {{ slotProps.value.value }}
                         </div>
                         <div v-else-if="slotProps.value && !slotProps.value.value">
-                            <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
+                            {{slotProps.value }}
                         </div>
 						<span v-else>
 							{{slotProps.placeholder}}
@@ -592,7 +591,7 @@ export default {
                 </Column>
                 <Column field="inventoryStatus" header="Status" sortable style="min-width:12rem">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
+                        {{ slotProps.data.inventoryStatus }}
                     </template>
                 </Column>
                 <Column :exportable="false" style="min-width:8rem">
@@ -621,10 +620,10 @@ export default {
 				<Dropdown id="inventoryStatus" v-model="product.inventoryStatus" :options="statuses" optionLabel="label" placeholder="Select a Status">
 					<template #value="slotProps">
 						<div v-if="slotProps.value && slotProps.value.value">
-                            <Tag :value="slotProps.value.value" :severity="getStatusLabel(slotProps.value.label)" />
+                            {{ slotProps.value.value }}
                         </div>
                         <div v-else-if="slotProps.value && !slotProps.value.value">
-                            <Tag :value="slotProps.value" :severity="getStatusLabel(slotProps.value)" />
+                            {{ slotProps.value }}
                         </div>
 						<span v-else>
 							{{slotProps.placeholder}}

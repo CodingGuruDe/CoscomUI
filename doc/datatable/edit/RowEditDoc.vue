@@ -36,12 +36,12 @@
                     <template #editor="{ data, field }">
                         <Dropdown v-model="data[field]" :options="statuses" optionLabel="label" optionValue="value" placeholder="Select a Status">
                             <template #option="slotProps">
-                                <Tag :value="slotProps.option.value" :severity="getStatusLabel(slotProps.option.value)" />
+                                {{ slotProps.option.value }}
                             </template>
                         </Dropdown>
                     </template>
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getStatusLabel(slotProps.data.inventoryStatus)" />
+                        {{ slotProps.data.inventoryStatus }}
                     </template>
                 </Column>
                 <Column field="price" header="Price" style="width: 20%">

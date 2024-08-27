@@ -25,7 +25,7 @@
             <AccordionTab header="Header IV" :disabled="true"> </AccordionTab>
         </Accordion>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

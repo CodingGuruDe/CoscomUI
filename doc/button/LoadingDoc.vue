@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Button type="button" label="Search" icon="cs el-search" :loading="loading" @click="load" />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

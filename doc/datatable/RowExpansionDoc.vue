@@ -33,12 +33,12 @@
                 <Column field="category" header="Category"></Column>
                 <Column field="rating" header="Reviews">
                     <template #body="slotProps">
-                        <Rating :modelValue="slotProps.data.rating" readonly :cancel="false" />
+                        {{ slotProps.data.rating }}
                     </template>
                 </Column>
                 <Column header="Status">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.inventoryStatus" :severity="getSeverity(slotProps.data)" />
+                        {{ slotProps.data.inventoryStatus }}
                     </template>
                 </Column>
                 <template #expansion="slotProps">
@@ -55,7 +55,7 @@
                             </Column>
                             <Column field="status" header="Status" sortable>
                                 <template #body="slotProps">
-                                    <Tag :value="slotProps.data.status.toLowerCase()" :severity="getOrderSeverity(slotProps.data)" />
+                                    {{ slotProps.data.status.toLowerCase() }}
                                 </template>
                             </Column>
                             <Column headerStyle="width:4rem">

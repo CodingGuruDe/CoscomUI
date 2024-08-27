@@ -5,7 +5,7 @@
     <div class="card flex justify-content-center">
         <Button label="Submit" />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

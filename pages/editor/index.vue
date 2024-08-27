@@ -1,5 +1,13 @@
 <template>
-    <DocComponent title="Vue Editor Component" header="Editor" description="Editor is rich text editor component based on Quill." :componentDocs="docs" :apiDocs="['Editor']" :ptTabComponent="ptComponent" :themingDocs="themingDoc" />
+    <DocComponent
+        title="Vue Editor Component"
+        header="Editor"
+        description="The Editor component is a WYSIWYG (“what you see is what you get”) editor component that enables the user to write and even paste HTML. It uses the so-called Design Mode and the cross-browser contentEditable interface. The Editor is based on Quill."
+        :componentDocs="docs"
+        :apiDocs="['Editor']"
+        :ptTabComponent="ptComponent"
+        :themingDocs="themingDoc"
+    />
 </template>
 
 <script>

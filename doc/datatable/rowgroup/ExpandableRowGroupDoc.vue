@@ -37,7 +37,7 @@
                 <Column field="company" header="Company" style="width: 20%"></Column>
                 <Column field="status" header="Status" style="width: 20%">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.status" :severity="getSeverity(slotProps.data.status)" />
+                        {{ slotProps.data.status }}
                     </template>
                 </Column>
                 <Column field="date" header="Date" style="width: 20%"></Column>

@@ -1,60 +1,61 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Columns can be created programmatically.</p>
+        <p>Columns can be created programmatically. Below is an example with orders</p>
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
         <div class="card">
-            <DataTable :value="products" tableStyle="min-width: 50rem">
+            <DataTable :value="orders" tableStyle="min-width: 50rem">
                 <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['OrderService']" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 export default {
     data() {
         return {
-            products: null,
+            orders: null,
             columns: null,
             code: {
                 basic: `
-<DataTable :value="products" tableStyle="min-width: 50rem">
+<DataTable :value="orders" tableStyle="min-width: 50rem">
     <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
 </DataTable>
 `,
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="orders" tableStyle="min-width: 50rem">
             <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
         </DataTable>
     </div>
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 export default {
     data() {
         return {
-            products: null,
+            orders: null,
             columns: null
         };
     },
     created() {
         this.columns = [
-            { field: 'code', header: 'Code' },
-            { field: 'name', header: 'Name' },
-            { field: 'category', header: 'Category' },
-            { field: 'quantity', header: 'Quantity' }
+            { field: 'ProductOrderID', header: 'ProductOrderID' },
+            { field: 'PlantID', header: 'PlantID' },
+            { field: 'MachineID', header: 'MachineID' },
+            { field: 'ToolCirculationOrderType.Description', header: 'ToolCirculationOrderType' },
+            { field: 'ToolCirculationOrderStatus.StatusDescription', header: 'ToolCirculationOrderStatus' }
         ];
     },
     mounted() {
-        ProductService.getProductsMini().then((data) => (this.products = data));
+        OrderService.getOrders().then((data) => (this.orders = data));
     }
 };
 <\/script>
@@ -62,7 +63,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="orders" tableStyle="min-width: 50rem">
             <Column v-for="col of columns" :key="col.field" :field="col.field" :header="col.header"></Column>
         </DataTable>
     </div>
@@ -70,34 +71,30 @@ export default {
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { ProductService } from '@/service/ProductService';
+import { OrderService } from '@/service/OrderService';
 
 onMounted(() => {
-    ProductService.getProductsMini().then((data) => (products.value = data));
+    OrderService.getOrders().then((data) => (orders.value = data));
 });
 
-const products = ref();
+const orders = ref();
 const columns = [
-    { field: 'code', header: 'Code' },
-    { field: 'name', header: 'Name' },
-    { field: 'category', header: 'Category' },
-    { field: 'quantity', header: 'Quantity' }
+    { field: 'ProductOrderID', header: 'ProductOrderID' },
+    { field: 'PlantID', header: 'PlantID' },
+    { field: 'MachineID', header: 'MachineID' },
+    { field: 'ToolCirculationOrderType.Description', header: 'ToolCirculationOrderType' },
+    { field: 'ToolCirculationOrderStatus.StatusDescription', header: 'ToolCirculationOrderStatus' }
 ];
 
 <\/script>
 `,
                 data: `
 {
-    id: '1000',
-    code: 'f230fh0g3',
-    name: 'Bamboo Watch',
-    description: 'Product Description',
-    image: 'bamboo-watch.jpg',
-    price: 65,
-    category: 'Accessories',
-    quantity: 24,
-    inventoryStatus: 'INSTOCK',
-    rating: 5
+    ProductOrderID: 'COS_EBE_DMC125FD_08092_01',
+    PlantID: 'COS',
+    MachineID: 'DMC125FD_08092_02',
+    ToolCirculationOrderType.Description: 'Voreinstellauftrag',
+    ToolCirculationOrderStatus.StatusDescription: 'Auf Verfügbarkeit geprüft',
 },
 ...
         `
@@ -106,15 +103,16 @@ const columns = [
     },
     created() {
         this.columns = [
-            { field: 'code', header: 'Code' },
-            { field: 'name', header: 'Name' },
-            { field: 'category', header: 'Category' },
-            { field: 'quantity', header: 'Quantity' }
+            { field: 'ProductOrderID', header: 'ProductOrderID' },
+            { field: 'PlantID', header: 'PlantID' },
+            { field: 'MachineID', header: 'MachineID' },
+            { field: 'ToolCirculationOrderType.Description', header: 'ToolCirculationOrderType' },
+            { field: 'ToolCirculationOrderStatus.StatusDescription', header: 'ToolCirculationOrderStatus' }
         ];
     },
     methods: {
         loadDemoData() {
-            ProductService.getProductsMini().then((data) => (this.products = data));
+            OrderService.getOrders().then((data) => (this.orders = data));
         }
     }
 };

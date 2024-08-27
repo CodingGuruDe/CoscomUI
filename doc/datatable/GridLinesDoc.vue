@@ -12,7 +12,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['ProductService']" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>
@@ -86,11 +86,11 @@ const products = ref();
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
+    name: 'COSCOM Montagearbeitsplatz',
     description: 'Product Description',
-    image: 'bamboo-watch.jpg',
+    image: '',
     price: 65,
-    category: 'Accessories',
+    category: 'Orders Management,
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5

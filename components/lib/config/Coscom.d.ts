@@ -69,6 +69,7 @@ import { StyleClassDirectivePassThroughOptions } from '../styleclass/StyleClass'
 import { TabMenuPassThroughOptions } from '../tabmenu/TabMenu';
 import { TabPanelPassThroughOptions } from '../tabpanel/TabPanel';
 import { TabPassThroughOptions } from '../tab/Tab';
+import { TagPassThroughOptions } from '../tag/Tag';
 import { TextareaPassThroughOptions } from '../textarea/Textarea';
 import { TieredMenuPassThroughOptions } from '../tieredmenu/TieredMenu';
 import { TimelinePassThroughOptions } from '../timeline/Timeline';

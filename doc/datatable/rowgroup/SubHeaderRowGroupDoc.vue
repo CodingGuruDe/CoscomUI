@@ -27,7 +27,7 @@
                 <Column field="company" header="Company" style="min-width: 200px"></Column>
                 <Column field="status" header="Status" style="min-width: 200px">
                     <template #body="slotProps">
-                        <Tag :value="slotProps.data.status" :severity="getSeverity(slotProps.data.status)" />
+                        {{ slotProps.data.status }}
                     </template>
                 </Column>
                 <Column field="date" header="Date" style="min-width: 200px"></Column>

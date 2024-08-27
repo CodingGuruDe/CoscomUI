@@ -4,7 +4,7 @@
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
         <div class="card">
-            <ToggleButton v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
+            <Button v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
 
             <DataTable :value="customers" scrollable scrollHeight="400px" class="mt-4">
                 <Column field="name" header="Name" style="min-width: 200px" frozen class="font-bold"></Column>

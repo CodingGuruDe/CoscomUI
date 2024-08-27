@@ -12,7 +12,7 @@
         <Button label="Danger" type="danger" raised />
         <Button label="Contrast" type="contrast" raised />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

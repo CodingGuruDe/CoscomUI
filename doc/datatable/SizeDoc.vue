@@ -5,17 +5,17 @@
     <DeferredDemo @load="loadDemoData">
         <div class="card">
             <div class="flex justify-content-center mb-4">
-                <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
+                <Dropdown v-model="size" :options="sizeOptions" optionLabel="label" placeholder="Select a City" class="w-full md:w-14rem" />
             </div>
             <DataTable :value="products" :size="size.value" tableStyle="min-width: 50rem">
                 <Column field="code" header="Code"></Column>
                 <Column field="name" header="Name"></Column>
                 <Column field="category" header="Category"></Column>
-                <Column field="quantity" header="Quantity"></Column>
+                <Column field="inventoryStatus" header="Status"></Column>
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['ProductService']" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>
@@ -33,25 +33,24 @@ export default {
             ],
             code: {
                 basic: `
-<SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
 <DataTable :value="products" :size="size.value" tableStyle="min-width: 50rem">
     <Column field="code" header="Code"></Column>
     <Column field="name" header="Name"></Column>
     <Column field="category" header="Category"></Column>
-    <Column field="quantity" header="Quantity"></Column>
+    <Column field="inventoryStatus" header="Status"></Column>
 </DataTable>
 `,
                 options: `
 <template>
     <div class="card">
         <div class="flex justify-content-center mb-4">
-            <SelectButton v-model="size" :options="sizeOptions" optionLabel="label" dataKey="label" />
+            {{size}}
         </div>
         <DataTable :value="products" :size="size.value" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
             <Column field="category" header="Category"></Column>
-            <Column field="quantity" header="Quantity"></Column>
+            <Column field="inventoryStatus" header="Status"></Column>
         </DataTable>
     </div>
 </template>
@@ -114,11 +113,11 @@ const sizeOptions = ref([
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
+    name: 'COSCOM Montagearbeitsplatz',
     description: 'Product Description',
-    image: 'bamboo-watch.jpg',
+    image: '',
     price: 65,
-    category: 'Accessories',
+    category: 'Orders Management,
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5

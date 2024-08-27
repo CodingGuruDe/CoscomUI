@@ -22,7 +22,7 @@ export default {
             overflow: hidden;
             position: relative;
         }
-        span[data-p-ink-active="true"]{
+        span[data-v-ink-active="true"]{
             animation: ripple 0.4s linear;
         }
         @keyframes ripple {
@@ -35,11 +35,11 @@ export default {
         .progress-spinner-circle {
             stroke-dasharray: 89, 200;
             stroke-dashoffset: 0;
-            animation: p-progress-spinner-dash 1.5s ease-in-out infinite, p-progress-spinner-color 6s ease-in-out infinite;
+            animation: v-progress-spinner-dash 1.5s ease-in-out infinite, v-progress-spinner-color 6s ease-in-out infinite;
             stroke-linecap: round;
         }
 
-        @keyframes p-progress-spinner-dash{
+        @keyframes v-progress-spinner-dash{
             0% {
                 stroke-dasharray: 1, 200;
                 stroke-dashoffset: 0;
@@ -53,7 +53,7 @@ export default {
                 stroke-dashoffset: -124px;
             }
         }
-        @keyframes p-progress-spinner-color {
+        @keyframes v-progress-spinner-color {
             100%, 0% {
                 stroke: #ff5757;
             }
@@ -70,13 +70,13 @@ export default {
 
         .progressbar-value-animate::after {
             will-change: left, right;
-            animation: p-progressbar-indeterminate-anim-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+            animation: v-progressbar-indeterminate-anim-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
         }
         .progressbar-value-animate::before {
             will-change: left, right;
-            animation: p-progressbar-indeterminate-anim 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+            animation: v-progressbar-indeterminate-anim 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
         }
-        @keyframes p-progressbar-indeterminate-anim {
+        @keyframes v-progressbar-indeterminate-anim {
             0% {
                 left: -35%;
                 right: 100%;

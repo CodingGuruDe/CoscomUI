@@ -4,56 +4,59 @@
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
         <div class="card">
-            <DataTable :value="products" tableStyle="min-width: 50rem">
-                <Column field="code" header="Code"></Column>
+            <DataTable :value="machines" tableStyle="min-width: 50rem">
+                <Column field="id" header="ID"></Column>
                 <Column field="name" header="Name"></Column>
-                <Column field="category" header="Category"></Column>
+                <Column field="controlunit" header="Control Unit"></Column>
+                <Column field="inventoryStatus" header="Status"></Column>
                 <Column field="quantity" header="Quantity"></Column>
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['MachineService']" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { MachineService } from '@/service/MachineService';
 
 export default {
     data() {
         return {
-            products: null,
+            machines: null,
             code: {
                 basic: `
-<DataTable :value="products" tableStyle="min-width: 50rem">
+<DataTable :value="machines" tableStyle="min-width: 50rem">
     <Column field="code" header="Code"></Column>
     <Column field="name" header="Name"></Column>
-    <Column field="category" header="Category"></Column>
+    <Column field="controlUnit" header="Control Unit"></Column>
+    <Column field="inventoryStatus" header="Status"></Column>
     <Column field="quantity" header="Quantity"></Column>
 </DataTable>
 `,
                 options: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="machines" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
-            <Column field="category" header="Category"></Column>
+            <Column field="controlUnit" header="Control Unit"></Column>
+            <Column field="inventoryStatus" header="Status"></Column>
             <Column field="quantity" header="Quantity"></Column>
         </DataTable>
     </div>
 </template>
 
 <script>
-import { ProductService } from '@/service/ProductService';
+import { MachineService } from '@/service/MachineService';
 
 export default {
     data() {
         return {
-            products: null
+            machines: null
         };
     },
     mounted() {
-        ProductService.getProductsMini().then((data) => (this.products = data));
+        MachineService.getMachinesMini().then((data) => (this.machines = data));
     }
 };
 <\/script>
@@ -61,10 +64,11 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <DataTable :value="products" tableStyle="min-width: 50rem">
+        <DataTable :value="machines" tableStyle="min-width: 50rem">
             <Column field="code" header="Code"></Column>
             <Column field="name" header="Name"></Column>
-            <Column field="category" header="Category"></Column>
+            <Column field="controlUnit" header="Control Unit"></Column>
+            <Column field="inventoryStatus" header="Status"></Column>
             <Column field="quantity" header="Quantity"></Column>
         </DataTable>
     </div>
@@ -72,10 +76,10 @@ export default {
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import { ProductService } from '@/service/ProductService';
+import { MachineService } from '@/service/MachineService';
 
 onMounted(() => {
-    ProductService.getProductsMini().then((data) => (products.value = data));
+    MachineService.getMachinesMini().then((data) => (machines.value = data));
 });
 
 const products = ref();
@@ -86,11 +90,11 @@ const products = ref();
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
-    description: 'Product Description',
+    name: 'Heller MCH 280',
+    description: 'Horizontales Bearbeitungszentrum MCH 280 C mit Schwenkkopfeinheit bietet mehr Bearbeitungsflexibilität',
     image: 'bamboo-watch.jpg',
-    price: 65,
-    category: 'Accessories',
+    controlUnit: 'Celos mit Siemens 840D sl Operate',
+    category: 'Industry',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5
@@ -102,7 +106,7 @@ const products = ref();
     },
     methods: {
         loadDemoData() {
-            ProductService.getProductsMini().then((data) => (this.products = data));
+            MachineService.getMachinesMini().then((data) => (this.machines = data));
         }
     }
 };

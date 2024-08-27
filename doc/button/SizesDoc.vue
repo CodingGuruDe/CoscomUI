@@ -7,7 +7,7 @@
         <Button label="Normal" icon="cs el-check" />
         <Button label="Large" icon="cs el-check" size="large" />
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>

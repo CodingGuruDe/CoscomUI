@@ -2,7 +2,7 @@
     <DocComponent
         title="Vue Table Component"
         header="DataTable"
-        description="DataTable displays data in tabular format."
+        description="The data table component is used for displaying tabular data in a way that is easy for users to scan. It includes sorting, searching, pagination and selection."
         :componentDocs="docs"
         :apiDocs="['DataTable', 'Column', 'ColumnGroup', 'Row']"
         :ptTabComponent="ptComponent"
