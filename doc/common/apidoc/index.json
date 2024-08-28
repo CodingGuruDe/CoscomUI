@@ -5242,7 +5242,7 @@
                         }
                     ],
                     "methods": [],
-                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DialogStyle,DividerStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatLabelStyle,FocusTrapStyle,ImageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputSwitchStyle,InputTextStyle,KnobStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MultiSelectStyle,OrderListStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,QrCodeStyle,RadioButtonStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabStyle,TabMenuStyle,TabPanelStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,VirtualScrollerStyle"
+                    "extendedBy": "AccordionStyle,AccordionTabStyle,AnimateOnScrollStyle,AutoCompleteStyle,BadgeStyle,BadgeDirectiveStyle,BaseComponentStyle,BaseIconStyle,BreadcrumbStyle,ButtonStyle,ButtonGroupStyle,CalendarStyle,CardStyle,CarouselStyle,CascadeSelectStyle,CheckboxStyle,ChipStyle,ChipsStyle,ColorPickerStyle,ColumnStyle,ColumnGroupStyle,ConfirmDialogStyle,ConfirmPopupStyle,ContextMenuStyle,DataTableStyle,DataViewStyle,DataViewLayoutOptionsStyle,DialogStyle,DividerStyle,DropdownStyle,DynamicDialogStyle,EditorStyle,FieldsetStyle,FileUploadStyle,FloatButtonStyle,FloatLabelStyle,FocusTrapStyle,ImageStyle,InplaceStyle,InputGroupStyle,InputGroupAddonStyle,InputIconStyle,InputMaskStyle,InputNumberStyle,InputSwitchStyle,InputTextStyle,KnobStyle,MegaMenuStyle,MenuStyle,MenubarStyle,MessageStyle,MultiSelectStyle,OrderListStyle,OverlayPanelStyle,PaginatorStyle,PanelStyle,PanelMenuStyle,PasswordStyle,PickListStyle,PortalStyle,ProgressBarStyle,ProgressSpinnerStyle,QrCodeStyle,RadioButtonStyle,AccordionStyle,RowStyle,ScrollPanelStyle,ScrollTopStyle,SidebarStyle,SkeletonStyle,SliderStyle,SpeedDialStyle,SplitButtonStyle,SplitterStyle,SplitterPanelStyle,StepperStyle,StepperPanelStyle,StepsStyle,StyleClassStyle,TabStyle,TabMenuStyle,TabPanelStyle,TextareaStyle,TieredMenuStyle,TimelineStyle,ToastStyle,ToolbarStyle,TooltipStyle,TreeStyle,TreeSelectStyle,TreeTableStyle,VirtualScrollerStyle"
                 }
             }
         }
@@ -14373,6 +14373,13 @@
                             "default": ""
                         },
                         {
+                            "name": "floatbutton",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "DefaultPassThrough<FloatButtonPassThroughOptions>",
+                            "default": ""
+                        },
+                        {
                             "name": "fieldset",
                             "optional": true,
                             "readonly": false,
@@ -14580,13 +14587,6 @@
                             "optional": true,
                             "readonly": false,
                             "type": "DefaultPassThrough<SliderPassThroughOptions>",
-                            "default": ""
-                        },
-                        {
-                            "name": "speeddial",
-                            "optional": true,
-                            "readonly": false,
-                            "type": "DefaultPassThrough<SpeedDialPassThroughOptions>",
                             "default": ""
                         },
                         {
@@ -25616,6 +25616,659 @@
             "typeDescription": "Defines the custom types used by the module.",
             "values": {
                 "FileUploadStyle": {
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "name",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": ""
+                        },
+                        {
+                            "name": "css",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": ""
+                        },
+                        {
+                            "name": "classes",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "object",
+                            "default": ""
+                        },
+                        {
+                            "name": "inlineStyles",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "object",
+                            "default": ""
+                        },
+                        {
+                            "name": "loadStyle",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "Function",
+                            "default": ""
+                        },
+                        {
+                            "name": "getStyleSheet",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "Function",
+                            "default": ""
+                        }
+                    ],
+                    "methods": [],
+                    "extendedTypes": "BaseStyle"
+                }
+            }
+        }
+    },
+    "floatbutton": {
+        "description": "When pressed, a floating action button can display multiple primary actions that can be performed on a page.",
+        "components": {
+            "default": {
+                "description": "When pressed, a floating action button can display multiple primary actions that can be performed on a page.",
+                "methods": {
+                    "description": "Defines methods that can be accessed by the component's reference.",
+                    "values": []
+                }
+            }
+        },
+        "interfaces": {
+            "description": "Defines the custom interfaces used by the module.",
+            "eventDescription": "Defines the custom events used by the component's emit.",
+            "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "values": {
+                "FloatButtonThroughMethodOptions": {
+                    "description": "Custom passthrough(pt) option method.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "instance",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines instance."
+                        },
+                        {
+                            "name": "props",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "FloatButtonProps",
+                            "default": "",
+                            "description": "Defines valid properties."
+                        },
+                        {
+                            "name": "state",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "FloatButtonState",
+                            "default": "",
+                            "description": "Defines current inline state."
+                        },
+                        {
+                            "name": "context",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "FloatButtonContext",
+                            "default": "",
+                            "description": "Defines current options."
+                        },
+                        {
+                            "name": "attrs",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines valid attributes."
+                        },
+                        {
+                            "name": "parent",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Defines parent options."
+                        },
+                        {
+                            "name": "global",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "undefined | object",
+                            "default": "",
+                            "description": "Defines passthrough(pt) options in global config."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonSharedPassThroughMethodOptions": {
+                    "description": "Custom shared passthrough(pt) option method.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "props",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "FloatButtonProps",
+                            "default": "",
+                            "description": "Defines valid properties."
+                        },
+                        {
+                            "name": "state",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "FloatButtonState",
+                            "default": "",
+                            "description": "Defines current inline state."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonPassThroughOptions": {
+                    "description": "Custom passthrough(pt) options.",
+                    "relatedProp": "FloatButtonProps.pt",
+                    "props": [
+                        {
+                            "name": "root",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the root's DOM element."
+                        },
+                        {
+                            "name": "button",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "ButtonPassThroughOptions<FloatButtonSharedPassThroughMethodOptions>",
+                            "default": "",
+                            "description": "Used to pass attributes to the Button component."
+                        },
+                        {
+                            "name": "menu",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the menu's DOM element."
+                        },
+                        {
+                            "name": "menuitem",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the menu item's DOM element."
+                        },
+                        {
+                            "name": "action",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the action's DOM element."
+                        },
+                        {
+                            "name": "actionIcon",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the action icon's DOM element."
+                        },
+                        {
+                            "name": "mask",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonPassThroughOptionType",
+                            "default": "",
+                            "description": "Used to pass attributes to the mask's DOM element."
+                        },
+                        {
+                            "name": "hooks",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "ComponentHooks",
+                            "default": "",
+                            "description": "Used to manage all lifecycle hooks."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonPassThroughAttributes": {
+                    "description": "Custom passthrough attributes for each DOM elements",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "[key: string]",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any"
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonState": {
+                    "description": "Defines current inline state in FloatButton component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "id",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "List of items' id."
+                        },
+                        {
+                            "name": "visible",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current visible state as a boolean."
+                        },
+                        {
+                            "name": "isItemClicked",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current click state of component as a boolean."
+                        },
+                        {
+                            "name": "focused",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current focus state as a boolean."
+                        },
+                        {
+                            "name": "focusedOptionIndex",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "number",
+                            "default": "-1",
+                            "description": "Current focused option index as a number."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonContext": {
+                    "description": "Defines current options in FloatButton component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "active",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current active state of menuitem as a boolean."
+                        },
+                        {
+                            "name": "hidden",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Current hidden state of menuitem as a boolean."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonTooltipOptions": {
+                    "description": "Defines tooltip options.",
+                    "relatedProp": "undefined.SpeedDialProps.tooltipOptions",
+                    "props": [
+                        {
+                            "name": "event",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "undefined | \"focus\" | \"hover\"",
+                            "default": "",
+                            "description": "Event to show the tooltip, valid values are hover and focus."
+                        },
+                        {
+                            "name": "position",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "undefined | \"left\" | \"top\" | \"bottom\" | \"right\"",
+                            "default": "bottom",
+                            "description": "Position of element."
+                        },
+                        {
+                            "name": "[key: string]",
+                            "optional": false,
+                            "readonly": false,
+                            "type": "any"
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonProps": {
+                    "description": "Defines valid properties in FloatButton component.",
+                    "relatedProp": "",
+                    "props": [
+                        {
+                            "name": "model",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "MenuItem[]",
+                            "default": "",
+                            "description": "MenuModel instance to define the action items."
+                        },
+                        {
+                            "name": "visible",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Specifies the visibility of the overlay."
+                        },
+                        {
+                            "name": "direction",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "\"left\" | \"right\" | \"up\" | \"down\" | \".v-left\" | \".v-right\" | \"down-left\" | \"down-right\"",
+                            "default": "up",
+                            "description": "Specifies the opening direction of actions."
+                        },
+                        {
+                            "name": "transitionDelay",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "number",
+                            "default": "30",
+                            "description": "Transition delay step for each action item."
+                        },
+                        {
+                            "name": "type",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "\"linear\" | \"circle\" | \"semi-circle\" | \"quarter-circle\"",
+                            "default": "linear",
+                            "description": "Specifies the opening type of actions."
+                        },
+                        {
+                            "name": "radius",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "number",
+                            "default": "0",
+                            "description": "Radius for *circle types."
+                        },
+                        {
+                            "name": "mask",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Whether to show a mask element behind the floatbutton."
+                        },
+                        {
+                            "name": "disabled",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "Whether the component is disabled."
+                        },
+                        {
+                            "name": "hideOnClickOutside",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "true",
+                            "description": "Whether the actions close when clicked outside."
+                        },
+                        {
+                            "name": "buttonClass",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Style class of the button element."
+                        },
+                        {
+                            "name": "maskStyle",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Inline style of the mask element."
+                        },
+                        {
+                            "name": "maskClass",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Style class of the mask element."
+                        },
+                        {
+                            "name": "showIcon",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Show icon of the button element.",
+                            "deprecated": "since v3.27.0. Use 'showicon' slot."
+                        },
+                        {
+                            "name": "hideIcon",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Hide icon of the button element.",
+                            "deprecated": "since v3.27.0. Use 'hideicon' slot."
+                        },
+                        {
+                            "name": "rotateAnimation",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "true",
+                            "description": "Defined to rotate showIcon when hideIcon is not present."
+                        },
+                        {
+                            "name": "class",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Style class of the element."
+                        },
+                        {
+                            "name": "style",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "any",
+                            "default": "",
+                            "description": "Inline style of the element."
+                        },
+                        {
+                            "name": "tooltipOptions",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "FloatButtonTooltipOptions",
+                            "default": "",
+                            "description": "Whether to display the tooltip on items. The modifiers of Tooltip can be used like an object in it. Valid keys are 'event' and 'position'."
+                        },
+                        {
+                            "name": "ariaLabel",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Defines a string value that labels an interactive list element."
+                        },
+                        {
+                            "name": "ariaLabelledby",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "string",
+                            "default": "",
+                            "description": "Identifier of the underlying list element."
+                        },
+                        {
+                            "name": "pt",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "PassThrough<FloatButtonPassThroughOptions>",
+                            "default": "",
+                            "description": "Used to pass attributes to DOM elements inside the component."
+                        },
+                        {
+                            "name": "ptOptions",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "PassThroughOptions",
+                            "default": "",
+                            "description": "Used to configure passthrough(pt) options of the component."
+                        },
+                        {
+                            "name": "unstyled",
+                            "optional": true,
+                            "readonly": false,
+                            "type": "boolean",
+                            "default": "false",
+                            "description": "When enabled, it removes component related styles in the core."
+                        }
+                    ],
+                    "methods": []
+                },
+                "FloatButtonSlots": {
+                    "description": "Defines valid slots in FloatButton component.",
+                    "relatedProp": "",
+                    "props": [],
+                    "methods": [
+                        {
+                            "name": "item",
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">item</span>: <span class=\"doc-option-parameter-type\">MenuItem</span>, <span class=\"doc-option-parameter-type\">// Menuitem instance</span>\n \t <span class=\"ml-3 doc-option-parameter-name\">onClick</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Item click function</span>\n}",
+                                    "description": "item slot's params."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom content for each item."
+                        },
+                        {
+                            "name": "button",
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n \t <span class=\"ml-3 doc-option-parameter-name line-through\">onClick</span>: <span class=\"doc-option-parameter-type line-through\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type line-through\">// Button click function</span>\n\t <span class=\"ml-3 doc-option-parameter-name\">toggleCallback</span>: <span class=\"doc-option-parameter-type\">(<span class=\"doc-option-parameter-name\">event</span>: Event) &rArr; void</span>, <span class=\"doc-option-parameter-type\">// Button click function</span>\n}",
+                                    "description": "button slot's params."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom button template."
+                        },
+                        {
+                            "name": "icon",
+                            "parameters": [
+                                {
+                                    "name": "scope",
+                                    "optional": false,
+                                    "type": "{\n  \t <span class=\"ml-3 doc-option-parameter-name\">visible</span>: <span class=\"doc-option-parameter-type\">boolean</span>, <span class=\"doc-option-parameter-type\">// Visible state of the item</span>\n }",
+                                    "description": "icon slot's params."
+                                }
+                            ],
+                            "returnType": "VNode<RendererNode, RendererElement, Object>[]",
+                            "description": "Custom icon template."
+                        }
+                    ]
+                },
+                "FloatButtonEmits": {
+                    "description": "Defines valid emits in FloatButton component.",
+                    "relatedProp": "",
+                    "props": [],
+                    "methods": [
+                        {
+                            "name": "click",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Fired when the button element clicked."
+                        },
+                        {
+                            "name": "show",
+                            "parameters": [],
+                            "returnType": "void",
+                            "description": "Fired when the actions are visible."
+                        },
+                        {
+                            "name": "hide",
+                            "parameters": [],
+                            "returnType": "void",
+                            "description": "Fired when the actions are hidden."
+                        },
+                        {
+                            "name": "focus",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Callback to invoke when the component receives focus."
+                        },
+                        {
+                            "name": "blur",
+                            "parameters": [
+                                {
+                                    "name": "event",
+                                    "optional": false,
+                                    "type": "Event",
+                                    "description": "Browser event."
+                                }
+                            ],
+                            "returnType": "void",
+                            "description": "Callback to invoke when the component loses focus."
+                        }
+                    ]
+                }
+            }
+        },
+        "types": {
+            "description": "Defines the custom types used by the module.",
+            "values": {
+                "FloatButtonPassThroughOptionType": {
+                    "values": "FloatButtonPassThroughAttributes | (options: FloatButtonThroughMethodOptions) => undefined | string | null | undefined"
+                }
+            }
+        }
+    },
+    "floatbutton/style/FloatButtonStyle": {
+        "interfaces": {
+            "description": "Defines the custom interfaces used by the module.",
+            "eventDescription": "Defines the custom events used by the component's emit.",
+            "methodDescription": "Defines methods that can be accessed by the component's reference.",
+            "typeDescription": "Defines the custom types used by the module.",
+            "values": {
+                "FloatButtonStyle": {
                     "relatedProp": "",
                     "props": [
                         {

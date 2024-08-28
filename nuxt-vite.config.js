@@ -37,6 +37,7 @@ const STYLE_ALIAS = {
     '@coscom/coscom-ui/dynamicdialog/style': path.resolve(__dirname, './components/lib/dynamicdialog/style/DynamicDialogStyle.js'),
     '@coscom/coscom-ui/editor/style': path.resolve(__dirname, './components/lib/editor/style/EditorStyle.js'),
     '@coscom/coscom-ui/fieldset/style': path.resolve(__dirname, './components/lib/fieldset/style/FieldsetStyle.js'),
+    '@coscom/coscom-ui/floatbutton/style': path.resolve(__dirname, './components/lib/floatbutton/style/FloatButtonStyle.js'),
     '@coscom/coscom-ui/floatlabel/style': path.resolve(__dirname, './components/lib/floatlabel/style/FloatLabelStyle.js'),
     '@coscom/coscom-ui/fileupload/style': path.resolve(__dirname, './components/lib/fileupload/style/FileUploadStyle.js'),
     '@coscom/coscom-ui/focustrap/style': path.resolve(__dirname, './components/lib/focustrap/style/FocusTrapStyle.js'),

@@ -1,4 +1,4 @@
-const SpeedDialProps = [
+const FloatButtonProps = [
     {
         name: 'model',
         type: 'object',
@@ -39,7 +39,7 @@ const SpeedDialProps = [
         name: 'mask',
         type: 'boolean',
         default: 'false',
-        description: 'Whether to show a mask element behind the speeddial'
+        description: 'Whether to show a mask element behind the floatbutton'
     },
     {
         name: 'disabled',
@@ -121,7 +121,7 @@ const SpeedDialProps = [
     }
 ];
 
-const SpeedDialEvents = [
+const FloatButtonEvents = [
     {
         name: 'click',
         description: 'Fired when the button element clicked.',
@@ -143,7 +143,7 @@ const SpeedDialEvents = [
     }
 ];
 
-const SpeedDialSlots = [
+const FloatButtonSlots = [
     {
         name: 'item',
         description: 'Custom content for the item'
@@ -159,11 +159,11 @@ const SpeedDialSlots = [
 ];
 
 module.exports = {
-    speeddial: {
-        name: 'SpeedDial',
+    floatbutton: {
+        name: 'FloatButton',
         description: 'When pressed, a floating action button can display multiple primary actions that can be performed on a page.',
-        props: SpeedDialProps,
-        events: SpeedDialEvents,
-        slots: SpeedDialSlots
+        props: FloatButtonProps,
+        events: FloatButtonEvents,
+        slots: FloatButtonSlots
     }
 };

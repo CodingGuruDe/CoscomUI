@@ -84,7 +84,7 @@
             ]
         },
         {
-            "name": "Other Components(77)",
+            "name": "Other Components(61)",
             "children": [
                 {
                     "name": "Data Input Components(12)",
@@ -329,8 +329,8 @@
                     "name": "Misc(12)",
                     "children": [
                         {
-                            "name": "Speed Dial",
-                            "to": "/speeddial"
+                            "name": "Float Button",
+                            "to": "/floatbutton"
                         },
                         {
                             "name": "SplitButton",

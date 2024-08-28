@@ -104,6 +104,7 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/editor/style': 'coscom.editor.style',
     'coscom/fieldset/style': 'coscom.fieldset.style',
     'coscom/fileupload/style': 'coscom.fileupload.style',
+    'coscom/floatbutton/style': 'coscom.floatbutton.style',
     'coscom/focustrap/style': 'coscom.focustrap.style',
     'coscom/image/style': 'coscom.image.style',
     'coscom/inplace/style': 'coscom.inplace.style',

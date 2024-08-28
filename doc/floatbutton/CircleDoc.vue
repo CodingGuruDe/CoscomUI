@@ -1,16 +1,13 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>SpeedDial items are defined with the <i>model</i> property based on MenuModel API. Default orientation of the items is linear and <i>direction</i> property is used to define the position of the items related to the button.</p>
+        <p>Items can be displayed around the button when <i>type</i> is set to <i>circle</i>. Additional <i>radius</i> property defines the radius of the circle.</p>
     </DocSectionText>
     <div class="card">
-        <div :style="{ position: 'relative', height: '500px' }">
-            <SpeedDial :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
-            <SpeedDial :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
-            <SpeedDial :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
-            <SpeedDial :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
+        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
+            <FloatButton :model="items" :radius="80" type="circle" buttonClass="v-button-warning" />
         </div>
     </div>
-    <DocSectionCode :code="code" />
+    <DocSectionCode :code="code" hideCodeSandbox />
 </template>
 
 <script>
@@ -56,19 +53,13 @@ export default {
             ],
             code: {
                 basic: `
-<SpeedDial :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
-<SpeedDial :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
-<SpeedDial :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
-<SpeedDial :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
+<FloatButton :model="items" :radius="80" type="circle" buttonClass="v-button-warning" />
 `,
                 options: `
 <template>
     <div class="card">
-        <div :style="{ position: 'relative', height: '500px' }">
-            <SpeedDial :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
-            <SpeedDial :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
-            <SpeedDial :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
-            <SpeedDial :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
+        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
+            <FloatButton :model="items" :radius="80" type="circle" buttonClass="v-button-warning" />
             <Toast />
         </div>
     </div>
@@ -123,11 +114,8 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <div :style="{ position: 'relative', height: '500px' }">
-            <SpeedDial :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
-            <SpeedDial :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
-            <SpeedDial :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
-            <SpeedDial :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
+        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
+            <FloatButton :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
             <Toast />
         </div>
     </div>
@@ -165,8 +153,7 @@ const items = ref([
     },
     {
         label: 'Upload',
-        icon: 'cs el-upload',
-        command: () => {
+        icon: 'cs el=> {
             router.push('/fileupload');
         }
     },

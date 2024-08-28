@@ -1,10 +1,16 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>Items can be displayed around the button when <i>type</i> is set to <i>circle</i>. Additional <i>radius</i> property defines the radius of the circle.</p>
+        <p>
+            FloatButton component can be used as a floating action button. This provides an application with a main point of action. Floating action buttons can be attached to material to signify a promoted action in your application. The default
+            size will be used in most cases, whereas the small variant can be used to maintain continuity with similar sized elements.
+        </p>
     </DocSectionText>
     <div class="card">
-        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
-            <SpeedDial :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
+        <div :style="{ position: 'relative', height: '500px' }">
+            <FloatButton :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
+            <FloatButton :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
+            <FloatButton :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
+            <FloatButton :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
         </div>
     </div>
     <DocSectionCode :code="code" />
@@ -53,13 +59,19 @@ export default {
             ],
             code: {
                 basic: `
-<SpeedDial :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
+<FloatButton :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
+<FloatButton :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
+<FloatButton :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
+<FloatButton :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
 `,
                 options: `
 <template>
     <div class="card">
-        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
-            <SpeedDial :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
+        <div :style="{ position: 'relative', height: '500px' }">
+            <FloatButton :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
+            <FloatButton :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
+            <FloatButton :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
+            <FloatButton :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
             <Toast />
         </div>
     </div>
@@ -114,8 +126,11 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <div :style="{ height: '500px' }" class="flex align-items-center justify-content-center">
-            <SpeedDial :model="items" :radius="80" type="circle" buttonClass="p-button-warning" />
+        <div :style="{ position: 'relative', height: '500px' }">
+            <FloatButton :model="items" direction="up" :style="{ left: 'calc(50% - 2rem)', bottom: 0 }" />
+            <FloatButton :model="items" direction="down" :style="{ left: 'calc(50% - 2rem)', top: 0 }" />
+            <FloatButton :model="items" direction="left" :style="{ top: 'calc(50% - 2rem)', right: 0 }" />
+            <FloatButton :model="items" direction="right" :style="{ top: 'calc(50% - 2rem)', left: 0 }" />
             <Toast />
         </div>
     </div>
@@ -153,7 +168,8 @@ const items = ref([
     },
     {
         label: 'Upload',
-        icon: 'cs el=> {
+        icon: 'cs el-upload',
+        command: () => {
             router.push('/fileupload');
         }
     },

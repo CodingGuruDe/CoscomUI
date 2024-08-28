@@ -1,7 +1,7 @@
 <template>
     <div class="doc-main">
         <div class="doc-intro">
-            <h1>SpeedDial Traverse</h1>
+            <h1>FloatButton Traverse</h1>
         </div>
         <DocSections :docs="docs" />
     </div>
@@ -17,10 +17,10 @@ export default {
         return {
             docs: [
                 {
-                    id: 'pt.doc.speeddial',
-                    label: 'SpeedDial PT Options',
+                    id: 'pt.doc.floatbutton',
+                    label: 'FloatButton PT Options',
                     component: DocApiTable,
-                    data: getPTOption('SpeedDial')
+                    data: getPTOption('FloatButton')
                 }
             ]
         };

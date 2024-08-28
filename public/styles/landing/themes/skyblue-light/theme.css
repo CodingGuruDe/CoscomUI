@@ -3729,16 +3729,16 @@
     border-color: transparent;
   }
 
-  .v-speeddial {
+  .v-floatbutton {
     position: absolute;
     display: flex;
   }
 
-  .v-speeddial-button {
+  .v-floatbutton-button {
     z-index: 1;
   }
 
-  .v-speeddial-list {
+  .v-floatbutton-list {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -3750,14 +3750,14 @@
     z-index: 2;
   }
 
-  .v-speeddial-item {
+  .v-floatbutton-item {
     transform: scale(0);
     opacity: 0;
     transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, opacity 0.8s;
     will-change: transform;
   }
 
-  .v-speeddial-action {
+  .v-floatbutton-action {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3766,18 +3766,18 @@
     overflow: hidden;
   }
 
-  .v-speeddial-circle .v-speeddial-item,
-.v-speeddial-semi-circle .v-speeddial-item,
-.v-speeddial-quarter-circle .v-speeddial-item {
+  .v-floatbutton-circle .v-floatbutton-item,
+.v-floatbutton-semi-circle .v-floatbutton-item,
+.v-floatbutton-quarter-circle .v-floatbutton-item {
     position: absolute;
   }
 
-  .v-speeddial-rotate {
+  .v-floatbutton-rotate {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     will-change: transform;
   }
 
-  .v-speeddial-mask {
+  .v-floatbutton-mask {
     position: absolute;
     left: 0;
     top: 0;
@@ -3787,48 +3787,48 @@
     transition: opacity 250ms cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
-  .v-speeddial-mask-visible {
+  .v-floatbutton-mask-visible {
     pointer-events: none;
     opacity: 1;
     transition: opacity 400ms cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
-  .v-speeddial-opened .v-speeddial-list {
+  .v-floatbutton-opened .v-floatbutton-list {
     pointer-events: auto;
   }
 
-  .v-speeddial-opened .v-speeddial-item {
+  .v-floatbutton-opened .v-floatbutton-item {
     transform: scale(1);
     opacity: 1;
   }
 
-  .v-speeddial-opened .v-speeddial-rotate {
+  .v-floatbutton-opened .v-floatbutton-rotate {
     transform: rotate(45deg);
   }
 
-  .v-speeddial-button.v-button.v-button-icon-only {
+  .v-floatbutton-button.v-button.v-button-icon-only {
     width: 2.5rem;
     height: 2.5rem;
   }
-  .v-speeddial-button.v-button.v-button-icon-only .v-button-icon {
+  .v-floatbutton-button.v-button.v-button-icon-only .v-button-icon {
     font-size: 1rem;
   }
-  .v-speeddial-button.v-button.v-button-icon-only .v-icon {
+  .v-sfloatbutton-button.v-button.v-button-icon-only .v-icon {
     width: 1rem;
     height: 1rem;
   }
 
-  .v-speeddial-list {
+  .v-floatbutton-list {
     outline: 0 none;
   }
 
-  .v-speeddial-item.v-focus > .v-speeddial-action {
+  .v-floatbutton-item.v-focus > .v-floatbutton-action {
     outline: 1px solid var(--p-focus-ring-color);
     outline-offset: 2px;
     box-shadow: none;
   }
 
-  .v-speeddial-action {
+  .v-floatbutton-action {
     width: 2.5rem;
     height: 2.5rem;
     background: #f1f5f9;
@@ -3836,53 +3836,53 @@
     outline-color: transparent;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
   }
-  .v-speeddial-action:hover {
+  .v-floatbutton-action:hover {
     background: #e2e8f0;
     color: #334155;
   }
 
-  .v-speeddial-direction-up .v-speeddial-item {
+  .v-floatbutton-direction-up .v-floatbutton-item {
     margin: 0.25rem 0;
   }
-  .v-speeddial-direction-up .v-speeddial-item:first-child {
+  .v-floatbutton-direction-up .v-floatbutton-item:first-child {
     margin-bottom: 0.5rem;
   }
 
-  .v-speeddial-direction-down .v-speeddial-item {
+  .v-floatbutton-direction-down .v-floatbutton-item {
     margin: 0.25rem 0;
   }
-  .v-speeddial-direction-down .v-speeddial-item:first-child {
+  .v-floatbutton-direction-down .v-floatbutton-item:first-child {
     margin-top: 0.5rem;
   }
 
-  .v-speeddial-direction-left .v-speeddial-item {
+  .v-floatbutton-direction-left .v-floatbutton-item {
     margin: 0 0.25rem;
   }
-  .v-speeddial-direction-left .v-speeddial-item:first-child {
+  .v-floatbutton-direction-left .v-floatbutton-item:first-child {
     margin-right: 0.5rem;
   }
 
-  .v-speeddial-direction-right .v-speeddial-item {
+  .v-floatbutton-direction-right .v-floatbutton-item {
     margin: 0 0.25rem;
   }
-  .v-speeddial-direction-right .v-speeddial-item:first-child {
+  .v-floatbutton-direction-right .v-floatbutton-item:first-child {
     margin-left: 0.5rem;
   }
 
-  .v-speeddial-circle .v-speeddial-item,
-.v-speeddial-semi-circle .v-speeddial-item,
-.v-speeddial-quarter-circle .v-speeddial-item {
+  .v-floatbutton-circle .v-floatbutton-item,
+.v-floatbutton-semi-circle .v-floatbutton-item,
+.v-floatbutton-quarter-circle .v-floatbutton-item {
     margin: 0;
   }
-  .v-speeddial-circle .v-speeddial-item:first-child, .v-speeddial-circle .v-speeddial-item:last-child,
-.v-speeddial-semi-circle .v-speeddial-item:first-child,
-.v-speeddial-semi-circle .v-speeddial-item:last-child,
-.v-speeddial-quarter-circle .v-speeddial-item:first-child,
-.v-speeddial-quarter-circle .v-speeddial-item:last-child {
+  .v-floatbutton-circle .v-floatbutton-item:first-child, .v-floatbutton-circle .v-floatbutton-item:last-child,
+.v-floatbutton-semi-circle .v-floatbutton-item:first-child,
+.v-floatbutton-semi-circle .v-floatbutton-item:last-child,
+.v-floatbutton-quarter-circle .v-floatbutton-item:first-child,
+.v-floatbutton-quarter-circle .v-floatbutton-item:last-child {
     margin: 0;
   }
 
-  .v-speeddial-mask {
+  .v-floatbutton-mask {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 6px;
   }
@@ -11661,11 +11661,11 @@
     box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--p-focus-ring-color), 0 1px 2px 0 black;
   }
 
-  .v-speeddial-item.v-focus > .v-speeddial-action {
+  .v-floatbutton-item.v-focus > .v-floatbutton-action {
     outline-color: #71f3c8;
   }
 
-  .v-speeddial-button.v-speeddial-rotate {
+  .v-floatbutton-button.v-floatbutton-rotate {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
   }
 

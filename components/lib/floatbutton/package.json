@@ -1,0 +1,9 @@
+{
+    "main": "./floatbutton.cjs.js",
+    "module": "./floatbutton.esm.js",
+    "unpkg": "./floatbutton.min.js",
+    "types": "./FloatButton.d.ts",
+    "browser": {
+        "./sfc": "./FloatButton.vue"
+    }
+}

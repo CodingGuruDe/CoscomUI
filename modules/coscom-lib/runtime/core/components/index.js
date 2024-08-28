@@ -25,7 +25,7 @@ const form = [
     'QrCode'
 ];
 
-const button = ['Button', 'ButtonGroup', 'SpeedDial', 'SplitButton'];
+const button = ['Button', 'ButtonGroup', 'SpeedDial', 'SplitButton', 'FloatButton'];
 
 const data = ['Column', 'Row', 'ColumnGroup', 'DataTable', 'DataView', 'DataViewLayoutOptions', 'OrderList', 'Paginator', 'PickList', 'Tree', 'TreeTable', 'Timeline', 'VirtualScroller'];
 

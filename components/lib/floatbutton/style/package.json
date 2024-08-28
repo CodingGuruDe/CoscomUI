@@ -1,0 +1,6 @@
+{
+    "main": "./floatbuttonstyle.cjs.js",
+    "module": "./floatbuttonstyle.esm.js",
+    "unpkg": "./floatbuttonstyle.min.js",
+    "types": "./FloatButtonStyle.d.ts"
+}

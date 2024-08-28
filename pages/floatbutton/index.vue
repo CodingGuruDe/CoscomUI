@@ -1,27 +1,27 @@
 <template>
     <DocComponent
-        title="Vue Speed Dial Component"
-        header="Speed Dial"
+        title="Vue Float Button Component"
+        header="Float Button"
         description="When pressed, a floating action button can display multiple primary actions that can be performed on a page."
         :componentDocs="docs"
-        :apiDocs="['SpeedDial']"
+        :apiDocs="['FloatButton']"
         :ptTabComponent="ptComponent"
         :themingDocs="themingDoc"
     />
 </template>
 
 <script>
-import AccessibilityDoc from '@/doc/speeddial/AccessibilityDoc.vue';
-import CircleDoc from '@/doc/speeddial/CircleDoc.vue';
-import CustomDoc from '@/doc/speeddial/CustomDoc.vue';
-import ImportDoc from '@/doc/speeddial/ImportDoc.vue';
-import LinearDoc from '@/doc/speeddial/LinearDoc.vue';
-import MaskDoc from '@/doc/speeddial/MaskDoc.vue';
-import QuarterCircleDoc from '@/doc/speeddial/QuarterCircleDoc.vue';
-import SemiCircleDoc from '@/doc/speeddial/SemiCircleDoc.vue';
-import TooltipDoc from '@/doc/speeddial/TooltipDoc.vue';
-import PTComponent from '@/doc/speeddial/pt/index.vue';
-import ThemingDoc from '@/doc/speeddial/theming/index.vue';
+import AccessibilityDoc from '@/doc/floatbutton/AccessibilityDoc.vue';
+import CircleDoc from '@/doc/floatbutton/CircleDoc.vue';
+import CustomDoc from '@/doc/floatbutton/CustomDoc.vue';
+import ImportDoc from '@/doc/floatbutton/ImportDoc.vue';
+import LinearDoc from '@/doc/floatbutton/LinearDoc.vue';
+import MaskDoc from '@/doc/floatbutton/MaskDoc.vue';
+import QuarterCircleDoc from '@/doc/floatbutton/QuarterCircleDoc.vue';
+import SemiCircleDoc from '@/doc/floatbutton/SemiCircleDoc.vue';
+import TooltipDoc from '@/doc/floatbutton/TooltipDoc.vue';
+import PTComponent from '@/doc/floatbutton/pt/index.vue';
+import ThemingDoc from '@/doc/floatbutton/theming/index.vue';
 
 export default {
     data() {

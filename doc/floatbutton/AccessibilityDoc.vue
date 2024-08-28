@@ -2,13 +2,13 @@
     <DocSectionText id="accessibility" label="Accessibility" v-bind="$attrs">
         <h3>Screen Reader</h3>
         <p>
-            SpeedDial component renders a native button element that implicitly includes any passed prop. Text to describe the button can be defined with the <i>aria-labelledby</i> or <i>aria-label</i> props. Addititonally the button includes
+            FloatButton component renders a native button element that implicitly includes any passed prop. Text to describe the button can be defined with the <i>aria-labelledby</i> or <i>aria-label</i> props. Addititonally the button includes
             includes <i>aria-haspopup</i>, <i>aria-expanded</i> for states along with <i>aria-controls</i> to define the relation between the popup and the button.
         </p>
 
         <p>The popup overlay uses <i>menu</i> role on the list and each action item has a <i>menuitem</i> role with an <i>aria-label</i> as the menuitem label. The id of the menu refers to the <i>aria-controls</i> of the button.</p>
 
-        <DocSectionCode :code="code" hideToggleCode hideStackBlitz v-bind="$attrs" />
+        <DocSectionCode :code="code" hideToggleCode hideStackBlitz hideCodeSandbox v-bind="$attrs" />
 
         <h3>Menu Button Keyboard Support</h3>
         <div class="doc-tablewrapper">
@@ -123,7 +123,7 @@ export default {
         return {
             code: {
                 basic: `
-<SpeedDial aria-label="Options" />
+<FloatButton aria-label="Options" />
 `
             }
         };

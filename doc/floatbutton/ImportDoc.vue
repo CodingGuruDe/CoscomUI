@@ -1,6 +1,6 @@
 <template>
     <DocSectionText v-bind="$attrs" />
-    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
+    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz hideCodeSandbox />
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
         return {
             code: {
                 basic: `
-import SpeedDial from '@coscom/coscom-ui/speeddial';
+import FloatButton from '@coscom/coscom-ui/floatbutton';
 `
             }
         };

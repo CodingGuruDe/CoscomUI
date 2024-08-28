@@ -1,10 +1,10 @@
 <template>
     <DocSectionText v-bind="$attrs">
-        <p>SpeedDial sample with an outlined button, custom icons and <i>transitionDelay</i>.</p>
+        <p>FloatButton sample with an outlined button, custom icons and <i>transitionDelay</i>.</p>
     </DocSectionText>
     <div class="card">
         <div class="flex align-items-end justify-content-center" :style="{ position: 'relative', height: '350px' }">
-            <SpeedDial :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="p-button-outlined" />
+            <FloatButton :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="v-button-outlined" />
         </div>
     </div>
     <DocSectionCode :code="code" />
@@ -54,14 +54,14 @@ export default {
             code: {
                 basic: `
 <Toast />
-<SpeedDial :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="p-button-outlined" />
+<FloatButton :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="v-button-outlined" />
 `,
                 options: `
 <template>
     <div class="card">
         <div class="flex align-items-end justify-content-center" :style="{ position: 'relative', height: '350px' }">
             <Toast />
-            <SpeedDial :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="p-button-outlined" />
+            <FloatButton :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="v-button-outlined" />
         </div>
     </div>
 </template>
@@ -117,7 +117,7 @@ export default {
     <div class="card">
         <div class="flex align-items-end justify-content-center" :style="{ position: 'relative', height: '350px' }">
             <Toast />
-            <SpeedDial :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="p-button-outlined" />
+            <FloatButton :model="items" direction="up" :transitionDelay="80" showIcon="cs el-bars" hideIcon="cs el-times" buttonClass="v-button-outlined" />
         </div>
     </div>
 </template>
