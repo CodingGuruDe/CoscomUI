@@ -11,7 +11,7 @@
         <p>Note that, the implementation of <i>checkbox selection</i> in lazy mode needs to be handled manually as in this example since the DataTable cannot know about the whole dataset.</p>
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
-        <div class="card p-fluid">
+        <div class="card v-fluid">
             <DataTable
                 ref="dt"
                 v-model:filters="filters"
@@ -38,40 +38,40 @@
                 <Column selectionMode="multiple" headerStyle="width: 3rem"></Column>
                 <Column field="name" header="Name" filterMatchMode="startsWith" sortable>
                     <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search" />
+                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="v-column-filter" placeholder="Search" />
                     </template>
                 </Column>
                 <Column field="country.name" header="Country" filterField="country.name" filterMatchMode="contains" sortable>
                     <template #body="{ data }">
                         <div class="flex align-items-center gap-2">
-                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code}`" style="width: 24px" />
+                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${returnCountryCode(data.country.name)}`" style="width: 24px" />
                             <span>{{ data.country.name }}</span>
                         </div>
                     </template>
                     <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search" />
+                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="v-column-filter" placeholder="Search" />
                     </template>
                 </Column>
                 <Column field="company" header="Company" filterMatchMode="contains" sortable>
                     <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search" />
+                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="v-column-filter" placeholder="Search" />
                     </template>
                 </Column>
                 <Column field="representative.name" header="Representative" filterField="representative.name" sortable>
                     <template #body="{ data }">
                         <div class="flex align-items-center gap-2">
-                            <img :alt="data.representative.name" :src="`@/assets/images/avatar/${data.representative.image}`" style="width: 32px" />
+                            <img :alt="data.representative.name" :src="`${data.representative.image}`" style="width: 32px" />
                             <span>{{ data.representative.name }}</span>
                         </div>
                     </template>
                     <template #filter="{ filterModel, filterCallback }">
-                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="p-column-filter" placeholder="Search" />
+                        <InputText v-model="filterModel.value" type="text" @keydown.enter="filterCallback()" class="v-column-filter" placeholder="Search" />
                     </template>
                 </Column>
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -142,7 +142,7 @@ export default {
 `,
                 options: `
 <template>
-	<div class="card p-fluid">
+	<div class="card v-fluid">
         <DataTable :value="customers" lazy paginator :first="first" :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
             :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
             :globalFilterFields="['name','country.name', 'company', 'representative.name']"
@@ -276,7 +276,7 @@ export default {
 `,
                 composition: `
 <template>
-	<div class="card p-fluid">
+	<div class="card v-fluid">
         <DataTable :value="customers" lazy paginator :first="first" :rows="10" v-model:filters="filters" ref="dt" dataKey="id"
             :totalRecords="totalRecords" :loading="loading" @page="onPage($event)" @sort="onSort($event)" @filter="onFilter($event)" filterDisplay="row"
             :globalFilterFields="['name','country.name', 'company', 'representative.name']"
@@ -447,11 +447,18 @@ const onRowUnselect = () => {
 
             setTimeout(() => {
                 CustomerService.getCustomers({ lazyEvent: JSON.stringify(this.lazyParams) }).then((data) => {
-                    this.customers = data.customers;
+                    console.log(data);
+                    this.customers = data;
                     this.totalRecords = data.totalRecords;
                     this.loading = false;
                 });
-            }, Math.random() * 1000 + 250);
+            }, Math.random() * 10000 + 250);
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         onPage(event) {
             this.lazyParams = event;

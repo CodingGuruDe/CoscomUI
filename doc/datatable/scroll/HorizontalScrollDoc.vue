@@ -21,7 +21,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>

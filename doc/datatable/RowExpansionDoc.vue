@@ -9,67 +9,66 @@
             <i>&#123;'1004': true&#125;</i>. The <i>dataKey</i> alternative is more performant for large amounts of data.
         </p>
     </DocSectionText>
-    <DeferredDemo @load="loadDemoData">
-        <div class="card">
-            <DataTable v-model:expandedRows="expandedRows" :value="products" dataKey="id" @rowExpand="onRowExpand" @rowCollapse="onRowCollapse" tableStyle="min-width: 60rem">
-                <template #header>
-                    <div class="flex flex-wrap justify-content-end gap-2">
-                        <Button text icon="cs el-plus" label="Expand All" @click="expandAll" />
-                        <Button text icon="cs el-minus" label="Collapse All" @click="collapseAll" />
-                    </div>
+
+    <div class="card">
+        <DataTable v-model:expandedRows="expandedRows" :value="products" dataKey="id" @rowExpand="onRowExpand" @rowCollapse="onRowCollapse" tableStyle="min-width: 60rem">
+            <template #header>
+                <div class="flex flex-wrap justify-content-end gap-2">
+                    <Button text icon="cs el-plus" label="Expand All" @click="expandAll" />
+                    <Button text icon="cs el-minus" label="Collapse All" @click="collapseAll" />
+                </div>
+            </template>
+            <Column expander style="width: 5rem" />
+            <Column field="name" header="Name"></Column>
+            <Column header="Image">
+                <template #body="slotProps">
+                    <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="shadow-4" width="64" />
                 </template>
-                <Column expander style="width: 5rem" />
-                <Column field="name" header="Name"></Column>
-                <Column header="Image">
-                    <template #body="slotProps">
-                        <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="shadow-4" width="64" />
-                    </template>
-                </Column>
-                <Column field="price" header="Price">
-                    <template #body="slotProps">
-                        {{ formatCurrency(slotProps.data.price) }}
-                    </template>
-                </Column>
-                <Column field="category" header="Category"></Column>
-                <Column field="rating" header="Reviews">
-                    <template #body="slotProps">
-                        {{ slotProps.data.rating }}
-                    </template>
-                </Column>
-                <Column header="Status">
-                    <template #body="slotProps">
-                        {{ slotProps.data.inventoryStatus }}
-                    </template>
-                </Column>
-                <template #expansion="slotProps">
-                    <div class="p-3">
-                        <h5>Orders for {{ slotProps.data.name }}</h5>
-                        <DataTable :value="slotProps.data.orders">
-                            <Column field="id" header="Id" sortable></Column>
-                            <Column field="customer" header="Customer" sortable></Column>
-                            <Column field="date" header="Date" sortable></Column>
-                            <Column field="amount" header="Amount" sortable>
-                                <template #body="slotProps">
-                                    {{ formatCurrency(slotProps.data.amount) }}
-                                </template>
-                            </Column>
-                            <Column field="status" header="Status" sortable>
-                                <template #body="slotProps">
-                                    {{ slotProps.data.status.toLowerCase() }}
-                                </template>
-                            </Column>
-                            <Column headerStyle="width:4rem">
-                                <template #body>
-                                    <Button icon="cs el-search" />
-                                </template>
-                            </Column>
-                        </DataTable>
-                    </div>
+            </Column>
+            <Column field="price" header="Price">
+                <template #body="slotProps">
+                    {{ formatCurrency(slotProps.data.price) }}
                 </template>
-            </DataTable>
-        </div>
-    </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+            </Column>
+            <Column field="category" header="Category"></Column>
+            <Column field="rating" header="Reviews">
+                <template #body="slotProps">
+                    {{ slotProps.data.rating }}
+                </template>
+            </Column>
+            <Column header="Status">
+                <template #body="slotProps">
+                    {{ slotProps.data.inventoryStatus }}
+                </template>
+            </Column>
+            <template #expansion="slotProps">
+                <div class="p-3">
+                    <h5>Orders for {{ slotProps.data.name }}</h5>
+                    <DataTable :value="slotProps.data.orders">
+                        <Column field="id" header="Id" sortable></Column>
+                        <Column field="customer" header="Customer" sortable></Column>
+                        <Column field="date" header="Date" sortable></Column>
+                        <Column field="amount" header="Amount" sortable>
+                            <template #body="slotProps">
+                                {{ formatCurrency(slotProps.data.amount) }}
+                            </template>
+                        </Column>
+                        <Column field="status" header="Status" sortable>
+                            <template #body="slotProps">
+                                {{ slotProps.data.status.toLowerCase() }}
+                            </template>
+                        </Column>
+                        <Column headerStyle="width:4rem">
+                            <template #body>
+                                <Button icon="cs el-search" />
+                            </template>
+                        </Column>
+                    </DataTable>
+                </div>
+            </template>
+        </DataTable>
+    </div>
+    <DocSectionCode :code="code" :service="['ProductService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -402,11 +401,11 @@ const getOrderSeverity = (order) => {
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
+    name: 'Lagerapp',
     description: 'Product Description',
-    image: 'bamboo-watch.jpg',
+    image: '',
     price: 65,
-    category: 'Accessories',
+    category: 'Workplace Administration',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5,
@@ -428,10 +427,10 @@ const getOrderSeverity = (order) => {
             }
         };
     },
+    mounted() {
+        ProductService.getProductsWithOrdersSmall().then((data) => (this.products = data));
+    },
     methods: {
-        loadDemoData() {
-            ProductService.getProductsWithOrdersSmall().then((data) => (this.products = data));
-        },
         onRowExpand(event) {
             this.$toast.add({ severity: 'info', summary: 'Product Expanded', detail: event.data.name, life: 3000 });
         },

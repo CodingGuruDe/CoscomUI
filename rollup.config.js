@@ -154,7 +154,6 @@ const CORE_STYLE_DEPENDENCIES = {
     'coscom/tieredmenu/style': 'coscom.tieredmenu.style',
     'coscom/timeline/style': 'coscom.timeline.style',
     'coscom/toast/style': 'coscom.toast.style',
-    'coscom/togglebutton/style': 'coscom.togglebutton.style',
     'coscom/toolbar/style': 'coscom.toolbar.style',
     'coscom/tooltip/style': 'coscom.tooltip.style',
     'coscom/tree/style': 'coscom.tree.style',

@@ -47,7 +47,7 @@
             <Column header="Agent" filterField="representative" :showFilterMatchModes="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
-                        <img :alt="data.representative.name" :src="data.representative.image" style="width: 32px" class="rounded-lg" />
+                        <img :alt="data.representative.name" :src="data.representative.image" style="width: 32px" />
                         <span>{{ data.representative.name }}</span>
                     </div>
                 </template>
@@ -55,7 +55,6 @@
                     <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter">
                         <template #option="slotProps">
                             <div class="flex align-items-center gap-2">
-                                <img :alt="slotProps.option.name" :src="`${slotProps.option.representative.image}`" style="width: 32px" />
                                 <span>{{ slotProps.option.name }}</span>
                             </div>
                         </template>
@@ -265,7 +264,7 @@ export default {
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
             <Column header="Country" filterField="country.name" style="min-width: 12rem">
@@ -276,7 +275,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
                 </template>
                 <template #filterclear="{ filterCallback }">
                     <Button type="button" icon="cs el-times" @click="filterCallback()" severity="secondary"></Button>
@@ -470,7 +469,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
                 </template>
                 <template #filterclear="{ filterCallback }">
                     <Button icon="cs el-times" @click="filterCallback()" type="secondary"></Button>
@@ -589,14 +588,14 @@ const initFilters = () => {
 initFilters();
 
 const formatDate = (value) => {
-    return value.toLocaleDateString('en-US', {
+    return value.toLocaleDateString('de-DE', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric'
     });
 };
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'USD' });
 };
 const clearFilter = () => {
     initFilters();
@@ -653,17 +652,17 @@ const getSeverity = (status) => {
     },
     created() {
         this.initFilters();
-        this.getCustomersSmall();
     },
     mounted() {
         CustomerService.getCustomersMedium().then((data) => {
             this.customers = this.getCustomers(data);
+            this.representatives = data;
             this.loading = false;
         });
     },
     methods: {
         formatDate(value) {
-            return value.toLocaleDateString('en-US', {
+            return value.toLocaleDateString('de-DE', {
                 day: '2-digit',
                 month: '2-digit',
                 year: 'numeric'
@@ -693,11 +692,6 @@ const getSeverity = (status) => {
                 d.date = new Date(d.date);
 
                 return d;
-            });
-        },
-        getCustomersSmall() {
-            CustomerService.getRepresentive().then((data) => {
-                this.representatives = data;
             });
         },
         returnCountryCode(code) {

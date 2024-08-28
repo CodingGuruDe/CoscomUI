@@ -1,21 +1,21 @@
 import BaseStyle from '@coscom/coscom-ui/base/style';
 
 const classes = {
-    root: ({ props }) => [`p-fileupload p-fileupload-${props.mode} v-component`],
+    root: ({ props }) => [`v-fileupload v-fileupload-${props.mode} v-component`],
     buttonbar: 'v-fileupload-buttonbar',
     chooseButton: ({ instance, props }) => [
-        'v-button v-component p-fileupload-choose',
+        'v-button v-component v-fileupload-choose',
         {
             'v-fileupload-choose-selected': props.mode === 'basic' && instance.hasFiles,
             'v-disabled': props.disabled,
             'v-focus': instance.focused
         }
     ],
-    chooseIcon: 'v-button-icon p-button-icon-left',
+    chooseIcon: 'v-button-icon v-button-icon-left',
     chooseButtonLabel: 'v-button-label',
     content: 'v-fileupload-content',
     empty: 'v-fileupload-empty',
-    uploadIcon: 'v-button-icon p-button-icon-left',
+    uploadIcon: 'v-button-icon v-button-icon-left',
     label: 'v-button-label',
     file: 'v-fileupload-file',
     thumbnail: 'v-fileupload-file-thumbnail',

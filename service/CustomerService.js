@@ -9,7 +9,7 @@ export const CustomerService = {
                     code: 'Rhode Island'
                 },
                 company: 'FITCORE',
-                date: '2022-03-19T03:11:55 -01:00',
+                date: '2022-03-19T03:11:55',
                 status: 'renewal',
                 verified: false,
                 activity: 35,
@@ -29,7 +29,7 @@ export const CustomerService = {
                     code: 'North Carolina'
                 },
                 company: 'WARETEL',
-                date: '2017-04-03T08:08:55 -02:00',
+                date: '2017-04-03T08:08:55',
                 status: 'unqualified',
                 verified: true,
                 activity: 18,
@@ -49,7 +49,7 @@ export const CustomerService = {
                     code: 'New Jersey'
                 },
                 company: 'FORTEAN',
-                date: '2014-10-31T07:16:14 -01:00',
+                date: '2014-10-31T07:16:14',
                 status: 'proposal',
                 verified: true,
                 activity: 90,
@@ -69,7 +69,7 @@ export const CustomerService = {
                     code: 'Florida'
                 },
                 company: 'RECRITUBE',
-                date: '2024-05-06T07:23:42 -02:00',
+                date: '2024-05-06T07:23:42',
                 status: 'unqualified',
                 verified: true,
                 activity: 63,
@@ -89,7 +89,7 @@ export const CustomerService = {
                     code: 'Federated States Of Micronesia'
                 },
                 company: 'ECRAZE',
-                date: '2018-04-25T01:15:17 -02:00',
+                date: '2018-04-25T01:15:17',
                 status: 'new',
                 verified: true,
                 activity: 58,
@@ -109,7 +109,7 @@ export const CustomerService = {
                     code: 'American Samoa'
                 },
                 company: 'QIMONK',
-                date: '2018-12-08T04:56:19 -01:00',
+                date: '2018-12-08T04:56:19',
                 status: 'proposal',
                 verified: true,
                 activity: 31,
@@ -129,7 +129,7 @@ export const CustomerService = {
                     code: 'Oregon'
                 },
                 company: 'POWERNET',
-                date: '2014-01-21T02:43:21 -01:00',
+                date: '2014-01-21T02:43:21',
                 status: 'new',
                 verified: false,
                 activity: 92,
@@ -149,7 +149,7 @@ export const CustomerService = {
                     code: 'Hawaii'
                 },
                 company: 'KENEGY',
-                date: '2016-07-10T07:14:44 -02:00',
+                date: '2016-07-10T07:14:44',
                 status: 'unqualified',
                 verified: false,
                 activity: 40,
@@ -169,7 +169,7 @@ export const CustomerService = {
                     code: 'Montana'
                 },
                 company: 'ZENSURE',
-                date: '2014-10-19T08:54:27 -02:00',
+                date: '2014-10-19T08:54:27',
                 status: 'new',
                 verified: true,
                 activity: 28,
@@ -189,7 +189,7 @@ export const CustomerService = {
                     code: 'Marshall Islands'
                 },
                 company: 'PLASMOS',
-                date: '2020-05-06T07:32:09 -02:00',
+                date: '2020-05-06T07:32:09',
                 status: 'renewal',
                 verified: true,
                 activity: 81,
@@ -209,7 +209,7 @@ export const CustomerService = {
                     code: 'Wisconsin'
                 },
                 company: 'TASMANIA',
-                date: '2015-06-29T12:28:48 -02:00',
+                date: '2015-06-29T12:28:48',
                 status: 'unqualified',
                 verified: false,
                 activity: 26,
@@ -229,7 +229,7 @@ export const CustomerService = {
                     code: 'Iowa'
                 },
                 company: 'STRALUM',
-                date: '2022-07-14T11:09:47 -02:00',
+                date: '2022-07-14T11:09:47',
                 status: 'negotiation',
                 verified: true,
                 activity: 72,
@@ -249,7 +249,7 @@ export const CustomerService = {
                     code: 'New Mexico'
                 },
                 company: 'ESCENTA',
-                date: '2018-06-12T03:32:58 -02:00',
+                date: '2018-06-12T03:32:58',
                 status: 'negotiation',
                 verified: true,
                 activity: 73,
@@ -269,7 +269,7 @@ export const CustomerService = {
                     code: 'Indiana'
                 },
                 company: 'SENSATE',
-                date: '2021-06-02T09:48:06 -02:00',
+                date: '2021-06-02T09:48:06',
                 status: 'qualified',
                 verified: false,
                 activity: 29,
@@ -289,7 +289,7 @@ export const CustomerService = {
                     code: 'Alabama'
                 },
                 company: 'PLASTO',
-                date: '2024-04-24T08:43:44 -02:00',
+                date: '2024-04-24T08:43:44',
                 status: 'qualified',
                 verified: false,
                 activity: 43,
@@ -309,7 +309,7 @@ export const CustomerService = {
                     code: 'North Dakota'
                 },
                 company: 'VERTIDE',
-                date: '2024-03-14T07:17:26 -01:00',
+                date: '2024-03-14T07:17:26',
                 status: 'renewal',
                 verified: false,
                 activity: 19,
@@ -329,7 +329,7 @@ export const CustomerService = {
                     code: 'Delaware'
                 },
                 company: 'QABOOS',
-                date: '2016-09-11T09:47:06 -02:00',
+                date: '2016-09-11T09:47:06',
                 status: 'renewal',
                 verified: true,
                 activity: 13,
@@ -349,7 +349,7 @@ export const CustomerService = {
                     code: 'Missouri'
                 },
                 company: 'KONGLE',
-                date: '2015-12-25T09:49:36 -01:00',
+                date: '2015-12-25T09:49:36',
                 status: 'unqualified',
                 verified: false,
                 activity: 66,
@@ -369,7 +369,7 @@ export const CustomerService = {
                     code: 'Utah'
                 },
                 company: 'DRAGBOT',
-                date: '2021-01-24T09:25:44 -01:00',
+                date: '2021-01-24T09:25:44',
                 status: 'new',
                 verified: false,
                 activity: 98,
@@ -389,7 +389,7 @@ export const CustomerService = {
                     code: 'Illinois'
                 },
                 company: 'TURNABOUT',
-                date: '2022-02-11T11:33:52 -01:00',
+                date: '2022-02-11T11:33:52',
                 status: 'proposal',
                 verified: false,
                 activity: 91,
@@ -409,7 +409,7 @@ export const CustomerService = {
                     code: 'South Dakota'
                 },
                 company: 'PATHWAYS',
-                date: '2022-01-29T06:30:25 -01:00',
+                date: '2022-01-29T06:30:25',
                 status: 'proposal',
                 verified: false,
                 activity: 32,
@@ -429,7 +429,7 @@ export const CustomerService = {
                     code: 'Maine'
                 },
                 company: 'XOGGLE',
-                date: '2022-04-11T10:46:37 -02:00',
+                date: '2022-04-11T10:46:37',
                 status: 'renewal',
                 verified: false,
                 activity: 13,
@@ -449,7 +449,7 @@ export const CustomerService = {
                     code: 'Minnesota'
                 },
                 company: 'ZANILLA',
-                date: '2017-05-09T05:10:52 -02:00',
+                date: '2017-05-09T05:10:52',
                 status: 'proposal',
                 verified: false,
                 activity: 64,
@@ -469,7 +469,7 @@ export const CustomerService = {
                     code: 'Pennsylvania'
                 },
                 company: 'GENMEX',
-                date: '2021-10-30T07:31:45 -02:00',
+                date: '2021-10-30T07:31:45',
                 status: 'new',
                 verified: false,
                 activity: 21,
@@ -489,7 +489,7 @@ export const CustomerService = {
                     code: 'Puerto Rico'
                 },
                 company: 'KATAKANA',
-                date: '2014-05-09T02:41:09 -02:00',
+                date: '2014-05-09T02:41:09',
                 status: 'new',
                 verified: true,
                 activity: 12,
@@ -509,7 +509,7 @@ export const CustomerService = {
                     code: 'Nevada'
                 },
                 company: 'OATFARM',
-                date: '2015-05-04T06:17:49 -02:00',
+                date: '2015-05-04T06:17:49',
                 status: 'renewal',
                 verified: false,
                 activity: 93,
@@ -529,7 +529,7 @@ export const CustomerService = {
                     code: 'Vermont'
                 },
                 company: 'DIGIQUE',
-                date: '2016-04-09T12:15:24 -02:00',
+                date: '2016-04-09T12:15:24',
                 status: 'renewal',
                 verified: true,
                 activity: 97,
@@ -549,7 +549,7 @@ export const CustomerService = {
                     code: 'Louisiana'
                 },
                 company: 'VALREDA',
-                date: '2016-04-25T03:05:40 -02:00',
+                date: '2016-04-25T03:05:40',
                 status: 'unqualified',
                 verified: true,
                 activity: 29,
@@ -569,7 +569,7 @@ export const CustomerService = {
                     code: 'Northern Mariana Islands'
                 },
                 company: 'FARMEX',
-                date: '2016-05-07T04:33:27 -02:00',
+                date: '2016-05-07T04:33:27',
                 status: 'unqualified',
                 verified: false,
                 activity: 36,
@@ -589,7 +589,7 @@ export const CustomerService = {
                     code: 'Washington'
                 },
                 company: 'TELEQUIET',
-                date: '2016-02-11T04:53:01 -01:00',
+                date: '2016-02-11T04:53:01',
                 status: 'qualified',
                 verified: true,
                 activity: 71,
@@ -609,7 +609,7 @@ export const CustomerService = {
                     code: 'Palau'
                 },
                 company: 'BEDLAM',
-                date: '2021-02-08T04:46:24 -01:00',
+                date: '2021-02-08T04:46:24',
                 status: 'renewal',
                 verified: false,
                 activity: 97,
@@ -629,7 +629,7 @@ export const CustomerService = {
                     code: 'Kentucky'
                 },
                 company: 'HARMONEY',
-                date: '2014-12-29T10:26:13 -01:00',
+                date: '2014-12-29T10:26:13',
                 status: 'proposal',
                 verified: true,
                 activity: 57,
@@ -649,7 +649,7 @@ export const CustomerService = {
                     code: 'Ohio'
                 },
                 company: 'BLUEGRAIN',
-                date: '2018-01-22T07:59:48 -01:00',
+                date: '2018-01-22T07:59:48',
                 status: 'renewal',
                 verified: false,
                 activity: 50,
@@ -669,7 +669,7 @@ export const CustomerService = {
                     code: 'Virginia'
                 },
                 company: 'RUGSTARS',
-                date: '2022-09-22T06:27:10 -02:00',
+                date: '2022-09-22T06:27:10',
                 status: 'qualified',
                 verified: true,
                 activity: 79,
@@ -686,6 +686,16 @@ export const CustomerService = {
 
     getRepresentive() {
         return Promise.resolve(this.getData());
+    },
+
+    getCustomers(params) {
+        const queryParams = params
+            ? Object.keys(params)
+                  .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(params[k]))
+                  .join('&')
+            : '';
+
+        return fetch('../../../demo/data/customers.json?' + queryParams).then((res) => res.json());
     },
 
     getCustomersSmall() {

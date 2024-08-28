@@ -13,7 +13,7 @@
                 <Column field="representative.name" header="Representative" style="min-width: 200px">
                     <template #body="slotProps">
                         <div class="flex align-items-center gap-2">
-                            <img :alt="slotProps.data.representative.name" :src="`@/assets/images/avatar/${slotProps.data.representative.image}`" width="32" style="vertical-align: middle" />
+                            <img :alt="slotProps.data.representative.name" :src="`${slotProps.data.representative.image}`" width="32" style="vertical-align: middle" />
                             <span>{{ slotProps.data.representative.name }}</span>
                         </div>
                     </template>
@@ -22,7 +22,7 @@
                 <Column field="country" header="Country" style="min-width: 150px">
                     <template #body="slotProps">
                         <div class="flex align-items-center gap-2">
-                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${slotProps.data.country.code}`" style="width: 24px" />
+                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${returnCountryCode(slotProps.data.country.name)}`" style="width: 24px" />
                             <span>{{ slotProps.data.country.name }}</span>
                         </div>
                     </template>
@@ -37,7 +37,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -59,7 +59,7 @@ export default {
     <Column field="representative.name" header="Representative" style="min-width: 200px">
         <template #body="slotProps">
             <div class="flex align-items-center gap-2">
-                <img :alt="slotProps.data.representative.name" :src="\`@/assets/images/avatar/\${slotProps.data.representative.image}\`" width="32" style="vertical-align: middle" />
+                <img :alt="slotProps.data.representative.name" :src="\`\${slotProps.data.representative.image}\`" width="32" style="vertical-align: middle" />
                 <span>{{ slotProps.data.representative.name }}</span>
             </div>
         </template>
@@ -68,7 +68,7 @@ export default {
     <Column field="country" header="Country" style="min-width: 150px">
         <template #body="slotProps">
             <div class="flex align-items-center gap-2">
-                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                 <span>{{ slotProps.data.country.name }}</span>
             </div>
         </template>
@@ -103,7 +103,7 @@ export default {
             <Column field="country" header="Country" style="min-width: 150px">
                 <template #body="slotProps">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                         <span>{{ slotProps.data.country.name }}</span>
                     </div>
                 </template>
@@ -175,7 +175,7 @@ export default {
             <Column field="country" header="Country" style="min-width: 150px">
                 <template #body="slotProps">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                         <span>{{ slotProps.data.country.name }}</span>
                     </div>
                 </template>
@@ -266,6 +266,12 @@ const getSeverity = (status) => {
             }
 
             return total;
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         getSeverity(status) {
             switch (status) {

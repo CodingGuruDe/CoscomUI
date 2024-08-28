@@ -122,7 +122,7 @@ export default {
             {{ data.name }}
         </template>
         <template #filter="{ filterModel, filterCallback }">
-            <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by name" />
+            <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by name" />
         </template>
     </Column>
     <Column header="Country" filterField="country.name" style="min-width: 12rem">
@@ -133,7 +133,7 @@ export default {
             </div>
         </template>
         <template #filter="{ filterModel, filterCallback }">
-            <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="p-column-filter" placeholder="Search by country" />
+            <InputText v-model="filterModel.value" type="text" @input="filterCallback()" class="v-column-filter" placeholder="Search by country" />
         </template>
     </Column>
     <Column header="Agent" filterField="representative" :showFilterMenu="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
@@ -144,7 +144,7 @@ export default {
             </div>
         </template>
         <template #filter="{ filterModel, filterCallback }">
-            <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
+            <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
                 <template #option="slotProps">
                     <div class="flex align-items-center gap-2">
                         <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />
@@ -159,7 +159,7 @@ export default {
             <Tag :value="data.status" :severity="getSeverity(data.status)" />
         </template>
         <template #filter="{ filterModel, filterCallback }">
-            <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="p-column-filter" style="min-width: 12rem" :showClear="true">
+            <Dropdown v-model="filterModel.value" @change="filterCallback()" :options="statuses" placeholder="Select One" class="v-column-filter" style="min-width: 12rem" :showClear="true">
                 <template #option="slotProps">
                     <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                 </template>
@@ -220,7 +220,7 @@ export default {
                     </div>
                 </template>
                 <template #filter="{ filterModel, filterCallback }">
-                    <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
+                    <MultiSelect v-model="filterModel.value" @change="filterCallback()" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter" style="min-width: 14rem" :maxSelectedLabels="1">
                         <template #option="slotProps">
                             <div class="flex align-items-center gap-2">
                                 <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />

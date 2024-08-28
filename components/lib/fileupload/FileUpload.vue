@@ -270,7 +270,7 @@ export default {
         onDragOver(event) {
             if (!this.disabled) {
                 !this.isUnstyled && DomHandler.addClass(this.$refs.content, 'v-fileupload-highlight');
-                this.$refs.content.setAttribute('data-p-highlight', true);
+                this.$refs.content.setAttribute('data-v-highlight', true);
                 event.stopPropagation();
                 event.preventDefault();
             }
@@ -278,13 +278,13 @@ export default {
         onDragLeave() {
             if (!this.disabled) {
                 !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'v-fileupload-highlight');
-                this.$refs.content.setAttribute('data-p-highlight', false);
+                this.$refs.content.setAttribute('data-v-highlight', false);
             }
         },
         onDrop(event) {
             if (!this.disabled) {
                 !this.isUnstyled && DomHandler.removeClass(this.$refs.content, 'v-fileupload-highlight');
-                this.$refs.content.setAttribute('data-p-highlight', false);
+                this.$refs.content.setAttribute('data-v-highlight', false);
                 event.stopPropagation();
                 event.preventDefault();
 

@@ -69,11 +69,11 @@ import { StyleClassDirectivePassThroughOptions } from '../styleclass/StyleClass'
 import { TabMenuPassThroughOptions } from '../tabmenu/TabMenu';
 import { TabPanelPassThroughOptions } from '../tabpanel/TabPanel';
 import { TabPassThroughOptions } from '../tab/Tab';
-import { TagPassThroughOptions } from '../tag/Tag';
 import { TextareaPassThroughOptions } from '../textarea/Textarea';
 import { TieredMenuPassThroughOptions } from '../tieredmenu/TieredMenu';
 import { TimelinePassThroughOptions } from '../timeline/Timeline';
 import { ToastPassThroughOptions } from '../toast/Toast';
+import { ToggleButtonPassThroughOptions } from '../togglebutton/ToggleButton';
 import { ToolbarPassThroughOptions } from '../toolbar/Toolbar';
 import { TooltipDirectivePassThroughOptions } from '../tooltip/Tooltip';
 import { TreePassThroughOptions } from '../tree/Tree';
@@ -178,6 +178,7 @@ export interface CoscomPTOptions {
     tieredmenu?: DefaultPassThrough<TieredMenuPassThroughOptions>;
     timeline?: DefaultPassThrough<TimelinePassThroughOptions>;
     toast?: DefaultPassThrough<ToastPassThroughOptions>;
+    togglebutton?: DefaultPassThrough<ToggleButtonPassThroughOptions>;
     toolbar?: DefaultPassThrough<ToolbarPassThroughOptions>;
     tree?: DefaultPassThrough<TreePassThroughOptions>;
     treeselect?: DefaultPassThrough<TreeSelectPassThroughOptions>;

@@ -21,7 +21,7 @@
                 tableStyle="min-width: 50rem"
             >
                 <template #groupheader="slotProps">
-                    <img :alt="slotProps.data.representative.name" :src="`@/assets/images/avatar/${slotProps.data.representative.image}`" width="32" style="vertical-align: middle" class="ml-2" />
+                    <img :alt="slotProps.data.representative.name" :src="`${slotProps.data.representative.image}`" width="32" style="vertical-align: middle" class="ml-2" />
                     <span class="vertical-align-middle ml-2 font-bold line-height-3">{{ slotProps.data.representative.name }}</span>
                 </template>
                 <Column field="representative.name" header="Representative"></Column>
@@ -29,7 +29,7 @@
                 <Column field="country" header="Country" style="width: 20%">
                     <template #body="slotProps">
                         <div class="flex align-items-center gap-2">
-                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${slotProps.data.country.code}`" style="width: 24px" />
+                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${returnCountryCode(slotProps.data.country.name)}`" style="width: 24px" />
                             <span>{{ slotProps.data.country.name }}</span>
                         </div>
                     </template>
@@ -47,7 +47,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -72,7 +72,7 @@ export default {
     <Column field="country" header="Country" style="width: 20%">
         <template #body="slotProps">
             <div class="flex align-items-center gap-2">
-                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                 <span>{{ slotProps.data.country.name }}</span>
             </div>
         </template>
@@ -104,7 +104,7 @@ export default {
             <Column field="country" header="Country" style="width: 20%">
                 <template #body="slotProps">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                         <span>{{ slotProps.data.country.name }}</span>
                     </div>
                 </template>
@@ -194,7 +194,7 @@ export default {
             <Column field="country" header="Country" style="width: 20%">
                 <template #body="slotProps">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${slotProps.data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(slotProps.data.country.name)}\`" style="width: 24px" />
                         <span>{{ slotProps.data.country.name }}</span>
                     </div>
                 </template>
@@ -268,10 +268,10 @@ const getSeverity = (status) => {
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
     company: 'Benton, John B Jr',
     date: '2015-09-13',
@@ -310,6 +310,12 @@ const getSeverity = (status) => {
             }
 
             return total;
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         getSeverity(status) {
             switch (status) {

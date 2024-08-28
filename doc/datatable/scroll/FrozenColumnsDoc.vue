@@ -4,7 +4,7 @@
     </DocSectionText>
     <DeferredDemo @load="loadDemoData">
         <div class="card">
-            <Button v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
+            <Button v-model="balanceFrozen" type="secondary" :icon="!isActive ? 'cs el-lock' : 'cs el-lock-open'" @click="toggleState()" label="Balance" :data-v-checked="isActive" />
 
             <DataTable :value="customers" scrollable scrollHeight="400px" class="mt-4">
                 <Column field="name" header="Name" style="min-width: 200px" frozen class="font-bold"></Column>
@@ -24,7 +24,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -35,9 +35,10 @@ export default {
         return {
             customers: null,
             balanceFrozen: false,
+            isActive: false,
             code: {
                 basic: `
-<ToggleButton v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
+<Button v-model="balanceFrozen" type="secondary" :icon="!isActive ? 'cs el-lock' : 'cs el-lock-open'" @click="toggleState()" label="Balance" :data-v-checked="isActive" />
 <DataTable :value="customers" scrollable scrollHeight="400px" class="mt-4">
     <Column field="name" header="Name" style="min-width: 200px" frozen class="font-bold"></Column>
     <Column field="id" header="Id" style="min-width: 100px"></Column>
@@ -58,7 +59,7 @@ export default {
                 options: `
 <template>
     <div class="card">
-        <ToggleButton v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
+        <Button v-model="balanceFrozen" type="secondary" :icon="!isActive ? 'cs el-lock' : 'cs el-lock-open'" @click="toggleState()" label="Balance" :data-v-checked="isActive" />
 
         <DataTable :value="customers" scrollable scrollHeight="400px" class="mt-4">
             <Column field="name" header="Name" style="min-width: 200px" frozen class="font-bold"></Column>
@@ -86,7 +87,8 @@ export default {
     data() {
         return {
             customers: null,
-            balanceFrozen: false
+            balanceFrozen: false,
+            isActive: false,
         };
     },
     mounted() {
@@ -97,6 +99,10 @@ export default {
     methods: {
         formatCurrency(value) {
             return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        },
+        toggleState() {
+            this.isActive = !this.isActive;
+            this.balanceFrozen = !this.balanceFrozen;
         }
     }
 };
@@ -105,7 +111,7 @@ export default {
                 composition: `
 <template>
     <div class="card">
-        <ToggleButton v-model="balanceFrozen" onIcon="cs el-lock" offIcon="cs el-lock-open" onLabel="Balance" offLabel="Balance" />
+        <Button v-model="balanceFrozen" type="secondary" :icon="!isActive ? 'cs el-lock' : 'cs el-lock-open'" @click="toggleState()" label="Balance" :data-v-checked="isActive" />
 
         <DataTable :value="customers" scrollable scrollHeight="400px" class="mt-4">
             <Column field="name" header="Name" style="min-width: 200px" frozen class="font-bold"></Column>
@@ -138,18 +144,23 @@ onMounted(() => {
 
 const customers = ref();
 const balanceFrozen = ref(false);
+const isActive = ref(false);
 const formatCurrency = (value) => {
     return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 };
+const toggleState = () => {
+    isActive.value = !isActive.value;
+    balanceFrozen.value = !balanceFrozen.value;
+}   
 <\/script>
 `,
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
     company: 'Benton, John B Jr',
     date: '2015-09-13',
@@ -175,6 +186,10 @@ const formatCurrency = (value) => {
         },
         formatCurrency(value) {
             return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        },
+        toggleState() {
+            this.isActive = !this.isActive;
+            this.balanceFrozen = !this.balanceFrozen;
         }
     }
 };

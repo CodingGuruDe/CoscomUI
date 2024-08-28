@@ -6,13 +6,13 @@
         <div class="card">
             <Toolbar class="mb-4">
                 <template #start>
-                    <Button label="New" icon="cs el-plus" severity="success" class="mr-2" @click="openNew" />
-                    <Button label="Delete" icon="cs el-trash" severity="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
+                    <Button label="New" icon="cs el-plus" type="success" class="mr-2" @click="openNew" />
+                    <Button label="Delete" icon="cs el-trash" type="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
                 </template>
 
                 <template #end>
                     <FileUpload mode="basic" accept="image/*" :maxFileSize="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block" />
-                    <Button label="Export" icon="cs el-upload" severity="help" @click="exportCSV($event)" />
+                    <Button label="Export" icon="cs el-upload" type="help" @click="exportCSV($event)" />
                 </template>
             </Toolbar>
 
@@ -32,21 +32,18 @@
                     <div class="flex flex-wrap gap-2 align-items-center justify-content-between">
                         <h4 class="m-0">Manage Products</h4>
 
-                        <InputIcon>
-                            <i class="cs el-search" />
-                        </InputIcon>
-                        <InputText v-model="filters['global'].value" placeholder="Search..." />
+                        <div class="relative">
+                            <InputIcon>
+                                <i class="cs el-search" />
+                            </InputIcon>
+                            <InputText v-model="filters['global'].value" placeholder="Search..." />
+                        </div>
                     </div>
                 </template>
 
                 <Column selectionMode="multiple" style="width: 3rem" :exportable="false"></Column>
                 <Column field="code" header="Code" sortable style="min-width: 12rem"></Column>
                 <Column field="name" header="Name" sortable style="min-width: 16rem"></Column>
-                <Column header="Image">
-                    <template #body="slotProps">
-                        <img :src="`@/assets/images/product/${slotProps.data.image}`" :alt="slotProps.data.image" class="border-round" style="width: 64px" />
-                    </template>
-                </Column>
                 <Column field="price" header="Price" sortable style="min-width: 8rem">
                     <template #body="slotProps">
                         {{ formatCurrency(slotProps.data.price) }}
@@ -66,15 +63,14 @@
                 <Column :exportable="false" style="min-width: 12rem">
                     <template #body="slotProps">
                         <Button icon="cs el-pencil" outlined rounded class="mr-2" @click="editProduct(slotProps.data)" />
-                        <Button icon="cs el-trash" outlined rounded severity="danger" @click="confirmDeleteProduct(slotProps.data)" />
+                        <Button icon="cs el-trash" outlined rounded type="danger" @click="confirmDeleteProduct(slotProps.data)" />
                     </template>
                 </Column>
             </DataTable>
         </div>
     </DeferredDemo>
 
-    <Dialog v-model:visible="productDialog" :style="{ width: '450px' }" header="Product Details" :modal="true" class="p-fluid">
-        <img v-if="product.image" :src="`@/assets/images/product/${product.image}`" :alt="product.image" class="block m-auto pb-3" />
+    <Dialog v-model:visible="productDialog" :style="{ width: '450px' }" header="Product Details" :modal="true" class="v-fluid">
         <div class="field">
             <label for="name">Name</label>
             <InputText id="name" v-model.trim="product.name" required="true" autofocus :invalid="submitted && !product.name" />
@@ -106,20 +102,20 @@
             <label class="mb-3">Category</label>
             <div class="formgrid grid">
                 <div class="field-radiobutton col-6">
-                    <RadioButton id="category1" v-model="product.category" name="category" value="Accessories" />
-                    <label for="category1">Accessories</label>
+                    <RadioButton id="category1" v-model="product.category" name="category" value="NC Programms Management" />
+                    <label for="category1">NC Programms</label>
                 </div>
                 <div class="field-radiobutton col-6">
-                    <RadioButton id="category2" v-model="product.category" name="category" value="Clothing" />
-                    <label for="category2">Clothing</label>
+                    <RadioButton id="category2" v-model="product.category" name="category" value="Workplace Administration" />
+                    <label for="category2">Workplace Administration</label>
                 </div>
                 <div class="field-radiobutton col-6">
-                    <RadioButton id="category3" v-model="product.category" name="category" value="Electronics" />
-                    <label for="category3">Electronics</label>
+                    <RadioButton id="category3" v-model="product.category" name="category" value="Toolist Management" />
+                    <label for="category3">Toolist Management</label>
                 </div>
                 <div class="field-radiobutton col-6">
-                    <RadioButton id="category4" v-model="product.category" name="category" value="Fitness" />
-                    <label for="category4">Fitness</label>
+                    <RadioButton id="category4" v-model="product.category" name="category" value="Orders Management" />
+                    <label for="category4">Orders Management</label>
                 </div>
             </div>
         </div>
@@ -141,7 +137,7 @@
     </Dialog>
 
     <Dialog v-model:visible="deleteProductDialog" :style="{ width: '450px' }" header="Confirm" :modal="true">
-        <div class="confirmation-content">
+        <div class="flex items-center gap-4">
             <i class="cs el-exclamation-triangle mr-3" style="font-size: 2rem" />
             <span v-if="product"
                 >Are you sure you want to delete <b>{{ product.name }}</b
@@ -155,7 +151,7 @@
     </Dialog>
 
     <Dialog v-model:visible="deleteProductsDialog" :style="{ width: '450px' }" header="Confirm" :modal="true">
-        <div class="confirmation-content">
+        <div class="flex items-center gap-4">
             <i class="cs el-exclamation-triangle mr-3" style="font-size: 2rem" />
             <span v-if="product">Are you sure you want to delete the selected products?</span>
         </div>
@@ -165,7 +161,7 @@
         </template>
     </Dialog>
 
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['ProductService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -192,12 +188,12 @@ export default {
                 basic: `
 <Toolbar class="mb-4">
     <template #start>
-        <Button label="New" icon="cs el-plus" severity="success" class="mr-2" @click="openNew" />
-        <Button label="Delete" icon="cs el-trash" severity="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
+        <Button label="New" icon="cs el-plus" type="success" class="mr-2" @click="openNew" />
+        <Button label="Delete" icon="cs el-trash" type="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
     </template>
     <template #end>
         <FileUpload mode="basic" accept="image/*" :maxFileSize="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block" />
-        <Button label="Export" icon="cs el-upload" severity="help" @click="exportCSV($event)"  />
+        <Button label="Export" icon="cs el-upload" type="help" @click="exportCSV($event)"  />
     </template>
 </Toolbar>
 <DataTable ref="dt" :value="products" v-model:selection="selectedProducts" dataKey="id"
@@ -242,7 +238,7 @@ export default {
     <Column :exportable="false" style="min-width:8rem">
         <template #body="slotProps">
             <Button icon="cs el-pencil" outlined rounded class="mr-2" @click="editProduct(slotProps.data)" />
-            <Button icon="cs el-trash" outlined rounded severity="danger" @click="confirmDeleteProduct(slotProps.data)" />
+            <Button icon="cs el-trash" outlined rounded type="danger" @click="confirmDeleteProduct(slotProps.data)" />
         </template>
     </Column>
 </DataTable>
@@ -253,13 +249,13 @@ export default {
         <div class="card">
             <Toolbar class="mb-4">
                 <template #start>
-                    <Button label="New" icon="cs el-plus" severity="success" class="mr-2" @click="openNew" />
-                    <Button label="Delete" icon="cs el-trash" severity="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
+                    <Button label="New" icon="cs el-plus" type="success" class="mr-2" @click="openNew" />
+                    <Button label="Delete" icon="cs el-trash" type="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
                 </template>
 
                 <template #end>
                     <FileUpload mode="basic" accept="image/*" :maxFileSize="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block" />
-                    <Button label="Export" icon="cs el-upload" severity="help" @click="exportCSV($event)"  />
+                    <Button label="Export" icon="cs el-upload" type="help" @click="exportCSV($event)"  />
                 </template>
             </Toolbar>
 
@@ -306,7 +302,7 @@ export default {
                 <Column :exportable="false" style="min-width:8rem">
                     <template #body="slotProps">
                         <Button icon="cs el-pencil" outlined rounded class="mr-2" @click="editProduct(slotProps.data)" />
-                        <Button icon="cs el-trash" outlined rounded severity="danger" @click="confirmDeleteProduct(slotProps.data)" />
+                        <Button icon="cs el-trash" outlined rounded type="danger" @click="confirmDeleteProduct(slotProps.data)" />
                     </template>
                 </Column>
             </DataTable>
@@ -544,13 +540,13 @@ export default {
         <div class="card">
             <Toolbar class="mb-4">
                 <template #start>
-                    <Button label="New" icon="cs el-plus" severity="success" class="mr-2" @click="openNew" />
-                    <Button label="Delete" icon="cs el-trash" severity="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
+                    <Button label="New" icon="cs el-plus" type="success" class="mr-2" @click="openNew" />
+                    <Button label="Delete" icon="cs el-trash" type="danger" @click="confirmDeleteSelected" :disabled="!selectedProducts || !selectedProducts.length" />
                 </template>
 
                 <template #end>
                     <FileUpload mode="basic" accept="image/*" :maxFileSize="1000000" label="Import" chooseLabel="Import" class="mr-2 inline-block" />
-                    <Button label="Export" icon="cs el-upload" severity="help" @click="exportCSV($event)"  />
+                    <Button label="Export" icon="cs el-upload" type="help" @click="exportCSV($event)"  />
                 </template>
             </Toolbar>
 
@@ -597,7 +593,7 @@ export default {
                 <Column :exportable="false" style="min-width:8rem">
                     <template #body="slotProps">
                         <Button icon="cs el-pencil" outlined rounded class="mr-2" @click="editProduct(slotProps.data)" />
-                        <Button icon="cs el-trash" outlined rounded severity="danger" @click="confirmDeleteProduct(slotProps.data)" />
+                        <Button icon="cs el-trash" outlined rounded type="danger" @click="confirmDeleteProduct(slotProps.data)" />
                     </template>
                 </Column>
             </DataTable>
@@ -826,11 +822,11 @@ const getStatusLabel = (status) => {
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
+    name: 'COSCOM Lagerapp',
     description: 'Product Description',
-    image: 'bamboo-watch.jpg',
+    image: '',
     price: 65,
-    category: 'Accessories',
+    category: 'Workplace Administration',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5
@@ -871,7 +867,6 @@ const getStatusLabel = (status) => {
                 } else {
                     this.product.id = this.createId();
                     this.product.code = this.createId();
-                    this.product.image = 'product-placeholder.svg';
                     this.product.inventoryStatus = this.product.inventoryStatus ? this.product.inventoryStatus.value : 'INSTOCK';
                     this.products.push(this.product);
                     this.$toast.add({ severity: 'success', summary: 'Successful', detail: 'Product Created', life: 3000 });

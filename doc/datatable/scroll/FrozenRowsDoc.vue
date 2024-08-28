@@ -28,7 +28,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -41,18 +41,18 @@ export default {
             lockedCustomers: [
                 {
                     id: 5135,
-                    name: 'Geraldine Bisset',
+                    name: 'Max Musterman',
                     country: {
-                        name: 'France',
-                        code: 'fr'
+                        name: 'Germany',
+                        code: 'de'
                     },
                     company: 'Bisset Group',
                     status: 'proposal',
                     date: '2019-05-05',
                     activity: 0,
                     representative: {
-                        name: 'Amy Elsner',
-                        image: 'amyelsner.png'
+                        name: 'Thomas Adductor',
+                        image: ''
                     }
                 }
             ],
@@ -119,18 +119,18 @@ export default {
             lockedCustomers: [
                 {
                     id: 5135,
-                    name: 'Geraldine Bisset',
+                    name: 'Max Musterman',
                     country: {
-                        name: 'France',
-                        code: 'fr'
+                        name: 'Germany',
+                        code: 'de'
                     },
                     company: 'Bisset Group',
                     status: 'proposal',
                     date: '2019-05-05',
                     activity: 0,
                     representative: {
-                        name: 'Amy Elsner',
-                        image: 'amyelsner.png'
+                        name: 'Thomas Adductor',
+                        image: ''
                     }
                 }
             ]
@@ -195,18 +195,18 @@ const customers = ref();
 const lockedCustomers = ref([
     {
         id: 5135,
-        name: 'Geraldine Bisset',
+        name: 'Max Musterman',
         country: {
-            name: 'France',
-            code: 'fr'
+            name: 'Germany',
+            code: 'de'
         },
         company: 'Bisset Group',
         status: 'proposal',
         date: '2019-05-05',
         activity: 0,
         representative: {
-            name: 'Amy Elsner',
-            image: 'amyelsner.png'
+            name: 'Thomas Adductor',
+            image: ''
         }
     }
 ]);
@@ -235,22 +235,20 @@ onMounted(() => {
 `,
                 data: `
 {
-    id: 1000,
-    name: 'James Butt',
+    id: 5135,
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
-    company: 'Benton, John B Jr',
-    date: '2015-09-13',
-    status: 'unqualified',
-    verified: true,
-    activity: 17,
+    company: 'Bisset Group',
+    status: 'proposal',
+    date: '2019-05-05',
+    activity: 0,
     representative: {
-        name: 'Ioni Bowcher',
-        image: 'ionibowcher.png'
-    },
-    balance: 70663
+        name: 'Thomas Adductor',
+        image: ''
+    }
 },
 ...
 `

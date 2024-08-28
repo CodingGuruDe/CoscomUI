@@ -20,7 +20,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['ProductService']" />
+    <DocSectionCode :code="code" :service="['ProductService']" hideCodeSandbox />
 </template>
 
 <script>

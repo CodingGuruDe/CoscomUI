@@ -31,32 +31,31 @@
                         {{ data.name }}
                     </template>
                     <template #filter="{ filterModel }">
-                        <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
+                        <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by name" />
                     </template>
                 </Column>
                 <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                     <template #body="{ data }">
                         <div class="flex align-items-center gap-2">
-                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${data.country.code}`" style="width: 24px" />
+                            <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="`flag flag-${returnCountryCode(data.country.name)}`" style="width: 24px" />
                             <span>{{ data.country.name }}</span>
                         </div>
                     </template>
                     <template #filter="{ filterModel }">
-                        <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+                        <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
                     </template>
                 </Column>
                 <Column header="Agent" sortable sortField="representative.name" filterField="representative" :showFilterMatchModes="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
                     <template #body="{ data }">
                         <div class="flex align-items-center gap-2">
-                            <img :alt="data.representative.name" :src="`@/assets/images/avatar/${data.representative.image}`" style="width: 32px" />
+                            <img :alt="data.representative.name" :src="data.representative.image" style="width: 32px" />
                             <span>{{ data.representative.name }}</span>
                         </div>
                     </template>
                     <template #filter="{ filterModel }">
-                        <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter">
+                        <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter">
                             <template #option="slotProps">
                                 <div class="flex align-items-center gap-2">
-                                    <img :alt="slotProps.option.name" :src="`@/assets/images/avatar/${slotProps.option.image}`" style="width: 32px" />
                                     <span>{{ slotProps.option.name }}</span>
                                 </div>
                             </template>
@@ -84,7 +83,7 @@
                         {{ data.status }}
                     </template>
                     <template #filter="{ filterModel }">
-                        <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
+                        <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="v-column-filter" showClear>
                             <template #option="slotProps">
                                 {{ slotProps.option }}
                             </template>
@@ -111,7 +110,7 @@
             </DataTable>
         </div>
     </DeferredDemo>
-    <DocSectionCode :code="code" :service="['CustomerService']" />
+    <DocSectionCode :code="code" :service="['CustomerService']" hideCodeSandbox />
 </template>
 
 <script>
@@ -124,18 +123,7 @@ export default {
             customers: null,
             selectedCustomers: null,
             filters: null,
-            representatives: [
-                { name: 'Amy Elsner', image: 'amyelsner.png' },
-                { name: 'Anna Fali', image: 'annafali.png' },
-                { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-                { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-                { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-                { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-                { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-                { name: 'Onyama Limba', image: 'onyamalimba.png' },
-                { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-                { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-            ],
+            representatives: [],
             statuses: ['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal'],
             code: {
                 basic: `
@@ -159,32 +147,31 @@ export default {
             {{ data.name }}
         </template>
         <template #filter="{ filterModel }">
-            <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
+            <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by name" />
         </template>
     </Column>
     <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
         <template #body="{ data }">
             <div class="flex align-items-center gap-2">
-                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
+                <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(data.country.name)}\`" style="width: 24px" />
                 <span>{{ data.country.name }}</span>
             </div>
         </template>
         <template #filter="{ filterModel }">
-            <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+            <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
         </template>
     </Column>
     <Column header="Agent" sortable sortField="representative.name" filterField="representative" :showFilterMatchModes="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
         <template #body="{ data }">
             <div class="flex align-items-center gap-2">
-                <img :alt="data.representative.name" :src="\`@/assets/images/avatar/\${data.representative.image}\`" style="width: 32px" />
+                <img :alt="data.representative.name" :src="\`data.representative.image\`" style="width: 32px" />
                 <span>{{ data.representative.name }}</span>
             </div>
         </template>
         <template #filter="{ filterModel }">
-            <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter">
+            <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter">
                 <template #option="slotProps">
                     <div class="flex align-items-center gap-2">
-                        <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />
                         <span>{{ slotProps.option.name }}</span>
                     </div>
                 </template>
@@ -212,7 +199,7 @@ export default {
             <Tag :value="data.status" :severity="getSeverity(data.status)" />
         </template>
         <template #filter="{ filterModel }">
-            <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
+            <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="v-column-filter" showClear>
                 <template #option="slotProps">
                     <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                 </template>
@@ -261,32 +248,31 @@ export default {
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
             <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(data.country.name)}\`" style="width: 24px" />
                         <span>{{ data.country.name }}</span>
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
                 </template>
             </Column>
             <Column header="Agent" sortable sortField="representative.name" filterField="representative" :showFilterMatchModes="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
-                        <img :alt="data.representative.name" :src="\`@/assets/images/avatar/\${data.representative.image}\`" style="width: 32px" />
+                        <img :alt="data.representative.name" :src="\`data.representative.image\`" style="width: 32px" />
                         <span>{{ data.representative.name }}</span>
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter">
+                    <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter">
                         <template #option="slotProps">
                             <div class="flex align-items-center gap-2">
-                                <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />
                                 <span>{{ slotProps.option.name }}</span>
                             </div>
                         </template>
@@ -314,7 +300,7 @@ export default {
                     <Tag :value="data.status" :severity="getSeverity(data.status)" />
                 </template>
                 <template #filter="{ filterModel }">
-                    <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
+                    <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="v-column-filter" showClear>
                         <template #option="slotProps">
                             <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                         </template>
@@ -352,18 +338,7 @@ export default {
             customers: null,
             selectedCustomers: null,
             filters: null,
-            representatives: [
-                { name: 'Amy Elsner', image: 'amyelsner.png' },
-                { name: 'Anna Fali', image: 'annafali.png' },
-                { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-                { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-                { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-                { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-                { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-                { name: 'Onyama Limba', image: 'onyamalimba.png' },
-                { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-                { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-            ],
+            representatives: [],
             statuses: ['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal']
         };
     },
@@ -408,6 +383,12 @@ export default {
 
                 return d;
             });
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         getSeverity(status) {
             switch (status) {
@@ -454,32 +435,31 @@ export default {
                     {{ data.name }}
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by name" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by name" />
                 </template>
             </Column>
             <Column header="Country" sortable sortField="country.name" filterField="country.name" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
-                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${data.country.code}\`" style="width: 24px" />
+                        <img alt="flag" src="@/assets/images/flag/flag_placeholder.png" :class="\`flag flag-\${returnCountryCode(data.country.name)}\`" style="width: 24px" />
                         <span>{{ data.country.name }}</span>
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <InputText v-model="filterModel.value" type="text" class="p-column-filter" placeholder="Search by country" />
+                    <InputText v-model="filterModel.value" type="text" class="v-column-filter" placeholder="Search by country" />
                 </template>
             </Column>
             <Column header="Agent" sortable sortField="representative.name" filterField="representative" :showFilterMatchModes="false" :filterMenuStyle="{ width: '14rem' }" style="min-width: 14rem">
                 <template #body="{ data }">
                     <div class="flex align-items-center gap-2">
-                        <img :alt="data.representative.name" :src="\`@/assets/images/avatar/\${data.representative.image}\`" style="width: 32px" />
+                        <img :alt="data.representative.name" :src="\`data.representative.image\`" style="width: 32px" />
                         <span>{{ data.representative.name }}</span>
                     </div>
                 </template>
                 <template #filter="{ filterModel }">
-                    <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="p-column-filter">
+                    <MultiSelect v-model="filterModel.value" :options="representatives" optionLabel="name" placeholder="Any" class="v-column-filter">
                         <template #option="slotProps">
                             <div class="flex align-items-center gap-2">
-                                <img :alt="slotProps.option.name" :src="\`@/assets/images/avatar/\${slotProps.option.image}\`" style="width: 32px" />
                                 <span>{{ slotProps.option.name }}</span>
                             </div>
                         </template>
@@ -507,7 +487,7 @@ export default {
                     <Tag :value="data.status" :severity="getSeverity(data.status)" />
                 </template>
                 <template #filter="{ filterModel }">
-                    <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="p-column-filter" showClear>
+                    <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Select One" class="v-column-filter" showClear>
                         <template #option="slotProps">
                             <Tag :value="slotProps.option" :severity="getSeverity(slotProps.option)" />
                         </template>
@@ -543,18 +523,7 @@ import { FilterMatchMode, FilterOperator } from '@coscom/coscom-ui/api';
 const customers = ref();
 const selectedCustomers = ref();
 const filters = ref();
-const representatives = ref([
-    { name: 'Amy Elsner', image: 'amyelsner.png' },
-    { name: 'Anna Fali', image: 'annafali.png' },
-    { name: 'Asiya Javayant', image: 'asiyajavayant.png' },
-    { name: 'Bernardo Dominic', image: 'bernardodominic.png' },
-    { name: 'Elwin Sharvill', image: 'elwinsharvill.png' },
-    { name: 'Ioni Bowcher', image: 'ionibowcher.png' },
-    { name: 'Ivan Magalhaes', image: 'ivanmagalhaes.png' },
-    { name: 'Onyama Limba', image: 'onyamalimba.png' },
-    { name: 'Stephen Shaw', image: 'stephenshaw.png' },
-    { name: 'XuXue Feng', image: 'xuxuefeng.png' }
-]);
+const representatives = ref([]);
 const statuses = ref(['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal']);
 
 onMounted(() => {
@@ -600,6 +569,12 @@ const getCustomers = (data) => {
         return d;
     });
 };
+const returnCountryCode = (code) => {
+    if (code === 'Germany') return 'de';
+    else if (code === 'Croatia') return 'hr';
+    else if (code === 'Austria') return 'at';
+    else return 'ch';
+},
 const getSeverity = (status) => {
     switch (status) {
         case 'unqualified':
@@ -623,10 +598,10 @@ const getSeverity = (status) => {
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
     company: 'Benton, John B Jr',
     date: '2015-09-13',
@@ -650,6 +625,7 @@ const getSeverity = (status) => {
         loadDemoData() {
             CustomerService.getCustomersLarge().then((data) => {
                 this.customers = this.getCustomers(data);
+                this.representatives = data;
             });
         },
         formatDate(value) {
@@ -684,6 +660,12 @@ const getSeverity = (status) => {
 
                 return d;
             });
+        },
+        returnCountryCode(code) {
+            if (code === 'Germany') return 'de';
+            else if (code === 'Croatia') return 'hr';
+            else if (code === 'Austria') return 'at';
+            else return 'ch';
         },
         getSeverity(status) {
             switch (status) {
