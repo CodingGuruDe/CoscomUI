@@ -17,11 +17,12 @@
                 <template #header>
                     <div class="flex justify-content-between">
                         <Button type="button" icon="cs el-filter-slash" label="Clear" outlined @click="clearFilter()" />
-
-                        <InputIcon>
-                            <i class="cs el-search" />
-                        </InputIcon>
-                        <InputText v-model="filters['global'].value" placeholder="Keyword Search" />
+                        <span class="v-input-icon-left relative">
+                            <InputIcon>
+                                <i class="cs el-search" />
+                            </InputIcon>
+                            <InputText v-model="filters['global'].value" placeholder="Search..." />
+                        </span>
                     </div>
                 </template>
                 <template #empty> No customers found. </template>

@@ -140,7 +140,7 @@
                     ]
                 },
                 {
-                    "name": "Data Display Components (10)",
+                    "name": "Data Display Components (9)",
                     "children": [
                         {
                             "name": "Data View",
@@ -181,7 +181,7 @@
                     ]
                 },
                 {
-                    "name": "Navigation Components (9)",
+                    "name": "Navigation Components (7)",
                     "children": [
                         {
                             "name": "Fieldset",
@@ -214,7 +214,7 @@
                     ]
                 },
                 {
-                    "name": "Layout Components (6)",
+                    "name": "Layout Components (2)",
                     "children": [
                         {
                             "name": "Overlay Panel",
@@ -268,7 +268,7 @@
                     ]
                 },
                 {
-                    "name": "Feedback Components (15)",
+                    "name": "Feedback Components (10)",
                     "children": [
                         {
                             "name": "Badge",
@@ -313,7 +313,7 @@
                     ]
                 },
                 {
-                    "name": "Media",
+                    "name": "Media(2)",
                     "children": [
                         {
                             "name": "Carousel",
@@ -326,7 +326,7 @@
                     ]
                 },
                 {
-                    "name": "Misc",
+                    "name": "Misc(12)",
                     "children": [
                         {
                             "name": "Speed Dial",

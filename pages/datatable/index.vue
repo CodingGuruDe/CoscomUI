@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import AccessibilityDoc from '@/doc/datatable/AccessibilityDoc.vue';
 import BasicDoc from '@/doc/datatable/BasicDoc.vue';
 import ColumnGroupDoc from '@/doc/datatable/ColumnGroupDoc.vue';
 import ColumnToggleDoc from '@/doc/datatable/ColumnToggleDoc.vue';
@@ -354,11 +353,6 @@ export default {
                             component: ProductsDoc
                         }
                     ]
-                },
-                {
-                    id: 'accessibility',
-                    label: 'Accessibility',
-                    component: AccessibilityDoc
                 }
             ],
             ptComponent: PTComponent,

@@ -3,7 +3,7 @@
         <p>Colors are exported as CSS variables and used with the standard <i>var</i> syntax such as <i>var(--text-color)</i>. Following is the list of general variables used in a theme.</p>
     </DocSectionText>
 
-    <div class="doc-tablewrapper">
+    <div class="card doc-tablewrapper">
         <table class="doc-table">
             <thead>
                 <tr>
@@ -59,24 +59,12 @@
             </tbody>
         </table>
     </div>
-    <div class="card flex justify-content-center gap-3 text-center">
-        <div :style="{ backgroundColor: 'var(--highlight-bg)', color: 'var(--highlight-text-color)', borderRadius: 'var(--border-radius)', padding: '3rem' }">Highlighted Item</div>
-        <div :style="{ backgroundColor: 'var(--primary-color)', color: 'var(--primary-color-text)', borderRadius: 'var(--border-radius)', padding: '3rem' }">Primary Color</div>
-    </div>
-    <DocSectionCode :code="code" hideToggleCode importCode hideStackBlitz />
 </template>
 
 <script>
 export default {
     data() {
-        return {
-            code: {
-                basic: `
-<div style="backgroundColor: var(--highlight-bg), color: var(--highlight-text-color), borderRadius: var(--border-radius), padding: 3rem">Highlighted Item</div>
-<div style="backgroundColor: var(--primary-color), color: var(--primary-color-text), borderRadius: var(--border-radius), padding: 3rem">Primary Color</div>
-`
-            }
-        };
+        return {};
     }
 };
 </script>

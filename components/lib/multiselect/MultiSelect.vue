@@ -85,7 +85,7 @@
                                 <component v-else-if="slotProps.checked" :is="checkboxIcon ? 'span' : 'CheckIcon'" :class="[slotProps.class, { [checkboxIcon]: slotProps.checked }]" v-bind="getHeaderCheckboxPTOptions('headerCheckbox.icon')" />
                             </template>
                         </Checkbox>
-                        <div v-if="filter" :class="cx('filterContainer')" v-bind="ptm('filterContainer')">
+                        <div :class="cx('filterContainer')" v-bind="ptm('filterContainer')">
                             <input
                                 ref="filterInput"
                                 type="text"
@@ -104,17 +104,12 @@
                                 v-bind="{ ...filterInputProps, ...ptm('filterInput') }"
                             />
                             <slot name="filtericon" :class="cx('filterIcon')">
-                                <component :is="filterIcon ? 'span' : 'SearchIcon'" :class="[cx('filterIcon'), filterIcon]" v-bind="ptm('filterIcon')" />
+                                <component :is="filterValue ? 'TimesIcon' : 'SearchIcon'" :class="[cx('filterIcon'), filterIcon]" v-bind="ptm('filterIcon')" @click="resetSearch" />
                             </slot>
                         </div>
                         <span v-if="filter" role="status" aria-live="polite" class="v-hidden-accessible" v-bind="ptm('hiddenFilterResult')" :data-v-hidden-accessible="true">
                             {{ filterResultMessageText }}
                         </span>
-                        <button v-ripple :class="cx('closeButton')" :aria-label="closeAriaLabel" @click="onCloseClick" type="button" v-bind="{ ...closeButtonProps, ...ptm('closeButton') }">
-                            <slot name="closeicon" :class="cx('closeIcon')">
-                                <component :is="closeIcon ? 'span' : 'TimesIcon'" :class="[cx('closeIcon'), closeIcon]" v-bind="ptm('closeIcon')" />
-                            </slot>
-                        </button>
                     </div>
                     <div :class="cx('wrapper')" :style="{ 'max-height': virtualScrollerDisabled ? scrollHeight : '' }" v-bind="ptm('wrapper')">
                         <VirtualScroller :ref="virtualScrollerRef" v-bind="virtualScrollerOptions" :items="visibleOptions" :style="{ height: scrollHeight }" :tabindex="-1" :disabled="virtualScrollerDisabled" :pt="ptm('virtualScroller')">
@@ -310,6 +305,9 @@ export default {
         },
         getAriaPosInset(index) {
             return (this.optionGroupLabel ? index - this.visibleOptions.slice(0, index).filter((option) => this.isOptionGroup(option)).length : index) + 1;
+        },
+        resetSearch() {
+            this.filterValue = null;
         },
         show(isFocus) {
             this.$emit('before-show');

@@ -1612,7 +1612,7 @@
     color: #334155;
     border: 1px solid #e2e8f0;
     border-radius: 4px;
-    box-shadow: none;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .12), 0 6px 16px 0 rgba(0, 0, 0, .08), 0 9px 28px 8px rgba(0, 0, 0, .05);
   }
   .v-dropdown-panel .v-dropdown-header {
     padding: 0.5rem 0.5rem 0 0.5rem;
@@ -1724,6 +1724,44 @@
     transition-timing-function: ease;
   }
 
+  .v-input-icon-left > svg:first-of-type,
+.v-input-icon-left > i:first-of-type {
+    left: 0.75rem;
+    color: #6b7280;
+  }
+
+  .v-input-icon-left > .v-inputtext {
+    padding-left: 2.5rem;
+  }
+
+  .v-input-icon-left.v-float-label > label {
+    left: 2.5rem;
+  }
+
+  .v-input-icon-left > .v-input-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    left: 10px;
+  }
+
+  .v-input-icon-right > svg:last-of-type,
+.v-input-icon-right > i:last-of-type {
+    right: 0.75rem;
+    color: #6b7280;
+  }
+
+  .v-input-icon-right > .v-inputtext {
+    padding-right: 2.5rem;
+  }
+
+  .v-input-icon-right > .v-input-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    right: 10px;
+  }
+
   .v-icon-spin {
     -webkit-animation: p-icon-spin 2s infinite linear;
     animation: p-icon-spin 2s infinite linear;
@@ -1731,12 +1769,6 @@
 
   .v-icon-field {
     position: relative;
-  }
-
-  .v-icon-field > .v-input-icon {
-    position: absolute;
-    top: 50%;
-    margin-top: -0.5rem;
   }
 
   .v-inputotp {
@@ -2482,6 +2514,7 @@
   .v-multiselect-panel .v-multiselect-header .v-multiselect-filter-container .v-multiselect-filter-icon {
     right: 0.75rem;
     color: #94a3b8;
+    cursor: pointer;
   }
   .v-multiselect-panel .v-multiselect-header .v-checkbox {
     margin-right: 0.5rem;
@@ -3180,10 +3213,10 @@
     color: #ffffff;
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.2rem;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
-    border-radius: 4px;
+    border-radius: 3px;
     outline-color: transparent;
   }
   .v-button:not(:disabled):hover {

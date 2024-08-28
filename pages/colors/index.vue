@@ -19,6 +19,7 @@
 </template>
 
 <script>
+import ColorsDoc from '@/doc/colors/ColorsDoc.vue';
 import OverviewDoc from '@/doc/colors/OverviewDoc.vue';
 import PaletteDoc from '@/doc/colors/PaletteDoc.vue';
 import SurfacesDoc from '@/doc/colors/SurfacesDoc.vue';
@@ -31,6 +32,11 @@ export default {
                     id: 'overview',
                     label: 'Overview',
                     component: OverviewDoc
+                },
+                {
+                    id: 'colors',
+                    label: 'Colors',
+                    component: ColorsDoc
                 },
                 {
                     id: 'surfaces',

@@ -1724,6 +1724,36 @@
     transition-timing-function: ease;
   }
 
+  .v-input-icon-left > svg:first-of-type,
+.v-input-icon-left > i:first-of-type {
+    left: 0.75rem;
+    color: #6b7280;
+  }
+
+  .v-input-icon-left > .v-inputtext {
+    padding-left: 2.5rem;
+  }
+
+  .v-input-icon-left.v-float-label > label {
+    left: 2.5rem;
+  }
+
+  .v-input-icon-right > svg:last-of-type,
+.v-input-icon-right > i:last-of-type {
+    right: 0.75rem;
+    color: #6b7280;
+  }
+
+  .v-input-icon-right > .v-inputtext {
+    padding-right: 2.5rem;
+  }
+
+  .v-input-icon-left > .v-input-icon, .v-icon-right > .v-input-icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+  }
+
   .v-icon-spin {
     -webkit-animation: p-icon-spin 2s infinite linear;
     animation: p-icon-spin 2s infinite linear;

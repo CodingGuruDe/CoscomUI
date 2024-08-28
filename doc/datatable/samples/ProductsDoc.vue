@@ -31,13 +31,12 @@
                 <template #header>
                     <div class="flex flex-wrap gap-2 align-items-center justify-content-between">
                         <h4 class="m-0">Manage Products</h4>
-
-                        <div class="relative">
+                        <span class="v-input-icon-left relative">
                             <InputIcon>
                                 <i class="cs el-search" />
                             </InputIcon>
                             <InputText v-model="filters['global'].value" placeholder="Search..." />
-                        </div>
+                        </span>
                     </div>
                 </template>
 
