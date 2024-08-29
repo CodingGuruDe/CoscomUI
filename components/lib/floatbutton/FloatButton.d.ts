@@ -65,7 +65,7 @@ export interface FloatButtonSharedPassThroughMethodOptions {
 
 /**
  * Custom passthrough(pt) options.
- * @see {@link FloatButtonProps.pt}
+ *
  */
 export interface FloatButtonPassThroughOptions {
     /**

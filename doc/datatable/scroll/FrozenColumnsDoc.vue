@@ -98,7 +98,7 @@ export default {
     },
     methods: {
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         },
         toggleState() {
             this.isActive = !this.isActive;
@@ -148,6 +148,9 @@ const isActive = ref(false);
 const formatCurrency = (value) => {
     return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 };
+const formatCurrency = (value) => {
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+}
 const toggleState = () => {
     isActive.value = !isActive.value;
     balanceFrozen.value = !balanceFrozen.value;
@@ -185,7 +188,7 @@ const toggleState = () => {
             });
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         },
         toggleState() {
             this.isActive = !this.isActive;

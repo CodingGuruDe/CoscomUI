@@ -429,7 +429,7 @@ export default {
     methods: {
         formatCurrency(value) {
             if(value)
-				return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+				return value.toLocaleString('de-DE', {style: 'currency', currency: 'EUR'});
 			return;
         },
         openNew() {
@@ -719,7 +719,7 @@ const statuses = ref([
 
 const formatCurrency = (value) => {
     if(value)
-        return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+        return value.toLocaleString('de-DE', {style: 'currency', currency: 'EUR'});
     return;
 };
 const openNew = () => {
@@ -842,7 +842,7 @@ const getStatusLabel = (status) => {
             ProductService.getProducts().then((data) => (this.products = data));
         },
         formatCurrency(value) {
-            if (value) return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            if (value) return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 
             return;
         },

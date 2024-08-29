@@ -88,10 +88,10 @@ onMounted(() => {
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
     company: 'Benton, John B Jr',
     date: '2015-09-13',

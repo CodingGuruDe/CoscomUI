@@ -31,8 +31,8 @@ export default {
             products: null,
             selectedProduct: null,
             menuModel: [
-                { label: 'View', icon: 'cs el-fw pi-search', command: () => this.viewProduct(this.selectedProduct) },
-                { label: 'Delete', icon: 'cs el-fw pi-times', command: () => this.deleteProduct(this.selectedProduct) }
+                { label: 'View', icon: 'cs el-fw el-search', command: () => this.viewProduct(this.selectedProduct) },
+                { label: 'Delete', icon: 'cs el-fw el-times', command: () => this.deleteProduct(this.selectedProduct) }
             ],
             code: {
                 basic: `
@@ -77,8 +77,8 @@ export default {
             products: null,
             selectedProduct: null,
             menuModel: [
-                {label: 'View', icon: 'cs el-fw pi-search', command: () => this.viewProduct(this.selectedProduct)},
-                {label: 'Delete', icon: 'cs el-fw pi-times', command: () => this.deleteProduct(this.selectedProduct)}
+                {label: 'View', icon: 'cs el-fw el-search', command: () => this.viewProduct(this.selectedProduct)},
+                {label: 'Delete', icon: 'cs el-fw el-times', command: () => this.deleteProduct(this.selectedProduct)}
             ]
         }
     },
@@ -98,7 +98,7 @@ export default {
             this.selectedProduct = null;
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 }
@@ -138,8 +138,8 @@ const toast = useToast();
 const products = ref();
 const selectedProduct = ref();
 const menuModel = ref([
-    {label: 'View', icon: 'cs el-fw pi-search', command: () => viewProduct(selectedProduct)},
-    {label: 'Delete', icon: 'cs el-fw pi-times', command: () => deleteProduct(selectedProduct)}
+    {label: 'View', icon: 'cs el-fw el-search', command: () => viewProduct(selectedProduct)},
+    {label: 'Delete', icon: 'cs el-fw el-times', command: () => deleteProduct(selectedProduct)}
 ]);
 const onRowContextMenu = (event) => {
     cm.value.show(event.originalEvent);
@@ -153,7 +153,7 @@ const deleteProduct = (product) => {
     selectedProduct.value = null;
 };
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 };
 
 <\/script>
@@ -163,11 +163,11 @@ const formatCurrency = (value) => {
 {
     id: '1000',
     code: 'f230fh0g3',
-    name: 'Bamboo Watch',
+    name: 'COSCOM Montagearbeitsplatz',
     description: 'Product Description',
-    image: 'bamboo-watch.jpg',
+    image: '',
     price: 65,
-    category: 'Accessories',
+    category: 'Tool Management',
     quantity: 24,
     inventoryStatus: 'INSTOCK',
     rating: 5
@@ -192,7 +192,7 @@ const formatCurrency = (value) => {
             this.selectedProduct = null;
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 };

@@ -390,6 +390,9 @@ export default {
                 year: 'numeric'
             });
         },
+        formatCurrency(value) {
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
+        },
         clearFilter() {
             this.initFilters();
         },
@@ -595,7 +598,7 @@ const formatDate = (value) => {
     });
 };
 const formatCurrency = (value) => {
-    return value.toLocaleString('de-DE', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 };
 const clearFilter = () => {
     initFilters();
@@ -669,7 +672,7 @@ const getSeverity = (status) => {
             });
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         },
         clearFilter() {
             this.initFilters();

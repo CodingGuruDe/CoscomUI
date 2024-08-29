@@ -177,7 +177,7 @@ export default {
     },
     methods: {
         formatCurrency(value) {
-            return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     },
     computed: {
@@ -270,7 +270,7 @@ const sales = ref([
 ]);
 
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 };
 
 const lastYearTotal = computed(() => {
@@ -312,7 +312,7 @@ const thisYearTotal = computed(() => {
             ];
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     },
     computed: {

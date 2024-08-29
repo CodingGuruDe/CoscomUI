@@ -86,7 +86,7 @@ export default {
     },
     methods: {
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 };
@@ -126,17 +126,17 @@ onMounted(() => {
 });
 
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 };
 <\/script>
 `,
                 data: `
 {
     id: 1000,
-    name: 'James Butt',
+    name: 'Max Musterman',
     country: {
-        name: 'Algeria',
-        code: 'dz'
+        name: 'Germany',
+        code: 'de'
     },
     company: 'Benton, John B Jr',
     date: '2015-09-13',
@@ -161,7 +161,7 @@ const formatCurrency = (value) => {
             });
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 };

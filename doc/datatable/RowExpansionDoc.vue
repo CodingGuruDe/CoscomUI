@@ -230,7 +230,7 @@ export default {
             this.expandedRows = null;
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         },
         getSeverity(product) {
             switch (product.inventoryStatus) {
@@ -359,7 +359,7 @@ const collapseAll = () => {
     expandedRows.value = null;
 };
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 };
 const getSeverity = (product) => {
     switch (product.inventoryStatus) {
@@ -444,7 +444,7 @@ const getOrderSeverity = (order) => {
             this.expandedRows = null;
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         },
         getSeverity(product) {
             switch (product.inventoryStatus) {

@@ -75,7 +75,7 @@ export default {
     },
     methods: {
         formatCurrency(value) {
-            return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 };
@@ -108,7 +108,7 @@ onMounted(() => {
 
 const products = ref();
 const formatCurrency = (value) => {
-    return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+    return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
 }
 
 <\/script>
@@ -136,7 +136,7 @@ const formatCurrency = (value) => {
             ProductService.getProductsMini().then((data) => (this.products = data));
         },
         formatCurrency(value) {
-            return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+            return value.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
         }
     }
 };
